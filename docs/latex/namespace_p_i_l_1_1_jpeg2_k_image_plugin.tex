@@ -1,0 +1,81 @@
+\doxysection{PIL.\+Jpeg2\+KImage\+Plugin Namespace Reference}
+\hypertarget{namespace_p_i_l_1_1_jpeg2_k_image_plugin}{}\label{namespace_p_i_l_1_1_jpeg2_k_image_plugin}\index{PIL.Jpeg2KImagePlugin@{PIL.Jpeg2KImagePlugin}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader}{Box\+Reader}}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_jpeg2_k_image_file}{Jpeg2\+KImage\+File}}
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_p_i_l_1_1_image}{Image} plugin for JPEG2000 images. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\+[tuple\+[int, int]\+, str]\+ \doxymbox{\hyperlink{namespace_p_i_l_1_1_jpeg2_k_image_plugin_a905567614178b891192609354fe0746b}{\+\_\+parse\+\_\+codestream}} (IO\+[bytes]\+ fp)
+\item 
+float\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespace_p_i_l_1_1_jpeg2_k_image_plugin_ade2c94ff0365eabb8a0f1e4f699e97b7}{\+\_\+res\+\_\+to\+\_\+dpi}} (int num, int denom, int exp)
+\item 
+tuple\+[ tuple\+[int, int]\+, str, str\texorpdfstring{$\vert$}{|}None, tuple\+[float, float]\+\texorpdfstring{$\vert$}{|}None, \doxymbox{\hyperlink{class_p_i_l_1_1_image_palette_1_1_image_palette}{Image\+Palette.\+Image\+Palette}}\texorpdfstring{$\vert$}{|}None,]\+ \doxymbox{\hyperlink{namespace_p_i_l_1_1_jpeg2_k_image_plugin_a8f9c8ca9292e229c4ebeff513b0586cb}{\+\_\+parse\+\_\+jp2\+\_\+header}} (IO\+[bytes]\+ fp)
+\item 
+bool \doxymbox{\hyperlink{namespace_p_i_l_1_1_jpeg2_k_image_plugin_a6d128d14a0a922aa0ba39510031a5ac9}{\+\_\+accept}} (bytes prefix)
+\item 
+None \doxymbox{\hyperlink{namespace_p_i_l_1_1_jpeg2_k_image_plugin_a239bf75f14c03ecc99e8719dc288f09b}{\+\_\+save}} (\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} im, IO\+[bytes]\+ fp, str\texorpdfstring{$\vert$}{|}bytes filename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{namespace_p_i_l_1_1_jpeg2_k_image_plugin_ae981e2e2c3cc69e31e9fbbedea5ab15b}{TYPE\+\_\+\+CHECKING}} = False
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_p_i_l_1_1_jpeg2_k_image_plugin_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_p_i_l_1_1_jpeg2_k_image_plugin_a6d128d14a0a922aa0ba39510031a5ac9}\index{PIL.Jpeg2KImagePlugin@{PIL.Jpeg2KImagePlugin}!\_accept@{\_accept}}
+\index{\_accept@{\_accept}!PIL.Jpeg2KImagePlugin@{PIL.Jpeg2KImagePlugin}}
+\doxysubsubsection{\texorpdfstring{\_accept()}{\_accept()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_jpeg2_k_image_plugin_a6d128d14a0a922aa0ba39510031a5ac9} 
+ bool PIL.\+Jpeg2\+KImage\+Plugin.\+\_\+accept (\begin{DoxyParamCaption}\item[{bytes}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespace_p_i_l_1_1_jpeg2_k_image_plugin_a905567614178b891192609354fe0746b}\index{PIL.Jpeg2KImagePlugin@{PIL.Jpeg2KImagePlugin}!\_parse\_codestream@{\_parse\_codestream}}
+\index{\_parse\_codestream@{\_parse\_codestream}!PIL.Jpeg2KImagePlugin@{PIL.Jpeg2KImagePlugin}}
+\doxysubsubsection{\texorpdfstring{\_parse\_codestream()}{\_parse\_codestream()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_jpeg2_k_image_plugin_a905567614178b891192609354fe0746b} 
+ tuple\+[tuple\+[int, int]\+, str]\+ PIL.\+Jpeg2\+KImage\+Plugin.\+\_\+parse\+\_\+codestream (\begin{DoxyParamCaption}\item[{IO\+[bytes]\+}]{fp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Parse the JPEG 2000 codestream to extract the size and component
+count from the SIZ marker segment, returning a PIL (size, mode) tuple.\end{DoxyVerb}
+ \Hypertarget{namespace_p_i_l_1_1_jpeg2_k_image_plugin_a8f9c8ca9292e229c4ebeff513b0586cb}\index{PIL.Jpeg2KImagePlugin@{PIL.Jpeg2KImagePlugin}!\_parse\_jp2\_header@{\_parse\_jp2\_header}}
+\index{\_parse\_jp2\_header@{\_parse\_jp2\_header}!PIL.Jpeg2KImagePlugin@{PIL.Jpeg2KImagePlugin}}
+\doxysubsubsection{\texorpdfstring{\_parse\_jp2\_header()}{\_parse\_jp2\_header()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_jpeg2_k_image_plugin_a8f9c8ca9292e229c4ebeff513b0586cb} 
+ tuple\+[     tuple\+[int, int]\+,     str,     str \texorpdfstring{$\vert$}{|} None,     tuple\+[float, float]\+ \texorpdfstring{$\vert$}{|} None,     \doxymbox{\hyperlink{class_p_i_l_1_1_image_palette_1_1_image_palette}{Image\+Palette.\+Image\+Palette}} \texorpdfstring{$\vert$}{|} None, ]\+ PIL.\+Jpeg2\+KImage\+Plugin.\+\_\+parse\+\_\+jp2\+\_\+header (\begin{DoxyParamCaption}\item[{IO\+[bytes]\+}]{fp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Parse the JP2 header box to extract size, component count,
+color space information, and optionally DPI information,
+returning a (size, mode, mimetype, dpi) tuple.\end{DoxyVerb}
+ \Hypertarget{namespace_p_i_l_1_1_jpeg2_k_image_plugin_ade2c94ff0365eabb8a0f1e4f699e97b7}\index{PIL.Jpeg2KImagePlugin@{PIL.Jpeg2KImagePlugin}!\_res\_to\_dpi@{\_res\_to\_dpi}}
+\index{\_res\_to\_dpi@{\_res\_to\_dpi}!PIL.Jpeg2KImagePlugin@{PIL.Jpeg2KImagePlugin}}
+\doxysubsubsection{\texorpdfstring{\_res\_to\_dpi()}{\_res\_to\_dpi()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_jpeg2_k_image_plugin_ade2c94ff0365eabb8a0f1e4f699e97b7} 
+ float \texorpdfstring{$\vert$}{|} None PIL.\+Jpeg2\+KImage\+Plugin.\+\_\+res\+\_\+to\+\_\+dpi (\begin{DoxyParamCaption}\item[{int}]{num}{, }\item[{int}]{denom}{, }\item[{int}]{exp}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Convert JPEG2000's (numerator, denominator, exponent-base-10) resolution,
+calculated as (num / denom) * 10^exp and stored in dots per meter,
+to floating-point dots per inch.\end{DoxyVerb}
+ \Hypertarget{namespace_p_i_l_1_1_jpeg2_k_image_plugin_a239bf75f14c03ecc99e8719dc288f09b}\index{PIL.Jpeg2KImagePlugin@{PIL.Jpeg2KImagePlugin}!\_save@{\_save}}
+\index{\_save@{\_save}!PIL.Jpeg2KImagePlugin@{PIL.Jpeg2KImagePlugin}}
+\doxysubsubsection{\texorpdfstring{\_save()}{\_save()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_jpeg2_k_image_plugin_a239bf75f14c03ecc99e8719dc288f09b} 
+ None PIL.\+Jpeg2\+KImage\+Plugin.\+\_\+save (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}}]{im}{, }\item[{IO\+[bytes]\+}]{fp}{, }\item[{str \texorpdfstring{$\vert$}{|} bytes}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespace_p_i_l_1_1_jpeg2_k_image_plugin_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_p_i_l_1_1_jpeg2_k_image_plugin_ae981e2e2c3cc69e31e9fbbedea5ab15b}\index{PIL.Jpeg2KImagePlugin@{PIL.Jpeg2KImagePlugin}!TYPE\_CHECKING@{TYPE\_CHECKING}}
+\index{TYPE\_CHECKING@{TYPE\_CHECKING}!PIL.Jpeg2KImagePlugin@{PIL.Jpeg2KImagePlugin}}
+\doxysubsubsection{\texorpdfstring{TYPE\_CHECKING}{TYPE\_CHECKING}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_jpeg2_k_image_plugin_ae981e2e2c3cc69e31e9fbbedea5ab15b} 
+bool PIL.\+Jpeg2\+KImage\+Plugin.\+TYPE\+\_\+\+CHECKING = False}
+

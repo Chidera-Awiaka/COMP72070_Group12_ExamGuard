@@ -1,0 +1,154 @@
+\doxysection{pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager}{}\label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_af2899a782b4e5ee5868ef53cfb9ba168}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a9161b12447ed23b4b3c14782e6116e14}{font\+\_\+name}}, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a640bdf72cc266b01f35a337946d79b4c}{font\+\_\+size}}=14)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a4f8fdbc3260c7c6f8d6b0a135944b1b9}{get\+\_\+char\+\_\+size}} (self)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a3ea167335166822882517886afc06017}{get\+\_\+text\+\_\+size}} (self, text)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_af9d07790a530f2cccae966f9fcc0171c}{get\+\_\+font}} (self, bold, oblique)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a9161b12447ed23b4b3c14782e6116e14}{font\+\_\+name}} = font\+\_\+name
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a640bdf72cc266b01f35a337946d79b4c}{font\+\_\+size}} = font\+\_\+size
+\item 
+dict \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a497033ca3b003b506ac87d7d4294ad66}{fonts}} = \{\}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a167dc95938d9732f700d5c8e21857e07}{encoding}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a922cab7c0b8de2e97157b9b6b94a7848}{\+\_\+get\+\_\+nix\+\_\+font\+\_\+path}} (self, name, \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1pygments_1_1style}{style}})
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a61e2757a5448f1226bba69542399b748}{\+\_\+create\+\_\+nix}} (self)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a16e9ecc293ed073986569cc918f2f939}{\+\_\+get\+\_\+mac\+\_\+font\+\_\+path}} (self, font\+\_\+map, name, \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1pygments_1_1style}{style}})
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a2f2b5527fed1492fd5929e970bd81456}{\+\_\+create\+\_\+mac}} (self)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_aa25f30757ab7d4497a908c3bf9ad60be}{\+\_\+lookup\+\_\+win}} (self, key, basename, \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1pygments_1_1styles}{styles}}, fail=False)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_aa6a7e5b91e078b7a9987a8562e276410}{\+\_\+create\+\_\+win}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Manages a set of fonts: normal, italic, bold, etc...
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_af2899a782b4e5ee5868ef53cfb9ba168}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_af2899a782b4e5ee5868ef53cfb9ba168} 
+pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{font\+\_\+name}{, }\item[{}]{font\+\_\+size}{ = {\ttfamily 14}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a2f2b5527fed1492fd5929e970bd81456}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!\_create\_mac@{\_create\_mac}}
+\index{\_create\_mac@{\_create\_mac}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{\_create\_mac()}{\_create\_mac()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a2f2b5527fed1492fd5929e970bd81456} 
+pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+\_\+create\+\_\+mac (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a61e2757a5448f1226bba69542399b748}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!\_create\_nix@{\_create\_nix}}
+\index{\_create\_nix@{\_create\_nix}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{\_create\_nix()}{\_create\_nix()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a61e2757a5448f1226bba69542399b748} 
+pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+\_\+create\+\_\+nix (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_aa6a7e5b91e078b7a9987a8562e276410}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!\_create\_win@{\_create\_win}}
+\index{\_create\_win@{\_create\_win}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{\_create\_win()}{\_create\_win()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_aa6a7e5b91e078b7a9987a8562e276410} 
+pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+\_\+create\+\_\+win (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a16e9ecc293ed073986569cc918f2f939}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!\_get\_mac\_font\_path@{\_get\_mac\_font\_path}}
+\index{\_get\_mac\_font\_path@{\_get\_mac\_font\_path}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{\_get\_mac\_font\_path()}{\_get\_mac\_font\_path()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a16e9ecc293ed073986569cc918f2f939} 
+pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+\_\+get\+\_\+mac\+\_\+font\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{font\+\_\+map}{, }\item[{}]{name}{, }\item[{}]{style}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a922cab7c0b8de2e97157b9b6b94a7848}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!\_get\_nix\_font\_path@{\_get\_nix\_font\_path}}
+\index{\_get\_nix\_font\_path@{\_get\_nix\_font\_path}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{\_get\_nix\_font\_path()}{\_get\_nix\_font\_path()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a922cab7c0b8de2e97157b9b6b94a7848} 
+pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+\_\+get\+\_\+nix\+\_\+font\+\_\+path (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{style}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_aa25f30757ab7d4497a908c3bf9ad60be}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!\_lookup\_win@{\_lookup\_win}}
+\index{\_lookup\_win@{\_lookup\_win}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{\_lookup\_win()}{\_lookup\_win()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_aa25f30757ab7d4497a908c3bf9ad60be} 
+pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+\_\+lookup\+\_\+win (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{basename}{, }\item[{}]{styles}{, }\item[{}]{fail}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a4f8fdbc3260c7c6f8d6b0a135944b1b9}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!get\_char\_size@{get\_char\_size}}
+\index{get\_char\_size@{get\_char\_size}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{get\_char\_size()}{get\_char\_size()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a4f8fdbc3260c7c6f8d6b0a135944b1b9} 
+pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+get\+\_\+char\+\_\+size (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the character size.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_af9d07790a530f2cccae966f9fcc0171c}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!get\_font@{get\_font}}
+\index{get\_font@{get\_font}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{get\_font()}{get\_font()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_af9d07790a530f2cccae966f9fcc0171c} 
+pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+get\+\_\+font (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{bold}{, }\item[{}]{oblique}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the font based on bold and italic flags.
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a3ea167335166822882517886afc06017}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!get\_text\_size@{get\_text\_size}}
+\index{get\_text\_size@{get\_text\_size}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{get\_text\_size()}{get\_text\_size()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a3ea167335166822882517886afc06017} 
+pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+get\+\_\+text\+\_\+size (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the text size (width, height).
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a167dc95938d9732f700d5c8e21857e07}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!encoding@{encoding}}
+\index{encoding@{encoding}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a167dc95938d9732f700d5c8e21857e07} 
+pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+encoding = None}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a9161b12447ed23b4b3c14782e6116e14}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!font\_name@{font\_name}}
+\index{font\_name@{font\_name}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{font\_name}{font\_name}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a9161b12447ed23b4b3c14782e6116e14} 
+pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+font\+\_\+name = font\+\_\+name}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a640bdf72cc266b01f35a337946d79b4c}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!font\_size@{font\_size}}
+\index{font\_size@{font\_size}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{font\_size}{font\_size}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a640bdf72cc266b01f35a337946d79b4c} 
+pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+font\+\_\+size = font\+\_\+size}
+
+\Hypertarget{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a497033ca3b003b506ac87d7d4294ad66}\index{pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}!fonts@{fonts}}
+\index{fonts@{fonts}!pip.\_vendor.pygments.formatters.img.FontManager@{pip.\_vendor.pygments.formatters.img.FontManager}}
+\doxysubsubsection{\texorpdfstring{fonts}{fonts}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pygments_1_1formatters_1_1img_1_1_font_manager_a497033ca3b003b506ac87d7d4294ad66} 
+dict pip.\+\_\+vendor.\+pygments.\+formatters.\+img.\+Font\+Manager.\+fonts = \{\}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+pygments/\+formatters/\+\doxymbox{\hyperlink{img_8py}{img.\+py}}\end{DoxyCompactItemize}

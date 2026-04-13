@@ -1,0 +1,157 @@
+\doxysection{reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval Namespace Reference}
+\hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval}{}\label{namespacereportlab_1_1lib_1_1rl__safe__eval}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_bad_code}{Bad\+Code}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer}{Untrusted\+Ast\+Transformer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_a831b9181bde505ee1ba04147695c547d}{\+\_\+\+\_\+fix\+\_\+set\+\_\+\+\_\+}} (value, default=frozenset())
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_a191de8f65e9f38ead9137013628f7a1b}{copy\+\_\+locations}} (new\+\_\+node, old\+\_\+node)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_ae56aaa099708e9371e0d315521362656}{ast\+Format}} (node)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_a3faf1f38647bce38cee0dde9f83b7458}{safer\+\_\+globals}} (g=None)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_a6c662bec2a2e4d83b35da13d91f51b6e}{rl\+\_\+extended\+\_\+literal\+\_\+eval}} (expr, safe\+\_\+callables=None, safe\+\_\+names=None)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_a78359e8e5fcee33689d0a274051de4a9}{rl\+\_\+less\+\_\+safe\+\_\+eval}} (expr, NS)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_ae91b17b5d8a79342f0ac432e606c3b84}{eval\+\_\+debug}} = int(os.\+environ.\+get(\textquotesingle{}EVAL\+\_\+\+DEBUG\textquotesingle{},\textquotesingle{}0\textquotesingle{}))
+\item 
+tuple \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_ad840390ff33508f13faaa190fa6e6842}{str\+Types}} = (bytes,str)
+\item 
+tuple \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_a2a8ee53e929d5e1b31575d156ebbf34e}{is\+Py39}} = (3,9)
+\item 
+tuple \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_afc26f812bdc796f34199c2af8561b244}{is\+Py313}} = (3,13)
+\item 
+dict \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_a850e5739a4880b40f2880d11b325824f}{aug\+Ops}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_ad39db5a79358b59d3f3718c91d40c7f9}{math\+\_\+log10}} = math.\+log10
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_a5d6bad89e2798c9875a76f8d5b5960a8}{rl\+\_\+safe\+\_\+exec}} = \+\_\+\+\_\+rl\+\_\+safe\+\_\+exec\+\_\+\+\_\+()
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rl__safe__eval_a663fd9ad1ad4006602f2acdd0249341e}{rl\+\_\+safe\+\_\+eval}} = \+\_\+\+\_\+rl\+\_\+safe\+\_\+eval\+\_\+\+\_\+()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_a831b9181bde505ee1ba04147695c547d}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!\_\_fix\_set\_\_@{\_\_fix\_set\_\_}}
+\index{\_\_fix\_set\_\_@{\_\_fix\_set\_\_}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{\_\_fix\_set\_\_()}{\_\_fix\_set\_\_()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_a831b9181bde505ee1ba04147695c547d} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+\_\+\+\_\+fix\+\_\+set\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{value}{, }\item[{}]{default}{ = {\ttfamily frozenset()}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_ae56aaa099708e9371e0d315521362656}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!astFormat@{astFormat}}
+\index{astFormat@{astFormat}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{astFormat()}{astFormat()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_ae56aaa099708e9371e0d315521362656} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+ast\+Format (\begin{DoxyParamCaption}\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_a191de8f65e9f38ead9137013628f7a1b}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!copy\_locations@{copy\_locations}}
+\index{copy\_locations@{copy\_locations}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{copy\_locations()}{copy\_locations()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_a191de8f65e9f38ead9137013628f7a1b} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+copy\+\_\+locations (\begin{DoxyParamCaption}\item[{}]{new\+\_\+node}{, }\item[{}]{old\+\_\+node}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_a6c662bec2a2e4d83b35da13d91f51b6e}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!rl\_extended\_literal\_eval@{rl\_extended\_literal\_eval}}
+\index{rl\_extended\_literal\_eval@{rl\_extended\_literal\_eval}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{rl\_extended\_literal\_eval()}{rl\_extended\_literal\_eval()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_a6c662bec2a2e4d83b35da13d91f51b6e} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+rl\+\_\+extended\+\_\+literal\+\_\+eval (\begin{DoxyParamCaption}\item[{}]{expr}{, }\item[{}]{safe\+\_\+callables}{ = {\ttfamily None}, }\item[{}]{safe\+\_\+names}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_a78359e8e5fcee33689d0a274051de4a9}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!rl\_less\_safe\_eval@{rl\_less\_safe\_eval}}
+\index{rl\_less\_safe\_eval@{rl\_less\_safe\_eval}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{rl\_less\_safe\_eval()}{rl\_less\_safe\_eval()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_a78359e8e5fcee33689d0a274051de4a9} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+rl\+\_\+less\+\_\+safe\+\_\+eval (\begin{DoxyParamCaption}\item[{}]{expr}{, }\item[{}]{NS}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}eval with our so called safe globals\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_a3faf1f38647bce38cee0dde9f83b7458}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!safer\_globals@{safer\_globals}}
+\index{safer\_globals@{safer\_globals}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{safer\_globals()}{safer\_globals()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_a3faf1f38647bce38cee0dde9f83b7458} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+safer\+\_\+globals (\begin{DoxyParamCaption}\item[{}]{g}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_a850e5739a4880b40f2880d11b325824f}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!augOps@{augOps}}
+\index{augOps@{augOps}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{augOps}{augOps}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_a850e5739a4880b40f2880d11b325824f} 
+dict reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+aug\+Ops}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ ast.Add:\ \textcolor{stringliteral}{'+='},}
+\DoxyCodeLine{00003\ \ \ \ \ ast.Sub:\ \textcolor{stringliteral}{'-\/='},}
+\DoxyCodeLine{00004\ \ \ \ \ ast.Mult:\ \textcolor{stringliteral}{'*='},}
+\DoxyCodeLine{00005\ \ \ \ \ ast.Div:\ \textcolor{stringliteral}{'/='},}
+\DoxyCodeLine{00006\ \ \ \ \ ast.Mod:\ \textcolor{stringliteral}{'\%='},}
+\DoxyCodeLine{00007\ \ \ \ \ ast.Pow:\ \textcolor{stringliteral}{'**='},}
+\DoxyCodeLine{00008\ \ \ \ \ ast.LShift:\ \textcolor{stringliteral}{'<<='},}
+\DoxyCodeLine{00009\ \ \ \ \ ast.RShift:\ \textcolor{stringliteral}{'>>='},}
+\DoxyCodeLine{00010\ \ \ \ \ ast.BitOr:\ \textcolor{stringliteral}{'|='},}
+\DoxyCodeLine{00011\ \ \ \ \ ast.BitXor:\ \textcolor{stringliteral}{'\string^='},}
+\DoxyCodeLine{00012\ \ \ \ \ ast.BitAnd:\ \textcolor{stringliteral}{'\&='},}
+\DoxyCodeLine{00013\ \ \ \ \ ast.FloorDiv:\ \textcolor{stringliteral}{'//='},}
+\DoxyCodeLine{00014\ \ \ \ \ ast.MatMult:\ \textcolor{stringliteral}{'@='},}
+\DoxyCodeLine{00015\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_ae91b17b5d8a79342f0ac432e606c3b84}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!eval\_debug@{eval\_debug}}
+\index{eval\_debug@{eval\_debug}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{eval\_debug}{eval\_debug}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_ae91b17b5d8a79342f0ac432e606c3b84} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+eval\+\_\+debug = int(os.\+environ.\+get(\textquotesingle{}EVAL\+\_\+\+DEBUG\textquotesingle{},\textquotesingle{}0\textquotesingle{}))}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_afc26f812bdc796f34199c2af8561b244}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!isPy313@{isPy313}}
+\index{isPy313@{isPy313}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{isPy313}{isPy313}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_afc26f812bdc796f34199c2af8561b244} 
+tuple reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+is\+Py313 = (3,13)}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_a2a8ee53e929d5e1b31575d156ebbf34e}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!isPy39@{isPy39}}
+\index{isPy39@{isPy39}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{isPy39}{isPy39}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_a2a8ee53e929d5e1b31575d156ebbf34e} 
+tuple reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+is\+Py39 = (3,9)}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_ad39db5a79358b59d3f3718c91d40c7f9}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!math\_log10@{math\_log10}}
+\index{math\_log10@{math\_log10}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{math\_log10}{math\_log10}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_ad39db5a79358b59d3f3718c91d40c7f9} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+math\+\_\+log10 = math.\+log10}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_a663fd9ad1ad4006602f2acdd0249341e}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!rl\_safe\_eval@{rl\_safe\_eval}}
+\index{rl\_safe\_eval@{rl\_safe\_eval}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{rl\_safe\_eval}{rl\_safe\_eval}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_a663fd9ad1ad4006602f2acdd0249341e} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+rl\+\_\+safe\+\_\+eval = \+\_\+\+\_\+rl\+\_\+safe\+\_\+eval\+\_\+\+\_\+()}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_a5d6bad89e2798c9875a76f8d5b5960a8}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!rl\_safe\_exec@{rl\_safe\_exec}}
+\index{rl\_safe\_exec@{rl\_safe\_exec}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{rl\_safe\_exec}{rl\_safe\_exec}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_a5d6bad89e2798c9875a76f8d5b5960a8} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+rl\+\_\+safe\+\_\+exec = \+\_\+\+\_\+rl\+\_\+safe\+\_\+exec\+\_\+\+\_\+()}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rl__safe__eval_ad840390ff33508f13faaa190fa6e6842}\index{reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}!strTypes@{strTypes}}
+\index{strTypes@{strTypes}!reportlab.lib.rl\_safe\_eval@{reportlab.lib.rl\_safe\_eval}}
+\doxysubsubsection{\texorpdfstring{strTypes}{strTypes}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rl__safe__eval_ad840390ff33508f13faaa190fa6e6842} 
+tuple reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+str\+Types = (bytes,str)}
+

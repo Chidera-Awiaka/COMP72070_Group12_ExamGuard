@@ -1,0 +1,53 @@
+\doxysection{PIL.\+Iptc\+Image\+Plugin Namespace Reference}
+\hypertarget{namespace_p_i_l_1_1_iptc_image_plugin}{}\label{namespace_p_i_l_1_1_iptc_image_plugin}\index{PIL.IptcImagePlugin@{PIL.IptcImagePlugin}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_iptc_image_plugin_1_1_iptc_image_file}{Iptc\+Image\+File}}
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_p_i_l_1_1_image}{Image} plugin for IPTC/\+\+NAA datastreams. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{namespace_p_i_l_1_1_iptc_image_plugin_abd76ce6e405cec8211dc71d43d9903c9}{\+\_\+i}} (bytes c)
+\item 
+dict\+[tuple\+[int, int]\+, bytes\texorpdfstring{$\vert$}{|}list\+[bytes]\+]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{namespace_p_i_l_1_1_iptc_image_plugin_a1e83c2b204eaffe20909b264f2d38bcc}{getiptcinfo}} (\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_image_file}{Image\+File.\+Image\+File}} im)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{namespace_p_i_l_1_1_iptc_image_plugin_abd0de7bd2dbd26de32742f7b132ffed2}{COMPRESSION}} = \{1:\+ "{}raw"{}, 5:\+ "{}jpeg"{}\}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_p_i_l_1_1_iptc_image_plugin_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_p_i_l_1_1_iptc_image_plugin_abd76ce6e405cec8211dc71d43d9903c9}\index{PIL.IptcImagePlugin@{PIL.IptcImagePlugin}!\_i@{\_i}}
+\index{\_i@{\_i}!PIL.IptcImagePlugin@{PIL.IptcImagePlugin}}
+\doxysubsubsection{\texorpdfstring{\_i()}{\_i()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_iptc_image_plugin_abd76ce6e405cec8211dc71d43d9903c9} 
+ int PIL.\+Iptc\+Image\+Plugin.\+\_\+i (\begin{DoxyParamCaption}\item[{bytes}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespace_p_i_l_1_1_iptc_image_plugin_a1e83c2b204eaffe20909b264f2d38bcc}\index{PIL.IptcImagePlugin@{PIL.IptcImagePlugin}!getiptcinfo@{getiptcinfo}}
+\index{getiptcinfo@{getiptcinfo}!PIL.IptcImagePlugin@{PIL.IptcImagePlugin}}
+\doxysubsubsection{\texorpdfstring{getiptcinfo()}{getiptcinfo()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_iptc_image_plugin_a1e83c2b204eaffe20909b264f2d38bcc} 
+ dict\+[tuple\+[int, int]\+, bytes \texorpdfstring{$\vert$}{|} list\+[bytes]\+]\+ \texorpdfstring{$\vert$}{|} None PIL.\+Iptc\+Image\+Plugin.\+getiptcinfo (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_image_file}{Image\+File.\+Image\+File}}}]{im}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get IPTC information from TIFF, JPEG, or IPTC file.
+
+:param im: An image containing IPTC data.
+:returns: A dictionary containing IPTC information, or None if
+    no IPTC information block was found.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespace_p_i_l_1_1_iptc_image_plugin_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_p_i_l_1_1_iptc_image_plugin_abd0de7bd2dbd26de32742f7b132ffed2}\index{PIL.IptcImagePlugin@{PIL.IptcImagePlugin}!COMPRESSION@{COMPRESSION}}
+\index{COMPRESSION@{COMPRESSION}!PIL.IptcImagePlugin@{PIL.IptcImagePlugin}}
+\doxysubsubsection{\texorpdfstring{COMPRESSION}{COMPRESSION}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_iptc_image_plugin_abd0de7bd2dbd26de32742f7b132ffed2} 
+dict PIL.\+Iptc\+Image\+Plugin.\+COMPRESSION = \{1:\+ "{}raw"{}, 5:\+ "{}jpeg"{}\}}
+

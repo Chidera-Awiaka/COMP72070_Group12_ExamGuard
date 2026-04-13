@@ -1,0 +1,175 @@
+\doxysection{pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis}{}\label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+Inheritance diagram for pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=0.414508cm]{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a344480325802aaafedb1536186b51e1d}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a647d9187111a81f2e160511790c19450}{reset}} (self)
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a23a7e11d83c6598247d1089680bfa47e}{feed}} (self, Union\+[bytes, bytearray]\+ char, int char\+\_\+len)
+\item 
+float \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a391fbc2bdbcb12e22469c73eb2520d77}{get\+\_\+confidence}} (self)
+\item 
+bool \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a98f763c18ae018527ff7a8238c093de1}{got\+\_\+enough\+\_\+data}} (self)
+\item 
+int \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_ada5a9e31eb7899c6e436f89cacddd0ab}{get\+\_\+order}} (self, Union\+[bytes, bytearray]\+ \+\_\+)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_adde5c3fe8bdb400bf7b8cc35c2edebfe}{typical\+\_\+distribution\+\_\+ratio}} = 0.\+0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a1efd2d21f7f0282b25223beccd70d0de}{ENOUGH\+\_\+\+DATA\+\_\+\+THRESHOLD}} = 1024
+\item 
+float \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a8cf7001cbe8b4d174ce5577d05f009d5}{SURE\+\_\+\+YES}} = 0.\+99
+\item 
+float \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a980d925e59bf2d7c534905e75c11fca1}{SURE\+\_\+\+NO}} = 0.\+01
+\item 
+int \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a56a0c493022b1e65daf762ffb270cdf6}{MINIMUM\+\_\+\+DATA\+\_\+\+THRESHOLD}} = 3
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Tuple\+[int,...]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a8a19b1b1eb2fb37a4152dd54d044216c}{\+\_\+char\+\_\+to\+\_\+freq\+\_\+order}} = tuple()
+\item 
+int \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_af814f078a0bfe5e4ddb1d4d71b2a165f}{\+\_\+table\+\_\+size}} = 0
+\item 
+bool \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a3cb42f43adcab723d156f2bf06d8d52a}{\+\_\+done}} = False
+\item 
+int \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a1304b31ef0a7af87f06eda33ebd5cece}{\+\_\+total\+\_\+chars}} = 0
+\item 
+int \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a7bf98c8e67d3934c8aadd74cafaa0ce9}{\+\_\+freq\+\_\+chars}} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a344480325802aaafedb1536186b51e1d}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a344480325802aaafedb1536186b51e1d} 
+ None pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a23a7e11d83c6598247d1089680bfa47e}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!feed@{feed}}
+\index{feed@{feed}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{feed()}{feed()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a23a7e11d83c6598247d1089680bfa47e} 
+ None pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+feed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Union\+[bytes, bytearray]\+}]{char}{, }\item[{int}]{char\+\_\+len}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}feed a character with known length\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a391fbc2bdbcb12e22469c73eb2520d77}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!get\_confidence@{get\_confidence}}
+\index{get\_confidence@{get\_confidence}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{get\_confidence()}{get\_confidence()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a391fbc2bdbcb12e22469c73eb2520d77} 
+ float pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+get\+\_\+confidence (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return confidence based on existing data\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_ada5a9e31eb7899c6e436f89cacddd0ab}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!get\_order@{get\_order}}
+\index{get\_order@{get\_order}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{get\_order()}{get\_order()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_ada5a9e31eb7899c6e436f89cacddd0ab} 
+ int pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+get\+\_\+order (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Union\+[bytes, bytearray]\+}]{\+\_\+}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_big5_distribution_analysis_a3df57bb4cc01089eb9b0a30333b5989f}{pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Big5\+Distribution\+Analysis}}, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_e_u_c_j_p_distribution_analysis_a173367ee1b36c050fc6fba1302b8c227}{pip.\+\_\+vendor.\+chardet.\+chardistribution.\+EUCJPDistribution\+Analysis}}, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_e_u_c_k_r_distribution_analysis_a2d2e2d2864b24cb0c4ee541b03435bae}{pip.\+\_\+vendor.\+chardet.\+chardistribution.\+EUCKRDistribution\+Analysis}}, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_e_u_c_t_w_distribution_analysis_a5297dbf3aa99dcbbdfbd8a93543802cf}{pip.\+\_\+vendor.\+chardet.\+chardistribution.\+EUCTWDistribution\+Analysis}}, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_g_b2312_distribution_analysis_a01adf7ffd1f75717eac410ea6098c292}{pip.\+\_\+vendor.\+chardet.\+chardistribution.\+GB2312\+Distribution\+Analysis}}, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_j_o_h_a_b_distribution_analysis_a900ea423500b7ba612545df5923b8c26}{pip.\+\_\+vendor.\+chardet.\+chardistribution.\+JOHABDistribution\+Analysis}}, and \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_s_j_i_s_distribution_analysis_ac6873fb1a918f6aa4682ccc918e21356}{pip.\+\_\+vendor.\+chardet.\+chardistribution.\+SJISDistribution\+Analysis}}.
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a98f763c18ae018527ff7a8238c093de1}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!got\_enough\_data@{got\_enough\_data}}
+\index{got\_enough\_data@{got\_enough\_data}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{got\_enough\_data()}{got\_enough\_data()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a98f763c18ae018527ff7a8238c093de1} 
+ bool pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+got\+\_\+enough\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a647d9187111a81f2e160511790c19450}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!reset@{reset}}
+\index{reset@{reset}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a647d9187111a81f2e160511790c19450} 
+ None pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+reset (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}reset analyser, clear any state\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a8a19b1b1eb2fb37a4152dd54d044216c}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!\_char\_to\_freq\_order@{\_char\_to\_freq\_order}}
+\index{\_char\_to\_freq\_order@{\_char\_to\_freq\_order}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{\_char\_to\_freq\_order}{\_char\_to\_freq\_order}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a8a19b1b1eb2fb37a4152dd54d044216c} 
+Tuple\+[int, ...]\+ pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+\_\+char\+\_\+to\+\_\+freq\+\_\+order = tuple()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a3cb42f43adcab723d156f2bf06d8d52a}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!\_done@{\_done}}
+\index{\_done@{\_done}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{\_done}{\_done}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a3cb42f43adcab723d156f2bf06d8d52a} 
+bool pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+\_\+done = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a7bf98c8e67d3934c8aadd74cafaa0ce9}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!\_freq\_chars@{\_freq\_chars}}
+\index{\_freq\_chars@{\_freq\_chars}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{\_freq\_chars}{\_freq\_chars}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a7bf98c8e67d3934c8aadd74cafaa0ce9} 
+int pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+\_\+freq\+\_\+chars = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_af814f078a0bfe5e4ddb1d4d71b2a165f}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!\_table\_size@{\_table\_size}}
+\index{\_table\_size@{\_table\_size}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{\_table\_size}{\_table\_size}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_af814f078a0bfe5e4ddb1d4d71b2a165f} 
+int pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+\_\+table\+\_\+size = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a1304b31ef0a7af87f06eda33ebd5cece}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!\_total\_chars@{\_total\_chars}}
+\index{\_total\_chars@{\_total\_chars}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{\_total\_chars}{\_total\_chars}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a1304b31ef0a7af87f06eda33ebd5cece} 
+int pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+\_\+total\+\_\+chars = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a1efd2d21f7f0282b25223beccd70d0de}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!ENOUGH\_DATA\_THRESHOLD@{ENOUGH\_DATA\_THRESHOLD}}
+\index{ENOUGH\_DATA\_THRESHOLD@{ENOUGH\_DATA\_THRESHOLD}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{ENOUGH\_DATA\_THRESHOLD}{ENOUGH\_DATA\_THRESHOLD}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a1efd2d21f7f0282b25223beccd70d0de} 
+int pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+ENOUGH\+\_\+\+DATA\+\_\+\+THRESHOLD = 1024\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a56a0c493022b1e65daf762ffb270cdf6}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!MINIMUM\_DATA\_THRESHOLD@{MINIMUM\_DATA\_THRESHOLD}}
+\index{MINIMUM\_DATA\_THRESHOLD@{MINIMUM\_DATA\_THRESHOLD}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{MINIMUM\_DATA\_THRESHOLD}{MINIMUM\_DATA\_THRESHOLD}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a56a0c493022b1e65daf762ffb270cdf6} 
+int pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+MINIMUM\+\_\+\+DATA\+\_\+\+THRESHOLD = 3\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a980d925e59bf2d7c534905e75c11fca1}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!SURE\_NO@{SURE\_NO}}
+\index{SURE\_NO@{SURE\_NO}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{SURE\_NO}{SURE\_NO}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a980d925e59bf2d7c534905e75c11fca1} 
+float pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+SURE\+\_\+\+NO = 0.\+01\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a8cf7001cbe8b4d174ce5577d05f009d5}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!SURE\_YES@{SURE\_YES}}
+\index{SURE\_YES@{SURE\_YES}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{SURE\_YES}{SURE\_YES}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_a8cf7001cbe8b4d174ce5577d05f009d5} 
+float pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+SURE\+\_\+\+YES = 0.\+99\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_adde5c3fe8bdb400bf7b8cc35c2edebfe}\index{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}!typical\_distribution\_ratio@{typical\_distribution\_ratio}}
+\index{typical\_distribution\_ratio@{typical\_distribution\_ratio}!pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis@{pip.\_vendor.chardet.chardistribution.CharDistributionAnalysis}}
+\doxysubsubsection{\texorpdfstring{typical\_distribution\_ratio}{typical\_distribution\_ratio}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1chardistribution_1_1_char_distribution_analysis_adde5c3fe8bdb400bf7b8cc35c2edebfe} 
+float pip.\+\_\+vendor.\+chardet.\+chardistribution.\+Char\+Distribution\+Analysis.\+typical\+\_\+distribution\+\_\+ratio = 0.\+0}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+chardet/\+\doxymbox{\hyperlink{chardistribution_8py}{chardistribution.\+py}}\end{DoxyCompactItemize}

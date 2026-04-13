@@ -1,0 +1,186 @@
+\doxysection{reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject Class Reference}
+\hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object}{}\label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+Inheritance diagram for reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_aded636f28c0302e21843bd4df51ce73c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a1bfb201dea620a4b32c433b368eedb80}{name}}, source=None, \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a93f534990dca77568aac9230c0768d83}{mask}}=None)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a187be8b8d5c96044d291f73f4affa48f}{load\+Image\+From\+A85}} (self, source)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a83551fcb68be8987f4b0a3812e07562f}{load\+Image\+From\+JPEG}} (self, image\+File)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a0ac591a2612c84e20575aff41406e269}{load\+Image\+From\+Raw}} (self, source)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a0abc5960caa446bdf4d8a7e567d2a8b0}{load\+Image\+From\+SRC}} (self, im)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a8d4926a0fde250058e181c8899b25c0f}{format}} (self, document)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a1bfb201dea620a4b32c433b368eedb80}{name}} = name
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a64c87383ce418082c71ebc4c12d901c6}{width}} = 24
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a2a74980a0812b2e6aec808decac0ca95}{height}} = 23
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a65d1a80406da0f3f78a00bf6580bd0ac}{bits\+Per\+Component}} = 1
+\item 
+str \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_af5fb85826104e72d93fddb5db3a08b23}{color\+Space}} = \textquotesingle{}Device\+Gray\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a2bdd31dbfea70cfafb2d51645fe251d5}{stream\+Content}}
+\item 
+str \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a93f534990dca77568aac9230c0768d83}{mask}} = mask
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a044d9dbcb6fdf7e75bdee9bc0ad433a6}{\+\_\+check\+Transparency}} (self, im)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a0e4a30d53e4897e357bc31053eb68a61}{\+\_\+filters}} = rl\+\_\+config.\+use\+A85 and (\textquotesingle{}ASCII85\+Decode\textquotesingle{},) or ()
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a18a11991b505b731312e5e9f4a240997}{\+\_\+dotrans}} = 1
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a2dcff0106d0285f4cb3a3af68e0085e0}{\+\_\+smask}} = \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object}{PDFImage\+XObject}}(\+\_\+digester(im.\+\_\+data\+A.\+get\+RGBData()),im.\+\_\+dataA,\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a93f534990dca77568aac9230c0768d83}{mask}}=None)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_aded636f28c0302e21843bd4df51ce73c}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_aded636f28c0302e21843bd4df51ce73c} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{source}{ = {\ttfamily None}, }\item[{}]{mask}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a044d9dbcb6fdf7e75bdee9bc0ad433a6}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!\_checkTransparency@{\_checkTransparency}}
+\index{\_checkTransparency@{\_checkTransparency}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{\_checkTransparency()}{\_checkTransparency()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a044d9dbcb6fdf7e75bdee9bc0ad433a6} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+\_\+check\+Transparency (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{im}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a8d4926a0fde250058e181c8899b25c0f}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!format@{format}}
+\index{format@{format}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a8d4926a0fde250058e181c8899b25c0f} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+format (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{document}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a187be8b8d5c96044d291f73f4affa48f}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!loadImageFromA85@{loadImageFromA85}}
+\index{loadImageFromA85@{loadImageFromA85}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{loadImageFromA85()}{loadImageFromA85()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a187be8b8d5c96044d291f73f4affa48f} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+load\+Image\+From\+A85 (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{source}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a83551fcb68be8987f4b0a3812e07562f}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!loadImageFromJPEG@{loadImageFromJPEG}}
+\index{loadImageFromJPEG@{loadImageFromJPEG}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{loadImageFromJPEG()}{loadImageFromJPEG()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a83551fcb68be8987f4b0a3812e07562f} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+load\+Image\+From\+JPEG (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{image\+File}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a0ac591a2612c84e20575aff41406e269}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!loadImageFromRaw@{loadImageFromRaw}}
+\index{loadImageFromRaw@{loadImageFromRaw}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{loadImageFromRaw()}{loadImageFromRaw()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a0ac591a2612c84e20575aff41406e269} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+load\+Image\+From\+Raw (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{source}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a0abc5960caa446bdf4d8a7e567d2a8b0}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!loadImageFromSRC@{loadImageFromSRC}}
+\index{loadImageFromSRC@{loadImageFromSRC}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{loadImageFromSRC()}{loadImageFromSRC()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a0abc5960caa446bdf4d8a7e567d2a8b0} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+load\+Image\+From\+SRC (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{im}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a18a11991b505b731312e5e9f4a240997}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!\_dotrans@{\_dotrans}}
+\index{\_dotrans@{\_dotrans}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{\_dotrans}{\_dotrans}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a18a11991b505b731312e5e9f4a240997} 
+int reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+\_\+dotrans = 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a0e4a30d53e4897e357bc31053eb68a61}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!\_filters@{\_filters}}
+\index{\_filters@{\_filters}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{\_filters}{\_filters}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a0e4a30d53e4897e357bc31053eb68a61} 
+str reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+\_\+filters = rl\+\_\+config.\+use\+A85 and (\textquotesingle{}ASCII85\+Decode\textquotesingle{},) or ()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a2dcff0106d0285f4cb3a3af68e0085e0}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!\_smask@{\_smask}}
+\index{\_smask@{\_smask}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{\_smask}{\_smask}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a2dcff0106d0285f4cb3a3af68e0085e0} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+\_\+smask = \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object}{PDFImage\+XObject}}(\+\_\+digester(im.\+\_\+data\+A.\+get\+RGBData()),im.\+\_\+dataA,\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a93f534990dca77568aac9230c0768d83}{mask}}=None)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a65d1a80406da0f3f78a00bf6580bd0ac}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!bitsPerComponent@{bitsPerComponent}}
+\index{bitsPerComponent@{bitsPerComponent}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{bitsPerComponent}{bitsPerComponent}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a65d1a80406da0f3f78a00bf6580bd0ac} 
+int reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+bits\+Per\+Component = 1}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_af5fb85826104e72d93fddb5db3a08b23}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!colorSpace@{colorSpace}}
+\index{colorSpace@{colorSpace}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{colorSpace}{colorSpace}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_af5fb85826104e72d93fddb5db3a08b23} 
+str reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+color\+Space = \textquotesingle{}Device\+Gray\textquotesingle{}}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a2a74980a0812b2e6aec808decac0ca95}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!height@{height}}
+\index{height@{height}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a2a74980a0812b2e6aec808decac0ca95} 
+int reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+height = 23}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a93f534990dca77568aac9230c0768d83}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!mask@{mask}}
+\index{mask@{mask}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{mask}{mask}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a93f534990dca77568aac9230c0768d83} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+mask = mask}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a1bfb201dea620a4b32c433b368eedb80}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!name@{name}}
+\index{name@{name}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a1bfb201dea620a4b32c433b368eedb80} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+name = name}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a2bdd31dbfea70cfafb2d51645fe251d5}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!streamContent@{streamContent}}
+\index{streamContent@{streamContent}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{streamContent}{streamContent}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a2bdd31dbfea70cfafb2d51645fe251d5} 
+str reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+stream\+Content}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \textcolor{stringliteral}{"{}"{}"{}}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ 003B00\ 002700\ 002480\ 0E4940\ 114920\ 14B220\ 3CB650}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ 75FE88\ 17FF8C\ 175F14\ 1C07E2\ 3803C4\ 703182\ F8EDFC}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ B2BBC2\ BB6F84\ 31BFC2\ 18EA3C\ 0E3E00\ 07FC00\ 03F800}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ 1E1800\ 1FF800>}}
+\DoxyCodeLine{\textcolor{stringliteral}{\ \ \ \ \ \ \ \ \ \ \ \ "{}"{}"{}}}
+
+\end{DoxyCode}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a64c87383ce418082c71ebc4c12d901c6}\index{reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}!width@{width}}
+\index{width@{width}!reportlab.pdfbase.pdfdoc.PDFImageXObject@{reportlab.pdfbase.pdfdoc.PDFImageXObject}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_image_x_object_a64c87383ce418082c71ebc4c12d901c6} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFImage\+XObject.\+width = 24}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+pdfbase/\+\doxymbox{\hyperlink{pdfdoc_8py}{pdfdoc.\+py}}\end{DoxyCompactItemize}

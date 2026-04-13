@@ -1,0 +1,123 @@
+\doxysection{PIL.\+Image\+Font.\+Image\+Font Class Reference}
+\hypertarget{class_p_i_l_1_1_image_font_1_1_image_font}{}\label{class_p_i_l_1_1_image_font_1_1_image_font}\index{PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Image.\+core.\+Imaging\+Core \doxymbox{\hyperlink{class_p_i_l_1_1_image_font_1_1_image_font_adfa409fbf451841503839ed8b124e597}{getmask}} (self, str\texorpdfstring{$\vert$}{|}bytes text, str mode="{}"{}, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+tuple\+[int, int, int, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_font_1_1_image_font_afba74deb535850b6919c3ea72bdc3970}{getbbox}} (self, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}bytearray text, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_font_1_1_image_font_a9e4e6ed36663ffc1024f6398e48e810f}{getlength}} (self, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}bytearray text, \texorpdfstring{$\ast$}{*}Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_font_1_1_image_font_a98d1d26b27442a20e03d4365f5bf6e66}{file}} = fullname
+\item 
+list \doxymbox{\hyperlink{class_p_i_l_1_1_image_font_1_1_image_font_a0e35a743af407a2449d2d9e1f9c59f12}{info}} = \+[$\,$]\+
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_font_1_1_image_font_a5ed0f69eb8834c2fd158b4f43d822530}{font}} = Image.\+core.\+font(image.\+im, data)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_font_1_1_image_font_a31dc3cded1e5ab266abe412ef28e2804}{\+\_\+load\+\_\+pilfont}} (self, str filename)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_font_1_1_image_font_aa3d77d1c1d9e43adc19bacb01c6125df}{\+\_\+load\+\_\+pilfont\+\_\+data}} (self, IO\+[bytes]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_font_1_1_image_font_a98d1d26b27442a20e03d4365f5bf6e66}{file}}, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} image)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}PIL font wrapper\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_image_font_1_1_image_font_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_image_font_1_1_image_font_a31dc3cded1e5ab266abe412ef28e2804}\index{PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}!\_load\_pilfont@{\_load\_pilfont}}
+\index{\_load\_pilfont@{\_load\_pilfont}!PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}}
+\doxysubsubsection{\texorpdfstring{\_load\_pilfont()}{\_load\_pilfont()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_font_1_1_image_font_a31dc3cded1e5ab266abe412ef28e2804} 
+ None PIL.\+Image\+Font.\+Image\+Font.\+\_\+load\+\_\+pilfont (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_font_1_1_image_font_aa3d77d1c1d9e43adc19bacb01c6125df}\index{PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}!\_load\_pilfont\_data@{\_load\_pilfont\_data}}
+\index{\_load\_pilfont\_data@{\_load\_pilfont\_data}!PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}}
+\doxysubsubsection{\texorpdfstring{\_load\_pilfont\_data()}{\_load\_pilfont\_data()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_font_1_1_image_font_aa3d77d1c1d9e43adc19bacb01c6125df} 
+ None PIL.\+Image\+Font.\+Image\+Font.\+\_\+load\+\_\+pilfont\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IO\+[bytes]\+}]{file}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}}]{image}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_font_1_1_image_font_afba74deb535850b6919c3ea72bdc3970}\index{PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}!getbbox@{getbbox}}
+\index{getbbox@{getbbox}!PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}}
+\doxysubsubsection{\texorpdfstring{getbbox()}{getbbox()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_font_1_1_image_font_afba74deb535850b6919c3ea72bdc3970} 
+ tuple\+[int, int, int, int]\+ PIL.\+Image\+Font.\+Image\+Font.\+getbbox (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} bytes \texorpdfstring{$\vert$}{|} bytearray}]{text}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns bounding box (in pixels) of given text.
+
+.. versionadded:: 9.2.0
+
+:param text: Text to render.
+
+:return: ``(left, top, right, bottom)`` bounding box
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_font_1_1_image_font_a9e4e6ed36663ffc1024f6398e48e810f}\index{PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}!getlength@{getlength}}
+\index{getlength@{getlength}!PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}}
+\doxysubsubsection{\texorpdfstring{getlength()}{getlength()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_font_1_1_image_font_a9e4e6ed36663ffc1024f6398e48e810f} 
+ int PIL.\+Image\+Font.\+Image\+Font.\+getlength (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} bytes \texorpdfstring{$\vert$}{|} bytearray}]{text}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns length (in pixels) of given text.
+This is the amount by which following text should be offset.
+
+.. versionadded:: 9.2.0
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_font_1_1_image_font_adfa409fbf451841503839ed8b124e597}\index{PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}!getmask@{getmask}}
+\index{getmask@{getmask}!PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}}
+\doxysubsubsection{\texorpdfstring{getmask()}{getmask()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_font_1_1_image_font_adfa409fbf451841503839ed8b124e597} 
+ Image.\+core.\+Imaging\+Core PIL.\+Image\+Font.\+Image\+Font.\+getmask (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} bytes}]{text}{, }\item[{str }]{mode}{ = {\ttfamily "{}"{}}, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any     }]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create a bitmap for the text.
+
+If the font uses antialiasing, the bitmap should have mode ``L`` and use a
+maximum value of 255. Otherwise, it should have mode ``1``.
+
+:param text: Text to render.
+:param mode: Used by some graphics drivers to indicate what mode the
+             driver prefers; if empty, the renderer may return either
+             mode. Note that the mode is always a string, to simplify
+             C-level implementations.
+
+             .. versionadded:: 1.1.5
+
+:return: An internal PIL storage memory instance as defined by the
+         :py:mod:`PIL.Image.core` interface module.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_image_font_1_1_image_font_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_image_font_1_1_image_font_a98d1d26b27442a20e03d4365f5bf6e66}\index{PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}!file@{file}}
+\index{file@{file}!PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}}
+\doxysubsubsection{\texorpdfstring{file}{file}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_font_1_1_image_font_a98d1d26b27442a20e03d4365f5bf6e66} 
+PIL.\+Image\+Font.\+Image\+Font.\+file = fullname}
+
+\Hypertarget{class_p_i_l_1_1_image_font_1_1_image_font_a5ed0f69eb8834c2fd158b4f43d822530}\index{PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}!font@{font}}
+\index{font@{font}!PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_font_1_1_image_font_a5ed0f69eb8834c2fd158b4f43d822530} 
+PIL.\+Image\+Font.\+Image\+Font.\+font = Image.\+core.\+font(image.\+im, data)}
+
+\Hypertarget{class_p_i_l_1_1_image_font_1_1_image_font_a0e35a743af407a2449d2d9e1f9c59f12}\index{PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}!info@{info}}
+\index{info@{info}!PIL.ImageFont.ImageFont@{PIL.ImageFont.ImageFont}}
+\doxysubsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_font_1_1_image_font_a0e35a743af407a2449d2d9e1f9c59f12} 
+list PIL.\+Image\+Font.\+Image\+Font.\+info = \+[$\,$]\+}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_font_8py}{Image\+Font.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,50 @@
+\doxysection{reportlab.\+lib.\+validators.\+Derived\+Value Class Reference}
+\hypertarget{classreportlab_1_1lib_1_1validators_1_1_derived_value}{}\label{classreportlab_1_1lib_1_1validators_1_1_derived_value}\index{reportlab.lib.validators.DerivedValue@{reportlab.lib.validators.DerivedValue}}
+Inheritance diagram for reportlab.\+lib.\+validators.\+Derived\+Value:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreportlab_1_1lib_1_1validators_1_1_derived_value}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1validators_1_1_derived_value_aab08bcb0d69bbf67d428615ebc8ed47e}{get\+Value}} (self, renderer, attr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This is used for magic values which work themselves out.
+An example would be an "inherit" property, so that one can have
+
+  drawing.chart.categoryAxis.labels.fontName = inherit
+
+and pick up the value from the top of the drawing.
+Validators will permit this provided that a value can be pulled
+in which satisfies it.  And the renderer will have special
+knowledge of these so they can evaluate themselves.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1lib_1_1validators_1_1_derived_value_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1validators_1_1_derived_value_aab08bcb0d69bbf67d428615ebc8ed47e}\index{reportlab.lib.validators.DerivedValue@{reportlab.lib.validators.DerivedValue}!getValue@{getValue}}
+\index{getValue@{getValue}!reportlab.lib.validators.DerivedValue@{reportlab.lib.validators.DerivedValue}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1validators_1_1_derived_value_aab08bcb0d69bbf67d428615ebc8ed47e} 
+reportlab.\+lib.\+validators.\+Derived\+Value.\+get\+Value (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{renderer}{, }\item[{}]{attr}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Override this.  The renderers will pass the renderer,
+and the attribute name.  Algorithms can then backtrack up
+through all the stuff the renderer provides, including
+a correct stack of parent nodes.\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{classreportlab_1_1lib_1_1validators_1_1_inherit_acac22604c5fa272c15e8b31f448da32c}{reportlab.\+lib.\+validators.\+Inherit}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+lib/\+\doxymbox{\hyperlink{validators_8py}{validators.\+py}}\end{DoxyCompactItemize}

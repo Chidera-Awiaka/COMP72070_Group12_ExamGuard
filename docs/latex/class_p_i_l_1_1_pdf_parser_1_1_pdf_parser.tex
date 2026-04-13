@@ -1,0 +1,866 @@
+\doxysection{PIL.\+Pdf\+Parser.\+Pdf\+Parser Class Reference}
+\hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser}{}\label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a8374368cac457cfe8a583c84fc454a75}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ab9551413e0825fd42feb1d4db625678c}{filename}}=None, IO\+[bytes]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af9b8a3dc7186c5b6d8e55ec12b11a2f2}{f}}=None, bytes\texorpdfstring{$\vert$}{|}bytearray\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a9415ec570537b797c62a91e93f08a099}{buf}}=None, int \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a063b01fc065f9fcefe733d286add5ddb}{start\+\_\+offset}}=0, str mode="{}rb"{})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser}{Pdf\+Parser}} \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac8f06f9c9eddd59ad4677c12313e369e}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af4019dc9475a3cb9a30df77163a5749c}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}object args)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a4e0fe8add1774c98198864aeb29203f3}{start\+\_\+writing}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_afe3be4d17efe5c11d0891a0870f00429}{close\+\_\+buf}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af7ea86dc4e45a911a9a605e406e9b9fd}{close}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ad9dc6d7a901474b6b14712712e49e183}{seek\+\_\+end}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a36576994f4836fa54f8cefb8f01963a0}{write\+\_\+header}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a3cb8599e9db80fb68f344c43d898763b}{write\+\_\+comment}} (self, str s)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a60510059f86ea15099bcc787ae062233}{write\+\_\+catalog}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af2d95b846dfe9a51c06af42ba3d716d5}{rewrite\+\_\+pages}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1689b33b79d8bbf1ff6db51aaab50c62}{write\+\_\+xref\+\_\+and\+\_\+trailer}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}}\texorpdfstring{$\vert$}{|}None new\+\_\+root\+\_\+ref=None)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac05120ff7d26d9dbd06b1ac39f95b39f}{write\+\_\+page}} (self, int\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}}\texorpdfstring{$\vert$}{|}None ref, \texorpdfstring{$\ast$}{*}Any objs, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any dict\+\_\+obj)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a4b3beba4600efe3efaff27400d9f9786}{write\+\_\+obj}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}}\texorpdfstring{$\vert$}{|}None ref, \texorpdfstring{$\ast$}{*}Any objs, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any dict\+\_\+obj)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a09261b4f59580f5d3c6255103f913d19}{del\+\_\+root}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a810d984d4d4007a1b8dd9eae97a2d0a5}{read\+\_\+pdf\+\_\+info}} (self)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_acea81c22cda826d78a45cb2c68f4080a}{next\+\_\+object\+\_\+id}} (self, int\texorpdfstring{$\vert$}{|}None offset=None)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_adb8c3433a5a26aa8ecd547d4ebc10a93}{read\+\_\+trailer}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1f991b9d2f564f61783097b6810cbdd8}{read\+\_\+prev\+\_\+trailer}} (self, int xref\+\_\+section\+\_\+offset)
+\item 
+dict\+[bytes, Any]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a91cfdbd0ec38bea2f41d7231c9caecf8}{interpret\+\_\+trailer}} (cls, bytes trailer\+\_\+data)
+\item 
+str\texorpdfstring{$\vert$}{|}bytes \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a2a5e5f01be610150721c7795b57ba0af}{interpret\+\_\+name}} (cls, bytes raw, bool as\+\_\+text=False)
+\item 
+tuple\+[Any, int\texorpdfstring{$\vert$}{|}None]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a4aeb28796abd0dedc67444a24aa9149e}{get\+\_\+value}} (cls, bytes\texorpdfstring{$\vert$}{|}bytearray\texorpdfstring{$\vert$}{|}mmap.\+mmap data, int offset, \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}}\texorpdfstring{$\vert$}{|}None expect\+\_\+indirect=None, int max\+\_\+nesting=-\/1)
+\item 
+tuple\+[bytes, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac6883f8656f6051416bb58b9a15b1486}{get\+\_\+literal\+\_\+string}} (cls, bytes\texorpdfstring{$\vert$}{|}bytearray\texorpdfstring{$\vert$}{|}mmap.\+mmap data, int offset)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1ac01d0aafbaac2875b56e6cb644c653}{read\+\_\+xref\+\_\+table}} (self, int xref\+\_\+section\+\_\+offset)
+\item 
+Any \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af2b804ee8bac369f5c6d42591791d4a1}{read\+\_\+indirect}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} ref, int max\+\_\+nesting=-\/1)
+\item 
+list\+[\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}}]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af24f5c57bb6aac43c2c00bf49375f042}{linearize\+\_\+page\+\_\+tree}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_dict}{Pdf\+Dict}}\texorpdfstring{$\vert$}{|}None node=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bytes\texorpdfstring{$\vert$}{|}mmap.\+mmap \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a8ce100cb51c3ea334a2cfcf13eab6d91}{get\+\_\+buf\+\_\+from\+\_\+file}} (IO\+[bytes]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af9b8a3dc7186c5b6d8e55ec12b11a2f2}{f}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ab9551413e0825fd42feb1d4db625678c}{filename}} = filename
+\item 
+bytes\texorpdfstring{$\vert$}{|}bytearray\texorpdfstring{$\vert$}{|}mmap.\+mmap\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a9415ec570537b797c62a91e93f08a099}{buf}} = buf
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af9b8a3dc7186c5b6d8e55ec12b11a2f2}{f}} = f
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a063b01fc065f9fcefe733d286add5ddb}{start\+\_\+offset}} = start\+\_\+offset
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a3c2574bc822b5fb855f48d7dc86aa009}{should\+\_\+close\+\_\+buf}} = False
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a46918233622590d451e3e3cdd13bdc92}{should\+\_\+close\+\_\+file}} = False
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a434cccd3dce5fe4c8796e7376ce837c7}{cached\+\_\+objects}} = \{\}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a0cbb34ddaef5e493bd24f4cd759f96b3}{root\+\_\+ref}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af4bca749867c6f851eeb9fcaff9c0d9d}{info\+\_\+ref}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a9eb6e01e721a2b4d256a5f2b847f88b1}{pages\+\_\+ref}}
+\item 
+int\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af46cc9a9a9aae847d777c9c4b0d365ec}{last\+\_\+xref\+\_\+section\+\_\+offset}}
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_abfb2391581209f2a9f1415c6dea494a0}{file\+\_\+size\+\_\+total}} = 0
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a0bc69fde85b1d43c6d222c85db0d92db}{root}} = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_dict}{Pdf\+Dict}}()
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1e80960bd14edc70445ccbc2fcc47546}{info}} = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_dict}{Pdf\+Dict}}()
+\item 
+Any \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a98bc661c626f0704ab67a1e28c2534d3}{page\+\_\+tree\+\_\+root}} = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_dict}{Pdf\+Dict}}()
+\item 
+list \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a601354bdae4626b9113d8f5e6e2e285e}{pages}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af84265b7617ae1b0af805c2b347a79c8}{orig\+\_\+pages}} = \+[$\,$]\+
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac4bd2d1c8fa7fb36067a92683570f951}{trailer\+\_\+dict}} = \{\}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_aa0aa870752acf84d4f655235c842d89a}{xref\+\_\+table}} = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_xref_table}{Xref\+Table}}()
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_addb9cdd8915d95781ef355cca0b8411a}{file\+\_\+size\+\_\+this}} = self.\+file\+\_\+size\+\_\+total -\/ self.\+start\+\_\+offset
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a63b8245e6ece9c2b54971a667ccb10cd}{delimiter}} = rb"{}\+[$\,$]\+\+[()$<$$>$\{\}/\+\%]\+"{}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a640174816cede07abf90bd861f21689e}{delimiter\+\_\+or\+\_\+ws}} = rb"{}\+[$\,$]\+\+[()$<$$>$\{\}/\+\%\textbackslash{}000\textbackslash{}011\textbackslash{}012\textbackslash{}014\textbackslash{}015\textbackslash{}040]\+"{}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a074d6fd8391e7d9631479b085226d72b}{whitespace}} = rb"{}\+[\textbackslash{}000\textbackslash{}011\textbackslash{}012\textbackslash{}014\textbackslash{}015\textbackslash{}040]\+"{}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a81e365ae6864d09ea8029d583b81e5b1}{whitespace\+\_\+or\+\_\+hex}} = rb"{}\+[\textbackslash{}000\textbackslash{}011\textbackslash{}012\textbackslash{}014\textbackslash{}015\textbackslash{}0400-\/9a-\/fA-\/F]\+"{}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a074d6fd8391e7d9631479b085226d72b}{whitespace}} + b"{}\texorpdfstring{$\ast$}{*}"{}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a10513b0194bfcbf6a1cd4d1254f4beef}{whitespace\+\_\+mandatory}} = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a074d6fd8391e7d9631479b085226d72b}{whitespace}} + b"{}+"{}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a76250a8ca73c61f4c4fed50e5af0c464}{whitespace\+\_\+optional\+\_\+no\+\_\+nl}} = rb"{}\+[\textbackslash{}000\textbackslash{}011\textbackslash{}014\textbackslash{}040]\+\texorpdfstring{$\ast$}{*}"{}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a5142c46f292ebb280a9a898dbe8140d9}{newline\+\_\+only}} = rb"{}\+[\textbackslash{}r\textbackslash{}n]\++"{}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a373eb0b555bf2a2a8c2a7e01644b53c6}{newline}} = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a76250a8ca73c61f4c4fed50e5af0c464}{whitespace\+\_\+optional\+\_\+no\+\_\+nl}} + \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a5142c46f292ebb280a9a898dbe8140d9}{newline\+\_\+only}} + \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a76250a8ca73c61f4c4fed50e5af0c464}{whitespace\+\_\+optional\+\_\+no\+\_\+nl}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a4ce25ef4f6a86985e1d6ae3b82814342}{re\+\_\+trailer\+\_\+end}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a6825efc3b90beacdf94cc968c7f39556}{re\+\_\+trailer\+\_\+prev}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a7838bd2b40c26c8ccf0ff2f580886a4d}{re\+\_\+whitespace\+\_\+optional}} = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_adc3c08ad9a5ef615e60049e84055d8ac}{re\+\_\+name}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ad1a10ff36de5e20915fc9ceccbb1a79b}{re\+\_\+dict\+\_\+start}} = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}$<$$<$"{})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1e77064229cf2d08bb52c157cc8fde30}{re\+\_\+dict\+\_\+end}} = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}$>$$>$"{} + whitespace\+\_\+optional)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac74e30206a2bf6c3f280aa91b3db4bac}{re\+\_\+hashes\+\_\+in\+\_\+name}} = re.\+compile(rb"{}(\+[\texorpdfstring{$^\wedge$}{\string^}\+\#]\+\texorpdfstring{$\ast$}{*})(\+\#(\+[0-\/9a-\/fA-\/F]\+\{2\}))?"{})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_aeb5aa8a9e23b758960912193ce4c61fd}{re\+\_\+null}} = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}null(?="{} + delimiter\+\_\+or\+\_\+ws + rb"{})"{})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a483165931f9dff612dc545797ff2b343}{re\+\_\+true}} = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}true(?="{} + delimiter\+\_\+or\+\_\+ws + rb"{})"{})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1ba23f526a181977d96cce7b890fe521}{re\+\_\+false}} = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}false(?="{} + delimiter\+\_\+or\+\_\+ws + rb"{})"{})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a77ba017700ff08cf4a053e0d236db72f}{re\+\_\+int}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a0c8aaa6e32fa89189134a26add8cad36}{re\+\_\+real}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a86cc114684e47cedec91b350d0b32ffc}{re\+\_\+array\+\_\+start}} = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}\textbackslash{}\+["{})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1ab6ab21730ed4343498b0e00fb39ac6}{re\+\_\+array\+\_\+end}} = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}]\+"{})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1770b8c03a392cbaa142a1212d5602c9}{re\+\_\+string\+\_\+hex}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af652d4b79d0ca177fa7f0a435fd0698f}{re\+\_\+string\+\_\+lit}} = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}\textbackslash{}("{})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac98c0ae88ccd152a2970249700c359bd}{re\+\_\+indirect\+\_\+reference}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a9be7bb7304de88e8aefa284bf581ae89}{re\+\_\+indirect\+\_\+def\+\_\+start}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a8c8896788688f69647115b8e1a144360}{re\+\_\+indirect\+\_\+def\+\_\+end}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a6c84d294f7992e0432d8cd66c941862e}{re\+\_\+comment}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a3931dd53d323ea9f0153cfdcb1b70deb}{re\+\_\+stream\+\_\+start}} = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}stream\textbackslash{}r?\textbackslash{}n"{})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a328c32546684955699c4db9e71ffa716}{re\+\_\+stream\+\_\+end}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a9d6315b655723f055b7b020ca0acf4c5}{re\+\_\+lit\+\_\+str\+\_\+token}}
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac2ce08dd2274ac2d0c7e919634714308}{escaped\+\_\+chars}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac09e7961e25aeccc3a0334d35d980fe5}{re\+\_\+xref\+\_\+section\+\_\+start}} = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}xref"{} + \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a373eb0b555bf2a2a8c2a7e01644b53c6}{newline}})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a65771bd325458de8e1bf7f51bd2d24ff}{re\+\_\+xref\+\_\+subsection\+\_\+start}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_adbcfcf8ed2cb007224c4f34ed14de955}{re\+\_\+xref\+\_\+entry}} = re.\+compile(rb"{}(\+[0-\/9]\+\{10\}) (\+[0-\/9]\+\{5\}) (\+[fn]\+)( \textbackslash{}r\texorpdfstring{$\vert$}{|} \textbackslash{}n\texorpdfstring{$\vert$}{|}\textbackslash{}r\textbackslash{}n)"{})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Based on
+https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/PDF32000_2008.pdf
+Supports PDF up to 1.4
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a8374368cac457cfe8a583c84fc454a75}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a8374368cac457cfe8a583c84fc454a75} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{filename}{ = {\ttfamily None}, }\item[{IO\+[bytes]\+ \texorpdfstring{$\vert$}{|} None }]{f}{ = {\ttfamily None}, }\item[{bytes \texorpdfstring{$\vert$}{|} bytearray \texorpdfstring{$\vert$}{|} None }]{buf}{ = {\ttfamily None}, }\item[{int }]{start\+\_\+offset}{ = {\ttfamily 0}, }\item[{str }]{mode}{ = {\ttfamily "{}rb"{}}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac8f06f9c9eddd59ad4677c12313e369e}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac8f06f9c9eddd59ad4677c12313e369e} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser}{Pdf\+Parser}} PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af4019dc9475a3cb9a30df77163a5749c}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af4019dc9475a3cb9a30df77163a5749c} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}object}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af7ea86dc4e45a911a9a605e406e9b9fd}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!close@{close}}
+\index{close@{close}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af7ea86dc4e45a911a9a605e406e9b9fd} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_afe3be4d17efe5c11d0891a0870f00429}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!close\_buf@{close\_buf}}
+\index{close\_buf@{close\_buf}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{close\_buf()}{close\_buf()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_afe3be4d17efe5c11d0891a0870f00429} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+close\+\_\+buf (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a09261b4f59580f5d3c6255103f913d19}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!del\_root@{del\_root}}
+\index{del\_root@{del\_root}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{del\_root()}{del\_root()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a09261b4f59580f5d3c6255103f913d19} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+del\+\_\+root (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a8ce100cb51c3ea334a2cfcf13eab6d91}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!get\_buf\_from\_file@{get\_buf\_from\_file}}
+\index{get\_buf\_from\_file@{get\_buf\_from\_file}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{get\_buf\_from\_file()}{get\_buf\_from\_file()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a8ce100cb51c3ea334a2cfcf13eab6d91} 
+ bytes \texorpdfstring{$\vert$}{|} mmap.\+mmap PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+get\+\_\+buf\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{IO\+[bytes]\+}]{f}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac6883f8656f6051416bb58b9a15b1486}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!get\_literal\_string@{get\_literal\_string}}
+\index{get\_literal\_string@{get\_literal\_string}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{get\_literal\_string()}{get\_literal\_string()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac6883f8656f6051416bb58b9a15b1486} 
+ tuple\+[bytes, int]\+ PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+get\+\_\+literal\+\_\+string (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{bytes \texorpdfstring{$\vert$}{|} bytearray \texorpdfstring{$\vert$}{|} mmap.\+mmap}]{data}{, }\item[{int     }]{offset}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a4aeb28796abd0dedc67444a24aa9149e}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!get\_value@{get\_value}}
+\index{get\_value@{get\_value}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{get\_value()}{get\_value()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a4aeb28796abd0dedc67444a24aa9149e} 
+ tuple\+[Any, int \texorpdfstring{$\vert$}{|} None]\+ PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+get\+\_\+value (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{bytes \texorpdfstring{$\vert$}{|} bytearray \texorpdfstring{$\vert$}{|} mmap.\+mmap}]{data}{, }\item[{int}]{offset}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} \texorpdfstring{$\vert$}{|} None }]{expect\+\_\+indirect}{ = {\ttfamily None}, }\item[{int }]{max\+\_\+nesting}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a2a5e5f01be610150721c7795b57ba0af}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!interpret\_name@{interpret\_name}}
+\index{interpret\_name@{interpret\_name}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{interpret\_name()}{interpret\_name()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a2a5e5f01be610150721c7795b57ba0af} 
+ str \texorpdfstring{$\vert$}{|} bytes PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+interpret\+\_\+name (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{bytes}]{raw}{, }\item[{bool }]{as\+\_\+text}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a91cfdbd0ec38bea2f41d7231c9caecf8}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!interpret\_trailer@{interpret\_trailer}}
+\index{interpret\_trailer@{interpret\_trailer}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{interpret\_trailer()}{interpret\_trailer()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a91cfdbd0ec38bea2f41d7231c9caecf8} 
+ dict\+[bytes, Any]\+ PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+interpret\+\_\+trailer (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{bytes}]{trailer\+\_\+data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af24f5c57bb6aac43c2c00bf49375f042}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!linearize\_page\_tree@{linearize\_page\_tree}}
+\index{linearize\_page\_tree@{linearize\_page\_tree}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{linearize\_page\_tree()}{linearize\_page\_tree()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af24f5c57bb6aac43c2c00bf49375f042} 
+ list\+[\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}}]\+ PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+linearize\+\_\+page\+\_\+tree (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_dict}{Pdf\+Dict}} \texorpdfstring{$\vert$}{|} None }]{node}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_acea81c22cda826d78a45cb2c68f4080a}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!next\_object\_id@{next\_object\_id}}
+\index{next\_object\_id@{next\_object\_id}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{next\_object\_id()}{next\_object\_id()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_acea81c22cda826d78a45cb2c68f4080a} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+next\+\_\+object\+\_\+id (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{offset}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af2b804ee8bac369f5c6d42591791d4a1}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!read\_indirect@{read\_indirect}}
+\index{read\_indirect@{read\_indirect}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{read\_indirect()}{read\_indirect()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af2b804ee8bac369f5c6d42591791d4a1} 
+ Any PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+read\+\_\+indirect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}}}]{ref}{, }\item[{int }]{max\+\_\+nesting}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a810d984d4d4007a1b8dd9eae97a2d0a5}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!read\_pdf\_info@{read\_pdf\_info}}
+\index{read\_pdf\_info@{read\_pdf\_info}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{read\_pdf\_info()}{read\_pdf\_info()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a810d984d4d4007a1b8dd9eae97a2d0a5} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+read\+\_\+pdf\+\_\+info (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1f991b9d2f564f61783097b6810cbdd8}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!read\_prev\_trailer@{read\_prev\_trailer}}
+\index{read\_prev\_trailer@{read\_prev\_trailer}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{read\_prev\_trailer()}{read\_prev\_trailer()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1f991b9d2f564f61783097b6810cbdd8} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+read\+\_\+prev\+\_\+trailer (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{xref\+\_\+section\+\_\+offset}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_adb8c3433a5a26aa8ecd547d4ebc10a93}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!read\_trailer@{read\_trailer}}
+\index{read\_trailer@{read\_trailer}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{read\_trailer()}{read\_trailer()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_adb8c3433a5a26aa8ecd547d4ebc10a93} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+read\+\_\+trailer (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1ac01d0aafbaac2875b56e6cb644c653}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!read\_xref\_table@{read\_xref\_table}}
+\index{read\_xref\_table@{read\_xref\_table}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{read\_xref\_table()}{read\_xref\_table()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1ac01d0aafbaac2875b56e6cb644c653} 
+ int PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+read\+\_\+xref\+\_\+table (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{xref\+\_\+section\+\_\+offset}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af2d95b846dfe9a51c06af42ba3d716d5}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!rewrite\_pages@{rewrite\_pages}}
+\index{rewrite\_pages@{rewrite\_pages}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{rewrite\_pages()}{rewrite\_pages()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af2d95b846dfe9a51c06af42ba3d716d5} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+rewrite\+\_\+pages (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ad9dc6d7a901474b6b14712712e49e183}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!seek\_end@{seek\_end}}
+\index{seek\_end@{seek\_end}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{seek\_end()}{seek\_end()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ad9dc6d7a901474b6b14712712e49e183} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+seek\+\_\+end (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a4e0fe8add1774c98198864aeb29203f3}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!start\_writing@{start\_writing}}
+\index{start\_writing@{start\_writing}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{start\_writing()}{start\_writing()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a4e0fe8add1774c98198864aeb29203f3} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+start\+\_\+writing (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a60510059f86ea15099bcc787ae062233}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!write\_catalog@{write\_catalog}}
+\index{write\_catalog@{write\_catalog}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{write\_catalog()}{write\_catalog()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a60510059f86ea15099bcc787ae062233} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+write\+\_\+catalog (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a3cb8599e9db80fb68f344c43d898763b}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!write\_comment@{write\_comment}}
+\index{write\_comment@{write\_comment}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{write\_comment()}{write\_comment()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a3cb8599e9db80fb68f344c43d898763b} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+write\+\_\+comment (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{s}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a36576994f4836fa54f8cefb8f01963a0}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!write\_header@{write\_header}}
+\index{write\_header@{write\_header}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{write\_header()}{write\_header()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a36576994f4836fa54f8cefb8f01963a0} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+write\+\_\+header (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a4b3beba4600efe3efaff27400d9f9786}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!write\_obj@{write\_obj}}
+\index{write\_obj@{write\_obj}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{write\_obj()}{write\_obj()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a4b3beba4600efe3efaff27400d9f9786} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+write\+\_\+obj (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} \texorpdfstring{$\vert$}{|} None}]{ref}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{objs}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any     }]{dict\+\_\+obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac05120ff7d26d9dbd06b1ac39f95b39f}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!write\_page@{write\_page}}
+\index{write\_page@{write\_page}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{write\_page()}{write\_page()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac05120ff7d26d9dbd06b1ac39f95b39f} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+write\+\_\+page (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} \texorpdfstring{$\vert$}{|} None}]{ref}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{objs}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any     }]{dict\+\_\+obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1689b33b79d8bbf1ff6db51aaab50c62}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!write\_xref\_and\_trailer@{write\_xref\_and\_trailer}}
+\index{write\_xref\_and\_trailer@{write\_xref\_and\_trailer}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{write\_xref\_and\_trailer()}{write\_xref\_and\_trailer()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1689b33b79d8bbf1ff6db51aaab50c62} 
+ None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+write\+\_\+xref\+\_\+and\+\_\+trailer (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} \texorpdfstring{$\vert$}{|} None }]{new\+\_\+root\+\_\+ref}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a9415ec570537b797c62a91e93f08a099}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!buf@{buf}}
+\index{buf@{buf}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{buf}{buf}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a9415ec570537b797c62a91e93f08a099} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+buf = buf}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a434cccd3dce5fe4c8796e7376ce837c7}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!cached\_objects@{cached\_objects}}
+\index{cached\_objects@{cached\_objects}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{cached\_objects}{cached\_objects}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a434cccd3dce5fe4c8796e7376ce837c7} 
+dict PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+cached\+\_\+objects = \{\}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a63b8245e6ece9c2b54971a667ccb10cd}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!delimiter@{delimiter}}
+\index{delimiter@{delimiter}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{delimiter}{delimiter}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a63b8245e6ece9c2b54971a667ccb10cd} 
+str PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+delimiter = rb"{}\+[$\,$]\+\+[()$<$$>$\{\}/\+\%]\+"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a640174816cede07abf90bd861f21689e}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!delimiter\_or\_ws@{delimiter\_or\_ws}}
+\index{delimiter\_or\_ws@{delimiter\_or\_ws}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{delimiter\_or\_ws}{delimiter\_or\_ws}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a640174816cede07abf90bd861f21689e} 
+str PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+delimiter\+\_\+or\+\_\+ws = rb"{}\+[$\,$]\+\+[()$<$$>$\{\}/\+\%\textbackslash{}000\textbackslash{}011\textbackslash{}012\textbackslash{}014\textbackslash{}015\textbackslash{}040]\+"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac2ce08dd2274ac2d0c7e919634714308}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!escaped\_chars@{escaped\_chars}}
+\index{escaped\_chars@{escaped\_chars}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{escaped\_chars}{escaped\_chars}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac2ce08dd2274ac2d0c7e919634714308} 
+dict PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+escaped\+\_\+chars\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ \{}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ b\textcolor{stringliteral}{"{}n"{}}:\ b\textcolor{stringliteral}{"{}\(\backslash\)n"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ b\textcolor{stringliteral}{"{}r"{}}:\ b\textcolor{stringliteral}{"{}\(\backslash\)r"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ b\textcolor{stringliteral}{"{}t"{}}:\ b\textcolor{stringliteral}{"{}\(\backslash\)t"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ b\textcolor{stringliteral}{"{}b"{}}:\ b\textcolor{stringliteral}{"{}\(\backslash\)b"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ b\textcolor{stringliteral}{"{}f"{}}:\ b\textcolor{stringliteral}{"{}\(\backslash\)f"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ b\textcolor{stringliteral}{"{}("{}}:\ b\textcolor{stringliteral}{"{}("{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ b\textcolor{stringliteral}{"{})"{}}:\ b\textcolor{stringliteral}{"{})"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ b\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}}:\ b\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ord(b\textcolor{stringliteral}{"{}n"{}}):\ b\textcolor{stringliteral}{"{}\(\backslash\)n"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ord(b\textcolor{stringliteral}{"{}r"{}}):\ b\textcolor{stringliteral}{"{}\(\backslash\)r"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ord(b\textcolor{stringliteral}{"{}t"{}}):\ b\textcolor{stringliteral}{"{}\(\backslash\)t"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ord(b\textcolor{stringliteral}{"{}b"{}}):\ b\textcolor{stringliteral}{"{}\(\backslash\)b"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ord(b\textcolor{stringliteral}{"{}f"{}}):\ b\textcolor{stringliteral}{"{}\(\backslash\)f"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ord(b\textcolor{stringliteral}{"{}("{}}):\ b\textcolor{stringliteral}{"{}("{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ord(b\textcolor{stringliteral}{"{})"{}}):\ b\textcolor{stringliteral}{"{})"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ ord(b\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}}):\ b\textcolor{stringliteral}{"{}\(\backslash\)\(\backslash\)"{}},}
+\DoxyCodeLine{\ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af9b8a3dc7186c5b6d8e55ec12b11a2f2}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!f@{f}}
+\index{f@{f}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{f}{f}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af9b8a3dc7186c5b6d8e55ec12b11a2f2} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+f = f}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_addb9cdd8915d95781ef355cca0b8411a}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!file\_size\_this@{file\_size\_this}}
+\index{file\_size\_this@{file\_size\_this}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{file\_size\_this}{file\_size\_this}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_addb9cdd8915d95781ef355cca0b8411a} 
+int PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+file\+\_\+size\+\_\+this = self.\+file\+\_\+size\+\_\+total -\/ self.\+start\+\_\+offset}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_abfb2391581209f2a9f1415c6dea494a0}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!file\_size\_total@{file\_size\_total}}
+\index{file\_size\_total@{file\_size\_total}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{file\_size\_total}{file\_size\_total}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_abfb2391581209f2a9f1415c6dea494a0} 
+int PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+file\+\_\+size\+\_\+total = 0}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ab9551413e0825fd42feb1d4db625678c}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!filename@{filename}}
+\index{filename@{filename}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{filename}{filename}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ab9551413e0825fd42feb1d4db625678c} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+filename = filename}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1e80960bd14edc70445ccbc2fcc47546}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!info@{info}}
+\index{info@{info}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1e80960bd14edc70445ccbc2fcc47546} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+info = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_dict}{Pdf\+Dict}}()}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af4bca749867c6f851eeb9fcaff9c0d9d}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!info\_ref@{info\_ref}}
+\index{info\_ref@{info\_ref}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{info\_ref}{info\_ref}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af4bca749867c6f851eeb9fcaff9c0d9d} 
+\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_indirect_reference}{Indirect\+Reference}} \texorpdfstring{$\vert$}{|} None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+info\+\_\+ref}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af46cc9a9a9aae847d777c9c4b0d365ec}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!last\_xref\_section\_offset@{last\_xref\_section\_offset}}
+\index{last\_xref\_section\_offset@{last\_xref\_section\_offset}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{last\_xref\_section\_offset}{last\_xref\_section\_offset}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af46cc9a9a9aae847d777c9c4b0d365ec} 
+int \texorpdfstring{$\vert$}{|} None PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+last\+\_\+xref\+\_\+section\+\_\+offset}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a373eb0b555bf2a2a8c2a7e01644b53c6}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!newline@{newline}}
+\index{newline@{newline}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{newline}{newline}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a373eb0b555bf2a2a8c2a7e01644b53c6} 
+str PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+newline = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a76250a8ca73c61f4c4fed50e5af0c464}{whitespace\+\_\+optional\+\_\+no\+\_\+nl}} + \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a5142c46f292ebb280a9a898dbe8140d9}{newline\+\_\+only}} + \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a76250a8ca73c61f4c4fed50e5af0c464}{whitespace\+\_\+optional\+\_\+no\+\_\+nl}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a5142c46f292ebb280a9a898dbe8140d9}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!newline\_only@{newline\_only}}
+\index{newline\_only@{newline\_only}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{newline\_only}{newline\_only}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a5142c46f292ebb280a9a898dbe8140d9} 
+str PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+newline\+\_\+only = rb"{}\+[\textbackslash{}r\textbackslash{}n]\++"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af84265b7617ae1b0af805c2b347a79c8}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!orig\_pages@{orig\_pages}}
+\index{orig\_pages@{orig\_pages}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{orig\_pages}{orig\_pages}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af84265b7617ae1b0af805c2b347a79c8} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+orig\+\_\+pages = \+[$\,$]\+}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a98bc661c626f0704ab67a1e28c2534d3}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!page\_tree\_root@{page\_tree\_root}}
+\index{page\_tree\_root@{page\_tree\_root}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{page\_tree\_root}{page\_tree\_root}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a98bc661c626f0704ab67a1e28c2534d3} 
+Any PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+page\+\_\+tree\+\_\+root = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_dict}{Pdf\+Dict}}()}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a601354bdae4626b9113d8f5e6e2e285e}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!pages@{pages}}
+\index{pages@{pages}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{pages}{pages}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a601354bdae4626b9113d8f5e6e2e285e} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+pages = \+[$\,$]\+}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a9eb6e01e721a2b4d256a5f2b847f88b1}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!pages\_ref@{pages\_ref}}
+\index{pages\_ref@{pages\_ref}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{pages\_ref}{pages\_ref}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a9eb6e01e721a2b4d256a5f2b847f88b1} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+pages\+\_\+ref}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1ab6ab21730ed4343498b0e00fb39ac6}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_array\_end@{re\_array\_end}}
+\index{re\_array\_end@{re\_array\_end}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_array\_end}{re\_array\_end}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1ab6ab21730ed4343498b0e00fb39ac6} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+array\+\_\+end = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}]\+"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a86cc114684e47cedec91b350d0b32ffc}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_array\_start@{re\_array\_start}}
+\index{re\_array\_start@{re\_array\_start}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_array\_start}{re\_array\_start}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a86cc114684e47cedec91b350d0b32ffc} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+array\+\_\+start = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}\textbackslash{}\+["{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a6c84d294f7992e0432d8cd66c941862e}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_comment@{re\_comment}}
+\index{re\_comment@{re\_comment}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_comment}{re\_comment}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a6c84d294f7992e0432d8cd66c941862e} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+comment\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ rb\textcolor{stringliteral}{"{}("{}}\ +\ whitespace\_optional\ +\ rb\textcolor{stringliteral}{"{}\%[\string^\(\backslash\)r\(\backslash\)n]*"{}}\ +\ newline\ +\ rb\textcolor{stringliteral}{"{})*"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1e77064229cf2d08bb52c157cc8fde30}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_dict\_end@{re\_dict\_end}}
+\index{re\_dict\_end@{re\_dict\_end}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_dict\_end}{re\_dict\_end}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1e77064229cf2d08bb52c157cc8fde30} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+dict\+\_\+end = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}$>$$>$"{} + whitespace\+\_\+optional)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ad1a10ff36de5e20915fc9ceccbb1a79b}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_dict\_start@{re\_dict\_start}}
+\index{re\_dict\_start@{re\_dict\_start}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_dict\_start}{re\_dict\_start}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ad1a10ff36de5e20915fc9ceccbb1a79b} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+dict\+\_\+start = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}$<$$<$"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1ba23f526a181977d96cce7b890fe521}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_false@{re\_false}}
+\index{re\_false@{re\_false}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_false}{re\_false}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1ba23f526a181977d96cce7b890fe521} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+false = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}false(?="{} + delimiter\+\_\+or\+\_\+ws + rb"{})"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac74e30206a2bf6c3f280aa91b3db4bac}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_hashes\_in\_name@{re\_hashes\_in\_name}}
+\index{re\_hashes\_in\_name@{re\_hashes\_in\_name}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_hashes\_in\_name}{re\_hashes\_in\_name}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac74e30206a2bf6c3f280aa91b3db4bac} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+hashes\+\_\+in\+\_\+name = re.\+compile(rb"{}(\+[\texorpdfstring{$^\wedge$}{\string^}\+\#]\+\texorpdfstring{$\ast$}{*})(\+\#(\+[0-\/9a-\/fA-\/F]\+\{2\}))?"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a8c8896788688f69647115b8e1a144360}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_indirect\_def\_end@{re\_indirect\_def\_end}}
+\index{re\_indirect\_def\_end@{re\_indirect\_def\_end}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_indirect\_def\_end}{re\_indirect\_def\_end}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a8c8896788688f69647115b8e1a144360} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+indirect\+\_\+def\+\_\+end\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ whitespace\_optional\ +\ rb\textcolor{stringliteral}{"{}endobj(?="{}}\ +\ delimiter\_or\_ws\ +\ rb\textcolor{stringliteral}{"{})"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a9be7bb7304de88e8aefa284bf581ae89}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_indirect\_def\_start@{re\_indirect\_def\_start}}
+\index{re\_indirect\_def\_start@{re\_indirect\_def\_start}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_indirect\_def\_start}{re\_indirect\_def\_start}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a9be7bb7304de88e8aefa284bf581ae89} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+indirect\+\_\+def\+\_\+start\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ whitespace\_optional}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}([-\/+]?[0-\/9]+)"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ whitespace\_mandatory}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}([-\/+]?[0-\/9]+)"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ whitespace\_mandatory}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}obj(?="{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ delimiter\_or\_ws}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{})"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac98c0ae88ccd152a2970249700c359bd}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_indirect\_reference@{re\_indirect\_reference}}
+\index{re\_indirect\_reference@{re\_indirect\_reference}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_indirect\_reference}{re\_indirect\_reference}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac98c0ae88ccd152a2970249700c359bd} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+indirect\+\_\+reference\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ whitespace\_optional}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}([-\/+]?[0-\/9]+)"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ whitespace\_mandatory}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}([-\/+]?[0-\/9]+)"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ whitespace\_mandatory}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}R(?="{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ delimiter\_or\_ws}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{})"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a77ba017700ff08cf4a053e0d236db72f}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_int@{re\_int}}
+\index{re\_int@{re\_int}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_int}{re\_int}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a77ba017700ff08cf4a053e0d236db72f} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+int\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ whitespace\_optional\ +\ rb\textcolor{stringliteral}{"{}([-\/+]?[0-\/9]+)(?="{}}\ +\ delimiter\_or\_ws\ +\ rb\textcolor{stringliteral}{"{})"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a9d6315b655723f055b7b020ca0acf4c5}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_lit\_str\_token@{re\_lit\_str\_token}}
+\index{re\_lit\_str\_token@{re\_lit\_str\_token}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_lit\_str\_token}{re\_lit\_str\_token}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a9d6315b655723f055b7b020ca0acf4c5} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+lit\+\_\+str\+\_\+token\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ rb\textcolor{stringliteral}{"{}(\(\backslash\)\(\backslash\)[nrtbf()\(\backslash\)\(\backslash\)])|(\(\backslash\)\(\backslash\)[0-\/9]\{1,3\})|(\(\backslash\)\(\backslash\)(\(\backslash\)r\(\backslash\)n|\(\backslash\)r|\(\backslash\)n))|(\(\backslash\)r\(\backslash\)n|\(\backslash\)r|\(\backslash\)n)|(\(\backslash\)()|(\(\backslash\)))"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_adc3c08ad9a5ef615e60049e84055d8ac}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_name@{re\_name}}
+\index{re\_name@{re\_name}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_name}{re\_name}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_adc3c08ad9a5ef615e60049e84055d8ac} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+name\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ whitespace\_optional}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}/([!-\/\$\&'*-\/.0-\/;=?-\/Z\(\backslash\)\(\backslash\)\string^-\/z|\string~]+)(?="{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ delimiter\_or\_ws}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{})"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_aeb5aa8a9e23b758960912193ce4c61fd}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_null@{re\_null}}
+\index{re\_null@{re\_null}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_null}{re\_null}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_aeb5aa8a9e23b758960912193ce4c61fd} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+null = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}null(?="{} + delimiter\+\_\+or\+\_\+ws + rb"{})"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a0c8aaa6e32fa89189134a26add8cad36}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_real@{re\_real}}
+\index{re\_real@{re\_real}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_real}{re\_real}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a0c8aaa6e32fa89189134a26add8cad36} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+real\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ whitespace\_optional}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}([-\/+]?([0-\/9]+\(\backslash\).[0-\/9]*|[0-\/9]*\(\backslash\).[0-\/9]+))(?="{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ delimiter\_or\_ws}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{})"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a328c32546684955699c4db9e71ffa716}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_stream\_end@{re\_stream\_end}}
+\index{re\_stream\_end@{re\_stream\_end}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_stream\_end}{re\_stream\_end}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a328c32546684955699c4db9e71ffa716} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+stream\+\_\+end\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ whitespace\_optional\ +\ rb\textcolor{stringliteral}{"{}endstream(?="{}}\ +\ delimiter\_or\_ws\ +\ rb\textcolor{stringliteral}{"{})"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a3931dd53d323ea9f0153cfdcb1b70deb}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_stream\_start@{re\_stream\_start}}
+\index{re\_stream\_start@{re\_stream\_start}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_stream\_start}{re\_stream\_start}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a3931dd53d323ea9f0153cfdcb1b70deb} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+stream\+\_\+start = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}stream\textbackslash{}r?\textbackslash{}n"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1770b8c03a392cbaa142a1212d5602c9}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_string\_hex@{re\_string\_hex}}
+\index{re\_string\_hex@{re\_string\_hex}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_string\_hex}{re\_string\_hex}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a1770b8c03a392cbaa142a1212d5602c9} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+string\+\_\+hex\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ whitespace\_optional\ +\ rb\textcolor{stringliteral}{"{}<("{}}\ +\ whitespace\_or\_hex\ +\ rb\textcolor{stringliteral}{"{}*)>"{}}}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af652d4b79d0ca177fa7f0a435fd0698f}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_string\_lit@{re\_string\_lit}}
+\index{re\_string\_lit@{re\_string\_lit}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_string\_lit}{re\_string\_lit}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_af652d4b79d0ca177fa7f0a435fd0698f} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+string\+\_\+lit = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}\textbackslash{}("{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a4ce25ef4f6a86985e1d6ae3b82814342}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_trailer\_end@{re\_trailer\_end}}
+\index{re\_trailer\_end@{re\_trailer\_end}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_trailer\_end}{re\_trailer\_end}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a4ce25ef4f6a86985e1d6ae3b82814342} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+trailer\+\_\+end\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ whitespace\_mandatory}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}trailer"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ whitespace\_optional}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}<<(.*>>)"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ newline}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}startxref"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ newline}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}([0-\/9]+)"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ newline}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}\%\%EOF"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ whitespace\_optional}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}\$"{}},}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ re.DOTALL,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a6825efc3b90beacdf94cc968c7f39556}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_trailer\_prev@{re\_trailer\_prev}}
+\index{re\_trailer\_prev@{re\_trailer\_prev}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_trailer\_prev}{re\_trailer\_prev}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a6825efc3b90beacdf94cc968c7f39556} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+trailer\+\_\+prev\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ whitespace\_optional}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}trailer"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ whitespace\_optional}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}<<(.*?>>)"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ newline}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}startxref"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ newline}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}([0-\/9]+)"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ newline}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}\%\%EOF"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ whitespace\_optional,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ re.DOTALL,}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a483165931f9dff612dc545797ff2b343}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_true@{re\_true}}
+\index{re\_true@{re\_true}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_true}{re\_true}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a483165931f9dff612dc545797ff2b343} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+true = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}true(?="{} + delimiter\+\_\+or\+\_\+ws + rb"{})"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a7838bd2b40c26c8ccf0ff2f580886a4d}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_whitespace\_optional@{re\_whitespace\_optional}}
+\index{re\_whitespace\_optional@{re\_whitespace\_optional}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_whitespace\_optional}{re\_whitespace\_optional}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a7838bd2b40c26c8ccf0ff2f580886a4d} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+whitespace\+\_\+optional = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_adbcfcf8ed2cb007224c4f34ed14de955}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_xref\_entry@{re\_xref\_entry}}
+\index{re\_xref\_entry@{re\_xref\_entry}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_xref\_entry}{re\_xref\_entry}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_adbcfcf8ed2cb007224c4f34ed14de955} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+xref\+\_\+entry = re.\+compile(rb"{}(\+[0-\/9]\+\{10\}) (\+[0-\/9]\+\{5\}) (\+[fn]\+)( \textbackslash{}r\texorpdfstring{$\vert$}{|} \textbackslash{}n\texorpdfstring{$\vert$}{|}\textbackslash{}r\textbackslash{}n)"{})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac09e7961e25aeccc3a0334d35d980fe5}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_xref\_section\_start@{re\_xref\_section\_start}}
+\index{re\_xref\_section\_start@{re\_xref\_section\_start}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_xref\_section\_start}{re\_xref\_section\_start}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac09e7961e25aeccc3a0334d35d980fe5} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+xref\+\_\+section\+\_\+start = re.\+compile(\doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}{whitespace\+\_\+optional}} + rb"{}xref"{} + \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a373eb0b555bf2a2a8c2a7e01644b53c6}{newline}})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a65771bd325458de8e1bf7f51bd2d24ff}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!re\_xref\_subsection\_start@{re\_xref\_subsection\_start}}
+\index{re\_xref\_subsection\_start@{re\_xref\_subsection\_start}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{re\_xref\_subsection\_start}{re\_xref\_subsection\_start}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a65771bd325458de8e1bf7f51bd2d24ff} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+re\+\_\+xref\+\_\+subsection\+\_\+start\hspace{0.3cm}{\ttfamily [static]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ re.compile(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ whitespace\_optional}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}([0-\/9]+)"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ whitespace\_mandatory}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ rb\textcolor{stringliteral}{"{}([0-\/9]+)"{}}}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ whitespace\_optional}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ +\ newline\_only}
+\DoxyCodeLine{\ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a0bc69fde85b1d43c6d222c85db0d92db}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!root@{root}}
+\index{root@{root}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{root}{root}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a0bc69fde85b1d43c6d222c85db0d92db} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+root = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_dict}{Pdf\+Dict}}()}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a0cbb34ddaef5e493bd24f4cd759f96b3}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!root\_ref@{root\_ref}}
+\index{root\_ref@{root\_ref}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{root\_ref}{root\_ref}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a0cbb34ddaef5e493bd24f4cd759f96b3} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+root\+\_\+ref}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a3c2574bc822b5fb855f48d7dc86aa009}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!should\_close\_buf@{should\_close\_buf}}
+\index{should\_close\_buf@{should\_close\_buf}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{should\_close\_buf}{should\_close\_buf}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a3c2574bc822b5fb855f48d7dc86aa009} 
+bool PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+should\+\_\+close\+\_\+buf = False}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a46918233622590d451e3e3cdd13bdc92}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!should\_close\_file@{should\_close\_file}}
+\index{should\_close\_file@{should\_close\_file}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{should\_close\_file}{should\_close\_file}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a46918233622590d451e3e3cdd13bdc92} 
+bool PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+should\+\_\+close\+\_\+file = False}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a063b01fc065f9fcefe733d286add5ddb}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!start\_offset@{start\_offset}}
+\index{start\_offset@{start\_offset}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{start\_offset}{start\_offset}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a063b01fc065f9fcefe733d286add5ddb} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+start\+\_\+offset = start\+\_\+offset}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac4bd2d1c8fa7fb36067a92683570f951}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!trailer\_dict@{trailer\_dict}}
+\index{trailer\_dict@{trailer\_dict}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{trailer\_dict}{trailer\_dict}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_ac4bd2d1c8fa7fb36067a92683570f951} 
+dict PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+trailer\+\_\+dict = \{\}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a074d6fd8391e7d9631479b085226d72b}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!whitespace@{whitespace}}
+\index{whitespace@{whitespace}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{whitespace}{whitespace}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a074d6fd8391e7d9631479b085226d72b} 
+str PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+whitespace = rb"{}\+[\textbackslash{}000\textbackslash{}011\textbackslash{}012\textbackslash{}014\textbackslash{}015\textbackslash{}040]\+"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a10513b0194bfcbf6a1cd4d1254f4beef}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!whitespace\_mandatory@{whitespace\_mandatory}}
+\index{whitespace\_mandatory@{whitespace\_mandatory}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{whitespace\_mandatory}{whitespace\_mandatory}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a10513b0194bfcbf6a1cd4d1254f4beef} 
+str PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+whitespace\+\_\+mandatory = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a074d6fd8391e7d9631479b085226d72b}{whitespace}} + b"{}+"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!whitespace\_optional@{whitespace\_optional}}
+\index{whitespace\_optional@{whitespace\_optional}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{whitespace\_optional}{whitespace\_optional}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a21f7bb6602a673262a693c57d3d4bc11} 
+str PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+whitespace\+\_\+optional = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a074d6fd8391e7d9631479b085226d72b}{whitespace}} + b"{}\texorpdfstring{$\ast$}{*}"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a76250a8ca73c61f4c4fed50e5af0c464}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!whitespace\_optional\_no\_nl@{whitespace\_optional\_no\_nl}}
+\index{whitespace\_optional\_no\_nl@{whitespace\_optional\_no\_nl}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{whitespace\_optional\_no\_nl}{whitespace\_optional\_no\_nl}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a76250a8ca73c61f4c4fed50e5af0c464} 
+str PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+whitespace\+\_\+optional\+\_\+no\+\_\+nl = rb"{}\+[\textbackslash{}000\textbackslash{}011\textbackslash{}014\textbackslash{}040]\+\texorpdfstring{$\ast$}{*}"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a81e365ae6864d09ea8029d583b81e5b1}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!whitespace\_or\_hex@{whitespace\_or\_hex}}
+\index{whitespace\_or\_hex@{whitespace\_or\_hex}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{whitespace\_or\_hex}{whitespace\_or\_hex}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_a81e365ae6864d09ea8029d583b81e5b1} 
+str PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+whitespace\+\_\+or\+\_\+hex = rb"{}\+[\textbackslash{}000\textbackslash{}011\textbackslash{}012\textbackslash{}014\textbackslash{}015\textbackslash{}0400-\/9a-\/fA-\/F]\+"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_aa0aa870752acf84d4f655235c842d89a}\index{PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}!xref\_table@{xref\_table}}
+\index{xref\_table@{xref\_table}!PIL.PdfParser.PdfParser@{PIL.PdfParser.PdfParser}}
+\doxysubsubsection{\texorpdfstring{xref\_table}{xref\_table}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_pdf_parser_1_1_pdf_parser_aa0aa870752acf84d4f655235c842d89a} 
+PIL.\+Pdf\+Parser.\+Pdf\+Parser.\+xref\+\_\+table = \doxymbox{\hyperlink{class_p_i_l_1_1_pdf_parser_1_1_xref_table}{Xref\+Table}}()}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_pdf_parser_8py}{Pdf\+Parser.\+py}}\end{DoxyCompactItemize}

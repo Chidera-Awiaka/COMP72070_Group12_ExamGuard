@@ -1,0 +1,511 @@
+\doxysection{PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2 Class Reference}
+\hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2}{}\label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+Inheritance diagram for PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a5db9799c18319ffb9e6d5d33764a4b2a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, bytes ifh=b"{}\+II\textbackslash{}x2a\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00"{}, bytes\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ab19686806aa3bb80dc576b47dd8f2194}{prefix}}=None, int\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a6d657459b9e6de6a30e661c8dbd1e5f8}{group}}=None)
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a3d771d23594dc4cd0200d9ae23cf4106}{legacy\+\_\+api}} (self)
+\item 
+No\+Return \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_abbdb2ab354f8b188a77b2a12b54d0231}{legacy\+\_\+api}} (self, bool value)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aecc2819d6c30a8848df909fb5eb086e8}{reset}} (self)
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a1e8740fd577c46d13ffb10633a5ec3a2}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+dict\+[str, Any]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a90fe03064dd55d7cd3424fc1c368e5e5}{named}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a6aea60eb2119278426e9acfe54d9e713}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+Any \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a769be3d0343f25fdbdf143a954f27b64}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int tag)
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_abbb40012d18144a87bb8cc71823cb9cd}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, object tag)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aa595dbc09187a7cf9eab5b74c49f0dd8}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, int tag, Any value)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aa65e403494e474ae6bd34e4733d8e060}{\+\_\+\+\_\+delitem\+\_\+\+\_\+}} (self, int tag)
+\item 
+Iterator\+[int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a7205d286b78d93cc1e0263ba1d0059ed}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_af47eb5ad2c30fa9d0476796ecedce673}{load\+\_\+byte}} (self, bytes data, bool \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a1255938aff28089f025f0c26529d0f63}{legacy\+\_\+api}}=True)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a9c9d9c078ab2acaf65c48b42f2f3dd54}{write\+\_\+byte}} (self, bytes\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}} data)
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a5a5a419177f3efb7eac1fbb1eb0cf317}{load\+\_\+string}} (self, bytes data, bool \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a1255938aff28089f025f0c26529d0f63}{legacy\+\_\+api}}=True)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a46cc3e3e14df800b8dda9869fdeed57b}{write\+\_\+string}} (self, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}int value)
+\item 
+tuple\+[tuple\+[int, int]\+\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}},...]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a632a7c252ef2122aa02b3861abee50b7}{load\+\_\+rational}} (self, bytes data, bool \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a1255938aff28089f025f0c26529d0f63}{legacy\+\_\+api}}=True)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a23e36243187cfca7698c3c8acf6e257f}{write\+\_\+rational}} (self, \texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}} values)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a59bc971bda54569793ba913116c140ee}{load\+\_\+undefined}} (self, bytes data, bool \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a1255938aff28089f025f0c26529d0f63}{legacy\+\_\+api}}=True)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aa32fd5c8bbdf4d6041d60ff3e2bbc722}{write\+\_\+undefined}} (self, bytes\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}} value)
+\item 
+tuple\+[tuple\+[int, int]\+\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}},...]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ae84650fe33cbb4a69c4290659523ef0c}{load\+\_\+signed\+\_\+rational}} (self, bytes data, bool \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a1255938aff28089f025f0c26529d0f63}{legacy\+\_\+api}}=True)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a2dbf4e192f8a927bf642aea0012c57ec}{write\+\_\+signed\+\_\+rational}} (self, \texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}} values)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a3085241955a717a0955493f93ca328ff}{load}} (self, IO\+[bytes]\+ fp)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aec8eeeabc008af0cb83a9d5860614548}{tobytes}} (self, int \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a556b82fbafe8a4f39d3c3f5bcf232d61}{offset}}=0)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ac5c9977be6793db3ce1ecaef0562dd99}{save}} (self, IO\+[bytes]\+ fp)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a6d657459b9e6de6a30e661c8dbd1e5f8}{group}} = group
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ad0dcafdaa999490bef87f6157053a77d}{tagtype}} = \{\}
+\item 
+tuple \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_acd83e17372b5c5c64bb76688bbe07444}{next}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a1255938aff28089f025f0c26529d0f63}{legacy\+\_\+api}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a35c42037834dac67404d5bd95548e7a8}{\+\_\+setitem}} (self, int tag, Any value, bool \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a1255938aff28089f025f0c26529d0f63}{legacy\+\_\+api}})
+\item 
+tuple\+[Any,...]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a7c340c8a9653e085bfbd3dbb0ec18702}{\+\_\+unpack}} (self, str fmt, bytes data)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_af00b152c32d7900772ce8784f1298ce4}{\+\_\+pack}} (self, str fmt, \texorpdfstring{$\ast$}{*}Any values)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a325993be65761600f01cc775bb63f4f2}{\+\_\+ensure\+\_\+read}} (self, IO\+[bytes]\+ fp, int size)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ac7b70d414e915e31100cd756cd47082b}{\+\_\+get\+\_\+ifh}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a3eb30adefa18fca6378fb2458f08ba0a}{\+\_\+prefix}} = \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ab19686806aa3bb80dc576b47dd8f2194}{prefix}} if \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ab19686806aa3bb80dc576b47dd8f2194}{prefix}} is not None else ifh\+[:\+2]\+
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a2509d03c243cfecec45007b8a518e76a}{\+\_\+endian}} = "{}$>$"{}
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a7aff253587a01c777ba03a9f5432727b}{\+\_\+bigtiff}} = 43
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_adeb2038963a9e989dfd759c3cfeb7612}{\+\_\+legacy\+\_\+api}} = False
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aebc604133c4f8699f3bb2747d3d1a8be}{\+\_\+tags\+\_\+v1}} = \{\}
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ae8d8d8b3174cc6dee8de71a28b4776f2}{\+\_\+tags\+\_\+v2}} = \{\}
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ab06542b483ced29510c8d36e2812c13b}{\+\_\+tagdata}} = \{\}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_abc6297e888ba309f2d2e567a2ace31ee}{\+\_\+next}} = None
+\item 
+int\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a5851e17b7a5d13c0ac410acc0c11e99f}{\+\_\+offset}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ad089ebaf48d9d77846561b16a6f42e57}{\+\_\+load\+\_\+dispatch}} = \{\}
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a6df80fd9bd065d40319afdd108482709}{\+\_\+write\+\_\+dispatch}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ab19686806aa3bb80dc576b47dd8f2194}{prefix}} = property(lambda self:\+ self.\+\_\+prefix)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a556b82fbafe8a4f39d3c3f5bcf232d61}{offset}} = property(lambda self:\+ self.\+\_\+offset)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class represents a TIFF tag directory.  To speed things up, we
+don't decode tags unless they're asked for.
+
+Exposes a dictionary interface of the tags in the directory::
+
+    ifd = ImageFileDirectory_v2()
+    ifd[key] = 'Some Data'
+    ifd.tagtype[key] = TiffTags.ASCII
+    print(ifd[key])
+    'Some Data'
+
+Individual values are returned as the strings or numbers, sequences are
+returned as tuples of the values.
+
+The tiff metadata type of each item is stored in a dictionary of
+tag types in
+:attr:`~PIL.TiffImagePlugin.ImageFileDirectory_v2.tagtype`. The types
+are read from a tiff file, guessed from the type added, or added
+manually.
+
+Data Structures:
+
+    * ``self.tagtype = {}``
+
+      * Key: numerical TIFF tag number
+      * Value: integer corresponding to the data type from
+        :py:data:`.TiffTags.TYPES`
+
+      .. versionadded:: 3.0.0
+
+'Internal' data structures:
+
+    * ``self._tags_v2 = {}``
+
+      * Key: numerical TIFF tag number
+      * Value: decoded data, as tuple for multiple values
+
+    * ``self._tagdata = {}``
+
+      * Key: numerical TIFF tag number
+      * Value: undecoded byte string from file
+
+    * ``self._tags_v1 = {}``
+
+      * Key: numerical TIFF tag number
+      * Value: decoded data in the v1 format
+
+Tags will be found in the private attributes ``self._tagdata``, and in
+``self._tags_v2`` once decoded.
+
+``self.legacy_api`` is a value for internal use, and shouldn't be changed
+from outside code. In cooperation with
+:py:class:`~PIL.TiffImagePlugin.ImageFileDirectory_v1`, if ``legacy_api``
+is true, then decoded tags will be populated into both ``_tags_v1`` and
+``_tags_v2``. ``_tags_v2`` will be used if this IFD is used in the TIFF
+save routine. Tags should be read from ``_tags_v1`` if
+``legacy_api == true``.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a5db9799c18319ffb9e6d5d33764a4b2a}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a5db9799c18319ffb9e6d5d33764a4b2a} 
+ None PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes }]{ifh}{ = {\ttfamily b"{}II\textbackslash{}x2a\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00\textbackslash{}x00"{}}, }\item[{bytes \texorpdfstring{$\vert$}{|} None }]{prefix}{ = {\ttfamily None}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{group}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialize an ImageFileDirectory.
+
+To construct an ImageFileDirectory from a real file, pass the 8-byte
+magic header to the constructor.  To only set the endianness, pass it
+as the 'prefix' keyword argument.
+
+:param ifh: One of the accepted magic headers (cf. PREFIXES); also sets
+      endianness.
+:param prefix: Override the endianness of the file.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_abbb40012d18144a87bb8cc71823cb9cd}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_abbb40012d18144a87bb8cc71823cb9cd} 
+ bool PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{tag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aa65e403494e474ae6bd34e4733d8e060}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_\_delitem\_\_@{\_\_delitem\_\_}}
+\index{\_\_delitem\_\_@{\_\_delitem\_\_}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_\_delitem\_\_()}{\_\_delitem\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aa65e403494e474ae6bd34e4733d8e060} 
+ None PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+\+\_\+delitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{tag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a769be3d0343f25fdbdf143a954f27b64}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a769be3d0343f25fdbdf143a954f27b64} 
+ Any PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{tag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a7205d286b78d93cc1e0263ba1d0059ed}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a7205d286b78d93cc1e0263ba1d0059ed} 
+ Iterator\+[int]\+ PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a6aea60eb2119278426e9acfe54d9e713}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a6aea60eb2119278426e9acfe54d9e713} 
+ int PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aa595dbc09187a7cf9eab5b74c49f0dd8}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aa595dbc09187a7cf9eab5b74c49f0dd8} 
+ None PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{tag}{, }\item[{Any}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a1e8740fd577c46d13ffb10633a5ec3a2}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a1e8740fd577c46d13ffb10633a5ec3a2} 
+ str PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a325993be65761600f01cc775bb63f4f2}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_ensure\_read@{\_ensure\_read}}
+\index{\_ensure\_read@{\_ensure\_read}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_ensure\_read()}{\_ensure\_read()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a325993be65761600f01cc775bb63f4f2} 
+ bytes PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+ensure\+\_\+read (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IO\+[bytes]\+}]{fp}{, }\item[{int}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ac7b70d414e915e31100cd756cd47082b}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_get\_ifh@{\_get\_ifh}}
+\index{\_get\_ifh@{\_get\_ifh}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_get\_ifh()}{\_get\_ifh()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ac7b70d414e915e31100cd756cd47082b} 
+ bytes PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+get\+\_\+ifh (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_af00b152c32d7900772ce8784f1298ce4}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_pack@{\_pack}}
+\index{\_pack@{\_pack}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_pack()}{\_pack()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_af00b152c32d7900772ce8784f1298ce4} 
+ bytes PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+pack (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{fmt}{, }\item[{\texorpdfstring{$\ast$}{*}Any}]{values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a35c42037834dac67404d5bd95548e7a8}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_setitem@{\_setitem}}
+\index{\_setitem@{\_setitem}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_setitem()}{\_setitem()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a35c42037834dac67404d5bd95548e7a8} 
+ None PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+setitem (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{tag}{, }\item[{Any}]{value}{, }\item[{bool}]{legacy\+\_\+api}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a7c340c8a9653e085bfbd3dbb0ec18702}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_unpack@{\_unpack}}
+\index{\_unpack@{\_unpack}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_unpack()}{\_unpack()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a7c340c8a9653e085bfbd3dbb0ec18702} 
+ tuple\+[Any, ...]\+ PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+unpack (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{fmt}{, }\item[{bytes}]{data}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a3d771d23594dc4cd0200d9ae23cf4106}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!legacy\_api@{legacy\_api}}
+\index{legacy\_api@{legacy\_api}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{legacy\_api()}{legacy\_api()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a3d771d23594dc4cd0200d9ae23cf4106} 
+ bool PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+legacy\+\_\+api (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_abbdb2ab354f8b188a77b2a12b54d0231}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!legacy\_api@{legacy\_api}}
+\index{legacy\_api@{legacy\_api}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{legacy\_api()}{legacy\_api()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_abbdb2ab354f8b188a77b2a12b54d0231} 
+ No\+Return PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+legacy\+\_\+api (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bool}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a3085241955a717a0955493f93ca328ff}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!load@{load}}
+\index{load@{load}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a3085241955a717a0955493f93ca328ff} 
+ None PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+load (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IO\+[bytes]\+}]{fp}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_af47eb5ad2c30fa9d0476796ecedce673}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!load\_byte@{load\_byte}}
+\index{load\_byte@{load\_byte}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{load\_byte()}{load\_byte()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_af47eb5ad2c30fa9d0476796ecedce673} 
+ bytes PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+load\+\_\+byte (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{, }\item[{bool }]{legacy\+\_\+api}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a632a7c252ef2122aa02b3861abee50b7}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!load\_rational@{load\_rational}}
+\index{load\_rational@{load\_rational}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{load\_rational()}{load\_rational()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a632a7c252ef2122aa02b3861abee50b7} 
+ tuple\+[tuple\+[int, int]\+ \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}}, ...]\+ PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+load\+\_\+rational (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{, }\item[{bool }]{legacy\+\_\+api}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ae84650fe33cbb4a69c4290659523ef0c}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!load\_signed\_rational@{load\_signed\_rational}}
+\index{load\_signed\_rational@{load\_signed\_rational}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{load\_signed\_rational()}{load\_signed\_rational()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ae84650fe33cbb4a69c4290659523ef0c} 
+ tuple\+[tuple\+[int, int]\+ \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}}, ...]\+ PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+load\+\_\+signed\+\_\+rational (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{, }\item[{bool }]{legacy\+\_\+api}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a5a5a419177f3efb7eac1fbb1eb0cf317}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!load\_string@{load\_string}}
+\index{load\_string@{load\_string}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{load\_string()}{load\_string()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a5a5a419177f3efb7eac1fbb1eb0cf317} 
+ str PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+load\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{, }\item[{bool }]{legacy\+\_\+api}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a59bc971bda54569793ba913116c140ee}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!load\_undefined@{load\_undefined}}
+\index{load\_undefined@{load\_undefined}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{load\_undefined()}{load\_undefined()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a59bc971bda54569793ba913116c140ee} 
+ bytes PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+load\+\_\+undefined (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{, }\item[{bool }]{legacy\+\_\+api}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a90fe03064dd55d7cd3424fc1c368e5e5}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!named@{named}}
+\index{named@{named}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{named()}{named()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a90fe03064dd55d7cd3424fc1c368e5e5} 
+ dict\+[str, Any]\+ PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+named (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:returns: dict of name|key: value
+
+Returns the complete tag dictionary, with named tags where possible.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aecc2819d6c30a8848df909fb5eb086e8}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!reset@{reset}}
+\index{reset@{reset}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aecc2819d6c30a8848df909fb5eb086e8} 
+ None PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+reset (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ac5c9977be6793db3ce1ecaef0562dd99}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!save@{save}}
+\index{save@{save}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ac5c9977be6793db3ce1ecaef0562dd99} 
+ int PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+save (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IO\+[bytes]\+}]{fp}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aec8eeeabc008af0cb83a9d5860614548}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!tobytes@{tobytes}}
+\index{tobytes@{tobytes}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{tobytes()}{tobytes()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aec8eeeabc008af0cb83a9d5860614548} 
+ bytes PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+tobytes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a9c9d9c078ab2acaf65c48b42f2f3dd54}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!write\_byte@{write\_byte}}
+\index{write\_byte@{write\_byte}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{write\_byte()}{write\_byte()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a9c9d9c078ab2acaf65c48b42f2f3dd54} 
+ bytes PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+write\+\_\+byte (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}}}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a23e36243187cfca7698c3c8acf6e257f}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!write\_rational@{write\_rational}}
+\index{write\_rational@{write\_rational}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{write\_rational()}{write\_rational()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a23e36243187cfca7698c3c8acf6e257f} 
+ bytes PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+write\+\_\+rational (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}}}]{values}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a2dbf4e192f8a927bf642aea0012c57ec}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!write\_signed\_rational@{write\_signed\_rational}}
+\index{write\_signed\_rational@{write\_signed\_rational}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{write\_signed\_rational()}{write\_signed\_rational()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a2dbf4e192f8a927bf642aea0012c57ec} 
+ bytes PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+write\+\_\+signed\+\_\+rational (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}}}]{values}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a46cc3e3e14df800b8dda9869fdeed57b}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!write\_string@{write\_string}}
+\index{write\_string@{write\_string}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{write\_string()}{write\_string()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a46cc3e3e14df800b8dda9869fdeed57b} 
+ bytes PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+write\+\_\+string (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} bytes \texorpdfstring{$\vert$}{|} int}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aa32fd5c8bbdf4d6041d60ff3e2bbc722}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!write\_undefined@{write\_undefined}}
+\index{write\_undefined@{write\_undefined}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{write\_undefined()}{write\_undefined()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aa32fd5c8bbdf4d6041d60ff3e2bbc722} 
+ bytes PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+write\+\_\+undefined (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}}}]{value}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a7aff253587a01c777ba03a9f5432727b}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_bigtiff@{\_bigtiff}}
+\index{\_bigtiff@{\_bigtiff}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_bigtiff}{\_bigtiff}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a7aff253587a01c777ba03a9f5432727b} 
+int PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+bigtiff = 43\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a2509d03c243cfecec45007b8a518e76a}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_endian@{\_endian}}
+\index{\_endian@{\_endian}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_endian}{\_endian}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a2509d03c243cfecec45007b8a518e76a} 
+str PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+endian = "{}$>$"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_adeb2038963a9e989dfd759c3cfeb7612}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_legacy\_api@{\_legacy\_api}}
+\index{\_legacy\_api@{\_legacy\_api}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_legacy\_api}{\_legacy\_api}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_adeb2038963a9e989dfd759c3cfeb7612} 
+bool PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+legacy\+\_\+api = False\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ad089ebaf48d9d77846561b16a6f42e57}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_load\_dispatch@{\_load\_dispatch}}
+\index{\_load\_dispatch@{\_load\_dispatch}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_load\_dispatch}{\_load\_dispatch}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ad089ebaf48d9d77846561b16a6f42e57} 
+PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+load\+\_\+dispatch = \{\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_abc6297e888ba309f2d2e567a2ace31ee}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_next@{\_next}}
+\index{\_next@{\_next}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_next}{\_next}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_abc6297e888ba309f2d2e567a2ace31ee} 
+PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+next = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a5851e17b7a5d13c0ac410acc0c11e99f}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_offset@{\_offset}}
+\index{\_offset@{\_offset}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_offset}{\_offset}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a5851e17b7a5d13c0ac410acc0c11e99f} 
+int \texorpdfstring{$\vert$}{|} None PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+offset = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a3eb30adefa18fca6378fb2458f08ba0a}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_prefix@{\_prefix}}
+\index{\_prefix@{\_prefix}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_prefix}{\_prefix}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a3eb30adefa18fca6378fb2458f08ba0a} 
+PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+prefix = \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ab19686806aa3bb80dc576b47dd8f2194}{prefix}} if \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ab19686806aa3bb80dc576b47dd8f2194}{prefix}} is not None else ifh\+[:\+2]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ab06542b483ced29510c8d36e2812c13b}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_tagdata@{\_tagdata}}
+\index{\_tagdata@{\_tagdata}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_tagdata}{\_tagdata}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ab06542b483ced29510c8d36e2812c13b} 
+PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+tagdata = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aebc604133c4f8699f3bb2747d3d1a8be}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_tags\_v1@{\_tags\_v1}}
+\index{\_tags\_v1@{\_tags\_v1}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_tags\_v1}{\_tags\_v1}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_aebc604133c4f8699f3bb2747d3d1a8be} 
+dict PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+tags\+\_\+v1 = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ae8d8d8b3174cc6dee8de71a28b4776f2}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_tags\_v2@{\_tags\_v2}}
+\index{\_tags\_v2@{\_tags\_v2}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_tags\_v2}{\_tags\_v2}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ae8d8d8b3174cc6dee8de71a28b4776f2} 
+PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+tags\+\_\+v2 = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a6df80fd9bd065d40319afdd108482709}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!\_write\_dispatch@{\_write\_dispatch}}
+\index{\_write\_dispatch@{\_write\_dispatch}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{\_write\_dispatch}{\_write\_dispatch}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a6df80fd9bd065d40319afdd108482709} 
+PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+\_\+write\+\_\+dispatch = \{\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a6d657459b9e6de6a30e661c8dbd1e5f8}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!group@{group}}
+\index{group@{group}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{group}{group}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a6d657459b9e6de6a30e661c8dbd1e5f8} 
+PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+group = group}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a1255938aff28089f025f0c26529d0f63}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!legacy\_api@{legacy\_api}}
+\index{legacy\_api@{legacy\_api}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{legacy\_api}{legacy\_api}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a1255938aff28089f025f0c26529d0f63} 
+PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+legacy\+\_\+api}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_acd83e17372b5c5c64bb76688bbe07444}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!next@{next}}
+\index{next@{next}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_acd83e17372b5c5c64bb76688bbe07444} 
+PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+next}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ self.\_unpack(\textcolor{stringliteral}{"{}Q"{}},\ ifh[8:])[0]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ self.\_bigtiff}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ self.\_unpack(\textcolor{stringliteral}{"{}L"{}},\ ifh[4:])[0]}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ad0dcafdaa999490bef87f6157053a77d}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!tagtype@{tagtype}}
+\index{tagtype@{tagtype}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{tagtype}{tagtype}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ad0dcafdaa999490bef87f6157053a77d} 
+dict PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+tagtype = \{\}}
+
+
+
+\label{doc-property-members}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_doc-property-members}
+\doxysubsection{Property Documentation}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a556b82fbafe8a4f39d3c3f5bcf232d61}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!offset@{offset}}
+\index{offset@{offset}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_a556b82fbafe8a4f39d3c3f5bcf232d61} 
+PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+offset = property(lambda self:\+ self.\+\_\+offset)\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ab19686806aa3bb80dc576b47dd8f2194}\index{PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}!prefix@{prefix}}
+\index{prefix@{prefix}!PIL.TiffImagePlugin.ImageFileDirectory\_v2@{PIL.TiffImagePlugin.ImageFileDirectory\_v2}}
+\doxysubsubsection{\texorpdfstring{prefix}{prefix}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2_ab19686806aa3bb80dc576b47dd8f2194} 
+PIL.\+Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2.\+prefix = property(lambda self:\+ self.\+\_\+prefix)\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_tiff_image_plugin_8py}{Tiff\+Image\+Plugin.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,99 @@
+\doxysection{reportlab.\+lib.\+codecharts Namespace Reference}
+\hypertarget{namespacereportlab_1_1lib_1_1codecharts}{}\label{namespacereportlab_1_1lib_1_1codecharts}\index{reportlab.lib.codecharts@{reportlab.lib.codecharts}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1lib_1_1codecharts_1_1_code_chart_base}{Code\+Chart\+Base}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1lib_1_1codecharts_1_1_single_byte_encoding_chart}{Single\+Byte\+Encoding\+Chart}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1lib_1_1codecharts_1_1_kuten_row_code_chart}{Kuten\+Row\+Code\+Chart}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1lib_1_1codecharts_1_1_big5_code_chart}{Big5\+Code\+Chart}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1lib_1_1codecharts_1_1_code_widget}{Code\+Widget}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1codecharts_a3085acac6de7d877101085ece65519c7}{draw}} (self)
+\begin{DoxyCompactList}\small\item\em elif self.\+encoding\+Name.\+find(\textquotesingle{}GB\textquotesingle{}) \texorpdfstring{$>$}{>} -\/1:\+ \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1codecharts_ac64e7d2d344b48d3b523b1bd0e25fe91}{h\+Box\+Text}} (msg, canvas, x, y, font\+Name)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1codecharts_a87fef072fad59b399e9fcbdb2890e154}{test}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1codecharts_a063e8271781776f12902a5f5331d552d}{adobe2codec}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1codecharts_ac0c6a23c792a0c9686e45c363c834415}{xlist}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1codecharts_a3fed7426c0e1606dd4daddeb95d29f52}{ylist}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1lib_1_1codecharts_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1lib_1_1codecharts_a3085acac6de7d877101085ece65519c7}\index{reportlab.lib.codecharts@{reportlab.lib.codecharts}!draw@{draw}}
+\index{draw@{draw}!reportlab.lib.codecharts@{reportlab.lib.codecharts}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1codecharts_a3085acac6de7d877101085ece65519c7} 
+reportlab.\+lib.\+codecharts.\+draw (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+elif self.\+encoding\+Name.\+find(\textquotesingle{}GB\textquotesingle{}) \texorpdfstring{$>$}{>} -\/1:\+ 
+
+\hypertarget{namespacereportlab_1_1lib_1_1codecharts_autotoc_md2}{}\doxysubsection{\texorpdfstring{it is an EUC family encoding.}{it is an EUC family encoding.}}\label{namespacereportlab_1_1lib_1_1codecharts_autotoc_md2}
+for col in range(1, 95):\+ ch = int2\+Byte(row + 160) + int2\+Byte(col+160) \Hypertarget{namespacereportlab_1_1lib_1_1codecharts_ac64e7d2d344b48d3b523b1bd0e25fe91}\index{reportlab.lib.codecharts@{reportlab.lib.codecharts}!hBoxText@{hBoxText}}
+\index{hBoxText@{hBoxText}!reportlab.lib.codecharts@{reportlab.lib.codecharts}}
+\doxysubsubsection{\texorpdfstring{hBoxText()}{hBoxText()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1codecharts_ac64e7d2d344b48d3b523b1bd0e25fe91} 
+reportlab.\+lib.\+codecharts.\+h\+Box\+Text (\begin{DoxyParamCaption}\item[{}]{msg}{, }\item[{}]{canvas}{, }\item[{}]{x}{, }\item[{}]{y}{, }\item[{}]{font\+Name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper for stringwidth tests on Asian fonts.
+
+Registers font if needed.  Then draws the string,
+and a box around it derived from the stringWidth function\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1lib_1_1codecharts_a87fef072fad59b399e9fcbdb2890e154}\index{reportlab.lib.codecharts@{reportlab.lib.codecharts}!test@{test}}
+\index{test@{test}!reportlab.lib.codecharts@{reportlab.lib.codecharts}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1codecharts_a87fef072fad59b399e9fcbdb2890e154} 
+reportlab.\+lib.\+codecharts.\+test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacereportlab_1_1lib_1_1codecharts_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacereportlab_1_1lib_1_1codecharts_a063e8271781776f12902a5f5331d552d}\index{reportlab.lib.codecharts@{reportlab.lib.codecharts}!adobe2codec@{adobe2codec}}
+\index{adobe2codec@{adobe2codec}!reportlab.lib.codecharts@{reportlab.lib.codecharts}}
+\doxysubsubsection{\texorpdfstring{adobe2codec}{adobe2codec}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1codecharts_a063e8271781776f12902a5f5331d552d} 
+dict reportlab.\+lib.\+codecharts.\+adobe2codec}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'WinAnsiEncoding'}:\textcolor{stringliteral}{'winansi'},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'MacRomanEncoding'}:\textcolor{stringliteral}{'macroman'},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'MacExpert'}:\textcolor{stringliteral}{'macexpert'},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{'PDFDoc'}:\textcolor{stringliteral}{'pdfdoc'},}
+\DoxyCodeLine{00006\ \ \ \ \ }
+\DoxyCodeLine{00007\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1lib_1_1codecharts_ac0c6a23c792a0c9686e45c363c834415}\index{reportlab.lib.codecharts@{reportlab.lib.codecharts}!xlist@{xlist}}
+\index{xlist@{xlist}!reportlab.lib.codecharts@{reportlab.lib.codecharts}}
+\doxysubsubsection{\texorpdfstring{xlist}{xlist}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1codecharts_ac0c6a23c792a0c9686e45c363c834415} 
+reportlab.\+lib.\+codecharts.\+xlist}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1codecharts_a3fed7426c0e1606dd4daddeb95d29f52}\index{reportlab.lib.codecharts@{reportlab.lib.codecharts}!ylist@{ylist}}
+\index{ylist@{ylist}!reportlab.lib.codecharts@{reportlab.lib.codecharts}}
+\doxysubsubsection{\texorpdfstring{ylist}{ylist}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1codecharts_a3fed7426c0e1606dd4daddeb95d29f52} 
+reportlab.\+lib.\+codecharts.\+ylist}
+

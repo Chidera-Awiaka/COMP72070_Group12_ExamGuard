@@ -1,0 +1,104 @@
+\doxysection{reportlab.\+lib.\+logger.\+Logger Class Reference}
+\hypertarget{classreportlab_1_1lib_1_1logger_1_1_logger}{}\label{classreportlab_1_1lib_1_1logger_1_1_logger}\index{reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1logger_1_1_logger_a7c0254bfb8c010b36b9335041773243e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1logger_1_1_logger_a2c14e02d79732c8acdf6fd820a02e2a4}{add}} (self, fp)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1logger_1_1_logger_a44dc496345fd4148a64d1bfbda179698}{remove}} (self, fp)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1logger_1_1_logger_a78307235dcb75e9153dcd7db52e41ee7}{write}} (self, text)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1logger_1_1_logger_a97cca46965bbc46665d171ac5016c9b1}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, text)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1logger_1_1_logger_abfbaf55b9550f36e22042ce654814b91}{logger}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1logger_1_1_logger}{Logger}}()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1lib_1_1logger_1_1_logger_a585af328be8243f76eb88d64e04f4e99}{\+\_\+fps}} = \+[stderr]\+
+\item 
+dict \doxymbox{\hyperlink{classreportlab_1_1lib_1_1logger_1_1_logger_a75890a082e1e2bc8ebe96e2efef05f2c}{\+\_\+fns}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}An extended file type thing initially equivalent to sys.stderr
+You can add/remove file type things; it has a write method
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1lib_1_1logger_1_1_logger_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1logger_1_1_logger_a7c0254bfb8c010b36b9335041773243e}\index{reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1logger_1_1_logger_a7c0254bfb8c010b36b9335041773243e} 
+reportlab.\+lib.\+logger.\+Logger.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1lib_1_1logger_1_1_logger_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1logger_1_1_logger_a97cca46965bbc46665d171ac5016c9b1}\index{reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1logger_1_1_logger_a97cca46965bbc46665d171ac5016c9b1} 
+reportlab.\+lib.\+logger.\+Logger.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1logger_1_1_logger_a2c14e02d79732c8acdf6fd820a02e2a4}\index{reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}!add@{add}}
+\index{add@{add}!reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1logger_1_1_logger_a2c14e02d79732c8acdf6fd820a02e2a4} 
+reportlab.\+lib.\+logger.\+Logger.\+add (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{fp}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}add the file/string fp to the destinations\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1logger_1_1_logger_a44dc496345fd4148a64d1bfbda179698}\index{reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}!remove@{remove}}
+\index{remove@{remove}!reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1logger_1_1_logger_a44dc496345fd4148a64d1bfbda179698} 
+reportlab.\+lib.\+logger.\+Logger.\+remove (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{fp}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}remove the file/string fp from the destinations\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1logger_1_1_logger_a78307235dcb75e9153dcd7db52e41ee7}\index{reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}!write@{write}}
+\index{write@{write}!reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1logger_1_1_logger_a78307235dcb75e9153dcd7db52e41ee7} 
+reportlab.\+lib.\+logger.\+Logger.\+write (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}write text to all the destinations\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1lib_1_1logger_1_1_logger_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1logger_1_1_logger_a75890a082e1e2bc8ebe96e2efef05f2c}\index{reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}!\_fns@{\_fns}}
+\index{\_fns@{\_fns}!reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{\_fns}{\_fns}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1logger_1_1_logger_a75890a082e1e2bc8ebe96e2efef05f2c} 
+dict reportlab.\+lib.\+logger.\+Logger.\+\_\+fns = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1logger_1_1_logger_a585af328be8243f76eb88d64e04f4e99}\index{reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}!\_fps@{\_fps}}
+\index{\_fps@{\_fps}!reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{\_fps}{\_fps}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1logger_1_1_logger_a585af328be8243f76eb88d64e04f4e99} 
+list reportlab.\+lib.\+logger.\+Logger.\+\_\+fps = \+[stderr]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1logger_1_1_logger_abfbaf55b9550f36e22042ce654814b91}\index{reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}!logger@{logger}}
+\index{logger@{logger}!reportlab.lib.logger.Logger@{reportlab.lib.logger.Logger}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1logger_1_1_logger_abfbaf55b9550f36e22042ce654814b91} 
+reportlab.\+lib.\+logger.\+Logger.\+logger = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1logger_1_1_logger}{Logger}}()\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+lib/\+\doxymbox{\hyperlink{logger_8py}{logger.\+py}}\end{DoxyCompactItemize}

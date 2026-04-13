@@ -1,0 +1,132 @@
+\doxysection{reportlab.\+rl\+\_\+config Namespace Reference}
+\hypertarget{namespacereportlab_1_1rl__config}{}\label{namespacereportlab_1_1rl__config}\index{reportlab.rl\_config@{reportlab.rl\_config}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1rl__config_a096f0fa38b7d21e8028ffd469ef9bb51}{\+\_\+defaults\+\_\+init}} ()
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1rl__config_aa80bc20d82c427d2d05171376c3d6b07}{\+\_\+enum\+Chk}} (name, value, allowed=())
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1rl__config_a26a89144862e6b46a90840e7d75544e2}{\+\_\+set\+Opt}} (name, value, conv=None, chk=None)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1rl__config_a26e7cdb04192aabf1abaa2fb23d4500d}{\+\_\+start\+Up}} ()
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1rl__config_a927e418e1d4d8640e2abc9cf34ce08e2}{register\+\_\+reset}} (func)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1rl__config_a1b6c91977beb613055b7ddeaafc709c2}{\+\_\+reset}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1rl__config_ab7f5b751caf6dca00810197db385ae32}{\+\_\+\+DEFAULTS}} = \doxymbox{\hyperlink{namespacereportlab_1_1rl__config_a096f0fa38b7d21e8028ffd469ef9bb51}{\+\_\+defaults\+\_\+init}}()
+\item 
+dict \doxymbox{\hyperlink{namespacereportlab_1_1rl__config_a7a62f8901c17204537e140a1be37cd2d}{\+\_\+\+SAVED}} = \{\}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1rl__config_abfa72d4814521720fdd9463796d0b058}{sys\+\_\+version}} = None
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1rl__config_ab42fe824f975f881180146709abd664c}{\+\_\+rl\+Checks}}
+\item 
+list \doxymbox{\hyperlink{namespacereportlab_1_1rl__config_a2835bf5957e33dd42cc8474dbdb5d9be}{\+\_\+registered\+\_\+resets}} = \+[$\,$]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}module that aggregates config information\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1rl__config_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1rl__config_a096f0fa38b7d21e8028ffd469ef9bb51}\index{reportlab.rl\_config@{reportlab.rl\_config}!\_defaults\_init@{\_defaults\_init}}
+\index{\_defaults\_init@{\_defaults\_init}!reportlab.rl\_config@{reportlab.rl\_config}}
+\doxysubsubsection{\texorpdfstring{\_defaults\_init()}{\_defaults\_init()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1rl__config_a096f0fa38b7d21e8028ffd469ef9bb51} 
+reportlab.\+rl\+\_\+config.\+\_\+defaults\+\_\+init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}create & return defaults for all reportlab settings from
+reportlab.rl_settings.py
+reportlab.local_rl_settings.py
+reportlab_settings.py or ~/.reportlab_settings
+
+latter values override earlier
+\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1rl__config_aa80bc20d82c427d2d05171376c3d6b07}\index{reportlab.rl\_config@{reportlab.rl\_config}!\_enumChk@{\_enumChk}}
+\index{\_enumChk@{\_enumChk}!reportlab.rl\_config@{reportlab.rl\_config}}
+\doxysubsubsection{\texorpdfstring{\_enumChk()}{\_enumChk()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1rl__config_aa80bc20d82c427d2d05171376c3d6b07} 
+reportlab.\+rl\+\_\+config.\+\_\+enum\+Chk (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{value}{, }\item[{}]{allowed}{ = {\ttfamily ()}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1rl__config_a1b6c91977beb613055b7ddeaafc709c2}\index{reportlab.rl\_config@{reportlab.rl\_config}!\_reset@{\_reset}}
+\index{\_reset@{\_reset}!reportlab.rl\_config@{reportlab.rl\_config}}
+\doxysubsubsection{\texorpdfstring{\_reset()}{\_reset()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1rl__config_a1b6c91977beb613055b7ddeaafc709c2} 
+reportlab.\+rl\+\_\+config.\+\_\+reset (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}attempt to reset reportlab and friends\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1rl__config_a26a89144862e6b46a90840e7d75544e2}\index{reportlab.rl\_config@{reportlab.rl\_config}!\_setOpt@{\_setOpt}}
+\index{\_setOpt@{\_setOpt}!reportlab.rl\_config@{reportlab.rl\_config}}
+\doxysubsubsection{\texorpdfstring{\_setOpt()}{\_setOpt()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1rl__config_a26a89144862e6b46a90840e7d75544e2} 
+reportlab.\+rl\+\_\+config.\+\_\+set\+Opt (\begin{DoxyParamCaption}\item[{}]{name}{, }\item[{}]{value}{, }\item[{}]{conv}{ = {\ttfamily None}, }\item[{}]{chk}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}set a module level value from environ/default\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1rl__config_a26e7cdb04192aabf1abaa2fb23d4500d}\index{reportlab.rl\_config@{reportlab.rl\_config}!\_startUp@{\_startUp}}
+\index{\_startUp@{\_startUp}!reportlab.rl\_config@{reportlab.rl\_config}}
+\doxysubsubsection{\texorpdfstring{\_startUp()}{\_startUp()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1rl__config_a26e7cdb04192aabf1abaa2fb23d4500d} 
+reportlab.\+rl\+\_\+config.\+\_\+start\+Up (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}This function allows easy resetting to the global defaults
+If the environment contains 'RL_xxx' then we use the value
+else we use the given default\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1rl__config_a927e418e1d4d8640e2abc9cf34ce08e2}\index{reportlab.rl\_config@{reportlab.rl\_config}!register\_reset@{register\_reset}}
+\index{register\_reset@{register\_reset}!reportlab.rl\_config@{reportlab.rl\_config}}
+\doxysubsubsection{\texorpdfstring{register\_reset()}{register\_reset()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1rl__config_a927e418e1d4d8640e2abc9cf34ce08e2} 
+reportlab.\+rl\+\_\+config.\+register\+\_\+reset (\begin{DoxyParamCaption}\item[{}]{func}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}register a function to be called by rl_config._reset\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacereportlab_1_1rl__config_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacereportlab_1_1rl__config_ab7f5b751caf6dca00810197db385ae32}\index{reportlab.rl\_config@{reportlab.rl\_config}!\_DEFAULTS@{\_DEFAULTS}}
+\index{\_DEFAULTS@{\_DEFAULTS}!reportlab.rl\_config@{reportlab.rl\_config}}
+\doxysubsubsection{\texorpdfstring{\_DEFAULTS}{\_DEFAULTS}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1rl__config_ab7f5b751caf6dca00810197db385ae32} 
+reportlab.\+rl\+\_\+config.\+\_\+\+DEFAULTS = \doxymbox{\hyperlink{namespacereportlab_1_1rl__config_a096f0fa38b7d21e8028ffd469ef9bb51}{\+\_\+defaults\+\_\+init}}()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1rl__config_a2835bf5957e33dd42cc8474dbdb5d9be}\index{reportlab.rl\_config@{reportlab.rl\_config}!\_registered\_resets@{\_registered\_resets}}
+\index{\_registered\_resets@{\_registered\_resets}!reportlab.rl\_config@{reportlab.rl\_config}}
+\doxysubsubsection{\texorpdfstring{\_registered\_resets}{\_registered\_resets}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1rl__config_a2835bf5957e33dd42cc8474dbdb5d9be} 
+list reportlab.\+rl\+\_\+config.\+\_\+registered\+\_\+resets = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1rl__config_ab42fe824f975f881180146709abd664c}\index{reportlab.rl\_config@{reportlab.rl\_config}!\_rlChecks@{\_rlChecks}}
+\index{\_rlChecks@{\_rlChecks}!reportlab.rl\_config@{reportlab.rl\_config}}
+\doxysubsubsection{\texorpdfstring{\_rlChecks}{\_rlChecks}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1rl__config_ab42fe824f975f881180146709abd664c} 
+reportlab.\+rl\+\_\+config.\+\_\+rl\+Checks\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ dict(}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ renderPMBackend\ =\ partial(\_enumChk,allowed=(\textcolor{stringliteral}{'rlPyCairo'},\textcolor{stringliteral}{'\_renderPM'})),}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ xmlParser\ =\ partial(\_enumChk,allowed=(\textcolor{stringliteral}{'lxml'},\textcolor{stringliteral}{'pyrxp'})),}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ textPaths\ =\ partial(\_enumChk,allowed=(\textcolor{stringliteral}{'freetype'},\textcolor{stringliteral}{'\_renderPM'},\textcolor{stringliteral}{'backend'})),}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1rl__config_a7a62f8901c17204537e140a1be37cd2d}\index{reportlab.rl\_config@{reportlab.rl\_config}!\_SAVED@{\_SAVED}}
+\index{\_SAVED@{\_SAVED}!reportlab.rl\_config@{reportlab.rl\_config}}
+\doxysubsubsection{\texorpdfstring{\_SAVED}{\_SAVED}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1rl__config_a7a62f8901c17204537e140a1be37cd2d} 
+dict reportlab.\+rl\+\_\+config.\+\_\+\+SAVED = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1rl__config_abfa72d4814521720fdd9463796d0b058}\index{reportlab.rl\_config@{reportlab.rl\_config}!sys\_version@{sys\_version}}
+\index{sys\_version@{sys\_version}!reportlab.rl\_config@{reportlab.rl\_config}}
+\doxysubsubsection{\texorpdfstring{sys\_version}{sys\_version}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1rl__config_abfa72d4814521720fdd9463796d0b058} 
+reportlab.\+rl\+\_\+config.\+sys\+\_\+version = None}
+

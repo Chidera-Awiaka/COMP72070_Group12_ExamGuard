@@ -1,0 +1,154 @@
+\doxysection{reportlab.\+lib.\+yaml.\+Base\+Parser Class Reference}
+\hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser}{}\label{classreportlab_1_1lib_1_1yaml_1_1_base_parser}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+Inheritance diagram for reportlab.\+lib.\+yaml.\+Base\+Parser:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreportlab_1_1lib_1_1yaml_1_1_base_parser}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a68dc6bcb4e800a96343e4f6be228f2e3}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a2a0e53a4975f74c4f4e3096abde41d13}{reset}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a37a54d5101299e17eb95cd9438867462}{parse\+File}} (self, filename)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_af92d138a156e5e35e8236c934e6652ff}{parse\+Text}} (self, text\+Block)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a47d80eaeae8b76df54ac3f1444dc9d65}{read\+Line}} (self, line)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a626e3f203395f9fc407d41d7fcf33d0c}{end\+Para}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a8274d807076d5b981aeef553739e9759}{begin\+Pre}} (self, stylename)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_ad3a0155e0dfb98e0bc6035c506997b44}{end\+Pre}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a2740cce17373fe74b0e04fc91badef32}{image}} (self, filename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_af1360c5fd7bfbadca3dd6308112282b8}{\+\_\+line\+No}} = 0
+\item 
+str \doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a769df110b1ae1a6ffd06426272d2f81f}{\+\_\+style}} = \textquotesingle{}Normal\textquotesingle{}
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a37028f8874eeb1879ce63b9a57c6e613}{\+\_\+results}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a5ac8f1962298f5d6ee52a91b3a6baa17}{\+\_\+buf}} = \+[$\,$]\+
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a0dd27045c8bcbdf4c19fa9bad13d6e7b}{\+\_\+mode}} = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1yaml_af0b68b94dd83cea00bdcdac5fb0c4978}{PLAIN}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}"Simplest possible parser with only the most basic options.
+
+This defines the line-handling abilities and basic mechanism.
+The class YAMLParser includes capabilities for a fairly rich
+story.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a68dc6bcb4e800a96343e4f6be228f2e3}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a68dc6bcb4e800a96343e4f6be228f2e3} 
+reportlab.\+lib.\+yaml.\+Base\+Parser.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a8274d807076d5b981aeef553739e9759}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!beginPre@{beginPre}}
+\index{beginPre@{beginPre}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{beginPre()}{beginPre()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a8274d807076d5b981aeef553739e9759} 
+reportlab.\+lib.\+yaml.\+Base\+Parser.\+begin\+Pre (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{stylename}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a626e3f203395f9fc407d41d7fcf33d0c}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!endPara@{endPara}}
+\index{endPara@{endPara}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{endPara()}{endPara()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a626e3f203395f9fc407d41d7fcf33d0c} 
+reportlab.\+lib.\+yaml.\+Base\+Parser.\+end\+Para (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_ad3a0155e0dfb98e0bc6035c506997b44}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!endPre@{endPre}}
+\index{endPre@{endPre}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{endPre()}{endPre()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_ad3a0155e0dfb98e0bc6035c506997b44} 
+reportlab.\+lib.\+yaml.\+Base\+Parser.\+end\+Pre (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a2740cce17373fe74b0e04fc91badef32}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!image@{image}}
+\index{image@{image}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{image()}{image()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a2740cce17373fe74b0e04fc91badef32} 
+reportlab.\+lib.\+yaml.\+Base\+Parser.\+image (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{filename}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a37a54d5101299e17eb95cd9438867462}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!parseFile@{parseFile}}
+\index{parseFile@{parseFile}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{parseFile()}{parseFile()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a37a54d5101299e17eb95cd9438867462} 
+reportlab.\+lib.\+yaml.\+Base\+Parser.\+parse\+File (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{filename}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_af92d138a156e5e35e8236c934e6652ff}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!parseText@{parseText}}
+\index{parseText@{parseText}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{parseText()}{parseText()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_af92d138a156e5e35e8236c934e6652ff} 
+reportlab.\+lib.\+yaml.\+Base\+Parser.\+parse\+Text (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text\+Block}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a47d80eaeae8b76df54ac3f1444dc9d65}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!readLine@{readLine}}
+\index{readLine@{readLine}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{readLine()}{readLine()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a47d80eaeae8b76df54ac3f1444dc9d65} 
+reportlab.\+lib.\+yaml.\+Base\+Parser.\+read\+Line (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{line}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a2a0e53a4975f74c4f4e3096abde41d13}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!reset@{reset}}
+\index{reset@{reset}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a2a0e53a4975f74c4f4e3096abde41d13} 
+reportlab.\+lib.\+yaml.\+Base\+Parser.\+reset (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a5ac8f1962298f5d6ee52a91b3a6baa17}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!\_buf@{\_buf}}
+\index{\_buf@{\_buf}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{\_buf}{\_buf}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a5ac8f1962298f5d6ee52a91b3a6baa17} 
+reportlab.\+lib.\+yaml.\+Base\+Parser.\+\_\+buf = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_af1360c5fd7bfbadca3dd6308112282b8}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!\_lineNo@{\_lineNo}}
+\index{\_lineNo@{\_lineNo}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{\_lineNo}{\_lineNo}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_af1360c5fd7bfbadca3dd6308112282b8} 
+reportlab.\+lib.\+yaml.\+Base\+Parser.\+\_\+line\+No = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a0dd27045c8bcbdf4c19fa9bad13d6e7b}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!\_mode@{\_mode}}
+\index{\_mode@{\_mode}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{\_mode}{\_mode}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a0dd27045c8bcbdf4c19fa9bad13d6e7b} 
+reportlab.\+lib.\+yaml.\+Base\+Parser.\+\_\+mode = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1yaml_af0b68b94dd83cea00bdcdac5fb0c4978}{PLAIN}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a37028f8874eeb1879ce63b9a57c6e613}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!\_results@{\_results}}
+\index{\_results@{\_results}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{\_results}{\_results}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a37028f8874eeb1879ce63b9a57c6e613} 
+list reportlab.\+lib.\+yaml.\+Base\+Parser.\+\_\+results = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a769df110b1ae1a6ffd06426272d2f81f}\index{reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}!\_style@{\_style}}
+\index{\_style@{\_style}!reportlab.lib.yaml.BaseParser@{reportlab.lib.yaml.BaseParser}}
+\doxysubsubsection{\texorpdfstring{\_style}{\_style}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1yaml_1_1_base_parser_a769df110b1ae1a6ffd06426272d2f81f} 
+reportlab.\+lib.\+yaml.\+Base\+Parser.\+\_\+style = \textquotesingle{}Normal\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+lib/\+\doxymbox{\hyperlink{yaml_8py}{yaml.\+py}}\end{DoxyCompactItemize}

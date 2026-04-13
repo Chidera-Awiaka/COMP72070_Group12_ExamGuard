@@ -1,0 +1,134 @@
+\doxysection{PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream Class Reference}
+\hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream}{}\label{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream}\index{PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}}
+Inheritance diagram for PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a0a70a73232d556c215fbd9333fa85d88}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, IO\+[bytes]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_ae424bdb25dadd6b9ed72b6b320237703}{fp}})
+\item 
+tuple\+[bytes, int, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a5f2ed9a56a2501c12a34d49bcce27b5f}{read}} (self)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream}{Chunk\+Stream}} \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a26573ebcf395d4908653c35f7c1c3aab}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a4d175f3a291ea28e51997d810742a906}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}object args)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_aa7278fbb005e45266e1f3817bb10dc8b}{close}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a1b003c9f29b588b716b6237907e3f164}{push}} (self, bytes cid, int pos, int length)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a1ef6dc38df03b33df1f8199d6f5054ba}{call}} (self, bytes cid, int pos, int length)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a81604fef12634e71499a9fbdf92ded4a}{crc}} (self, bytes cid, bytes data)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_ad7a4312212132675573458772a317217}{crc\+\_\+skip}} (self, bytes cid, bytes data)
+\item 
+list\+[bytes]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a8d57be2aaec103b27b2852d50297f687}{verify}} (self, bytes endchunk=b"{}\+IEND"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+IO\+[bytes]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_ae424bdb25dadd6b9ed72b6b320237703}{fp}} = fp
+\item 
+list \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a99f7032c974d8faba442e530723beafc}{queue}} = \+[$\,$]\+
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a0a70a73232d556c215fbd9333fa85d88}\index{PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a0a70a73232d556c215fbd9333fa85d88} 
+ None PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IO\+[bytes]\+}]{fp}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a26573ebcf395d4908653c35f7c1c3aab}\index{PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a26573ebcf395d4908653c35f7c1c3aab} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream}{Chunk\+Stream}} PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a4d175f3a291ea28e51997d810742a906}\index{PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a4d175f3a291ea28e51997d810742a906} 
+ None PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}object}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a1ef6dc38df03b33df1f8199d6f5054ba}\index{PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}!call@{call}}
+\index{call@{call}!PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}}
+\doxysubsubsection{\texorpdfstring{call()}{call()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a1ef6dc38df03b33df1f8199d6f5054ba} 
+ bytes PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream.\+call (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{cid}{, }\item[{int}]{pos}{, }\item[{int}]{length}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Call the appropriate chunk handler\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_aa7278fbb005e45266e1f3817bb10dc8b}\index{PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}!close@{close}}
+\index{close@{close}!PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_aa7278fbb005e45266e1f3817bb10dc8b} 
+ None PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a81604fef12634e71499a9fbdf92ded4a}\index{PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}!crc@{crc}}
+\index{crc@{crc}!PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}}
+\doxysubsubsection{\texorpdfstring{crc()}{crc()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a81604fef12634e71499a9fbdf92ded4a} 
+ None PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream.\+crc (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{cid}{, }\item[{bytes}]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read and verify checksum\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_ad7a4312212132675573458772a317217}\index{PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}!crc\_skip@{crc\_skip}}
+\index{crc\_skip@{crc\_skip}!PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}}
+\doxysubsubsection{\texorpdfstring{crc\_skip()}{crc\_skip()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_ad7a4312212132675573458772a317217} 
+ None PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream.\+crc\+\_\+skip (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{cid}{, }\item[{bytes}]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read checksum\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a1b003c9f29b588b716b6237907e3f164}\index{PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}!push@{push}}
+\index{push@{push}!PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a1b003c9f29b588b716b6237907e3f164} 
+ None PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream.\+push (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{cid}{, }\item[{int}]{pos}{, }\item[{int}]{length}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a5f2ed9a56a2501c12a34d49bcce27b5f}\index{PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}!read@{read}}
+\index{read@{read}!PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a5f2ed9a56a2501c12a34d49bcce27b5f} 
+ tuple\+[bytes, int, int]\+ PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream.\+read (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Fetch a new chunk. Returns header information.\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a8d57be2aaec103b27b2852d50297f687}\index{PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}!verify@{verify}}
+\index{verify@{verify}!PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a8d57be2aaec103b27b2852d50297f687} 
+ list\+[bytes]\+ PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream.\+verify (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes }]{endchunk}{ = {\ttfamily b"{}IEND"{}}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_ae424bdb25dadd6b9ed72b6b320237703}\index{PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}!fp@{fp}}
+\index{fp@{fp}!PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}}
+\doxysubsubsection{\texorpdfstring{fp}{fp}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_ae424bdb25dadd6b9ed72b6b320237703} 
+PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream.\+fp = fp}
+
+\Hypertarget{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a99f7032c974d8faba442e530723beafc}\index{PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}!queue@{queue}}
+\index{queue@{queue}!PIL.PngImagePlugin.ChunkStream@{PIL.PngImagePlugin.ChunkStream}}
+\doxysubsubsection{\texorpdfstring{queue}{queue}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_png_image_plugin_1_1_chunk_stream_a99f7032c974d8faba442e530723beafc} 
+list PIL.\+Png\+Image\+Plugin.\+Chunk\+Stream.\+queue = \+[$\,$]\+}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_png_image_plugin_8py}{Png\+Image\+Plugin.\+py}}\end{DoxyCompactItemize}

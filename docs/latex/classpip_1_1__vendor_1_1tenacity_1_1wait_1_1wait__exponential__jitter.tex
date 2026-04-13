@@ -1,0 +1,104 @@
+\doxysection{pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+exponential\+\_\+jitter Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter}{}\label{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter}\index{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter@{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter}}
+Inheritance diagram for pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+exponential\+\_\+jitter:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_ab9070b9dc2e38f1d1808d61bdeb02416}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, float \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_ac6662caaf70bdb39768bf5a62f6d3e3a}{initial}}=1, float \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_a2cf134c7e26c1625e4891391d2d06996}{max}}=\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1__utils_a840190bc680c61c2ae12e55b5db55fd9}{\+\_\+utils.\+MAX\+\_\+\+WAIT}}, float \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_abc6d622d212bcc42aab385345424c5f2}{exp\+\_\+base}}=2, float \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_ac908246ff973a7719e5375db23d096e2}{jitter}}=1)
+\item 
+float \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_a1fbcb17e0dcd9d4bca137a00e52243c8}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, "{}Retry\+Call\+State"{} retry\+\_\+state)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__base}{pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+base}}}
+\begin{DoxyCompactItemize}
+\item 
+float \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__base_a9cbdfdd35e84486ae86bbd567f34acbe}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, "{}Retry\+Call\+State"{} retry\+\_\+state)
+\item 
+"{}wait\+\_\+combine"{} \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__base_a92a3b816a002ac9a87ff2714a5081dbe}{\+\_\+\+\_\+add\+\_\+\+\_\+}} (self, "{}wait\+\_\+base"{} other)
+\item 
+typing.\+Union\+["{}wait\+\_\+combine"{}, "{}wait\+\_\+base"{}]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__base_a7d37ba0d8f7edf3c4242a1a55233e0db}{\+\_\+\+\_\+radd\+\_\+\+\_\+}} (self, "{}wait\+\_\+base"{} other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_ac6662caaf70bdb39768bf5a62f6d3e3a}{initial}} = initial
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_a2cf134c7e26c1625e4891391d2d06996}{max}} = max
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_abc6d622d212bcc42aab385345424c5f2}{exp\+\_\+base}} = exp\+\_\+base
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_ac908246ff973a7719e5375db23d096e2}{jitter}} = jitter
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wait strategy that applies exponential backoff and jitter.
+
+It allows for a customized initial wait, maximum wait and jitter.
+
+This implements the strategy described here:
+https://cloud.google.com/storage/docs/retry-strategy
+
+The wait time is min(initial * 2**n + random.uniform(0, jitter), maximum)
+where n is the retry count.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_ab9070b9dc2e38f1d1808d61bdeb02416}\index{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter@{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.tenacity.wait.wait\_exponential\_jitter@{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_ab9070b9dc2e38f1d1808d61bdeb02416} 
+ None pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+exponential\+\_\+jitter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float }]{initial}{ = {\ttfamily 1}, }\item[{float }]{max}{ = {\ttfamily \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1__utils_a840190bc680c61c2ae12e55b5db55fd9}{\+\_\+utils.\+MAX\+\_\+\+WAIT}}}, }\item[{float }]{exp\+\_\+base}{ = {\ttfamily 2}, }\item[{float }]{jitter}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_a1fbcb17e0dcd9d4bca137a00e52243c8}\index{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter@{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!pip.\_vendor.tenacity.wait.wait\_exponential\_jitter@{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_a1fbcb17e0dcd9d4bca137a00e52243c8} 
+ float pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+exponential\+\_\+jitter.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Retry\+Call\+State"{}}]{retry\+\_\+state}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_abc6d622d212bcc42aab385345424c5f2}\index{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter@{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter}!exp\_base@{exp\_base}}
+\index{exp\_base@{exp\_base}!pip.\_vendor.tenacity.wait.wait\_exponential\_jitter@{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter}}
+\doxysubsubsection{\texorpdfstring{exp\_base}{exp\_base}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_abc6d622d212bcc42aab385345424c5f2} 
+pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+exponential\+\_\+jitter.\+exp\+\_\+base = exp\+\_\+base}
+
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_ac6662caaf70bdb39768bf5a62f6d3e3a}\index{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter@{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter}!initial@{initial}}
+\index{initial@{initial}!pip.\_vendor.tenacity.wait.wait\_exponential\_jitter@{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter}}
+\doxysubsubsection{\texorpdfstring{initial}{initial}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_ac6662caaf70bdb39768bf5a62f6d3e3a} 
+pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+exponential\+\_\+jitter.\+initial = initial}
+
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_ac908246ff973a7719e5375db23d096e2}\index{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter@{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter}!jitter@{jitter}}
+\index{jitter@{jitter}!pip.\_vendor.tenacity.wait.wait\_exponential\_jitter@{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter}}
+\doxysubsubsection{\texorpdfstring{jitter}{jitter}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_ac908246ff973a7719e5375db23d096e2} 
+pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+exponential\+\_\+jitter.\+jitter = jitter}
+
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_a2cf134c7e26c1625e4891391d2d06996}\index{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter@{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter}!max@{max}}
+\index{max@{max}!pip.\_vendor.tenacity.wait.wait\_exponential\_jitter@{pip.\_vendor.tenacity.wait.wait\_exponential\_jitter}}
+\doxysubsubsection{\texorpdfstring{max}{max}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__exponential__jitter_a2cf134c7e26c1625e4891391d2d06996} 
+pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+exponential\+\_\+jitter.\+max = max}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+tenacity/\+\doxymbox{\hyperlink{tenacity_2wait_8py}{wait.\+py}}\end{DoxyCompactItemize}

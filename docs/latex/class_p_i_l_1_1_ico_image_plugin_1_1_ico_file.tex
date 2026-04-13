@@ -1,0 +1,100 @@
+\doxysection{PIL.\+Ico\+Image\+Plugin.\+Ico\+File Class Reference}
+\hypertarget{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file}{}\label{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file}\index{PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a6c6d90c6f2f20d664849e456d8309d9c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, IO\+[bytes]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_abefa6b6075319d1650e648e43e58cd00}{buf}})
+\item 
+set\+[tuple\+[int, int]\+]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a51971af925c167d7b771c86803242007}{sizes}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a24774d632bd77f5823d4a70aeb24c873}{getentryindex}} (self, tuple\+[int, int]\+ size, int\texorpdfstring{$\vert$}{|}bool bpp=False)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_abd4b029d05c096be14b17a9ac1079f09}{getimage}} (self, tuple\+[int, int]\+ size, int\texorpdfstring{$\vert$}{|}bool bpp=False)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a51053d0798abd43e45f3913b51c9e5dd}{frame}} (self, int idx)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_abefa6b6075319d1650e648e43e58cd00}{buf}} = buf
+\item 
+list \doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a85536e2009ac9fafd47510f5dc8f1216}{entry}} = \+[$\,$]\+
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a1d659c82b79b4a50955b54c8c0f93051}{nb\+\_\+items}} = i16(s, 4)
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a6c6d90c6f2f20d664849e456d8309d9c}\index{PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a6c6d90c6f2f20d664849e456d8309d9c} 
+ None PIL.\+Ico\+Image\+Plugin.\+Ico\+File.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IO\+[bytes]\+}]{buf}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Parse image from file-like object containing ico file data
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a51053d0798abd43e45f3913b51c9e5dd}\index{PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}!frame@{frame}}
+\index{frame@{frame}!PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}}
+\doxysubsubsection{\texorpdfstring{frame()}{frame()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a51053d0798abd43e45f3913b51c9e5dd} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} PIL.\+Ico\+Image\+Plugin.\+Ico\+File.\+frame (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{idx}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get an image from frame idx
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a24774d632bd77f5823d4a70aeb24c873}\index{PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}!getentryindex@{getentryindex}}
+\index{getentryindex@{getentryindex}!PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}}
+\doxysubsubsection{\texorpdfstring{getentryindex()}{getentryindex()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a24774d632bd77f5823d4a70aeb24c873} 
+ int PIL.\+Ico\+Image\+Plugin.\+Ico\+File.\+getentryindex (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[int, int]\+}]{size}{, }\item[{int \texorpdfstring{$\vert$}{|} bool }]{bpp}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_abd4b029d05c096be14b17a9ac1079f09}\index{PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}!getimage@{getimage}}
+\index{getimage@{getimage}!PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}}
+\doxysubsubsection{\texorpdfstring{getimage()}{getimage()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_abd4b029d05c096be14b17a9ac1079f09} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} PIL.\+Ico\+Image\+Plugin.\+Ico\+File.\+getimage (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[int, int]\+}]{size}{, }\item[{int \texorpdfstring{$\vert$}{|} bool }]{bpp}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get an image from the icon
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a51971af925c167d7b771c86803242007}\index{PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}!sizes@{sizes}}
+\index{sizes@{sizes}!PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}}
+\doxysubsubsection{\texorpdfstring{sizes()}{sizes()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a51971af925c167d7b771c86803242007} 
+ set\+[tuple\+[int, int]\+]\+ PIL.\+Ico\+Image\+Plugin.\+Ico\+File.\+sizes (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get a set of all available icon sizes and color depths.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_abefa6b6075319d1650e648e43e58cd00}\index{PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}!buf@{buf}}
+\index{buf@{buf}!PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}}
+\doxysubsubsection{\texorpdfstring{buf}{buf}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_abefa6b6075319d1650e648e43e58cd00} 
+PIL.\+Ico\+Image\+Plugin.\+Ico\+File.\+buf = buf}
+
+\Hypertarget{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a85536e2009ac9fafd47510f5dc8f1216}\index{PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}!entry@{entry}}
+\index{entry@{entry}!PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}}
+\doxysubsubsection{\texorpdfstring{entry}{entry}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a85536e2009ac9fafd47510f5dc8f1216} 
+PIL.\+Ico\+Image\+Plugin.\+Ico\+File.\+entry = \+[$\,$]\+}
+
+\Hypertarget{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a1d659c82b79b4a50955b54c8c0f93051}\index{PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}!nb\_items@{nb\_items}}
+\index{nb\_items@{nb\_items}!PIL.IcoImagePlugin.IcoFile@{PIL.IcoImagePlugin.IcoFile}}
+\doxysubsubsection{\texorpdfstring{nb\_items}{nb\_items}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ico_image_plugin_1_1_ico_file_a1d659c82b79b4a50955b54c8c0f93051} 
+PIL.\+Ico\+Image\+Plugin.\+Ico\+File.\+nb\+\_\+items = i16(s, 4)}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_ico_image_plugin_8py}{Ico\+Image\+Plugin.\+py}}\end{DoxyCompactItemize}

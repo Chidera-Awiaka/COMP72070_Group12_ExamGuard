@@ -1,0 +1,130 @@
+\doxysection{reportlab.\+lib.\+styles.\+Style\+Sheet1 Class Reference}
+\hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1}{}\label{classreportlab_1_1lib_1_1styles_1_1_style_sheet1}\index{reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a829151179af5dbfdaf90717d9e1fa896}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_af481ce07cc6ba63bdbb4cccc99b5faf4}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_ad09ee692f78dcff15eeab6fd6373703d}{get}} (self, key, default=\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1styles_ab379f917751e529b8cadb90359b8a2ea}{\+\_\+stylesheet1\+\_\+undefined}})
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a4051d4a7f44d78c4510bb32176b76524}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, key)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a01d47d29fa0d223d84efcb9d4790b177}{has\+\_\+key}} (self, key)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_abc9a5ff717e515cad3c745bf56c7b04a}{add}} (self, style, alias=None)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a2c964de3904c5a64b7f4b272c1c80f18}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, a)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a61e06dba4a26b18b314063228c11089d}{list}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a3f1126227939915ed848a9ca915c6425}{by\+Name}} = \{\}
+\item 
+dict \doxymbox{\hyperlink{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a2e7912207e7b23831ed593612ab6261e}{by\+Alias}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This may or may not be used.  The idea is to:
+
+1. slightly simplify construction of stylesheets;
+
+2. enforce rules to validate styles when added
+   (e.g. we may choose to disallow having both
+   'heading1' and 'Heading1' - actual rules are
+   open to discussion);
+   
+3. allow aliases and alternate style lookup
+   mechanisms
+   
+4. Have a place to hang style-manipulation
+   methods (save, load, maybe support a GUI
+   editor)
+
+Access is via getitem, so they can be
+compatible with plain old dictionaries.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a829151179af5dbfdaf90717d9e1fa896}\index{reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a829151179af5dbfdaf90717d9e1fa896} 
+reportlab.\+lib.\+styles.\+Style\+Sheet1.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a4051d4a7f44d78c4510bb32176b76524}\index{reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a4051d4a7f44d78c4510bb32176b76524} 
+reportlab.\+lib.\+styles.\+Style\+Sheet1.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a2c964de3904c5a64b7f4b272c1c80f18}\index{reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a2c964de3904c5a64b7f4b272c1c80f18} 
+reportlab.\+lib.\+styles.\+Style\+Sheet1.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{a}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_af481ce07cc6ba63bdbb4cccc99b5faf4}\index{reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_af481ce07cc6ba63bdbb4cccc99b5faf4} 
+reportlab.\+lib.\+styles.\+Style\+Sheet1.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_abc9a5ff717e515cad3c745bf56c7b04a}\index{reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}!add@{add}}
+\index{add@{add}!reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_abc9a5ff717e515cad3c745bf56c7b04a} 
+reportlab.\+lib.\+styles.\+Style\+Sheet1.\+add (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{style}{, }\item[{}]{alias}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_ad09ee692f78dcff15eeab6fd6373703d}\index{reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}!get@{get}}
+\index{get@{get}!reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_ad09ee692f78dcff15eeab6fd6373703d} 
+reportlab.\+lib.\+styles.\+Style\+Sheet1.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{default}{ = {\ttfamily \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1styles_ab379f917751e529b8cadb90359b8a2ea}{\+\_\+stylesheet1\+\_\+undefined}}}}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a01d47d29fa0d223d84efcb9d4790b177}\index{reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}!has\_key@{has\_key}}
+\index{has\_key@{has\_key}!reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}}
+\doxysubsubsection{\texorpdfstring{has\_key()}{has\_key()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a01d47d29fa0d223d84efcb9d4790b177} 
+reportlab.\+lib.\+styles.\+Style\+Sheet1.\+has\+\_\+key (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a61e06dba4a26b18b314063228c11089d}\index{reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}!list@{list}}
+\index{list@{list}!reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}}
+\doxysubsubsection{\texorpdfstring{list()}{list()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a61e06dba4a26b18b314063228c11089d} 
+reportlab.\+lib.\+styles.\+Style\+Sheet1.\+list (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a2e7912207e7b23831ed593612ab6261e}\index{reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}!byAlias@{byAlias}}
+\index{byAlias@{byAlias}!reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}}
+\doxysubsubsection{\texorpdfstring{byAlias}{byAlias}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a2e7912207e7b23831ed593612ab6261e} 
+dict reportlab.\+lib.\+styles.\+Style\+Sheet1.\+by\+Alias = \{\}}
+
+\Hypertarget{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a3f1126227939915ed848a9ca915c6425}\index{reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}!byName@{byName}}
+\index{byName@{byName}!reportlab.lib.styles.StyleSheet1@{reportlab.lib.styles.StyleSheet1}}
+\doxysubsubsection{\texorpdfstring{byName}{byName}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1styles_1_1_style_sheet1_a3f1126227939915ed848a9ca915c6425} 
+dict reportlab.\+lib.\+styles.\+Style\+Sheet1.\+by\+Name = \{\}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+lib/\+\doxymbox{\hyperlink{styles_8py}{styles.\+py}}\end{DoxyCompactItemize}

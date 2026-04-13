@@ -1,0 +1,105 @@
+\doxysection{pip.\+\_\+vendor.\+colorama.\+ansitowin32.\+Stream\+Wrapper Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper}{}\label{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper}\index{pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}}
+Inheritance diagram for pip.\+\_\+vendor.\+colorama.\+ansitowin32.\+Stream\+Wrapper:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_aa2c18d585c3c407973057981638ffb0e}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, wrapped, converter)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a818691ade602f87effff39bf0fea87d6}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, name)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a139598446b6e6e4bed1bf5203f0572bf}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a5dde30962826b93cb87493d7a10d60a0}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_abcac0c2520d8b826d907f329f77f2f33}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, state)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a2eeb4f6849ceba9cf9969526017df4a4}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_aa47f76b442f79d6ff416b7b941fc274e}{write}} (self, text)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a3104b95978c1d4474a7170577da7e104}{isatty}} (self)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a2ef356ff91d4cd24efc9c17fb6dca418}{closed}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wraps a stream (such as stdout), acting as a transparent proxy for all
+attribute access apart from method 'write()', which is delegated to our
+Converter instance.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_aa2c18d585c3c407973057981638ffb0e}\index{pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_aa2c18d585c3c407973057981638ffb0e} 
+pip.\+\_\+vendor.\+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{wrapped}{, }\item[{}]{converter}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a139598446b6e6e4bed1bf5203f0572bf}\index{pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a139598446b6e6e4bed1bf5203f0572bf} 
+pip.\+\_\+vendor.\+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a5dde30962826b93cb87493d7a10d60a0}\index{pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a5dde30962826b93cb87493d7a10d60a0} 
+pip.\+\_\+vendor.\+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a818691ade602f87effff39bf0fea87d6}\index{pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a818691ade602f87effff39bf0fea87d6} 
+pip.\+\_\+vendor.\+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a2eeb4f6849ceba9cf9969526017df4a4}\index{pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}!\_\_getstate\_\_@{\_\_getstate\_\_}}
+\index{\_\_getstate\_\_@{\_\_getstate\_\_}!pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_getstate\_\_()}{\_\_getstate\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a2eeb4f6849ceba9cf9969526017df4a4} 
+pip.\+\_\+vendor.\+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+getstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_abcac0c2520d8b826d907f329f77f2f33}\index{pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}!\_\_setstate\_\_@{\_\_setstate\_\_}}
+\index{\_\_setstate\_\_@{\_\_setstate\_\_}!pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_setstate\_\_()}{\_\_setstate\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_abcac0c2520d8b826d907f329f77f2f33} 
+pip.\+\_\+vendor.\+colorama.\+ansitowin32.\+Stream\+Wrapper.\+\_\+\+\_\+setstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a2ef356ff91d4cd24efc9c17fb6dca418}\index{pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}!closed@{closed}}
+\index{closed@{closed}!pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{closed()}{closed()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a2ef356ff91d4cd24efc9c17fb6dca418} 
+pip.\+\_\+vendor.\+colorama.\+ansitowin32.\+Stream\+Wrapper.\+closed (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a3104b95978c1d4474a7170577da7e104}\index{pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}!isatty@{isatty}}
+\index{isatty@{isatty}!pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{isatty()}{isatty()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_a3104b95978c1d4474a7170577da7e104} 
+pip.\+\_\+vendor.\+colorama.\+ansitowin32.\+Stream\+Wrapper.\+isatty (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_aa47f76b442f79d6ff416b7b941fc274e}\index{pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}!write@{write}}
+\index{write@{write}!pip.\_vendor.colorama.ansitowin32.StreamWrapper@{pip.\_vendor.colorama.ansitowin32.StreamWrapper}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1colorama_1_1ansitowin32_1_1_stream_wrapper_aa47f76b442f79d6ff416b7b941fc274e} 
+pip.\+\_\+vendor.\+colorama.\+ansitowin32.\+Stream\+Wrapper.\+write (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+colorama/\+\doxymbox{\hyperlink{ansitowin32_8py}{ansitowin32.\+py}}\end{DoxyCompactItemize}

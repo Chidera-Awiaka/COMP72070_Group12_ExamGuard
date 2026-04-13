@@ -1,0 +1,125 @@
+\doxysection{PIL.\+Image\+Tk.\+Photo\+Image Class Reference}
+\hypertarget{class_p_i_l_1_1_image_tk_1_1_photo_image}{}\label{class_p_i_l_1_1_image_tk_1_1_photo_image}\index{PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_tk_1_1_photo_image_a4a68c72aa224f99d861b45d7841c1330}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None image=None, tuple\+[int, int]\+\texorpdfstring{$\vert$}{|}None size=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kw)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_tk_1_1_photo_image_ae6ee622dff78a450d53e166c0535de1b}{\+\_\+\+\_\+del\+\_\+\+\_\+}} (self)
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_tk_1_1_photo_image_af0500bc99814e31fbc66257b17f95bbc}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_tk_1_1_photo_image_a07e41f5e1a2af4e58b3e1dbfa26d6081}{width}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_tk_1_1_photo_image_afcf9ef21c44a3b080bb4224e8ff62d7a}{height}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_tk_1_1_photo_image_ad9ce4c94d915cd0bc27bf86827b1384a}{paste}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} im)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_tk_1_1_photo_image_a5c6c5db294abea511bffc966dbae4e74}{tk}} = self.\+\_\+\+\_\+photo.\+tk
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A Tkinter-compatible photo image.  This can be used
+everywhere Tkinter expects an image object.  If the image is an RGBA
+image, pixels having alpha 0 are treated as transparent.
+
+The constructor takes either a PIL image, or a mode and a size.
+Alternatively, you can use the ``file`` or ``data`` options to initialize
+the photo image object.
+
+:param image: Either a PIL image, or a mode string.  If a mode string is
+              used, a size must also be given.
+:param size: If the first argument is a mode string, this defines the size
+             of the image.
+:keyword file: A filename to load the image from (using
+               ``Image.open(file)``).
+:keyword data: An 8-bit string containing image data (as loaded from an
+               image file).
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_image_tk_1_1_photo_image_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_image_tk_1_1_photo_image_a4a68c72aa224f99d861b45d7841c1330}\index{PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_tk_1_1_photo_image_a4a68c72aa224f99d861b45d7841c1330} 
+ None PIL.\+Image\+Tk.\+Photo\+Image.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{image}{ = {\ttfamily None}, }\item[{tuple\+[int, int]\+ \texorpdfstring{$\vert$}{|} None }]{size}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kw}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_tk_1_1_photo_image_ae6ee622dff78a450d53e166c0535de1b}\index{PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}!\_\_del\_\_@{\_\_del\_\_}}
+\index{\_\_del\_\_@{\_\_del\_\_}!PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}}
+\doxysubsubsection{\texorpdfstring{\_\_del\_\_()}{\_\_del\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_tk_1_1_photo_image_ae6ee622dff78a450d53e166c0535de1b} 
+ None PIL.\+Image\+Tk.\+Photo\+Image.\+\_\+\+\_\+del\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_image_tk_1_1_photo_image_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_image_tk_1_1_photo_image_af0500bc99814e31fbc66257b17f95bbc}\index{PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_tk_1_1_photo_image_af0500bc99814e31fbc66257b17f95bbc} 
+ str PIL.\+Image\+Tk.\+Photo\+Image.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the Tkinter photo image identifier.  This method is automatically
+called by Tkinter whenever a PhotoImage object is passed to a Tkinter
+method.
+
+:return: A Tkinter photo image identifier (a string).
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_tk_1_1_photo_image_afcf9ef21c44a3b080bb4224e8ff62d7a}\index{PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}!height@{height}}
+\index{height@{height}!PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_tk_1_1_photo_image_afcf9ef21c44a3b080bb4224e8ff62d7a} 
+ int PIL.\+Image\+Tk.\+Photo\+Image.\+height (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the height of the image.
+
+:return: The height, in pixels.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_tk_1_1_photo_image_ad9ce4c94d915cd0bc27bf86827b1384a}\index{PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}!paste@{paste}}
+\index{paste@{paste}!PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}}
+\doxysubsubsection{\texorpdfstring{paste()}{paste()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_tk_1_1_photo_image_ad9ce4c94d915cd0bc27bf86827b1384a} 
+ None PIL.\+Image\+Tk.\+Photo\+Image.\+paste (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}}]{im}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Paste a PIL image into the photo image.  Note that this can
+be very slow if the photo image is displayed.
+
+:param im: A PIL image. The size must match the target region.  If the
+           mode does not match, the image is converted to the mode of
+           the bitmap image.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_tk_1_1_photo_image_a07e41f5e1a2af4e58b3e1dbfa26d6081}\index{PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}!width@{width}}
+\index{width@{width}!PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_tk_1_1_photo_image_a07e41f5e1a2af4e58b3e1dbfa26d6081} 
+ int PIL.\+Image\+Tk.\+Photo\+Image.\+width (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the width of the image.
+
+:return: The width, in pixels.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_image_tk_1_1_photo_image_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_image_tk_1_1_photo_image_a5c6c5db294abea511bffc966dbae4e74}\index{PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}!tk@{tk}}
+\index{tk@{tk}!PIL.ImageTk.PhotoImage@{PIL.ImageTk.PhotoImage}}
+\doxysubsubsection{\texorpdfstring{tk}{tk}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_tk_1_1_photo_image_a5c6c5db294abea511bffc966dbae4e74} 
+PIL.\+Image\+Tk.\+Photo\+Image.\+tk = self.\+\_\+\+\_\+photo.\+tk}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_tk_8py}{Image\+Tk.\+py}}\end{DoxyCompactItemize}

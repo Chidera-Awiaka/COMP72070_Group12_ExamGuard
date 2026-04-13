@@ -1,0 +1,92 @@
+\doxysection{PIL.\+Image\+Filter.\+Rank\+Filter Class Reference}
+\hypertarget{class_p_i_l_1_1_image_filter_1_1_rank_filter}{}\label{class_p_i_l_1_1_image_filter_1_1_rank_filter}\index{PIL.ImageFilter.RankFilter@{PIL.ImageFilter.RankFilter}}
+Inheritance diagram for PIL.\+Image\+Filter.\+Rank\+Filter:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_p_i_l_1_1_image_filter_1_1_rank_filter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_rank_filter_ac036251cbe1aa19d7cea980eede70eb1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_rank_filter_a0bc57f5d65445f9500239870e164a89c}{size}}, int \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_rank_filter_a0c93d894de8bbf6255925952dd0e5b4e}{rank}})
+\item 
+\+\_\+imaging.\+Imaging\+Core \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_rank_filter_a46f8d0362bdd1fd7dc0cb8ba39d054fa}{filter}} (self, \+\_\+imaging.\+Imaging\+Core image)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_rank_filter_a0bc57f5d65445f9500239870e164a89c}{size}} = size
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_rank_filter_a0c93d894de8bbf6255925952dd0e5b4e}{rank}} = rank
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_rank_filter_a2fc8e7173088a89726c947d3f1a5cbc9}{name}} = "{}Rank"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Create a rank filter.  The rank filter sorts all pixels in
+a window of the given size, and returns the ``rank``'th value.
+
+:param size: The kernel size, in pixels.
+:param rank: What pixel value to pick.  Use 0 for a min filter,
+             ``size * size / 2`` for a median filter, ``size * size - 1``
+             for a max filter, etc.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_rank_filter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_rank_filter_ac036251cbe1aa19d7cea980eede70eb1}\index{PIL.ImageFilter.RankFilter@{PIL.ImageFilter.RankFilter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.ImageFilter.RankFilter@{PIL.ImageFilter.RankFilter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_rank_filter_ac036251cbe1aa19d7cea980eede70eb1} 
+ None PIL.\+Image\+Filter.\+Rank\+Filter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{size}{, }\item[{int}]{rank}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_rank_filter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_rank_filter_a46f8d0362bdd1fd7dc0cb8ba39d054fa}\index{PIL.ImageFilter.RankFilter@{PIL.ImageFilter.RankFilter}!filter@{filter}}
+\index{filter@{filter}!PIL.ImageFilter.RankFilter@{PIL.ImageFilter.RankFilter}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_rank_filter_a46f8d0362bdd1fd7dc0cb8ba39d054fa} 
+ \+\_\+imaging.\+Imaging\+Core PIL.\+Image\+Filter.\+Rank\+Filter.\+filter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\+\_\+imaging.\+Imaging\+Core}]{image}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_filter_a238761d404ab92d2c7ad5bc6ecdc397f}{PIL.\+Image\+Filter.\+Filter}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_rank_filter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_rank_filter_a2fc8e7173088a89726c947d3f1a5cbc9}\index{PIL.ImageFilter.RankFilter@{PIL.ImageFilter.RankFilter}!name@{name}}
+\index{name@{name}!PIL.ImageFilter.RankFilter@{PIL.ImageFilter.RankFilter}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_rank_filter_a2fc8e7173088a89726c947d3f1a5cbc9} 
+str PIL.\+Image\+Filter.\+Rank\+Filter.\+name = "{}Rank"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_rank_filter_a0c93d894de8bbf6255925952dd0e5b4e}\index{PIL.ImageFilter.RankFilter@{PIL.ImageFilter.RankFilter}!rank@{rank}}
+\index{rank@{rank}!PIL.ImageFilter.RankFilter@{PIL.ImageFilter.RankFilter}}
+\doxysubsubsection{\texorpdfstring{rank}{rank}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_rank_filter_a0c93d894de8bbf6255925952dd0e5b4e} 
+PIL.\+Image\+Filter.\+Rank\+Filter.\+rank = rank}
+
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_rank_filter_a0bc57f5d65445f9500239870e164a89c}\index{PIL.ImageFilter.RankFilter@{PIL.ImageFilter.RankFilter}!size@{size}}
+\index{size@{size}!PIL.ImageFilter.RankFilter@{PIL.ImageFilter.RankFilter}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_rank_filter_a0bc57f5d65445f9500239870e164a89c} 
+PIL.\+Image\+Filter.\+Rank\+Filter.\+size = size}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_filter_8py}{Image\+Filter.\+py}}\end{DoxyCompactItemize}

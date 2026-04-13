@@ -1,0 +1,137 @@
+\doxysection{reportlab.\+lib.\+sequencer.\+\_\+\+Counter Class Reference}
+\hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter}{}\label{classreportlab_1_1lib_1_1sequencer_1_1___counter}\index{reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1sequencer_1_1___counter_aab7ff16fda3adaa0ca5778cfa4edf375}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1sequencer_1_1___counter_a794631620224199a3c544e24b423f122}{set\+Formatter}} (self, format\+Func)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1sequencer_1_1___counter_aeacd06fa19c0a47ac9719474003ec92b}{reset}} (self, value=None)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1sequencer_1_1___counter_a287ab441254f8967ffb7ebd51ee75442}{next}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1sequencer_1_1___counter_a6b6e9ad833570a89275bc5382a772112}{nextf}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1sequencer_1_1___counter_ada5f61492e5a98693cfaa868db9430db}{thisf}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1sequencer_1_1___counter_a5460d268d4016f7cdb4a6f60bca7533b}{chain}} (self, other\+Counter)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1sequencer_1_1___counter_aeae6dc0996a0c78c0e635758b83380d3}{\+\_\+this}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1lib_1_1sequencer_1_1___counter_a2d0b218b1304639b289a30b2b4a5c199}{\+\_\+base}} = 0
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1lib_1_1sequencer_1_1___counter_ae7a0c8691f09cdca5d181504c4c05268}{\+\_\+value}} = self.\+\_\+base
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1sequencer_1_1___counter_a2cb8a8822d2b939a29da99ca465d707c}{\+\_\+formatter}} = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1sequencer_a95f42d7472b215b4988f96014b5524d7}{\+\_\+format\+\_\+123}}
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1lib_1_1sequencer_1_1___counter_a0d175c794f2081bc5aa64354102965df}{\+\_\+resets}} = \+[$\,$]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Private class used by Sequencer.  Each counter
+knows its format, and the IDs of anything it
+resets, as well as its value. Starts at zero
+and increments just before you get the new value,
+so that it is still 'Chapter 5' and not 'Chapter 6'
+when you print 'Figure 5.1'\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_aab7ff16fda3adaa0ca5778cfa4edf375}\index{reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1sequencer_1_1___counter_aab7ff16fda3adaa0ca5778cfa4edf375} 
+reportlab.\+lib.\+sequencer.\+\_\+\+Counter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_aeae6dc0996a0c78c0e635758b83380d3}\index{reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}!\_this@{\_this}}
+\index{\_this@{\_this}!reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}}
+\doxysubsubsection{\texorpdfstring{\_this()}{\_this()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1sequencer_1_1___counter_aeae6dc0996a0c78c0e635758b83380d3} 
+reportlab.\+lib.\+sequencer.\+\_\+\+Counter.\+\_\+this (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_a5460d268d4016f7cdb4a6f60bca7533b}\index{reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}!chain@{chain}}
+\index{chain@{chain}!reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}}
+\doxysubsubsection{\texorpdfstring{chain()}{chain()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1sequencer_1_1___counter_a5460d268d4016f7cdb4a6f60bca7533b} 
+reportlab.\+lib.\+sequencer.\+\_\+\+Counter.\+chain (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other\+Counter}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_a287ab441254f8967ffb7ebd51ee75442}\index{reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}!next@{next}}
+\index{next@{next}!reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1sequencer_1_1___counter_a287ab441254f8967ffb7ebd51ee75442} 
+reportlab.\+lib.\+sequencer.\+\_\+\+Counter.\+next (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_a6b6e9ad833570a89275bc5382a772112}\index{reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}!nextf@{nextf}}
+\index{nextf@{nextf}!reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}}
+\doxysubsubsection{\texorpdfstring{nextf()}{nextf()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1sequencer_1_1___counter_a6b6e9ad833570a89275bc5382a772112} 
+reportlab.\+lib.\+sequencer.\+\_\+\+Counter.\+nextf (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns next value formatted\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_aeacd06fa19c0a47ac9719474003ec92b}\index{reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}!reset@{reset}}
+\index{reset@{reset}!reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1sequencer_1_1___counter_aeacd06fa19c0a47ac9719474003ec92b} 
+reportlab.\+lib.\+sequencer.\+\_\+\+Counter.\+reset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_a794631620224199a3c544e24b423f122}\index{reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}!setFormatter@{setFormatter}}
+\index{setFormatter@{setFormatter}!reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}}
+\doxysubsubsection{\texorpdfstring{setFormatter()}{setFormatter()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1sequencer_1_1___counter_a794631620224199a3c544e24b423f122} 
+reportlab.\+lib.\+sequencer.\+\_\+\+Counter.\+set\+Formatter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{format\+Func}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_ada5f61492e5a98693cfaa868db9430db}\index{reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}!thisf@{thisf}}
+\index{thisf@{thisf}!reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}}
+\doxysubsubsection{\texorpdfstring{thisf()}{thisf()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1sequencer_1_1___counter_ada5f61492e5a98693cfaa868db9430db} 
+reportlab.\+lib.\+sequencer.\+\_\+\+Counter.\+thisf (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_a2d0b218b1304639b289a30b2b4a5c199}\index{reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}!\_base@{\_base}}
+\index{\_base@{\_base}!reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}}
+\doxysubsubsection{\texorpdfstring{\_base}{\_base}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1sequencer_1_1___counter_a2d0b218b1304639b289a30b2b4a5c199} 
+int reportlab.\+lib.\+sequencer.\+\_\+\+Counter.\+\_\+base = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_a2cb8a8822d2b939a29da99ca465d707c}\index{reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}!\_formatter@{\_formatter}}
+\index{\_formatter@{\_formatter}!reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}}
+\doxysubsubsection{\texorpdfstring{\_formatter}{\_formatter}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1sequencer_1_1___counter_a2cb8a8822d2b939a29da99ca465d707c} 
+reportlab.\+lib.\+sequencer.\+\_\+\+Counter.\+\_\+formatter = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1sequencer_a95f42d7472b215b4988f96014b5524d7}{\+\_\+format\+\_\+123}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_a0d175c794f2081bc5aa64354102965df}\index{reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}!\_resets@{\_resets}}
+\index{\_resets@{\_resets}!reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}}
+\doxysubsubsection{\texorpdfstring{\_resets}{\_resets}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1sequencer_1_1___counter_a0d175c794f2081bc5aa64354102965df} 
+list reportlab.\+lib.\+sequencer.\+\_\+\+Counter.\+\_\+resets = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1sequencer_1_1___counter_ae7a0c8691f09cdca5d181504c4c05268}\index{reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}!\_value@{\_value}}
+\index{\_value@{\_value}!reportlab.lib.sequencer.\_Counter@{reportlab.lib.sequencer.\_Counter}}
+\doxysubsubsection{\texorpdfstring{\_value}{\_value}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1sequencer_1_1___counter_ae7a0c8691f09cdca5d181504c4c05268} 
+int reportlab.\+lib.\+sequencer.\+\_\+\+Counter.\+\_\+value = self.\+\_\+base\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+lib/\+\doxymbox{\hyperlink{sequencer_8py}{sequencer.\+py}}\end{DoxyCompactItemize}

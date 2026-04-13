@@ -1,0 +1,144 @@
+\doxysection{PIL.\+Ppm\+Image\+Plugin.\+Ppm\+Plain\+Decoder Class Reference}
+\hypertarget{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder}{}\label{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder}\index{PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}}
+Inheritance diagram for PIL.\+Ppm\+Image\+Plugin.\+Ppm\+Plain\+Decoder:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\+[int, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_afea2215ad6605c5e816d1eaf810c36ce}{decode}} (self, bytes\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_supports_array_interface}{Image.\+Supports\+Array\+Interface}} buffer)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_decoder}{PIL.\+Image\+File.\+Py\+Decoder}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_decoder_af04b3d002740f081c5dd8ad441d7823d}{pulls\+\_\+fd}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_decoder_a67d816e46c30e801cb24abeb293a6b68}{set\+\_\+as\+\_\+raw}} (self, bytes data, str\texorpdfstring{$\vert$}{|}None rawmode=None, tuple\+[Any,...]\+ extra=())
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec}{PIL.\+Image\+File.\+Py\+Codec}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_a0b78fb2d49bcafb8289217a7f753da5c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_aee6c30f3e7ba3d97278f67743e0d1bac}{mode}}, \texorpdfstring{$\ast$}{*}Any \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_aa3841aa2e0ef86de6bb22c512edeea90}{args}})
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_a5a3bd5c8c748e90a87a4c46a7e6ab1d6}{init}} (self, tuple\+[Any,...]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_aa3841aa2e0ef86de6bb22c512edeea90}{args}})
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_a124c65bec32a1bdc3b30b624b1437c39}{cleanup}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_a158ff93482447188b36f4af3442c4c05}{setfd}} (self, IO\+[bytes]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_ad9099686c3cf24d7133c2aac3599204e}{fd}})
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_a834d42d2495ec1cbbcba0c1574644085}{setimage}} (self, Image.\+core.\+Imaging\+Core \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_ab4cc4ed198486c782ba7de2e682f4d90}{im}}, tuple\+[int, int, int, int]\+\texorpdfstring{$\vert$}{|}None extents=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a18e0527a8a95eae361917d79b31ac132}{\+\_\+read\+\_\+block}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a7d60f5d6260210fcc9767689f336f4e3}{\+\_\+find\+\_\+comment\+\_\+end}} (self, bytes block, int start=0)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a75612e86205934be04d2774a2fc9b6a4}{\+\_\+ignore\+\_\+comments}} (self, bytes block)
+\item 
+bytearray \doxymbox{\hyperlink{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_ac8194da3183d507c0ab30b785dde4d2a}{\+\_\+decode\+\_\+bitonal}} (self)
+\item 
+bytearray \doxymbox{\hyperlink{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a0f36e2b9bea02309dc88c6b88fbb053e}{\+\_\+decode\+\_\+blocks}} (self, int maxval)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a057436d133c9d258b20c4c517037bd62}{\+\_\+comment\+\_\+spans}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec}{PIL.\+Image\+File.\+Py\+Codec}}}
+\begin{DoxyCompactItemize}
+\item 
+Image.\+core.\+Imaging\+Core\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_ab4cc4ed198486c782ba7de2e682f4d90}{im}} = None
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_a9e01a3c0d67fbad04bc2ef464ac3294b}{state}} = \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_state}{Py\+Codec\+State}}()
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_aee6c30f3e7ba3d97278f67743e0d1bac}{mode}} = mode
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_aa3841aa2e0ef86de6bb22c512edeea90}{args}} = args
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec}{PIL.\+Image\+File.\+Py\+Codec}}}
+\begin{DoxyCompactItemize}
+\item 
+IO \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_ad9099686c3cf24d7133c2aac3599204e}{fd}} \+[bytes]\+ \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_decoder}{PIL.\+Image\+File.\+Py\+Decoder}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_decoder_a3c8fc1cbb058cde61e0940bbf7c55f60}{\+\_\+pulls\+\_\+fd}} = False
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_ac8194da3183d507c0ab30b785dde4d2a}\index{PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}!\_decode\_bitonal@{\_decode\_bitonal}}
+\index{\_decode\_bitonal@{\_decode\_bitonal}!PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}}
+\doxysubsubsection{\texorpdfstring{\_decode\_bitonal()}{\_decode\_bitonal()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_ac8194da3183d507c0ab30b785dde4d2a} 
+ bytearray PIL.\+Ppm\+Image\+Plugin.\+Ppm\+Plain\+Decoder.\+\_\+decode\+\_\+bitonal (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}This is a separate method because in the plain PBM format, all data tokens are
+exactly one byte, so the inter-token whitespace is optional.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a0f36e2b9bea02309dc88c6b88fbb053e}\index{PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}!\_decode\_blocks@{\_decode\_blocks}}
+\index{\_decode\_blocks@{\_decode\_blocks}!PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}}
+\doxysubsubsection{\texorpdfstring{\_decode\_blocks()}{\_decode\_blocks()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a0f36e2b9bea02309dc88c6b88fbb053e} 
+ bytearray PIL.\+Ppm\+Image\+Plugin.\+Ppm\+Plain\+Decoder.\+\_\+decode\+\_\+blocks (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{maxval}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a7d60f5d6260210fcc9767689f336f4e3}\index{PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}!\_find\_comment\_end@{\_find\_comment\_end}}
+\index{\_find\_comment\_end@{\_find\_comment\_end}!PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}}
+\doxysubsubsection{\texorpdfstring{\_find\_comment\_end()}{\_find\_comment\_end()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a7d60f5d6260210fcc9767689f336f4e3} 
+ int PIL.\+Ppm\+Image\+Plugin.\+Ppm\+Plain\+Decoder.\+\_\+find\+\_\+comment\+\_\+end (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{block}{, }\item[{int }]{start}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a75612e86205934be04d2774a2fc9b6a4}\index{PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}!\_ignore\_comments@{\_ignore\_comments}}
+\index{\_ignore\_comments@{\_ignore\_comments}!PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}}
+\doxysubsubsection{\texorpdfstring{\_ignore\_comments()}{\_ignore\_comments()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a75612e86205934be04d2774a2fc9b6a4} 
+ bytes PIL.\+Ppm\+Image\+Plugin.\+Ppm\+Plain\+Decoder.\+\_\+ignore\+\_\+comments (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{block}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a18e0527a8a95eae361917d79b31ac132}\index{PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}!\_read\_block@{\_read\_block}}
+\index{\_read\_block@{\_read\_block}!PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}}
+\doxysubsubsection{\texorpdfstring{\_read\_block()}{\_read\_block()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a18e0527a8a95eae361917d79b31ac132} 
+ bytes PIL.\+Ppm\+Image\+Plugin.\+Ppm\+Plain\+Decoder.\+\_\+read\+\_\+block (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_afea2215ad6605c5e816d1eaf810c36ce}\index{PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}!decode@{decode}}
+\index{decode@{decode}!PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}}
+\doxysubsubsection{\texorpdfstring{decode()}{decode()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_afea2215ad6605c5e816d1eaf810c36ce} 
+ tuple\+[int, int]\+ PIL.\+Ppm\+Image\+Plugin.\+Ppm\+Plain\+Decoder.\+decode (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_supports_array_interface}{Image.\+Supports\+Array\+Interface}}}]{buffer}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Override to perform the decoding process.
+
+:param buffer: A bytes object with the data to be decoded.
+:returns: A tuple of ``(bytes consumed, errcode)``.
+    If finished with decoding return -1 for the bytes consumed.
+    Err codes are from :data:`.ImageFile.ERRORS`.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_decoder_aace3147f14b88d717681e5078ab03c68}{PIL.\+Image\+File.\+Py\+Decoder}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a057436d133c9d258b20c4c517037bd62}\index{PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}!\_comment\_spans@{\_comment\_spans}}
+\index{\_comment\_spans@{\_comment\_spans}!PIL.PpmImagePlugin.PpmPlainDecoder@{PIL.PpmImagePlugin.PpmPlainDecoder}}
+\doxysubsubsection{\texorpdfstring{\_comment\_spans}{\_comment\_spans}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_ppm_image_plugin_1_1_ppm_plain_decoder_a057436d133c9d258b20c4c517037bd62} 
+bool PIL.\+Ppm\+Image\+Plugin.\+Ppm\+Plain\+Decoder.\+\_\+comment\+\_\+spans\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_ppm_image_plugin_8py}{Ppm\+Image\+Plugin.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,79 @@
+\doxysection{pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+random Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random}{}\label{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random}\index{pip.\_vendor.tenacity.wait.wait\_random@{pip.\_vendor.tenacity.wait.wait\_random}}
+Inheritance diagram for pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+random:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_a9d7eb4fc4aafecd39e97c8ce8c77e801}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1__utils_afd79b93b1cf2a283ac9e88485f119401}{\+\_\+utils.\+time\+\_\+unit\+\_\+type}} min=0, \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1__utils_afd79b93b1cf2a283ac9e88485f119401}{\+\_\+utils.\+time\+\_\+unit\+\_\+type}} max=1)
+\item 
+float \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_a0fe252b3f492aac1862381844f3e0caf}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, "{}Retry\+Call\+State"{} retry\+\_\+state)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__base}{pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+base}}}
+\begin{DoxyCompactItemize}
+\item 
+float \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__base_a9cbdfdd35e84486ae86bbd567f34acbe}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, "{}Retry\+Call\+State"{} retry\+\_\+state)
+\item 
+"{}wait\+\_\+combine"{} \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__base_a92a3b816a002ac9a87ff2714a5081dbe}{\+\_\+\+\_\+add\+\_\+\+\_\+}} (self, "{}wait\+\_\+base"{} other)
+\item 
+typing.\+Union\+["{}wait\+\_\+combine"{}, "{}wait\+\_\+base"{}]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__base_a7d37ba0d8f7edf3c4242a1a55233e0db}{\+\_\+\+\_\+radd\+\_\+\+\_\+}} (self, "{}wait\+\_\+base"{} other)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_a50687544554fab2de2d832021d0770c6}{wait\+\_\+random\+\_\+min}} = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1__utils_aae3a908e77c6192b1cbc7130bf752c85}{\+\_\+utils.\+to\+\_\+seconds}}(min)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_a0af2dded4c525c383cdb4fee7dc53d7e}{wait\+\_\+random\+\_\+max}} = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1__utils_aae3a908e77c6192b1cbc7130bf752c85}{\+\_\+utils.\+to\+\_\+seconds}}(max)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Wait strategy that waits a random amount of time between min/max.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_a9d7eb4fc4aafecd39e97c8ce8c77e801}\index{pip.\_vendor.tenacity.wait.wait\_random@{pip.\_vendor.tenacity.wait.wait\_random}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.tenacity.wait.wait\_random@{pip.\_vendor.tenacity.wait.wait\_random}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_a9d7eb4fc4aafecd39e97c8ce8c77e801} 
+ None pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+random.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1__utils_afd79b93b1cf2a283ac9e88485f119401}{\+\_\+utils.\+time\+\_\+unit\+\_\+type}} }]{min}{ = {\ttfamily 0}, }\item[{\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1__utils_afd79b93b1cf2a283ac9e88485f119401}{\+\_\+utils.\+time\+\_\+unit\+\_\+type}} }]{max}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_a0fe252b3f492aac1862381844f3e0caf}\index{pip.\_vendor.tenacity.wait.wait\_random@{pip.\_vendor.tenacity.wait.wait\_random}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!pip.\_vendor.tenacity.wait.wait\_random@{pip.\_vendor.tenacity.wait.wait\_random}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_a0fe252b3f492aac1862381844f3e0caf} 
+ float pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+random.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}Retry\+Call\+State"{}}]{retry\+\_\+state}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_a0af2dded4c525c383cdb4fee7dc53d7e}\index{pip.\_vendor.tenacity.wait.wait\_random@{pip.\_vendor.tenacity.wait.wait\_random}!wait\_random\_max@{wait\_random\_max}}
+\index{wait\_random\_max@{wait\_random\_max}!pip.\_vendor.tenacity.wait.wait\_random@{pip.\_vendor.tenacity.wait.wait\_random}}
+\doxysubsubsection{\texorpdfstring{wait\_random\_max}{wait\_random\_max}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_a0af2dded4c525c383cdb4fee7dc53d7e} 
+pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+random.\+wait\+\_\+random\+\_\+max = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1__utils_aae3a908e77c6192b1cbc7130bf752c85}{\+\_\+utils.\+to\+\_\+seconds}}(max)}
+
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_a50687544554fab2de2d832021d0770c6}\index{pip.\_vendor.tenacity.wait.wait\_random@{pip.\_vendor.tenacity.wait.wait\_random}!wait\_random\_min@{wait\_random\_min}}
+\index{wait\_random\_min@{wait\_random\_min}!pip.\_vendor.tenacity.wait.wait\_random@{pip.\_vendor.tenacity.wait.wait\_random}}
+\doxysubsubsection{\texorpdfstring{wait\_random\_min}{wait\_random\_min}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__random_a50687544554fab2de2d832021d0770c6} 
+pip.\+\_\+vendor.\+tenacity.\+wait.\+wait\+\_\+random.\+wait\+\_\+random\+\_\+min = \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1__utils_aae3a908e77c6192b1cbc7130bf752c85}{\+\_\+utils.\+to\+\_\+seconds}}(min)}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+tenacity/\+\doxymbox{\hyperlink{tenacity_2wait_8py}{wait.\+py}}\end{DoxyCompactItemize}

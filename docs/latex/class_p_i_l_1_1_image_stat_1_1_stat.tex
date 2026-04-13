@@ -1,0 +1,160 @@
+\doxysection{PIL.\+Image\+Stat.\+Stat Class Reference}
+\hypertarget{class_p_i_l_1_1_image_stat_1_1_stat}{}\label{class_p_i_l_1_1_image_stat_1_1_stat}\index{PIL.ImageStat.Stat@{PIL.ImageStat.Stat}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_stat_1_1_stat_a0606e68911382502b49a19c6fe86d753}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}\texorpdfstring{$\vert$}{|}list\+[int]\+ image\+\_\+or\+\_\+list, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}\texorpdfstring{$\vert$}{|}None mask=None)
+\item 
+list\+[tuple\+[int, int]\+]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_stat_1_1_stat_aaee984c5fc52e08fffa2973f94560db2}{extrema}} (self)
+\item 
+list\+[int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_stat_1_1_stat_ac6c8e87756f772b266ae2aae445fd037}{count}} (self)
+\item 
+list\+[float]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_stat_1_1_stat_a122472b812d521a7fb18652387841a6b}{sum}} (self)
+\item 
+list\+[float]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_stat_1_1_stat_a7c2b4cd6598c0776b2ca01e14a960ed1}{sum2}} (self)
+\item 
+list\+[float]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_stat_1_1_stat_ae6fb4fde60e6c301c0146dabb159a7f7}{mean}} (self)
+\item 
+list\+[int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_stat_1_1_stat_a6dd5a13991503df21b858cd495685425}{median}} (self)
+\item 
+list\+[float]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_stat_1_1_stat_adb22f80aed9e6cb14965ab9abab4d8b9}{rms}} (self)
+\item 
+list\+[float]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_stat_1_1_stat_ac83667eb03ede9850a8c53d0a8f624a2}{var}} (self)
+\item 
+list\+[float]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_stat_1_1_stat_a5ac007760cc82128d19eec4915d55265}{stddev}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_stat_1_1_stat_a3f5a0a36977df29c59e54f3cd53da6e9}{h}} = image\+\_\+or\+\_\+list.\+histogram(mask)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_stat_1_1_stat_a29cfd32e17638f351894872d28e06405}{bands}} = list(range(len(self.\+h) /\+/\+ 256))
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_a0606e68911382502b49a19c6fe86d753}\index{PIL.ImageStat.Stat@{PIL.ImageStat.Stat}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.ImageStat.Stat@{PIL.ImageStat.Stat}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_stat_1_1_stat_a0606e68911382502b49a19c6fe86d753} 
+ None PIL.\+Image\+Stat.\+Stat.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} \texorpdfstring{$\vert$}{|} list\+[int]\+}]{image\+\_\+or\+\_\+list}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} \texorpdfstring{$\vert$}{|} None }]{mask}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculate statistics for the given image. If a mask is included,
+only the regions covered by that mask are included in the
+statistics. You can also pass in a previously calculated histogram.
+
+:param image: A PIL image, or a precalculated histogram.
+
+    .. note::
+
+        For a PIL image, calculations rely on the
+        :py:meth:`~PIL.Image.Image.histogram` method. The pixel counts are
+        grouped into 256 bins, even if the image has more than 8 bits per
+        channel. So ``I`` and ``F`` mode images have a maximum ``mean``,
+        ``median`` and ``rms`` of 255, and cannot have an ``extrema`` maximum
+        of more than 255.
+
+:param mask: An optional mask.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_ac6c8e87756f772b266ae2aae445fd037}\index{PIL.ImageStat.Stat@{PIL.ImageStat.Stat}!count@{count}}
+\index{count@{count}!PIL.ImageStat.Stat@{PIL.ImageStat.Stat}}
+\doxysubsubsection{\texorpdfstring{count()}{count()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_stat_1_1_stat_ac6c8e87756f772b266ae2aae445fd037} 
+ list\+[int]\+ PIL.\+Image\+Stat.\+Stat.\+count (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Total number of pixels for each band in the image.\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_aaee984c5fc52e08fffa2973f94560db2}\index{PIL.ImageStat.Stat@{PIL.ImageStat.Stat}!extrema@{extrema}}
+\index{extrema@{extrema}!PIL.ImageStat.Stat@{PIL.ImageStat.Stat}}
+\doxysubsubsection{\texorpdfstring{extrema()}{extrema()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_stat_1_1_stat_aaee984c5fc52e08fffa2973f94560db2} 
+ list\+[tuple\+[int, int]\+]\+ PIL.\+Image\+Stat.\+Stat.\+extrema (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Min/max values for each band in the image.
+
+.. note::
+    This relies on the :py:meth:`~PIL.Image.Image.histogram` method, and
+    simply returns the low and high bins used. This is correct for
+    images with 8 bits per channel, but fails for other modes such as
+    ``I`` or ``F``. Instead, use :py:meth:`~PIL.Image.Image.getextrema` to
+    return per-band extrema for the image. This is more correct and
+    efficient because, for non-8-bit modes, the histogram method uses
+    :py:meth:`~PIL.Image.Image.getextrema` to determine the bins used.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_ae6fb4fde60e6c301c0146dabb159a7f7}\index{PIL.ImageStat.Stat@{PIL.ImageStat.Stat}!mean@{mean}}
+\index{mean@{mean}!PIL.ImageStat.Stat@{PIL.ImageStat.Stat}}
+\doxysubsubsection{\texorpdfstring{mean()}{mean()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_stat_1_1_stat_ae6fb4fde60e6c301c0146dabb159a7f7} 
+ list\+[float]\+ PIL.\+Image\+Stat.\+Stat.\+mean (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Average (arithmetic mean) pixel level for each band in the image.\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_a6dd5a13991503df21b858cd495685425}\index{PIL.ImageStat.Stat@{PIL.ImageStat.Stat}!median@{median}}
+\index{median@{median}!PIL.ImageStat.Stat@{PIL.ImageStat.Stat}}
+\doxysubsubsection{\texorpdfstring{median()}{median()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_stat_1_1_stat_a6dd5a13991503df21b858cd495685425} 
+ list\+[int]\+ PIL.\+Image\+Stat.\+Stat.\+median (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Median pixel level for each band in the image.\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_adb22f80aed9e6cb14965ab9abab4d8b9}\index{PIL.ImageStat.Stat@{PIL.ImageStat.Stat}!rms@{rms}}
+\index{rms@{rms}!PIL.ImageStat.Stat@{PIL.ImageStat.Stat}}
+\doxysubsubsection{\texorpdfstring{rms()}{rms()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_stat_1_1_stat_adb22f80aed9e6cb14965ab9abab4d8b9} 
+ list\+[float]\+ PIL.\+Image\+Stat.\+Stat.\+rms (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}RMS (root-mean-square) for each band in the image.\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_a5ac007760cc82128d19eec4915d55265}\index{PIL.ImageStat.Stat@{PIL.ImageStat.Stat}!stddev@{stddev}}
+\index{stddev@{stddev}!PIL.ImageStat.Stat@{PIL.ImageStat.Stat}}
+\doxysubsubsection{\texorpdfstring{stddev()}{stddev()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_stat_1_1_stat_a5ac007760cc82128d19eec4915d55265} 
+ list\+[float]\+ PIL.\+Image\+Stat.\+Stat.\+stddev (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Standard deviation for each band in the image.\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_a122472b812d521a7fb18652387841a6b}\index{PIL.ImageStat.Stat@{PIL.ImageStat.Stat}!sum@{sum}}
+\index{sum@{sum}!PIL.ImageStat.Stat@{PIL.ImageStat.Stat}}
+\doxysubsubsection{\texorpdfstring{sum()}{sum()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_stat_1_1_stat_a122472b812d521a7fb18652387841a6b} 
+ list\+[float]\+ PIL.\+Image\+Stat.\+Stat.\+sum (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Sum of all pixels for each band in the image.\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_a7c2b4cd6598c0776b2ca01e14a960ed1}\index{PIL.ImageStat.Stat@{PIL.ImageStat.Stat}!sum2@{sum2}}
+\index{sum2@{sum2}!PIL.ImageStat.Stat@{PIL.ImageStat.Stat}}
+\doxysubsubsection{\texorpdfstring{sum2()}{sum2()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_stat_1_1_stat_a7c2b4cd6598c0776b2ca01e14a960ed1} 
+ list\+[float]\+ PIL.\+Image\+Stat.\+Stat.\+sum2 (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Squared sum of all pixels for each band in the image.\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_ac83667eb03ede9850a8c53d0a8f624a2}\index{PIL.ImageStat.Stat@{PIL.ImageStat.Stat}!var@{var}}
+\index{var@{var}!PIL.ImageStat.Stat@{PIL.ImageStat.Stat}}
+\doxysubsubsection{\texorpdfstring{var()}{var()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_stat_1_1_stat_ac83667eb03ede9850a8c53d0a8f624a2} 
+ list\+[float]\+ PIL.\+Image\+Stat.\+Stat.\+var (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Variance for each band in the image.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_a29cfd32e17638f351894872d28e06405}\index{PIL.ImageStat.Stat@{PIL.ImageStat.Stat}!bands@{bands}}
+\index{bands@{bands}!PIL.ImageStat.Stat@{PIL.ImageStat.Stat}}
+\doxysubsubsection{\texorpdfstring{bands}{bands}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_stat_1_1_stat_a29cfd32e17638f351894872d28e06405} 
+PIL.\+Image\+Stat.\+Stat.\+bands = list(range(len(self.\+h) /\+/\+ 256))}
+
+\Hypertarget{class_p_i_l_1_1_image_stat_1_1_stat_a3f5a0a36977df29c59e54f3cd53da6e9}\index{PIL.ImageStat.Stat@{PIL.ImageStat.Stat}!h@{h}}
+\index{h@{h}!PIL.ImageStat.Stat@{PIL.ImageStat.Stat}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_stat_1_1_stat_a3f5a0a36977df29c59e54f3cd53da6e9} 
+PIL.\+Image\+Stat.\+Stat.\+h = image\+\_\+or\+\_\+list.\+histogram(mask)}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_stat_8py}{Image\+Stat.\+py}}\end{DoxyCompactItemize}

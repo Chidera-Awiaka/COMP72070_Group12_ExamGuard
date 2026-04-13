@@ -1,0 +1,88 @@
+\doxysection{PIL.\+Image\+Tk.\+Bitmap\+Image Class Reference}
+\hypertarget{class_p_i_l_1_1_image_tk_1_1_bitmap_image}{}\label{class_p_i_l_1_1_image_tk_1_1_bitmap_image}\index{PIL.ImageTk.BitmapImage@{PIL.ImageTk.BitmapImage}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_tk_1_1_bitmap_image_abbdc9ab0d369ee2aec071012eb0b25b6}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}\texorpdfstring{$\vert$}{|}None image=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kw)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_tk_1_1_bitmap_image_aa2aef14d561f189c579f45f961871aa5}{\+\_\+\+\_\+del\+\_\+\+\_\+}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_tk_1_1_bitmap_image_ac2be504ee517eac06af4205627d7cc74}{width}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_tk_1_1_bitmap_image_a09d12d26a61a02eb3b50ee82ef1a65c0}{height}} (self)
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_tk_1_1_bitmap_image_a72812884474c84c5a2fdc9508aeffc6b}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A Tkinter-compatible bitmap image.  This can be used everywhere Tkinter
+expects an image object.
+
+The given image must have mode "1".  Pixels having value 0 are treated as
+transparent.  Options, if any, are passed on to Tkinter.  The most commonly
+used option is ``foreground``, which is used to specify the color for the
+non-transparent parts.  See the Tkinter documentation for information on
+how to specify colours.
+
+:param image: A PIL image.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_image_tk_1_1_bitmap_image_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_image_tk_1_1_bitmap_image_abbdc9ab0d369ee2aec071012eb0b25b6}\index{PIL.ImageTk.BitmapImage@{PIL.ImageTk.BitmapImage}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.ImageTk.BitmapImage@{PIL.ImageTk.BitmapImage}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_tk_1_1_bitmap_image_abbdc9ab0d369ee2aec071012eb0b25b6} 
+ None PIL.\+Image\+Tk.\+Bitmap\+Image.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} \texorpdfstring{$\vert$}{|} None }]{image}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kw}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_tk_1_1_bitmap_image_aa2aef14d561f189c579f45f961871aa5}\index{PIL.ImageTk.BitmapImage@{PIL.ImageTk.BitmapImage}!\_\_del\_\_@{\_\_del\_\_}}
+\index{\_\_del\_\_@{\_\_del\_\_}!PIL.ImageTk.BitmapImage@{PIL.ImageTk.BitmapImage}}
+\doxysubsubsection{\texorpdfstring{\_\_del\_\_()}{\_\_del\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_tk_1_1_bitmap_image_aa2aef14d561f189c579f45f961871aa5} 
+ None PIL.\+Image\+Tk.\+Bitmap\+Image.\+\_\+\+\_\+del\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_image_tk_1_1_bitmap_image_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_image_tk_1_1_bitmap_image_a72812884474c84c5a2fdc9508aeffc6b}\index{PIL.ImageTk.BitmapImage@{PIL.ImageTk.BitmapImage}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!PIL.ImageTk.BitmapImage@{PIL.ImageTk.BitmapImage}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_tk_1_1_bitmap_image_a72812884474c84c5a2fdc9508aeffc6b} 
+ str PIL.\+Image\+Tk.\+Bitmap\+Image.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the Tkinter bitmap image identifier.  This method is automatically
+called by Tkinter whenever a BitmapImage object is passed to a Tkinter
+method.
+
+:return: A Tkinter bitmap image identifier (a string).
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_tk_1_1_bitmap_image_a09d12d26a61a02eb3b50ee82ef1a65c0}\index{PIL.ImageTk.BitmapImage@{PIL.ImageTk.BitmapImage}!height@{height}}
+\index{height@{height}!PIL.ImageTk.BitmapImage@{PIL.ImageTk.BitmapImage}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_tk_1_1_bitmap_image_a09d12d26a61a02eb3b50ee82ef1a65c0} 
+ int PIL.\+Image\+Tk.\+Bitmap\+Image.\+height (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the height of the image.
+
+:return: The height, in pixels.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_tk_1_1_bitmap_image_ac2be504ee517eac06af4205627d7cc74}\index{PIL.ImageTk.BitmapImage@{PIL.ImageTk.BitmapImage}!width@{width}}
+\index{width@{width}!PIL.ImageTk.BitmapImage@{PIL.ImageTk.BitmapImage}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_tk_1_1_bitmap_image_ac2be504ee517eac06af4205627d7cc74} 
+ int PIL.\+Image\+Tk.\+Bitmap\+Image.\+width (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get the width of the image.
+
+:return: The width, in pixels.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_tk_8py}{Image\+Tk.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,53 @@
+\doxysection{reportlab.\+graphics.\+renderbase Namespace Reference}
+\hypertarget{namespacereportlab_1_1graphics_1_1renderbase}{}\label{namespacereportlab_1_1graphics_1_1renderbase}\index{reportlab.graphics.renderbase@{reportlab.graphics.renderbase}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1renderbase_1_1_state_tracker}{State\+Tracker}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1renderbase_1_1_renderer}{Renderer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1renderbase_ace815e5d1b4a638c9a32ca9b4b86184e}{get\+State\+Delta}} (shape)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1renderbase_a8a2dfa9f69bb5a45e38efee6646f8e8b}{test\+State\+Tracker}} ()
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1renderbase_abaf52aa1996554bc374db8d1f265224b}{\+\_\+expand\+User\+Node}} (node, canvas)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1renderbase_a4d38a5ffa9d27e123237a00ca4512063}{render\+Scaled\+Drawing}} (d)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1graphics_1_1renderbase_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1graphics_1_1renderbase_abaf52aa1996554bc374db8d1f265224b}\index{reportlab.graphics.renderbase@{reportlab.graphics.renderbase}!\_expandUserNode@{\_expandUserNode}}
+\index{\_expandUserNode@{\_expandUserNode}!reportlab.graphics.renderbase@{reportlab.graphics.renderbase}}
+\doxysubsubsection{\texorpdfstring{\_expandUserNode()}{\_expandUserNode()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1renderbase_abaf52aa1996554bc374db8d1f265224b} 
+reportlab.\+graphics.\+renderbase.\+\_\+expand\+User\+Node (\begin{DoxyParamCaption}\item[{}]{node}{, }\item[{}]{canvas}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1graphics_1_1renderbase_ace815e5d1b4a638c9a32ca9b4b86184e}\index{reportlab.graphics.renderbase@{reportlab.graphics.renderbase}!getStateDelta@{getStateDelta}}
+\index{getStateDelta@{getStateDelta}!reportlab.graphics.renderbase@{reportlab.graphics.renderbase}}
+\doxysubsubsection{\texorpdfstring{getStateDelta()}{getStateDelta()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1renderbase_ace815e5d1b4a638c9a32ca9b4b86184e} 
+reportlab.\+graphics.\+renderbase.\+get\+State\+Delta (\begin{DoxyParamCaption}\item[{}]{shape}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Used to compute when we need to change the graphics state.
+For example, if we have two adjacent red shapes we don't need
+to set the pen color to red in between. Returns the effect
+the given shape would have on the graphics state\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1graphics_1_1renderbase_a4d38a5ffa9d27e123237a00ca4512063}\index{reportlab.graphics.renderbase@{reportlab.graphics.renderbase}!renderScaledDrawing@{renderScaledDrawing}}
+\index{renderScaledDrawing@{renderScaledDrawing}!reportlab.graphics.renderbase@{reportlab.graphics.renderbase}}
+\doxysubsubsection{\texorpdfstring{renderScaledDrawing()}{renderScaledDrawing()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1renderbase_a4d38a5ffa9d27e123237a00ca4512063} 
+reportlab.\+graphics.\+renderbase.\+render\+Scaled\+Drawing (\begin{DoxyParamCaption}\item[{}]{d}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1graphics_1_1renderbase_a8a2dfa9f69bb5a45e38efee6646f8e8b}\index{reportlab.graphics.renderbase@{reportlab.graphics.renderbase}!testStateTracker@{testStateTracker}}
+\index{testStateTracker@{testStateTracker}!reportlab.graphics.renderbase@{reportlab.graphics.renderbase}}
+\doxysubsubsection{\texorpdfstring{testStateTracker()}{testStateTracker()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1renderbase_a8a2dfa9f69bb5a45e38efee6646f8e8b} 
+reportlab.\+graphics.\+renderbase.\+test\+State\+Tracker (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+

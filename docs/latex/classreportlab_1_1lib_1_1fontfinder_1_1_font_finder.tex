@@ -1,0 +1,232 @@
+\doxysection{reportlab.\+lib.\+fontfinder.\+Font\+Finder Class Reference}
+\hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder}{}\label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_af207ed906952f5ae338ff187e9924062}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, dirs=\+[$\,$]\+, \doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a09c163185acdc194b388d0ae67dde00e}{use\+Cache}}=True, \doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_afea8304541843649ea3cebe1bb65677e}{validate}}=False, recur=False, fs\+Encoding=None, \doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a7447f72f67efa37ecf23ce903ce3e21d}{verbose}}=0)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a250ec7e577ea454e3292befa7804fdb7}{add\+Directory}} (self, dir\+Name, recur=None)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ab21040a5b3b28d846b327cafeecfc935}{add\+Directories}} (self, dir\+Names, recur=None)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a3cabc809d4d487f57b79496a903395a2}{get\+Family\+Names}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ad73ed561098f4dbc446d34539e0bae06}{get\+Fonts\+In\+Family}} (self, family\+Name)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a3a378a6df9f1591fbc3cd0be1336406b}{get\+Family\+Xml\+Report}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ae2f05a5cbb9ffd3cfc34104a4c0c516c}{get\+Fonts\+With\+Attributes}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ad9debc759acc00016382b365c49cf2ef}{get\+Font}} (self, family\+Name, bold=False, italic=False)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a2fc71469c8c96f44313e1b259048953f}{save}} (self, file\+Name)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ad4c63075069183335db650647458fbfa}{load}} (self, file\+Name)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_af211630fdee326950d7e61af7b208c3e}{search}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a09c163185acdc194b388d0ae67dde00e}{use\+Cache}} = use\+Cache
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_afea8304541843649ea3cebe1bb65677e}{validate}} = validate
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a7447f72f67efa37ecf23ce903ce3e21d}{verbose}} = verbose
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a8ec605e82fecb6f011df598bc2e16347}{\+\_\+get\+Cache\+File\+Name}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ae54d0b68dbf5ae7f62d9caabd616e85f}{\+\_\+fs\+Encoding}} = fs\+Encoding or \textquotesingle{}utf8\textquotesingle{}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_afffd7524f4dd792be6fc95ecd6898e8c}{\+\_\+dirs}} = set()
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ac3c4adda5af0d7102dea844cb4abfa4e}{\+\_\+recur}} = recur
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a2190041d5f19c4cd003855e5f56ed30a}{\+\_\+fonts}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a7054c05861bcdfc766354a385e3a8723}{\+\_\+skipped\+Files}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_afd8ce23cc3d42060e293567e359af0c1}{\+\_\+bad\+Files}} = \+[$\,$]\+
+\item 
+dict \doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a0910d0870c27cdda1739db3bf1865a2a}{\+\_\+fonts\+By\+Name}} = \{\}
+\item 
+dict \doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ab3db19d0c73f0dc909d10d786a7a7996}{\+\_\+fonts\+By\+Family}} = \{\}
+\item 
+dict \doxymbox{\hyperlink{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a1545e9f3d3ebb08c5de40b3179e17fdc}{\+\_\+fonts\+By\+Family\+Bold\+Italic}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_af207ed906952f5ae338ff187e9924062}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_af207ed906952f5ae338ff187e9924062} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dirs}{ = {\ttfamily \+[]\+}, }\item[{}]{use\+Cache}{ = {\ttfamily True}, }\item[{}]{validate}{ = {\ttfamily False}, }\item[{}]{recur}{ = {\ttfamily False}, }\item[{}]{fs\+Encoding}{ = {\ttfamily None}, }\item[{}]{verbose}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a8ec605e82fecb6f011df598bc2e16347}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!\_getCacheFileName@{\_getCacheFileName}}
+\index{\_getCacheFileName@{\_getCacheFileName}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{\_getCacheFileName()}{\_getCacheFileName()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a8ec605e82fecb6f011df598bc2e16347} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+\_\+get\+Cache\+File\+Name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Base this on the directories...same set of directories
+should give same cache\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ab21040a5b3b28d846b327cafeecfc935}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!addDirectories@{addDirectories}}
+\index{addDirectories@{addDirectories}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{addDirectories()}{addDirectories()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ab21040a5b3b28d846b327cafeecfc935} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+add\+Directories (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dir\+Names}{, }\item[{}]{recur}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a250ec7e577ea454e3292befa7804fdb7}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!addDirectory@{addDirectory}}
+\index{addDirectory@{addDirectory}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{addDirectory()}{addDirectory()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a250ec7e577ea454e3292befa7804fdb7} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+add\+Directory (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{dir\+Name}{, }\item[{}]{recur}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a3cabc809d4d487f57b79496a903395a2}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!getFamilyNames@{getFamilyNames}}
+\index{getFamilyNames@{getFamilyNames}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{getFamilyNames()}{getFamilyNames()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a3cabc809d4d487f57b79496a903395a2} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+get\+Family\+Names (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a3a378a6df9f1591fbc3cd0be1336406b}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!getFamilyXmlReport@{getFamilyXmlReport}}
+\index{getFamilyXmlReport@{getFamilyXmlReport}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{getFamilyXmlReport()}{getFamilyXmlReport()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a3a378a6df9f1591fbc3cd0be1336406b} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+get\+Family\+Xml\+Report (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reports on all families found as XML.
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ad9debc759acc00016382b365c49cf2ef}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!getFont@{getFont}}
+\index{getFont@{getFont}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{getFont()}{getFont()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ad9debc759acc00016382b365c49cf2ef} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+get\+Font (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{family\+Name}{, }\item[{}]{bold}{ = {\ttfamily False}, }\item[{}]{italic}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Try to find a font matching the spec\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ad73ed561098f4dbc446d34539e0bae06}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!getFontsInFamily@{getFontsInFamily}}
+\index{getFontsInFamily@{getFontsInFamily}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{getFontsInFamily()}{getFontsInFamily()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ad73ed561098f4dbc446d34539e0bae06} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+get\+Fonts\+In\+Family (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{family\+Name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ae2f05a5cbb9ffd3cfc34104a4c0c516c}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!getFontsWithAttributes@{getFontsWithAttributes}}
+\index{getFontsWithAttributes@{getFontsWithAttributes}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{getFontsWithAttributes()}{getFontsWithAttributes()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ae2f05a5cbb9ffd3cfc34104a4c0c516c} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+get\+Fonts\+With\+Attributes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This is a general lightweight search.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ad4c63075069183335db650647458fbfa}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!load@{load}}
+\index{load@{load}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ad4c63075069183335db650647458fbfa} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+load (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{file\+Name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a2fc71469c8c96f44313e1b259048953f}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!save@{save}}
+\index{save@{save}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a2fc71469c8c96f44313e1b259048953f} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+save (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{file\+Name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_af211630fdee326950d7e61af7b208c3e}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!search@{search}}
+\index{search@{search}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{search()}{search()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_af211630fdee326950d7e61af7b208c3e} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+search (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_afd8ce23cc3d42060e293567e359af0c1}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!\_badFiles@{\_badFiles}}
+\index{\_badFiles@{\_badFiles}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{\_badFiles}{\_badFiles}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_afd8ce23cc3d42060e293567e359af0c1} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+\_\+bad\+Files = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_afffd7524f4dd792be6fc95ecd6898e8c}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!\_dirs@{\_dirs}}
+\index{\_dirs@{\_dirs}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{\_dirs}{\_dirs}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_afffd7524f4dd792be6fc95ecd6898e8c} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+\_\+dirs = set()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a2190041d5f19c4cd003855e5f56ed30a}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!\_fonts@{\_fonts}}
+\index{\_fonts@{\_fonts}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{\_fonts}{\_fonts}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a2190041d5f19c4cd003855e5f56ed30a} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+\_\+fonts = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ab3db19d0c73f0dc909d10d786a7a7996}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!\_fontsByFamily@{\_fontsByFamily}}
+\index{\_fontsByFamily@{\_fontsByFamily}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{\_fontsByFamily}{\_fontsByFamily}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ab3db19d0c73f0dc909d10d786a7a7996} 
+dict reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+\_\+fonts\+By\+Family = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a1545e9f3d3ebb08c5de40b3179e17fdc}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!\_fontsByFamilyBoldItalic@{\_fontsByFamilyBoldItalic}}
+\index{\_fontsByFamilyBoldItalic@{\_fontsByFamilyBoldItalic}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{\_fontsByFamilyBoldItalic}{\_fontsByFamilyBoldItalic}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a1545e9f3d3ebb08c5de40b3179e17fdc} 
+dict reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+\_\+fonts\+By\+Family\+Bold\+Italic = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a0910d0870c27cdda1739db3bf1865a2a}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!\_fontsByName@{\_fontsByName}}
+\index{\_fontsByName@{\_fontsByName}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{\_fontsByName}{\_fontsByName}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a0910d0870c27cdda1739db3bf1865a2a} 
+dict reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+\_\+fonts\+By\+Name = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ae54d0b68dbf5ae7f62d9caabd616e85f}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!\_fsEncoding@{\_fsEncoding}}
+\index{\_fsEncoding@{\_fsEncoding}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{\_fsEncoding}{\_fsEncoding}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ae54d0b68dbf5ae7f62d9caabd616e85f} 
+str reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+\_\+fs\+Encoding = fs\+Encoding or \textquotesingle{}utf8\textquotesingle{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ac3c4adda5af0d7102dea844cb4abfa4e}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!\_recur@{\_recur}}
+\index{\_recur@{\_recur}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{\_recur}{\_recur}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_ac3c4adda5af0d7102dea844cb4abfa4e} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+\_\+recur = recur\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a7054c05861bcdfc766354a385e3a8723}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!\_skippedFiles@{\_skippedFiles}}
+\index{\_skippedFiles@{\_skippedFiles}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{\_skippedFiles}{\_skippedFiles}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a7054c05861bcdfc766354a385e3a8723} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+\_\+skipped\+Files = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a09c163185acdc194b388d0ae67dde00e}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!useCache@{useCache}}
+\index{useCache@{useCache}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{useCache}{useCache}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a09c163185acdc194b388d0ae67dde00e} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+use\+Cache = use\+Cache}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_afea8304541843649ea3cebe1bb65677e}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!validate@{validate}}
+\index{validate@{validate}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{validate}{validate}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_afea8304541843649ea3cebe1bb65677e} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+validate = validate}
+
+\Hypertarget{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a7447f72f67efa37ecf23ce903ce3e21d}\index{reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}!verbose@{verbose}}
+\index{verbose@{verbose}!reportlab.lib.fontfinder.FontFinder@{reportlab.lib.fontfinder.FontFinder}}
+\doxysubsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1fontfinder_1_1_font_finder_a7447f72f67efa37ecf23ce903ce3e21d} 
+reportlab.\+lib.\+fontfinder.\+Font\+Finder.\+verbose = verbose}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+lib/\+\doxymbox{\hyperlink{fontfinder_8py}{fontfinder.\+py}}\end{DoxyCompactItemize}

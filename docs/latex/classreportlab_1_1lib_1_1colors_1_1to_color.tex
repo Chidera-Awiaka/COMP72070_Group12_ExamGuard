@@ -1,0 +1,87 @@
+\doxysection{reportlab.\+lib.\+colors.\+to\+Color Class Reference}
+\hypertarget{classreportlab_1_1lib_1_1colors_1_1to_color}{}\label{classreportlab_1_1lib_1_1colors_1_1to_color}\index{reportlab.lib.colors.toColor@{reportlab.lib.colors.toColor}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1colors_1_1to_color_a9fcc93b7d2b8816e809e7b193aa342a1}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1colors_1_1to_color_a21493bf4fd7c562e3635a522dfca9408}{set\+Extra\+Colors\+Name\+Space}} (self, NS)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1colors_1_1to_color_ac63f90cef6f465163c4c6ab6874bd583}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, arg, default=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{classreportlab_1_1lib_1_1colors_1_1to_color_ac3bd4686eef0d07918763e74b2a07381}{extra\+Colors\+NS}} = \{\}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{classreportlab_1_1lib_1_1colors_1_1to_color_a80fdefe587dd830c8cc477d9f72784ce}{\+\_\+G}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Accepot an expression returnng a Color subclass.
+
+This used to accept arbitrary Python expressions, which resulted in increasngly devilish CVEs and
+security holes from tie to time.  In April 2023 we are creating explicit, "dumb" parsing code to
+replace this.  Acceptable patterns are
+
+a Color instance passed in by the Python programmer
+a named list of colours ('pink' etc')
+list of 3 or 4 numbers
+all CSS colour expression
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1lib_1_1colors_1_1to_color_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1colors_1_1to_color_a9fcc93b7d2b8816e809e7b193aa342a1}\index{reportlab.lib.colors.toColor@{reportlab.lib.colors.toColor}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.lib.colors.toColor@{reportlab.lib.colors.toColor}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1colors_1_1to_color_a9fcc93b7d2b8816e809e7b193aa342a1} 
+reportlab.\+lib.\+colors.\+to\+Color.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1lib_1_1colors_1_1to_color_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1colors_1_1to_color_ac63f90cef6f465163c4c6ab6874bd583}\index{reportlab.lib.colors.toColor@{reportlab.lib.colors.toColor}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!reportlab.lib.colors.toColor@{reportlab.lib.colors.toColor}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1colors_1_1to_color_ac63f90cef6f465163c4c6ab6874bd583} 
+reportlab.\+lib.\+colors.\+to\+Color.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{arg}{, }\item[{}]{default}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}try to map an arbitrary arg to a color instance
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1colors_1_1to_color_a21493bf4fd7c562e3635a522dfca9408}\index{reportlab.lib.colors.toColor@{reportlab.lib.colors.toColor}!setExtraColorsNameSpace@{setExtraColorsNameSpace}}
+\index{setExtraColorsNameSpace@{setExtraColorsNameSpace}!reportlab.lib.colors.toColor@{reportlab.lib.colors.toColor}}
+\doxysubsubsection{\texorpdfstring{setExtraColorsNameSpace()}{setExtraColorsNameSpace()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1colors_1_1to_color_a21493bf4fd7c562e3635a522dfca9408} 
+reportlab.\+lib.\+colors.\+to\+Color.\+set\+Extra\+Colors\+Name\+Space (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{NS}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1lib_1_1colors_1_1to_color_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1colors_1_1to_color_a80fdefe587dd830c8cc477d9f72784ce}\index{reportlab.lib.colors.toColor@{reportlab.lib.colors.toColor}!\_G@{\_G}}
+\index{\_G@{\_G}!reportlab.lib.colors.toColor@{reportlab.lib.colors.toColor}}
+\doxysubsubsection{\texorpdfstring{\_G}{\_G}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1colors_1_1to_color_a80fdefe587dd830c8cc477d9f72784ce} 
+reportlab.\+lib.\+colors.\+to\+Color.\+\_\+G = \{\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1colors_1_1to_color_ac3bd4686eef0d07918763e74b2a07381}\index{reportlab.lib.colors.toColor@{reportlab.lib.colors.toColor}!extraColorsNS@{extraColorsNS}}
+\index{extraColorsNS@{extraColorsNS}!reportlab.lib.colors.toColor@{reportlab.lib.colors.toColor}}
+\doxysubsubsection{\texorpdfstring{extraColorsNS}{extraColorsNS}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1colors_1_1to_color_ac3bd4686eef0d07918763e74b2a07381} 
+reportlab.\+lib.\+colors.\+to\+Color.\+extra\+Colors\+NS = \{\}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+lib/\+\doxymbox{\hyperlink{colors_8py}{colors.\+py}}\end{DoxyCompactItemize}

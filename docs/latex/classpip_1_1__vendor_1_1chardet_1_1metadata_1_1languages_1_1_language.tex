@@ -1,0 +1,114 @@
+\doxysection{pip.\+\_\+vendor.\+chardet.\+metadata.\+languages.\+Language Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language}{}\label{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language}\index{pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ad1208678163c8dbd6117c5aa936bc9b5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Optional\+[str]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_a7b6904fe364579d6a1d93aa8729a7912}{name}}=None, Optional\+[str]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_abd073a5a5de1f4c10854dbd86068198f}{iso\+\_\+code}}=None, bool \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_a077a97000400781d4bb8c0d321d8b58b}{use\+\_\+ascii}}=True, Optional\+[List\+[str]\+]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ab2ad0e186f4dd900c5745c06a24c4ffd}{charsets}}=None, Optional\+[str]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ab0f5da2322c7b2332a2a4272c5105e68}{alphabet}}=None, Optional\+[List\+[str]\+]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ac752cae17887ef324efe8481e9e64c31}{wiki\+\_\+start\+\_\+pages}}=None)
+\item 
+str \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_abc8f6ae87171c554af9dc7e7a35b12e5}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_a7b6904fe364579d6a1d93aa8729a7912}{name}} = name
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_abd073a5a5de1f4c10854dbd86068198f}{iso\+\_\+code}} = iso\+\_\+code
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_a077a97000400781d4bb8c0d321d8b58b}{use\+\_\+ascii}} = use\+\_\+ascii
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ab2ad0e186f4dd900c5745c06a24c4ffd}{charsets}} = charsets
+\item 
+str \doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ab0f5da2322c7b2332a2a4272c5105e68}{alphabet}} = "{}"{}.join(sorted(set(alphabet))) if alphabet else None
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ac752cae17887ef324efe8481e9e64c31}{wiki\+\_\+start\+\_\+pages}} = wiki\+\_\+start\+\_\+pages
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Metadata about a language useful for training models
+
+:ivar name: The human name for the language, in English.
+:type name: str
+:ivar iso_code: 2-letter ISO 639-1 if possible, 3-letter ISO code otherwise,
+                or use another catalog as a last resort.
+:type iso_code: str
+:ivar use_ascii: Whether or not ASCII letters should be included in trained
+                 models.
+:type use_ascii: bool
+:ivar charsets: The charsets we want to support and create data for.
+:type charsets: list of str
+:ivar alphabet: The characters in the language's alphabet. If `use_ascii` is
+                `True`, you only need to add those not in the ASCII set.
+:type alphabet: str
+:ivar wiki_start_pages: The Wikipedia pages to start from if we're crawling
+                        Wikipedia for training data.
+:type wiki_start_pages: list of str
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ad1208678163c8dbd6117c5aa936bc9b5}\index{pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ad1208678163c8dbd6117c5aa936bc9b5} 
+ None pip.\+\_\+vendor.\+chardet.\+metadata.\+languages.\+Language.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Optional\+[str]\+ }]{name}{ = {\ttfamily None}, }\item[{Optional\+[str]\+ }]{iso\+\_\+code}{ = {\ttfamily None}, }\item[{bool }]{use\+\_\+ascii}{ = {\ttfamily True}, }\item[{Optional\+[List\+[str]\+]\+ }]{charsets}{ = {\ttfamily None}, }\item[{Optional\+[str]\+ }]{alphabet}{ = {\ttfamily None}, }\item[{Optional\+[List\+[str]\+]\+ }]{wiki\+\_\+start\+\_\+pages}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_abc8f6ae87171c554af9dc7e7a35b12e5}\index{pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_abc8f6ae87171c554af9dc7e7a35b12e5} 
+ str pip.\+\_\+vendor.\+chardet.\+metadata.\+languages.\+Language.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ab0f5da2322c7b2332a2a4272c5105e68}\index{pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}!alphabet@{alphabet}}
+\index{alphabet@{alphabet}!pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}}
+\doxysubsubsection{\texorpdfstring{alphabet}{alphabet}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ab0f5da2322c7b2332a2a4272c5105e68} 
+str pip.\+\_\+vendor.\+chardet.\+metadata.\+languages.\+Language.\+alphabet = "{}"{}.join(sorted(set(alphabet))) if alphabet else None}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ab2ad0e186f4dd900c5745c06a24c4ffd}\index{pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}!charsets@{charsets}}
+\index{charsets@{charsets}!pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}}
+\doxysubsubsection{\texorpdfstring{charsets}{charsets}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ab2ad0e186f4dd900c5745c06a24c4ffd} 
+pip.\+\_\+vendor.\+chardet.\+metadata.\+languages.\+Language.\+charsets = charsets}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_abd073a5a5de1f4c10854dbd86068198f}\index{pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}!iso\_code@{iso\_code}}
+\index{iso\_code@{iso\_code}!pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}}
+\doxysubsubsection{\texorpdfstring{iso\_code}{iso\_code}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_abd073a5a5de1f4c10854dbd86068198f} 
+pip.\+\_\+vendor.\+chardet.\+metadata.\+languages.\+Language.\+iso\+\_\+code = iso\+\_\+code}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_a7b6904fe364579d6a1d93aa8729a7912}\index{pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}!name@{name}}
+\index{name@{name}!pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_a7b6904fe364579d6a1d93aa8729a7912} 
+pip.\+\_\+vendor.\+chardet.\+metadata.\+languages.\+Language.\+name = name}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_a077a97000400781d4bb8c0d321d8b58b}\index{pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}!use\_ascii@{use\_ascii}}
+\index{use\_ascii@{use\_ascii}!pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}}
+\doxysubsubsection{\texorpdfstring{use\_ascii}{use\_ascii}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_a077a97000400781d4bb8c0d321d8b58b} 
+pip.\+\_\+vendor.\+chardet.\+metadata.\+languages.\+Language.\+use\+\_\+ascii = use\+\_\+ascii}
+
+\Hypertarget{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ac752cae17887ef324efe8481e9e64c31}\index{pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}!wiki\_start\_pages@{wiki\_start\_pages}}
+\index{wiki\_start\_pages@{wiki\_start\_pages}!pip.\_vendor.chardet.metadata.languages.Language@{pip.\_vendor.chardet.metadata.languages.Language}}
+\doxysubsubsection{\texorpdfstring{wiki\_start\_pages}{wiki\_start\_pages}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1chardet_1_1metadata_1_1languages_1_1_language_ac752cae17887ef324efe8481e9e64c31} 
+pip.\+\_\+vendor.\+chardet.\+metadata.\+languages.\+Language.\+wiki\+\_\+start\+\_\+pages = wiki\+\_\+start\+\_\+pages}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+chardet/\+metadata/\+\doxymbox{\hyperlink{languages_8py}{languages.\+py}}\end{DoxyCompactItemize}

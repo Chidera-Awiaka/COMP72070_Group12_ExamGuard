@@ -1,0 +1,56 @@
+\doxysection{pip.\+\_\+internal.\+operations.\+build.\+wheel\+\_\+legacy Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy}{}\label{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy}\index{pip.\_internal.operations.build.wheel\_legacy@{pip.\_internal.operations.build.wheel\_legacy}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_a6e8c901721d49ee189db9c71857949c3}{format\+\_\+command\+\_\+result}} (List\+[str]\+ command\+\_\+args, str command\+\_\+output)
+\item 
+Optional\+[str]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_a3e2159fe2d7b2283619464dacf468576}{get\+\_\+legacy\+\_\+build\+\_\+wheel\+\_\+path}} (List\+[str]\+ names, str temp\+\_\+dir, str name, List\+[str]\+ command\+\_\+args, str command\+\_\+output)
+\item 
+Optional\+[str]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_a97e06445bd19ad745f7be13aa376869a}{build\+\_\+wheel\+\_\+legacy}} (str name, str setup\+\_\+py\+\_\+path, str source\+\_\+dir, List\+[str]\+ global\+\_\+options, List\+[str]\+ build\+\_\+options, str tempd)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_ae05d7427eced79e295c9665a4f968e0c}{logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_a97e06445bd19ad745f7be13aa376869a}\index{pip.\_internal.operations.build.wheel\_legacy@{pip.\_internal.operations.build.wheel\_legacy}!build\_wheel\_legacy@{build\_wheel\_legacy}}
+\index{build\_wheel\_legacy@{build\_wheel\_legacy}!pip.\_internal.operations.build.wheel\_legacy@{pip.\_internal.operations.build.wheel\_legacy}}
+\doxysubsubsection{\texorpdfstring{build\_wheel\_legacy()}{build\_wheel\_legacy()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_a97e06445bd19ad745f7be13aa376869a} 
+ Optional\+[str]\+ pip.\+\_\+internal.\+operations.\+build.\+wheel\+\_\+legacy.\+build\+\_\+wheel\+\_\+legacy (\begin{DoxyParamCaption}\item[{str}]{name}{, }\item[{str}]{setup\+\_\+py\+\_\+path}{, }\item[{str}]{source\+\_\+dir}{, }\item[{List\+[str]\+}]{global\+\_\+options}{, }\item[{List\+[str]\+}]{build\+\_\+options}{, }\item[{str}]{tempd}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Build one unpacked package using the "legacy" build process.
+
+Returns path to wheel if successfully built. Otherwise, returns None.
+\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_a6e8c901721d49ee189db9c71857949c3}\index{pip.\_internal.operations.build.wheel\_legacy@{pip.\_internal.operations.build.wheel\_legacy}!format\_command\_result@{format\_command\_result}}
+\index{format\_command\_result@{format\_command\_result}!pip.\_internal.operations.build.wheel\_legacy@{pip.\_internal.operations.build.wheel\_legacy}}
+\doxysubsubsection{\texorpdfstring{format\_command\_result()}{format\_command\_result()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_a6e8c901721d49ee189db9c71857949c3} 
+ str pip.\+\_\+internal.\+operations.\+build.\+wheel\+\_\+legacy.\+format\+\_\+command\+\_\+result (\begin{DoxyParamCaption}\item[{List\+[str]\+}]{command\+\_\+args}{, }\item[{str}]{command\+\_\+output}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Format command information for logging.\end{DoxyVerb}
+ \Hypertarget{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_a3e2159fe2d7b2283619464dacf468576}\index{pip.\_internal.operations.build.wheel\_legacy@{pip.\_internal.operations.build.wheel\_legacy}!get\_legacy\_build\_wheel\_path@{get\_legacy\_build\_wheel\_path}}
+\index{get\_legacy\_build\_wheel\_path@{get\_legacy\_build\_wheel\_path}!pip.\_internal.operations.build.wheel\_legacy@{pip.\_internal.operations.build.wheel\_legacy}}
+\doxysubsubsection{\texorpdfstring{get\_legacy\_build\_wheel\_path()}{get\_legacy\_build\_wheel\_path()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_a3e2159fe2d7b2283619464dacf468576} 
+ Optional\+[str]\+ pip.\+\_\+internal.\+operations.\+build.\+wheel\+\_\+legacy.\+get\+\_\+legacy\+\_\+build\+\_\+wheel\+\_\+path (\begin{DoxyParamCaption}\item[{List\+[str]\+}]{names}{, }\item[{str}]{temp\+\_\+dir}{, }\item[{str}]{name}{, }\item[{List\+[str]\+}]{command\+\_\+args}{, }\item[{str}]{command\+\_\+output}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the path to the wheel in the temporary build directory.\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_ae05d7427eced79e295c9665a4f968e0c}\index{pip.\_internal.operations.build.wheel\_legacy@{pip.\_internal.operations.build.wheel\_legacy}!logger@{logger}}
+\index{logger@{logger}!pip.\_internal.operations.build.wheel\_legacy@{pip.\_internal.operations.build.wheel\_legacy}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1operations_1_1build_1_1wheel__legacy_ae05d7427eced79e295c9665a4f968e0c} 
+pip.\+\_\+internal.\+operations.\+build.\+wheel\+\_\+legacy.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+

@@ -1,0 +1,100 @@
+\doxysection{pip.\+\_\+vendor.\+pyparsing.\+util.\+LRUMemo Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo}{}\label{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo}\index{pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a15f78ca093b0fa57b4c3202ebe067751}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, capacity)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a3ae21e303ed62769b04c40fcf125029f}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, key)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a98e868c0f500606d0281970d3473516f}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, key, value)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a331a24df748cabc475bcd42c19cf9107}{\+\_\+\+\_\+delitem\+\_\+\+\_\+}} (self, key)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a303f6eac42dc5558fbfcc3a4c4de31be}{clear}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_ad82562d17ef5e9c23279732213150974}{\+\_\+capacity}} = capacity
+\item 
+dict \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_ab18d53164707103244cc59e86798dce5}{\+\_\+active}} = \{\}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a435255fb4945150fa395c9d628487d08}{\+\_\+memory}} = collections.\+Ordered\+Dict()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A memoizing mapping that retains `capacity` deleted items
+
+The memo tracks retained items by their access order; once `capacity` items
+are retained, the least recently used item is discarded.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a15f78ca093b0fa57b4c3202ebe067751}\index{pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a15f78ca093b0fa57b4c3202ebe067751} 
+pip.\+\_\+vendor.\+pyparsing.\+util.\+LRUMemo.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{capacity}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a331a24df748cabc475bcd42c19cf9107}\index{pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}!\_\_delitem\_\_@{\_\_delitem\_\_}}
+\index{\_\_delitem\_\_@{\_\_delitem\_\_}!pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}}
+\doxysubsubsection{\texorpdfstring{\_\_delitem\_\_()}{\_\_delitem\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a331a24df748cabc475bcd42c19cf9107} 
+pip.\+\_\+vendor.\+pyparsing.\+util.\+LRUMemo.\+\_\+\+\_\+delitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a3ae21e303ed62769b04c40fcf125029f}\index{pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a3ae21e303ed62769b04c40fcf125029f} 
+pip.\+\_\+vendor.\+pyparsing.\+util.\+LRUMemo.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a98e868c0f500606d0281970d3473516f}\index{pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a98e868c0f500606d0281970d3473516f} 
+pip.\+\_\+vendor.\+pyparsing.\+util.\+LRUMemo.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a303f6eac42dc5558fbfcc3a4c4de31be}\index{pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}!clear@{clear}}
+\index{clear@{clear}!pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a303f6eac42dc5558fbfcc3a4c4de31be} 
+pip.\+\_\+vendor.\+pyparsing.\+util.\+LRUMemo.\+clear (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_ab18d53164707103244cc59e86798dce5}\index{pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}!\_active@{\_active}}
+\index{\_active@{\_active}!pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}}
+\doxysubsubsection{\texorpdfstring{\_active}{\_active}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_ab18d53164707103244cc59e86798dce5} 
+dict pip.\+\_\+vendor.\+pyparsing.\+util.\+LRUMemo.\+\_\+active = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_ad82562d17ef5e9c23279732213150974}\index{pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}!\_capacity@{\_capacity}}
+\index{\_capacity@{\_capacity}!pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}}
+\doxysubsubsection{\texorpdfstring{\_capacity}{\_capacity}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_ad82562d17ef5e9c23279732213150974} 
+pip.\+\_\+vendor.\+pyparsing.\+util.\+LRUMemo.\+\_\+capacity = capacity\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a435255fb4945150fa395c9d628487d08}\index{pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}!\_memory@{\_memory}}
+\index{\_memory@{\_memory}!pip.\_vendor.pyparsing.util.LRUMemo@{pip.\_vendor.pyparsing.util.LRUMemo}}
+\doxysubsubsection{\texorpdfstring{\_memory}{\_memory}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1util_1_1_l_r_u_memo_a435255fb4945150fa395c9d628487d08} 
+pip.\+\_\+vendor.\+pyparsing.\+util.\+LRUMemo.\+\_\+memory = collections.\+Ordered\+Dict()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+pyparsing/\+\doxymbox{\hyperlink{pyparsing_2util_8py}{util.\+py}}\end{DoxyCompactItemize}

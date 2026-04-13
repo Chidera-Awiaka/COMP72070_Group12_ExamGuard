@@ -1,0 +1,25 @@
+var classreportlab_1_1lib_1_1corp_1_1_r_l___business_card =
+[
+    [ "__init__", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#a4b3b3306e63ae48e0db9447562ee61aa", null ],
+    [ "demo", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#aaaa9b0951011a9c3b930eda2ed33e91d", null ],
+    [ "draw", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#abfadbfdff0427cc9a792ed5bd45480cd", null ],
+    [ "altStrokeColor", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#a6a7566c464c16d12819d1889e0798b68", null ],
+    [ "bleed", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#a6b26d1933fca55790e8c884ac15e3008", null ],
+    [ "border", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#abc635c8d1df3ca14563d4f1fcfabdc0d", null ],
+    [ "borderWidth", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#a6d6b45619d6e174074124d493283e27d", null ],
+    [ "cropMarks", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#ace88334e073351d0462f65f60ef5aa01", null ],
+    [ "email", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#af5c88723d25a2c21967f2ede81cc2a36", null ],
+    [ "fax", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#a5c176e45217b2fe081293d0b4fbc78c7", null ],
+    [ "fillColor", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#a443fae675d3e325f0ec75746be92c745", null ],
+    [ "height", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#ae1831408cdf403dae1b9bf5ff10b428e", null ],
+    [ "mobile", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#ad13e8eb953132772318e728dda045234", null ],
+    [ "name", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#a9e455a5dacc56bdcacf8776c193b04e9", null ],
+    [ "position", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#ac77f46e880b5a5a084f9e9a1a183d56a", null ],
+    [ "rh_blurb_top", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#a2d8b8bd085f9433d85f5da2b4c9313bf", null ],
+    [ "strokeColor", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#a101c793db400ee26712dcd276d3a8526", null ],
+    [ "telephone", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#a55f77cba090a8d69e0af43bba260124d", null ],
+    [ "web", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#a8a6c257c3fd5a47f0a90b1c5ac97c6cd", null ],
+    [ "width", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#a60c3692da54e4870d107ecdc2d85fa2b", null ],
+    [ "x", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#a78dde9b1ef69034b195d35f323334af0", null ],
+    [ "y", "classreportlab_1_1lib_1_1corp_1_1_r_l___business_card.html#af8b97cba46d5ce2f1551494d4823b680", null ]
+];

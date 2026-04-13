@@ -1,0 +1,174 @@
+\doxysection{PIL.\+Image\+Win.\+Dib Class Reference}
+\hypertarget{class_p_i_l_1_1_image_win_1_1_dib}{}\label{class_p_i_l_1_1_image_win_1_1_dib}\index{PIL.ImageWin.Dib@{PIL.ImageWin.Dib}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_a66512039f7b8d3a0cbbd9ae9945ae0a0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}\texorpdfstring{$\vert$}{|}str \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_aa58ccb286852e15a57a356cb0589c163}{image}}, tuple\+[int, int]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_ae6273cf68a43e12f710dd26d7a2b9837}{size}}=None)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_ae943cf2c514e9bd2ba1a45ddeafcd715}{expose}} (self, int\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_h_d_c}{HDC}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_h_w_n_d}{HWND}} handle)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_a86aa7561d0acda64c271ceee683efeab}{draw}} (self, int\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_h_d_c}{HDC}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_h_w_n_d}{HWND}} handle, tuple\+[int, int, int, int]\+ dst, tuple\+[int, int, int, int]\+\texorpdfstring{$\vert$}{|}None src=None)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_ada5fa32c405ce65fa94bbd7346f89e90}{query\+\_\+palette}} (self, int\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_h_d_c}{HDC}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_h_w_n_d}{HWND}} handle)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_a22848f4aedfcfab7c8bcec46224246d8}{paste}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} im, tuple\+[int, int, int, int]\+\texorpdfstring{$\vert$}{|}None box=None)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_ae3cc4b05b7bd4e9136422c1c3dee6cf2}{frombytes}} (self, bytes buffer)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_abd3071410e5ff50eec8752f021b7f634}{tobytes}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_aa58ccb286852e15a57a356cb0589c163}{image}} = Image.\+core.\+display(\doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_ab1ae9942bb716440c85aa52d62f7b03a}{mode}}, \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_ae6273cf68a43e12f710dd26d7a2b9837}{size}})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_ab1ae9942bb716440c85aa52d62f7b03a}{mode}} = mode
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_ae6273cf68a43e12f710dd26d7a2b9837}{size}} = size
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A Windows bitmap with the given mode and size.  The mode can be one of "1",
+"L", "P", or "RGB".
+
+If the display requires a palette, this constructor creates a suitable
+palette and associates it with the image. For an "L" image, 128 graylevels
+are allocated. For an "RGB" image, a 6x6x6 colour cube is used, together
+with 20 graylevels.
+
+To make sure that palettes work properly under Windows, you must call the
+``palette`` method upon certain events from Windows.
+
+:param image: Either a PIL image, or a mode string. If a mode string is
+              used, a size must also be given.  The mode can be one of "1",
+              "L", "P", or "RGB".
+:param size: If the first argument is a mode string, this
+             defines the size of the image.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_image_win_1_1_dib_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_image_win_1_1_dib_a66512039f7b8d3a0cbbd9ae9945ae0a0}\index{PIL.ImageWin.Dib@{PIL.ImageWin.Dib}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.ImageWin.Dib@{PIL.ImageWin.Dib}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_win_1_1_dib_a66512039f7b8d3a0cbbd9ae9945ae0a0} 
+ None PIL.\+Image\+Win.\+Dib.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} \texorpdfstring{$\vert$}{|} str}]{image}{, }\item[{tuple\+[int, int]\+ \texorpdfstring{$\vert$}{|} None }]{size}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_image_win_1_1_dib_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_image_win_1_1_dib_a86aa7561d0acda64c271ceee683efeab}\index{PIL.ImageWin.Dib@{PIL.ImageWin.Dib}!draw@{draw}}
+\index{draw@{draw}!PIL.ImageWin.Dib@{PIL.ImageWin.Dib}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_win_1_1_dib_a86aa7561d0acda64c271ceee683efeab} 
+ None PIL.\+Image\+Win.\+Dib.\+draw (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_h_d_c}{HDC}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_h_w_n_d}{HWND}}}]{handle}{, }\item[{tuple\+[int, int, int, int]\+}]{dst}{, }\item[{tuple\+[int, int, int, int]\+ \texorpdfstring{$\vert$}{|} None }]{src}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Same as expose, but allows you to specify where to draw the image, and
+what part of it to draw.
+
+The destination and source areas are given as 4-tuple rectangles. If
+the source is omitted, the entire image is copied. If the source and
+the destination have different sizes, the image is resized as
+necessary.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_win_1_1_dib_ae943cf2c514e9bd2ba1a45ddeafcd715}\index{PIL.ImageWin.Dib@{PIL.ImageWin.Dib}!expose@{expose}}
+\index{expose@{expose}!PIL.ImageWin.Dib@{PIL.ImageWin.Dib}}
+\doxysubsubsection{\texorpdfstring{expose()}{expose()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_win_1_1_dib_ae943cf2c514e9bd2ba1a45ddeafcd715} 
+ None PIL.\+Image\+Win.\+Dib.\+expose (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_h_d_c}{HDC}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_h_w_n_d}{HWND}}}]{handle}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Copy the bitmap contents to a device context.
+
+:param handle: Device context (HDC), cast to a Python integer, or an
+               HDC or HWND instance.  In PythonWin, you can use
+               ``CDC.GetHandleAttrib()`` to get a suitable handle.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_win_1_1_dib_ae3cc4b05b7bd4e9136422c1c3dee6cf2}\index{PIL.ImageWin.Dib@{PIL.ImageWin.Dib}!frombytes@{frombytes}}
+\index{frombytes@{frombytes}!PIL.ImageWin.Dib@{PIL.ImageWin.Dib}}
+\doxysubsubsection{\texorpdfstring{frombytes()}{frombytes()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_win_1_1_dib_ae3cc4b05b7bd4e9136422c1c3dee6cf2} 
+ None PIL.\+Image\+Win.\+Dib.\+frombytes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{buffer}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Load display memory contents from byte data.
+
+:param buffer: A buffer containing display data (usually
+               data returned from :py:func:`~PIL.ImageWin.Dib.tobytes`)
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_win_1_1_dib_a22848f4aedfcfab7c8bcec46224246d8}\index{PIL.ImageWin.Dib@{PIL.ImageWin.Dib}!paste@{paste}}
+\index{paste@{paste}!PIL.ImageWin.Dib@{PIL.ImageWin.Dib}}
+\doxysubsubsection{\texorpdfstring{paste()}{paste()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_win_1_1_dib_a22848f4aedfcfab7c8bcec46224246d8} 
+ None PIL.\+Image\+Win.\+Dib.\+paste (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}}]{im}{, }\item[{tuple\+[int, int, int, int]\+ \texorpdfstring{$\vert$}{|} None }]{box}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Paste a PIL image into the bitmap image.
+
+:param im: A PIL image.  The size must match the target region.
+           If the mode does not match, the image is converted to the
+           mode of the bitmap image.
+:param box: A 4-tuple defining the left, upper, right, and
+            lower pixel coordinate.  See :ref:`coordinate-system`. If
+            None is given instead of a tuple, all of the image is
+            assumed.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_win_1_1_dib_ada5fa32c405ce65fa94bbd7346f89e90}\index{PIL.ImageWin.Dib@{PIL.ImageWin.Dib}!query\_palette@{query\_palette}}
+\index{query\_palette@{query\_palette}!PIL.ImageWin.Dib@{PIL.ImageWin.Dib}}
+\doxysubsubsection{\texorpdfstring{query\_palette()}{query\_palette()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_win_1_1_dib_ada5fa32c405ce65fa94bbd7346f89e90} 
+ int PIL.\+Image\+Win.\+Dib.\+query\+\_\+palette (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_h_d_c}{HDC}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_h_w_n_d}{HWND}}}]{handle}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Installs the palette associated with the image in the given device
+context.
+
+This method should be called upon **QUERYNEWPALETTE** and
+**PALETTECHANGED** events from Windows. If this method returns a
+non-zero value, one or more display palette entries were changed, and
+the image should be redrawn.
+
+:param handle: Device context (HDC), cast to a Python integer, or an
+               HDC or HWND instance.
+:return: The number of entries that were changed (if one or more entries,
+         this indicates that the image should be redrawn).
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_win_1_1_dib_abd3071410e5ff50eec8752f021b7f634}\index{PIL.ImageWin.Dib@{PIL.ImageWin.Dib}!tobytes@{tobytes}}
+\index{tobytes@{tobytes}!PIL.ImageWin.Dib@{PIL.ImageWin.Dib}}
+\doxysubsubsection{\texorpdfstring{tobytes()}{tobytes()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_win_1_1_dib_abd3071410e5ff50eec8752f021b7f634} 
+ bytes PIL.\+Image\+Win.\+Dib.\+tobytes (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Copy display memory contents to bytes object.
+
+:return: A bytes object containing display data.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_image_win_1_1_dib_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_image_win_1_1_dib_aa58ccb286852e15a57a356cb0589c163}\index{PIL.ImageWin.Dib@{PIL.ImageWin.Dib}!image@{image}}
+\index{image@{image}!PIL.ImageWin.Dib@{PIL.ImageWin.Dib}}
+\doxysubsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_win_1_1_dib_aa58ccb286852e15a57a356cb0589c163} 
+PIL.\+Image\+Win.\+Dib.\+image = Image.\+core.\+display(\doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_ab1ae9942bb716440c85aa52d62f7b03a}{mode}}, \doxymbox{\hyperlink{class_p_i_l_1_1_image_win_1_1_dib_ae6273cf68a43e12f710dd26d7a2b9837}{size}})}
+
+\Hypertarget{class_p_i_l_1_1_image_win_1_1_dib_ab1ae9942bb716440c85aa52d62f7b03a}\index{PIL.ImageWin.Dib@{PIL.ImageWin.Dib}!mode@{mode}}
+\index{mode@{mode}!PIL.ImageWin.Dib@{PIL.ImageWin.Dib}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_win_1_1_dib_ab1ae9942bb716440c85aa52d62f7b03a} 
+PIL.\+Image\+Win.\+Dib.\+mode = mode}
+
+\Hypertarget{class_p_i_l_1_1_image_win_1_1_dib_ae6273cf68a43e12f710dd26d7a2b9837}\index{PIL.ImageWin.Dib@{PIL.ImageWin.Dib}!size@{size}}
+\index{size@{size}!PIL.ImageWin.Dib@{PIL.ImageWin.Dib}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_win_1_1_dib_ae6273cf68a43e12f710dd26d7a2b9837} 
+PIL.\+Image\+Win.\+Dib.\+size = size}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_win_8py}{Image\+Win.\+py}}\end{DoxyCompactItemize}

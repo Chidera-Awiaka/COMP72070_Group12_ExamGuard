@@ -1,0 +1,181 @@
+\doxysection{reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection Class Reference}
+\hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection}{}\label{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection}\index{reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}}
+Inheritance diagram for reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a1fe9487aea9ff8c5c06f982c69413bb4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, example\+Class, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a8f0e25010d428ea61e4e00957c134775}{w\+Klass\+Factory}} (self, Klass)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a105c32653cb083a12c2659f752403250}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, x)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a61666811371d59b56cfb5e2f2b40609f}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, key)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a35036219dd924c6b9e89b4339217b5ca}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, key, value)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a1c5f2494852e612c84225b560a69cc5c}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_aba8eab15395a49b64018313a0a86f622}{get\+Properties}} (self, recur=1)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a36cfe3242e1cbc07500e9666c99b8df0}{set\+Vector}} (self, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kw)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_afa40344305d4cc85afe12c23c0f0019f}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, name)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a1cb591c7097b980c42baae8f15121968}{\+\_\+\+\_\+setattr\+\_\+\+\_\+}} (self, name, value)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a3ec93c98a242a879bf3c4feb160c44ab}{check\+Attr}} (self, key, a, default=None)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder}{reportlab.\+graphics.\+widgetbase.\+Prop\+Holder}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a499140401d4e3b95def8999d99ed326c}{verify}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a95959a2e62f824b0b08dc38ab9fa7fc9}{\+\_\+\+\_\+setattr\+\_\+\+\_\+}} (self, name, value)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_afcd89f607beb18ace7eeae32a15f6850}{set\+Properties}} (self, prop\+Dict)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_aac80fd564ff61268db03f02cd2ac61c9}{dump\+Properties}} (self, prefix="{}"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a3b0b8cede1d3b49873b099e3ee0cc562}{\+\_\+value}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Static Protected Attributes inherited from \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder}{reportlab.\+graphics.\+widgetbase.\+Prop\+Holder}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a426b511b7bbaf08ec239017d4eba2607}{\+\_\+attr\+Map}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A container with properties for objects of the same kind.
+
+This makes it easy to create lists of objects. You initialize
+it with a class of what it is to contain, and that is all you
+can add to it.  You can assign properties to the collection
+as a whole, or to a numeric index within it; if so it creates
+a new child object to hold that data.
+
+So:
+    wedges = TypedPropertyCollection(WedgeProperties)
+    wedges.strokeWidth = 2                # applies to all
+    wedges.strokeColor = colors.red       # applies to all
+    wedges[3].strokeColor = colors.blue   # only to one
+
+The last line should be taken as a prescription of how to
+create wedge no. 3 if one is needed; no error is raised if
+there are only two data points.
+
+We try and make sensible use of tuple indices.
+    line[(3,x)] is backed by line[(3,)] == line[3] & line
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a1fe9487aea9ff8c5c06f982c69413bb4}\index{reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a1fe9487aea9ff8c5c06f982c69413bb4} 
+reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{example\+Class}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a61666811371d59b56cfb5e2f2b40609f}\index{reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a61666811371d59b56cfb5e2f2b40609f} 
+reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_afa40344305d4cc85afe12c23c0f0019f}\index{reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_afa40344305d4cc85afe12c23c0f0019f} 
+reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a105c32653cb083a12c2659f752403250}\index{reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a105c32653cb083a12c2659f752403250} 
+reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a1c5f2494852e612c84225b560a69cc5c}\index{reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a1c5f2494852e612c84225b560a69cc5c} 
+reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a1cb591c7097b980c42baae8f15121968}\index{reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}!\_\_setattr\_\_@{\_\_setattr\_\_}}
+\index{\_\_setattr\_\_@{\_\_setattr\_\_}!reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}}
+\doxysubsubsection{\texorpdfstring{\_\_setattr\_\_()}{\_\_setattr\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a1cb591c7097b980c42baae8f15121968} 
+reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection.\+\_\+\+\_\+setattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a35036219dd924c6b9e89b4339217b5ca}\index{reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a35036219dd924c6b9e89b4339217b5ca} 
+reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a3ec93c98a242a879bf3c4feb160c44ab}\index{reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}!checkAttr@{checkAttr}}
+\index{checkAttr@{checkAttr}!reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}}
+\doxysubsubsection{\texorpdfstring{checkAttr()}{checkAttr()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a3ec93c98a242a879bf3c4feb160c44ab} 
+reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection.\+check\+Attr (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{key}{, }\item[{}]{a}{, }\item[{}]{default}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_aba8eab15395a49b64018313a0a86f622}\index{reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}!getProperties@{getProperties}}
+\index{getProperties@{getProperties}!reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}}
+\doxysubsubsection{\texorpdfstring{getProperties()}{getProperties()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_aba8eab15395a49b64018313a0a86f622} 
+reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection.\+get\+Properties (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{recur}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of all properties which can be edited and
+which are not marked as private. This may include 'child
+widgets' or 'primitive shapes'.  You are free to override
+this and provide alternative implementations; the default
+one simply returns everything without a leading underscore.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a9123dfdea08518009e5b5df538e24fe1}{reportlab.\+graphics.\+widgetbase.\+Prop\+Holder}}.
+
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a36cfe3242e1cbc07500e9666c99b8df0}\index{reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}!setVector@{setVector}}
+\index{setVector@{setVector}!reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}}
+\doxysubsubsection{\texorpdfstring{setVector()}{setVector()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a36cfe3242e1cbc07500e9666c99b8df0} 
+reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection.\+set\+Vector (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kw}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a8f0e25010d428ea61e4e00957c134775}\index{reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}!wKlassFactory@{wKlassFactory}}
+\index{wKlassFactory@{wKlassFactory}!reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}}
+\doxysubsubsection{\texorpdfstring{wKlassFactory()}{wKlassFactory()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a8f0e25010d428ea61e4e00957c134775} 
+reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection.\+w\+Klass\+Factory (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{Klass}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a3b0b8cede1d3b49873b099e3ee0cc562}\index{reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}!\_value@{\_value}}
+\index{\_value@{\_value}!reportlab.graphics.widgetbase.TypedPropertyCollection@{reportlab.graphics.widgetbase.TypedPropertyCollection}}
+\doxysubsubsection{\texorpdfstring{\_value}{\_value}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_a3b0b8cede1d3b49873b099e3ee0cc562} 
+reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection.\+\_\+value\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+graphics/\+\doxymbox{\hyperlink{widgetbase_8py}{widgetbase.\+py}}\end{DoxyCompactItemize}

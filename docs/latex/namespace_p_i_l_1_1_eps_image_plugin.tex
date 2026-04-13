@@ -1,0 +1,89 @@
+\doxysection{PIL.\+Eps\+Image\+Plugin Namespace Reference}
+\hypertarget{namespace_p_i_l_1_1_eps_image_plugin}{}\label{namespace_p_i_l_1_1_eps_image_plugin}\index{PIL.EpsImagePlugin@{PIL.EpsImagePlugin}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_eps_image_plugin_1_1_eps_image_file}{Eps\+Image\+File}}
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_p_i_l_1_1_image}{Image} plugin for Encapsulated Post\+Script. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{namespace_p_i_l_1_1_eps_image_plugin_ac9d66ce5341a5fc75f5e9da85f90d141}{has\+\_\+ghostscript}} ()
+\item 
+Image.\+core.\+Imaging\+Core \doxymbox{\hyperlink{namespace_p_i_l_1_1_eps_image_plugin_a958c56af4291b6f4d2da3e07b8bced60}{Ghostscript}} (list\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1___tile}{Image\+File.\+\_\+\+Tile}}]\+ tile, tuple\+[int, int]\+ size, IO\+[bytes]\+ fp, int scale=1, bool transparency=False)
+\item 
+bool \doxymbox{\hyperlink{namespace_p_i_l_1_1_eps_image_plugin_aa962135156cec9efa45d3415b7673b34}{\+\_\+accept}} (bytes prefix)
+\item 
+None \doxymbox{\hyperlink{namespace_p_i_l_1_1_eps_image_plugin_a45b882c6347031ab10ab98fa7b4ee35f}{\+\_\+save}} (\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} im, IO\+[bytes]\+ fp, str\texorpdfstring{$\vert$}{|}bytes filename, int eps=1)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespace_p_i_l_1_1_eps_image_plugin_a15c28c754e94920d11e8bd2dd9649737}{split}} = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\%\%(\+[\texorpdfstring{$^\wedge$}{\string^}:\+]\+\texorpdfstring{$\ast$}{*}):\+\+[ \textbackslash{}t]\+\texorpdfstring{$\ast$}{*}(.\texorpdfstring{$\ast$}{*})\+[ \textbackslash{}t]\+\texorpdfstring{$\ast$}{*}\$"{})
+\item 
+\doxymbox{\hyperlink{namespace_p_i_l_1_1_eps_image_plugin_a50be947ea5f8515eb46df3e5e6139e52}{field}} = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\%\+[\%!\textbackslash{}w]\+(\+[\texorpdfstring{$^\wedge$}{\string^}:\+]\+\texorpdfstring{$\ast$}{*})\+[ \textbackslash{}t]\+\texorpdfstring{$\ast$}{*}\$"{})
+\item 
+str \doxymbox{\hyperlink{namespace_p_i_l_1_1_eps_image_plugin_a367b86b052e9434b9d246d4d05959280}{gs\+\_\+binary}} = None
+\item 
+\doxymbox{\hyperlink{namespace_p_i_l_1_1_eps_image_plugin_aa8585827ffa54e7dd6b31e5d87e95cbc}{gs\+\_\+windows\+\_\+binary}} = None
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_p_i_l_1_1_eps_image_plugin_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_p_i_l_1_1_eps_image_plugin_aa962135156cec9efa45d3415b7673b34}\index{PIL.EpsImagePlugin@{PIL.EpsImagePlugin}!\_accept@{\_accept}}
+\index{\_accept@{\_accept}!PIL.EpsImagePlugin@{PIL.EpsImagePlugin}}
+\doxysubsubsection{\texorpdfstring{\_accept()}{\_accept()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_eps_image_plugin_aa962135156cec9efa45d3415b7673b34} 
+ bool PIL.\+Eps\+Image\+Plugin.\+\_\+accept (\begin{DoxyParamCaption}\item[{bytes}]{prefix}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespace_p_i_l_1_1_eps_image_plugin_a45b882c6347031ab10ab98fa7b4ee35f}\index{PIL.EpsImagePlugin@{PIL.EpsImagePlugin}!\_save@{\_save}}
+\index{\_save@{\_save}!PIL.EpsImagePlugin@{PIL.EpsImagePlugin}}
+\doxysubsubsection{\texorpdfstring{\_save()}{\_save()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_eps_image_plugin_a45b882c6347031ab10ab98fa7b4ee35f} 
+ None PIL.\+Eps\+Image\+Plugin.\+\_\+save (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}}]{im}{, }\item[{IO\+[bytes]\+}]{fp}{, }\item[{str \texorpdfstring{$\vert$}{|} bytes}]{filename}{, }\item[{int }]{eps}{ = {\ttfamily 1}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}EPS Writer for the Python Imaging Library.\end{DoxyVerb}
+ \Hypertarget{namespace_p_i_l_1_1_eps_image_plugin_a958c56af4291b6f4d2da3e07b8bced60}\index{PIL.EpsImagePlugin@{PIL.EpsImagePlugin}!Ghostscript@{Ghostscript}}
+\index{Ghostscript@{Ghostscript}!PIL.EpsImagePlugin@{PIL.EpsImagePlugin}}
+\doxysubsubsection{\texorpdfstring{Ghostscript()}{Ghostscript()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_eps_image_plugin_a958c56af4291b6f4d2da3e07b8bced60} 
+ Image.\+core.\+Imaging\+Core PIL.\+Eps\+Image\+Plugin.\+Ghostscript (\begin{DoxyParamCaption}\item[{list\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1___tile}{Image\+File.\+\_\+\+Tile}}]\+}]{tile}{, }\item[{tuple\+[int, int]\+}]{size}{, }\item[{IO\+[bytes]\+}]{fp}{, }\item[{int }]{scale}{ = {\ttfamily 1}, }\item[{bool }]{transparency}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Render an image using Ghostscript\end{DoxyVerb}
+ \Hypertarget{namespace_p_i_l_1_1_eps_image_plugin_ac9d66ce5341a5fc75f5e9da85f90d141}\index{PIL.EpsImagePlugin@{PIL.EpsImagePlugin}!has\_ghostscript@{has\_ghostscript}}
+\index{has\_ghostscript@{has\_ghostscript}!PIL.EpsImagePlugin@{PIL.EpsImagePlugin}}
+\doxysubsubsection{\texorpdfstring{has\_ghostscript()}{has\_ghostscript()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_eps_image_plugin_ac9d66ce5341a5fc75f5e9da85f90d141} 
+ bool PIL.\+Eps\+Image\+Plugin.\+has\+\_\+ghostscript (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespace_p_i_l_1_1_eps_image_plugin_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_p_i_l_1_1_eps_image_plugin_a50be947ea5f8515eb46df3e5e6139e52}\index{PIL.EpsImagePlugin@{PIL.EpsImagePlugin}!field@{field}}
+\index{field@{field}!PIL.EpsImagePlugin@{PIL.EpsImagePlugin}}
+\doxysubsubsection{\texorpdfstring{field}{field}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_eps_image_plugin_a50be947ea5f8515eb46df3e5e6139e52} 
+PIL.\+Eps\+Image\+Plugin.\+field = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\%\+[\%!\textbackslash{}w]\+(\+[\texorpdfstring{$^\wedge$}{\string^}:\+]\+\texorpdfstring{$\ast$}{*})\+[ \textbackslash{}t]\+\texorpdfstring{$\ast$}{*}\$"{})}
+
+\Hypertarget{namespace_p_i_l_1_1_eps_image_plugin_a367b86b052e9434b9d246d4d05959280}\index{PIL.EpsImagePlugin@{PIL.EpsImagePlugin}!gs\_binary@{gs\_binary}}
+\index{gs\_binary@{gs\_binary}!PIL.EpsImagePlugin@{PIL.EpsImagePlugin}}
+\doxysubsubsection{\texorpdfstring{gs\_binary}{gs\_binary}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_eps_image_plugin_a367b86b052e9434b9d246d4d05959280} 
+str PIL.\+Eps\+Image\+Plugin.\+gs\+\_\+binary = None}
+
+\Hypertarget{namespace_p_i_l_1_1_eps_image_plugin_aa8585827ffa54e7dd6b31e5d87e95cbc}\index{PIL.EpsImagePlugin@{PIL.EpsImagePlugin}!gs\_windows\_binary@{gs\_windows\_binary}}
+\index{gs\_windows\_binary@{gs\_windows\_binary}!PIL.EpsImagePlugin@{PIL.EpsImagePlugin}}
+\doxysubsubsection{\texorpdfstring{gs\_windows\_binary}{gs\_windows\_binary}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_eps_image_plugin_aa8585827ffa54e7dd6b31e5d87e95cbc} 
+PIL.\+Eps\+Image\+Plugin.\+gs\+\_\+windows\+\_\+binary = None}
+
+\Hypertarget{namespace_p_i_l_1_1_eps_image_plugin_a15c28c754e94920d11e8bd2dd9649737}\index{PIL.EpsImagePlugin@{PIL.EpsImagePlugin}!split@{split}}
+\index{split@{split}!PIL.EpsImagePlugin@{PIL.EpsImagePlugin}}
+\doxysubsubsection{\texorpdfstring{split}{split}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_eps_image_plugin_a15c28c754e94920d11e8bd2dd9649737} 
+PIL.\+Eps\+Image\+Plugin.\+split = re.\+compile(r"{}\texorpdfstring{$^\wedge$}{\string^}\%\%(\+[\texorpdfstring{$^\wedge$}{\string^}:\+]\+\texorpdfstring{$\ast$}{*}):\+\+[ \textbackslash{}t]\+\texorpdfstring{$\ast$}{*}(.\texorpdfstring{$\ast$}{*})\+[ \textbackslash{}t]\+\texorpdfstring{$\ast$}{*}\$"{})}
+

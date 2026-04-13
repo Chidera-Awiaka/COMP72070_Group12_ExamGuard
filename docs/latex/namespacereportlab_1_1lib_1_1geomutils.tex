@@ -1,0 +1,35 @@
+\doxysection{reportlab.\+lib.\+geomutils Namespace Reference}
+\hypertarget{namespacereportlab_1_1lib_1_1geomutils}{}\label{namespacereportlab_1_1lib_1_1geomutils}\index{reportlab.lib.geomutils@{reportlab.lib.geomutils}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1geomutils_ab5fb61f5e23354c306558d3d0154078c}{normalize\+TRBL}} (p)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1lib_1_1geomutils_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1lib_1_1geomutils_ab5fb61f5e23354c306558d3d0154078c}\index{reportlab.lib.geomutils@{reportlab.lib.geomutils}!normalizeTRBL@{normalizeTRBL}}
+\index{normalizeTRBL@{normalizeTRBL}!reportlab.lib.geomutils@{reportlab.lib.geomutils}}
+\doxysubsubsection{\texorpdfstring{normalizeTRBL()}{normalizeTRBL()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1geomutils_ab5fb61f5e23354c306558d3d0154078c} 
+reportlab.\+lib.\+geomutils.\+normalize\+TRBL (\begin{DoxyParamCaption}\item[{}]{p}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Useful for interpreting short descriptions of paddings, borders, margin, etc.
+Expects a single value or a tuple of length 1 to 4.
+Returns a tuple representing (clockwise) the value(s) applied to the 4 sides of a rectangle:
+If a single value is given, that value is applied to all four sides.
+If two or three values are given, the missing values are taken from the opposite side(s).
+If four values are given they are returned unchanged.
+
+>>> normalizeTRBL(1)
+(1, 1, 1, 1)
+>>> normalizeTRBL((1, 1.2))
+(1, 1.2, 1, 1.2)
+>>> normalizeTRBL((1, 1.2, 0))
+(1, 1.2, 0, 1.2)
+>>> normalizeTRBL((1, 1.2, 0, 8))
+(1, 1.2, 0, 8)
+\end{DoxyVerb}
+ 

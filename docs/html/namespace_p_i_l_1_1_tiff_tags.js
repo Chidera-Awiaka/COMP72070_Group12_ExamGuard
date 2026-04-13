@@ -1,0 +1,28 @@
+var namespace_p_i_l_1_1_tiff_tags =
+[
+    [ "_TagInfo", "class_p_i_l_1_1_tiff_tags_1_1___tag_info.html", null ],
+    [ "TagInfo", "class_p_i_l_1_1_tiff_tags_1_1_tag_info.html", "class_p_i_l_1_1_tiff_tags_1_1_tag_info" ],
+    [ "_populate", "namespace_p_i_l_1_1_tiff_tags.html#ad12a1f87322a2ddb0d52707b4beaab3a", null ],
+    [ "lookup", "namespace_p_i_l_1_1_tiff_tags.html#a2655478b5d7e0acd7c055c6cba4a92cd", null ],
+    [ "_tags_v2", "namespace_p_i_l_1_1_tiff_tags.html#aed211762f7a524dc46c0b5addd53c802", null ],
+    [ "_tags_v2_groups", "namespace_p_i_l_1_1_tiff_tags.html#a1188572aaaf9b9d0fa2ae132d74b6207", null ],
+    [ "ASCII", "namespace_p_i_l_1_1_tiff_tags.html#a78a22efe518484854f9d1e8f754c845a", null ],
+    [ "BYTE", "namespace_p_i_l_1_1_tiff_tags.html#af65f62551f0ee74a0f4cea36dcfc658d", null ],
+    [ "DOUBLE", "namespace_p_i_l_1_1_tiff_tags.html#a41d5b0e201e1f915c0e56cab15b42343", null ],
+    [ "FLOAT", "namespace_p_i_l_1_1_tiff_tags.html#a85b3132066133349341ec1d7754ccd80", null ],
+    [ "IFD", "namespace_p_i_l_1_1_tiff_tags.html#af149e4a6fca8afa8f5d76fba92517ee4", null ],
+    [ "LIBTIFF_CORE", "namespace_p_i_l_1_1_tiff_tags.html#ade271a2fd7878c319bc68c203f3dc269", null ],
+    [ "LONG", "namespace_p_i_l_1_1_tiff_tags.html#a77f18b28373e83c40414f8209ba9dc46", null ],
+    [ "LONG8", "namespace_p_i_l_1_1_tiff_tags.html#a6c0209c7839e5dd5485385e28596fc5c", null ],
+    [ "RATIONAL", "namespace_p_i_l_1_1_tiff_tags.html#ae10a03be261e597c9e7005aa351b6e3b", null ],
+    [ "SHORT", "namespace_p_i_l_1_1_tiff_tags.html#a7d7ea5df3063e9267eb17c965aa13221", null ],
+    [ "SIGNED_BYTE", "namespace_p_i_l_1_1_tiff_tags.html#a4f9310e29c2cace549ad2390eff2e65f", null ],
+    [ "SIGNED_LONG", "namespace_p_i_l_1_1_tiff_tags.html#a7e8778b8c8188bfa40996340722d83a8", null ],
+    [ "SIGNED_RATIONAL", "namespace_p_i_l_1_1_tiff_tags.html#a1b5ed7e57a4075a6a6a0bb05010cc351", null ],
+    [ "SIGNED_SHORT", "namespace_p_i_l_1_1_tiff_tags.html#ab426d8e44bbcbb0b5143dbc178fa3f51", null ],
+    [ "TAGS", "namespace_p_i_l_1_1_tiff_tags.html#ae5879824da53912f4dd431d1990aa217", null ],
+    [ "TAGS_V2", "namespace_p_i_l_1_1_tiff_tags.html#a8caa2cceff52b6c9ab3736af3662c860", null ],
+    [ "TAGS_V2_GROUPS", "namespace_p_i_l_1_1_tiff_tags.html#a55dabe2dbbb32e0b6dcc0e517cce05d7", null ],
+    [ "TYPES", "namespace_p_i_l_1_1_tiff_tags.html#a50c504fb53651322b91204f98837b92e", null ],
+    [ "UNDEFINED", "namespace_p_i_l_1_1_tiff_tags.html#a4dd49de8c80e6644938e4b68273d5510", null ]
+];

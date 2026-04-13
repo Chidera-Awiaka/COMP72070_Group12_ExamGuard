@@ -1,0 +1,144 @@
+\doxysection{PIL.\+Image\+File.\+Parser Class Reference}
+\hypertarget{class_p_i_l_1_1_image_file_1_1_parser}{}\label{class_p_i_l_1_1_image_file_1_1_parser}\index{PIL.ImageFile.Parser@{PIL.ImageFile.Parser}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser_af6087c14b4193aaa8277d151332880f0}{reset}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser_a11fc42143578426a16e1f928a8747439}{feed}} (self, bytes \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser_add4132ff0d3328556dcb114e4c81c0e2}{data}})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser}{Parser}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser_a3b5122a13d823ed6b0419b54a8229469}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser_afe6d0c2c4fb37acaf8bf5014a128a33a}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}object args)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser_a2bb901d56b2c0d68682c6c5ac72d6fc3}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser_aef65701dd84749028abfed78ac849341}{decode}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser_ad435880b059abeecd752c15ac172c005}{incremental}} = None
+\item 
+\doxymbox{\hyperlink{namespace_p_i_l_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser_ae070a6829a807b6cf9c30e616376e919}{image}} = None
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser_add4132ff0d3328556dcb114e4c81c0e2}{data}} = None
+\item 
+\doxymbox{\hyperlink{namespace_p_i_l_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser_a1b365debe2f2d47625b039d3d8f008d2}{decoder}} = None
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser_af024736934b9eb0fa3f2c46b73957bd0}{offset}} = 0
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser_aeecbf81a0f77feb5a01df541d49d60f7}{finished}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Incremental image parser.  This class implements the standard
+feed/close consumer interface.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_a3b5122a13d823ed6b0419b54a8229469}\index{PIL.ImageFile.Parser@{PIL.ImageFile.Parser}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!PIL.ImageFile.Parser@{PIL.ImageFile.Parser}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_file_1_1_parser_a3b5122a13d823ed6b0419b54a8229469} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_parser}{Parser}} PIL.\+Image\+File.\+Parser.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_afe6d0c2c4fb37acaf8bf5014a128a33a}\index{PIL.ImageFile.Parser@{PIL.ImageFile.Parser}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!PIL.ImageFile.Parser@{PIL.ImageFile.Parser}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_file_1_1_parser_afe6d0c2c4fb37acaf8bf5014a128a33a} 
+ None PIL.\+Image\+File.\+Parser.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}object}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_a2bb901d56b2c0d68682c6c5ac72d6fc3}\index{PIL.ImageFile.Parser@{PIL.ImageFile.Parser}!close@{close}}
+\index{close@{close}!PIL.ImageFile.Parser@{PIL.ImageFile.Parser}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_file_1_1_parser_a2bb901d56b2c0d68682c6c5ac72d6fc3} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} PIL.\+Image\+File.\+Parser.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}(Consumer) Close the stream.
+
+:returns: An image object.
+:exception OSError: If the parser failed to parse the image file either
+                    because it cannot be identified or cannot be
+                    decoded.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_a11fc42143578426a16e1f928a8747439}\index{PIL.ImageFile.Parser@{PIL.ImageFile.Parser}!feed@{feed}}
+\index{feed@{feed}!PIL.ImageFile.Parser@{PIL.ImageFile.Parser}}
+\doxysubsubsection{\texorpdfstring{feed()}{feed()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_file_1_1_parser_a11fc42143578426a16e1f928a8747439} 
+ None PIL.\+Image\+File.\+Parser.\+feed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}(Consumer) Feed data to the parser.
+
+:param data: A string buffer.
+:exception OSError: If the parser failed to parse the image file.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_af6087c14b4193aaa8277d151332880f0}\index{PIL.ImageFile.Parser@{PIL.ImageFile.Parser}!reset@{reset}}
+\index{reset@{reset}!PIL.ImageFile.Parser@{PIL.ImageFile.Parser}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_file_1_1_parser_af6087c14b4193aaa8277d151332880f0} 
+ None PIL.\+Image\+File.\+Parser.\+reset (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}(Consumer) Reset the parser.  Note that you can only call this
+method immediately after you've created a parser; parser
+instances cannot be reused.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_add4132ff0d3328556dcb114e4c81c0e2}\index{PIL.ImageFile.Parser@{PIL.ImageFile.Parser}!data@{data}}
+\index{data@{data}!PIL.ImageFile.Parser@{PIL.ImageFile.Parser}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_file_1_1_parser_add4132ff0d3328556dcb114e4c81c0e2} 
+PIL.\+Image\+File.\+Parser.\+data = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_aef65701dd84749028abfed78ac849341}\index{PIL.ImageFile.Parser@{PIL.ImageFile.Parser}!decode@{decode}}
+\index{decode@{decode}!PIL.ImageFile.Parser@{PIL.ImageFile.Parser}}
+\doxysubsubsection{\texorpdfstring{decode}{decode}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_file_1_1_parser_aef65701dd84749028abfed78ac849341} 
+PIL.\+Image\+File.\+Parser.\+decode = None}
+
+\Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_a1b365debe2f2d47625b039d3d8f008d2}\index{PIL.ImageFile.Parser@{PIL.ImageFile.Parser}!decoder@{decoder}}
+\index{decoder@{decoder}!PIL.ImageFile.Parser@{PIL.ImageFile.Parser}}
+\doxysubsubsection{\texorpdfstring{decoder}{decoder}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_file_1_1_parser_a1b365debe2f2d47625b039d3d8f008d2} 
+\doxymbox{\hyperlink{namespace_p_i_l_1_1_image}{Image}} PIL.\+Image\+File.\+Parser.\+decoder = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_aeecbf81a0f77feb5a01df541d49d60f7}\index{PIL.ImageFile.Parser@{PIL.ImageFile.Parser}!finished@{finished}}
+\index{finished@{finished}!PIL.ImageFile.Parser@{PIL.ImageFile.Parser}}
+\doxysubsubsection{\texorpdfstring{finished}{finished}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_file_1_1_parser_aeecbf81a0f77feb5a01df541d49d60f7} 
+int PIL.\+Image\+File.\+Parser.\+finished = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_ae070a6829a807b6cf9c30e616376e919}\index{PIL.ImageFile.Parser@{PIL.ImageFile.Parser}!image@{image}}
+\index{image@{image}!PIL.ImageFile.Parser@{PIL.ImageFile.Parser}}
+\doxysubsubsection{\texorpdfstring{image}{image}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_file_1_1_parser_ae070a6829a807b6cf9c30e616376e919} 
+\doxymbox{\hyperlink{namespace_p_i_l_1_1_image}{Image}} PIL.\+Image\+File.\+Parser.\+image = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_ad435880b059abeecd752c15ac172c005}\index{PIL.ImageFile.Parser@{PIL.ImageFile.Parser}!incremental@{incremental}}
+\index{incremental@{incremental}!PIL.ImageFile.Parser@{PIL.ImageFile.Parser}}
+\doxysubsubsection{\texorpdfstring{incremental}{incremental}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_file_1_1_parser_ad435880b059abeecd752c15ac172c005} 
+PIL.\+Image\+File.\+Parser.\+incremental = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_image_file_1_1_parser_af024736934b9eb0fa3f2c46b73957bd0}\index{PIL.ImageFile.Parser@{PIL.ImageFile.Parser}!offset@{offset}}
+\index{offset@{offset}!PIL.ImageFile.Parser@{PIL.ImageFile.Parser}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_file_1_1_parser_af024736934b9eb0fa3f2c46b73957bd0} 
+int PIL.\+Image\+File.\+Parser.\+offset = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_file_8py}{Image\+File.\+py}}\end{DoxyCompactItemize}

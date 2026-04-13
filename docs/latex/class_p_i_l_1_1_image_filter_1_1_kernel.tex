@@ -1,0 +1,71 @@
+\doxysection{PIL.\+Image\+Filter.\+Kernel Class Reference}
+\hypertarget{class_p_i_l_1_1_image_filter_1_1_kernel}{}\label{class_p_i_l_1_1_image_filter_1_1_kernel}\index{PIL.ImageFilter.Kernel@{PIL.ImageFilter.Kernel}}
+Inheritance diagram for PIL.\+Image\+Filter.\+Kernel:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{class_p_i_l_1_1_image_filter_1_1_kernel}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_kernel_ae00f8f249c0907e884816021f16c3a73}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, tuple\+[int, int]\+ size, Sequence\+[float]\+ kernel, float\texorpdfstring{$\vert$}{|}None scale=None, float offset=0)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_builtin_filter}{PIL.\+Image\+Filter.\+Builtin\+Filter}}}
+\begin{DoxyCompactItemize}
+\item 
+\+\_\+imaging.\+Imaging\+Core \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_builtin_filter_a0ddefe7188e38bae96756458aa31b9a9}{filter}} (self, \+\_\+imaging.\+Imaging\+Core image)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_kernel_af0b3f1eb45da6d85791d4f1986495d40}{name}} = "{}Kernel"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_builtin_filter}{PIL.\+Image\+Filter.\+Builtin\+Filter}}}
+\begin{DoxyCompactItemize}
+\item 
+tuple \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_builtin_filter_ad995943c872ea217e1ace3df1320efe0}{filterargs}} \+[Any, ...]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Create a convolution kernel. This only supports 3x3 and 5x5 integer and floating
+point kernels.
+
+Kernels can only be applied to "L" and "RGB" images.
+
+:param size: Kernel size, given as (width, height). This must be (3,3) or (5,5).
+:param kernel: A sequence containing kernel weights. The kernel will be flipped
+               vertically before being applied to the image.
+:param scale: Scale factor. If given, the result for each pixel is divided by this
+              value. The default is the sum of the kernel weights.
+:param offset: Offset. If given, this value is added to the result, after it has
+               been divided by the scale factor.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_kernel_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_kernel_ae00f8f249c0907e884816021f16c3a73}\index{PIL.ImageFilter.Kernel@{PIL.ImageFilter.Kernel}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.ImageFilter.Kernel@{PIL.ImageFilter.Kernel}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_kernel_ae00f8f249c0907e884816021f16c3a73} 
+ None PIL.\+Image\+Filter.\+Kernel.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[int, int]\+}]{size}{, }\item[{Sequence\+[float]\+}]{kernel}{, }\item[{float \texorpdfstring{$\vert$}{|} None }]{scale}{ = {\ttfamily None}, }\item[{float }]{offset}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_kernel_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_kernel_af0b3f1eb45da6d85791d4f1986495d40}\index{PIL.ImageFilter.Kernel@{PIL.ImageFilter.Kernel}!name@{name}}
+\index{name@{name}!PIL.ImageFilter.Kernel@{PIL.ImageFilter.Kernel}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_kernel_af0b3f1eb45da6d85791d4f1986495d40} 
+str PIL.\+Image\+Filter.\+Kernel.\+name = "{}Kernel"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_filter_8py}{Image\+Filter.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,27 @@
+var _image_ops_8py =
+[
+    [ "PIL.ImageOps.SupportsGetMesh", "class_p_i_l_1_1_image_ops_1_1_supports_get_mesh.html", "class_p_i_l_1_1_image_ops_1_1_supports_get_mesh" ],
+    [ "PIL.ImageOps._border", "namespace_p_i_l_1_1_image_ops.html#ae31ed748f383ed1deac44719f8f20861", null ],
+    [ "PIL.ImageOps._color", "namespace_p_i_l_1_1_image_ops.html#a4b26844210994974511167c621a17773", null ],
+    [ "PIL.ImageOps._lut", "namespace_p_i_l_1_1_image_ops.html#a393c5ad960f53caf096d3a90b3e62fb5", null ],
+    [ "PIL.ImageOps.autocontrast", "namespace_p_i_l_1_1_image_ops.html#a0f59574cb45a76af295599e8a93a17c4", null ],
+    [ "PIL.ImageOps.colorize", "namespace_p_i_l_1_1_image_ops.html#ad1dd8160c1e920112df044867676e4db", null ],
+    [ "PIL.ImageOps.contain", "namespace_p_i_l_1_1_image_ops.html#a4577ac24f9b8df0a778c57b894d0f221", null ],
+    [ "PIL.ImageOps.cover", "namespace_p_i_l_1_1_image_ops.html#a2f24e3e9bf52802886e34cf99d4f28fe", null ],
+    [ "PIL.ImageOps.crop", "namespace_p_i_l_1_1_image_ops.html#ad776ff918c536b2b95be88e1d5b3602f", null ],
+    [ "PIL.ImageOps.deform", "namespace_p_i_l_1_1_image_ops.html#a2d5513356463eb191812f0a426b73411", null ],
+    [ "PIL.ImageOps.equalize", "namespace_p_i_l_1_1_image_ops.html#aceeacdbb87eb9719a1f58bafec283fda", null ],
+    [ "PIL.ImageOps.exif_transpose", "namespace_p_i_l_1_1_image_ops.html#a699c5e2b5ab5fae7d40faf665cb30f37", null ],
+    [ "PIL.ImageOps.exif_transpose", "namespace_p_i_l_1_1_image_ops.html#aa5463f79ed05e79f225363c7d94e82bf", null ],
+    [ "PIL.ImageOps.exif_transpose", "namespace_p_i_l_1_1_image_ops.html#a3377072db398aa60651858866c2ed35d", null ],
+    [ "PIL.ImageOps.expand", "namespace_p_i_l_1_1_image_ops.html#aa96976185591f19ccb4a74a15134624e", null ],
+    [ "PIL.ImageOps.fit", "namespace_p_i_l_1_1_image_ops.html#ac723c3434e5d08de5ef366a610d2de80", null ],
+    [ "PIL.ImageOps.flip", "namespace_p_i_l_1_1_image_ops.html#abdf2546087ab33d066ff6246657a314a", null ],
+    [ "PIL.ImageOps.grayscale", "namespace_p_i_l_1_1_image_ops.html#ad3bc6531a19b9dc706db5632adb0b5ac", null ],
+    [ "PIL.ImageOps.invert", "namespace_p_i_l_1_1_image_ops.html#a3e10a7ae19e785bc0df44e095ef85df3", null ],
+    [ "PIL.ImageOps.mirror", "namespace_p_i_l_1_1_image_ops.html#a48947549a8510bf2df26c399e8c19c3a", null ],
+    [ "PIL.ImageOps.pad", "namespace_p_i_l_1_1_image_ops.html#ad3df60a5bedf14cee10124ba360dc56a", null ],
+    [ "PIL.ImageOps.posterize", "namespace_p_i_l_1_1_image_ops.html#a28539caf96a65e091b3e6a4f32bae34b", null ],
+    [ "PIL.ImageOps.scale", "namespace_p_i_l_1_1_image_ops.html#a8d89a7fef0de6f98751f425bd0037ae8", null ],
+    [ "PIL.ImageOps.solarize", "namespace_p_i_l_1_1_image_ops.html#aca0100f1fab5fb2a1f29256d7ed43f2e", null ]
+];

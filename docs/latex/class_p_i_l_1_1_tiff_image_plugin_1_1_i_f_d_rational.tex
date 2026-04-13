@@ -1,0 +1,169 @@
+\doxysection{PIL.\+Tiff\+Image\+Plugin.\+IFDRational Class Reference}
+\hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{}\label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+Inheritance diagram for PIL.\+Tiff\+Image\+Plugin.\+IFDRational:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a7a71b4eae82cd446c6be9780b7c1ff36}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, float\texorpdfstring{$\vert$}{|}Fraction\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}} value, int \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a7129224d7a59a55467a7dc6fcc5c9a9f}{denominator}}=1)
+\item 
+Integral\+Like \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a2f2b0c1a86a0b388ee265cf11cbad644}{numerator}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a3796e45ede81ed20bdcac0486fea371c}{denominator}} (self)
+\item 
+tuple\+[Integral\+Like, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a2cb4a6ad9f998d26ec2fcd1fa516ed3a}{limit\+\_\+rational}} (self, int max\+\_\+denominator)
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a5bafba7a4ba04db9c058c7a29ed5120a}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_add6e1f7e10b2e8e781821de701521b87}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_acbcd0e87001103e7bf461a9d6931f76c}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, object other)
+\item 
+list\+[float\texorpdfstring{$\vert$}{|}Fraction\texorpdfstring{$\vert$}{|}Integral\+Like]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_ac47a145c4dcf719454facd6288f43c49}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a4a596d5a9b9da0ca843314c997b695a9}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, list\+[float\texorpdfstring{$\vert$}{|}Fraction\texorpdfstring{$\vert$}{|}Integral\+Like]\+ state)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a7129224d7a59a55467a7dc6fcc5c9a9f}{denominator}} = 0:\+
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_ae2e0ea4baa91f7f21ad640c6f7a201f9}{numerator}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Fraction\texorpdfstring{$\vert$}{|}float \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a3ba41b3f7414245119fe6fc8fc1f838d}{\+\_\+val}}
+\item 
+Integral\+Like \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a869945733fd12d5e35dee1bd2ffdd607}{\+\_\+numerator}} = value.\+numerator
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_abaf0f3dd2d0f2853e86d5c54360d3e39}{\+\_\+denominator}} = value.\+denominator
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Implements a rational class where 0/0 is a legal value to match
+the in the wild use of exif rationals.
+
+e.g., DigitalZoomRatio - 0.00/0.00  indicates that no digital zoom was used
+\end{DoxyVerb}
+
+
+\begin{DoxyVerb} If the denominator is 0, store this as a float('nan'), otherwise store
+as a fractions.Fraction(). Delegate as appropriate
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a7a71b4eae82cd446c6be9780b7c1ff36}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a7a71b4eae82cd446c6be9780b7c1ff36} 
+ None PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float \texorpdfstring{$\vert$}{|} Fraction \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational}{IFDRational}}}]{value}{, }\item[{int }]{denominator}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param value: either an integer numerator, a
+float/rational/other number, or an IFDRational
+:param denominator: Optional integer denominator
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_acbcd0e87001103e7bf461a9d6931f76c}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_acbcd0e87001103e7bf461a9d6931f76c} 
+ bool PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_ac47a145c4dcf719454facd6288f43c49}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!\_\_getstate\_\_@{\_\_getstate\_\_}}
+\index{\_\_getstate\_\_@{\_\_getstate\_\_}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{\_\_getstate\_\_()}{\_\_getstate\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_ac47a145c4dcf719454facd6288f43c49} 
+ list\+[float \texorpdfstring{$\vert$}{|} Fraction \texorpdfstring{$\vert$}{|} Integral\+Like]\+ PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+\_\+\+\_\+getstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_add6e1f7e10b2e8e781821de701521b87}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_add6e1f7e10b2e8e781821de701521b87} 
+ int PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a5bafba7a4ba04db9c058c7a29ed5120a}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a5bafba7a4ba04db9c058c7a29ed5120a} 
+ str PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a4a596d5a9b9da0ca843314c997b695a9}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!\_\_setstate\_\_@{\_\_setstate\_\_}}
+\index{\_\_setstate\_\_@{\_\_setstate\_\_}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{\_\_setstate\_\_()}{\_\_setstate\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a4a596d5a9b9da0ca843314c997b695a9} 
+ None PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+\_\+\+\_\+setstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{list\+[float \texorpdfstring{$\vert$}{|} Fraction \texorpdfstring{$\vert$}{|} Integral\+Like]\+}]{state}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a3796e45ede81ed20bdcac0486fea371c}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!denominator@{denominator}}
+\index{denominator@{denominator}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{denominator()}{denominator()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a3796e45ede81ed20bdcac0486fea371c} 
+ int PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+denominator (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a2cb4a6ad9f998d26ec2fcd1fa516ed3a}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!limit\_rational@{limit\_rational}}
+\index{limit\_rational@{limit\_rational}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{limit\_rational()}{limit\_rational()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a2cb4a6ad9f998d26ec2fcd1fa516ed3a} 
+ tuple\+[Integral\+Like, int]\+ PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+limit\+\_\+rational (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{max\+\_\+denominator}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}:param max_denominator: Integer, the maximum denominator value
+:returns: Tuple of (numerator, denominator)
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a2f2b0c1a86a0b388ee265cf11cbad644}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!numerator@{numerator}}
+\index{numerator@{numerator}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{numerator()}{numerator()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a2f2b0c1a86a0b388ee265cf11cbad644} 
+ Integral\+Like PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+numerator (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_abaf0f3dd2d0f2853e86d5c54360d3e39}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!\_denominator@{\_denominator}}
+\index{\_denominator@{\_denominator}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{\_denominator}{\_denominator}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_abaf0f3dd2d0f2853e86d5c54360d3e39} 
+int PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+\_\+denominator = value.\+denominator\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a869945733fd12d5e35dee1bd2ffdd607}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!\_numerator@{\_numerator}}
+\index{\_numerator@{\_numerator}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{\_numerator}{\_numerator}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a869945733fd12d5e35dee1bd2ffdd607} 
+PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+\_\+numerator = value.\+numerator\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a3ba41b3f7414245119fe6fc8fc1f838d}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!\_val@{\_val}}
+\index{\_val@{\_val}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{\_val}{\_val}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a3ba41b3f7414245119fe6fc8fc1f838d} 
+PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+\_\+val\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a7129224d7a59a55467a7dc6fcc5c9a9f}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!denominator@{denominator}}
+\index{denominator@{denominator}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{denominator}{denominator}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_a7129224d7a59a55467a7dc6fcc5c9a9f} 
+int PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+denominator = 0:\+}
+
+\Hypertarget{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_ae2e0ea4baa91f7f21ad640c6f7a201f9}\index{PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}!numerator@{numerator}}
+\index{numerator@{numerator}!PIL.TiffImagePlugin.IFDRational@{PIL.TiffImagePlugin.IFDRational}}
+\doxysubsubsection{\texorpdfstring{numerator}{numerator}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_tiff_image_plugin_1_1_i_f_d_rational_ae2e0ea4baa91f7f21ad640c6f7a201f9} 
+PIL.\+Tiff\+Image\+Plugin.\+IFDRational.\+numerator}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_tiff_image_plugin_8py}{Tiff\+Image\+Plugin.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,105 @@
+\doxysection{pip.\+\_\+vendor.\+distlib.\+locators.\+Page Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page}{}\label{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page}\index{pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}}
+Inheritance diagram for pip.\+\_\+vendor.\+distlib.\+locators.\+Page:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_ac8af3a8e607c6d0bcadc5f60838e7f39}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_aeb5908bcd947624f7180e2c25f44ff60}{data}}, url)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_affbb2ce755c1a4cfe309eff9f10632cc}{links}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_aeb5908bcd947624f7180e2c25f44ff60}{data}} = data
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_a6daf04947e3fe072f38baa6af6e7016a}{base\+\_\+url}} = url
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_a97437816a22700c07bae2e907fc1d5f7}{\+\_\+href}} = re.\+compile(, re.\+I \texorpdfstring{$\vert$}{|} re.\+S \texorpdfstring{$\vert$}{|} re.\+X)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_a2efaa818ec7071aab3b52e20b071e029}{\+\_\+base}} = re.\+compile(, re.\+I \texorpdfstring{$\vert$}{|} re.\+S)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_ad25178be910dcef5109ce7583ce69ae8}{\+\_\+clean\+\_\+re}} = re.\+compile(r\textquotesingle{}\+[\texorpdfstring{$^\wedge$}{\string^}a-\/z0-\/9\$\&+,/\+:\+;=?@.\+\#\%\+\_\+\textbackslash{}\textbackslash{}\texorpdfstring{$\vert$}{|}-\/]\+\textquotesingle{}, re.\+I)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class represents a scraped HTML page.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_ac8af3a8e607c6d0bcadc5f60838e7f39}\index{pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_ac8af3a8e607c6d0bcadc5f60838e7f39} 
+pip.\+\_\+vendor.\+distlib.\+locators.\+Page.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{data}{, }\item[{}]{url}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Initialise an instance with the Unicode page contents and the URL they
+came from.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_affbb2ce755c1a4cfe309eff9f10632cc}\index{pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}!links@{links}}
+\index{links@{links}!pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}}
+\doxysubsubsection{\texorpdfstring{links()}{links()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_affbb2ce755c1a4cfe309eff9f10632cc} 
+pip.\+\_\+vendor.\+distlib.\+locators.\+Page.\+links (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return the URLs of all the links on a page together with information
+about their "rel" attribute, for determining which ones to treat as
+downloads and which ones to queue for further scraping.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_a2efaa818ec7071aab3b52e20b071e029}\index{pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}!\_base@{\_base}}
+\index{\_base@{\_base}!pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}}
+\doxysubsubsection{\texorpdfstring{\_base}{\_base}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_a2efaa818ec7071aab3b52e20b071e029} 
+pip.\+\_\+vendor.\+distlib.\+locators.\+Page.\+\_\+base = re.\+compile(, re.\+I \texorpdfstring{$\vert$}{|} re.\+S)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_ad25178be910dcef5109ce7583ce69ae8}\index{pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}!\_clean\_re@{\_clean\_re}}
+\index{\_clean\_re@{\_clean\_re}!pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}}
+\doxysubsubsection{\texorpdfstring{\_clean\_re}{\_clean\_re}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_ad25178be910dcef5109ce7583ce69ae8} 
+pip.\+\_\+vendor.\+distlib.\+locators.\+Page.\+\_\+clean\+\_\+re = re.\+compile(r\textquotesingle{}\+[\texorpdfstring{$^\wedge$}{\string^}a-\/z0-\/9\$\&+,/\+:\+;=?@.\+\#\%\+\_\+\textbackslash{}\textbackslash{}\texorpdfstring{$\vert$}{|}-\/]\+\textquotesingle{}, re.\+I)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_a97437816a22700c07bae2e907fc1d5f7}\index{pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}!\_href@{\_href}}
+\index{\_href@{\_href}!pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}}
+\doxysubsubsection{\texorpdfstring{\_href}{\_href}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_a97437816a22700c07bae2e907fc1d5f7} 
+pip.\+\_\+vendor.\+distlib.\+locators.\+Page.\+\_\+href = re.\+compile(, re.\+I \texorpdfstring{$\vert$}{|} re.\+S \texorpdfstring{$\vert$}{|} re.\+X)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_a6daf04947e3fe072f38baa6af6e7016a}\index{pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}!base\_url@{base\_url}}
+\index{base\_url@{base\_url}!pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}}
+\doxysubsubsection{\texorpdfstring{base\_url}{base\_url}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_a6daf04947e3fe072f38baa6af6e7016a} 
+pip.\+\_\+vendor.\+distlib.\+locators.\+Page.\+base\+\_\+url = url}
+
+\Hypertarget{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_aeb5908bcd947624f7180e2c25f44ff60}\index{pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}!data@{data}}
+\index{data@{data}!pip.\_vendor.distlib.locators.Page@{pip.\_vendor.distlib.locators.Page}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1distlib_1_1locators_1_1_page_aeb5908bcd947624f7180e2c25f44ff60} 
+pip.\+\_\+vendor.\+distlib.\+locators.\+Page.\+data = data}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+distlib/\+\doxymbox{\hyperlink{locators_8py}{locators.\+py}}\end{DoxyCompactItemize}

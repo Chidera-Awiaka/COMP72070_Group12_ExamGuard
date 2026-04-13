@@ -1,0 +1,1043 @@
+\doxysection{reportlab.\+platypus.\+tables.\+Table Class Reference}
+\hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table}{}\label{classreportlab_1_1platypus_1_1tables_1_1_table}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+Inheritance diagram for reportlab.\+platypus.\+tables.\+Table:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classreportlab_1_1platypus_1_1tables_1_1_table}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a0eed163ec757e0279d14d330aef6ce4a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, data, col\+Widths=None, row\+Heights=None, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a8f772cf525fb880d1afb29978bd578fc}{style}}=None, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a89018fa01a84829e80402e442b899a2d}{repeat\+Rows}}=0, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a76a9aac9064b664dc72506fc27841faf}{repeat\+Cols}}=0, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ac81b230a1963ec75dc05efeaea41037d}{split\+By\+Row}}=1, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_adccfefa9c7c7991419f629867c8cc6c7}{split\+In\+Row}}=0, empty\+Table\+Action=None, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ab2d1b2343afa2f41d645fe72c3b1ddc2}{ident}}=None, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table}{h\+Align}}=None, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table}{v\+Align}}=None, normalized\+Data=0, cell\+Styles=None, row\+Split\+Range=None, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a7d7e91f1e1029a2b5a2f543fbe2da232}{space\+Before}}=None, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a476f4d0d98b9252e9bb8c2afefbc1bba}{space\+After}}=None, long\+Table\+Optimize=None, min\+Row\+Heights=None, corner\+Radii=\+\_\+\+\_\+\+UNSET\+\_\+\+\_\+, render\+CB=None, shadow=None)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_aec417717390163c4c73a4594212a0d1b}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_acbbafead1529dace09c1e218421658a7}{normalize\+Data}} (self, data)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_abd3becbb80bff20d979716481bfb72f1}{identity}} (self, max\+Len=30)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a43f408692b22515ed274a7879baebf74}{min\+Width}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a00986dfc963fe167dc12d2c7e4534e63}{set\+Style}} (self, tblstyle)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a66e7804e9cb6cf2564f30aaf79ce2ac8}{norm\+Cell\+Range}} (self, sc, ec, sr, er)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_afdca5bae6072e5d25b3609d2476d2757}{wrap}} (self, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a5c2e3d61080bdb119e02913fa7fcb0f8}{avail\+Width}}, avail\+Height)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a53f6754f641232bcbc0ec405754c344a}{on\+Split}} (self, T, by\+Row=1)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a57f0714f2a2416a10386077862133c81}{split}} (self, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a5c2e3d61080bdb119e02913fa7fcb0f8}{avail\+Width}}, avail\+Height)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a843a0734c55739d0e504c9109952b6d6}{draw}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable}{reportlab.\+platypus.\+flowables.\+Flowable}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a04a96237635bf7fed8f14181a9b95940}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_af26dcdcb9b187b72c3e5a28ef570def9}{draw\+On}} (self, \doxymbox{\hyperlink{namespacereportlab_1_1pdfgen_1_1canvas}{canvas}}, x, y, \+\_\+sW=0)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_af825b2db1224425a28ba3faa5408757a}{wrap\+On}} (self, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a5db956fcd4c6464fef8716b7d7720199}{canv}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a6f03eb09bfaf7bb0066a6929f62ae3f6}{aW}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a4eb3a0cf000918c6fe5df36fb37b9f92}{aH}})
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a433f62f5c9194c8880208ddce103d5b5}{split\+On}} (self, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a5db956fcd4c6464fef8716b7d7720199}{canv}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a6f03eb09bfaf7bb0066a6929f62ae3f6}{aW}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a4eb3a0cf000918c6fe5df36fb37b9f92}{aH}})
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a9901ba517ae238438578f3df768ffe95}{get\+Keep\+With\+Next}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a76a2aa98f07c1ce69bcfbfd5e1d0f67f}{get\+Space\+After}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a86cafdaf1c6fa6c2abaa2136fb58aa62}{get\+Space\+Before}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a3653f15b3459e28d678ad3f05c2e5bf4}{is\+Indexing}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+return self.\+ident \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ab2d1b2343afa2f41d645fe72c3b1ddc2}{ident}} = ident
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a89018fa01a84829e80402e442b899a2d}{repeat\+Rows}} = repeat\+Rows
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a76a9aac9064b664dc72506fc27841faf}{repeat\+Cols}} = repeat\+Cols
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ac81b230a1963ec75dc05efeaea41037d}{split\+By\+Row}} = split\+By\+Row
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_adccfefa9c7c7991419f629867c8cc6c7}{split\+In\+Row}} = split\+In\+Row
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a7d7e91f1e1029a2b5a2f543fbe2da232}{space\+Before}} = space\+Before
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a476f4d0d98b9252e9bb8c2afefbc1bba}{space\+After}} = space\+After
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a5c2e3d61080bdb119e02913fa7fcb0f8}{avail\+Width}} = avail\+Width
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable}{reportlab.\+platypus.\+flowables.\+Flowable}}}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_af7274326aaf16ef0d19c3d9887b167a5}{width}} = 0
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a255983a7c041794ffc52654d528a9acb}{height}} = 0
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a9464863834e73f1afd83e76c5496f125}{wrapped}} = 0
+\item 
+str \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_aa35999708254c04218a7d47a2444ad43}{h\+Align}} = \textquotesingle{}LEFT\textquotesingle{}
+\item 
+str \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_aa64bc0b1031d8e41545d9b15b3853d09}{v\+Align}} = \textquotesingle{}BOTTOM\textquotesingle{}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a32a792bf1fc482a91529fb26f870a101}{encoding}} = None
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a5db956fcd4c6464fef8716b7d7720199}{canv}} = canv
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a8f772cf525fb880d1afb29978bd578fc}{style}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ae0c77a0f63ea80dc38ba1d490cf14040}{\+\_\+cell\+List\+Iter}} (self, C, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a6f03eb09bfaf7bb0066a6929f62ae3f6}{aW}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a4eb3a0cf000918c6fe5df36fb37b9f92}{aH}})
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_aaa2301ccf24994631614707717fdb28b}{\+\_\+cell\+List\+Process}} (self, v, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a6f03eb09bfaf7bb0066a6929f62ae3f6}{aW}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a4eb3a0cf000918c6fe5df36fb37b9f92}{aH}})
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a50b65b99cfdd9e7e3a71c7f5d7f927a2}{\+\_\+list\+Cell\+Geom}} (self, V, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a769a2f1532f3a863b04053a82b5b700d}{w}}, s, W=None, H=None, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a4eb3a0cf000918c6fe5df36fb37b9f92}{aH}}=72000)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_af06c4936dca375508b6ac6c83aa8df04}{\+\_\+list\+Value\+Width}} (self, V, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a4eb3a0cf000918c6fe5df36fb37b9f92}{aH}}=72000, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a6f03eb09bfaf7bb0066a6929f62ae3f6}{aW}}=72000)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a92963910d6fb21508cef2444032dea9a}{\+\_\+calc\+\_\+width}} (self, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a5c2e3d61080bdb119e02913fa7fcb0f8}{avail\+Width}}, W=None)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a009ec3345e679b9b28a3223f9073ec3c}{\+\_\+element\+Width}} (self, v, s)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a2cbc7968740c9393132e17902632b573}{\+\_\+calc\+\_\+height}} (self, avail\+Height, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a5c2e3d61080bdb119e02913fa7fcb0f8}{avail\+Width}}, H=None, W=None)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_afd701c5801c4ad0ac38ed7b93987ff23}{\+\_\+calc}} (self, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a5c2e3d61080bdb119e02913fa7fcb0f8}{avail\+Width}}, avail\+Height)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a5a4a790d06b178220f2bd270085ce71c}{\+\_\+culprit}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_aedaff2ebf538eed5264d9cacfd1d4ed6}{\+\_\+has\+Vari\+Width\+Elements}} (self, up\+To\+Row=None)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a3957c821a0310a8c1fdd8694c41844ce}{\+\_\+can\+Get\+Width}} (self, thing)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a99287a24bd98e8bbf4a2d3340404c71c}{\+\_\+calc\+Preliminary\+Widths}} (self, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a5c2e3d61080bdb119e02913fa7fcb0f8}{avail\+Width}})
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ace522c51d953a3bd3b93f5e3bdc2301d}{\+\_\+calc\+Span\+Ranges}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_af5af580f3940ca979482aa3456429ad0}{\+\_\+calc\+No\+Split\+Ranges}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_abe2d20e670039fba5b7eb0ba34dc2fe1}{\+\_\+calc\+Span\+Rects}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_aefd32a378266b214c53f859aa17aed83}{\+\_\+add\+Command}} (self, cmd)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ab7afdc927b1699740a0210970a40437c}{\+\_\+draw\+Lines}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a3d69be7051dc4487c08a6664c840ac8e}{\+\_\+draw\+Unknown}} (self, start, end, weight, color, count, space)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a3fcb5096306e747adf54024d9dbf37b9}{\+\_\+draw\+Grid}} (self, start, end, weight, color, count, space)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ab77c46bc2c6035fa2993aaaf4d0b0860}{\+\_\+draw\+Box}} (self, start, end, weight, color, count, space)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a687a22d84a34706e10e9507c60921533}{\+\_\+draw\+Inner\+Grid}} (self, start, end, weight, color, count, space)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_aa6a5c016ba81ccb5d21bfed7cc9fdab4}{\+\_\+prep\+Line}} (self, weight, color)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a488034ed84e70a43f91b5cfaccc53b31}{\+\_\+draw\+HLines}} (self, start, end, weight, color, count, space)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_abff8589138a6475917c7e79cbc3e8f09}{\+\_\+draw\+HLinesB}} (self, start, end, weight, color, count, space)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a7d27d67e5b24ac1a98b40aca84ca3460}{\+\_\+draw\+VLines}} (self, start, end, weight, color, count, space)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a633a9e1bdf4c12000cd42e34376dba1b}{\+\_\+draw\+VLinesA}} (self, start, end, weight, color, count, space)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a6c648e6e92579c90eaec6d2316ee657e}{\+\_\+cr\+\_\+0}} (self, n, cmds, nr0, do\+In\+Row\+Split, \+\_\+srfl\+Mode=False)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ab9424abf8764042b86b28eaba181716d}{\+\_\+cr\+\_\+1\+\_\+1}} (self, n, n\+Rows, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a89018fa01a84829e80402e442b899a2d}{repeat\+Rows}}, cmds, do\+In\+Row\+Split, \+\_\+srfl\+Mode=False)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a4cedd8cbcf141f3090e954a87c81b5d3}{\+\_\+cr\+\_\+1\+\_\+0}} (self, n, cmds, do\+In\+Row\+Split, \+\_\+srfl\+Mode=False)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ad2eea9d92c9c91de9ddb40216ff146e0}{\+\_\+get\+Possible\+Height}} (self, default)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_aa80102ffd7ac9c362eb32d1550775474}{\+\_\+split\+Cell}} (self, value, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a8f772cf525fb880d1afb29978bd578fc}{style}}, old\+Height, new\+Height, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_af7274326aaf16ef0d19c3d9887b167a5}{width}})
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a9c44b4a28f7e4fad1f163cfcc2d1bc63}{\+\_\+split\+Line\+Cmds}} (self, n, do\+In\+Row\+Split=0)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ac8c1680ecee0ad2a1cde55cb1713ce8d}{\+\_\+stretch\+Commands}} (self, n, cmds, oldrowcount)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_acd1acb51076eaf6c67221be0d6394419}{\+\_\+split\+Rows}} (self, avail\+Height, do\+In\+Row\+Split=0)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_af3926f661b5a65cfa4bc64b6e3d0b6f3}{\+\_\+get\+Row\+Impossible}} (impossible, cells, ranges)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a6c6a83565c4d03862244ab0d952a2b5d}{\+\_\+get\+First\+Possible\+Split\+Row\+Position}} (self, avail\+Height, ignore\+Spans=0)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_abf24a4f32ce961196477429826bab5d5}{\+\_\+make\+Shadow1}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a13ba70b20f6cfcefaccb49dcd02cea79}{\+\_\+make\+Shadow}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_adaedd7a992a6d6b22b5c71ba70843edc}{\+\_\+make\+Rounded\+Corners\+Clip}} (self, FUZZ=rl\+\_\+config.\+\_\+\+FUZZ, clip=True, stroke=0, fill=0, deltas=(0, 0, 0, 0))
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a272551858be9ba76026778013bf6d0bf}{\+\_\+restore\+Rounding\+Obscured\+Lines}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a4349aba4496401fbd046916b36595587}{\+\_\+draw\+Bkgrnd}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a4047621828271d6853adf934e508054c}{\+\_\+draw\+Cell}} (self, cellval, cellstyle, pos, size)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a536b2a39da58f2d6f5b4bc084ea54117}{\+\_\+set\+Corner\+Radii}} (self, corner\+Radii)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable}{reportlab.\+platypus.\+flowables.\+Flowable}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a6161f606e4e514b204ea8b5f3cb232fd}{\+\_\+draw\+On}} (self, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a5db956fcd4c6464fef8716b7d7720199}{canv}})
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_ab52543bf64a3fba6dbfaaf87cdd33c52}{\+\_\+h\+Align\+Adjust}} (self, x, sW=0)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_aee5382cf36c01758d73b854db93b8487}{\+\_\+doctemplate}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_ae04615832cab838c8fe1a5adf2d17c48}{\+\_\+doctemplate\+Attr}} (self, a)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a3aab7c18ade31d91439a382a9e9d7b02}{\+\_\+frame\+Name}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a0f0432e3f5de5f9c6672d863578a3c84}{\+\_\+render\+CB}} = render\+CB
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ab639172c5297fee7fac3adc26d50f8ad}{\+\_\+nrows}} = len(data)
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ad07d3a73ebc122e41f9d8b7efa56efc9}{\+\_\+cellvalues}} = \+[$\,$]\+
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a3f99a0275b5178c628eec4742a365073}{\+\_\+ncols}} = max(list(map(\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_abbecb32b76a155d62ab207fdc929130f}{\+\_\+row\+Len}},data)))
+\item 
+tuple \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_abf850fe586973bb837a78097831e9e01}{\+\_\+long\+Table\+Optimize}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a4a41b960a61c6384ef53ce6c97f761f8}{\+\_\+row\+Heights}} = row\+Heights
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a69832a0ab20d3955400c8cff8c62190e}{\+\_\+col\+Widths}} = col\+Widths
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a3297db953b36d51db1c7cbb5dd8162a4}{\+\_\+cell\+Styles}} = cellrows
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_aef76d0281a22d945518da2e820ac7f0d}{\+\_\+bkgrndcmds}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a40dcacd2a8524c03906c3c04650d68d2}{\+\_\+linecmds}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_aef0250df0dc666a1c05bb81b6ddc29ab}{\+\_\+span\+Cmds}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a68f47c3c489111480bc44fb542111723}{\+\_\+nosplit\+Cmds}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a1e8a2728e9bc463362f74130abc0ddc5}{\+\_\+srflcmds}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_abab04f123785711dbab68aa47d6dbe56}{\+\_\+sircmds}} = \+[$\,$]\+
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a74fc9bef00545772f804b93c20056a3b}{\+\_\+row\+Split\+Range}} = row\+Split\+Range
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a13049bc752ec01f3e28d48e03a37f64e}{\+\_\+min\+Row\+Heights}} = min\+Row\+Heights
+\item 
+return \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a0ea140609651df7c0e464276cf1baaae}{\+\_\+shadow}} = shadow
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ad135eb17fdc632d7de2bbf17ae681b38}{\+\_\+argW}}
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ab1c2cf089d28cf3c17ccc057abe42306}{\+\_\+colpositions}} = \+[0]\+
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_acc04e80338faa6df125a9e8bdb0af800}{\+\_\+width}} = \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_af7274326aaf16ef0d19c3d9887b167a5}{width}}
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a38c79d30df75ea49a80ab40a602b7ba7}{\+\_\+width\+\_\+calculated\+\_\+once}} = 1
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a914f7f656eb12bf02213df24712629ac}{\+\_\+rowpositions}} = \+[$\,$]\+
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ae96dcf0a1e360fee79489aac2d9b91cf}{\+\_\+height}} = \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a255983a7c041794ffc52654d528a9acb}{height}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a820e886cbbb7110381df9fb289abe4c5}{\+\_\+hmax}} = hmax
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a4f682c7e1ce756092dcc79bfe84013cf}{\+\_\+argH}}
+\item 
+dict \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ac92b4563a640f62b1fb433c2d6b67caa}{\+\_\+span\+Ranges}} = \{\}
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a1a05cf4c9c5952e0cd3c29f323072970}{\+\_\+col\+Span\+Cells}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a395a4e0e664076cdf7da1125939df7f3}{\+\_\+row\+Span\+Cells}} = \+[$\,$]\+
+\item 
+dict \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ade8ba0c34d074adc8a32a9a6a0bf6377}{\+\_\+nosplit\+Ranges}} = \{\}
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a107d1bd9fe633308ecf034de972db501}{\+\_\+col\+No\+Split\+Cells}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_addbfa5401bd661179a37e8aa8026e3e6}{\+\_\+row\+No\+Split\+Cells}} = \+[$\,$]\+
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a91eaf9c7d49fda0ef6ee24ddb32ab288}{\+\_\+span\+Rects}} = span\+Rects
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_aaa393c0828015c901afa80433d3c7a2c}{\+\_\+v\+Blocks}} = v\+Blocks
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a345633e666e6b814625f1e37e47d36c4}{\+\_\+h\+Blocks}} = h\+Blocks
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_acca8ea47ee7cfb1439fbcaab13945aa6}{\+\_\+hmax\+\_\+span\+Rects}} = hmax
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a01577977d7a1909d5d3506b1c1939414}{\+\_\+curcolor}} = None
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ab4fb0b7d1cf8d8f2530c4075f0caf195}{\+\_\+curweight}} = weight
+\item 
+float \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_ac8880650fe9cf4dcb83a0c41fd6eef14}{\+\_\+corner\+Radii}} = 0.\+01,0.\+01,0.\+01,0.\+01
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a417dec0e841ef2d8b020d1f37ed6149c}{\+\_\+rounding\+Rect\+Def}} = None
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a916b364fe4b880b5fe48066b7ce727fb}{\+\_\+curcellstyle}} = cellstyle
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable}{reportlab.\+platypus.\+flowables.\+Flowable}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_ab7780bc672393b7d8929a9bc72e5fcc5}{\+\_\+trace\+Info}} = None
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a8b2f7fa89f0fb6c2f1f142b4c47b6845}{\+\_\+show\+Boundary}} = None
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_acc6ad57e4b98eb7c6a007a030ed667d4}{\+\_\+doctemplate}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_a73c113553a00dcd85dbf72fd7cacf271}{\+\_\+get\+Row\+Impossible}} = staticmethod(\+\_\+get\+Row\+Impossible)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable}{reportlab.\+platypus.\+flowables.\+Flowable}}}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a403dcb2160bacc96223246705ddaec33}{\+\_\+fixed\+Width}} = 0
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a9b4066b433cb967dd7128bc3a81f5cc3}{\+\_\+fixed\+Height}} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a0eed163ec757e0279d14d330aef6ce4a}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a0eed163ec757e0279d14d330aef6ce4a} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{data}{, }\item[{}]{col\+Widths}{ = {\ttfamily None}, }\item[{}]{row\+Heights}{ = {\ttfamily None}, }\item[{}]{style}{ = {\ttfamily None}, }\item[{}]{repeat\+Rows}{ = {\ttfamily 0}, }\item[{}]{repeat\+Cols}{ = {\ttfamily 0}, }\item[{}]{split\+By\+Row}{ = {\ttfamily 1}, }\item[{}]{split\+In\+Row}{ = {\ttfamily 0}, }\item[{}]{empty\+Table\+Action}{ = {\ttfamily None}, }\item[{}]{ident}{ = {\ttfamily None}, }\item[{}]{h\+Align}{ = {\ttfamily None}, }\item[{}]{v\+Align}{ = {\ttfamily None}, }\item[{}]{normalized\+Data}{ = {\ttfamily 0}, }\item[{}]{cell\+Styles}{ = {\ttfamily None}, }\item[{}]{row\+Split\+Range}{ = {\ttfamily None}, }\item[{}]{space\+Before}{ = {\ttfamily None}, }\item[{}]{space\+After}{ = {\ttfamily None}, }\item[{}]{long\+Table\+Optimize}{ = {\ttfamily None}, }\item[{}]{min\+Row\+Heights}{ = {\ttfamily None}, }\item[{}]{corner\+Radii}{ = {\ttfamily \+\_\+\+\_\+UNSET\+\_\+\+\_\+}, }\item[{}]{render\+CB}{ = {\ttfamily None}, }\item[{}]{shadow}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_aec417717390163c4c73a4594212a0d1b}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_aec417717390163c4c73a4594212a0d1b} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_aefd32a378266b214c53f859aa17aed83}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_addCommand@{\_addCommand}}
+\index{\_addCommand@{\_addCommand}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_addCommand()}{\_addCommand()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_aefd32a378266b214c53f859aa17aed83} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+add\+Command (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cmd}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_afd701c5801c4ad0ac38ed7b93987ff23}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_calc@{\_calc}}
+\index{\_calc@{\_calc}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_calc()}{\_calc()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_afd701c5801c4ad0ac38ed7b93987ff23} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+calc (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{avail\+Width}{, }\item[{}]{avail\+Height}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a2cbc7968740c9393132e17902632b573}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_calc\_height@{\_calc\_height}}
+\index{\_calc\_height@{\_calc\_height}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_calc\_height()}{\_calc\_height()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a2cbc7968740c9393132e17902632b573} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+calc\+\_\+height (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{avail\+Height}{, }\item[{}]{avail\+Width}{, }\item[{}]{H}{ = {\ttfamily None}, }\item[{}]{W}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a92963910d6fb21508cef2444032dea9a}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_calc\_width@{\_calc\_width}}
+\index{\_calc\_width@{\_calc\_width}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_calc\_width()}{\_calc\_width()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a92963910d6fb21508cef2444032dea9a} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+calc\+\_\+width (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{avail\+Width}{, }\item[{}]{W}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_af5af580f3940ca979482aa3456429ad0}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_calcNoSplitRanges@{\_calcNoSplitRanges}}
+\index{\_calcNoSplitRanges@{\_calcNoSplitRanges}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_calcNoSplitRanges()}{\_calcNoSplitRanges()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_af5af580f3940ca979482aa3456429ad0} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+calc\+No\+Split\+Ranges (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}This creates some mappings to let the later code determine
+if a cell is part of a "nosplit" range.
+self._nosplitRanges shows the 'coords' in integers of each
+'cell range', or None if it was clobbered:
+(col, row) -> (col0, row0, col1, row1)
+
+Any cell not in the key is not part of a spanned region
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a99287a24bd98e8bbf4a2d3340404c71c}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_calcPreliminaryWidths@{\_calcPreliminaryWidths}}
+\index{\_calcPreliminaryWidths@{\_calcPreliminaryWidths}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_calcPreliminaryWidths()}{\_calcPreliminaryWidths()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a99287a24bd98e8bbf4a2d3340404c71c} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+calc\+Preliminary\+Widths (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{avail\+Width}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Fallback algorithm for when main one fails.
+
+Where exact width info not given but things like
+paragraphs might be present, do a preliminary scan
+and assign some best-guess values.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ace522c51d953a3bd3b93f5e3bdc2301d}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_calcSpanRanges@{\_calcSpanRanges}}
+\index{\_calcSpanRanges@{\_calcSpanRanges}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_calcSpanRanges()}{\_calcSpanRanges()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ace522c51d953a3bd3b93f5e3bdc2301d} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+calc\+Span\+Ranges (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Work out rects for tables which do row and column spanning.
+
+This creates some mappings to let the later code determine
+if a cell is part of a "spanned" range.
+self._spanRanges shows the 'coords' in integers of each
+'cell range', or None if it was clobbered:
+(col, row) -> (col0, row0, col1, row1)
+
+Any cell not in the key is not part of a spanned region
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_abe2d20e670039fba5b7eb0ba34dc2fe1}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_calcSpanRects@{\_calcSpanRects}}
+\index{\_calcSpanRects@{\_calcSpanRects}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_calcSpanRects()}{\_calcSpanRects()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_abe2d20e670039fba5b7eb0ba34dc2fe1} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+calc\+Span\+Rects (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Work out rects for tables which do row and column spanning.
+
+Based on self._spanRanges, which is already known,
+and the widths which were given or previously calculated,
+self._spanRects shows the real coords for drawing:
+
+    (col, row) -> (x, y, width, height)
+
+for each cell.  Any cell which 'does not exist' as another
+has spanned over it will get a None entry on the right
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a3957c821a0310a8c1fdd8694c41844ce}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_canGetWidth@{\_canGetWidth}}
+\index{\_canGetWidth@{\_canGetWidth}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_canGetWidth()}{\_canGetWidth()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a3957c821a0310a8c1fdd8694c41844ce} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+can\+Get\+Width (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{thing}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ae0c77a0f63ea80dc38ba1d490cf14040}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_cellListIter@{\_cellListIter}}
+\index{\_cellListIter@{\_cellListIter}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_cellListIter()}{\_cellListIter()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ae0c77a0f63ea80dc38ba1d490cf14040} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+cell\+List\+Iter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{C}{, }\item[{}]{aW}{, }\item[{}]{aH}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_aaa2301ccf24994631614707717fdb28b}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_cellListProcess@{\_cellListProcess}}
+\index{\_cellListProcess@{\_cellListProcess}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_cellListProcess()}{\_cellListProcess()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_aaa2301ccf24994631614707717fdb28b} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+cell\+List\+Process (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{v}{, }\item[{}]{aW}{, }\item[{}]{aH}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a6c648e6e92579c90eaec6d2316ee657e}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_cr\_0@{\_cr\_0}}
+\index{\_cr\_0@{\_cr\_0}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_cr\_0()}{\_cr\_0()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a6c648e6e92579c90eaec6d2316ee657e} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+cr\+\_\+0 (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{n}{, }\item[{}]{cmds}{, }\item[{}]{nr0}{, }\item[{}]{do\+In\+Row\+Split}{, }\item[{}]{\+\_\+srfl\+Mode}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a4cedd8cbcf141f3090e954a87c81b5d3}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_cr\_1\_0@{\_cr\_1\_0}}
+\index{\_cr\_1\_0@{\_cr\_1\_0}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_cr\_1\_0()}{\_cr\_1\_0()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a4cedd8cbcf141f3090e954a87c81b5d3} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+cr\+\_\+1\+\_\+0 (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{n}{, }\item[{}]{cmds}{, }\item[{}]{do\+In\+Row\+Split}{, }\item[{}]{\+\_\+srfl\+Mode}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ab9424abf8764042b86b28eaba181716d}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_cr\_1\_1@{\_cr\_1\_1}}
+\index{\_cr\_1\_1@{\_cr\_1\_1}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_cr\_1\_1()}{\_cr\_1\_1()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ab9424abf8764042b86b28eaba181716d} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+cr\+\_\+1\+\_\+1 (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{n}{, }\item[{}]{n\+Rows}{, }\item[{}]{repeat\+Rows}{, }\item[{}]{cmds}{, }\item[{}]{do\+In\+Row\+Split}{, }\item[{}]{\+\_\+srfl\+Mode}{ = {\ttfamily False}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a5a4a790d06b178220f2bd270085ce71c}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_culprit@{\_culprit}}
+\index{\_culprit@{\_culprit}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_culprit()}{\_culprit()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a5a4a790d06b178220f2bd270085ce71c} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+culprit (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Return a string describing the tallest element.
+
+Usually this is what causes tables to fail to split.  Currently
+tables are the only items to have a '_culprit' method. Doctemplate
+checks for it.
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a4349aba4496401fbd046916b36595587}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_drawBkgrnd@{\_drawBkgrnd}}
+\index{\_drawBkgrnd@{\_drawBkgrnd}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_drawBkgrnd()}{\_drawBkgrnd()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a4349aba4496401fbd046916b36595587} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+draw\+Bkgrnd (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ab77c46bc2c6035fa2993aaaf4d0b0860}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_drawBox@{\_drawBox}}
+\index{\_drawBox@{\_drawBox}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_drawBox()}{\_drawBox()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ab77c46bc2c6035fa2993aaaf4d0b0860} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+draw\+Box (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{start}{, }\item[{}]{end}{, }\item[{}]{weight}{, }\item[{}]{color}{, }\item[{}]{count}{, }\item[{}]{space}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a4047621828271d6853adf934e508054c}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_drawCell@{\_drawCell}}
+\index{\_drawCell@{\_drawCell}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_drawCell()}{\_drawCell()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a4047621828271d6853adf934e508054c} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+draw\+Cell (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{cellval}{, }\item[{}]{cellstyle}{, }\item[{}]{pos}{, }\item[{}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a3fcb5096306e747adf54024d9dbf37b9}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_drawGrid@{\_drawGrid}}
+\index{\_drawGrid@{\_drawGrid}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_drawGrid()}{\_drawGrid()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a3fcb5096306e747adf54024d9dbf37b9} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+draw\+Grid (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{start}{, }\item[{}]{end}{, }\item[{}]{weight}{, }\item[{}]{color}{, }\item[{}]{count}{, }\item[{}]{space}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a488034ed84e70a43f91b5cfaccc53b31}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_drawHLines@{\_drawHLines}}
+\index{\_drawHLines@{\_drawHLines}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_drawHLines()}{\_drawHLines()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a488034ed84e70a43f91b5cfaccc53b31} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+draw\+HLines (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{start}{, }\item[{}]{end}{, }\item[{}]{weight}{, }\item[{}]{color}{, }\item[{}]{count}{, }\item[{}]{space}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_abff8589138a6475917c7e79cbc3e8f09}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_drawHLinesB@{\_drawHLinesB}}
+\index{\_drawHLinesB@{\_drawHLinesB}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_drawHLinesB()}{\_drawHLinesB()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_abff8589138a6475917c7e79cbc3e8f09} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+draw\+HLinesB (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{start}{, }\item[{}]{end}{, }\item[{}]{weight}{, }\item[{}]{color}{, }\item[{}]{count}{, }\item[{}]{space}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a687a22d84a34706e10e9507c60921533}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_drawInnerGrid@{\_drawInnerGrid}}
+\index{\_drawInnerGrid@{\_drawInnerGrid}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_drawInnerGrid()}{\_drawInnerGrid()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a687a22d84a34706e10e9507c60921533} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+draw\+Inner\+Grid (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{start}{, }\item[{}]{end}{, }\item[{}]{weight}{, }\item[{}]{color}{, }\item[{}]{count}{, }\item[{}]{space}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ab7afdc927b1699740a0210970a40437c}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_drawLines@{\_drawLines}}
+\index{\_drawLines@{\_drawLines}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_drawLines()}{\_drawLines()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ab7afdc927b1699740a0210970a40437c} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+draw\+Lines (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a3d69be7051dc4487c08a6664c840ac8e}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_drawUnknown@{\_drawUnknown}}
+\index{\_drawUnknown@{\_drawUnknown}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_drawUnknown()}{\_drawUnknown()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a3d69be7051dc4487c08a6664c840ac8e} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+draw\+Unknown (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{start}{, }\item[{}]{end}{, }\item[{}]{weight}{, }\item[{}]{color}{, }\item[{}]{count}{, }\item[{}]{space}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a7d27d67e5b24ac1a98b40aca84ca3460}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_drawVLines@{\_drawVLines}}
+\index{\_drawVLines@{\_drawVLines}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_drawVLines()}{\_drawVLines()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a7d27d67e5b24ac1a98b40aca84ca3460} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+draw\+VLines (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{start}{, }\item[{}]{end}{, }\item[{}]{weight}{, }\item[{}]{color}{, }\item[{}]{count}{, }\item[{}]{space}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a633a9e1bdf4c12000cd42e34376dba1b}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_drawVLinesA@{\_drawVLinesA}}
+\index{\_drawVLinesA@{\_drawVLinesA}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_drawVLinesA()}{\_drawVLinesA()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a633a9e1bdf4c12000cd42e34376dba1b} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+draw\+VLinesA (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{start}{, }\item[{}]{end}{, }\item[{}]{weight}{, }\item[{}]{color}{, }\item[{}]{count}{, }\item[{}]{space}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a009ec3345e679b9b28a3223f9073ec3c}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_elementWidth@{\_elementWidth}}
+\index{\_elementWidth@{\_elementWidth}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_elementWidth()}{\_elementWidth()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a009ec3345e679b9b28a3223f9073ec3c} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+element\+Width (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{v}{, }\item[{}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a6c6a83565c4d03862244ab0d952a2b5d}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_getFirstPossibleSplitRowPosition@{\_getFirstPossibleSplitRowPosition}}
+\index{\_getFirstPossibleSplitRowPosition@{\_getFirstPossibleSplitRowPosition}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_getFirstPossibleSplitRowPosition()}{\_getFirstPossibleSplitRowPosition()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a6c6a83565c4d03862244ab0d952a2b5d} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+get\+First\+Possible\+Split\+Row\+Position (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{avail\+Height}{, }\item[{}]{ignore\+Spans}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ad2eea9d92c9c91de9ddb40216ff146e0}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_getPossibleHeight@{\_getPossibleHeight}}
+\index{\_getPossibleHeight@{\_getPossibleHeight}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_getPossibleHeight()}{\_getPossibleHeight()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ad2eea9d92c9c91de9ddb40216ff146e0} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+get\+Possible\+Height (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{default}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_af3926f661b5a65cfa4bc64b6e3d0b6f3}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_getRowImpossible@{\_getRowImpossible}}
+\index{\_getRowImpossible@{\_getRowImpossible}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_getRowImpossible()}{\_getRowImpossible()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_af3926f661b5a65cfa4bc64b6e3d0b6f3} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+get\+Row\+Impossible (\begin{DoxyParamCaption}\item[{}]{impossible}{, }\item[{}]{cells}{, }\item[{}]{ranges}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_aedaff2ebf538eed5264d9cacfd1d4ed6}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_hasVariWidthElements@{\_hasVariWidthElements}}
+\index{\_hasVariWidthElements@{\_hasVariWidthElements}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_hasVariWidthElements()}{\_hasVariWidthElements()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_aedaff2ebf538eed5264d9cacfd1d4ed6} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+has\+Vari\+Width\+Elements (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{up\+To\+Row}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Check for flowables in table cells and warn up front.
+
+Allow a couple which we know are fixed size such as
+images and graphics.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a50b65b99cfdd9e7e3a71c7f5d7f927a2}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_listCellGeom@{\_listCellGeom}}
+\index{\_listCellGeom@{\_listCellGeom}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_listCellGeom()}{\_listCellGeom()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a50b65b99cfdd9e7e3a71c7f5d7f927a2} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+list\+Cell\+Geom (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{V}{, }\item[{}]{w}{, }\item[{}]{s}{, }\item[{}]{W}{ = {\ttfamily None}, }\item[{}]{H}{ = {\ttfamily None}, }\item[{}]{aH}{ = {\ttfamily 72000}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_af06c4936dca375508b6ac6c83aa8df04}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_listValueWidth@{\_listValueWidth}}
+\index{\_listValueWidth@{\_listValueWidth}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_listValueWidth()}{\_listValueWidth()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_af06c4936dca375508b6ac6c83aa8df04} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+list\+Value\+Width (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{V}{, }\item[{}]{aH}{ = {\ttfamily 72000}, }\item[{}]{aW}{ = {\ttfamily 72000}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_adaedd7a992a6d6b22b5c71ba70843edc}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_makeRoundedCornersClip@{\_makeRoundedCornersClip}}
+\index{\_makeRoundedCornersClip@{\_makeRoundedCornersClip}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_makeRoundedCornersClip()}{\_makeRoundedCornersClip()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_adaedd7a992a6d6b22b5c71ba70843edc} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+make\+Rounded\+Corners\+Clip (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{FUZZ}{ = {\ttfamily rl\+\_\+config.\+\_\+FUZZ}, }\item[{}]{clip}{ = {\ttfamily True}, }\item[{}]{stroke}{ = {\ttfamily 0}, }\item[{}]{fill}{ = {\ttfamily 0}, }\item[{}]{deltas}{ = {\ttfamily (0,0,0,0)}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a13ba70b20f6cfcefaccb49dcd02cea79}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_makeShadow@{\_makeShadow}}
+\index{\_makeShadow@{\_makeShadow}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_makeShadow()}{\_makeShadow()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a13ba70b20f6cfcefaccb49dcd02cea79} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+make\+Shadow (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_abf24a4f32ce961196477429826bab5d5}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_makeShadow1@{\_makeShadow1}}
+\index{\_makeShadow1@{\_makeShadow1}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_makeShadow1()}{\_makeShadow1()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_abf24a4f32ce961196477429826bab5d5} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+make\+Shadow1 (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_aa6a5c016ba81ccb5d21bfed7cc9fdab4}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_prepLine@{\_prepLine}}
+\index{\_prepLine@{\_prepLine}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_prepLine()}{\_prepLine()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_aa6a5c016ba81ccb5d21bfed7cc9fdab4} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+prep\+Line (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{weight}{, }\item[{}]{color}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a272551858be9ba76026778013bf6d0bf}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_restoreRoundingObscuredLines@{\_restoreRoundingObscuredLines}}
+\index{\_restoreRoundingObscuredLines@{\_restoreRoundingObscuredLines}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_restoreRoundingObscuredLines()}{\_restoreRoundingObscuredLines()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a272551858be9ba76026778013bf6d0bf} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+restore\+Rounding\+Obscured\+Lines (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a536b2a39da58f2d6f5b4bc084ea54117}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_setCornerRadii@{\_setCornerRadii}}
+\index{\_setCornerRadii@{\_setCornerRadii}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_setCornerRadii()}{\_setCornerRadii()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a536b2a39da58f2d6f5b4bc084ea54117} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+set\+Corner\+Radii (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{corner\+Radii}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_aa80102ffd7ac9c362eb32d1550775474}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_splitCell@{\_splitCell}}
+\index{\_splitCell@{\_splitCell}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_splitCell()}{\_splitCell()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_aa80102ffd7ac9c362eb32d1550775474} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+split\+Cell (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{, }\item[{}]{style}{, }\item[{}]{old\+Height}{, }\item[{}]{new\+Height}{, }\item[{}]{width}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a9c44b4a28f7e4fad1f163cfcc2d1bc63}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_splitLineCmds@{\_splitLineCmds}}
+\index{\_splitLineCmds@{\_splitLineCmds}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_splitLineCmds()}{\_splitLineCmds()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a9c44b4a28f7e4fad1f163cfcc2d1bc63} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+split\+Line\+Cmds (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{n}{, }\item[{}]{do\+In\+Row\+Split}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_acd1acb51076eaf6c67221be0d6394419}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_splitRows@{\_splitRows}}
+\index{\_splitRows@{\_splitRows}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_splitRows()}{\_splitRows()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_acd1acb51076eaf6c67221be0d6394419} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+split\+Rows (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{avail\+Height}{, }\item[{}]{do\+In\+Row\+Split}{ = {\ttfamily 0}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ac8c1680ecee0ad2a1cde55cb1713ce8d}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_stretchCommands@{\_stretchCommands}}
+\index{\_stretchCommands@{\_stretchCommands}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_stretchCommands()}{\_stretchCommands()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ac8c1680ecee0ad2a1cde55cb1713ce8d} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+stretch\+Commands (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{n}{, }\item[{}]{cmds}{, }\item[{}]{oldrowcount}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Stretches the commands when a row is split
+
+The row start is sr, the row end is er.
+
+ sr   | er  | result
+---------------------------------------------------------------------
+  <n  |  <n | Do nothing.
+      | >=n | A command that spans the break, extend end.
+---------------------------------------------------------------------
+ ==n  | ==n | Zero height. Extend the end, unless it's a LINEABOVE
+      |     | commands, it's between rows so do nothing.
+      |     | For LINEBELOW increase both.
+      |  >n | A command that spans the break, extend end.
+---------------------------------------------------------------------
+  >n  |  >n | This command comes after the break, increase both.
+---------------------------------------------------------------------
+
+Summary:
+1. If er > n then increase er
+2. If sr > n then increase sr
+3. If er == n and sr < n, increase er
+4. If er == sr == n and cmd is not line, increase er
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a843a0734c55739d0e504c9109952b6d6}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!draw@{draw}}
+\index{draw@{draw}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a843a0734c55739d0e504c9109952b6d6} 
+reportlab.\+platypus.\+tables.\+Table.\+draw (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_abd3becbb80bff20d979716481bfb72f1}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!identity@{identity}}
+\index{identity@{identity}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{identity()}{identity()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_abd3becbb80bff20d979716481bfb72f1} 
+reportlab.\+platypus.\+tables.\+Table.\+identity (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{max\+Len}{ = {\ttfamily 30}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Identify our selves as well as possible\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a1e85072f27b6b8efa890c15283967681}{reportlab.\+platypus.\+flowables.\+Flowable}}.
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a43f408692b22515ed274a7879baebf74}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!minWidth@{minWidth}}
+\index{minWidth@{minWidth}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{minWidth()}{minWidth()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a43f408692b22515ed274a7879baebf74} 
+reportlab.\+platypus.\+tables.\+Table.\+min\+Width (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This should return the minimum required width\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a7124e62a2cd7a85de2f24c1da6b75b54}{reportlab.\+platypus.\+flowables.\+Flowable}}.
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_acbbafead1529dace09c1e218421658a7}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!normalizeData@{normalizeData}}
+\index{normalizeData@{normalizeData}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{normalizeData()}{normalizeData()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_acbbafead1529dace09c1e218421658a7} 
+reportlab.\+platypus.\+tables.\+Table.\+normalize\+Data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{data}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Takes a block of input data (list of lists etc.) and
+- coerces unicode strings to non-unicode UTF8
+- coerces nulls to ''
+-
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a66e7804e9cb6cf2564f30aaf79ce2ac8}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!normCellRange@{normCellRange}}
+\index{normCellRange@{normCellRange}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{normCellRange()}{normCellRange()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a66e7804e9cb6cf2564f30aaf79ce2ac8} 
+reportlab.\+platypus.\+tables.\+Table.\+norm\+Cell\+Range (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{sc}{, }\item[{}]{ec}{, }\item[{}]{sr}{, }\item[{}]{er}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}ensure cell range ends are with the table bounds\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a53f6754f641232bcbc0ec405754c344a}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!onSplit@{onSplit}}
+\index{onSplit@{onSplit}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{onSplit()}{onSplit()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a53f6754f641232bcbc0ec405754c344a} 
+reportlab.\+platypus.\+tables.\+Table.\+on\+Split (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{T}{, }\item[{}]{by\+Row}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This method will be called when the Table is split.
+Special purpose tables can override to do special stuff.
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a00986dfc963fe167dc12d2c7e4534e63}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!setStyle@{setStyle}}
+\index{setStyle@{setStyle}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{setStyle()}{setStyle()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a00986dfc963fe167dc12d2c7e4534e63} 
+reportlab.\+platypus.\+tables.\+Table.\+set\+Style (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tblstyle}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a57f0714f2a2416a10386077862133c81}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!split@{split}}
+\index{split@{split}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a57f0714f2a2416a10386077862133c81} 
+reportlab.\+platypus.\+tables.\+Table.\+split (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{avail\+Width}{, }\item[{}]{availheight}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This will be called by more sophisticated frames when
+wrap fails. Stupid flowables should return []. Clever flowables
+should split themselves and return a list of flowables.
+If they decide that nothing useful can be fitted in the
+available space (e.g. if you have a table and not enough
+space for the first row), also return []\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_ab190745e0cedabad912be97efec00c48}{reportlab.\+platypus.\+flowables.\+Flowable}}.
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_afdca5bae6072e5d25b3609d2476d2757}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!wrap@{wrap}}
+\index{wrap@{wrap}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{wrap()}{wrap()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_afdca5bae6072e5d25b3609d2476d2757} 
+reportlab.\+platypus.\+tables.\+Table.\+wrap (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{avail\+Width}{, }\item[{}]{avail\+Height}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This will be called by the enclosing frame before objects
+are asked their size, drawn or whatever.  It returns the
+size actually used.\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_aea303e0d888c3dc27ec2a29f94930d12}{reportlab.\+platypus.\+flowables.\+Flowable}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a4f682c7e1ce756092dcc79bfe84013cf}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_argH@{\_argH}}
+\index{\_argH@{\_argH}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_argH}{\_argH}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a4f682c7e1ce756092dcc79bfe84013cf} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+argH\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ad135eb17fdc632d7de2bbf17ae681b38}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_argW@{\_argW}}
+\index{\_argW@{\_argW}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_argW}{\_argW}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ad135eb17fdc632d7de2bbf17ae681b38} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+argW\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_aef76d0281a22d945518da2e820ac7f0d}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_bkgrndcmds@{\_bkgrndcmds}}
+\index{\_bkgrndcmds@{\_bkgrndcmds}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_bkgrndcmds}{\_bkgrndcmds}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_aef76d0281a22d945518da2e820ac7f0d} 
+list reportlab.\+platypus.\+tables.\+Table.\+\_\+bkgrndcmds = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a3297db953b36d51db1c7cbb5dd8162a4}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_cellStyles@{\_cellStyles}}
+\index{\_cellStyles@{\_cellStyles}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_cellStyles}{\_cellStyles}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a3297db953b36d51db1c7cbb5dd8162a4} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+cell\+Styles = cellrows\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ad07d3a73ebc122e41f9d8b7efa56efc9}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_cellvalues@{\_cellvalues}}
+\index{\_cellvalues@{\_cellvalues}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_cellvalues}{\_cellvalues}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ad07d3a73ebc122e41f9d8b7efa56efc9} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+cellvalues = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a107d1bd9fe633308ecf034de972db501}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_colNoSplitCells@{\_colNoSplitCells}}
+\index{\_colNoSplitCells@{\_colNoSplitCells}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_colNoSplitCells}{\_colNoSplitCells}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a107d1bd9fe633308ecf034de972db501} 
+list reportlab.\+platypus.\+tables.\+Table.\+\_\+col\+No\+Split\+Cells = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ab1c2cf089d28cf3c17ccc057abe42306}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_colpositions@{\_colpositions}}
+\index{\_colpositions@{\_colpositions}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_colpositions}{\_colpositions}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ab1c2cf089d28cf3c17ccc057abe42306} 
+list reportlab.\+platypus.\+tables.\+Table.\+\_\+colpositions = \+[0]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a1a05cf4c9c5952e0cd3c29f323072970}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_colSpanCells@{\_colSpanCells}}
+\index{\_colSpanCells@{\_colSpanCells}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_colSpanCells}{\_colSpanCells}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a1a05cf4c9c5952e0cd3c29f323072970} 
+list reportlab.\+platypus.\+tables.\+Table.\+\_\+col\+Span\+Cells = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a69832a0ab20d3955400c8cff8c62190e}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_colWidths@{\_colWidths}}
+\index{\_colWidths@{\_colWidths}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_colWidths}{\_colWidths}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a69832a0ab20d3955400c8cff8c62190e} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+col\+Widths = col\+Widths\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ac8880650fe9cf4dcb83a0c41fd6eef14}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_cornerRadii@{\_cornerRadii}}
+\index{\_cornerRadii@{\_cornerRadii}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_cornerRadii}{\_cornerRadii}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ac8880650fe9cf4dcb83a0c41fd6eef14} 
+float reportlab.\+platypus.\+tables.\+Table.\+\_\+corner\+Radii = 0.\+01,0.\+01,0.\+01,0.\+01\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a916b364fe4b880b5fe48066b7ce727fb}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_curcellstyle@{\_curcellstyle}}
+\index{\_curcellstyle@{\_curcellstyle}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_curcellstyle}{\_curcellstyle}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a916b364fe4b880b5fe48066b7ce727fb} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+curcellstyle = cellstyle\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a01577977d7a1909d5d3506b1c1939414}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_curcolor@{\_curcolor}}
+\index{\_curcolor@{\_curcolor}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_curcolor}{\_curcolor}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a01577977d7a1909d5d3506b1c1939414} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+curcolor = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ab4fb0b7d1cf8d8f2530c4075f0caf195}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_curweight@{\_curweight}}
+\index{\_curweight@{\_curweight}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_curweight}{\_curweight}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ab4fb0b7d1cf8d8f2530c4075f0caf195} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+curweight = weight\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a73c113553a00dcd85dbf72fd7cacf271}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_getRowImpossible@{\_getRowImpossible}}
+\index{\_getRowImpossible@{\_getRowImpossible}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_getRowImpossible}{\_getRowImpossible}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a73c113553a00dcd85dbf72fd7cacf271} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+get\+Row\+Impossible = staticmethod(\+\_\+get\+Row\+Impossible)\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a345633e666e6b814625f1e37e47d36c4}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_hBlocks@{\_hBlocks}}
+\index{\_hBlocks@{\_hBlocks}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_hBlocks}{\_hBlocks}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a345633e666e6b814625f1e37e47d36c4} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+h\+Blocks = h\+Blocks\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ae96dcf0a1e360fee79489aac2d9b91cf}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_height@{\_height}}
+\index{\_height@{\_height}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_height}{\_height}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ae96dcf0a1e360fee79489aac2d9b91cf} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+height = \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_a255983a7c041794ffc52654d528a9acb}{height}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a820e886cbbb7110381df9fb289abe4c5}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_hmax@{\_hmax}}
+\index{\_hmax@{\_hmax}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_hmax}{\_hmax}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a820e886cbbb7110381df9fb289abe4c5} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+hmax = hmax\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_acca8ea47ee7cfb1439fbcaab13945aa6}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_hmax\_spanRects@{\_hmax\_spanRects}}
+\index{\_hmax\_spanRects@{\_hmax\_spanRects}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_hmax\_spanRects}{\_hmax\_spanRects}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_acca8ea47ee7cfb1439fbcaab13945aa6} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+hmax\+\_\+span\+Rects = hmax\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a40dcacd2a8524c03906c3c04650d68d2}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_linecmds@{\_linecmds}}
+\index{\_linecmds@{\_linecmds}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_linecmds}{\_linecmds}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a40dcacd2a8524c03906c3c04650d68d2} 
+list reportlab.\+platypus.\+tables.\+Table.\+\_\+linecmds = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_abf850fe586973bb837a78097831e9e01}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_longTableOptimize@{\_longTableOptimize}}
+\index{\_longTableOptimize@{\_longTableOptimize}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_longTableOptimize}{\_longTableOptimize}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_abf850fe586973bb837a78097831e9e01} 
+tuple reportlab.\+platypus.\+tables.\+Table.\+\_\+long\+Table\+Optimize\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ (getattr(self,\textcolor{stringliteral}{'\_longTableOptimize'},rl\_config.longTableOptimize)}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ longTableOptimize\ \textcolor{keywordflow}{is}\ \textcolor{keywordtype}{None}\ \textcolor{keywordflow}{else}\ longTableOptimize)}
+
+\end{DoxyCode}
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a13049bc752ec01f3e28d48e03a37f64e}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_minRowHeights@{\_minRowHeights}}
+\index{\_minRowHeights@{\_minRowHeights}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_minRowHeights}{\_minRowHeights}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a13049bc752ec01f3e28d48e03a37f64e} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+min\+Row\+Heights = min\+Row\+Heights\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a3f99a0275b5178c628eec4742a365073}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_ncols@{\_ncols}}
+\index{\_ncols@{\_ncols}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_ncols}{\_ncols}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a3f99a0275b5178c628eec4742a365073} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+ncols = max(list(map(\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_abbecb32b76a155d62ab207fdc929130f}{\+\_\+row\+Len}},data)))\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a68f47c3c489111480bc44fb542111723}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_nosplitCmds@{\_nosplitCmds}}
+\index{\_nosplitCmds@{\_nosplitCmds}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_nosplitCmds}{\_nosplitCmds}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a68f47c3c489111480bc44fb542111723} 
+list reportlab.\+platypus.\+tables.\+Table.\+\_\+nosplit\+Cmds = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ade8ba0c34d074adc8a32a9a6a0bf6377}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_nosplitRanges@{\_nosplitRanges}}
+\index{\_nosplitRanges@{\_nosplitRanges}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_nosplitRanges}{\_nosplitRanges}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ade8ba0c34d074adc8a32a9a6a0bf6377} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+nosplit\+Ranges = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ab639172c5297fee7fac3adc26d50f8ad}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_nrows@{\_nrows}}
+\index{\_nrows@{\_nrows}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_nrows}{\_nrows}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ab639172c5297fee7fac3adc26d50f8ad} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+nrows = len(data)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a0f0432e3f5de5f9c6672d863578a3c84}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_renderCB@{\_renderCB}}
+\index{\_renderCB@{\_renderCB}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_renderCB}{\_renderCB}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a0f0432e3f5de5f9c6672d863578a3c84} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+render\+CB = render\+CB\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a417dec0e841ef2d8b020d1f37ed6149c}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_roundingRectDef@{\_roundingRectDef}}
+\index{\_roundingRectDef@{\_roundingRectDef}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_roundingRectDef}{\_roundingRectDef}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a417dec0e841ef2d8b020d1f37ed6149c} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+rounding\+Rect\+Def = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a4a41b960a61c6384ef53ce6c97f761f8}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_rowHeights@{\_rowHeights}}
+\index{\_rowHeights@{\_rowHeights}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_rowHeights}{\_rowHeights}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a4a41b960a61c6384ef53ce6c97f761f8} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+row\+Heights = row\+Heights\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_addbfa5401bd661179a37e8aa8026e3e6}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_rowNoSplitCells@{\_rowNoSplitCells}}
+\index{\_rowNoSplitCells@{\_rowNoSplitCells}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_rowNoSplitCells}{\_rowNoSplitCells}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_addbfa5401bd661179a37e8aa8026e3e6} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+row\+No\+Split\+Cells = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a914f7f656eb12bf02213df24712629ac}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_rowpositions@{\_rowpositions}}
+\index{\_rowpositions@{\_rowpositions}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_rowpositions}{\_rowpositions}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a914f7f656eb12bf02213df24712629ac} 
+list reportlab.\+platypus.\+tables.\+Table.\+\_\+rowpositions = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a395a4e0e664076cdf7da1125939df7f3}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_rowSpanCells@{\_rowSpanCells}}
+\index{\_rowSpanCells@{\_rowSpanCells}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_rowSpanCells}{\_rowSpanCells}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a395a4e0e664076cdf7da1125939df7f3} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+row\+Span\+Cells = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a74fc9bef00545772f804b93c20056a3b}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_rowSplitRange@{\_rowSplitRange}}
+\index{\_rowSplitRange@{\_rowSplitRange}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_rowSplitRange}{\_rowSplitRange}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a74fc9bef00545772f804b93c20056a3b} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+row\+Split\+Range = row\+Split\+Range\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a0ea140609651df7c0e464276cf1baaae}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_shadow@{\_shadow}}
+\index{\_shadow@{\_shadow}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_shadow}{\_shadow}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a0ea140609651df7c0e464276cf1baaae} 
+return reportlab.\+platypus.\+tables.\+Table.\+\_\+shadow = shadow\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_abab04f123785711dbab68aa47d6dbe56}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_sircmds@{\_sircmds}}
+\index{\_sircmds@{\_sircmds}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_sircmds}{\_sircmds}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_abab04f123785711dbab68aa47d6dbe56} 
+list reportlab.\+platypus.\+tables.\+Table.\+\_\+sircmds = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_aef0250df0dc666a1c05bb81b6ddc29ab}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_spanCmds@{\_spanCmds}}
+\index{\_spanCmds@{\_spanCmds}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_spanCmds}{\_spanCmds}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_aef0250df0dc666a1c05bb81b6ddc29ab} 
+list reportlab.\+platypus.\+tables.\+Table.\+\_\+span\+Cmds = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ac92b4563a640f62b1fb433c2d6b67caa}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_spanRanges@{\_spanRanges}}
+\index{\_spanRanges@{\_spanRanges}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_spanRanges}{\_spanRanges}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ac92b4563a640f62b1fb433c2d6b67caa} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+span\+Ranges = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a91eaf9c7d49fda0ef6ee24ddb32ab288}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_spanRects@{\_spanRects}}
+\index{\_spanRects@{\_spanRects}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_spanRects}{\_spanRects}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a91eaf9c7d49fda0ef6ee24ddb32ab288} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+span\+Rects = span\+Rects\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a1e8a2728e9bc463362f74130abc0ddc5}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_srflcmds@{\_srflcmds}}
+\index{\_srflcmds@{\_srflcmds}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_srflcmds}{\_srflcmds}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a1e8a2728e9bc463362f74130abc0ddc5} 
+list reportlab.\+platypus.\+tables.\+Table.\+\_\+srflcmds = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_aaa393c0828015c901afa80433d3c7a2c}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_vBlocks@{\_vBlocks}}
+\index{\_vBlocks@{\_vBlocks}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_vBlocks}{\_vBlocks}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_aaa393c0828015c901afa80433d3c7a2c} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+v\+Blocks = v\+Blocks\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_acc04e80338faa6df125a9e8bdb0af800}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_width@{\_width}}
+\index{\_width@{\_width}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_width}{\_width}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_acc04e80338faa6df125a9e8bdb0af800} 
+reportlab.\+platypus.\+tables.\+Table.\+\_\+width = \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1flowables_1_1_flowable_af7274326aaf16ef0d19c3d9887b167a5}{width}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a38c79d30df75ea49a80ab40a602b7ba7}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!\_width\_calculated\_once@{\_width\_calculated\_once}}
+\index{\_width\_calculated\_once@{\_width\_calculated\_once}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{\_width\_calculated\_once}{\_width\_calculated\_once}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a38c79d30df75ea49a80ab40a602b7ba7} 
+int reportlab.\+platypus.\+tables.\+Table.\+\_\+width\+\_\+calculated\+\_\+once = 1\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a5c2e3d61080bdb119e02913fa7fcb0f8}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!availWidth@{availWidth}}
+\index{availWidth@{availWidth}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{availWidth}{availWidth}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a5c2e3d61080bdb119e02913fa7fcb0f8} 
+reportlab.\+platypus.\+tables.\+Table.\+avail\+Width = avail\+Width}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ab2d1b2343afa2f41d645fe72c3b1ddc2}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!ident@{ident}}
+\index{ident@{ident}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{ident}{ident}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ab2d1b2343afa2f41d645fe72c3b1ddc2} 
+return self.\+ident reportlab.\+platypus.\+tables.\+Table.\+ident = ident}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a76a9aac9064b664dc72506fc27841faf}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!repeatCols@{repeatCols}}
+\index{repeatCols@{repeatCols}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{repeatCols}{repeatCols}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a76a9aac9064b664dc72506fc27841faf} 
+reportlab.\+platypus.\+tables.\+Table.\+repeat\+Cols = repeat\+Cols}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a89018fa01a84829e80402e442b899a2d}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!repeatRows@{repeatRows}}
+\index{repeatRows@{repeatRows}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{repeatRows}{repeatRows}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a89018fa01a84829e80402e442b899a2d} 
+reportlab.\+platypus.\+tables.\+Table.\+repeat\+Rows = repeat\+Rows}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a476f4d0d98b9252e9bb8c2afefbc1bba}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!spaceAfter@{spaceAfter}}
+\index{spaceAfter@{spaceAfter}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{spaceAfter}{spaceAfter}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a476f4d0d98b9252e9bb8c2afefbc1bba} 
+reportlab.\+platypus.\+tables.\+Table.\+space\+After = space\+After}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_a7d7e91f1e1029a2b5a2f543fbe2da232}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!spaceBefore@{spaceBefore}}
+\index{spaceBefore@{spaceBefore}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{spaceBefore}{spaceBefore}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_a7d7e91f1e1029a2b5a2f543fbe2da232} 
+reportlab.\+platypus.\+tables.\+Table.\+space\+Before = space\+Before}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_ac81b230a1963ec75dc05efeaea41037d}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!splitByRow@{splitByRow}}
+\index{splitByRow@{splitByRow}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{splitByRow}{splitByRow}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_ac81b230a1963ec75dc05efeaea41037d} 
+reportlab.\+platypus.\+tables.\+Table.\+split\+By\+Row = split\+By\+Row}
+
+\Hypertarget{classreportlab_1_1platypus_1_1tables_1_1_table_adccfefa9c7c7991419f629867c8cc6c7}\index{reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}!splitInRow@{splitInRow}}
+\index{splitInRow@{splitInRow}!reportlab.platypus.tables.Table@{reportlab.platypus.tables.Table}}
+\doxysubsubsection{\texorpdfstring{splitInRow}{splitInRow}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1tables_1_1_table_adccfefa9c7c7991419f629867c8cc6c7} 
+reportlab.\+platypus.\+tables.\+Table.\+split\+In\+Row = split\+In\+Row}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+platypus/\+\doxymbox{\hyperlink{tables_8py}{tables.\+py}}\end{DoxyCompactItemize}

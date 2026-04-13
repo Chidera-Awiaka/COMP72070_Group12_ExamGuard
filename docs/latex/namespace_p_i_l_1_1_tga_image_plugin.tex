@@ -1,0 +1,73 @@
+\doxysection{PIL.\+Tga\+Image\+Plugin Namespace Reference}
+\hypertarget{namespace_p_i_l_1_1_tga_image_plugin}{}\label{namespace_p_i_l_1_1_tga_image_plugin}\index{PIL.TgaImagePlugin@{PIL.TgaImagePlugin}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_tga_image_plugin_1_1_tga_image_file}{Tga\+Image\+File}}
+\begin{DoxyCompactList}\small\item\em \doxylink{namespace_p_i_l_1_1_image}{Image} plugin for Targa files. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{namespace_p_i_l_1_1_tga_image_plugin_a2d8189371038cd712c092795619350d8}{\+\_\+save}} (\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} im, IO\+[bytes]\+ fp, str\texorpdfstring{$\vert$}{|}bytes filename)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{namespace_p_i_l_1_1_tga_image_plugin_aefa07153a084909cea87f5e3ddae63c0}{MODES}}
+\item 
+dict \doxymbox{\hyperlink{namespace_p_i_l_1_1_tga_image_plugin_a4e8d2d476995fc8892311432ca89ba78}{SAVE}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_p_i_l_1_1_tga_image_plugin_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_p_i_l_1_1_tga_image_plugin_a2d8189371038cd712c092795619350d8}\index{PIL.TgaImagePlugin@{PIL.TgaImagePlugin}!\_save@{\_save}}
+\index{\_save@{\_save}!PIL.TgaImagePlugin@{PIL.TgaImagePlugin}}
+\doxysubsubsection{\texorpdfstring{\_save()}{\_save()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_tga_image_plugin_a2d8189371038cd712c092795619350d8} 
+ None PIL.\+Tga\+Image\+Plugin.\+\_\+save (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}}]{im}{, }\item[{IO\+[bytes]\+}]{fp}{, }\item[{str \texorpdfstring{$\vert$}{|} bytes}]{filename}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespace_p_i_l_1_1_tga_image_plugin_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_p_i_l_1_1_tga_image_plugin_aefa07153a084909cea87f5e3ddae63c0}\index{PIL.TgaImagePlugin@{PIL.TgaImagePlugin}!MODES@{MODES}}
+\index{MODES@{MODES}!PIL.TgaImagePlugin@{PIL.TgaImagePlugin}}
+\doxysubsubsection{\texorpdfstring{MODES}{MODES}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_tga_image_plugin_aefa07153a084909cea87f5e3ddae63c0} 
+dict PIL.\+Tga\+Image\+Plugin.\+MODES}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{comment}{\#\ map\ imagetype/depth\ to\ rawmode}}
+\DoxyCodeLine{00003\ \ \ \ \ (1,\ 8):\ \textcolor{stringliteral}{"{}P"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ (3,\ 1):\ \textcolor{stringliteral}{"{}1"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ (3,\ 8):\ \textcolor{stringliteral}{"{}L"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ (3,\ 16):\ \textcolor{stringliteral}{"{}LA"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ (2,\ 16):\ \textcolor{stringliteral}{"{}BGRA;15Z"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ (2,\ 24):\ \textcolor{stringliteral}{"{}BGR"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ (2,\ 32):\ \textcolor{stringliteral}{"{}BGRA"{}},}
+\DoxyCodeLine{00010\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespace_p_i_l_1_1_tga_image_plugin_a4e8d2d476995fc8892311432ca89ba78}\index{PIL.TgaImagePlugin@{PIL.TgaImagePlugin}!SAVE@{SAVE}}
+\index{SAVE@{SAVE}!PIL.TgaImagePlugin@{PIL.TgaImagePlugin}}
+\doxysubsubsection{\texorpdfstring{SAVE}{SAVE}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_tga_image_plugin_a4e8d2d476995fc8892311432ca89ba78} 
+dict PIL.\+Tga\+Image\+Plugin.\+SAVE}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}1"{}}:\ (\textcolor{stringliteral}{"{}1"{}},\ 1,\ 0,\ 3),}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}L"{}}:\ (\textcolor{stringliteral}{"{}L"{}},\ 8,\ 0,\ 3),}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}LA"{}}:\ (\textcolor{stringliteral}{"{}LA"{}},\ 16,\ 0,\ 3),}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}P"{}}:\ (\textcolor{stringliteral}{"{}P"{}},\ 8,\ 1,\ 1),}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}RGB"{}}:\ (\textcolor{stringliteral}{"{}BGR"{}},\ 24,\ 0,\ 2),}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}RGBA"{}}:\ (\textcolor{stringliteral}{"{}BGRA"{}},\ 32,\ 0,\ 2),}
+\DoxyCodeLine{00008\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,48 @@
+\doxysection{charset\+\_\+normalizer Namespace Reference}
+\hypertarget{namespacecharset__normalizer}{}\label{namespacecharset__normalizer}\index{charset\_normalizer@{charset\_normalizer}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacecharset__normalizer_1_1____main____}{\+\_\+\+\_\+main\+\_\+\+\_\+}}
+\item 
+namespace \doxymbox{\hyperlink{namespacecharset__normalizer_1_1api}{api}}
+\item 
+namespace \doxymbox{\hyperlink{namespacecharset__normalizer_1_1cd}{cd}}
+\item 
+namespace \doxymbox{\hyperlink{namespacecharset__normalizer_1_1cli}{cli}}
+\item 
+namespace \doxymbox{\hyperlink{namespacecharset__normalizer_1_1constant}{constant}}
+\item 
+namespace \doxymbox{\hyperlink{namespacecharset__normalizer_1_1legacy}{legacy}}
+\item 
+namespace \doxymbox{\hyperlink{namespacecharset__normalizer_1_1md}{md}}
+\item 
+namespace \doxymbox{\hyperlink{namespacecharset__normalizer_1_1models}{models}}
+\item 
+namespace \doxymbox{\hyperlink{namespacecharset__normalizer_1_1utils}{utils}}
+\item 
+namespace \doxymbox{\hyperlink{namespacecharset__normalizer_1_1version}{version}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Charset-Normalizer
+~~~~~~~~~~~~~~
+The Real First Universal Charset Detector.
+A library that helps you read text from an unknown charset encoding.
+Motivated by chardet, This package is trying to resolve the issue by taking a new approach.
+All IANA character set names for which the Python core library provides codecs are supported.
+
+Basic usage:
+   >>> from charset_normalizer import from_bytes
+   >>> results = from_bytes('Bсеки човек има право на образование. Oбразованието!'.encode('utf_8'))
+   >>> best_guess = results.best()
+   >>> str(best_guess)
+   'Bсеки човек има право на образование. Oбразованието!'
+
+Others methods and usages are available - see the full documentation
+at <https://github.com/Ousret/charset_normalizer>.
+:copyright: (c) 2021 by Ahmed TAHRI
+:license: MIT, see LICENSE for more details.
+\end{DoxyVerb}
+ 

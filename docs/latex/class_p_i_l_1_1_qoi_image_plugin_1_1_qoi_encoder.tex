@@ -1,0 +1,140 @@
+\doxysection{PIL.\+Qoi\+Image\+Plugin.\+Qoi\+Encoder Class Reference}
+\hypertarget{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder}{}\label{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder}\index{PIL.QoiImagePlugin.QoiEncoder@{PIL.QoiImagePlugin.QoiEncoder}}
+Inheritance diagram for PIL.\+Qoi\+Image\+Plugin.\+Qoi\+Encoder:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\+[int, int, bytes]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a3c6b65bbbd9576c4cb059c4ae49303de}{encode}} (self, int bufsize)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_encoder}{PIL.\+Image\+File.\+Py\+Encoder}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_encoder_a5243c0b95f6ca3c25453d421208fcbfc}{pushes\+\_\+fd}} (self)
+\item 
+tuple\+[int, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_encoder_a97625504e8e5be0e4975986b75a53540}{encode\+\_\+to\+\_\+pyfd}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_encoder_a0cc8f6bfcdcfbf15a1a596e294ae1fca}{encode\+\_\+to\+\_\+file}} (self, int fh, int bufsize)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec}{PIL.\+Image\+File.\+Py\+Codec}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_a0b78fb2d49bcafb8289217a7f753da5c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_aee6c30f3e7ba3d97278f67743e0d1bac}{mode}}, \texorpdfstring{$\ast$}{*}Any \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_aa3841aa2e0ef86de6bb22c512edeea90}{args}})
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_a5a3bd5c8c748e90a87a4c46a7e6ab1d6}{init}} (self, tuple\+[Any,...]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_aa3841aa2e0ef86de6bb22c512edeea90}{args}})
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_a124c65bec32a1bdc3b30b624b1437c39}{cleanup}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_a158ff93482447188b36f4af3442c4c05}{setfd}} (self, IO\+[bytes]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_ad9099686c3cf24d7133c2aac3599204e}{fd}})
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_a834d42d2495ec1cbbcba0c1574644085}{setimage}} (self, Image.\+core.\+Imaging\+Core \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_ab4cc4ed198486c782ba7de2e682f4d90}{im}}, tuple\+[int, int, int, int]\+\texorpdfstring{$\vert$}{|}None extents=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a627d7ff7c0c3c5e82ddb5aa466565694}{\+\_\+write\+\_\+run}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a1f9c822941b08bd112179086cdc5a679}{\+\_\+delta}} (self, int left, int right)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \doxymbox{\hyperlink{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a453750fdd71a71462f0d85a098d45d38}{\+\_\+previous\+\_\+pixel}} = None
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_aff3baa06a9bb1acb807568d019d7ff26}{\+\_\+previously\+\_\+seen\+\_\+pixels}} = \{\}
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a3899f5ef6c23ab99418ec393ba24096b}{\+\_\+run}} = 0
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_encoder}{PIL.\+Image\+File.\+Py\+Encoder}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_encoder_a507c611641756665139840d5e455380f}{\+\_\+pushes\+\_\+fd}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_encoder}{PIL.\+Image\+File.\+Py\+Encoder}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_encoder_a8f55cd3a48e006c9b918c28db0236ec9}{pushes\+\_\+fd}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec}{PIL.\+Image\+File.\+Py\+Codec}}}
+\begin{DoxyCompactItemize}
+\item 
+Image.\+core.\+Imaging\+Core\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_ab4cc4ed198486c782ba7de2e682f4d90}{im}} = None
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_a9e01a3c0d67fbad04bc2ef464ac3294b}{state}} = \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_state}{Py\+Codec\+State}}()
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_aee6c30f3e7ba3d97278f67743e0d1bac}{mode}} = mode
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_aa3841aa2e0ef86de6bb22c512edeea90}{args}} = args
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec}{PIL.\+Image\+File.\+Py\+Codec}}}
+\begin{DoxyCompactItemize}
+\item 
+IO \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_codec_ad9099686c3cf24d7133c2aac3599204e}{fd}} \+[bytes]\+ \texorpdfstring{$\vert$}{|} None
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a1f9c822941b08bd112179086cdc5a679}\index{PIL.QoiImagePlugin.QoiEncoder@{PIL.QoiImagePlugin.QoiEncoder}!\_delta@{\_delta}}
+\index{\_delta@{\_delta}!PIL.QoiImagePlugin.QoiEncoder@{PIL.QoiImagePlugin.QoiEncoder}}
+\doxysubsubsection{\texorpdfstring{\_delta()}{\_delta()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a1f9c822941b08bd112179086cdc5a679} 
+ int PIL.\+Qoi\+Image\+Plugin.\+Qoi\+Encoder.\+\_\+delta (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{left}{, }\item[{int}]{right}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a627d7ff7c0c3c5e82ddb5aa466565694}\index{PIL.QoiImagePlugin.QoiEncoder@{PIL.QoiImagePlugin.QoiEncoder}!\_write\_run@{\_write\_run}}
+\index{\_write\_run@{\_write\_run}!PIL.QoiImagePlugin.QoiEncoder@{PIL.QoiImagePlugin.QoiEncoder}}
+\doxysubsubsection{\texorpdfstring{\_write\_run()}{\_write\_run()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a627d7ff7c0c3c5e82ddb5aa466565694} 
+ bytes PIL.\+Qoi\+Image\+Plugin.\+Qoi\+Encoder.\+\_\+write\+\_\+run (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a3c6b65bbbd9576c4cb059c4ae49303de}\index{PIL.QoiImagePlugin.QoiEncoder@{PIL.QoiImagePlugin.QoiEncoder}!encode@{encode}}
+\index{encode@{encode}!PIL.QoiImagePlugin.QoiEncoder@{PIL.QoiImagePlugin.QoiEncoder}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a3c6b65bbbd9576c4cb059c4ae49303de} 
+ tuple\+[int, int, bytes]\+ PIL.\+Qoi\+Image\+Plugin.\+Qoi\+Encoder.\+encode (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{bufsize}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Override to perform the encoding process.
+
+:param bufsize: Buffer size.
+:returns: A tuple of ``(bytes encoded, errcode, bytes)``.
+    If finished with encoding return 1 for the error code.
+    Err codes are from :data:`.ImageFile.ERRORS`.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_py_encoder_ae98b16928dd351affb2b3f9de41933ab}{PIL.\+Image\+File.\+Py\+Encoder}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a453750fdd71a71462f0d85a098d45d38}\index{PIL.QoiImagePlugin.QoiEncoder@{PIL.QoiImagePlugin.QoiEncoder}!\_previous\_pixel@{\_previous\_pixel}}
+\index{\_previous\_pixel@{\_previous\_pixel}!PIL.QoiImagePlugin.QoiEncoder@{PIL.QoiImagePlugin.QoiEncoder}}
+\doxysubsubsection{\texorpdfstring{\_previous\_pixel}{\_previous\_pixel}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a453750fdd71a71462f0d85a098d45d38} 
+tuple PIL.\+Qoi\+Image\+Plugin.\+Qoi\+Encoder.\+\_\+previous\+\_\+pixel = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_aff3baa06a9bb1acb807568d019d7ff26}\index{PIL.QoiImagePlugin.QoiEncoder@{PIL.QoiImagePlugin.QoiEncoder}!\_previously\_seen\_pixels@{\_previously\_seen\_pixels}}
+\index{\_previously\_seen\_pixels@{\_previously\_seen\_pixels}!PIL.QoiImagePlugin.QoiEncoder@{PIL.QoiImagePlugin.QoiEncoder}}
+\doxysubsubsection{\texorpdfstring{\_previously\_seen\_pixels}{\_previously\_seen\_pixels}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_aff3baa06a9bb1acb807568d019d7ff26} 
+dict PIL.\+Qoi\+Image\+Plugin.\+Qoi\+Encoder.\+\_\+previously\+\_\+seen\+\_\+pixels = \{\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a3899f5ef6c23ab99418ec393ba24096b}\index{PIL.QoiImagePlugin.QoiEncoder@{PIL.QoiImagePlugin.QoiEncoder}!\_run@{\_run}}
+\index{\_run@{\_run}!PIL.QoiImagePlugin.QoiEncoder@{PIL.QoiImagePlugin.QoiEncoder}}
+\doxysubsubsection{\texorpdfstring{\_run}{\_run}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_qoi_image_plugin_1_1_qoi_encoder_a3899f5ef6c23ab99418ec393ba24096b} 
+int PIL.\+Qoi\+Image\+Plugin.\+Qoi\+Encoder.\+\_\+run = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_qoi_image_plugin_8py}{Qoi\+Image\+Plugin.\+py}}\end{DoxyCompactItemize}

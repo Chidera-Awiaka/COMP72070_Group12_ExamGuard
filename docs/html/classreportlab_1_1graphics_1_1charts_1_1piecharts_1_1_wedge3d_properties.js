@@ -1,0 +1,28 @@
+var classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties =
+[
+    [ "__init__", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a145b02d0e62d5e115818bdd8bf36a166", null ],
+    [ "fontColor", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#ac2be57c22018975aa6a155bba01fb09b", null ],
+    [ "fontName", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#ad607a5d6bf4e82e564451c73b2d2e1f2", null ],
+    [ "fontSize", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a2f9741aa4c0dd7d860796aede660abd5", null ],
+    [ "label_boxAnchor", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a08bf60a168d239dadd5150cd9672d8d1", null ],
+    [ "label_boxFillColor", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#addbebd839815e3c8cf1d92a65331c1c7", null ],
+    [ "label_boxStrokeColor", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a646f5525d2198fc17e0663443a2b996f", null ],
+    [ "label_boxStrokeWidth", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a89b6ee66de7cb5b66472c269f9ac880a", null ],
+    [ "label_dx", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a84543fe37032f140669315a995ae52da", null ],
+    [ "label_leading", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#aae1986a9ec0bb2c262f9600462692b40", null ],
+    [ "label_simple_pointer", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a8f062c9a7371a9a02fcf2f09b23e99c7", null ],
+    [ "label_strokeColor", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#af9985a8824f3006653c570867a5c68ef", null ],
+    [ "label_strokeWidth", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#ae25a70cc0f18e9c9da56297e144dda8e", null ],
+    [ "label_text", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#ad949e4c904d73317c37c7163a99e5b33", null ],
+    [ "label_textAnchor", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a28f1d9f0f7ce4e16fb95260cd8af78d4", null ],
+    [ "label_topPadding", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a867e04800f8546d83f383d8b0b637c59", null ],
+    [ "label_visible", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#adfc30274deada058b2d70a52b7c341cb", null ],
+    [ "labelRadius", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a61bc4c1ba3a68180217ea47c1dbee50e", null ],
+    [ "popout", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a74a6a5b2cd43549fb72db9a57e44c3b7", null ],
+    [ "shading", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a23eb1c59c242fb774b8e78c00a65d4ab", null ],
+    [ "strokeColor", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#af958389b669d7a845a9904eb2eba7a80", null ],
+    [ "strokeColorShaded", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a4b5f232602e2b9e74eb992511f2a9446", null ],
+    [ "strokeDashArray", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a721fd6a4b8946c98ebf3eff3b8c2f86d", null ],
+    [ "strokeWidth", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#a67aded45eab1cf9c0e42ef7ee52082cd", null ],
+    [ "visible", "classreportlab_1_1graphics_1_1charts_1_1piecharts_1_1_wedge3d_properties.html#ad4735c0e08d05a772b43f8cdbd552755", null ]
+];

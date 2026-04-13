@@ -1,0 +1,77 @@
+\doxysection{reportlab.\+lib.\+testutils.\+Secure\+Test\+Case Class Reference}
+\hypertarget{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case}{}\label{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case}\index{reportlab.lib.testutils.SecureTestCase@{reportlab.lib.testutils.SecureTestCase}}
+Inheritance diagram for reportlab.\+lib.\+testutils.\+Secure\+Test\+Case:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_a292e7752b2be68ec80201fe3d9d687ad}{set\+Up}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_a4ef1b81fb7024914a74434fa5d37354e}{tear\+Down}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_af6dce592464f133998ef41c8d348f7b4}{\+\_\+initial\+Path}} = sys.\+path\+[:\+]\+
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_a5d0fe948df712edfba183de16b548573}{\+\_\+initial\+Work\+Dir}} = os.\+getcwd()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Secure testing base class with additional pre- and postconditions.
+
+We try to ensure that each test leaves the environment it has
+found unchanged after the test is performed, successful or not.
+
+Currently we restore sys.path and the working directory, but more
+of this could be added easily, like removing temporary files or
+similar things.
+
+Use this as a base class replacing unittest.TestCase and call
+these methods in subclassed versions before doing your own
+business!
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_a292e7752b2be68ec80201fe3d9d687ad}\index{reportlab.lib.testutils.SecureTestCase@{reportlab.lib.testutils.SecureTestCase}!setUp@{setUp}}
+\index{setUp@{setUp}!reportlab.lib.testutils.SecureTestCase@{reportlab.lib.testutils.SecureTestCase}}
+\doxysubsubsection{\texorpdfstring{setUp()}{setUp()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_a292e7752b2be68ec80201fe3d9d687ad} 
+reportlab.\+lib.\+testutils.\+Secure\+Test\+Case.\+set\+Up (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_a4ef1b81fb7024914a74434fa5d37354e}\index{reportlab.lib.testutils.SecureTestCase@{reportlab.lib.testutils.SecureTestCase}!tearDown@{tearDown}}
+\index{tearDown@{tearDown}!reportlab.lib.testutils.SecureTestCase@{reportlab.lib.testutils.SecureTestCase}}
+\doxysubsubsection{\texorpdfstring{tearDown()}{tearDown()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_a4ef1b81fb7024914a74434fa5d37354e} 
+reportlab.\+lib.\+testutils.\+Secure\+Test\+Case.\+tear\+Down (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_af6dce592464f133998ef41c8d348f7b4}\index{reportlab.lib.testutils.SecureTestCase@{reportlab.lib.testutils.SecureTestCase}!\_initialPath@{\_initialPath}}
+\index{\_initialPath@{\_initialPath}!reportlab.lib.testutils.SecureTestCase@{reportlab.lib.testutils.SecureTestCase}}
+\doxysubsubsection{\texorpdfstring{\_initialPath}{\_initialPath}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_af6dce592464f133998ef41c8d348f7b4} 
+reportlab.\+lib.\+testutils.\+Secure\+Test\+Case.\+\_\+initial\+Path = sys.\+path\+[:\+]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_a5d0fe948df712edfba183de16b548573}\index{reportlab.lib.testutils.SecureTestCase@{reportlab.lib.testutils.SecureTestCase}!\_initialWorkDir@{\_initialWorkDir}}
+\index{\_initialWorkDir@{\_initialWorkDir}!reportlab.lib.testutils.SecureTestCase@{reportlab.lib.testutils.SecureTestCase}}
+\doxysubsubsection{\texorpdfstring{\_initialWorkDir}{\_initialWorkDir}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1testutils_1_1_secure_test_case_a5d0fe948df712edfba183de16b548573} 
+reportlab.\+lib.\+testutils.\+Secure\+Test\+Case.\+\_\+initial\+Work\+Dir = os.\+getcwd()\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+lib/\+\doxymbox{\hyperlink{testutils_8py}{testutils.\+py}}\end{DoxyCompactItemize}

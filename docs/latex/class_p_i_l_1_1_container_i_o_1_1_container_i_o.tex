@@ -1,0 +1,272 @@
+\doxysection{PIL.\+Container\+IO.\+Container\+IO Class Reference}
+\hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o}{}\label{class_p_i_l_1_1_container_i_o_1_1_container_i_o}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+Inheritance diagram for PIL.\+Container\+IO.\+Container\+IO:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_i_l_1_1_container_i_o_1_1_container_i_o}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a845a880392845ede84d2d0592cefcb14}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, IO\+[Any\+Str]\+ file, int \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a50de357582e95edf2e1a90eeabbe33ab}{offset}}, int \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ae2306c1c802448c44751f098a8ae55f9}{length}})
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a02fdea5e1aa1dadfee5c27dcc939abb4}{isatty}} (self)
+\begin{DoxyCompactList}\small\item\em Always false. \end{DoxyCompactList}\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a24b57f913b4e6fea951afd2a9ecd9f1a}{seekable}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a2d038cd04aac4e9556c4fd3746485c39}{seek}} (self, int \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a50de357582e95edf2e1a90eeabbe33ab}{offset}}, int mode=io.\+SEEK\+\_\+\+SET)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a3adfbd6a3c5ac9faa540b0d98588ab73}{tell}} (self)
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ae7e750918c76a15a87a9b4cda6b1e0ef}{readable}} (self)
+\item 
+Any\+Str \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ac27f18f7a524f2ef98b094a4f8b70312}{read}} (self, int n=-\/1)
+\item 
+Any\+Str \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ac317a0e880c3ca2c50447ac0070cd485}{readline}} (self, int n=-\/1)
+\item 
+list\+[Any\+Str]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a4512f310671b5b5cf3abffb1beb4ea14}{readlines}} (self, int\texorpdfstring{$\vert$}{|}None n=-\/1)
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a60f04296e08b50fd04c36d8e48da974f}{writable}} (self)
+\item 
+No\+Return \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a7e3dd976db5271c4b06fb49c243bc234}{write}} (self, Any\+Str b)
+\item 
+No\+Return \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a3ad4bcb5966f66039cb69612e2cc96ea}{writelines}} (self, Iterable\+[Any\+Str]\+ lines)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_abb8d4d36e971b152442a6ec972a3a88e}{truncate}} (self, int\texorpdfstring{$\vert$}{|}None size=None)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o}{Container\+IO}}\+[Any\+Str]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ad8a414abec43a112df42a8d9917b5a72}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a807b38d6df7b5b2c58962d39fe1540b5}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}object args)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o}{Container\+IO}}\+[Any\+Str]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a2fb012ea791600f9a80e1916ecb3c381}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+Any\+Str \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a16ff111104a5d1272df49937961a30b2}{\+\_\+\+\_\+next\+\_\+\+\_\+}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_abe7106319c642e5cf29811c5f0b23e50}{fileno}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a538b2587785ad3d6a04956c55ed4fc80}{flush}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ae8e640ad0259ab5099526c6752a22594}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+IO\+[Any\+Str]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_afe40face366ca45061f154d28eb4ed73}{fh}} = file
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a38133e5244e83bf3b58483326713392f}{pos}} = 0
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a50de357582e95edf2e1a90eeabbe33ab}{offset}} = offset
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ae2306c1c802448c44751f098a8ae55f9}{length}} = length
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A file object that provides read access to a part of an existing
+file (for example a TAR file).
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a845a880392845ede84d2d0592cefcb14}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a845a880392845ede84d2d0592cefcb14} 
+ None PIL.\+Container\+IO.\+Container\+IO.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IO\+[Any\+Str]\+}]{file}{, }\item[{int}]{offset}{, }\item[{int}]{length}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Create file object.
+
+:param file: Existing file.
+:param offset: Start of region, in bytes.
+:param length: Size of region, in bytes.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ad8a414abec43a112df42a8d9917b5a72}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ad8a414abec43a112df42a8d9917b5a72} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o}{Container\+IO}}\+[Any\+Str]\+ PIL.\+Container\+IO.\+Container\+IO.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a807b38d6df7b5b2c58962d39fe1540b5}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a807b38d6df7b5b2c58962d39fe1540b5} 
+ None PIL.\+Container\+IO.\+Container\+IO.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}object}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a2fb012ea791600f9a80e1916ecb3c381}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a2fb012ea791600f9a80e1916ecb3c381} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_container_i_o_1_1_container_i_o}{Container\+IO}}\+[Any\+Str]\+ PIL.\+Container\+IO.\+Container\+IO.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a16ff111104a5d1272df49937961a30b2}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!\_\_next\_\_@{\_\_next\_\_}}
+\index{\_\_next\_\_@{\_\_next\_\_}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{\_\_next\_\_()}{\_\_next\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a16ff111104a5d1272df49937961a30b2} 
+ Any\+Str PIL.\+Container\+IO.\+Container\+IO.\+\_\+\+\_\+next\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ae8e640ad0259ab5099526c6752a22594}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!close@{close}}
+\index{close@{close}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ae8e640ad0259ab5099526c6752a22594} 
+ None PIL.\+Container\+IO.\+Container\+IO.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_abe7106319c642e5cf29811c5f0b23e50}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!fileno@{fileno}}
+\index{fileno@{fileno}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{fileno()}{fileno()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_abe7106319c642e5cf29811c5f0b23e50} 
+ int PIL.\+Container\+IO.\+Container\+IO.\+fileno (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a538b2587785ad3d6a04956c55ed4fc80}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!flush@{flush}}
+\index{flush@{flush}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{flush()}{flush()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a538b2587785ad3d6a04956c55ed4fc80} 
+ None PIL.\+Container\+IO.\+Container\+IO.\+flush (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a02fdea5e1aa1dadfee5c27dcc939abb4}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!isatty@{isatty}}
+\index{isatty@{isatty}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{isatty()}{isatty()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a02fdea5e1aa1dadfee5c27dcc939abb4} 
+ bool PIL.\+Container\+IO.\+Container\+IO.\+isatty (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Always false. 
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ac27f18f7a524f2ef98b094a4f8b70312}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!read@{read}}
+\index{read@{read}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ac27f18f7a524f2ef98b094a4f8b70312} 
+ Any\+Str PIL.\+Container\+IO.\+Container\+IO.\+read (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{n}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read data.
+
+:param n: Number of bytes to read. If omitted, zero or negative,
+    read until end of region.
+:returns: An 8-bit string.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ae7e750918c76a15a87a9b4cda6b1e0ef}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!readable@{readable}}
+\index{readable@{readable}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{readable()}{readable()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ae7e750918c76a15a87a9b4cda6b1e0ef} 
+ bool PIL.\+Container\+IO.\+Container\+IO.\+readable (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ac317a0e880c3ca2c50447ac0070cd485}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!readline@{readline}}
+\index{readline@{readline}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{readline()}{readline()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ac317a0e880c3ca2c50447ac0070cd485} 
+ Any\+Str PIL.\+Container\+IO.\+Container\+IO.\+readline (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{n}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read a line of text.
+
+:param n: Number of bytes to read. If omitted, zero or negative,
+    read until end of line.
+:returns: An 8-bit string.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a4512f310671b5b5cf3abffb1beb4ea14}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!readlines@{readlines}}
+\index{readlines@{readlines}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{readlines()}{readlines()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a4512f310671b5b5cf3abffb1beb4ea14} 
+ list\+[Any\+Str]\+ PIL.\+Container\+IO.\+Container\+IO.\+readlines (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{n}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read multiple lines of text.
+
+:param n: Number of lines to read. If omitted, zero, negative or None,
+    read until end of region.
+:returns: A list of 8-bit strings.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a2d038cd04aac4e9556c4fd3746485c39}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!seek@{seek}}
+\index{seek@{seek}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{seek()}{seek()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a2d038cd04aac4e9556c4fd3746485c39} 
+ int PIL.\+Container\+IO.\+Container\+IO.\+seek (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{offset}{, }\item[{int }]{mode}{ = {\ttfamily io.SEEK\+\_\+SET}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Move file pointer.
+
+:param offset: Offset in bytes.
+:param mode: Starting position. Use 0 for beginning of region, 1
+   for current offset, and 2 for end of region.  You cannot move
+   the pointer outside the defined region.
+:returns: Offset from start of region, in bytes.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a24b57f913b4e6fea951afd2a9ecd9f1a}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!seekable@{seekable}}
+\index{seekable@{seekable}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{seekable()}{seekable()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a24b57f913b4e6fea951afd2a9ecd9f1a} 
+ bool PIL.\+Container\+IO.\+Container\+IO.\+seekable (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a3adfbd6a3c5ac9faa540b0d98588ab73}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!tell@{tell}}
+\index{tell@{tell}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{tell()}{tell()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a3adfbd6a3c5ac9faa540b0d98588ab73} 
+ int PIL.\+Container\+IO.\+Container\+IO.\+tell (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get current file pointer.
+
+:returns: Offset from start of region, in bytes.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_abb8d4d36e971b152442a6ec972a3a88e}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!truncate@{truncate}}
+\index{truncate@{truncate}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{truncate()}{truncate()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_abb8d4d36e971b152442a6ec972a3a88e} 
+ int PIL.\+Container\+IO.\+Container\+IO.\+truncate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{size}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a60f04296e08b50fd04c36d8e48da974f}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!writable@{writable}}
+\index{writable@{writable}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{writable()}{writable()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a60f04296e08b50fd04c36d8e48da974f} 
+ bool PIL.\+Container\+IO.\+Container\+IO.\+writable (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a7e3dd976db5271c4b06fb49c243bc234}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!write@{write}}
+\index{write@{write}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a7e3dd976db5271c4b06fb49c243bc234} 
+ No\+Return PIL.\+Container\+IO.\+Container\+IO.\+write (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Any\+Str}]{b}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a3ad4bcb5966f66039cb69612e2cc96ea}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!writelines@{writelines}}
+\index{writelines@{writelines}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{writelines()}{writelines()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a3ad4bcb5966f66039cb69612e2cc96ea} 
+ No\+Return PIL.\+Container\+IO.\+Container\+IO.\+writelines (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Iterable\+[Any\+Str]\+}]{lines}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_afe40face366ca45061f154d28eb4ed73}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!fh@{fh}}
+\index{fh@{fh}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{fh}{fh}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_afe40face366ca45061f154d28eb4ed73} 
+IO\+[Any\+Str]\+ PIL.\+Container\+IO.\+Container\+IO.\+fh = file}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ae2306c1c802448c44751f098a8ae55f9}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!length@{length}}
+\index{length@{length}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_ae2306c1c802448c44751f098a8ae55f9} 
+PIL.\+Container\+IO.\+Container\+IO.\+length = length}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a50de357582e95edf2e1a90eeabbe33ab}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!offset@{offset}}
+\index{offset@{offset}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a50de357582e95edf2e1a90eeabbe33ab} 
+PIL.\+Container\+IO.\+Container\+IO.\+offset = offset}
+
+\Hypertarget{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a38133e5244e83bf3b58483326713392f}\index{PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}!pos@{pos}}
+\index{pos@{pos}!PIL.ContainerIO.ContainerIO@{PIL.ContainerIO.ContainerIO}}
+\doxysubsubsection{\texorpdfstring{pos}{pos}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_container_i_o_1_1_container_i_o_a38133e5244e83bf3b58483326713392f} 
+PIL.\+Container\+IO.\+Container\+IO.\+pos = 0}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_container_i_o_8py}{Container\+IO.\+py}}\end{DoxyCompactItemize}

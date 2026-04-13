@@ -1,0 +1,304 @@
+\doxysection{PIL.\+Image.\+Exif Class Reference}
+\hypertarget{class_p_i_l_1_1_image_1_1_exif}{}\label{class_p_i_l_1_1_image_1_1_exif}\index{PIL.Image.Exif@{PIL.Image.Exif}}
+Inheritance diagram for PIL.\+Image.\+Exif:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_p_i_l_1_1_image_1_1_exif}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a6bde8dec63519d13213b0f0d02f9ae14}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_af76bcbb390565b462be632c2df5520e6}{load}} (self, bytes data)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a0a3a6c3f7187850d815d01c0ae330f57}{load\+\_\+from\+\_\+fp}} (self, IO\+[bytes]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a40050e379fe8ff948d0caae51c17e3a1}{fp}}, int\texorpdfstring{$\vert$}{|}None offset=None)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a80678bd9a0981eebf732fccc2992a825}{tobytes}} (self, int offset=8)
+\item 
+dict\+[int, Any]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a1ca2869a94fb38e633803997600ad9d1}{get\+\_\+ifd}} (self, int tag)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a85fd03893560ab0c3ff07d7bc1ae22c8}{hide\+\_\+offsets}} (self)
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a6d141db3a0dbe9020878ebb56bc2c2d7}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a8ddd4a7425fc8e98a6f64e46cd16da51}{\+\_\+\+\_\+len\+\_\+\+\_\+}} (self)
+\item 
+Any \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a486557be543ce4e096afda43e9edd599}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int tag)
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_afcdb808f3004518e162af811011d2945}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, object tag)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_ae8cb6e3cea6347f0afa0286e05d2514a}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, int tag, Any value)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a6d3d27438dc9a0a4d795787c3cf97cee}{\+\_\+\+\_\+delitem\+\_\+\+\_\+}} (self, int tag)
+\item 
+Iterator\+[int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a2f25dcec6c20ba1b607ef453c4e834fa}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+IO\+[bytes]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a40050e379fe8ff948d0caae51c17e3a1}{fp}}
+\item 
+IO\+[bytes]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a1508c9b68b69bc1d4842641cda34f728}{head}} = self.\+fp.\+read(8)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a2b0268142866f1bde9d0d3af4d7d3830}{endian}} = None
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_af417abe351eebc0908e5e9acdbbe6f37}{bigtiff}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Any \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a35c7a35505c0bd9ef6d68f329bb98e3f}{\+\_\+fixup}} (self, Any value)
+\item 
+dict\+[int, Any]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_af2e86bdf09cf310cfa640bfc044908df}{\+\_\+fixup\+\_\+dict}} (self, dict\+[int, Any]\+ src\+\_\+dict)
+\item 
+dict\+[int, Any]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a1022bc28b39258f966c219f325d09b9d}{\+\_\+get\+\_\+ifd\+\_\+dict}} (self, int offset, int\texorpdfstring{$\vert$}{|}None group=None)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a73f09e8a5fa72d0cf6a2ca3779112de8}{\+\_\+get\+\_\+head}} (self)
+\item 
+dict\+[int, Any]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_af4bc62f5e1fd44cab4465c20cdc19afd}{\+\_\+get\+\_\+merged\+\_\+dict}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a50627bebdf908ecad0690b30c1048952}{\+\_\+data}} = \{\}
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a111a111f865202489d3b764ddd72684d}{\+\_\+hidden\+\_\+data}} = \{\}
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a5dc7fb45ab7ea29852f133c91f1d5439}{\+\_\+ifds}} = \{\}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_image_file_directory__v2}{Tiff\+Image\+Plugin.\+Image\+File\+Directory\+\_\+v2}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a7fd0e972c85a16a3ec5d00f438bed83d}{\+\_\+info}} = None
+\item 
+bytes\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a252b6d76963915ec3f656a2469852cca}{\+\_\+loaded\+\_\+exif}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif_a82e45e70ae49dbac67cbeaae967fb313}{\+\_\+loaded}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class provides read and write access to EXIF image data::
+
+  from PIL import Image
+  im = Image.open("exif.png")
+  exif = im.getexif()  # Returns an instance of this class
+
+Information can be read and written, iterated over or deleted::
+
+  print(exif[274])  # 1
+  exif[274] = 2
+  for k, v in exif.items():
+    print("Tag", k, "Value", v)  # Tag 274 Value 2
+  del exif[274]
+
+To access information beyond IFD0, :py:meth:`~PIL.Image.Exif.get_ifd`
+returns a dictionary::
+
+  from PIL import ExifTags
+  im = Image.open("exif_gps.jpg")
+  exif = im.getexif()
+  gps_ifd = exif.get_ifd(ExifTags.IFD.GPSInfo)
+  print(gps_ifd)
+
+Other IFDs include ``ExifTags.IFD.Exif``, ``ExifTags.IFD.MakerNote``,
+``ExifTags.IFD.Interop`` and ``ExifTags.IFD.IFD1``.
+
+:py:mod:`~PIL.ExifTags` also has enum classes to provide names for data::
+
+  print(exif[ExifTags.Base.Software])  # PIL
+  print(gps_ifd[ExifTags.GPS.GPSDateStamp])  # 1999:99:99 99:99:99
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a6bde8dec63519d13213b0f0d02f9ae14}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a6bde8dec63519d13213b0f0d02f9ae14} 
+ None PIL.\+Image.\+Exif.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_afcdb808f3004518e162af811011d2945}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_afcdb808f3004518e162af811011d2945} 
+ bool PIL.\+Image.\+Exif.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{tag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a6d3d27438dc9a0a4d795787c3cf97cee}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_\_delitem\_\_@{\_\_delitem\_\_}}
+\index{\_\_delitem\_\_@{\_\_delitem\_\_}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_\_delitem\_\_()}{\_\_delitem\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a6d3d27438dc9a0a4d795787c3cf97cee} 
+ None PIL.\+Image.\+Exif.\+\_\+\+\_\+delitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{tag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a486557be543ce4e096afda43e9edd599}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a486557be543ce4e096afda43e9edd599} 
+ Any PIL.\+Image.\+Exif.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{tag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a2f25dcec6c20ba1b607ef453c4e834fa}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a2f25dcec6c20ba1b607ef453c4e834fa} 
+ Iterator\+[int]\+ PIL.\+Image.\+Exif.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a8ddd4a7425fc8e98a6f64e46cd16da51}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_\_len\_\_@{\_\_len\_\_}}
+\index{\_\_len\_\_@{\_\_len\_\_}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_\_len\_\_()}{\_\_len\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a8ddd4a7425fc8e98a6f64e46cd16da51} 
+ int PIL.\+Image.\+Exif.\+\_\+\+\_\+len\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_ae8cb6e3cea6347f0afa0286e05d2514a}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_ae8cb6e3cea6347f0afa0286e05d2514a} 
+ None PIL.\+Image.\+Exif.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{tag}{, }\item[{Any}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a6d141db3a0dbe9020878ebb56bc2c2d7}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a6d141db3a0dbe9020878ebb56bc2c2d7} 
+ str PIL.\+Image.\+Exif.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a35c7a35505c0bd9ef6d68f329bb98e3f}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_fixup@{\_fixup}}
+\index{\_fixup@{\_fixup}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_fixup()}{\_fixup()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a35c7a35505c0bd9ef6d68f329bb98e3f} 
+ Any PIL.\+Image.\+Exif.\+\_\+fixup (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Any}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_af2e86bdf09cf310cfa640bfc044908df}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_fixup\_dict@{\_fixup\_dict}}
+\index{\_fixup\_dict@{\_fixup\_dict}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_fixup\_dict()}{\_fixup\_dict()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_af2e86bdf09cf310cfa640bfc044908df} 
+ dict\+[int, Any]\+ PIL.\+Image.\+Exif.\+\_\+fixup\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{dict\+[int, Any]\+}]{src\+\_\+dict}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a73f09e8a5fa72d0cf6a2ca3779112de8}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_get\_head@{\_get\_head}}
+\index{\_get\_head@{\_get\_head}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_get\_head()}{\_get\_head()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a73f09e8a5fa72d0cf6a2ca3779112de8} 
+ bytes PIL.\+Image.\+Exif.\+\_\+get\+\_\+head (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a1022bc28b39258f966c219f325d09b9d}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_get\_ifd\_dict@{\_get\_ifd\_dict}}
+\index{\_get\_ifd\_dict@{\_get\_ifd\_dict}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_get\_ifd\_dict()}{\_get\_ifd\_dict()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a1022bc28b39258f966c219f325d09b9d} 
+ dict\+[int, Any]\+ \texorpdfstring{$\vert$}{|} None PIL.\+Image.\+Exif.\+\_\+get\+\_\+ifd\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{offset}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{group}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_af4bc62f5e1fd44cab4465c20cdc19afd}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_get\_merged\_dict@{\_get\_merged\_dict}}
+\index{\_get\_merged\_dict@{\_get\_merged\_dict}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_get\_merged\_dict()}{\_get\_merged\_dict()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_af4bc62f5e1fd44cab4465c20cdc19afd} 
+ dict\+[int, Any]\+ PIL.\+Image.\+Exif.\+\_\+get\+\_\+merged\+\_\+dict (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a1ca2869a94fb38e633803997600ad9d1}\index{PIL.Image.Exif@{PIL.Image.Exif}!get\_ifd@{get\_ifd}}
+\index{get\_ifd@{get\_ifd}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{get\_ifd()}{get\_ifd()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a1ca2869a94fb38e633803997600ad9d1} 
+ dict\+[int, Any]\+ PIL.\+Image.\+Exif.\+get\+\_\+ifd (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{tag}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a85fd03893560ab0c3ff07d7bc1ae22c8}\index{PIL.Image.Exif@{PIL.Image.Exif}!hide\_offsets@{hide\_offsets}}
+\index{hide\_offsets@{hide\_offsets}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{hide\_offsets()}{hide\_offsets()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a85fd03893560ab0c3ff07d7bc1ae22c8} 
+ None PIL.\+Image.\+Exif.\+hide\+\_\+offsets (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_af76bcbb390565b462be632c2df5520e6}\index{PIL.Image.Exif@{PIL.Image.Exif}!load@{load}}
+\index{load@{load}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_af76bcbb390565b462be632c2df5520e6} 
+ None PIL.\+Image.\+Exif.\+load (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes}]{data}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a0a3a6c3f7187850d815d01c0ae330f57}\index{PIL.Image.Exif@{PIL.Image.Exif}!load\_from\_fp@{load\_from\_fp}}
+\index{load\_from\_fp@{load\_from\_fp}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{load\_from\_fp()}{load\_from\_fp()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a0a3a6c3f7187850d815d01c0ae330f57} 
+ None PIL.\+Image.\+Exif.\+load\+\_\+from\+\_\+fp (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IO\+[bytes]\+}]{fp}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{offset}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a80678bd9a0981eebf732fccc2992a825}\index{PIL.Image.Exif@{PIL.Image.Exif}!tobytes@{tobytes}}
+\index{tobytes@{tobytes}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{tobytes()}{tobytes()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a80678bd9a0981eebf732fccc2992a825} 
+ bytes PIL.\+Image.\+Exif.\+tobytes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{offset}{ = {\ttfamily 8}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a50627bebdf908ecad0690b30c1048952}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_data@{\_data}}
+\index{\_data@{\_data}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a50627bebdf908ecad0690b30c1048952} 
+PIL.\+Image.\+Exif.\+\_\+data = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a111a111f865202489d3b764ddd72684d}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_hidden\_data@{\_hidden\_data}}
+\index{\_hidden\_data@{\_hidden\_data}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_hidden\_data}{\_hidden\_data}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a111a111f865202489d3b764ddd72684d} 
+dict PIL.\+Image.\+Exif.\+\_\+hidden\+\_\+data = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a5dc7fb45ab7ea29852f133c91f1d5439}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_ifds@{\_ifds}}
+\index{\_ifds@{\_ifds}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_ifds}{\_ifds}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a5dc7fb45ab7ea29852f133c91f1d5439} 
+dict PIL.\+Image.\+Exif.\+\_\+ifds = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a7fd0e972c85a16a3ec5d00f438bed83d}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_info@{\_info}}
+\index{\_info@{\_info}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_info}{\_info}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a7fd0e972c85a16a3ec5d00f438bed83d} 
+PIL.\+Image.\+Exif.\+\_\+info = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a82e45e70ae49dbac67cbeaae967fb313}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_loaded@{\_loaded}}
+\index{\_loaded@{\_loaded}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_loaded}{\_loaded}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a82e45e70ae49dbac67cbeaae967fb313} 
+bool PIL.\+Image.\+Exif.\+\_\+loaded = False\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a252b6d76963915ec3f656a2469852cca}\index{PIL.Image.Exif@{PIL.Image.Exif}!\_loaded\_exif@{\_loaded\_exif}}
+\index{\_loaded\_exif@{\_loaded\_exif}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{\_loaded\_exif}{\_loaded\_exif}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a252b6d76963915ec3f656a2469852cca} 
+bytes \texorpdfstring{$\vert$}{|} None PIL.\+Image.\+Exif.\+\_\+loaded\+\_\+exif = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_af417abe351eebc0908e5e9acdbbe6f37}\index{PIL.Image.Exif@{PIL.Image.Exif}!bigtiff@{bigtiff}}
+\index{bigtiff@{bigtiff}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{bigtiff}{bigtiff}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_af417abe351eebc0908e5e9acdbbe6f37} 
+bool PIL.\+Image.\+Exif.\+bigtiff = False\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a2b0268142866f1bde9d0d3af4d7d3830}\index{PIL.Image.Exif@{PIL.Image.Exif}!endian@{endian}}
+\index{endian@{endian}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{endian}{endian}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a2b0268142866f1bde9d0d3af4d7d3830} 
+str PIL.\+Image.\+Exif.\+endian = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a40050e379fe8ff948d0caae51c17e3a1}\index{PIL.Image.Exif@{PIL.Image.Exif}!fp@{fp}}
+\index{fp@{fp}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{fp}{fp}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a40050e379fe8ff948d0caae51c17e3a1} 
+PIL.\+Image.\+Exif.\+fp}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_exif_a1508c9b68b69bc1d4842641cda34f728}\index{PIL.Image.Exif@{PIL.Image.Exif}!head@{head}}
+\index{head@{head}!PIL.Image.Exif@{PIL.Image.Exif}}
+\doxysubsubsection{\texorpdfstring{head}{head}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_exif_a1508c9b68b69bc1d4842641cda34f728} 
+IO\+[bytes]\+ PIL.\+Image.\+Exif.\+head = self.\+fp.\+read(8)}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_8py}{Image.\+py}}\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\doxysection{pip.\+\_\+internal.\+metadata.\+base Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1metadata_1_1base}{}\label{namespacepip_1_1__internal_1_1metadata_1_1base}\index{pip.\_internal.metadata.base@{pip.\_internal.metadata.base}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_base_entry_point}{Base\+Entry\+Point}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_requires_entry}{Requires\+Entry}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_base_distribution}{Base\+Distribution}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_base_environment}{Base\+Environment}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_wheel}{Wheel}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_filesystem_wheel}{Filesystem\+Wheel}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1metadata_1_1base_1_1_memory_wheel}{Memory\+Wheel}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_1_1base_a5bb98a7afc297d8d7610f1fd4308ae6f}{\+\_\+convert\+\_\+installed\+\_\+files\+\_\+path}} (Tuple\+[str,...]\+ entry, Tuple\+[str,...]\+ info)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_1_1base_aae0fa12692e86d93d1bceee5f24f605f}{Protocol}} = object
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_1_1base_a4e3aee58a8b3eb8f14cb6e1a23281596}{Distribution\+Version}} = Union\+[\doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1version_1_1_legacy_version}{Legacy\+Version}}, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1version_1_1_version}{Version}}]\+
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_1_1base_a44c915c62e2695ba350e58a9fcfd012c}{Info\+Path}} = Union\+[str, pathlib.\+Pure\+Path]\+
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1metadata_1_1base_a4ca459210efac1408a1566f4966d2558}{logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1metadata_1_1base_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1metadata_1_1base_a5bb98a7afc297d8d7610f1fd4308ae6f}\index{pip.\_internal.metadata.base@{pip.\_internal.metadata.base}!\_convert\_installed\_files\_path@{\_convert\_installed\_files\_path}}
+\index{\_convert\_installed\_files\_path@{\_convert\_installed\_files\_path}!pip.\_internal.metadata.base@{pip.\_internal.metadata.base}}
+\doxysubsubsection{\texorpdfstring{\_convert\_installed\_files\_path()}{\_convert\_installed\_files\_path()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1metadata_1_1base_a5bb98a7afc297d8d7610f1fd4308ae6f} 
+ str pip.\+\_\+internal.\+metadata.\+base.\+\_\+convert\+\_\+installed\+\_\+files\+\_\+path (\begin{DoxyParamCaption}\item[{Tuple\+[str, ...]\+}]{entry}{, }\item[{Tuple\+[str, ...]\+}]{info}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Convert a legacy installed-files.txt path into modern RECORD path.
+
+The legacy format stores paths relative to the info directory, while the
+modern format stores paths relative to the package root, e.g. the
+site-packages directory.
+
+:param entry: Path parts of the installed-files.txt entry.
+:param info: Path parts of the egg-info directory relative to package root.
+:returns: The converted entry.
+
+For best compatibility with symlinks, this does not use ``abspath()`` or
+``Path.resolve()``, but tries to work with path parts:
+
+1. While ``entry`` starts with ``..``, remove the equal amounts of parts
+   from ``info``; if ``info`` is empty, start appending ``..`` instead.
+2. Join the two directly.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1metadata_1_1base_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1metadata_1_1base_a4e3aee58a8b3eb8f14cb6e1a23281596}\index{pip.\_internal.metadata.base@{pip.\_internal.metadata.base}!DistributionVersion@{DistributionVersion}}
+\index{DistributionVersion@{DistributionVersion}!pip.\_internal.metadata.base@{pip.\_internal.metadata.base}}
+\doxysubsubsection{\texorpdfstring{DistributionVersion}{DistributionVersion}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1metadata_1_1base_a4e3aee58a8b3eb8f14cb6e1a23281596} 
+pip.\+\_\+internal.\+metadata.\+base.\+Distribution\+Version = Union\+[\doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1version_1_1_legacy_version}{Legacy\+Version}}, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1version_1_1_version}{Version}}]\+}
+
+\Hypertarget{namespacepip_1_1__internal_1_1metadata_1_1base_a44c915c62e2695ba350e58a9fcfd012c}\index{pip.\_internal.metadata.base@{pip.\_internal.metadata.base}!InfoPath@{InfoPath}}
+\index{InfoPath@{InfoPath}!pip.\_internal.metadata.base@{pip.\_internal.metadata.base}}
+\doxysubsubsection{\texorpdfstring{InfoPath}{InfoPath}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1metadata_1_1base_a44c915c62e2695ba350e58a9fcfd012c} 
+pip.\+\_\+internal.\+metadata.\+base.\+Info\+Path = Union\+[str, pathlib.\+Pure\+Path]\+}
+
+\Hypertarget{namespacepip_1_1__internal_1_1metadata_1_1base_a4ca459210efac1408a1566f4966d2558}\index{pip.\_internal.metadata.base@{pip.\_internal.metadata.base}!logger@{logger}}
+\index{logger@{logger}!pip.\_internal.metadata.base@{pip.\_internal.metadata.base}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1metadata_1_1base_a4ca459210efac1408a1566f4966d2558} 
+pip.\+\_\+internal.\+metadata.\+base.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+
+\Hypertarget{namespacepip_1_1__internal_1_1metadata_1_1base_aae0fa12692e86d93d1bceee5f24f605f}\index{pip.\_internal.metadata.base@{pip.\_internal.metadata.base}!Protocol@{Protocol}}
+\index{Protocol@{Protocol}!pip.\_internal.metadata.base@{pip.\_internal.metadata.base}}
+\doxysubsubsection{\texorpdfstring{Protocol}{Protocol}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1metadata_1_1base_aae0fa12692e86d93d1bceee5f24f605f} 
+pip.\+\_\+internal.\+metadata.\+base.\+Protocol = object}
+

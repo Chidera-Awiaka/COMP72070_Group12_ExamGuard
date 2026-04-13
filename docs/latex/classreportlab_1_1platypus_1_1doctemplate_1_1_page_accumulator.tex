@@ -1,0 +1,144 @@
+\doxysection{reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator Class Reference}
+\hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator}{}\label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_aa872abbe2e5804412e5de8070d5cb484}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a9e870cfa597c8b10e10693643b65042f}{name}}=None)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_aa8dcad4b645505bdb6720fd021223430}{reset}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a2568bdca49a413d204b7c55ccdc81570}{add}} (self, \texorpdfstring{$\ast$}{*}args)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_afa66bd7828ab9c955dd60eaf2fc67070}{on\+Draw\+Text}} (self, \texorpdfstring{$\ast$}{*}args)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a5769e845d2317d53e192eca687c3f345}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, canv, kind, label)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_af7cc536eaba81f0cdef539e68f5c3030}{attach\+To\+Page\+Template}} (self, pt)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a42ffbdd54810abfad539620f50fbd06c}{on\+Page}} (self, canv, doc)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_ae78da0b884e25256a30fd1420273997b}{on\+Page\+End}} (self, canv, doc)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a0af87417479294a8f8fddd43d81ec810}{page\+End\+Action}} (self, canv, doc)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a24e046f763275bfe352f707e504b0e1d}{on\+Draw\+Str}} (self, value, \texorpdfstring{$\ast$}{*}args)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a9e870cfa597c8b10e10693643b65042f}{name}} = name
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a1522a631e8e9d3c2750de94f59ef0e78}{data}} = \+[$\,$]\+
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a2a425dd59703bfa533737f3e63a8d7ee}{\+\_\+count}} = 0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}gadget to accumulate information in a page
+and then allow it to be interrogated at the end
+of the page\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_aa872abbe2e5804412e5de8070d5cb484}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_aa872abbe2e5804412e5de8070d5cb484} 
+reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a5769e845d2317d53e192eca687c3f345}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a5769e845d2317d53e192eca687c3f345} 
+reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{canv}{, }\item[{}]{kind}{, }\item[{}]{label}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a2568bdca49a413d204b7c55ccdc81570}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}!add@{add}}
+\index{add@{add}!reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a2568bdca49a413d204b7c55ccdc81570} 
+reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator.\+add (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_af7cc536eaba81f0cdef539e68f5c3030}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}!attachToPageTemplate@{attachToPageTemplate}}
+\index{attachToPageTemplate@{attachToPageTemplate}!reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection{\texorpdfstring{attachToPageTemplate()}{attachToPageTemplate()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_af7cc536eaba81f0cdef539e68f5c3030} 
+reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator.\+attach\+To\+Page\+Template (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{pt}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a24e046f763275bfe352f707e504b0e1d}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}!onDrawStr@{onDrawStr}}
+\index{onDrawStr@{onDrawStr}!reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection{\texorpdfstring{onDrawStr()}{onDrawStr()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a24e046f763275bfe352f707e504b0e1d} 
+reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator.\+on\+Draw\+Str (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{value}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_afa66bd7828ab9c955dd60eaf2fc67070}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}!onDrawText@{onDrawText}}
+\index{onDrawText@{onDrawText}!reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection{\texorpdfstring{onDrawText()}{onDrawText()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_afa66bd7828ab9c955dd60eaf2fc67070} 
+reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator.\+on\+Draw\+Text (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a42ffbdd54810abfad539620f50fbd06c}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}!onPage@{onPage}}
+\index{onPage@{onPage}!reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection{\texorpdfstring{onPage()}{onPage()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a42ffbdd54810abfad539620f50fbd06c} 
+reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator.\+on\+Page (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{canv}{, }\item[{}]{doc}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}this will be called at the start of the page\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_ae78da0b884e25256a30fd1420273997b}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}!onPageEnd@{onPageEnd}}
+\index{onPageEnd@{onPageEnd}!reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection{\texorpdfstring{onPageEnd()}{onPageEnd()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_ae78da0b884e25256a30fd1420273997b} 
+reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator.\+on\+Page\+End (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{canv}{, }\item[{}]{doc}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}this will be called at the end of a page\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a0af87417479294a8f8fddd43d81ec810}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}!pageEndAction@{pageEndAction}}
+\index{pageEndAction@{pageEndAction}!reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection{\texorpdfstring{pageEndAction()}{pageEndAction()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a0af87417479294a8f8fddd43d81ec810} 
+reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator.\+page\+End\+Action (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{canv}{, }\item[{}]{doc}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}this should be overridden to do something useful\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_aa8dcad4b645505bdb6720fd021223430}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}!reset@{reset}}
+\index{reset@{reset}!reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_aa8dcad4b645505bdb6720fd021223430} 
+reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator.\+reset (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a2a425dd59703bfa533737f3e63a8d7ee}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}!\_count@{\_count}}
+\index{\_count@{\_count}!reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection{\texorpdfstring{\_count}{\_count}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a2a425dd59703bfa533737f3e63a8d7ee} 
+int reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator.\+\_\+count = 0\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a1522a631e8e9d3c2750de94f59ef0e78}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}!data@{data}}
+\index{data@{data}!reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a1522a631e8e9d3c2750de94f59ef0e78} 
+list reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator.\+data = \+[$\,$]\+}
+
+\Hypertarget{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a9e870cfa597c8b10e10693643b65042f}\index{reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}!name@{name}}
+\index{name@{name}!reportlab.platypus.doctemplate.PageAccumulator@{reportlab.platypus.doctemplate.PageAccumulator}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classreportlab_1_1platypus_1_1doctemplate_1_1_page_accumulator_a9e870cfa597c8b10e10693643b65042f} 
+reportlab.\+platypus.\+doctemplate.\+Page\+Accumulator.\+name = name}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+platypus/\+\doxymbox{\hyperlink{doctemplate_8py}{doctemplate.\+py}}\end{DoxyCompactItemize}

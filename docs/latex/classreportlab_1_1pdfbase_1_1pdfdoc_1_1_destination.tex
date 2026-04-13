@@ -1,0 +1,174 @@
+\doxysection{reportlab.\+pdfbase.\+pdfdoc.\+Destination Class Reference}
+\hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination}{}\label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+Inheritance diagram for reportlab.\+pdfbase.\+pdfdoc.\+Destination:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a1aa74fffc6a9addc4e72884f38067c7f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a3a9df02853233727ac40c908dcfa658e}{name}})
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a4b8e5dd5298e286b64a0b944a7af7757}{format}} (self, document)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a9e5ae131690d5bde988a7c49cfde1ebf}{xyz}} (self, left, top, zoom)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a168dacae01e27416af651df683751b42}{fit}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_aba6080e375a18943cc6228c362e39eb2}{fitb}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_ab4b2ec2b0c266c4f5b8c0cbdeb930875}{fith}} (self, top)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a423625973c1a142dd2e5379e8fe3b0c5}{fitv}} (self, left)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a12d1422d832974e20105ffcb6e59a5f2}{fitbh}} (self, top)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_ab8e3f6f5d0737c5c961a03137925ca5a}{fitbv}} (self, left)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_afb625ac87cbb659c19dae4a1047690cd}{fitr}} (self, left, bottom, right, top)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a9d72b879b9241db41a1ae20a5e786a22}{set\+Page}} (self, \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a7e3a8bdd1cedf6b7bee8ec38e625fd21}{page}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a3a9df02853233727ac40c908dcfa658e}{name}} = name
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a3f2dae7948c11b88605e304ce75a215e}{fmt}} = None
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a7e3a8bdd1cedf6b7bee8ec38e625fd21}{page}} = page
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a0d7187bfd0e567da37f0722451b12128}{representation}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}not a PDFObject!  This is a placeholder that can delegates
+to a pdf object only after it has been defined by the methods
+below.
+
+EG a Destination can refer to Appendix A before it has been
+defined, but only if Appendix A is explicitly noted as a destination
+and resolved before the document is generated...
+
+For example the following sequence causes resolution before doc generation.
+    d = Destination()
+    d.fit() # or other format defining method call
+    d.setPage(p)
+    (at present setPageRef is called on generation of the page).
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a1aa74fffc6a9addc4e72884f38067c7f}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a1aa74fffc6a9addc4e72884f38067c7f} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a168dacae01e27416af651df683751b42}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!fit@{fit}}
+\index{fit@{fit}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{fit()}{fit()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a168dacae01e27416af651df683751b42} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+fit (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_aba6080e375a18943cc6228c362e39eb2}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!fitb@{fitb}}
+\index{fitb@{fitb}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{fitb()}{fitb()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_aba6080e375a18943cc6228c362e39eb2} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+fitb (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a12d1422d832974e20105ffcb6e59a5f2}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!fitbh@{fitbh}}
+\index{fitbh@{fitbh}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{fitbh()}{fitbh()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a12d1422d832974e20105ffcb6e59a5f2} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+fitbh (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{top}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_ab8e3f6f5d0737c5c961a03137925ca5a}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!fitbv@{fitbv}}
+\index{fitbv@{fitbv}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{fitbv()}{fitbv()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_ab8e3f6f5d0737c5c961a03137925ca5a} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+fitbv (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{left}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_ab4b2ec2b0c266c4f5b8c0cbdeb930875}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!fith@{fith}}
+\index{fith@{fith}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{fith()}{fith()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_ab4b2ec2b0c266c4f5b8c0cbdeb930875} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+fith (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{top}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_afb625ac87cbb659c19dae4a1047690cd}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!fitr@{fitr}}
+\index{fitr@{fitr}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{fitr()}{fitr()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_afb625ac87cbb659c19dae4a1047690cd} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+fitr (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{left}{, }\item[{}]{bottom}{, }\item[{}]{right}{, }\item[{}]{top}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a423625973c1a142dd2e5379e8fe3b0c5}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!fitv@{fitv}}
+\index{fitv@{fitv}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{fitv()}{fitv()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a423625973c1a142dd2e5379e8fe3b0c5} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+fitv (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{left}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a4b8e5dd5298e286b64a0b944a7af7757}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!format@{format}}
+\index{format@{format}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a4b8e5dd5298e286b64a0b944a7af7757} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+format (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{document}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a9d72b879b9241db41a1ae20a5e786a22}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!setPage@{setPage}}
+\index{setPage@{setPage}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{setPage()}{setPage()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a9d72b879b9241db41a1ae20a5e786a22} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+set\+Page (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{page}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a9e5ae131690d5bde988a7c49cfde1ebf}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!xyz@{xyz}}
+\index{xyz@{xyz}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{xyz()}{xyz()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a9e5ae131690d5bde988a7c49cfde1ebf} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+xyz (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{left}{, }\item[{}]{top}{, }\item[{}]{zoom}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a3f2dae7948c11b88605e304ce75a215e}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!fmt@{fmt}}
+\index{fmt@{fmt}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{fmt}{fmt}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a3f2dae7948c11b88605e304ce75a215e} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+fmt = None}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a3a9df02853233727ac40c908dcfa658e}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!name@{name}}
+\index{name@{name}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a3a9df02853233727ac40c908dcfa658e} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+name = name}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a7e3a8bdd1cedf6b7bee8ec38e625fd21}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!page@{page}}
+\index{page@{page}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{page}{page}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a7e3a8bdd1cedf6b7bee8ec38e625fd21} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+page = page}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a0d7187bfd0e567da37f0722451b12128}\index{reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}!representation@{representation}}
+\index{representation@{representation}!reportlab.pdfbase.pdfdoc.Destination@{reportlab.pdfbase.pdfdoc.Destination}}
+\doxysubsubsection{\texorpdfstring{representation}{representation}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_destination_a0d7187bfd0e567da37f0722451b12128} 
+reportlab.\+pdfbase.\+pdfdoc.\+Destination.\+representation = None\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+pdfbase/\+\doxymbox{\hyperlink{pdfdoc_8py}{pdfdoc.\+py}}\end{DoxyCompactItemize}

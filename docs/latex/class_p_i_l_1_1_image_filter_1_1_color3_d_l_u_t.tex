@@ -1,0 +1,187 @@
+\doxysection{PIL.\+Image\+Filter.\+Color3\+DLUT Class Reference}
+\hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t}{}\label{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t}\index{PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}}
+Inheritance diagram for PIL.\+Image\+Filter.\+Color3\+DLUT:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a66c8a3860decc5bbfaffa30b2c39cde0}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int\texorpdfstring{$\vert$}{|}tuple\+[int, int, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a6f1455a0cd9d5a278b562221c644eb10}{size}}, Sequence\+[float]\+\texorpdfstring{$\vert$}{|}Sequence\+[Sequence\+[int]\+]\+\texorpdfstring{$\vert$}{|}Numpy\+Array \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_ade914f188474259b4692b1c71dc21299}{table}}, int \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_ae16d7d5a5d629353976dd429bf672cb6}{channels}}=3, str\texorpdfstring{$\vert$}{|}None target\+\_\+mode=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}bool kwargs)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t}{Color3\+DLUT}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a2e2830c1a5b7e6758f4cc0909e8315f3}{generate}} (cls, int\texorpdfstring{$\vert$}{|}tuple\+[int, int, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a6f1455a0cd9d5a278b562221c644eb10}{size}}, Callable\+[\+[float, float, float]\+, tuple\+[float,...]\+]\+ callback, int \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_ae16d7d5a5d629353976dd429bf672cb6}{channels}}=3, str\texorpdfstring{$\vert$}{|}None target\+\_\+mode=None)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t}{Color3\+DLUT}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a17e4396150ef46633c7eb45e59d23373}{transform}} (self, Callable\+[..., tuple\+[float,...]\+]\+ callback, bool with\+\_\+normals=False, int\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_ae16d7d5a5d629353976dd429bf672cb6}{channels}}=None, str\texorpdfstring{$\vert$}{|}None target\+\_\+mode=None)
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_ac6c165c45bf67b95565cf5e381ab1a23}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\+\_\+imaging.\+Imaging\+Core \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a0f108fe8d4fcaca022e3b268678166a9}{filter}} (self, \+\_\+imaging.\+Imaging\+Core image)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple\+[int, int, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a6f1455a0cd9d5a278b562221c644eb10}{size}} = self.\+\_\+check\+\_\+size(size)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_ae16d7d5a5d629353976dd429bf672cb6}{channels}} = channels
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a119ca47fe478502de4e1aa982bf26271}{mode}} = target\+\_\+mode
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_ade914f188474259b4692b1c71dc21299}{table}} = table
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a926d09561566b41b92b668f07421b9af}{name}} = "{}Color 3D LUT"{}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+tuple\+[int, int, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a7d5580cf88d91586a048fc1e0705187f}{\+\_\+check\+\_\+size}} (Any \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a6f1455a0cd9d5a278b562221c644eb10}{size}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Three-dimensional color lookup table.
+
+Transforms 3-channel pixels using the values of the channels as coordinates
+in the 3D lookup table and interpolating the nearest elements.
+
+This method allows you to apply almost any color transformation
+in constant time by using pre-calculated decimated tables.
+
+.. versionadded:: 5.2.0
+
+:param size: Size of the table. One int or tuple of (int, int, int).
+             Minimal size in any dimension is 2, maximum is 65.
+:param table: Flat lookup table. A list of ``channels * size**3``
+              float elements or a list of ``size**3`` channels-sized
+              tuples with floats. Channels are changed first,
+              then first dimension, then second, then third.
+              Value 0.0 corresponds lowest value of output, 1.0 highest.
+:param channels: Number of channels in the table. Could be 3 or 4.
+                 Default is 3.
+:param target_mode: A mode for the result image. Should have not less
+                    than ``channels`` channels. Default is ``None``,
+                    which means that mode wouldn't be changed.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a66c8a3860decc5bbfaffa30b2c39cde0}\index{PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a66c8a3860decc5bbfaffa30b2c39cde0} 
+ None PIL.\+Image\+Filter.\+Color3\+DLUT.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} tuple\+[int, int, int]\+}]{size}{, }\item[{Sequence\+[float]\+ \texorpdfstring{$\vert$}{|} Sequence\+[Sequence\+[int]\+]\+ \texorpdfstring{$\vert$}{|} Numpy\+Array}]{table}{, }\item[{int }]{channels}{ = {\ttfamily 3}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{target\+\_\+mode}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}bool}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_ac6c165c45bf67b95565cf5e381ab1a23}\index{PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_ac6c165c45bf67b95565cf5e381ab1a23} 
+ str PIL.\+Image\+Filter.\+Color3\+DLUT.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a7d5580cf88d91586a048fc1e0705187f}\index{PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}!\_check\_size@{\_check\_size}}
+\index{\_check\_size@{\_check\_size}!PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}}
+\doxysubsubsection{\texorpdfstring{\_check\_size()}{\_check\_size()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a7d5580cf88d91586a048fc1e0705187f} 
+ tuple\+[int, int, int]\+ PIL.\+Image\+Filter.\+Color3\+DLUT.\+\_\+check\+\_\+size (\begin{DoxyParamCaption}\item[{Any}]{size}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a0f108fe8d4fcaca022e3b268678166a9}\index{PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}!filter@{filter}}
+\index{filter@{filter}!PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a0f108fe8d4fcaca022e3b268678166a9} 
+ \+\_\+imaging.\+Imaging\+Core PIL.\+Image\+Filter.\+Color3\+DLUT.\+filter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\+\_\+imaging.\+Imaging\+Core}]{image}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_filter_a238761d404ab92d2c7ad5bc6ecdc397f}{PIL.\+Image\+Filter.\+Filter}}.
+
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a2e2830c1a5b7e6758f4cc0909e8315f3}\index{PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}!generate@{generate}}
+\index{generate@{generate}!PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}}
+\doxysubsubsection{\texorpdfstring{generate()}{generate()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a2e2830c1a5b7e6758f4cc0909e8315f3} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t}{Color3\+DLUT}} PIL.\+Image\+Filter.\+Color3\+DLUT.\+generate (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{int \texorpdfstring{$\vert$}{|} tuple\+[int, int, int]\+}]{size}{, }\item[{Callable\+[\+[float, float, float]\+, tuple\+[float, ...]\+]\+}]{callback}{, }\item[{int }]{channels}{ = {\ttfamily 3}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{target\+\_\+mode}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generates new LUT using provided callback.
+
+:param size: Size of the table. Passed to the constructor.
+:param callback: Function with three parameters which correspond
+                 three color channels. Will be called ``size**3``
+                 times with values from 0.0 to 1.0 and should return
+                 a tuple with ``channels`` elements.
+:param channels: The number of channels which should return callback.
+:param target_mode: Passed to the constructor of the resulting
+                    lookup table.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a17e4396150ef46633c7eb45e59d23373}\index{PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}!transform@{transform}}
+\index{transform@{transform}!PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a17e4396150ef46633c7eb45e59d23373} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t}{Color3\+DLUT}} PIL.\+Image\+Filter.\+Color3\+DLUT.\+transform (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Callable\+[..., tuple\+[float, ...]\+]\+}]{callback}{, }\item[{bool }]{with\+\_\+normals}{ = {\ttfamily False}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{channels}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{target\+\_\+mode}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Transforms the table values using provided callback and returns
+a new LUT with altered values.
+
+:param callback: A function which takes old lookup table values
+                 and returns a new set of values. The number
+                 of arguments which function should take is
+                 ``self.channels`` or ``3 + self.channels``
+                 if ``with_normals`` flag is set.
+                 Should return a tuple of ``self.channels`` or
+                 ``channels`` elements if it is set.
+:param with_normals: If true, ``callback`` will be called with
+                     coordinates in the color cube as the first
+                     three arguments. Otherwise, ``callback``
+                     will be called only with actual color values.
+:param channels: The number of channels in the resulting lookup table.
+:param target_mode: Passed to the constructor of the resulting
+                    lookup table.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_ae16d7d5a5d629353976dd429bf672cb6}\index{PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}!channels@{channels}}
+\index{channels@{channels}!PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}}
+\doxysubsubsection{\texorpdfstring{channels}{channels}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_ae16d7d5a5d629353976dd429bf672cb6} 
+PIL.\+Image\+Filter.\+Color3\+DLUT.\+channels = channels}
+
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a119ca47fe478502de4e1aa982bf26271}\index{PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}!mode@{mode}}
+\index{mode@{mode}!PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a119ca47fe478502de4e1aa982bf26271} 
+PIL.\+Image\+Filter.\+Color3\+DLUT.\+mode = target\+\_\+mode}
+
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a926d09561566b41b92b668f07421b9af}\index{PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}!name@{name}}
+\index{name@{name}!PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a926d09561566b41b92b668f07421b9af} 
+str PIL.\+Image\+Filter.\+Color3\+DLUT.\+name = "{}Color 3D LUT"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a6f1455a0cd9d5a278b562221c644eb10}\index{PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}!size@{size}}
+\index{size@{size}!PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_a6f1455a0cd9d5a278b562221c644eb10} 
+PIL.\+Image\+Filter.\+Color3\+DLUT.\+size = self.\+\_\+check\+\_\+size(size)}
+
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_ade914f188474259b4692b1c71dc21299}\index{PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}!table@{table}}
+\index{table@{table}!PIL.ImageFilter.Color3DLUT@{PIL.ImageFilter.Color3DLUT}}
+\doxysubsubsection{\texorpdfstring{table}{table}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_color3_d_l_u_t_ade914f188474259b4692b1c71dc21299} 
+PIL.\+Image\+Filter.\+Color3\+DLUT.\+table = table}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_filter_8py}{Image\+Filter.\+py}}\end{DoxyCompactItemize}

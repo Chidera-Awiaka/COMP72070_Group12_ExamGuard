@@ -1,0 +1,48 @@
+\doxysection{exam\+\_\+files/\+venv/\+lib/\+python3.12/\+site-\/packages/\+pip/\+\+\_\+internal/\+index/\+package\+\_\+finder.py File Reference}
+\hypertarget{package__finder_8py}{}\label{package__finder_8py}\index{exam\_files/venv/lib/python3.12/site-\/packages/pip/\_internal/index/package\_finder.py@{exam\_files/venv/lib/python3.12/site-\/packages/pip/\_internal/index/package\_finder.py}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_type}{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Link\+Type}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_link_evaluator}{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Link\+Evaluator}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_preferences}{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Candidate\+Preferences}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_best_candidate_result}{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Best\+Candidate\+Result}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_candidate_evaluator}{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Candidate\+Evaluator}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_package_finder}{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Package\+Finder}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip}{pip}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal}{pip.\+\_\+internal}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1index}{pip.\+\_\+internal.\+index}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder}{pip.\+\_\+internal.\+index.\+package\+\_\+finder}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder_a44692bf2dcc15d7f206d270a422455ce}{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+\_\+check\+\_\+link\+\_\+requires\+\_\+python}} (\doxymbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} link, Tuple\+[int, int, int]\+ version\+\_\+info, bool ignore\+\_\+requires\+\_\+python=False)
+\item 
+List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1models_1_1candidate_1_1_installation_candidate}{Installation\+Candidate}}]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder_a876e1cd4452e3f990efec7ab27b703a5}{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+filter\+\_\+unallowed\+\_\+hashes}} (List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1models_1_1candidate_1_1_installation_candidate}{Installation\+Candidate}}]\+ candidates, Optional\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1utils_1_1hashes_1_1_hashes}{Hashes}}]\+ hashes, str project\+\_\+name)
+\item 
+int \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder_a9a5e4d6fc63d9853dcac2e44a4596f1b}{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+\_\+find\+\_\+name\+\_\+version\+\_\+sep}} (str fragment, str canonical\+\_\+name)
+\item 
+Optional\+[str]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder_a3b584dafae114c4d615017417606cee3}{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+\_\+extract\+\_\+version\+\_\+from\+\_\+fragment}} (str fragment, str canonical\+\_\+name)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder_a230f7eba264091230ab47832046fc2f5}{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+logger}} = get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder_a6e43cd6584e1508c9578cad30e0fdc2a}{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Build\+Tag}} = Union\+[Tuple\+[()]\+, Tuple\+[int, str]\+]\+
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder_a8c4b6db75eb88d67a055ab321dd6ec30}{pip.\+\_\+internal.\+index.\+package\+\_\+finder.\+Candidate\+Sorting\+Key}} = Tuple\+[int, int, int, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1version_1_1___base_version}{\+\_\+\+Base\+Version}}, Optional\+[int]\+, \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1index_1_1package__finder_a6e43cd6584e1508c9578cad30e0fdc2a}{Build\+Tag}}]\+
+\end{DoxyCompactItemize}

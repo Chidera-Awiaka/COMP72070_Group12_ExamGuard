@@ -1,0 +1,91 @@
+\doxysection{pip.\+\_\+vendor.\+typing\+\_\+extensions.\+New\+Type Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type}{}\label{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type}\index{pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a11939da94e0430e6dff1b24753182f81}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, obj)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a4aa879d9a749035928b5f91ec0e72440}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, name, tp)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a2246a93cd407b3ee820fd92473e383a7}{\+\_\+\+\_\+mro\+\_\+entries\+\_\+\+\_\+}} (self, bases)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_ab033f2e83ed8f27d3fed6e47fac671af}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a3a2298b3c430e8ae81c681a829347f24}{\+\_\+\+\_\+reduce\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a0819613b46fd8af079ba8ae7e3c115d3}{\+\_\+\+\_\+or\+\_\+\+\_\+}} (self, other)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_afdb80248f2134b6b2a47937c1ac658c4}{\+\_\+\+\_\+ror\+\_\+\+\_\+}} (self, other)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}NewType creates simple unique types with almost zero
+runtime overhead. NewType(name, tp) is considered a subtype of tp
+by static type checkers. At runtime, NewType(name, tp) returns
+a dummy callable that simply returns its argument. Usage::
+    UserId = NewType('UserId', int)
+    def name_by_id(user_id: UserId) -> str:
+        ...
+    UserId('user')          # Fails type check
+    name_by_id(42)          # Fails type check
+    name_by_id(UserId(42))  # OK
+    num = UserId(5) + 1     # type: int
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a4aa879d9a749035928b5f91ec0e72440}\index{pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a4aa879d9a749035928b5f91ec0e72440} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+New\+Type.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{tp}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a11939da94e0430e6dff1b24753182f81}\index{pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a11939da94e0430e6dff1b24753182f81} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+New\+Type.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{obj}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a2246a93cd407b3ee820fd92473e383a7}\index{pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}!\_\_mro\_entries\_\_@{\_\_mro\_entries\_\_}}
+\index{\_\_mro\_entries\_\_@{\_\_mro\_entries\_\_}!pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}}
+\doxysubsubsection{\texorpdfstring{\_\_mro\_entries\_\_()}{\_\_mro\_entries\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a2246a93cd407b3ee820fd92473e383a7} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+New\+Type.\+\_\+\+\_\+mro\+\_\+entries\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{bases}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a0819613b46fd8af079ba8ae7e3c115d3}\index{pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}!\_\_or\_\_@{\_\_or\_\_}}
+\index{\_\_or\_\_@{\_\_or\_\_}!pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}}
+\doxysubsubsection{\texorpdfstring{\_\_or\_\_()}{\_\_or\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a0819613b46fd8af079ba8ae7e3c115d3} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+New\+Type.\+\_\+\+\_\+or\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a3a2298b3c430e8ae81c681a829347f24}\index{pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}!\_\_reduce\_\_@{\_\_reduce\_\_}}
+\index{\_\_reduce\_\_@{\_\_reduce\_\_}!pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}}
+\doxysubsubsection{\texorpdfstring{\_\_reduce\_\_()}{\_\_reduce\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_a3a2298b3c430e8ae81c681a829347f24} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+New\+Type.\+\_\+\+\_\+reduce\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_ab033f2e83ed8f27d3fed6e47fac671af}\index{pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_ab033f2e83ed8f27d3fed6e47fac671af} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+New\+Type.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_afdb80248f2134b6b2a47937c1ac658c4}\index{pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}!\_\_ror\_\_@{\_\_ror\_\_}}
+\index{\_\_ror\_\_@{\_\_ror\_\_}!pip.\_vendor.typing\_extensions.NewType@{pip.\_vendor.typing\_extensions.NewType}}
+\doxysubsubsection{\texorpdfstring{\_\_ror\_\_()}{\_\_ror\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_new_type_afdb80248f2134b6b2a47937c1ac658c4} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+New\+Type.\+\_\+\+\_\+ror\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+\doxymbox{\hyperlink{typing__extensions_8py}{typing\+\_\+extensions.\+py}}\end{DoxyCompactItemize}

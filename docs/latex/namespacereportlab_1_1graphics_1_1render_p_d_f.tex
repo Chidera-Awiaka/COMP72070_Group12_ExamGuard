@@ -1,0 +1,84 @@
+\doxysection{reportlab.\+graphics.\+render\+PDF Namespace Reference}
+\hypertarget{namespacereportlab_1_1graphics_1_1render_p_d_f}{}\label{namespacereportlab_1_1graphics_1_1render_p_d_f}\index{reportlab.graphics.renderPDF@{reportlab.graphics.renderPDF}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1render_p_d_f_1_1___p_d_f_renderer}{\+\_\+\+PDFRenderer}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1render_p_d_f_1_1_graphics_flowable}{Graphics\+Flowable}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1render_p_d_f_a7a2fa53a7001e99a8740e75d15c36a20}{draw}} (drawing, canvas, x, y, show\+Boundary=rl\+\_\+config.\+\_\+unset\+\_\+)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1render_p_d_f_a19b613fffa9247a745f5669b8a9e3527}{draw\+To\+File}} (d, fn, msg="{}"{}, show\+Boundary=rl\+\_\+config.\+\_\+unset\+\_\+, auto\+Size=1, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1render_p_d_f_a9238cbb958f7399c7a43514d376fa5d1}{draw\+To\+String}} (d, msg="{}"{}, show\+Boundary=rl\+\_\+config.\+\_\+unset\+\_\+, auto\+Size=1, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1render_p_d_f_a320bbb53b300eef9c0d06118e00a5d57}{test}} (out\+Dir=\textquotesingle{}pdfout\textquotesingle{}, \doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1render_p_d_f_ae765807656af8cfcf93bda6ff85c17ca}{shout}}=False)
+\begin{DoxyCompactList}\small\item\em test code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1render_p_d_f_ae765807656af8cfcf93bda6ff85c17ca}{shout}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1render_p_d_f_ad978765baec4ef8ea5ef0e212a3ddef0}{outdir}} = sys.\+argv\+[1]\+
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1graphics_1_1render_p_d_f_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1graphics_1_1render_p_d_f_a7a2fa53a7001e99a8740e75d15c36a20}\index{reportlab.graphics.renderPDF@{reportlab.graphics.renderPDF}!draw@{draw}}
+\index{draw@{draw}!reportlab.graphics.renderPDF@{reportlab.graphics.renderPDF}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1render_p_d_f_a7a2fa53a7001e99a8740e75d15c36a20} 
+reportlab.\+graphics.\+render\+PDF.\+draw (\begin{DoxyParamCaption}\item[{}]{drawing}{, }\item[{}]{canvas}{, }\item[{}]{x}{, }\item[{}]{y}{, }\item[{}]{show\+Boundary}{ = {\ttfamily rl\+\_\+config.\+\_\+unset\+\_\+}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}As it says\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1graphics_1_1render_p_d_f_a19b613fffa9247a745f5669b8a9e3527}\index{reportlab.graphics.renderPDF@{reportlab.graphics.renderPDF}!drawToFile@{drawToFile}}
+\index{drawToFile@{drawToFile}!reportlab.graphics.renderPDF@{reportlab.graphics.renderPDF}}
+\doxysubsubsection{\texorpdfstring{drawToFile()}{drawToFile()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1render_p_d_f_a19b613fffa9247a745f5669b8a9e3527} 
+reportlab.\+graphics.\+render\+PDF.\+draw\+To\+File (\begin{DoxyParamCaption}\item[{}]{d}{, }\item[{}]{fn}{, }\item[{}]{msg}{ = {\ttfamily "{}"{}}, }\item[{}]{show\+Boundary}{ = {\ttfamily rl\+\_\+config.\+\_\+unset\+\_\+}, }\item[{}]{auto\+Size}{ = {\ttfamily 1}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Makes a one-page PDF with just the drawing.
+
+If autoSize=1, the PDF will be the same size as
+the drawing; if 0, it will place the drawing on
+an A4 page with a title above it - possibly overflowing
+if too big.\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1graphics_1_1render_p_d_f_a9238cbb958f7399c7a43514d376fa5d1}\index{reportlab.graphics.renderPDF@{reportlab.graphics.renderPDF}!drawToString@{drawToString}}
+\index{drawToString@{drawToString}!reportlab.graphics.renderPDF@{reportlab.graphics.renderPDF}}
+\doxysubsubsection{\texorpdfstring{drawToString()}{drawToString()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1render_p_d_f_a9238cbb958f7399c7a43514d376fa5d1} 
+reportlab.\+graphics.\+render\+PDF.\+draw\+To\+String (\begin{DoxyParamCaption}\item[{}]{d}{, }\item[{}]{msg}{ = {\ttfamily "{}"{}}, }\item[{}]{show\+Boundary}{ = {\ttfamily rl\+\_\+config.\+\_\+unset\+\_\+}, }\item[{}]{auto\+Size}{ = {\ttfamily 1}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1graphics_1_1render_p_d_f_a320bbb53b300eef9c0d06118e00a5d57}\index{reportlab.graphics.renderPDF@{reportlab.graphics.renderPDF}!test@{test}}
+\index{test@{test}!reportlab.graphics.renderPDF@{reportlab.graphics.renderPDF}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1render_p_d_f_a320bbb53b300eef9c0d06118e00a5d57} 
+reportlab.\+graphics.\+render\+PDF.\+test (\begin{DoxyParamCaption}\item[{}]{out\+Dir}{ = {\ttfamily \textquotesingle{}pdfout\textquotesingle{}}, }\item[{}]{shout}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+
+
+test code. 
+
+First, define a bunch of drawings. Routine to draw them comes at the end. 
+
+\label{doc-var-members}
+\Hypertarget{namespacereportlab_1_1graphics_1_1render_p_d_f_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacereportlab_1_1graphics_1_1render_p_d_f_ad978765baec4ef8ea5ef0e212a3ddef0}\index{reportlab.graphics.renderPDF@{reportlab.graphics.renderPDF}!outdir@{outdir}}
+\index{outdir@{outdir}!reportlab.graphics.renderPDF@{reportlab.graphics.renderPDF}}
+\doxysubsubsection{\texorpdfstring{outdir}{outdir}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1render_p_d_f_ad978765baec4ef8ea5ef0e212a3ddef0} 
+str reportlab.\+graphics.\+render\+PDF.\+outdir = sys.\+argv\+[1]\+}
+
+\Hypertarget{namespacereportlab_1_1graphics_1_1render_p_d_f_ae765807656af8cfcf93bda6ff85c17ca}\index{reportlab.graphics.renderPDF@{reportlab.graphics.renderPDF}!shout@{shout}}
+\index{shout@{shout}!reportlab.graphics.renderPDF@{reportlab.graphics.renderPDF}}
+\doxysubsubsection{\texorpdfstring{shout}{shout}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1render_p_d_f_ae765807656af8cfcf93bda6ff85c17ca} 
+reportlab.\+graphics.\+render\+PDF.\+shout}
+

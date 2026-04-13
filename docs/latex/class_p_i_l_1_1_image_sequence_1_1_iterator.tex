@@ -1,0 +1,88 @@
+\doxysection{PIL.\+Image\+Sequence.\+Iterator Class Reference}
+\hypertarget{class_p_i_l_1_1_image_sequence_1_1_iterator}{}\label{class_p_i_l_1_1_image_sequence_1_1_iterator}\index{PIL.ImageSequence.Iterator@{PIL.ImageSequence.Iterator}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_sequence_1_1_iterator_a11d6fec0d59277e73b38d43fd7c6a0f8}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_sequence_1_1_iterator_a4aed17166801d2e3a6f334aef48f06e1}{im}})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_sequence_1_1_iterator_ae98ee6adc04b775e5c919892f7228956}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int ix)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_sequence_1_1_iterator}{Iterator}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_sequence_1_1_iterator_ab7dbcad32d07587b0342392f7feceef7}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_sequence_1_1_iterator_a7c3c3e027e3384bbe466495209eabe25}{\+\_\+\+\_\+next\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_sequence_1_1_iterator_a4aed17166801d2e3a6f334aef48f06e1}{im}} = im
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_sequence_1_1_iterator_a5642701505b3da9045e6a1eb3257f10d}{position}} = getattr(self.\+im, "{}\+\_\+min\+\_\+frame"{}, 0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class implements an iterator object that can be used to loop
+over an image sequence.
+
+You can use the ``[]`` operator to access elements by index. This operator
+will raise an :py:exc:`IndexError` if you try to access a nonexistent
+frame.
+
+:param im: An image object.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_image_sequence_1_1_iterator_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_image_sequence_1_1_iterator_a11d6fec0d59277e73b38d43fd7c6a0f8}\index{PIL.ImageSequence.Iterator@{PIL.ImageSequence.Iterator}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.ImageSequence.Iterator@{PIL.ImageSequence.Iterator}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_sequence_1_1_iterator_a11d6fec0d59277e73b38d43fd7c6a0f8} 
+ None PIL.\+Image\+Sequence.\+Iterator.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}}]{im}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_image_sequence_1_1_iterator_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_image_sequence_1_1_iterator_ae98ee6adc04b775e5c919892f7228956}\index{PIL.ImageSequence.Iterator@{PIL.ImageSequence.Iterator}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!PIL.ImageSequence.Iterator@{PIL.ImageSequence.Iterator}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_sequence_1_1_iterator_ae98ee6adc04b775e5c919892f7228956} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} PIL.\+Image\+Sequence.\+Iterator.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{ix}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_sequence_1_1_iterator_ab7dbcad32d07587b0342392f7feceef7}\index{PIL.ImageSequence.Iterator@{PIL.ImageSequence.Iterator}!\_\_iter\_\_@{\_\_iter\_\_}}
+\index{\_\_iter\_\_@{\_\_iter\_\_}!PIL.ImageSequence.Iterator@{PIL.ImageSequence.Iterator}}
+\doxysubsubsection{\texorpdfstring{\_\_iter\_\_()}{\_\_iter\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_sequence_1_1_iterator_ab7dbcad32d07587b0342392f7feceef7} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_sequence_1_1_iterator}{Iterator}} PIL.\+Image\+Sequence.\+Iterator.\+\_\+\+\_\+iter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_sequence_1_1_iterator_a7c3c3e027e3384bbe466495209eabe25}\index{PIL.ImageSequence.Iterator@{PIL.ImageSequence.Iterator}!\_\_next\_\_@{\_\_next\_\_}}
+\index{\_\_next\_\_@{\_\_next\_\_}!PIL.ImageSequence.Iterator@{PIL.ImageSequence.Iterator}}
+\doxysubsubsection{\texorpdfstring{\_\_next\_\_()}{\_\_next\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_sequence_1_1_iterator_a7c3c3e027e3384bbe466495209eabe25} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} PIL.\+Image\+Sequence.\+Iterator.\+\_\+\+\_\+next\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_image_sequence_1_1_iterator_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_image_sequence_1_1_iterator_a4aed17166801d2e3a6f334aef48f06e1}\index{PIL.ImageSequence.Iterator@{PIL.ImageSequence.Iterator}!im@{im}}
+\index{im@{im}!PIL.ImageSequence.Iterator@{PIL.ImageSequence.Iterator}}
+\doxysubsubsection{\texorpdfstring{im}{im}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_sequence_1_1_iterator_a4aed17166801d2e3a6f334aef48f06e1} 
+PIL.\+Image\+Sequence.\+Iterator.\+im = im}
+
+\Hypertarget{class_p_i_l_1_1_image_sequence_1_1_iterator_a5642701505b3da9045e6a1eb3257f10d}\index{PIL.ImageSequence.Iterator@{PIL.ImageSequence.Iterator}!position@{position}}
+\index{position@{position}!PIL.ImageSequence.Iterator@{PIL.ImageSequence.Iterator}}
+\doxysubsubsection{\texorpdfstring{position}{position}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_sequence_1_1_iterator_a5642701505b3da9045e6a1eb3257f10d} 
+PIL.\+Image\+Sequence.\+Iterator.\+position = getattr(self.\+im, "{}\+\_\+min\+\_\+frame"{}, 0)}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_sequence_8py}{Image\+Sequence.\+py}}\end{DoxyCompactItemize}

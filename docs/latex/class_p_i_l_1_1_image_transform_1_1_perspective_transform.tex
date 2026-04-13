@@ -1,0 +1,50 @@
+\doxysection{PIL.\+Image\+Transform.\+Perspective\+Transform Class Reference}
+\hypertarget{class_p_i_l_1_1_image_transform_1_1_perspective_transform}{}\label{class_p_i_l_1_1_image_transform_1_1_perspective_transform}\index{PIL.ImageTransform.PerspectiveTransform@{PIL.ImageTransform.PerspectiveTransform}}
+Inheritance diagram for PIL.\+Image\+Transform.\+Perspective\+Transform:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_p_i_l_1_1_image_transform_1_1_perspective_transform}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform}{PIL.\+Image\+Transform.\+Transform}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform_a2edcdd7739eec85e590d7836e198c14f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Sequence\+[Any]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform_a953d81d52179df7ed0d2a55268d83207}{data}})
+\item 
+tuple\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_transform}{Image.\+Transform}}, Sequence\+[int]\+]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform_aa7bbe73182a68bfff425d52185caa74c}{getdata}} (self)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform_aa81a2b50f73cf33c68ee808ff914edeb}{transform}} (self, tuple\+[int, int]\+ size, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} image, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform}{PIL.\+Image\+Transform.\+Transform}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform_a953d81d52179df7ed0d2a55268d83207}{data}} = data
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform}{PIL.\+Image\+Transform.\+Transform}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespace_p_i_l_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform_a0c65bd7c983d41984cb0e9b6de3169f7}{method}} .\doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform}{Transform}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Define a perspective image transform.
+
+This function takes an 8-tuple (a, b, c, d, e, f, g, h). For each pixel
+(x, y) in the output image, the new value is taken from a position
+((a x + b y + c) / (g x + h y + 1), (d x + e y + f) / (g x + h y + 1)) in
+the input image, rounded to nearest pixel.
+
+This function can be used to scale, translate, rotate, and shear the
+original image.
+
+See :py:meth:`.Image.transform`
+
+:param matrix: An 8-tuple (a, b, c, d, e, f, g, h).
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_transform_8py}{Image\+Transform.\+py}}\end{DoxyCompactItemize}

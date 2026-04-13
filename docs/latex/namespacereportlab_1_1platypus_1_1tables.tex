@@ -1,0 +1,299 @@
+\doxysection{reportlab.\+platypus.\+tables Namespace Reference}
+\hypertarget{namespacereportlab_1_1platypus_1_1tables}{}\label{namespacereportlab_1_1platypus_1_1tables}\index{reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_cell_style}{Cell\+Style}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_style}{Table\+Style}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1___expanded_cell_tuple}{\+\_\+\+Expanded\+Cell\+Tuple}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1___expanded_cell_tuple_ex}{\+\_\+\+Expanded\+Cell\+Tuple\+Ex}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table}{Table}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_long_table}{Long\+Table}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tables_1_1_table_render_c_b}{Table\+Render\+CB}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_abbecb32b76a155d62ab207fdc929130f}{\+\_\+row\+Len}} (x)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_ac64c308602a27dcaa1fd5dd45b6706da}{\+\_\+calc\+\_\+pc}} (V, avail)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a6d6e1371ebcf6d49b60ce0662d536813}{\+\_\+calc\+Bezier\+Points}} (\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_abf57a01af9d21c47a726e167fbd7d596}{P}}, kind)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_ad8d2f1fb3a2e9c151f060eba589ce3bc}{\+\_\+quadrant\+Def}} (xpos, ypos, corner, r, kind=0, direction=\textquotesingle{}left-\/right\textquotesingle{}, m=0.\+4472)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_ae950e99dac8710e22f986f9afcac161b}{\+\_\+h\+Line}} (canv\+Line, scp, ecp, y, h\+Blocks, FUZZ=rl\+\_\+config.\+\_\+\+FUZZ)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a73c3b088b8cb103b75db848d9689faf7}{\+\_\+multi\+Line}} (scp, ecp, y, canv\+Line, ws, count)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_ab9a30ba5e930c2877f8dd6f66185f130}{\+\_\+convert2int}} (value, map, low, high, name, cmd)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a701d03a1a216ea1cd99c210789e7e210}{\+\_\+endswith}} (obj, s)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a69774e26a24a53ea11605e887c8f0f29}{span\+Fix\+Dim}} (V0, V, span\+Cons, lim=None, FUZZ=rl\+\_\+config.\+\_\+\+FUZZ)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_ace6238ca72dc1b97c4262eac3573c3f0}{\+\_\+is\+Line\+Command}} (cmd)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a930abd149d8d55e9e82fa79e71b269b5}{\+\_\+set\+Cell\+Style}} (cell\+Styles, i, j, op, values)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_af81a084cf70ff13f4c6d4b1f470949ab}{LINECAPS}} = \{None:\+ None, \textquotesingle{}butt\textquotesingle{}:\+0,\textquotesingle{}round\textquotesingle{}:\+1,\textquotesingle{}projecting\textquotesingle{}:\+2,\textquotesingle{}squared\textquotesingle{}:\+2\}
+\item 
+dict \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_ae9edc18894702cdac14a82cf1c547a7c}{LINEJOINS}} = \{None:\+ None, \textquotesingle{}miter\textquotesingle{}:\+0, \textquotesingle{}mitre\textquotesingle{}:\+0, \textquotesingle{}round\textquotesingle{}:\+1,\textquotesingle{}bevel\textquotesingle{}:\+2\}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a99fe95edd7163794113072ea4629e34d}{Shadow\+Style}} = namedtuple(\textquotesingle{}Shadow\+Style\textquotesingle{}, \textquotesingle{}dx dy color0 color1 nshades\textquotesingle{}, defaults=(10,-\/10, \textquotesingle{}grey\textquotesingle{},\textquotesingle{}white\textquotesingle{},30))
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_afca1a4637d7b6ef400084aaf99c63a09}{Rounding\+Rect\+Def}} = namedtuple(\textquotesingle{}Rounding\+Rect\+Defs\textquotesingle{},\textquotesingle{}x0 y0 \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a769a2f1532f3a863b04053a82b5b700d}{w}} \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a3269e746c5efd92078d12620b75f7e37}{h}} x1 y1 ar SL\textquotesingle{})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a6b8243a5d933fd6a23ce1cd7be1afe70}{Rounding\+Rect\+Line}} = namedtuple(\textquotesingle{}Rounding\+Rect\+Line\textquotesingle{},\textquotesingle{}xs ys xe ye weight color cap dash join\textquotesingle{})
+\item 
+tuple \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a0ca14a447642912861626c326ecf9ea0}{\+\_\+\+SPECIALROWS}} = ("{}splitfirst"{}, "{}splitlast"{}, "{}inrowsplitstart"{},"{}inrowsplitend"{})
+\item 
+dict \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a745b79b4082754fd0672f8e7885ffe02}{\+\_\+\+Line\+Op\+Map}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a71d276d6986ff67487dbd43893303a6d}{LINECOMMANDS}} = list(\+\_\+\+Line\+Op\+Map.\+keys())
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a2624d2a3a570d7135d796555fd4c89d7}{GRID\+\_\+\+STYLE}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a5f20ea24a42e8c03f71d442760aba217}{BOX\+\_\+\+STYLE}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_acccfba2ba65cba12bece0eb852c11382}{LABELED\+\_\+\+GRID\+\_\+\+STYLE}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a4554c1c170069e28902a3da693017b84}{COLORED\+\_\+\+GRID\+\_\+\+STYLE}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tables_a3d725a47ac16f0a792b6d4ed56f42cbc}{LIST\+\_\+\+STYLE}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_ac64c308602a27dcaa1fd5dd45b6706da}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!\_calc\_pc@{\_calc\_pc}}
+\index{\_calc\_pc@{\_calc\_pc}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{\_calc\_pc()}{\_calc\_pc()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_ac64c308602a27dcaa1fd5dd45b6706da} 
+reportlab.\+platypus.\+tables.\+\_\+calc\+\_\+pc (\begin{DoxyParamCaption}\item[{}]{V}{, }\item[{}]{avail}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}check list V for percentage or * values
+1) absolute values go through unchanged
+2) percentages are used as weights for unconsumed space
+3) if no None values were seen '*' weights are
+set equally with unclaimed space
+otherwise * weights are assigned as None\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1platypus_1_1tables_a6d6e1371ebcf6d49b60ce0662d536813}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!\_calcBezierPoints@{\_calcBezierPoints}}
+\index{\_calcBezierPoints@{\_calcBezierPoints}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{\_calcBezierPoints()}{\_calcBezierPoints()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a6d6e1371ebcf6d49b60ce0662d536813} 
+reportlab.\+platypus.\+tables.\+\_\+calc\+Bezier\+Points (\begin{DoxyParamCaption}\item[{}]{P}{, }\item[{}]{kind}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}calculate all or half of a bezier curve
+kind==0 all, 1=first half else second half\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1platypus_1_1tables_ab9a30ba5e930c2877f8dd6f66185f130}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!\_convert2int@{\_convert2int}}
+\index{\_convert2int@{\_convert2int}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{\_convert2int()}{\_convert2int()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_ab9a30ba5e930c2877f8dd6f66185f130} 
+reportlab.\+platypus.\+tables.\+\_\+convert2int (\begin{DoxyParamCaption}\item[{}]{value}{, }\item[{}]{map}{, }\item[{}]{low}{, }\item[{}]{high}{, }\item[{}]{name}{, }\item[{}]{cmd}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}private converter tries map(value) low<=int(value)<=high or finally an error\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1platypus_1_1tables_a701d03a1a216ea1cd99c210789e7e210}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!\_endswith@{\_endswith}}
+\index{\_endswith@{\_endswith}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{\_endswith()}{\_endswith()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a701d03a1a216ea1cd99c210789e7e210} 
+reportlab.\+platypus.\+tables.\+\_\+endswith (\begin{DoxyParamCaption}\item[{}]{obj}{, }\item[{}]{s}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_ae950e99dac8710e22f986f9afcac161b}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!\_hLine@{\_hLine}}
+\index{\_hLine@{\_hLine}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{\_hLine()}{\_hLine()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_ae950e99dac8710e22f986f9afcac161b} 
+reportlab.\+platypus.\+tables.\+\_\+h\+Line (\begin{DoxyParamCaption}\item[{}]{canv\+Line}{, }\item[{}]{scp}{, }\item[{}]{ecp}{, }\item[{}]{y}{, }\item[{}]{h\+Blocks}{, }\item[{}]{FUZZ}{ = {\ttfamily rl\+\_\+config.\+\_\+FUZZ}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Draw horizontal lines; do not draw through regions specified in hBlocks
+This also serves for vertical lines with a suitable canvLine
+\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1platypus_1_1tables_ace6238ca72dc1b97c4262eac3573c3f0}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!\_isLineCommand@{\_isLineCommand}}
+\index{\_isLineCommand@{\_isLineCommand}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{\_isLineCommand()}{\_isLineCommand()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_ace6238ca72dc1b97c4262eac3573c3f0} 
+reportlab.\+platypus.\+tables.\+\_\+is\+Line\+Command (\begin{DoxyParamCaption}\item[{}]{cmd}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_a73c3b088b8cb103b75db848d9689faf7}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!\_multiLine@{\_multiLine}}
+\index{\_multiLine@{\_multiLine}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{\_multiLine()}{\_multiLine()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a73c3b088b8cb103b75db848d9689faf7} 
+reportlab.\+platypus.\+tables.\+\_\+multi\+Line (\begin{DoxyParamCaption}\item[{}]{scp}{, }\item[{}]{ecp}{, }\item[{}]{y}{, }\item[{}]{canv\+Line}{, }\item[{}]{ws}{, }\item[{}]{count}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_ad8d2f1fb3a2e9c151f060eba589ce3bc}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!\_quadrantDef@{\_quadrantDef}}
+\index{\_quadrantDef@{\_quadrantDef}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{\_quadrantDef()}{\_quadrantDef()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_ad8d2f1fb3a2e9c151f060eba589ce3bc} 
+reportlab.\+platypus.\+tables.\+\_\+quadrant\+Def (\begin{DoxyParamCaption}\item[{}]{xpos}{, }\item[{}]{ypos}{, }\item[{}]{corner}{, }\item[{}]{r}{, }\item[{}]{kind}{ = {\ttfamily 0}, }\item[{}]{direction}{ = {\ttfamily \textquotesingle{}left-\/right\textquotesingle{}}, }\item[{}]{m}{ = {\ttfamily 0.4472}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_abbecb32b76a155d62ab207fdc929130f}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!\_rowLen@{\_rowLen}}
+\index{\_rowLen@{\_rowLen}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{\_rowLen()}{\_rowLen()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_abbecb32b76a155d62ab207fdc929130f} 
+reportlab.\+platypus.\+tables.\+\_\+row\+Len (\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_a930abd149d8d55e9e82fa79e71b269b5}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!\_setCellStyle@{\_setCellStyle}}
+\index{\_setCellStyle@{\_setCellStyle}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{\_setCellStyle()}{\_setCellStyle()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a930abd149d8d55e9e82fa79e71b269b5} 
+reportlab.\+platypus.\+tables.\+\_\+set\+Cell\+Style (\begin{DoxyParamCaption}\item[{}]{cell\+Styles}{, }\item[{}]{i}{, }\item[{}]{j}{, }\item[{}]{op}{, }\item[{}]{values}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_a69774e26a24a53ea11605e887c8f0f29}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!spanFixDim@{spanFixDim}}
+\index{spanFixDim@{spanFixDim}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{spanFixDim()}{spanFixDim()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a69774e26a24a53ea11605e887c8f0f29} 
+reportlab.\+platypus.\+tables.\+span\+Fix\+Dim (\begin{DoxyParamCaption}\item[{}]{V0}{, }\item[{}]{V}{, }\item[{}]{span\+Cons}{, }\item[{}]{lim}{ = {\ttfamily None}, }\item[{}]{FUZZ}{ = {\ttfamily rl\+\_\+config.\+\_\+FUZZ}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_a745b79b4082754fd0672f8e7885ffe02}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!\_LineOpMap@{\_LineOpMap}}
+\index{\_LineOpMap@{\_LineOpMap}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{\_LineOpMap}{\_LineOpMap}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a745b79b4082754fd0672f8e7885ffe02} 
+dict reportlab.\+platypus.\+tables.\+\_\+\+Line\+Op\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{\ \ \textcolor{stringliteral}{'GRID'}:\textcolor{stringliteral}{'\_drawGrid'},}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'BOX'}:\textcolor{stringliteral}{'\_drawBox'},}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'OUTLINE'}:\textcolor{stringliteral}{'\_drawBox'},}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'INNERGRID'}:\textcolor{stringliteral}{'\_drawInnerGrid'},}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'LINEBELOW'}:\textcolor{stringliteral}{'\_drawHLinesB'},}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'LINEABOVE'}:\textcolor{stringliteral}{'\_drawHLines'},}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'LINEBEFORE'}:\textcolor{stringliteral}{'\_drawVLines'},}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'LINEAFTER'}:\textcolor{stringliteral}{'\_drawVLinesA'},\ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_a0ca14a447642912861626c326ecf9ea0}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!\_SPECIALROWS@{\_SPECIALROWS}}
+\index{\_SPECIALROWS@{\_SPECIALROWS}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{\_SPECIALROWS}{\_SPECIALROWS}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a0ca14a447642912861626c326ecf9ea0} 
+tuple reportlab.\+platypus.\+tables.\+\_\+\+SPECIALROWS = ("{}splitfirst"{}, "{}splitlast"{}, "{}inrowsplitstart"{},"{}inrowsplitend"{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_a5f20ea24a42e8c03f71d442760aba217}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!BOX\_STYLE@{BOX\_STYLE}}
+\index{BOX\_STYLE@{BOX\_STYLE}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{BOX\_STYLE}{BOX\_STYLE}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a5f20ea24a42e8c03f71d442760aba217} 
+reportlab.\+platypus.\+tables.\+BOX\+\_\+\+STYLE}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ TableStyle(}
+\DoxyCodeLine{00002\ \ \ \ \ [(\textcolor{stringliteral}{'BOX'},\ (0,0),\ (-\/1,-\/1),\ 0.50,\ colors.black),}
+\DoxyCodeLine{00003\ \ \ \ \ \ (\textcolor{stringliteral}{'ALIGN'},\ (1,1),\ (-\/1,-\/1),\ \textcolor{stringliteral}{'RIGHT'})]}
+\DoxyCodeLine{00004\ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_a4554c1c170069e28902a3da693017b84}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!COLORED\_GRID\_STYLE@{COLORED\_GRID\_STYLE}}
+\index{COLORED\_GRID\_STYLE@{COLORED\_GRID\_STYLE}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{COLORED\_GRID\_STYLE}{COLORED\_GRID\_STYLE}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a4554c1c170069e28902a3da693017b84} 
+reportlab.\+platypus.\+tables.\+COLORED\+\_\+\+GRID\+\_\+\+STYLE}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ TableStyle(}
+\DoxyCodeLine{00002\ \ \ \ \ [(\textcolor{stringliteral}{'INNERGRID'},\ (0,0),\ (-\/1,-\/1),\ 0.25,\ colors.black),}
+\DoxyCodeLine{00003\ \ \ \ \ \ (\textcolor{stringliteral}{'BOX'},\ (0,0),\ (-\/1,-\/1),\ 2,\ colors.red),}
+\DoxyCodeLine{00004\ \ \ \ \ \ (\textcolor{stringliteral}{'LINEBELOW'},\ (0,0),\ (-\/1,0),\ 2,\ colors.black),}
+\DoxyCodeLine{00005\ \ \ \ \ \ (\textcolor{stringliteral}{'LINEAFTER'},\ (0,0),\ (0,-\/1),\ 2,\ colors.black),}
+\DoxyCodeLine{00006\ \ \ \ \ \ (\textcolor{stringliteral}{'ALIGN'},\ (1,1),\ (-\/1,-\/1),\ \textcolor{stringliteral}{'RIGHT'})]}
+\DoxyCodeLine{00007\ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_a2624d2a3a570d7135d796555fd4c89d7}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!GRID\_STYLE@{GRID\_STYLE}}
+\index{GRID\_STYLE@{GRID\_STYLE}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{GRID\_STYLE}{GRID\_STYLE}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a2624d2a3a570d7135d796555fd4c89d7} 
+reportlab.\+platypus.\+tables.\+GRID\+\_\+\+STYLE}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ TableStyle(}
+\DoxyCodeLine{00002\ \ \ \ \ [(\textcolor{stringliteral}{'GRID'},\ (0,0),\ (-\/1,-\/1),\ 0.25,\ colors.black),}
+\DoxyCodeLine{00003\ \ \ \ \ \ (\textcolor{stringliteral}{'ALIGN'},\ (1,1),\ (-\/1,-\/1),\ \textcolor{stringliteral}{'RIGHT'})]}
+\DoxyCodeLine{00004\ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_acccfba2ba65cba12bece0eb852c11382}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!LABELED\_GRID\_STYLE@{LABELED\_GRID\_STYLE}}
+\index{LABELED\_GRID\_STYLE@{LABELED\_GRID\_STYLE}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{LABELED\_GRID\_STYLE}{LABELED\_GRID\_STYLE}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_acccfba2ba65cba12bece0eb852c11382} 
+reportlab.\+platypus.\+tables.\+LABELED\+\_\+\+GRID\+\_\+\+STYLE}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ TableStyle(}
+\DoxyCodeLine{00002\ \ \ \ \ [(\textcolor{stringliteral}{'INNERGRID'},\ (0,0),\ (-\/1,-\/1),\ 0.25,\ colors.black),}
+\DoxyCodeLine{00003\ \ \ \ \ \ (\textcolor{stringliteral}{'BOX'},\ (0,0),\ (-\/1,-\/1),\ 2,\ colors.black),}
+\DoxyCodeLine{00004\ \ \ \ \ \ (\textcolor{stringliteral}{'LINEBELOW'},\ (0,0),\ (-\/1,0),\ 2,\ colors.black),}
+\DoxyCodeLine{00005\ \ \ \ \ \ (\textcolor{stringliteral}{'LINEAFTER'},\ (0,0),\ (0,-\/1),\ 2,\ colors.black),}
+\DoxyCodeLine{00006\ \ \ \ \ \ (\textcolor{stringliteral}{'ALIGN'},\ (1,1),\ (-\/1,-\/1),\ \textcolor{stringliteral}{'RIGHT'})]}
+\DoxyCodeLine{00007\ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_af81a084cf70ff13f4c6d4b1f470949ab}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!LINECAPS@{LINECAPS}}
+\index{LINECAPS@{LINECAPS}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{LINECAPS}{LINECAPS}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_af81a084cf70ff13f4c6d4b1f470949ab} 
+dict reportlab.\+platypus.\+tables.\+LINECAPS = \{None:\+ None, \textquotesingle{}butt\textquotesingle{}:\+0,\textquotesingle{}round\textquotesingle{}:\+1,\textquotesingle{}projecting\textquotesingle{}:\+2,\textquotesingle{}squared\textquotesingle{}:\+2\}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_a71d276d6986ff67487dbd43893303a6d}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!LINECOMMANDS@{LINECOMMANDS}}
+\index{LINECOMMANDS@{LINECOMMANDS}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{LINECOMMANDS}{LINECOMMANDS}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a71d276d6986ff67487dbd43893303a6d} 
+reportlab.\+platypus.\+tables.\+LINECOMMANDS = list(\+\_\+\+Line\+Op\+Map.\+keys())}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_ae9edc18894702cdac14a82cf1c547a7c}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!LINEJOINS@{LINEJOINS}}
+\index{LINEJOINS@{LINEJOINS}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{LINEJOINS}{LINEJOINS}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_ae9edc18894702cdac14a82cf1c547a7c} 
+dict reportlab.\+platypus.\+tables.\+LINEJOINS = \{None:\+ None, \textquotesingle{}miter\textquotesingle{}:\+0, \textquotesingle{}mitre\textquotesingle{}:\+0, \textquotesingle{}round\textquotesingle{}:\+1,\textquotesingle{}bevel\textquotesingle{}:\+2\}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_a3d725a47ac16f0a792b6d4ed56f42cbc}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!LIST\_STYLE@{LIST\_STYLE}}
+\index{LIST\_STYLE@{LIST\_STYLE}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{LIST\_STYLE}{LIST\_STYLE}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a3d725a47ac16f0a792b6d4ed56f42cbc} 
+reportlab.\+platypus.\+tables.\+LIST\+\_\+\+STYLE}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ TableStyle(}
+\DoxyCodeLine{00002\ \ \ \ \ [(\textcolor{stringliteral}{'LINEABOVE'},\ (0,0),\ (-\/1,0),\ 2,\ colors.green),}
+\DoxyCodeLine{00003\ \ \ \ \ \ (\textcolor{stringliteral}{'LINEABOVE'},\ (0,1),\ (-\/1,-\/1),\ 0.25,\ colors.black),}
+\DoxyCodeLine{00004\ \ \ \ \ \ (\textcolor{stringliteral}{'LINEBELOW'},\ (0,-\/1),\ (-\/1,-\/1),\ 2,\ colors.green),}
+\DoxyCodeLine{00005\ \ \ \ \ \ (\textcolor{stringliteral}{'ALIGN'},\ (1,1),\ (-\/1,-\/1),\ \textcolor{stringliteral}{'RIGHT'})]}
+\DoxyCodeLine{00006\ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_afca1a4637d7b6ef400084aaf99c63a09}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!RoundingRectDef@{RoundingRectDef}}
+\index{RoundingRectDef@{RoundingRectDef}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{RoundingRectDef}{RoundingRectDef}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_afca1a4637d7b6ef400084aaf99c63a09} 
+reportlab.\+platypus.\+tables.\+Rounding\+Rect\+Def = namedtuple(\textquotesingle{}Rounding\+Rect\+Defs\textquotesingle{},\textquotesingle{}x0 y0 \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a769a2f1532f3a863b04053a82b5b700d}{w}} \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a3269e746c5efd92078d12620b75f7e37}{h}} x1 y1 ar SL\textquotesingle{})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_a6b8243a5d933fd6a23ce1cd7be1afe70}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!RoundingRectLine@{RoundingRectLine}}
+\index{RoundingRectLine@{RoundingRectLine}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{RoundingRectLine}{RoundingRectLine}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a6b8243a5d933fd6a23ce1cd7be1afe70} 
+reportlab.\+platypus.\+tables.\+Rounding\+Rect\+Line = namedtuple(\textquotesingle{}Rounding\+Rect\+Line\textquotesingle{},\textquotesingle{}xs ys xe ye weight color cap dash join\textquotesingle{})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tables_a99fe95edd7163794113072ea4629e34d}\index{reportlab.platypus.tables@{reportlab.platypus.tables}!ShadowStyle@{ShadowStyle}}
+\index{ShadowStyle@{ShadowStyle}!reportlab.platypus.tables@{reportlab.platypus.tables}}
+\doxysubsubsection{\texorpdfstring{ShadowStyle}{ShadowStyle}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tables_a99fe95edd7163794113072ea4629e34d} 
+reportlab.\+platypus.\+tables.\+Shadow\+Style = namedtuple(\textquotesingle{}Shadow\+Style\textquotesingle{}, \textquotesingle{}dx dy color0 color1 nshades\textquotesingle{}, defaults=(10,-\/10, \textquotesingle{}grey\textquotesingle{},\textquotesingle{}white\textquotesingle{},30))}
+

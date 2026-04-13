@@ -1,0 +1,111 @@
+\doxysection{reportlab.\+pdfbase.\+pdfpattern.\+PDFPattern Class Reference}
+\hypertarget{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern}{}\label{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern}\index{reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}}
+Inheritance diagram for reportlab.\+pdfbase.\+pdfpattern.\+PDFPattern:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a83ae56bc63174c646892aa5d514f4b38}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, pattern\+\_\+sequence, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}keywordargs)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a6098213e69e7fa27bab7c5d2a0855d07}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, item, value)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a761a9283ac17b43bef36da6fbfdc8e9e}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, item)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_aee0737590c9b37fa92dcb79bba86eb6d}{eval}} (self, L)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_aec90714f4f06b6493a7dd3cb1b58171f}{format}} (self, document)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a5cd1cfcd3e3903658f4bf5ee9ed7cf8a}{clone}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a44be46cbdbd6d7103c827ce5b148d00a}{pattern}} = pattern\+\_\+sequence
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a76e35b0698549aed74caf3e14eee41ea}{arguments}} = keywordargs
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a83ae56bc63174c646892aa5d514f4b38}\index{reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a83ae56bc63174c646892aa5d514f4b38} 
+reportlab.\+pdfbase.\+pdfpattern.\+PDFPattern.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{pattern\+\_\+sequence}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{keywordargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Description of a kind of PDF object using a pattern.
+
+Pattern sequence should contain strings, singletons of form [string] or
+PDFPatternIf objects.
+Strings are literal strings to be used in the object.
+Singletons are names of keyword arguments to include.
+PDFpatternIf objects allow some conditionality.
+Keyword arguments can be non-instances which are substituted directly in string conversion,
+or they can be object instances in which case they should be pdfdoc.* style
+objects with a x.format(doc) method.
+Keyword arguments may be set on initialization or subsequently using __setitem__, before format.
+"constant object" instances can also be inserted in the patterns.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a761a9283ac17b43bef36da6fbfdc8e9e}\index{reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a761a9283ac17b43bef36da6fbfdc8e9e} 
+reportlab.\+pdfbase.\+pdfpattern.\+PDFPattern.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{item}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a6098213e69e7fa27bab7c5d2a0855d07}\index{reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a6098213e69e7fa27bab7c5d2a0855d07} 
+reportlab.\+pdfbase.\+pdfpattern.\+PDFPattern.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{item}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a5cd1cfcd3e3903658f4bf5ee9ed7cf8a}\index{reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}!clone@{clone}}
+\index{clone@{clone}!reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a5cd1cfcd3e3903658f4bf5ee9ed7cf8a} 
+reportlab.\+pdfbase.\+pdfpattern.\+PDFPattern.\+clone (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_aee0737590c9b37fa92dcb79bba86eb6d}\index{reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}!eval@{eval}}
+\index{eval@{eval}!reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}}
+\doxysubsubsection{\texorpdfstring{eval()}{eval()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_aee0737590c9b37fa92dcb79bba86eb6d} 
+reportlab.\+pdfbase.\+pdfpattern.\+PDFPattern.\+eval (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{L}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_aec90714f4f06b6493a7dd3cb1b58171f}\index{reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}!format@{format}}
+\index{format@{format}!reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_aec90714f4f06b6493a7dd3cb1b58171f} 
+reportlab.\+pdfbase.\+pdfpattern.\+PDFPattern.\+format (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{document}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a76e35b0698549aed74caf3e14eee41ea}\index{reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}!arguments@{arguments}}
+\index{arguments@{arguments}!reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}}
+\doxysubsubsection{\texorpdfstring{arguments}{arguments}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a76e35b0698549aed74caf3e14eee41ea} 
+reportlab.\+pdfbase.\+pdfpattern.\+PDFPattern.\+arguments = keywordargs}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a44be46cbdbd6d7103c827ce5b148d00a}\index{reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}!pattern@{pattern}}
+\index{pattern@{pattern}!reportlab.pdfbase.pdfpattern.PDFPattern@{reportlab.pdfbase.pdfpattern.PDFPattern}}
+\doxysubsubsection{\texorpdfstring{pattern}{pattern}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfpattern_1_1_p_d_f_pattern_a44be46cbdbd6d7103c827ce5b148d00a} 
+reportlab.\+pdfbase.\+pdfpattern.\+PDFPattern.\+pattern = pattern\+\_\+sequence}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+pdfbase/\+\doxymbox{\hyperlink{pdfpattern_8py}{pdfpattern.\+py}}\end{DoxyCompactItemize}

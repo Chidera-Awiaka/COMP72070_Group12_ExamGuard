@@ -1,0 +1,114 @@
+\doxysection{reportlab.\+graphics.\+widgetbase.\+Prop\+Holder Class Reference}
+\hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder}{}\label{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder}\index{reportlab.graphics.widgetbase.PropHolder@{reportlab.graphics.widgetbase.PropHolder}}
+Inheritance diagram for reportlab.\+graphics.\+widgetbase.\+Prop\+Holder:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=11.563422cm]{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a499140401d4e3b95def8999d99ed326c}{verify}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a95959a2e62f824b0b08dc38ab9fa7fc9}{\+\_\+\+\_\+setattr\+\_\+\+\_\+}} (self, name, value)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a9123dfdea08518009e5b5df538e24fe1}{get\+Properties}} (self, recur=1)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_afcd89f607beb18ace7eeae32a15f6850}{set\+Properties}} (self, prop\+Dict)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_aac80fd564ff61268db03f02cd2ac61c9}{dump\+Properties}} (self, prefix="{}"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a426b511b7bbaf08ec239017d4eba2607}{\+\_\+attr\+Map}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Base for property holders\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a95959a2e62f824b0b08dc38ab9fa7fc9}\index{reportlab.graphics.widgetbase.PropHolder@{reportlab.graphics.widgetbase.PropHolder}!\_\_setattr\_\_@{\_\_setattr\_\_}}
+\index{\_\_setattr\_\_@{\_\_setattr\_\_}!reportlab.graphics.widgetbase.PropHolder@{reportlab.graphics.widgetbase.PropHolder}}
+\doxysubsubsection{\texorpdfstring{\_\_setattr\_\_()}{\_\_setattr\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a95959a2e62f824b0b08dc38ab9fa7fc9} 
+reportlab.\+graphics.\+widgetbase.\+Prop\+Holder.\+\_\+\+\_\+setattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}By default we verify.  This could be off
+in some parallel base classes.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_aac80fd564ff61268db03f02cd2ac61c9}\index{reportlab.graphics.widgetbase.PropHolder@{reportlab.graphics.widgetbase.PropHolder}!dumpProperties@{dumpProperties}}
+\index{dumpProperties@{dumpProperties}!reportlab.graphics.widgetbase.PropHolder@{reportlab.graphics.widgetbase.PropHolder}}
+\doxysubsubsection{\texorpdfstring{dumpProperties()}{dumpProperties()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_aac80fd564ff61268db03f02cd2ac61c9} 
+reportlab.\+graphics.\+widgetbase.\+Prop\+Holder.\+dump\+Properties (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{prefix}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convenience. Lists them on standard output.  You
+may provide a prefix - mostly helps to generate code
+samples for documentation.
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a9123dfdea08518009e5b5df538e24fe1}\index{reportlab.graphics.widgetbase.PropHolder@{reportlab.graphics.widgetbase.PropHolder}!getProperties@{getProperties}}
+\index{getProperties@{getProperties}!reportlab.graphics.widgetbase.PropHolder@{reportlab.graphics.widgetbase.PropHolder}}
+\doxysubsubsection{\texorpdfstring{getProperties()}{getProperties()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a9123dfdea08518009e5b5df538e24fe1} 
+reportlab.\+graphics.\+widgetbase.\+Prop\+Holder.\+get\+Properties (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{recur}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of all properties which can be edited and
+which are not marked as private. This may include 'child
+widgets' or 'primitive shapes'.  You are free to override
+this and provide alternative implementations; the default
+one simply returns everything without a leading underscore.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1widgetbase_1_1_typed_property_collection_aba8eab15395a49b64018313a0a86f622}{reportlab.\+graphics.\+widgetbase.\+Typed\+Property\+Collection}}.
+
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_afcd89f607beb18ace7eeae32a15f6850}\index{reportlab.graphics.widgetbase.PropHolder@{reportlab.graphics.widgetbase.PropHolder}!setProperties@{setProperties}}
+\index{setProperties@{setProperties}!reportlab.graphics.widgetbase.PropHolder@{reportlab.graphics.widgetbase.PropHolder}}
+\doxysubsubsection{\texorpdfstring{setProperties()}{setProperties()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_afcd89f607beb18ace7eeae32a15f6850} 
+reportlab.\+graphics.\+widgetbase.\+Prop\+Holder.\+set\+Properties (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{prop\+Dict}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Permits bulk setting of properties.  These may include
+child objects e.g. "chart.legend.width = 200".
+
+All assignments will be validated by the object as if they
+were set individually in python code.
+
+All properties of a top-level object are guaranteed to be
+set before any of the children, which may be helpful to
+widget designers.
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a499140401d4e3b95def8999d99ed326c}\index{reportlab.graphics.widgetbase.PropHolder@{reportlab.graphics.widgetbase.PropHolder}!verify@{verify}}
+\index{verify@{verify}!reportlab.graphics.widgetbase.PropHolder@{reportlab.graphics.widgetbase.PropHolder}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a499140401d4e3b95def8999d99ed326c} 
+reportlab.\+graphics.\+widgetbase.\+Prop\+Holder.\+verify (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If the _attrMap attribute is not None, this
+checks all expected attributes are present; no
+unwanted attributes are present; and (if a
+checking function is found) checks each
+attribute has a valid value.  Either succeeds
+or raises an informative exception.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a426b511b7bbaf08ec239017d4eba2607}\index{reportlab.graphics.widgetbase.PropHolder@{reportlab.graphics.widgetbase.PropHolder}!\_attrMap@{\_attrMap}}
+\index{\_attrMap@{\_attrMap}!reportlab.graphics.widgetbase.PropHolder@{reportlab.graphics.widgetbase.PropHolder}}
+\doxysubsubsection{\texorpdfstring{\_attrMap}{\_attrMap}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1widgetbase_1_1_prop_holder_a426b511b7bbaf08ec239017d4eba2607} 
+reportlab.\+graphics.\+widgetbase.\+Prop\+Holder.\+\_\+attr\+Map = None\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+graphics/\+\doxymbox{\hyperlink{widgetbase_8py}{widgetbase.\+py}}\end{DoxyCompactItemize}

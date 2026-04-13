@@ -1,0 +1,32 @@
+\doxysection{reportlab.\+pdfgen.\+pdfgeom Namespace Reference}
+\hypertarget{namespacereportlab_1_1pdfgen_1_1pdfgeom}{}\label{namespacereportlab_1_1pdfgen_1_1pdfgeom}\index{reportlab.pdfgen.pdfgeom@{reportlab.pdfgen.pdfgeom}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1pdfgen_1_1pdfgeom_a23ffb27adf38eacb0399148e5e2106e8}{bezier\+Arc}} (x1, y1, x2, y2, start\+Ang=0, extent=90)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1pdfgen_1_1pdfgeom_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1pdfgen_1_1pdfgeom_a23ffb27adf38eacb0399148e5e2106e8}\index{reportlab.pdfgen.pdfgeom@{reportlab.pdfgen.pdfgeom}!bezierArc@{bezierArc}}
+\index{bezierArc@{bezierArc}!reportlab.pdfgen.pdfgeom@{reportlab.pdfgen.pdfgeom}}
+\doxysubsubsection{\texorpdfstring{bezierArc()}{bezierArc()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfgen_1_1pdfgeom_a23ffb27adf38eacb0399148e5e2106e8} 
+reportlab.\+pdfgen.\+pdfgeom.\+bezier\+Arc (\begin{DoxyParamCaption}\item[{}]{x1}{, }\item[{}]{y1}{, }\item[{}]{x2}{, }\item[{}]{y2}{, }\item[{}]{start\+Ang}{ = {\ttfamily 0}, }\item[{}]{extent}{ = {\ttfamily 90}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}bezierArc(x1,y1, x2,y2, startAng=0, extent=90) --> List of Bezier
+curve control points.
+
+(x1, y1) and (x2, y2) are the corners of the enclosing rectangle.  The
+coordinate system has coordinates that increase to the right and down.
+Angles, measured in degress, start with 0 to the right (the positive X
+axis) and increase counter-clockwise.  The arc extends from startAng
+to startAng+extent.  I.e. startAng=0 and extent=180 yields an openside-down
+semi-circle.
+
+The resulting coordinates are of the form (x1,y1, x2,y2, x3,y3, x4,y4)
+such that the curve goes from (x1, y1) to (x4, y4) with (x2, y2) and
+(x3, y3) as their respective Bezier control points.\end{DoxyVerb}
+ 

@@ -1,0 +1,47 @@
+\doxysection{PIL.\+Image\+Transform.\+Quad\+Transform Class Reference}
+\hypertarget{class_p_i_l_1_1_image_transform_1_1_quad_transform}{}\label{class_p_i_l_1_1_image_transform_1_1_quad_transform}\index{PIL.ImageTransform.QuadTransform@{PIL.ImageTransform.QuadTransform}}
+Inheritance diagram for PIL.\+Image\+Transform.\+Quad\+Transform:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_p_i_l_1_1_image_transform_1_1_quad_transform}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform}{PIL.\+Image\+Transform.\+Transform}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform_a2edcdd7739eec85e590d7836e198c14f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, Sequence\+[Any]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform_a953d81d52179df7ed0d2a55268d83207}{data}})
+\item 
+tuple\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_transform}{Image.\+Transform}}, Sequence\+[int]\+]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform_aa7bbe73182a68bfff425d52185caa74c}{getdata}} (self)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform_aa81a2b50f73cf33c68ee808ff914edeb}{transform}} (self, tuple\+[int, int]\+ size, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} image, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any options)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform}{PIL.\+Image\+Transform.\+Transform}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform_a953d81d52179df7ed0d2a55268d83207}{data}} = data
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes inherited from \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform}{PIL.\+Image\+Transform.\+Transform}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespace_p_i_l_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform_a0c65bd7c983d41984cb0e9b6de3169f7}{method}} .\doxymbox{\hyperlink{class_p_i_l_1_1_image_transform_1_1_transform}{Transform}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Define a quad image transform.
+
+Maps a quadrilateral (a region defined by four corners) from the image to a
+rectangle of the given size.
+
+See :py:meth:`.Image.transform`
+
+:param xy: An 8-tuple (x0, y0, x1, y1, x2, y2, x3, y3) which contain the
+    upper left, lower left, lower right, and upper right corner of the
+    source quadrilateral.
+\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_transform_8py}{Image\+Transform.\+py}}\end{DoxyCompactItemize}

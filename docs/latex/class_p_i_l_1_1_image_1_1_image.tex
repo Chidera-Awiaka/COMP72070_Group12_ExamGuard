@@ -1,0 +1,1656 @@
+\doxysection{PIL.\+Image.\+Image Class Reference}
+\hypertarget{class_p_i_l_1_1_image_1_1_image}{}\label{class_p_i_l_1_1_image_1_1_image}\index{PIL.Image.Image@{PIL.Image.Image}}
+Inheritance diagram for PIL.\+Image.\+Image:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_p_i_l_1_1_image_1_1_image}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a0ca8a52c0374e4850f70b5c707392b05}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+core.\+Imaging\+Core \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_aa095b91e1a179ca3bedd2c1d01dedb7e}{im}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a2d452e97257c1a5f2bf41dd65f68a326}{im}} (self, core.\+Imaging\+Core im)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a5e923359d34521bed60df9b76efddd57}{width}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ae8b248d94b4578f09a645ad6cf28cf40}{height}} (self)
+\item 
+tuple\+[int, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a7139e53deda0b4539211ef416d79a375}{size}} (self)
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ac351953fa97afc3460cd52741bb0806f}{mode}} (self)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a77066eed52b3656080cb1c38710921db}{readonly}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a2652862efe395b50724a5d8c24562aad}{readonly}} (self, int readonly)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ad845c19acb0a6d5a04cf854c4e6b5b84}{\+\_\+\+\_\+enter\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ae978717e742e3c2b8e9cc8c56f2b4461}{\+\_\+\+\_\+exit\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}object args)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ab287771c8da963e4b47bdb17668959aa}{close}} (self)
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a3c464efa6031e2233673a57cd621b92c}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, object other)
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a6be835ca358a0822a8f5da52ea382b13}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+dict\+[str, str\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}int\texorpdfstring{$\vert$}{|}tuple\+[int,...]\+]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_aeaa716dd5f5ca66292775d593e2a081e}{\+\_\+\+\_\+array\+\_\+interface\+\_\+\+\_\+}} (self)
+\item 
+object \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a8d0a868136c3d9ae15a06303f627dc09}{\+\_\+\+\_\+arrow\+\_\+c\+\_\+schema\+\_\+\+\_\+}} (self)
+\item 
+tuple\+[object, object]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a1f479e1fbb71f19cd90b64f6386718c7}{\+\_\+\+\_\+arrow\+\_\+c\+\_\+array\+\_\+\+\_\+}} (self, object\texorpdfstring{$\vert$}{|}None requested\+\_\+schema=None)
+\item 
+list\+[Any]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ad68ae4f32e97061fa7cb0c5a68171a34}{\+\_\+\+\_\+getstate\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a2d9715a98bc776114dda3615385432cc}{\+\_\+\+\_\+setstate\+\_\+\+\_\+}} (self, list\+[Any]\+ state)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_af0116394cc5926d2d5d492b3dd867543}{tobytes}} (self, str encoder\+\_\+name="{}raw"{}, \texorpdfstring{$\ast$}{*}Any args)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a61159567eb95ece22d64af976bdd648b}{tobitmap}} (self, str name="{}image"{})
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a875e20e183e7cbf33d742da428364ab0}{frombytes}} (self, bytes\texorpdfstring{$\vert$}{|}bytearray\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_supports_array_interface}{Supports\+Array\+Interface}} data, str decoder\+\_\+name="{}raw"{}, \texorpdfstring{$\ast$}{*}Any args)
+\item 
+core.\+Pixel\+Access\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a1d8a438d032a00f00371e5143127b615}{load}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ab4f3f9d4a204263589998f328524d6c2}{verify}} (self)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a72bb5e86bfa30d18cebb1669fd48c4b7}{convert}} (self, str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a7d372be82681ec344af8a7ba8dc84d5d}{mode}}=None, tuple\+[float,...]\+\texorpdfstring{$\vert$}{|}None matrix=None, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_dither}{Dither}}\texorpdfstring{$\vert$}{|}None dither=None, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_palette}{Palette}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_aed56de66e3c835733d852bb93673c1ab}{palette}}=\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_palette_aa6e4f52a2312473bd8bb9f45cc553aaf}{Palette.\+WEB}}, int colors=256)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ac9f583e3ada6ea3c6c03f368846d9838}{quantize}} (self, int colors=256, int\texorpdfstring{$\vert$}{|}None method=None, int kmeans=0, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_aed56de66e3c835733d852bb93673c1ab}{palette}}=None, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_dither}{Dither}} dither=\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_dither_a703c6d74a8e635cd97285e1336800e88}{Dither.\+FLOYDSTEINBERG}})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a14003eadab25c3c9c207f8391852abd2}{copy}} (self)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_aa27d65d29dd640c9870884d82709f6a1}{crop}} (self, tuple\+[float, float, float, float]\+\texorpdfstring{$\vert$}{|}None box=None)
+\item 
+tuple\+[str, tuple\+[int, int, float, float]\+]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a608c2a768128436dec015ea3e1f35ce4}{draft}} (self, str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a7d372be82681ec344af8a7ba8dc84d5d}{mode}}, tuple\+[int, int]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ae9939a80d0ea9392d8db8556353b2585}{size}})
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a871439e9a22494c92b1170b09ca390c2}{filter}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_filter}{Image\+Filter.\+Filter}}\texorpdfstring{$\vert$}{|}type\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_filter}{Image\+Filter.\+Filter}}]\+ filter)
+\item 
+tuple\+[str,...]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a8a536ffd214797a62319e8cfa8974a9f}{getbands}} (self)
+\item 
+tuple\+[int, int, int, int]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a68b58fea80fb10808090ae0ae03d5528}{getbbox}} (self, \texorpdfstring{$\ast$}{*}, bool alpha\+\_\+only=True)
+\item 
+list\+[tuple\+[int, tuple\+[int,...]\+]\+]\+\texorpdfstring{$\vert$}{|}list\+[tuple\+[int, float]\+]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a821b1281a8111ffef85eb037670b0344}{getcolors}} (self, int maxcolors=256)
+\item 
+core.\+Imaging\+Core \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a361719a485266959784e5feb26a85196}{getdata}} (self, int\texorpdfstring{$\vert$}{|}None band=None)
+\item 
+tuple\+[tuple\+[int,...]\+,...]\+\texorpdfstring{$\vert$}{|}tuple\+[float,...]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a338309ed5b6e3867024c48d7e563a7e5}{get\+\_\+flattened\+\_\+data}} (self, int\texorpdfstring{$\vert$}{|}None band=None)
+\item 
+tuple\+[float, float]\+\texorpdfstring{$\vert$}{|}tuple\+[tuple\+[int, int]\+,...]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a50c5ec279451d13abfbfdea9434b03b5}{getextrema}} (self)
+\item 
+dict\+[str, Any]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_aceebd9c0741bae3b431db6463b3dd7d5}{getxmp}} (self)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif}{Exif}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a42e160a663ae4d60c732ba9645f9cd1b}{getexif}} (self)
+\item 
+list\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_image_file}{Image\+File.\+Image\+File}}]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ae295569dc5bf249de237474d972d20b8}{get\+\_\+child\+\_\+images}} (self)
+\item 
+Capsule\+Type \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_af74e35a3c728f28b625e6dadf64effde}{getim}} (self)
+\item 
+list\+[int]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_aa8f4b30bb0d5fa7f1a8b4387582aacab}{getpalette}} (self, str\texorpdfstring{$\vert$}{|}None rawmode="{}RGB"{})
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a15789dcf5d2e84945d68978e380e9e3c}{has\+\_\+transparency\+\_\+data}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a7bdaad31678e787c20d863b4e26740f2}{apply\+\_\+transparency}} (self)
+\item 
+float\texorpdfstring{$\vert$}{|}tuple\+[int,...]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ae10fdcf522975b5088fbbfe32c5574d7}{getpixel}} (self, tuple\+[int, int]\+\texorpdfstring{$\vert$}{|}list\+[int]\+ xy)
+\item 
+tuple\+[list\+[int]\+, list\+[int]\+]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a1a219ebcc984fed9fd3b6c568f51ee6b}{getprojection}} (self)
+\item 
+list\+[int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a7e3cb6e008dd51183f0e2b341c019224}{histogram}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}}\texorpdfstring{$\vert$}{|}None mask=None, tuple\+[float, float]\+\texorpdfstring{$\vert$}{|}None extrema=None)
+\item 
+float \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a0630e066925390421837423b179766ef}{entropy}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}}\texorpdfstring{$\vert$}{|}None mask=None, tuple\+[float, float]\+\texorpdfstring{$\vert$}{|}None extrema=None)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_af5c6de6eff68040a03bea362a0b34ac0}{paste}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}}\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}float\texorpdfstring{$\vert$}{|}tuple\+[float,...]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ad64d536d671d37d388fc8896f9d493b8}{im}}, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}}\texorpdfstring{$\vert$}{|}tuple\+[int, int, int, int]\+\texorpdfstring{$\vert$}{|}tuple\+[int, int]\+\texorpdfstring{$\vert$}{|}None box=None, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}}\texorpdfstring{$\vert$}{|}None mask=None)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a325f74efd8f14bb022489f2bcb06e0ac}{alpha\+\_\+composite}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ad64d536d671d37d388fc8896f9d493b8}{im}}, Sequence\+[int]\+ dest=(0, 0), Sequence\+[int]\+ source=(0, 0))
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ad1eb663c58fe8a4069147f4d8bb9dd7c}{point}} (self,(Sequence\+[float]\+\texorpdfstring{$\vert$}{|}Numpy\+Array\texorpdfstring{$\vert$}{|}Callable\+[\+[int]\+, float]\+\texorpdfstring{$\vert$}{|}Callable\+[\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_point_transform}{Image\+Point\+Transform}}]\+, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_point_transform}{Image\+Point\+Transform}}\texorpdfstring{$\vert$}{|}float]\+\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_point_handler}{Image\+Point\+Handler}}) lut, str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a7d372be82681ec344af8a7ba8dc84d5d}{mode}}=None)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a2c6e7a4b6e186d013964f6616c76997f}{putalpha}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}}\texorpdfstring{$\vert$}{|}int alpha)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_acb474ba0722d67a8e2eeb256ae2aba5a}{putdata}} (self, Sequence\+[float]\+\texorpdfstring{$\vert$}{|}Sequence\+[Sequence\+[int]\+]\+\texorpdfstring{$\vert$}{|}core.\+Imaging\+Core\texorpdfstring{$\vert$}{|}Numpy\+Array data, float scale=1.\+0, float offset=0.\+0)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ae89fe90c3317122fe1149a652f1ac5d5}{putpalette}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_palette_1_1_image_palette}{Image\+Palette.\+Image\+Palette}}\texorpdfstring{$\vert$}{|}bytes\texorpdfstring{$\vert$}{|}Sequence\+[int]\+ data, str rawmode="{}RGB"{})
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ad007e4753a64e3306352e0c2901323d6}{putpixel}} (self, tuple\+[int, int]\+ xy, float\texorpdfstring{$\vert$}{|}tuple\+[int,...]\+\texorpdfstring{$\vert$}{|}list\+[int]\+ value)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ad827e783005b181b28d33b28aba25152}{remap\+\_\+palette}} (self, list\+[int]\+ dest\+\_\+map, bytes\texorpdfstring{$\vert$}{|}bytearray\texorpdfstring{$\vert$}{|}None source\+\_\+palette=None)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ad46bf0d1ae2a6263da942fdf7b7c06a9}{resize}} (self, tuple\+[int, int]\+\texorpdfstring{$\vert$}{|}list\+[int]\+\texorpdfstring{$\vert$}{|}Numpy\+Array \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ae9939a80d0ea9392d8db8556353b2585}{size}}, int\texorpdfstring{$\vert$}{|}None resample=None, tuple\+[float, float, float, float]\+\texorpdfstring{$\vert$}{|}None box=None, float\texorpdfstring{$\vert$}{|}None reducing\+\_\+gap=None)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_adc5cb41d5388a7f4ee8ddc2771ba3f3b}{reduce}} (self, int\texorpdfstring{$\vert$}{|}tuple\+[int, int]\+ factor, tuple\+[int, int, int, int]\+\texorpdfstring{$\vert$}{|}None box=None)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a8e88a5e94c5df5154c213b7fa87ff598}{rotate}} (self, float angle, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_resampling}{Resampling}} resample=\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_resampling_a11ea60e2485f0e8a35fc5561bca9b390}{Resampling.\+NEAREST}}, int\texorpdfstring{$\vert$}{|}bool expand=False, tuple\+[float, float]\+\texorpdfstring{$\vert$}{|}None center=None, tuple\+[int, int]\+\texorpdfstring{$\vert$}{|}None translate=None, float\texorpdfstring{$\vert$}{|}tuple\+[float,...]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None fillcolor=None)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a504f5764cb1419d26b7658b58e5f88d9}{save}} (self, Str\+Or\+Bytes\+Path\texorpdfstring{$\vert$}{|}IO\+[bytes]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a96deddd6e1e06bf4c25e974ea9f390fe}{fp}}, str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ac369bac5bff65e607cbd1fb46466d97c}{format}}=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any params)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a85feb0893f186326d846e7f28abc011d}{seek}} (self, int frame)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a2932dc1572359117944a53394fb818cc}{show}} (self, str\texorpdfstring{$\vert$}{|}None title=None)
+\item 
+tuple\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}},...]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_af4a15e19d4ec842eb7da14c24fa916e3}{split}} (self)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_aca3f805687eaa523181fa7890578e5c1}{getchannel}} (self, int\texorpdfstring{$\vert$}{|}str channel)
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_aede81713260b0b2ea5b8387ab6ea8213}{tell}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ab90033e3047e929992ad1636fe86c00d}{thumbnail}} (self, tuple\+[float, float]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ae9939a80d0ea9392d8db8556353b2585}{size}}, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_resampling}{Resampling}} resample=\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_resampling_a5c5419ce07472b391157b395a20a3c68}{Resampling.\+BICUBIC}}, float\texorpdfstring{$\vert$}{|}None reducing\+\_\+gap=2.\+0)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ab02f90bbdf2672e99618e7f143caa34f}{transform}} (self, tuple\+[int, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ae9939a80d0ea9392d8db8556353b2585}{size}}, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_transform}{Transform}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_transform_handler}{Image\+Transform\+Handler}}\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_supports_get_data}{Supports\+Get\+Data}} method, Sequence\+[Any]\+\texorpdfstring{$\vert$}{|}None data=None, int resample=\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_resampling_a11ea60e2485f0e8a35fc5561bca9b390}{Resampling.\+NEAREST}}, int fill=1, float\texorpdfstring{$\vert$}{|}tuple\+[float,...]\+\texorpdfstring{$\vert$}{|}str\texorpdfstring{$\vert$}{|}None fillcolor=None)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a0b6b6ef2e53867d27a3820587d8aa543}{transpose}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_transpose}{Transpose}} method)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a06e19d531ae39f5c023c159ce0400d90}{effect\+\_\+spread}} (self, int distance)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_qt_1_1_image_qt}{Image\+Qt.\+Image\+Qt}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a44aea4bf7dd8ed90f190e70db6b72ad1}{toqimage}} (self)
+\item 
+Image\+Qt.\+QPixmap \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ade9d019885c9caadccf1e8a97f06cf11}{toqpixmap}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_palette_1_1_image_palette}{Image\+Palette.\+Image\+Palette}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_aed56de66e3c835733d852bb93673c1ab}{palette}} = None
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ab5cae44b3e263b47aeca3056bea811fd}{info}} = \{\}
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a408d4cf4edafa5efa2a5fe873419c58e}{readonly}} = 0
+\item 
+mmap.\+mmap\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a17ba97a266faac6c77ac08a30ef6fbe1}{map}} = None
+\item 
+core.\+Imaging\+Core \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ad64d536d671d37d388fc8896f9d493b8}{im}} = self.\+im.\+copy()
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a7d372be82681ec344af8a7ba8dc84d5d}{mode}} = other.\+mode
+\item 
+tuple\+[int, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ae9939a80d0ea9392d8db8556353b2585}{size}} = other.\+size
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a12847a9d67ab7c8de3e2733b60ab3110}{width}} = 0:\+
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a96deddd6e1e06bf4c25e974ea9f390fe}{fp}}
+\item 
+tuple \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a78969b4fc2c7d994ddd5632f0f497778}{encoderconfig}} = ()
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ada960056d4e9f73a780e9eebfdadefab}{encoderinfo}} = encoderinfo
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ac369bac5bff65e607cbd1fb46466d97c}{format}} = None
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_abcdb1985a040c3c6fc8bb83d3c63e436}{format\+\_\+description}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_adbe939e0f23d95cddcdfa89f49db6053}{\+\_\+new}} (self, core.\+Imaging\+Core \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ad64d536d671d37d388fc8896f9d493b8}{im}})
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a72e39d44a532c91f2bd66d72a140a824}{\+\_\+copy}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a2ab02bb74ce1c5ee4c1e2126d764f369}{\+\_\+ensure\+\_\+mutable}} (self)
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a77ab77cfc5246c0e34d966951c16aed7}{\+\_\+dump}} (self, str\texorpdfstring{$\vert$}{|}None file=None, str\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ac369bac5bff65e607cbd1fb46466d97c}{format}}=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any options)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a8cf06ccf75fda1793ccab3e3e7897c41}{\+\_\+repr\+\_\+pretty\+\_\+}} (self, Pretty\+Printer p, bool cycle)
+\item 
+bytes\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a219b59b218f07f981f4b18f1a29aac38}{\+\_\+repr\+\_\+image}} (self, str image\+\_\+format, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any kwargs)
+\item 
+bytes\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a8b807f78c92d24d2bcee34e23b83d313}{\+\_\+repr\+\_\+png\+\_\+}} (self)
+\item 
+bytes\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_aad0839771f9f6a8498ebfc71705d8820}{\+\_\+repr\+\_\+jpeg\+\_\+}} (self)
+\item 
+core.\+Imaging\+Core \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a1f48924371b0e9b3e2566a2caba8b6cb}{\+\_\+crop}} (self, core.\+Imaging\+Core \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ad64d536d671d37d388fc8896f9d493b8}{im}}, tuple\+[float, float, float, float]\+ box)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a5df4049563104ee516039498fd5374b7}{\+\_\+reload\+\_\+exif}} (self)
+\item 
+tuple\+[int, int, int, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a7f6704bc588313addc8b4a96ac6c8491}{\+\_\+get\+\_\+safe\+\_\+box}} (self, tuple\+[int, int]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ae9939a80d0ea9392d8db8556353b2585}{size}}, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_resampling}{Resampling}} resample, tuple\+[float, float, float, float]\+ box)
+\item 
+dict\+[str, Any]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a9db6356a1bf8a6e88155ef578a062a95}{\+\_\+attach\+\_\+default\+\_\+encoderinfo}} (self, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ad64d536d671d37d388fc8896f9d493b8}{im}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+core.\+Imaging\+Core\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1__util_1_1_deferred_error}{Deferred\+Error}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a056657ec3c8edebf2ca2c40e384c33e5}{\+\_\+im}} = None
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a5137850120fce16cf6b5c04897214f40}{\+\_\+mode}} = "{}"{}
+\item 
+tuple \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a953ee3ca70f93329b38a9df7eb29671c}{\+\_\+size}} = (0, 0)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif}{Exif}}\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a80744fb5e71391bada26160cea180780}{\+\_\+exif}} = None
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a148f6041de839e0120e194ea653e8f79}{\+\_\+readonly}} = \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a408d4cf4edafa5efa2a5fe873419c58e}{readonly}}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_ae88427116efd38f0d5b842fc425393d2}{\+\_\+default\+\_\+encoderinfo}} = params
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_acad82e0027d43c7418c7c9e605046258}{\+\_\+new}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a945a973d044a966705c036229aec6ab1}{\+\_\+close\+\_\+exclusive\+\_\+fp\+\_\+after\+\_\+loading}} = True
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}This class represents an image object.  To create
+:py:class:`~PIL.Image.Image` objects, use the appropriate factory
+functions.  There's hardly ever any reason to call the Image constructor
+directly.
+
+* :py:func:`~PIL.Image.open`
+* :py:func:`~PIL.Image.new`
+* :py:func:`~PIL.Image.frombytes`
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a0ca8a52c0374e4850f70b5c707392b05}\index{PIL.Image.Image@{PIL.Image.Image}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a0ca8a52c0374e4850f70b5c707392b05} 
+ None PIL.\+Image.\+Image.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_aeaa716dd5f5ca66292775d593e2a081e}\index{PIL.Image.Image@{PIL.Image.Image}!\_\_array\_interface\_\_@{\_\_array\_interface\_\_}}
+\index{\_\_array\_interface\_\_@{\_\_array\_interface\_\_}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_\_array\_interface\_\_()}{\_\_array\_interface\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_aeaa716dd5f5ca66292775d593e2a081e} 
+ dict\+[str, str \texorpdfstring{$\vert$}{|} bytes \texorpdfstring{$\vert$}{|} int \texorpdfstring{$\vert$}{|} tuple\+[int, ...]\+]\+ PIL.\+Image.\+Image.\+\_\+\+\_\+array\+\_\+interface\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a1f479e1fbb71f19cd90b64f6386718c7}\index{PIL.Image.Image@{PIL.Image.Image}!\_\_arrow\_c\_array\_\_@{\_\_arrow\_c\_array\_\_}}
+\index{\_\_arrow\_c\_array\_\_@{\_\_arrow\_c\_array\_\_}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_\_arrow\_c\_array\_\_()}{\_\_arrow\_c\_array\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a1f479e1fbb71f19cd90b64f6386718c7} 
+ tuple\+[object, object]\+ PIL.\+Image.\+Image.\+\_\+\+\_\+arrow\+\_\+c\+\_\+array\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object \texorpdfstring{$\vert$}{|} None }]{requested\+\_\+schema}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a8d0a868136c3d9ae15a06303f627dc09}\index{PIL.Image.Image@{PIL.Image.Image}!\_\_arrow\_c\_schema\_\_@{\_\_arrow\_c\_schema\_\_}}
+\index{\_\_arrow\_c\_schema\_\_@{\_\_arrow\_c\_schema\_\_}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_\_arrow\_c\_schema\_\_()}{\_\_arrow\_c\_schema\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a8d0a868136c3d9ae15a06303f627dc09} 
+ object PIL.\+Image.\+Image.\+\_\+\+\_\+arrow\+\_\+c\+\_\+schema\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_ad845c19acb0a6d5a04cf854c4e6b5b84}\index{PIL.Image.Image@{PIL.Image.Image}!\_\_enter\_\_@{\_\_enter\_\_}}
+\index{\_\_enter\_\_@{\_\_enter\_\_}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_\_enter\_\_()}{\_\_enter\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ad845c19acb0a6d5a04cf854c4e6b5b84} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+\_\+\+\_\+enter\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a3c464efa6031e2233673a57cd621b92c}\index{PIL.Image.Image@{PIL.Image.Image}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a3c464efa6031e2233673a57cd621b92c} 
+ bool PIL.\+Image.\+Image.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{object}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_ae978717e742e3c2b8e9cc8c56f2b4461}\index{PIL.Image.Image@{PIL.Image.Image}!\_\_exit\_\_@{\_\_exit\_\_}}
+\index{\_\_exit\_\_@{\_\_exit\_\_}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_\_exit\_\_()}{\_\_exit\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ae978717e742e3c2b8e9cc8c56f2b4461} 
+ None PIL.\+Image.\+Image.\+\_\+\+\_\+exit\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}object}]{args}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_ad68ae4f32e97061fa7cb0c5a68171a34}\index{PIL.Image.Image@{PIL.Image.Image}!\_\_getstate\_\_@{\_\_getstate\_\_}}
+\index{\_\_getstate\_\_@{\_\_getstate\_\_}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_\_getstate\_\_()}{\_\_getstate\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ad68ae4f32e97061fa7cb0c5a68171a34} 
+ list\+[Any]\+ PIL.\+Image.\+Image.\+\_\+\+\_\+getstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a6be835ca358a0822a8f5da52ea382b13}\index{PIL.Image.Image@{PIL.Image.Image}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a6be835ca358a0822a8f5da52ea382b13} 
+ str PIL.\+Image.\+Image.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a2d9715a98bc776114dda3615385432cc}\index{PIL.Image.Image@{PIL.Image.Image}!\_\_setstate\_\_@{\_\_setstate\_\_}}
+\index{\_\_setstate\_\_@{\_\_setstate\_\_}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_\_setstate\_\_()}{\_\_setstate\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a2d9715a98bc776114dda3615385432cc} 
+ None PIL.\+Image.\+Image.\+\_\+\+\_\+setstate\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{list\+[Any]\+}]{state}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a9db6356a1bf8a6e88155ef578a062a95}\index{PIL.Image.Image@{PIL.Image.Image}!\_attach\_default\_encoderinfo@{\_attach\_default\_encoderinfo}}
+\index{\_attach\_default\_encoderinfo@{\_attach\_default\_encoderinfo}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_attach\_default\_encoderinfo()}{\_attach\_default\_encoderinfo()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a9db6356a1bf8a6e88155ef578a062a95} 
+ dict\+[str, Any]\+ PIL.\+Image.\+Image.\+\_\+attach\+\_\+default\+\_\+encoderinfo (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}}}]{im}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a72e39d44a532c91f2bd66d72a140a824}\index{PIL.Image.Image@{PIL.Image.Image}!\_copy@{\_copy}}
+\index{\_copy@{\_copy}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_copy()}{\_copy()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a72e39d44a532c91f2bd66d72a140a824} 
+ None PIL.\+Image.\+Image.\+\_\+copy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a1f48924371b0e9b3e2566a2caba8b6cb}\index{PIL.Image.Image@{PIL.Image.Image}!\_crop@{\_crop}}
+\index{\_crop@{\_crop}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_crop()}{\_crop()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a1f48924371b0e9b3e2566a2caba8b6cb} 
+ core.\+Imaging\+Core PIL.\+Image.\+Image.\+\_\+crop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{core.\+Imaging\+Core}]{im}{, }\item[{tuple\+[float, float, float, float]\+     }]{box}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Returns a rectangular region from the core image object im.
+
+This is equivalent to calling im.crop((x0, y0, x1, y1)), but
+includes additional sanity checks.
+
+:param im: a core image object
+:param box: The crop rectangle, as a (left, upper, right, lower)-tuple.
+:returns: A core image object.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a77ab77cfc5246c0e34d966951c16aed7}\index{PIL.Image.Image@{PIL.Image.Image}!\_dump@{\_dump}}
+\index{\_dump@{\_dump}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_dump()}{\_dump()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a77ab77cfc5246c0e34d966951c16aed7} 
+ str PIL.\+Image.\+Image.\+\_\+dump (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{file}{ = {\ttfamily None}, }\item[{str \texorpdfstring{$\vert$}{|} None }]{format}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any     }]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a2ab02bb74ce1c5ee4c1e2126d764f369}\index{PIL.Image.Image@{PIL.Image.Image}!\_ensure\_mutable@{\_ensure\_mutable}}
+\index{\_ensure\_mutable@{\_ensure\_mutable}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_ensure\_mutable()}{\_ensure\_mutable()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a2ab02bb74ce1c5ee4c1e2126d764f369} 
+ None PIL.\+Image.\+Image.\+\_\+ensure\+\_\+mutable (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a7f6704bc588313addc8b4a96ac6c8491}\index{PIL.Image.Image@{PIL.Image.Image}!\_get\_safe\_box@{\_get\_safe\_box}}
+\index{\_get\_safe\_box@{\_get\_safe\_box}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_get\_safe\_box()}{\_get\_safe\_box()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a7f6704bc588313addc8b4a96ac6c8491} 
+ tuple\+[int, int, int, int]\+ PIL.\+Image.\+Image.\+\_\+get\+\_\+safe\+\_\+box (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[int, int]\+}]{size}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_resampling}{Resampling}}}]{resample}{, }\item[{tuple\+[float, float, float, float]\+}]{box}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Expands the box so it includes adjacent pixels
+that may be used by resampling with the given resampling filter.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_adbe939e0f23d95cddcdfa89f49db6053}\index{PIL.Image.Image@{PIL.Image.Image}!\_new@{\_new}}
+\index{\_new@{\_new}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_new()}{\_new()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_adbe939e0f23d95cddcdfa89f49db6053} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+\_\+new (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{core.\+Imaging\+Core}]{im}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a5df4049563104ee516039498fd5374b7}\index{PIL.Image.Image@{PIL.Image.Image}!\_reload\_exif@{\_reload\_exif}}
+\index{\_reload\_exif@{\_reload\_exif}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_reload\_exif()}{\_reload\_exif()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a5df4049563104ee516039498fd5374b7} 
+ None PIL.\+Image.\+Image.\+\_\+reload\+\_\+exif (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a219b59b218f07f981f4b18f1a29aac38}\index{PIL.Image.Image@{PIL.Image.Image}!\_repr\_image@{\_repr\_image}}
+\index{\_repr\_image@{\_repr\_image}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_repr\_image()}{\_repr\_image()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a219b59b218f07f981f4b18f1a29aac38} 
+ bytes \texorpdfstring{$\vert$}{|} None PIL.\+Image.\+Image.\+\_\+repr\+\_\+image (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{image\+\_\+format}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{kwargs}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Helper function for iPython display hook.
+
+:param image_format: Image format.
+:returns: image as bytes, saved into the given format.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_aad0839771f9f6a8498ebfc71705d8820}\index{PIL.Image.Image@{PIL.Image.Image}!\_repr\_jpeg\_@{\_repr\_jpeg\_}}
+\index{\_repr\_jpeg\_@{\_repr\_jpeg\_}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_repr\_jpeg\_()}{\_repr\_jpeg\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_aad0839771f9f6a8498ebfc71705d8820} 
+ bytes \texorpdfstring{$\vert$}{|} None PIL.\+Image.\+Image.\+\_\+repr\+\_\+jpeg\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}iPython display hook support for JPEG format.
+
+:returns: JPEG version of the image as bytes
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a8b807f78c92d24d2bcee34e23b83d313}\index{PIL.Image.Image@{PIL.Image.Image}!\_repr\_png\_@{\_repr\_png\_}}
+\index{\_repr\_png\_@{\_repr\_png\_}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_repr\_png\_()}{\_repr\_png\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a8b807f78c92d24d2bcee34e23b83d313} 
+ bytes \texorpdfstring{$\vert$}{|} None PIL.\+Image.\+Image.\+\_\+repr\+\_\+png\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}iPython display hook support for PNG format.
+
+:returns: PNG version of the image as bytes
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a8cf06ccf75fda1793ccab3e3e7897c41}\index{PIL.Image.Image@{PIL.Image.Image}!\_repr\_pretty\_@{\_repr\_pretty\_}}
+\index{\_repr\_pretty\_@{\_repr\_pretty\_}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_repr\_pretty\_()}{\_repr\_pretty\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a8cf06ccf75fda1793ccab3e3e7897c41} 
+ None PIL.\+Image.\+Image.\+\_\+repr\+\_\+pretty\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Pretty\+Printer}]{p}{, }\item[{bool}]{cycle}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}IPython plain text display support\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a325f74efd8f14bb022489f2bcb06e0ac}\index{PIL.Image.Image@{PIL.Image.Image}!alpha\_composite@{alpha\_composite}}
+\index{alpha\_composite@{alpha\_composite}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{alpha\_composite()}{alpha\_composite()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a325f74efd8f14bb022489f2bcb06e0ac} 
+ None PIL.\+Image.\+Image.\+alpha\+\_\+composite (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}}}]{im}{, }\item[{Sequence\+[int]\+ }]{dest}{ = {\ttfamily (0,~0)}, }\item[{Sequence\+[int]\+ }]{source}{ = {\ttfamily (0,~0)}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}'In-place' analog of Image.alpha_composite. Composites an image
+onto this image.
+
+:param im: image to composite over this one
+:param dest: Optional 2 tuple (left, top) specifying the upper
+  left corner in this (destination) image.
+:param source: Optional 2 (left, top) tuple for the upper left
+  corner in the overlay source image, or 4 tuple (left, top, right,
+  bottom) for the bounds of the source rectangle
+
+Performance Note: Not currently implemented in-place in the core layer.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a7bdaad31678e787c20d863b4e26740f2}\index{PIL.Image.Image@{PIL.Image.Image}!apply\_transparency@{apply\_transparency}}
+\index{apply\_transparency@{apply\_transparency}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{apply\_transparency()}{apply\_transparency()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a7bdaad31678e787c20d863b4e26740f2} 
+ None PIL.\+Image.\+Image.\+apply\+\_\+transparency (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}If a P mode image has a "transparency" key in the info dictionary,
+remove the key and instead apply the transparency to the palette.
+Otherwise, the image is unchanged.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_ab287771c8da963e4b47bdb17668959aa}\index{PIL.Image.Image@{PIL.Image.Image}!close@{close}}
+\index{close@{close}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ab287771c8da963e4b47bdb17668959aa} 
+ None PIL.\+Image.\+Image.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This operation will destroy the image core and release its memory.
+The image data will be unusable afterward.
+
+This function is required to close images that have multiple frames or
+have not had their file read and closed by the
+:py:meth:`~PIL.Image.Image.load` method. See :ref:`file-handling` for
+more information.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{class_p_i_l_1_1_fpx_image_plugin_1_1_fpx_image_file_ae44ea3931d1fe9da17caf5d45e74dd4d}{PIL.\+Fpx\+Image\+Plugin.\+Fpx\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_image_file_a33fca58ebe84caf2fff899c02e459eaf}{PIL.\+Image\+File.\+Image\+File}}, and \doxymbox{\hyperlink{class_p_i_l_1_1_mic_image_plugin_1_1_mic_image_file_ac2342df8c138acbbf5745eb58116568c}{PIL.\+Mic\+Image\+Plugin.\+Mic\+Image\+File}}.
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a72bb5e86bfa30d18cebb1669fd48c4b7}\index{PIL.Image.Image@{PIL.Image.Image}!convert@{convert}}
+\index{convert@{convert}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{convert()}{convert()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a72bb5e86bfa30d18cebb1669fd48c4b7} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+convert (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{mode}{ = {\ttfamily None}, }\item[{tuple\+[float, ...]\+ \texorpdfstring{$\vert$}{|} None }]{matrix}{ = {\ttfamily None}, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_dither}{Dither}} \texorpdfstring{$\vert$}{|} None }]{dither}{ = {\ttfamily None}, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_palette}{Palette}} }]{palette}{ = {\ttfamily \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_palette_aa6e4f52a2312473bd8bb9f45cc553aaf}{Palette.\+WEB}}}, }\item[{int }]{colors}{ = {\ttfamily 256}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a converted copy of this image. For the "P" mode, this
+method translates pixels through the palette.  If mode is
+omitted, a mode is chosen so that all information in the image
+and the palette can be represented without a palette.
+
+This supports all possible conversions between "L", "RGB" and "CMYK". The
+``matrix`` argument only supports "L" and "RGB".
+
+When translating a color image to grayscale (mode "L"),
+the library uses the ITU-R 601-2 luma transform::
+
+    L = R * 299/1000 + G * 587/1000 + B * 114/1000
+
+The default method of converting a grayscale ("L") or "RGB"
+image into a bilevel (mode "1") image uses Floyd-Steinberg
+dither to approximate the original image luminosity levels. If
+dither is ``None``, all values larger than 127 are set to 255 (white),
+all other values to 0 (black). To use other thresholds, use the
+:py:meth:`~PIL.Image.Image.point` method.
+
+When converting from "RGBA" to "P" without a ``matrix`` argument,
+this passes the operation to :py:meth:`~PIL.Image.Image.quantize`,
+and ``dither`` and ``palette`` are ignored.
+
+When converting from "PA", if an "RGBA" palette is present, the alpha
+channel from the image will be used instead of the values from the palette.
+
+:param mode: The requested mode. See: :ref:`concept-modes`.
+:param matrix: An optional conversion matrix.  If given, this
+   should be 4- or 12-tuple containing floating point values.
+:param dither: Dithering method, used when converting from
+   mode "RGB" to "P" or from "RGB" or "L" to "1".
+   Available methods are :data:`Dither.NONE` or :data:`Dither.FLOYDSTEINBERG`
+   (default). Note that this is not used when ``matrix`` is supplied.
+:param palette: Palette to use when converting from mode "RGB"
+   to "P".  Available palettes are :data:`Palette.WEB` or
+   :data:`Palette.ADAPTIVE`.
+:param colors: Number of colors to use for the :data:`Palette.ADAPTIVE`
+   palette. Defaults to 256.
+:rtype: :py:class:`~PIL.Image.Image`
+:returns: An :py:class:`~PIL.Image.Image` object.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a14003eadab25c3c9c207f8391852abd2}\index{PIL.Image.Image@{PIL.Image.Image}!copy@{copy}}
+\index{copy@{copy}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a14003eadab25c3c9c207f8391852abd2} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+copy (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Copies this image. Use this method if you wish to paste things
+into an image, but still retain the original.
+
+:rtype: :py:class:`~PIL.Image.Image`
+:returns: An :py:class:`~PIL.Image.Image` object.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_aa27d65d29dd640c9870884d82709f6a1}\index{PIL.Image.Image@{PIL.Image.Image}!crop@{crop}}
+\index{crop@{crop}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{crop()}{crop()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_aa27d65d29dd640c9870884d82709f6a1} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+crop (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[float, float, float, float]\+ \texorpdfstring{$\vert$}{|} None }]{box}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a rectangular region from this image. The box is a
+4-tuple defining the left, upper, right, and lower pixel
+coordinate. See :ref:`coordinate-system`.
+
+Note: Prior to Pillow 3.4.0, this was a lazy operation.
+
+:param box: The crop rectangle, as a (left, upper, right, lower)-tuple.
+:rtype: :py:class:`~PIL.Image.Image`
+:returns: An :py:class:`~PIL.Image.Image` object.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a608c2a768128436dec015ea3e1f35ce4}\index{PIL.Image.Image@{PIL.Image.Image}!draft@{draft}}
+\index{draft@{draft}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{draft()}{draft()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a608c2a768128436dec015ea3e1f35ce4} 
+ tuple\+[str, tuple\+[int, int, float, float]\+]\+ \texorpdfstring{$\vert$}{|} None PIL.\+Image.\+Image.\+draft (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None}]{mode}{, }\item[{tuple\+[int, int]\+ \texorpdfstring{$\vert$}{|} None     }]{size}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Configures the image file loader so it returns a version of the
+image that as closely as possible matches the given mode and
+size. For example, you can use this method to convert a color
+JPEG to grayscale while loading it.
+
+If any changes are made, returns a tuple with the chosen ``mode`` and
+``box`` with coordinates of the original image within the altered one.
+
+Note that this method modifies the :py:class:`~PIL.Image.Image` object
+in place. If the image has already been loaded, this method has no
+effect.
+
+Note: This method is not implemented for most images. It is
+currently implemented only for JPEG and MPO images.
+
+:param mode: The requested mode.
+:param size: The requested size in pixels, as a 2-tuple:
+   (width, height).
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg_image_plugin_1_1_jpeg_image_file_a602557bc3aaa4151f122f6270a8417a8}{PIL.\+Jpeg\+Image\+Plugin.\+Jpeg\+Image\+File}}.
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a06e19d531ae39f5c023c159ce0400d90}\index{PIL.Image.Image@{PIL.Image.Image}!effect\_spread@{effect\_spread}}
+\index{effect\_spread@{effect\_spread}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{effect\_spread()}{effect\_spread()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a06e19d531ae39f5c023c159ce0400d90} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+effect\+\_\+spread (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{distance}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Randomly spread pixels in an image.
+
+:param distance: Distance to spread pixels.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a0630e066925390421837423b179766ef}\index{PIL.Image.Image@{PIL.Image.Image}!entropy@{entropy}}
+\index{entropy@{entropy}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{entropy()}{entropy()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a0630e066925390421837423b179766ef} 
+ float PIL.\+Image.\+Image.\+entropy (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \texorpdfstring{$\vert$}{|} None }]{mask}{ = {\ttfamily None}, }\item[{tuple\+[float, float]\+ \texorpdfstring{$\vert$}{|} None }]{extrema}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates and returns the entropy for the image.
+
+A bilevel image (mode "1") is treated as a grayscale ("L")
+image by this method.
+
+If a mask is provided, the method employs the histogram for
+those parts of the image where the mask image is non-zero.
+The mask image must have the same size as the image, and be
+either a bi-level image (mode "1") or a grayscale image ("L").
+
+:param mask: An optional mask.
+:param extrema: An optional tuple of manually-specified extrema.
+:returns: A float value representing the image entropy
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a871439e9a22494c92b1170b09ca390c2}\index{PIL.Image.Image@{PIL.Image.Image}!filter@{filter}}
+\index{filter@{filter}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a871439e9a22494c92b1170b09ca390c2} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+filter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_filter}{Image\+Filter.\+Filter}} \texorpdfstring{$\vert$}{|} type\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_filter}{Image\+Filter.\+Filter}}]\+}]{filter}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Filters this image using the given filter.  For a list of
+available filters, see the :py:mod:`~PIL.ImageFilter` module.
+
+:param filter: Filter kernel.
+:returns: An :py:class:`~PIL.Image.Image` object.\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a875e20e183e7cbf33d742da428364ab0}\index{PIL.Image.Image@{PIL.Image.Image}!frombytes@{frombytes}}
+\index{frombytes@{frombytes}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{frombytes()}{frombytes()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a875e20e183e7cbf33d742da428364ab0} 
+ None PIL.\+Image.\+Image.\+frombytes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{bytes \texorpdfstring{$\vert$}{|} bytearray \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_supports_array_interface}{Supports\+Array\+Interface}}}]{data}{, }\item[{str }]{decoder\+\_\+name}{ = {\ttfamily "{}raw"{}}, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads this image with pixel data from a bytes object.
+
+This method is similar to the :py:func:`~PIL.Image.frombytes` function,
+but loads data into this image instead of creating a new image object.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_ae295569dc5bf249de237474d972d20b8}\index{PIL.Image.Image@{PIL.Image.Image}!get\_child\_images@{get\_child\_images}}
+\index{get\_child\_images@{get\_child\_images}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{get\_child\_images()}{get\_child\_images()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ae295569dc5bf249de237474d972d20b8} 
+ list\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_image_file}{Image\+File.\+Image\+File}}]\+ PIL.\+Image.\+Image.\+get\+\_\+child\+\_\+images (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_image_file_aeab9180ba303e63750bb015725b2e8ec}{PIL.\+Image\+File.\+Image\+File}}.
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a338309ed5b6e3867024c48d7e563a7e5}\index{PIL.Image.Image@{PIL.Image.Image}!get\_flattened\_data@{get\_flattened\_data}}
+\index{get\_flattened\_data@{get\_flattened\_data}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{get\_flattened\_data()}{get\_flattened\_data()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a338309ed5b6e3867024c48d7e563a7e5} 
+ tuple\+[tuple\+[int, ...]\+, ...]\+ \texorpdfstring{$\vert$}{|} tuple\+[float, ...]\+ PIL.\+Image.\+Image.\+get\+\_\+flattened\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{band}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the contents of this image as a tuple containing pixel values.
+The sequence object is flattened, so that values for line one follow
+directly after the values of line zero, and so on.
+
+:param band: What band to return.  The default is to return
+   all bands.  To return a single band, pass in the index
+   value (e.g. 0 to get the "R" band from an "RGB" image).
+:returns: A tuple containing pixel values.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a8a536ffd214797a62319e8cfa8974a9f}\index{PIL.Image.Image@{PIL.Image.Image}!getbands@{getbands}}
+\index{getbands@{getbands}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{getbands()}{getbands()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a8a536ffd214797a62319e8cfa8974a9f} 
+ tuple\+[str, ...]\+ PIL.\+Image.\+Image.\+getbands (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a tuple containing the name of each band in this image.
+For example, ``getbands`` on an RGB image returns ("R", "G", "B").
+
+:returns: A tuple containing band names.
+:rtype: tuple
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a68b58fea80fb10808090ae0ae03d5528}\index{PIL.Image.Image@{PIL.Image.Image}!getbbox@{getbbox}}
+\index{getbbox@{getbbox}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{getbbox()}{getbbox()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a68b58fea80fb10808090ae0ae03d5528} 
+ tuple\+[int, int, int, int]\+ \texorpdfstring{$\vert$}{|} None PIL.\+Image.\+Image.\+getbbox (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{bool }]{alpha\+\_\+only}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Calculates the bounding box of the non-zero regions in the
+image.
+
+:param alpha_only: Optional flag, defaulting to ``True``.
+   If ``True`` and the image has an alpha channel, trim transparent pixels.
+   Otherwise, trim pixels when all channels are zero.
+   Keyword-only argument.
+:returns: The bounding box is returned as a 4-tuple defining the
+   left, upper, right, and lower pixel coordinate. See
+   :ref:`coordinate-system`. If the image is completely empty, this
+   method returns None.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_aca3f805687eaa523181fa7890578e5c1}\index{PIL.Image.Image@{PIL.Image.Image}!getchannel@{getchannel}}
+\index{getchannel@{getchannel}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{getchannel()}{getchannel()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_aca3f805687eaa523181fa7890578e5c1} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+getchannel (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} str}]{channel}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns an image containing a single channel of the source image.
+
+:param channel: What channel to return. Could be index
+  (0 for "R" channel of "RGB") or channel name
+  ("A" for alpha channel of "RGBA").
+:returns: An image in "L" mode.
+
+.. versionadded:: 4.3.0
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a821b1281a8111ffef85eb037670b0344}\index{PIL.Image.Image@{PIL.Image.Image}!getcolors@{getcolors}}
+\index{getcolors@{getcolors}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{getcolors()}{getcolors()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a821b1281a8111ffef85eb037670b0344} 
+ list\+[tuple\+[int, tuple\+[int, ...]\+]\+]\+ \texorpdfstring{$\vert$}{|} list\+[tuple\+[int, float]\+]\+ \texorpdfstring{$\vert$}{|} None PIL.\+Image.\+Image.\+getcolors (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{maxcolors}{ = {\ttfamily 256}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of colors used in this image.
+
+The colors will be in the image's mode. For example, an RGB image will
+return a tuple of (red, green, blue) color values, and a P image will
+return the index of the color in the palette.
+
+:param maxcolors: Maximum number of colors.  If this number is
+   exceeded, this method returns None.  The default limit is
+   256 colors.
+:returns: An unsorted list of (count, pixel) values.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a361719a485266959784e5feb26a85196}\index{PIL.Image.Image@{PIL.Image.Image}!getdata@{getdata}}
+\index{getdata@{getdata}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{getdata()}{getdata()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a361719a485266959784e5feb26a85196} 
+ core.\+Imaging\+Core PIL.\+Image.\+Image.\+getdata (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{band}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the contents of this image as a sequence object
+containing pixel values.  The sequence object is flattened, so
+that values for line one follow directly after the values of
+line zero, and so on.
+
+Note that the sequence object returned by this method is an
+internal PIL data type, which only supports certain sequence
+operations.  To convert it to an ordinary sequence (e.g. for
+printing), use ``list(im.getdata())``.
+
+:param band: What band to return.  The default is to return
+   all bands.  To return a single band, pass in the index
+   value (e.g. 0 to get the "R" band from an "RGB" image).
+:returns: A sequence-like object.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a42e160a663ae4d60c732ba9645f9cd1b}\index{PIL.Image.Image@{PIL.Image.Image}!getexif@{getexif}}
+\index{getexif@{getexif}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{getexif()}{getexif()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a42e160a663ae4d60c732ba9645f9cd1b} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif}{Exif}} PIL.\+Image.\+Image.\+getexif (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets EXIF data from the image.
+
+:returns: an :py:class:`~PIL.Image.Exif` object.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_png_image_file_a8943d13bb377c43a3b9289d78767101e}{PIL.\+Png\+Image\+Plugin.\+Png\+Image\+File}}.
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a50c5ec279451d13abfbfdea9434b03b5}\index{PIL.Image.Image@{PIL.Image.Image}!getextrema@{getextrema}}
+\index{getextrema@{getextrema}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{getextrema()}{getextrema()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a50c5ec279451d13abfbfdea9434b03b5} 
+ tuple\+[float, float]\+ \texorpdfstring{$\vert$}{|} tuple\+[tuple\+[int, int]\+, ...]\+ PIL.\+Image.\+Image.\+getextrema (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Gets the minimum and maximum pixel values for each band in
+the image.
+
+:returns: For a single-band image, a 2-tuple containing the
+   minimum and maximum pixel value.  For a multi-band image,
+   a tuple containing one 2-tuple for each band.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_af74e35a3c728f28b625e6dadf64effde}\index{PIL.Image.Image@{PIL.Image.Image}!getim@{getim}}
+\index{getim@{getim}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{getim()}{getim()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_af74e35a3c728f28b625e6dadf64effde} 
+ Capsule\+Type PIL.\+Image.\+Image.\+getim (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a capsule that points to the internal image memory.
+
+:returns: A capsule object.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_aa8f4b30bb0d5fa7f1a8b4387582aacab}\index{PIL.Image.Image@{PIL.Image.Image}!getpalette@{getpalette}}
+\index{getpalette@{getpalette}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{getpalette()}{getpalette()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_aa8f4b30bb0d5fa7f1a8b4387582aacab} 
+ list\+[int]\+ \texorpdfstring{$\vert$}{|} None PIL.\+Image.\+Image.\+getpalette (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{rawmode}{ = {\ttfamily "{}RGB"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the image palette as a list.
+
+:param rawmode: The mode in which to return the palette. ``None`` will
+   return the palette in its current mode.
+
+   .. versionadded:: 9.1.0
+
+:returns: A list of color values [r, g, b, ...], or None if the
+   image has no palette.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_ae10fdcf522975b5088fbbfe32c5574d7}\index{PIL.Image.Image@{PIL.Image.Image}!getpixel@{getpixel}}
+\index{getpixel@{getpixel}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{getpixel()}{getpixel()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ae10fdcf522975b5088fbbfe32c5574d7} 
+ float \texorpdfstring{$\vert$}{|} tuple\+[int, ...]\+ \texorpdfstring{$\vert$}{|} None PIL.\+Image.\+Image.\+getpixel (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[int, int]\+ \texorpdfstring{$\vert$}{|} list\+[int]\+     }]{xy}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the pixel value at a given position.
+
+:param xy: The coordinate, given as (x, y). See
+   :ref:`coordinate-system`.
+:returns: The pixel value.  If the image is a multi-layer image,
+   this method returns a tuple.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a1a219ebcc984fed9fd3b6c568f51ee6b}\index{PIL.Image.Image@{PIL.Image.Image}!getprojection@{getprojection}}
+\index{getprojection@{getprojection}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{getprojection()}{getprojection()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a1a219ebcc984fed9fd3b6c568f51ee6b} 
+ tuple\+[list\+[int]\+, list\+[int]\+]\+ PIL.\+Image.\+Image.\+getprojection (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get projection to x and y axes
+
+:returns: Two sequences, indicating where there are non-zero
+    pixels along the X-axis and the Y-axis, respectively.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_aceebd9c0741bae3b431db6463b3dd7d5}\index{PIL.Image.Image@{PIL.Image.Image}!getxmp@{getxmp}}
+\index{getxmp@{getxmp}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{getxmp()}{getxmp()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_aceebd9c0741bae3b431db6463b3dd7d5} 
+ dict\+[str, Any]\+ PIL.\+Image.\+Image.\+getxmp (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a dictionary containing the XMP tags.
+Requires defusedxml to be installed.
+
+:returns: XMP tags in a dictionary.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a15789dcf5d2e84945d68978e380e9e3c}\index{PIL.Image.Image@{PIL.Image.Image}!has\_transparency\_data@{has\_transparency\_data}}
+\index{has\_transparency\_data@{has\_transparency\_data}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{has\_transparency\_data()}{has\_transparency\_data()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a15789dcf5d2e84945d68978e380e9e3c} 
+ bool PIL.\+Image.\+Image.\+has\+\_\+transparency\+\_\+data (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determine if an image has transparency data, whether in the form of an
+alpha channel, a palette with an alpha channel, or a "transparency" key
+in the info dictionary.
+
+Note the image might still appear solid, if all of the values shown
+within are opaque.
+
+:returns: A boolean.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_ae8b248d94b4578f09a645ad6cf28cf40}\index{PIL.Image.Image@{PIL.Image.Image}!height@{height}}
+\index{height@{height}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ae8b248d94b4578f09a645ad6cf28cf40} 
+ int PIL.\+Image.\+Image.\+height (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a7e3cb6e008dd51183f0e2b341c019224}\index{PIL.Image.Image@{PIL.Image.Image}!histogram@{histogram}}
+\index{histogram@{histogram}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{histogram()}{histogram()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a7e3cb6e008dd51183f0e2b341c019224} 
+ list\+[int]\+ PIL.\+Image.\+Image.\+histogram (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \texorpdfstring{$\vert$}{|} None }]{mask}{ = {\ttfamily None}, }\item[{tuple\+[float, float]\+ \texorpdfstring{$\vert$}{|} None }]{extrema}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a histogram for the image. The histogram is returned as a
+list of pixel counts, one for each pixel value in the source
+image. Counts are grouped into 256 bins for each band, even if
+the image has more than 8 bits per band. If the image has more
+than one band, the histograms for all bands are concatenated (for
+example, the histogram for an "RGB" image contains 768 values).
+
+A bilevel image (mode "1") is treated as a grayscale ("L") image
+by this method.
+
+If a mask is provided, the method returns a histogram for those
+parts of the image where the mask image is non-zero. The mask
+image must have the same size as the image, and be either a
+bi-level image (mode "1") or a grayscale image ("L").
+
+:param mask: An optional mask.
+:param extrema: An optional tuple of manually-specified extrema.
+:returns: A list containing pixel counts.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_aa095b91e1a179ca3bedd2c1d01dedb7e}\index{PIL.Image.Image@{PIL.Image.Image}!im@{im}}
+\index{im@{im}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{im()}{im()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_aa095b91e1a179ca3bedd2c1d01dedb7e} 
+ core.\+Imaging\+Core PIL.\+Image.\+Image.\+im (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a2d452e97257c1a5f2bf41dd65f68a326}\index{PIL.Image.Image@{PIL.Image.Image}!im@{im}}
+\index{im@{im}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{im()}{im()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a2d452e97257c1a5f2bf41dd65f68a326} 
+ None PIL.\+Image.\+Image.\+im (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{core.\+Imaging\+Core}]{im}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a1d8a438d032a00f00371e5143127b615}\index{PIL.Image.Image@{PIL.Image.Image}!load@{load}}
+\index{load@{load}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a1d8a438d032a00f00371e5143127b615} 
+ core.\+Pixel\+Access \texorpdfstring{$\vert$}{|} None PIL.\+Image.\+Image.\+load (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Allocates storage for the image and loads the pixel data.  In
+normal cases, you don't need to call this method, since the
+Image class automatically loads an opened image when it is
+accessed for the first time.
+
+If the file associated with the image was opened by Pillow, then this
+method will close it. The exception to this is if the image has
+multiple frames, in which case the file will be left open for seek
+operations. See :ref:`file-handling` for more information.
+
+:returns: An image access object.
+:rtype: :py:class:`.PixelAccess`
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{class_p_i_l_1_1_avif_image_plugin_1_1_avif_image_file_a0c11188acc5925f4df1517f23a634763}{PIL.\+Avif\+Image\+Plugin.\+Avif\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_eps_image_plugin_1_1_eps_image_file_a7ce9f4958b29d5ce7fe429f9a4898b6a}{PIL.\+Eps\+Image\+Plugin.\+Eps\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_fpx_image_plugin_1_1_fpx_image_file_ac19cf2e1d55d627fca99ceeea1b9e729}{PIL.\+Fpx\+Image\+Plugin.\+Fpx\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_gbr_image_plugin_1_1_gbr_image_file_af11d23f3798f197fcbf4b0e9047c57dd}{PIL.\+Gbr\+Image\+Plugin.\+Gbr\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_icns_image_plugin_1_1_icns_image_file_aa5a983bb3425bf6a241ce44b59431590}{PIL.\+Icns\+Image\+Plugin.\+Icns\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_image_file_ad9ed941489cfdccfb2343f0f717b2056}{PIL.\+Ico\+Image\+Plugin.\+Ico\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_image_file_a29aa974746c90a130f7e8a7dcc97038a}{PIL.\+Image\+File.\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_stub_image_file_acadef03c9ed1fd2d578abede00206728}{PIL.\+Image\+File.\+Stub\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_iptc_image_plugin_1_1_iptc_image_file_a6b312a9aac280c52de03b0b5b32d0a47}{PIL.\+Iptc\+Image\+Plugin.\+Iptc\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_jpeg2_k_image_file_aec6caebd338a5eaa066f7c21815e77b6}{PIL.\+Jpeg2\+KImage\+Plugin.\+Jpeg2\+KImage\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_tiff_image_file_a44a2c54c82031b7ec92732e1f597e7f3}{PIL.\+Tiff\+Image\+Plugin.\+Tiff\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_wal_image_file_1_1_wal_image_file_a71c066b4149f1ba77403e9e30ed6fd0d}{PIL.\+Wal\+Image\+File.\+Wal\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_web_p_image_plugin_1_1_web_p_image_file_ac4009417992cb9506be04e9db6c75ef0}{PIL.\+Web\+PImage\+Plugin.\+Web\+PImage\+File}}, and \doxymbox{\hyperlink{class_p_i_l_1_1_wmf_image_plugin_1_1_wmf_stub_image_file_aa0f9609065c7882a0e35f857ecd4a8d3}{PIL.\+Wmf\+Image\+Plugin.\+Wmf\+Stub\+Image\+File}}.
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_ac351953fa97afc3460cd52741bb0806f}\index{PIL.Image.Image@{PIL.Image.Image}!mode@{mode}}
+\index{mode@{mode}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{mode()}{mode()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ac351953fa97afc3460cd52741bb0806f} 
+ str PIL.\+Image.\+Image.\+mode (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_af5c6de6eff68040a03bea362a0b34ac0}\index{PIL.Image.Image@{PIL.Image.Image}!paste@{paste}}
+\index{paste@{paste}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{paste()}{paste()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_af5c6de6eff68040a03bea362a0b34ac0} 
+ None PIL.\+Image.\+Image.\+paste (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} float \texorpdfstring{$\vert$}{|} tuple\+[float, ...]\+}]{im}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \texorpdfstring{$\vert$}{|} tuple\+[int, int, int, int]\+ \texorpdfstring{$\vert$}{|} tuple\+[int, int]\+ \texorpdfstring{$\vert$}{|} None }]{box}{ = {\ttfamily None}, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \texorpdfstring{$\vert$}{|} None }]{mask}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Pastes another image into this image. The box argument is either
+a 2-tuple giving the upper left corner, a 4-tuple defining the
+left, upper, right, and lower pixel coordinate, or None (same as
+(0, 0)). See :ref:`coordinate-system`. If a 4-tuple is given, the size
+of the pasted image must match the size of the region.
+
+If the modes don't match, the pasted image is converted to the mode of
+this image (see the :py:meth:`~PIL.Image.Image.convert` method for
+details).
+
+Instead of an image, the source can be a integer or tuple
+containing pixel values. The method then fills the region
+with the given color. When creating RGB images, you can
+also use color strings as supported by the ImageColor module. See
+:ref:`colors` for more information.
+
+If a mask is given, this method updates only the regions
+indicated by the mask. You can use either "1", "L", "LA", "RGBA"
+or "RGBa" images (if present, the alpha band is used as mask).
+Where the mask is 255, the given image is copied as is.  Where
+the mask is 0, the current value is preserved.  Intermediate
+values will mix the two images together, including their alpha
+channels if they have them.
+
+See :py:meth:`~PIL.Image.Image.alpha_composite` if you want to
+combine images with respect to their alpha channels.
+
+:param im: Source image or pixel value (integer, float or tuple).
+:param box: An optional 4-tuple giving the region to paste into.
+   If a 2-tuple is used instead, it's treated as the upper left
+   corner.  If omitted or None, the source is pasted into the
+   upper left corner.
+
+   If an image is given as the second argument and there is no
+   third, the box defaults to (0, 0), and the second argument
+   is interpreted as a mask image.
+:param mask: An optional mask image.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_ad1eb663c58fe8a4069147f4d8bb9dd7c}\index{PIL.Image.Image@{PIL.Image.Image}!point@{point}}
+\index{point@{point}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{point()}{point()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ad1eb663c58fe8a4069147f4d8bb9dd7c} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+point (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{(             Sequence\+[float]\+             \texorpdfstring{$\vert$}{|} Numpy\+Array             \texorpdfstring{$\vert$}{|} Callable\+[\+[int]\+, float]\+             \texorpdfstring{$\vert$}{|} Callable\+[\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_point_transform}{Image\+Point\+Transform}}]\+, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_point_transform}{Image\+Point\+Transform}} \texorpdfstring{$\vert$}{|} float]\+             \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_point_handler}{Image\+Point\+Handler}}         )}]{lut}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{mode}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Maps this image through a lookup table or function.
+
+:param lut: A lookup table, containing 256 (or 65536 if
+   self.mode=="I" and mode == "L") values per band in the
+   image.  A function can be used instead, it should take a
+   single argument. The function is called once for each
+   possible pixel value, and the resulting table is applied to
+   all bands of the image.
+
+   It may also be an :py:class:`~PIL.Image.ImagePointHandler`
+   object::
+
+       class Example(Image.ImagePointHandler):
+         def point(self, im: Image) -> Image:
+           # Return result
+:param mode: Output mode (default is same as input). This can only be used if
+   the source image has mode "L" or "P", and the output has mode "1" or the
+   source image mode is "I" and the output mode is "L".
+:returns: An :py:class:`~PIL.Image.Image` object.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a2c6e7a4b6e186d013964f6616c76997f}\index{PIL.Image.Image@{PIL.Image.Image}!putalpha@{putalpha}}
+\index{putalpha@{putalpha}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{putalpha()}{putalpha()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a2c6e7a4b6e186d013964f6616c76997f} 
+ None PIL.\+Image.\+Image.\+putalpha (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \texorpdfstring{$\vert$}{|} int}]{alpha}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds or replaces the alpha layer in this image.  If the image
+does not have an alpha layer, it's converted to "LA" or "RGBA".
+The new layer must be either "L" or "1".
+
+:param alpha: The new alpha layer.  This can either be an "L" or "1"
+   image having the same size as this image, or an integer.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_acb474ba0722d67a8e2eeb256ae2aba5a}\index{PIL.Image.Image@{PIL.Image.Image}!putdata@{putdata}}
+\index{putdata@{putdata}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{putdata()}{putdata()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_acb474ba0722d67a8e2eeb256ae2aba5a} 
+ None PIL.\+Image.\+Image.\+putdata (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Sequence\+[float]\+ \texorpdfstring{$\vert$}{|} Sequence\+[Sequence\+[int]\+]\+ \texorpdfstring{$\vert$}{|} core.\+Imaging\+Core \texorpdfstring{$\vert$}{|} Numpy\+Array}]{data}{, }\item[{float }]{scale}{ = {\ttfamily 1.0}, }\item[{float }]{offset}{ = {\ttfamily 0.0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Copies pixel data from a flattened sequence object into the image. The
+values should start at the upper left corner (0, 0), continue to the
+end of the line, followed directly by the first value of the second
+line, and so on. Data will be read until either the image or the
+sequence ends. The scale and offset values are used to adjust the
+sequence values: **pixel = value*scale + offset**.
+
+:param data: A flattened sequence object. See :ref:`colors` for more
+    information about values.
+:param scale: An optional scale value.  The default is 1.0.
+:param offset: An optional offset value.  The default is 0.0.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_ae89fe90c3317122fe1149a652f1ac5d5}\index{PIL.Image.Image@{PIL.Image.Image}!putpalette@{putpalette}}
+\index{putpalette@{putpalette}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{putpalette()}{putpalette()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ae89fe90c3317122fe1149a652f1ac5d5} 
+ None PIL.\+Image.\+Image.\+putpalette (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_palette_1_1_image_palette}{Image\+Palette.\+Image\+Palette}} \texorpdfstring{$\vert$}{|} bytes \texorpdfstring{$\vert$}{|} Sequence\+[int]\+}]{data}{, }\item[{str }]{rawmode}{ = {\ttfamily "{}RGB"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attaches a palette to this image.  The image must be a "P", "PA", "L"
+or "LA" image.
+
+The palette sequence must contain at most 256 colors, made up of one
+integer value for each channel in the raw mode.
+For example, if the raw mode is "RGB", then it can contain at most 768
+values, made up of red, green and blue values for the corresponding pixel
+index in the 256 colors.
+If the raw mode is "RGBA", then it can contain at most 1024 values,
+containing red, green, blue and alpha values.
+
+Alternatively, an 8-bit string may be used instead of an integer sequence.
+
+:param data: A palette sequence (either a list or a string).
+:param rawmode: The raw mode of the palette. Either "RGB", "RGBA", or a mode
+   that can be transformed to "RGB" or "RGBA" (e.g. "R", "BGR;15", "RGBA;L").
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_ad007e4753a64e3306352e0c2901323d6}\index{PIL.Image.Image@{PIL.Image.Image}!putpixel@{putpixel}}
+\index{putpixel@{putpixel}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{putpixel()}{putpixel()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ad007e4753a64e3306352e0c2901323d6} 
+ None PIL.\+Image.\+Image.\+putpixel (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[int, int]\+}]{xy}{, }\item[{float \texorpdfstring{$\vert$}{|} tuple\+[int, ...]\+ \texorpdfstring{$\vert$}{|} list\+[int]\+     }]{value}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Modifies the pixel at the given position. The color is given as
+a single numerical value for single-band images, and a tuple for
+multi-band images. In addition to this, RGB and RGBA tuples are
+accepted for P and PA images. See :ref:`colors` for more information.
+
+Note that this method is relatively slow.  For more extensive changes,
+use :py:meth:`~PIL.Image.Image.paste` or the :py:mod:`~PIL.ImageDraw`
+module instead.
+
+See:
+
+* :py:meth:`~PIL.Image.Image.paste`
+* :py:meth:`~PIL.Image.Image.putdata`
+* :py:mod:`~PIL.ImageDraw`
+
+:param xy: The pixel coordinate, given as (x, y). See
+   :ref:`coordinate-system`.
+:param value: The pixel value.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_ac9f583e3ada6ea3c6c03f368846d9838}\index{PIL.Image.Image@{PIL.Image.Image}!quantize@{quantize}}
+\index{quantize@{quantize}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{quantize()}{quantize()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ac9f583e3ada6ea3c6c03f368846d9838} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+quantize (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{colors}{ = {\ttfamily 256}, }\item[{int \texorpdfstring{$\vert$}{|} None }]{method}{ = {\ttfamily None}, }\item[{int }]{kmeans}{ = {\ttfamily 0}, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} \texorpdfstring{$\vert$}{|} None }]{palette}{ = {\ttfamily None}, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_dither}{Dither}} }]{dither}{ = {\ttfamily \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_dither_a703c6d74a8e635cd97285e1336800e88}{Dither.\+FLOYDSTEINBERG}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Convert the image to 'P' mode with the specified number
+of colors.
+
+:param colors: The desired number of colors, <= 256
+:param method: :data:`Quantize.MEDIANCUT` (median cut),
+               :data:`Quantize.MAXCOVERAGE` (maximum coverage),
+               :data:`Quantize.FASTOCTREE` (fast octree),
+               :data:`Quantize.LIBIMAGEQUANT` (libimagequant; check support
+               using :py:func:`PIL.features.check_feature` with
+               ``feature="libimagequant"``).
+
+               By default, :data:`Quantize.MEDIANCUT` will be used.
+
+               The exception to this is RGBA images. :data:`Quantize.MEDIANCUT`
+               and :data:`Quantize.MAXCOVERAGE` do not support RGBA images, so
+               :data:`Quantize.FASTOCTREE` is used by default instead.
+:param kmeans: Integer greater than or equal to zero.
+:param palette: Quantize to the palette of given
+                :py:class:`PIL.Image.Image`.
+:param dither: Dithering method, used when converting from
+   mode "RGB" to "P" or from "RGB" or "L" to "1".
+   Available methods are :data:`Dither.NONE` or :data:`Dither.FLOYDSTEINBERG`
+   (default).
+:returns: A new image
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a77066eed52b3656080cb1c38710921db}\index{PIL.Image.Image@{PIL.Image.Image}!readonly@{readonly}}
+\index{readonly@{readonly}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{readonly()}{readonly()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a77066eed52b3656080cb1c38710921db} 
+ int PIL.\+Image.\+Image.\+readonly (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a2652862efe395b50724a5d8c24562aad}\index{PIL.Image.Image@{PIL.Image.Image}!readonly@{readonly}}
+\index{readonly@{readonly}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{readonly()}{readonly()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a2652862efe395b50724a5d8c24562aad} 
+ None PIL.\+Image.\+Image.\+readonly (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{readonly}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_adc5cb41d5388a7f4ee8ddc2771ba3f3b}\index{PIL.Image.Image@{PIL.Image.Image}!reduce@{reduce}}
+\index{reduce@{reduce}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{reduce()}{reduce()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_adc5cb41d5388a7f4ee8ddc2771ba3f3b} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+reduce (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} tuple\+[int, int]\+}]{factor}{, }\item[{tuple\+[int, int, int, int]\+ \texorpdfstring{$\vert$}{|} None }]{box}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a copy of the image reduced ``factor`` times.
+If the size of the image is not dividable by ``factor``,
+the resulting size will be rounded up.
+
+:param factor: A greater than 0 integer or tuple of two integers
+   for width and height separately.
+:param box: An optional 4-tuple of ints providing
+   the source image region to be reduced.
+   The values must be within ``(0, 0, width, height)`` rectangle.
+   If omitted or ``None``, the entire source is used.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_jpeg2_k_image_file_ab9b6fc9c25aec6e67e3c8551a456fc26}{PIL.\+Jpeg2\+KImage\+Plugin.\+Jpeg2\+KImage\+File}}, and \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_jpeg2_k_image_file_a1845209fe958d1e70103ca05b460236a}{PIL.\+Jpeg2\+KImage\+Plugin.\+Jpeg2\+KImage\+File}}.
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_ad827e783005b181b28d33b28aba25152}\index{PIL.Image.Image@{PIL.Image.Image}!remap\_palette@{remap\_palette}}
+\index{remap\_palette@{remap\_palette}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{remap\_palette()}{remap\_palette()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ad827e783005b181b28d33b28aba25152} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+remap\+\_\+palette (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{list\+[int]\+}]{dest\+\_\+map}{, }\item[{bytes \texorpdfstring{$\vert$}{|} bytearray \texorpdfstring{$\vert$}{|} None }]{source\+\_\+palette}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Rewrites the image to reorder the palette.
+
+:param dest_map: A list of indexes into the original palette.
+   e.g. ``[1,0]`` would swap a two item palette, and ``list(range(256))``
+   is the identity transform.
+:param source_palette: Bytes or None.
+:returns:  An :py:class:`~PIL.Image.Image` object.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_ad46bf0d1ae2a6263da942fdf7b7c06a9}\index{PIL.Image.Image@{PIL.Image.Image}!resize@{resize}}
+\index{resize@{resize}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ad46bf0d1ae2a6263da942fdf7b7c06a9} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+resize (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[int, int]\+ \texorpdfstring{$\vert$}{|} list\+[int]\+ \texorpdfstring{$\vert$}{|} Numpy\+Array}]{size}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{resample}{ = {\ttfamily None}, }\item[{tuple\+[float, float, float, float]\+ \texorpdfstring{$\vert$}{|} None }]{box}{ = {\ttfamily None}, }\item[{float \texorpdfstring{$\vert$}{|} None }]{reducing\+\_\+gap}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a resized copy of this image.
+
+:param size: The requested size in pixels, as a tuple or array:
+   (width, height).
+:param resample: An optional resampling filter.  This can be
+   one of :py:data:`Resampling.NEAREST`, :py:data:`Resampling.BOX`,
+   :py:data:`Resampling.BILINEAR`, :py:data:`Resampling.HAMMING`,
+   :py:data:`Resampling.BICUBIC` or :py:data:`Resampling.LANCZOS`.
+   If the image has mode "1" or "P", it is always set to
+   :py:data:`Resampling.NEAREST`. Otherwise, the default filter is
+   :py:data:`Resampling.BICUBIC`. See: :ref:`concept-filters`.
+:param box: An optional 4-tuple of floats providing
+   the source image region to be scaled.
+   The values must be within (0, 0, width, height) rectangle.
+   If omitted or None, the entire source is used.
+:param reducing_gap: Apply optimization by resizing the image
+   in two steps. First, reducing the image by integer times
+   using :py:meth:`~PIL.Image.Image.reduce`.
+   Second, resizing using regular resampling. The last step
+   changes size no less than by ``reducing_gap`` times.
+   ``reducing_gap`` may be None (no first step is performed)
+   or should be greater than 1.0. The bigger ``reducing_gap``,
+   the closer the result to the fair resampling.
+   The smaller ``reducing_gap``, the faster resizing.
+   With ``reducing_gap`` greater or equal to 3.0, the result is
+   indistinguishable from fair resampling in most cases.
+   The default value is None (no optimization).
+:returns: An :py:class:`~PIL.Image.Image` object.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a8e88a5e94c5df5154c213b7fa87ff598}\index{PIL.Image.Image@{PIL.Image.Image}!rotate@{rotate}}
+\index{rotate@{rotate}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{rotate()}{rotate()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a8e88a5e94c5df5154c213b7fa87ff598} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+rotate (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{float}]{angle}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_resampling}{Resampling}} }]{resample}{ = {\ttfamily \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_resampling_a11ea60e2485f0e8a35fc5561bca9b390}{Resampling.\+NEAREST}}}, }\item[{int \texorpdfstring{$\vert$}{|} bool }]{expand}{ = {\ttfamily False}, }\item[{tuple\+[float, float]\+ \texorpdfstring{$\vert$}{|} None }]{center}{ = {\ttfamily None}, }\item[{tuple\+[int, int]\+ \texorpdfstring{$\vert$}{|} None }]{translate}{ = {\ttfamily None}, }\item[{float \texorpdfstring{$\vert$}{|} tuple\+[float, ...]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{fillcolor}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a rotated copy of this image.  This method returns a
+copy of this image, rotated the given number of degrees counter
+clockwise around its centre.
+
+:param angle: In degrees counter clockwise.
+:param resample: An optional resampling filter.  This can be
+   one of :py:data:`Resampling.NEAREST` (use nearest neighbour),
+   :py:data:`Resampling.BILINEAR` (linear interpolation in a 2x2
+   environment), or :py:data:`Resampling.BICUBIC` (cubic spline
+   interpolation in a 4x4 environment). If omitted, or if the image has
+   mode "1" or "P", it is set to :py:data:`Resampling.NEAREST`.
+   See :ref:`concept-filters`.
+:param expand: Optional expansion flag.  If true, expands the output
+   image to make it large enough to hold the entire rotated image.
+   If false or omitted, make the output image the same size as the
+   input image.  Note that the expand flag assumes rotation around
+   the center and no translation.
+:param center: Optional center of rotation (a 2-tuple).  Origin is
+   the upper left corner.  Default is the center of the image.
+:param translate: An optional post-rotate translation (a 2-tuple).
+:param fillcolor: An optional color for area outside the rotated image.
+:returns: An :py:class:`~PIL.Image.Image` object.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a504f5764cb1419d26b7658b58e5f88d9}\index{PIL.Image.Image@{PIL.Image.Image}!save@{save}}
+\index{save@{save}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a504f5764cb1419d26b7658b58e5f88d9} 
+ None PIL.\+Image.\+Image.\+save (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{Str\+Or\+Bytes\+Path \texorpdfstring{$\vert$}{|} IO\+[bytes]\+}]{fp}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{format}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any     }]{params}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Saves this image under the given filename.  If no format is
+specified, the format to use is determined from the filename
+extension, if possible.
+
+Keyword options can be used to provide additional instructions
+to the writer. If a writer doesn't recognise an option, it is
+silently ignored. The available options are described in the
+:doc:`image format documentation
+<../handbook/image-file-formats>` for each writer.
+
+You can use a file object instead of a filename. In this case,
+you must always specify the format. The file object must
+implement the ``seek``, ``tell``, and ``write``
+methods, and be opened in binary mode.
+
+:param fp: A filename (string), os.PathLike object or file object.
+:param format: Optional format override.  If omitted, the
+   format to use is determined from the filename extension.
+   If a file object was used instead of a filename, this
+   parameter should always be used.
+:param params: Extra parameters to the image writer. These can also be
+   set on the image itself through ``encoderinfo``. This is useful when
+   saving multiple images::
+
+     # Saving XMP data to a single image
+     from PIL import Image
+     red = Image.new("RGB", (1, 1), "#f00")
+     red.save("out.mpo", xmp=b"test")
+
+     # Saving XMP data to the second frame of an image
+     from PIL import Image
+     black = Image.new("RGB", (1, 1))
+     red = Image.new("RGB", (1, 1), "#f00")
+     red.encoderinfo = {"xmp": b"test"}
+     black.save("out.mpo", save_all=True, append_images=[red])
+:returns: None
+:exception ValueError: If the output format could not be determined
+   from the file name.  Use the format option to solve this.
+:exception OSError: If the file could not be written.  The file
+   may have been created, and may contain partial data.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a85feb0893f186326d846e7f28abc011d}\index{PIL.Image.Image@{PIL.Image.Image}!seek@{seek}}
+\index{seek@{seek}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{seek()}{seek()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a85feb0893f186326d846e7f28abc011d} 
+ None PIL.\+Image.\+Image.\+seek (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{frame}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Seeks to the given frame in this sequence file. If you seek
+beyond the end of the sequence, the method raises an
+``EOFError`` exception. When a sequence file is opened, the
+library automatically seeks to frame 0.
+
+See :py:meth:`~PIL.Image.Image.tell`.
+
+If defined, :attr:`~PIL.Image.Image.n_frames` refers to the
+number of available frames.
+
+:param frame: Frame number, starting at 0.
+:exception EOFError: If the call attempts to seek beyond the end
+    of the sequence.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{class_p_i_l_1_1_avif_image_plugin_1_1_avif_image_file_a90153716d5ffee0b29f2bda80e489358}{PIL.\+Avif\+Image\+Plugin.\+Avif\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_dcx_image_plugin_1_1_dcx_image_file_ab35e18356fc7f1a34dfc9239d5c962df}{PIL.\+Dcx\+Image\+Plugin.\+Dcx\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_fli_image_plugin_1_1_fli_image_file_afb63a05e5b1ef92e6bec2d49da637ab1}{PIL.\+Fli\+Image\+Plugin.\+Fli\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_gif_image_plugin_1_1_gif_image_file_abfb2a3961f6a516299e2ba62f4a161fc}{PIL.\+Gif\+Image\+Plugin.\+Gif\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_im_image_plugin_1_1_im_image_file_ac2263df1500995f14bffd3f1540c2779}{PIL.\+Im\+Image\+Plugin.\+Im\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_mic_image_plugin_1_1_mic_image_file_a11a2ab28067e7dc8f897299a692e35bb}{PIL.\+Mic\+Image\+Plugin.\+Mic\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_mpo_image_plugin_1_1_mpo_image_file_ab18ae254752347867aaeb3cdabdf3952}{PIL.\+Mpo\+Image\+Plugin.\+Mpo\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_png_image_file_aff09ab5c4f802862737280157928197a}{PIL.\+Png\+Image\+Plugin.\+Png\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_psd_image_plugin_1_1_psd_image_file_ae502aa8300676316e529b19f945c4755}{PIL.\+Psd\+Image\+Plugin.\+Psd\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_spider_image_plugin_1_1_spider_image_file_a33f91c88159c6f196a8ea762f5713899}{PIL.\+Spider\+Image\+Plugin.\+Spider\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_tiff_image_file_ae47aa070742e79410dfaba96bb8965b5}{PIL.\+Tiff\+Image\+Plugin.\+Tiff\+Image\+File}}, and \doxymbox{\hyperlink{class_p_i_l_1_1_web_p_image_plugin_1_1_web_p_image_file_ac699d1ccaa4c3bb1f73d596990dd070a}{PIL.\+Web\+PImage\+Plugin.\+Web\+PImage\+File}}.
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a2932dc1572359117944a53394fb818cc}\index{PIL.Image.Image@{PIL.Image.Image}!show@{show}}
+\index{show@{show}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a2932dc1572359117944a53394fb818cc} 
+ None PIL.\+Image.\+Image.\+show (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{title}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Displays this image. This method is mainly intended for debugging purposes.
+
+This method calls :py:func:`PIL.ImageShow.show` internally. You can use
+:py:func:`PIL.ImageShow.register` to override its default behaviour.
+
+The image is first saved to a temporary file. By default, it will be in
+PNG format.
+
+On Unix, the image is then opened using the **xdg-open**, **display**,
+**gm**, **eog** or **xv** utility, depending on which one can be found.
+
+On macOS, the image is opened with the native Preview application.
+
+On Windows, the image is opened with the standard PNG display utility.
+
+:param title: Optional title to use for the image window, where possible.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a7139e53deda0b4539211ef416d79a375}\index{PIL.Image.Image@{PIL.Image.Image}!size@{size}}
+\index{size@{size}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a7139e53deda0b4539211ef416d79a375} 
+ tuple\+[int, int]\+ PIL.\+Image.\+Image.\+size (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented in \doxymbox{\hyperlink{class_p_i_l_1_1_icns_image_plugin_1_1_icns_image_file_a549c23d8ff2c8fc77e337b303907b96a}{PIL.\+Icns\+Image\+Plugin.\+Icns\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_icns_image_plugin_1_1_icns_image_file_ac9b4ae4a0b5a412413651248bbcc1400}{PIL.\+Icns\+Image\+Plugin.\+Icns\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_image_file_a9e998d009a653c6f3c1fc98bdf455949}{PIL.\+Ico\+Image\+Plugin.\+Ico\+Image\+File}}, and \doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_image_file_adb65d709d6a952cbafa46639b2ab3b02}{PIL.\+Ico\+Image\+Plugin.\+Ico\+Image\+File}}.
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_af4a15e19d4ec842eb7da14c24fa916e3}\index{PIL.Image.Image@{PIL.Image.Image}!split@{split}}
+\index{split@{split}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{split()}{split()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_af4a15e19d4ec842eb7da14c24fa916e3} 
+ tuple\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}}, ...]\+ PIL.\+Image.\+Image.\+split (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split this image into individual bands. This method returns a
+tuple of individual image bands from an image. For example,
+splitting an "RGB" image creates three new images each
+containing a copy of one of the original bands (red, green,
+blue).
+
+If you need only one band, :py:meth:`~PIL.Image.Image.getchannel`
+method can be more convenient and faster.
+
+:returns: A tuple containing bands.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_aede81713260b0b2ea5b8387ab6ea8213}\index{PIL.Image.Image@{PIL.Image.Image}!tell@{tell}}
+\index{tell@{tell}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{tell()}{tell()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_aede81713260b0b2ea5b8387ab6ea8213} 
+ int PIL.\+Image.\+Image.\+tell (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the current frame number. See :py:meth:`~PIL.Image.Image.seek`.
+
+If defined, :attr:`~PIL.Image.Image.n_frames` refers to the
+number of available frames.
+
+:returns: Frame number, starting with 0.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{class_p_i_l_1_1_avif_image_plugin_1_1_avif_image_file_a5e9be088927dfdc044e45a884f770f34}{PIL.\+Avif\+Image\+Plugin.\+Avif\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_dcx_image_plugin_1_1_dcx_image_file_af80552e5319d5266f692a6effbd0d402}{PIL.\+Dcx\+Image\+Plugin.\+Dcx\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_fli_image_plugin_1_1_fli_image_file_abc3a877d0961105ea58e03c3c00a827e}{PIL.\+Fli\+Image\+Plugin.\+Fli\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_gif_image_plugin_1_1_gif_image_file_aead9899c91b828ad9b33c911d5ea0ff2}{PIL.\+Gif\+Image\+Plugin.\+Gif\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_im_image_plugin_1_1_im_image_file_a65c65d5d734b0c291f13858305620d0e}{PIL.\+Im\+Image\+Plugin.\+Im\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_mic_image_plugin_1_1_mic_image_file_aa57568fdc97ed266ffb4a23c60ba2944}{PIL.\+Mic\+Image\+Plugin.\+Mic\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_mpo_image_plugin_1_1_mpo_image_file_acea12e41eb9cc3a64e0a53eb83baf780}{PIL.\+Mpo\+Image\+Plugin.\+Mpo\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_png_image_file_a8bb5ca0da6842dc2f8d36428f2949452}{PIL.\+Png\+Image\+Plugin.\+Png\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_psd_image_plugin_1_1_psd_image_file_a7fb6629ac83eb4fd85a659a15885a3b6}{PIL.\+Psd\+Image\+Plugin.\+Psd\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_spider_image_plugin_1_1_spider_image_file_a1887ae140a932ea2c8461435eda8c7bc}{PIL.\+Spider\+Image\+Plugin.\+Spider\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_tiff_image_plugin_1_1_tiff_image_file_a9ebc63a18d3e614fef24e049792e0fae}{PIL.\+Tiff\+Image\+Plugin.\+Tiff\+Image\+File}}, and \doxymbox{\hyperlink{class_p_i_l_1_1_web_p_image_plugin_1_1_web_p_image_file_a90ddfed5c224f3b45fd657bf059a616e}{PIL.\+Web\+PImage\+Plugin.\+Web\+PImage\+File}}.
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_ab90033e3047e929992ad1636fe86c00d}\index{PIL.Image.Image@{PIL.Image.Image}!thumbnail@{thumbnail}}
+\index{thumbnail@{thumbnail}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{thumbnail()}{thumbnail()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ab90033e3047e929992ad1636fe86c00d} 
+ None PIL.\+Image.\+Image.\+thumbnail (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[float, float]\+}]{size}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_resampling}{Resampling}} }]{resample}{ = {\ttfamily \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_resampling_a5c5419ce07472b391157b395a20a3c68}{Resampling.\+BICUBIC}}}, }\item[{float \texorpdfstring{$\vert$}{|} None }]{reducing\+\_\+gap}{ = {\ttfamily 2.0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Make this image into a thumbnail.  This method modifies the
+image to contain a thumbnail version of itself, no larger than
+the given size.  This method calculates an appropriate thumbnail
+size to preserve the aspect of the image, calls the
+:py:meth:`~PIL.Image.Image.draft` method to configure the file reader
+(where applicable), and finally resizes the image.
+
+Note that this function modifies the :py:class:`~PIL.Image.Image`
+object in place.  If you need to use the full resolution image as well,
+apply this method to a :py:meth:`~PIL.Image.Image.copy` of the original
+image.
+
+:param size: The requested size in pixels, as a 2-tuple:
+   (width, height).
+:param resample: Optional resampling filter.  This can be one
+   of :py:data:`Resampling.NEAREST`, :py:data:`Resampling.BOX`,
+   :py:data:`Resampling.BILINEAR`, :py:data:`Resampling.HAMMING`,
+   :py:data:`Resampling.BICUBIC` or :py:data:`Resampling.LANCZOS`.
+   If omitted, it defaults to :py:data:`Resampling.BICUBIC`.
+   (was :py:data:`Resampling.NEAREST` prior to version 2.5.0).
+   See: :ref:`concept-filters`.
+:param reducing_gap: Apply optimization by resizing the image
+   in two steps. First, reducing the image by integer times
+   using :py:meth:`~PIL.Image.Image.reduce` or
+   :py:meth:`~PIL.Image.Image.draft` for JPEG images.
+   Second, resizing using regular resampling. The last step
+   changes size no less than by ``reducing_gap`` times.
+   ``reducing_gap`` may be None (no first step is performed)
+   or should be greater than 1.0. The bigger ``reducing_gap``,
+   the closer the result to the fair resampling.
+   The smaller ``reducing_gap``, the faster resizing.
+   With ``reducing_gap`` greater or equal to 3.0, the result is
+   indistinguishable from fair resampling in most cases.
+   The default value is 2.0 (very close to fair resampling
+   while still being faster in many cases).
+:returns: None
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a61159567eb95ece22d64af976bdd648b}\index{PIL.Image.Image@{PIL.Image.Image}!tobitmap@{tobitmap}}
+\index{tobitmap@{tobitmap}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{tobitmap()}{tobitmap()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a61159567eb95ece22d64af976bdd648b} 
+ bytes PIL.\+Image.\+Image.\+tobitmap (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str }]{name}{ = {\ttfamily "{}image"{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the image converted to an X11 bitmap.
+
+.. note:: This method only works for mode "1" images.
+
+:param name: The name prefix to use for the bitmap variables.
+:returns: A string containing an X11 bitmap.
+:raises ValueError: If the mode is not "1"
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_af0116394cc5926d2d5d492b3dd867543}\index{PIL.Image.Image@{PIL.Image.Image}!tobytes@{tobytes}}
+\index{tobytes@{tobytes}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{tobytes()}{tobytes()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_af0116394cc5926d2d5d492b3dd867543} 
+ bytes PIL.\+Image.\+Image.\+tobytes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str }]{encoder\+\_\+name}{ = {\ttfamily "{}raw"{}}, }\item[{\texorpdfstring{$\ast$}{*}Any}]{args}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return image as a bytes object.
+
+.. warning::
+
+    This method returns raw image data derived from Pillow's internal
+    storage. For compressed image data (e.g. PNG, JPEG) use
+    :meth:`~.save`, with a BytesIO parameter for in-memory data.
+
+:param encoder_name: What encoder to use.
+
+                     The default is to use the standard "raw" encoder.
+                     To see how this packs pixel data into the returned
+                     bytes, see :file:`libImaging/Pack.c`.
+
+                     A list of C encoders can be seen under codecs
+                     section of the function array in
+                     :file:`_imaging.c`. Python encoders are registered
+                     within the relevant plugins.
+:param args: Extra arguments to the encoder.
+:returns: A :py:class:`bytes` object.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a44aea4bf7dd8ed90f190e70db6b72ad1}\index{PIL.Image.Image@{PIL.Image.Image}!toqimage@{toqimage}}
+\index{toqimage@{toqimage}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{toqimage()}{toqimage()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a44aea4bf7dd8ed90f190e70db6b72ad1} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_qt_1_1_image_qt}{Image\+Qt.\+Image\+Qt}} PIL.\+Image.\+Image.\+toqimage (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a QImage copy of this image\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_ade9d019885c9caadccf1e8a97f06cf11}\index{PIL.Image.Image@{PIL.Image.Image}!toqpixmap@{toqpixmap}}
+\index{toqpixmap@{toqpixmap}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{toqpixmap()}{toqpixmap()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ade9d019885c9caadccf1e8a97f06cf11} 
+ Image\+Qt.\+QPixmap PIL.\+Image.\+Image.\+toqpixmap (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a QPixmap copy of this image\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_ab02f90bbdf2672e99618e7f143caa34f}\index{PIL.Image.Image@{PIL.Image.Image}!transform@{transform}}
+\index{transform@{transform}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ab02f90bbdf2672e99618e7f143caa34f} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+transform (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[int, int]\+}]{size}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_transform}{Transform}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_transform_handler}{Image\+Transform\+Handler}} \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_supports_get_data}{Supports\+Get\+Data}}}]{method}{, }\item[{Sequence\+[Any]\+ \texorpdfstring{$\vert$}{|} None }]{data}{ = {\ttfamily None}, }\item[{int }]{resample}{ = {\ttfamily \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_resampling_a11ea60e2485f0e8a35fc5561bca9b390}{Resampling.\+NEAREST}}}, }\item[{int }]{fill}{ = {\ttfamily 1}, }\item[{float \texorpdfstring{$\vert$}{|} tuple\+[float, ...]\+ \texorpdfstring{$\vert$}{|} str \texorpdfstring{$\vert$}{|} None }]{fillcolor}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Transforms this image.  This method creates a new image with the
+given size, and the same mode as the original, and copies data
+to the new image using the given transform.
+
+:param size: The output size in pixels, as a 2-tuple:
+   (width, height).
+:param method: The transformation method.  This is one of
+  :py:data:`Transform.EXTENT` (cut out a rectangular subregion),
+  :py:data:`Transform.AFFINE` (affine transform),
+  :py:data:`Transform.PERSPECTIVE` (perspective transform),
+  :py:data:`Transform.QUAD` (map a quadrilateral to a rectangle), or
+  :py:data:`Transform.MESH` (map a number of source quadrilaterals
+  in one operation).
+
+  It may also be an :py:class:`~PIL.Image.ImageTransformHandler`
+  object::
+
+    class Example(Image.ImageTransformHandler):
+        def transform(self, size, data, resample, fill=1):
+            # Return result
+
+  Implementations of :py:class:`~PIL.Image.ImageTransformHandler`
+  for some of the :py:class:`Transform` methods are provided
+  in :py:mod:`~PIL.ImageTransform`.
+
+  It may also be an object with a ``method.getdata`` method
+  that returns a tuple supplying new ``method`` and ``data`` values::
+
+    class Example:
+        def getdata(self):
+            method = Image.Transform.EXTENT
+            data = (0, 0, 100, 100)
+            return method, data
+:param data: Extra data to the transformation method.
+:param resample: Optional resampling filter.  It can be one of
+   :py:data:`Resampling.NEAREST` (use nearest neighbour),
+   :py:data:`Resampling.BILINEAR` (linear interpolation in a 2x2
+   environment), or :py:data:`Resampling.BICUBIC` (cubic spline
+   interpolation in a 4x4 environment). If omitted, or if the image
+   has mode "1" or "P", it is set to :py:data:`Resampling.NEAREST`.
+   See: :ref:`concept-filters`.
+:param fill: If ``method`` is an
+  :py:class:`~PIL.Image.ImageTransformHandler` object, this is one of
+  the arguments passed to it. Otherwise, it is unused.
+:param fillcolor: Optional fill color for the area outside the
+   transform in the output image.
+:returns: An :py:class:`~PIL.Image.Image` object.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_a0b6b6ef2e53867d27a3820587d8aa543}\index{PIL.Image.Image@{PIL.Image.Image}!transpose@{transpose}}
+\index{transpose@{transpose}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{transpose()}{transpose()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a0b6b6ef2e53867d27a3820587d8aa543} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image}} PIL.\+Image.\+Image.\+transpose (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_transpose}{Transpose}}}]{method}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Transpose image (flip or rotate in 90 degree steps)
+
+:param method: One of :py:data:`Transpose.FLIP_LEFT_RIGHT`,
+  :py:data:`Transpose.FLIP_TOP_BOTTOM`, :py:data:`Transpose.ROTATE_90`,
+  :py:data:`Transpose.ROTATE_180`, :py:data:`Transpose.ROTATE_270`,
+  :py:data:`Transpose.TRANSPOSE` or :py:data:`Transpose.TRANSVERSE`.
+:returns: Returns a flipped or rotated copy of this image.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_image_1_1_image_ab4f3f9d4a204263589998f328524d6c2}\index{PIL.Image.Image@{PIL.Image.Image}!verify@{verify}}
+\index{verify@{verify}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{verify()}{verify()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ab4f3f9d4a204263589998f328524d6c2} 
+ None PIL.\+Image.\+Image.\+verify (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Verifies the contents of a file. For data read from a file, this
+method attempts to determine if the file is broken, without
+actually decoding the image data.  If this method finds any
+problems, it raises suitable exceptions.  If you need to load
+the image after using this method, you must reopen the image
+file.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{class_p_i_l_1_1_image_file_1_1_image_file_a1595f3e2335855ce31fc05bfe069c593}{PIL.\+Image\+File.\+Image\+File}}, and \doxymbox{\hyperlink{class_p_i_l_1_1_png_image_plugin_1_1_png_image_file_aea6f3725235236a7bfca3f519834dd4e}{PIL.\+Png\+Image\+Plugin.\+Png\+Image\+File}}.
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a5e923359d34521bed60df9b76efddd57}\index{PIL.Image.Image@{PIL.Image.Image}!width@{width}}
+\index{width@{width}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a5e923359d34521bed60df9b76efddd57} 
+ int PIL.\+Image.\+Image.\+width (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a945a973d044a966705c036229aec6ab1}\index{PIL.Image.Image@{PIL.Image.Image}!\_close\_exclusive\_fp\_after\_loading@{\_close\_exclusive\_fp\_after\_loading}}
+\index{\_close\_exclusive\_fp\_after\_loading@{\_close\_exclusive\_fp\_after\_loading}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_close\_exclusive\_fp\_after\_loading}{\_close\_exclusive\_fp\_after\_loading}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a945a973d044a966705c036229aec6ab1} 
+bool PIL.\+Image.\+Image.\+\_\+close\+\_\+exclusive\+\_\+fp\+\_\+after\+\_\+loading = True\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_ae88427116efd38f0d5b842fc425393d2}\index{PIL.Image.Image@{PIL.Image.Image}!\_default\_encoderinfo@{\_default\_encoderinfo}}
+\index{\_default\_encoderinfo@{\_default\_encoderinfo}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_default\_encoderinfo}{\_default\_encoderinfo}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ae88427116efd38f0d5b842fc425393d2} 
+PIL.\+Image.\+Image.\+\_\+default\+\_\+encoderinfo = params\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a80744fb5e71391bada26160cea180780}\index{PIL.Image.Image@{PIL.Image.Image}!\_exif@{\_exif}}
+\index{\_exif@{\_exif}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_exif}{\_exif}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a80744fb5e71391bada26160cea180780} 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_exif}{Exif}} \texorpdfstring{$\vert$}{|} None PIL.\+Image.\+Image.\+\_\+exif = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a056657ec3c8edebf2ca2c40e384c33e5}\index{PIL.Image.Image@{PIL.Image.Image}!\_im@{\_im}}
+\index{\_im@{\_im}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_im}{\_im}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a056657ec3c8edebf2ca2c40e384c33e5} 
+PIL.\+Image.\+Image.\+\_\+im = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a5137850120fce16cf6b5c04897214f40}\index{PIL.Image.Image@{PIL.Image.Image}!\_mode@{\_mode}}
+\index{\_mode@{\_mode}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_mode}{\_mode}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a5137850120fce16cf6b5c04897214f40} 
+str PIL.\+Image.\+Image.\+\_\+mode = "{}"{}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_acad82e0027d43c7418c7c9e605046258}\index{PIL.Image.Image@{PIL.Image.Image}!\_new@{\_new}}
+\index{\_new@{\_new}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_new}{\_new}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_acad82e0027d43c7418c7c9e605046258} 
+PIL.\+Image.\+Image.\+\_\+new\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a148f6041de839e0120e194ea653e8f79}\index{PIL.Image.Image@{PIL.Image.Image}!\_readonly@{\_readonly}}
+\index{\_readonly@{\_readonly}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_readonly}{\_readonly}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a148f6041de839e0120e194ea653e8f79} 
+int PIL.\+Image.\+Image.\+\_\+readonly = \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image_a408d4cf4edafa5efa2a5fe873419c58e}{readonly}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a953ee3ca70f93329b38a9df7eb29671c}\index{PIL.Image.Image@{PIL.Image.Image}!\_size@{\_size}}
+\index{\_size@{\_size}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{\_size}{\_size}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a953ee3ca70f93329b38a9df7eb29671c} 
+tuple PIL.\+Image.\+Image.\+\_\+size = (0, 0)\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a78969b4fc2c7d994ddd5632f0f497778}\index{PIL.Image.Image@{PIL.Image.Image}!encoderconfig@{encoderconfig}}
+\index{encoderconfig@{encoderconfig}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{encoderconfig}{encoderconfig}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a78969b4fc2c7d994ddd5632f0f497778} 
+tuple PIL.\+Image.\+Image.\+encoderconfig = ()}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_ada960056d4e9f73a780e9eebfdadefab}\index{PIL.Image.Image@{PIL.Image.Image}!encoderinfo@{encoderinfo}}
+\index{encoderinfo@{encoderinfo}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{encoderinfo}{encoderinfo}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ada960056d4e9f73a780e9eebfdadefab} 
+dict PIL.\+Image.\+Image.\+encoderinfo = encoderinfo}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_ac369bac5bff65e607cbd1fb46466d97c}\index{PIL.Image.Image@{PIL.Image.Image}!format@{format}}
+\index{format@{format}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ac369bac5bff65e607cbd1fb46466d97c} 
+str PIL.\+Image.\+Image.\+format = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_abcdb1985a040c3c6fc8bb83d3c63e436}\index{PIL.Image.Image@{PIL.Image.Image}!format\_description@{format\_description}}
+\index{format\_description@{format\_description}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{format\_description}{format\_description}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_abcdb1985a040c3c6fc8bb83d3c63e436} 
+str PIL.\+Image.\+Image.\+format\+\_\+description = None\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a96deddd6e1e06bf4c25e974ea9f390fe}\index{PIL.Image.Image@{PIL.Image.Image}!fp@{fp}}
+\index{fp@{fp}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{fp}{fp}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a96deddd6e1e06bf4c25e974ea9f390fe} 
+PIL.\+Image.\+Image.\+fp}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_ad64d536d671d37d388fc8896f9d493b8}\index{PIL.Image.Image@{PIL.Image.Image}!im@{im}}
+\index{im@{im}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{im}{im}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ad64d536d671d37d388fc8896f9d493b8} 
+PIL.\+Image.\+Image.\+im = self.\+im.\+copy()}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_ab5cae44b3e263b47aeca3056bea811fd}\index{PIL.Image.Image@{PIL.Image.Image}!info@{info}}
+\index{info@{info}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{info}{info}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ab5cae44b3e263b47aeca3056bea811fd} 
+PIL.\+Image.\+Image.\+info = \{\}}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a17ba97a266faac6c77ac08a30ef6fbe1}\index{PIL.Image.Image@{PIL.Image.Image}!map@{map}}
+\index{map@{map}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{map}{map}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a17ba97a266faac6c77ac08a30ef6fbe1} 
+mmap.\+mmap \texorpdfstring{$\vert$}{|} None PIL.\+Image.\+Image.\+map = None}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a7d372be82681ec344af8a7ba8dc84d5d}\index{PIL.Image.Image@{PIL.Image.Image}!mode@{mode}}
+\index{mode@{mode}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a7d372be82681ec344af8a7ba8dc84d5d} 
+PIL.\+Image.\+Image.\+mode = other.\+mode}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_aed56de66e3c835733d852bb93673c1ab}\index{PIL.Image.Image@{PIL.Image.Image}!palette@{palette}}
+\index{palette@{palette}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{palette}{palette}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_aed56de66e3c835733d852bb93673c1ab} 
+PIL.\+Image.\+Image.\+palette = None}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a408d4cf4edafa5efa2a5fe873419c58e}\index{PIL.Image.Image@{PIL.Image.Image}!readonly@{readonly}}
+\index{readonly@{readonly}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{readonly}{readonly}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a408d4cf4edafa5efa2a5fe873419c58e} 
+PIL.\+Image.\+Image.\+readonly = 0}
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_ae9939a80d0ea9392d8db8556353b2585}\index{PIL.Image.Image@{PIL.Image.Image}!size@{size}}
+\index{size@{size}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_ae9939a80d0ea9392d8db8556353b2585} 
+PIL.\+Image.\+Image.\+size = other.\+size}
+
+
+
+Reimplemented in \doxymbox{\hyperlink{class_p_i_l_1_1_icns_image_plugin_1_1_icns_image_file_a549c23d8ff2c8fc77e337b303907b96a}{PIL.\+Icns\+Image\+Plugin.\+Icns\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_icns_image_plugin_1_1_icns_image_file_ac9b4ae4a0b5a412413651248bbcc1400}{PIL.\+Icns\+Image\+Plugin.\+Icns\+Image\+File}}, \doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_image_file_a9e998d009a653c6f3c1fc98bdf455949}{PIL.\+Ico\+Image\+Plugin.\+Ico\+Image\+File}}, and \doxymbox{\hyperlink{class_p_i_l_1_1_ico_image_plugin_1_1_ico_image_file_adb65d709d6a952cbafa46639b2ab3b02}{PIL.\+Ico\+Image\+Plugin.\+Ico\+Image\+File}}.
+
+\Hypertarget{class_p_i_l_1_1_image_1_1_image_a12847a9d67ab7c8de3e2733b60ab3110}\index{PIL.Image.Image@{PIL.Image.Image}!width@{width}}
+\index{width@{width}!PIL.Image.Image@{PIL.Image.Image}}
+\doxysubsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_1_1_image_a12847a9d67ab7c8de3e2733b60ab3110} 
+int PIL.\+Image.\+Image.\+width = 0:\+}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_8py}{Image.\+py}}\end{DoxyCompactItemize}

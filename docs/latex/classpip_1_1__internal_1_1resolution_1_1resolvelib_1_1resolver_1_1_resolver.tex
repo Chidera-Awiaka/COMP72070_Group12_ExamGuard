@@ -1,0 +1,139 @@
+\doxysection{pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver Class Reference}
+\hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver}{}\label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver}\index{pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}}
+Inheritance diagram for pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_ab3afbee4c3a2d46b9230e945c81c5387}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classpip_1_1__internal_1_1operations_1_1prepare_1_1_requirement_preparer}{Requirement\+Preparer}} preparer, \doxymbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_package_finder}{Package\+Finder}} finder, Optional\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_wheel_cache}{Wheel\+Cache}}]\+ wheel\+\_\+cache, Install\+Requirement\+Provider make\+\_\+install\+\_\+req, bool use\+\_\+user\+\_\+site, bool \doxymbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a91d554093f7b1def080c6a91cf7772d1}{ignore\+\_\+dependencies}}, bool ignore\+\_\+installed, bool ignore\+\_\+requires\+\_\+python, bool force\+\_\+reinstall, str \doxymbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a5f96ca89dd2817dae1f9cead748c0d5d}{upgrade\+\_\+strategy}}, Optional\+[Tuple\+[int,...]\+]\+ py\+\_\+version\+\_\+info=None)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set}{Requirement\+Set}} \doxymbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_adaeb803ba5f61621f03122bb37856c9a}{resolve}} (self, List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+ root\+\_\+reqs, bool check\+\_\+supported\+\_\+wheels)
+\item 
+List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+ \doxymbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a904569a348939d53fdaed08c35cf39bf}{get\+\_\+installation\+\_\+order}} (self, \doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set}{Requirement\+Set}} req\+\_\+set)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_ade2b4bb013634d1a3f395bbd50c4652d}{factory}}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a91d554093f7b1def080c6a91cf7772d1}{ignore\+\_\+dependencies}} = ignore\+\_\+dependencies
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a5f96ca89dd2817dae1f9cead748c0d5d}{upgrade\+\_\+strategy}} = upgrade\+\_\+strategy
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Optional\+[\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_a42ac482e763a0a9f8aada5cd449f26fb}{Result}}]\+ \doxymbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a557ba70de066fffa795b04cd79d7a447}{\+\_\+result}} = None
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a78237ef7b5c3eacd40c287b9073ed101}{\+\_\+allowed\+\_\+strategies}} = \{"{}eager"{}, "{}only-\/if-\/needed"{}, "{}to-\/satisfy-\/only"{}\}
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_ab3afbee4c3a2d46b9230e945c81c5387}\index{pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_ab3afbee4c3a2d46b9230e945c81c5387} 
+pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classpip_1_1__internal_1_1operations_1_1prepare_1_1_requirement_preparer}{Requirement\+Preparer}}}]{preparer}{, }\item[{\doxymbox{\hyperlink{classpip_1_1__internal_1_1index_1_1package__finder_1_1_package_finder}{Package\+Finder}}}]{finder}{, }\item[{Optional\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_wheel_cache}{Wheel\+Cache}}]\+}]{wheel\+\_\+cache}{, }\item[{Install\+Requirement\+Provider}]{make\+\_\+install\+\_\+req}{, }\item[{bool}]{use\+\_\+user\+\_\+site}{, }\item[{bool}]{ignore\+\_\+dependencies}{, }\item[{bool}]{ignore\+\_\+installed}{, }\item[{bool}]{ignore\+\_\+requires\+\_\+python}{, }\item[{bool}]{force\+\_\+reinstall}{, }\item[{str}]{upgrade\+\_\+strategy}{, }\item[{Optional\+[Tuple\+[int, ...]\+]\+ }]{py\+\_\+version\+\_\+info}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a904569a348939d53fdaed08c35cf39bf}\index{pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}!get\_installation\_order@{get\_installation\_order}}
+\index{get\_installation\_order@{get\_installation\_order}!pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{get\_installation\_order()}{get\_installation\_order()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a904569a348939d53fdaed08c35cf39bf} 
+ List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+ pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver.\+get\+\_\+installation\+\_\+order (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set}{Requirement\+Set}}     }]{req\+\_\+set}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Get order for installation of requirements in RequirementSet.
+
+The returned list contains a requirement before another that depends on
+it. This helps ensure that the environment is kept consistent as they
+get installed one-by-one.
+
+The current implementation creates a topological ordering of the
+dependency graph, giving more weight to packages with less
+or no dependencies, while breaking any cycles in the graph at
+arbitrary points. We make no guarantees about where the cycle
+would be broken, other than it *would* be broken.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1base_1_1_base_resolver_ac12947b2d893de0e4e64f73e4384c590}{pip.\+\_\+internal.\+resolution.\+base.\+Base\+Resolver}}.
+
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_adaeb803ba5f61621f03122bb37856c9a}\index{pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}!resolve@{resolve}}
+\index{resolve@{resolve}!pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_adaeb803ba5f61621f03122bb37856c9a} 
+ \doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__set_1_1_requirement_set}{Requirement\+Set}} pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver.\+resolve (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+}]{root\+\_\+reqs}{, }\item[{bool     }]{check\+\_\+supported\+\_\+wheels}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \doxymbox{\hyperlink{classpip_1_1__internal_1_1resolution_1_1base_1_1_base_resolver_a6543e273c7e6dca0ae95a5c3f3792d64}{pip.\+\_\+internal.\+resolution.\+base.\+Base\+Resolver}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a78237ef7b5c3eacd40c287b9073ed101}\index{pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}!\_allowed\_strategies@{\_allowed\_strategies}}
+\index{\_allowed\_strategies@{\_allowed\_strategies}!pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{\_allowed\_strategies}{\_allowed\_strategies}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a78237ef7b5c3eacd40c287b9073ed101} 
+dict pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver.\+\_\+allowed\+\_\+strategies = \{"{}eager"{}, "{}only-\/if-\/needed"{}, "{}to-\/satisfy-\/only"{}\}\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a557ba70de066fffa795b04cd79d7a447}\index{pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}!\_result@{\_result}}
+\index{\_result@{\_result}!pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{\_result}{\_result}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a557ba70de066fffa795b04cd79d7a447} 
+Optional\+[\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_a42ac482e763a0a9f8aada5cd449f26fb}{Result}}]\+ pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver.\+\_\+result = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_ade2b4bb013634d1a3f395bbd50c4652d}\index{pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}!factory@{factory}}
+\index{factory@{factory}!pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{factory}{factory}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_ade2b4bb013634d1a3f395bbd50c4652d} 
+pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver.\+factory}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \ Factory(}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ finder=finder,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ preparer=preparer,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ make\_install\_req=make\_install\_req,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ wheel\_cache=wheel\_cache,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ use\_user\_site=use\_user\_site,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ force\_reinstall=force\_reinstall,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ignore\_installed=ignore\_installed,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ ignore\_requires\_python=ignore\_requires\_python,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ \ \ \ \ py\_version\_info=py\_version\_info,}
+\DoxyCodeLine{\ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a91d554093f7b1def080c6a91cf7772d1}\index{pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}!ignore\_dependencies@{ignore\_dependencies}}
+\index{ignore\_dependencies@{ignore\_dependencies}!pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{ignore\_dependencies}{ignore\_dependencies}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a91d554093f7b1def080c6a91cf7772d1} 
+pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver.\+ignore\+\_\+dependencies = ignore\+\_\+dependencies}
+
+\Hypertarget{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a5f96ca89dd2817dae1f9cead748c0d5d}\index{pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}!upgrade\_strategy@{upgrade\_strategy}}
+\index{upgrade\_strategy@{upgrade\_strategy}!pip.\_internal.resolution.resolvelib.resolver.Resolver@{pip.\_internal.resolution.resolvelib.resolver.Resolver}}
+\doxysubsubsection{\texorpdfstring{upgrade\_strategy}{upgrade\_strategy}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1resolution_1_1resolvelib_1_1resolver_1_1_resolver_a5f96ca89dd2817dae1f9cead748c0d5d} 
+pip.\+\_\+internal.\+resolution.\+resolvelib.\+resolver.\+Resolver.\+upgrade\+\_\+strategy = upgrade\+\_\+strategy}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+internal/\+resolution/\+resolvelib/\+\doxymbox{\hyperlink{resolvelib_2resolver_8py}{resolver.\+py}}\end{DoxyCompactItemize}

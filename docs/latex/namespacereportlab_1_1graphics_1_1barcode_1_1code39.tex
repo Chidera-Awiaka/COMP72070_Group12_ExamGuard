@@ -1,0 +1,132 @@
+\doxysection{reportlab.\+graphics.\+barcode.\+code39 Namespace Reference}
+\hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1code39}{}\label{namespacereportlab_1_1graphics_1_1barcode_1_1code39}\index{reportlab.graphics.barcode.code39@{reportlab.graphics.barcode.code39}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1barcode_1_1code39_1_1___code39_base}{\+\_\+\+Code39\+Base}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1barcode_1_1code39_1_1_standard39}{Standard39}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1barcode_1_1code39_1_1_extended39}{Extended39}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1barcode_1_1code39_a1a1626532aaf0ce9195bd54546d8a24b}{\+\_\+encode39}} (value, cksum, stop)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1barcode_1_1code39_a1c99e1c73ca737660f74e8ef252531ad}{\+\_\+patterns}}
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1barcode_1_1code39_aee50162c9e8ff2be40f45926f5701874}{\+\_\+stdchrs}} = string\+\_\+digits + ascii\+\_\+uppercase + "{}-\/. \$/\++\%"{}
+\item 
+dict \doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1barcode_1_1code39_a62af451e01ad0968d236f1c552318611}{\+\_\+extended}}
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1barcode_1_1code39_a5bd508f51df0e401ff5cba765cdf378c}{\+\_\+extchrs}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1code39_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1code39_a1a1626532aaf0ce9195bd54546d8a24b}\index{reportlab.graphics.barcode.code39@{reportlab.graphics.barcode.code39}!\_encode39@{\_encode39}}
+\index{\_encode39@{\_encode39}!reportlab.graphics.barcode.code39@{reportlab.graphics.barcode.code39}}
+\doxysubsubsection{\texorpdfstring{\_encode39()}{\_encode39()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1barcode_1_1code39_a1a1626532aaf0ce9195bd54546d8a24b} 
+reportlab.\+graphics.\+barcode.\+code39.\+\_\+encode39 (\begin{DoxyParamCaption}\item[{}]{value}{, }\item[{}]{cksum}{, }\item[{}]{stop}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1code39_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1code39_a5bd508f51df0e401ff5cba765cdf378c}\index{reportlab.graphics.barcode.code39@{reportlab.graphics.barcode.code39}!\_extchrs@{\_extchrs}}
+\index{\_extchrs@{\_extchrs}!reportlab.graphics.barcode.code39@{reportlab.graphics.barcode.code39}}
+\doxysubsubsection{\texorpdfstring{\_extchrs}{\_extchrs}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1barcode_1_1code39_a5bd508f51df0e401ff5cba765cdf378c} 
+str reportlab.\+graphics.\+barcode.\+code39.\+\_\+extchrs\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \_stdchrs\ +\ ascii\_lowercase\ +\ \(\backslash\)}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}\(\backslash\)000\(\backslash\)001\(\backslash\)002\(\backslash\)003\(\backslash\)004\(\backslash\)005\(\backslash\)006\(\backslash\)007\(\backslash\)010\(\backslash\)011\(\backslash\)012\(\backslash\)013\(\backslash\)014\(\backslash\)015\(\backslash\)016\(\backslash\)017"{}}\ +\ \(\backslash\)}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}\(\backslash\)020\(\backslash\)021\(\backslash\)022\(\backslash\)023\(\backslash\)024\(\backslash\)025\(\backslash\)026\(\backslash\)027\(\backslash\)030\(\backslash\)031\(\backslash\)032\(\backslash\)033\(\backslash\)034\(\backslash\)035\(\backslash\)036\(\backslash\)037"{}}\ +\ \(\backslash\)}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}*!'\#\&\(\backslash\)"{}(),:;<=>?@[\(\backslash\)\(\backslash\)]\string^\_`\{|\}\string~\(\backslash\)177"{}}}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1code39_a62af451e01ad0968d236f1c552318611}\index{reportlab.graphics.barcode.code39@{reportlab.graphics.barcode.code39}!\_extended@{\_extended}}
+\index{\_extended@{\_extended}!reportlab.graphics.barcode.code39@{reportlab.graphics.barcode.code39}}
+\doxysubsubsection{\texorpdfstring{\_extended}{\_extended}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1barcode_1_1code39_a62af451e01ad0968d236f1c552318611} 
+dict reportlab.\+graphics.\+barcode.\+code39.\+\_\+extended\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)0'}:\ \ \ \textcolor{stringliteral}{"{}\%U"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)01'}:\ \ \textcolor{stringliteral}{"{}\$A"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)02'}:\ \ \textcolor{stringliteral}{"{}\$B"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)03'}:\ \ \textcolor{stringliteral}{"{}\$C"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)04'}:\ \ \textcolor{stringliteral}{"{}\$D"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)05'}:\ \ \textcolor{stringliteral}{"{}\$E"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)06'}:\ \ \textcolor{stringliteral}{"{}\$F"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)07'}:\ \ \textcolor{stringliteral}{"{}\$G"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)010'}:\ \textcolor{stringliteral}{"{}\$H"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)011'}:\ \textcolor{stringliteral}{"{}\$I"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)012'}:\ \textcolor{stringliteral}{"{}\$J"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)013'}:\ \textcolor{stringliteral}{"{}\$K"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)014'}:\ \textcolor{stringliteral}{"{}\$L"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)015'}:\ \textcolor{stringliteral}{"{}\$M"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)016'}:\ \textcolor{stringliteral}{"{}\$N"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)017'}:\ \textcolor{stringliteral}{"{}\$O"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)020'}:\ \textcolor{stringliteral}{"{}\$P"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)021'}:\ \textcolor{stringliteral}{"{}\$Q"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)022'}:\ \textcolor{stringliteral}{"{}\$R"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)023'}:\ \textcolor{stringliteral}{"{}\$S"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)024'}:\ \textcolor{stringliteral}{"{}\$T"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)025'}:\ \textcolor{stringliteral}{"{}\$U"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)026'}:\ \textcolor{stringliteral}{"{}\$V"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)027'}:\ \textcolor{stringliteral}{"{}\$W"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)030'}:\ \textcolor{stringliteral}{"{}\$X"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)031'}:\ \textcolor{stringliteral}{"{}\$Y"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)032'}:\ \textcolor{stringliteral}{"{}\$Z"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)033'}:\ \textcolor{stringliteral}{"{}\%A"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)034'}:\ \textcolor{stringliteral}{"{}\%B"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)035'}:\ \textcolor{stringliteral}{"{}\%C"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)036'}:\ \textcolor{stringliteral}{"{}\%D"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)037'}:\ \textcolor{stringliteral}{"{}\%E"{}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{'!'}:\ \ \ \ \textcolor{stringliteral}{"{}/A"{}},\ \ \ \ \textcolor{stringliteral}{'"{}'}:\ \ \ \ \textcolor{stringliteral}{"{}/B"{}},\ \ \ \ \textcolor{stringliteral}{'\#'}:\ \ \ \ \textcolor{stringliteral}{"{}/C"{}},\ \ \ \ \textcolor{stringliteral}{'\$'}:\ \ \ \ \textcolor{stringliteral}{"{}/D"{}},}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{'\%'}:\ \ \ \ \textcolor{stringliteral}{"{}/E"{}},\ \ \ \ \textcolor{stringliteral}{'\&'}:\ \ \ \ \textcolor{stringliteral}{"{}/F"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)''}:\ \ \ \textcolor{stringliteral}{"{}/G"{}},\ \ \ \ \textcolor{stringliteral}{'('}:\ \ \ \ \textcolor{stringliteral}{"{}/H"{}},}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{stringliteral}{')'}:\ \ \ \ \textcolor{stringliteral}{"{}/I"{}},\ \ \ \ \textcolor{stringliteral}{'*'}:\ \ \ \ \textcolor{stringliteral}{"{}/J"{}},\ \ \ \ \textcolor{stringliteral}{'+'}:\ \ \ \ \textcolor{stringliteral}{"{}/K"{}},\ \ \ \ \textcolor{stringliteral}{','}:\ \ \ \ \textcolor{stringliteral}{"{}/L"{}},}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{stringliteral}{'/'}:\ \ \ \ \textcolor{stringliteral}{"{}/O"{}},\ \ \ \ \textcolor{stringliteral}{':'}:\ \ \ \ \textcolor{stringliteral}{"{}/Z"{}},\ \ \ \ \textcolor{stringliteral}{';'}:\ \ \ \ \textcolor{stringliteral}{"{}\%F"{}},\ \ \ \ \textcolor{stringliteral}{'<'}:\ \ \ \ \textcolor{stringliteral}{"{}\%G"{}},}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{stringliteral}{'='}:\ \ \ \ \textcolor{stringliteral}{"{}\%H"{}},\ \ \ \ \textcolor{stringliteral}{'>'}:\ \ \ \ \textcolor{stringliteral}{"{}\%I"{}},\ \ \ \ \textcolor{stringliteral}{'?'}:\ \ \ \ \textcolor{stringliteral}{"{}\%J"{}},\ \ \ \ \textcolor{stringliteral}{'@'}:\ \ \ \ \textcolor{stringliteral}{"{}\%V"{}},}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{stringliteral}{'['}:\ \ \ \ \textcolor{stringliteral}{"{}\%K"{}},\ \ \ \ \textcolor{stringliteral}{'\(\backslash\)\(\backslash\)'}:\ \ \ \textcolor{stringliteral}{"{}\%L"{}},\ \ \ \ \textcolor{stringliteral}{']'}:\ \ \ \ \textcolor{stringliteral}{"{}\%M"{}},\ \ \ \ \textcolor{stringliteral}{'\string^'}:\ \ \ \ \textcolor{stringliteral}{"{}\%N"{}},}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{stringliteral}{'\_'}:\ \ \ \ \textcolor{stringliteral}{"{}\%O"{}},\ \ \ \ \textcolor{stringliteral}{'\`{}'}:\ \ \ \ \textcolor{stringliteral}{"{}\%W"{}},\ \ \ \ \textcolor{stringliteral}{'a'}:\ \ \ \ \textcolor{stringliteral}{"{}+A"{}},\ \ \ \ \textcolor{stringliteral}{'b'}:\ \ \ \ \textcolor{stringliteral}{"{}+B"{}},}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{stringliteral}{'c'}:\ \ \ \ \textcolor{stringliteral}{"{}+C"{}},\ \ \ \ \textcolor{stringliteral}{'d'}:\ \ \ \ \textcolor{stringliteral}{"{}+D"{}},\ \ \ \ \textcolor{stringliteral}{'e'}:\ \ \ \ \textcolor{stringliteral}{"{}+E"{}},\ \ \ \ \textcolor{stringliteral}{'f'}:\ \ \ \ \textcolor{stringliteral}{"{}+F"{}},}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{stringliteral}{'g'}:\ \ \ \ \textcolor{stringliteral}{"{}+G"{}},\ \ \ \ \textcolor{stringliteral}{'h'}:\ \ \ \ \textcolor{stringliteral}{"{}+H"{}},\ \ \ \ \textcolor{stringliteral}{'i'}:\ \ \ \ \textcolor{stringliteral}{"{}+I"{}},\ \ \ \ \textcolor{stringliteral}{'j'}:\ \ \ \ \textcolor{stringliteral}{"{}+J"{}},}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{stringliteral}{'k'}:\ \ \ \ \textcolor{stringliteral}{"{}+K"{}},\ \ \ \ \textcolor{stringliteral}{'l'}:\ \ \ \ \textcolor{stringliteral}{"{}+L"{}},\ \ \ \ \textcolor{stringliteral}{'m'}:\ \ \ \ \textcolor{stringliteral}{"{}+M"{}},\ \ \ \ \textcolor{stringliteral}{'n'}:\ \ \ \ \textcolor{stringliteral}{"{}+N"{}},}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{stringliteral}{'o'}:\ \ \ \ \textcolor{stringliteral}{"{}+O"{}},\ \ \ \ \textcolor{stringliteral}{'p'}:\ \ \ \ \textcolor{stringliteral}{"{}+P"{}},\ \ \ \ \textcolor{stringliteral}{'q'}:\ \ \ \ \textcolor{stringliteral}{"{}+Q"{}},\ \ \ \ \textcolor{stringliteral}{'r'}:\ \ \ \ \textcolor{stringliteral}{"{}+R"{}},}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{stringliteral}{'s'}:\ \ \ \ \textcolor{stringliteral}{"{}+S"{}},\ \ \ \ \textcolor{stringliteral}{'t'}:\ \ \ \ \textcolor{stringliteral}{"{}+T"{}},\ \ \ \ \textcolor{stringliteral}{'u'}:\ \ \ \ \textcolor{stringliteral}{"{}+U"{}},\ \ \ \ \textcolor{stringliteral}{'v'}:\ \ \ \ \textcolor{stringliteral}{"{}+V"{}},}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{stringliteral}{'w'}:\ \ \ \ \textcolor{stringliteral}{"{}+W"{}},\ \ \ \ \textcolor{stringliteral}{'x'}:\ \ \ \ \textcolor{stringliteral}{"{}+X"{}},\ \ \ \ \textcolor{stringliteral}{'y'}:\ \ \ \ \textcolor{stringliteral}{"{}+Y"{}},\ \ \ \ \textcolor{stringliteral}{'z'}:\ \ \ \ \textcolor{stringliteral}{"{}+Z"{}},}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{stringliteral}{'\{'}:\ \ \ \ \textcolor{stringliteral}{"{}\%P"{}},\ \ \ \ \textcolor{stringliteral}{'|'}:\ \ \ \ \textcolor{stringliteral}{"{}\%Q"{}},\ \ \ \ \textcolor{stringliteral}{'\}'}:\ \ \ \ \textcolor{stringliteral}{"{}\%R"{}},\ \ \ \ \textcolor{stringliteral}{'\string~'}:\ \ \ \ \textcolor{stringliteral}{"{}\%S"{}},}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{stringliteral}{'\(\backslash\)177'}:\ \textcolor{stringliteral}{"{}\%T"{}}}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1code39_a1c99e1c73ca737660f74e8ef252531ad}\index{reportlab.graphics.barcode.code39@{reportlab.graphics.barcode.code39}!\_patterns@{\_patterns}}
+\index{\_patterns@{\_patterns}!reportlab.graphics.barcode.code39@{reportlab.graphics.barcode.code39}}
+\doxysubsubsection{\texorpdfstring{\_patterns}{\_patterns}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1barcode_1_1code39_a1c99e1c73ca737660f74e8ef252531ad} 
+dict reportlab.\+graphics.\+barcode.\+code39.\+\_\+patterns\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'0'}:\ \ \ \ (\textcolor{stringliteral}{"{}bsbSBsBsb"{}},\ 0),\ \ \ \ \ \ \ \textcolor{stringliteral}{'1'}:\ (\textcolor{stringliteral}{"{}BsbSbsbsB"{}},\ 1),}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{'2'}:\ \ \ \ (\textcolor{stringliteral}{"{}bsBSbsbsB"{}},\ 2),\ \ \ \ \ \ \ \textcolor{stringliteral}{'3'}:\ (\textcolor{stringliteral}{"{}BsBSbsbsb"{}},\ 3),}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{'4'}:\ \ \ \ (\textcolor{stringliteral}{"{}bsbSBsbsB"{}},\ 4),\ \ \ \ \ \ \ \textcolor{stringliteral}{'5'}:\ (\textcolor{stringliteral}{"{}BsbSBsbsb"{}},\ 5),}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{'6'}:\ \ \ \ (\textcolor{stringliteral}{"{}bsBSBsbsb"{}},\ 6),\ \ \ \ \ \ \ \textcolor{stringliteral}{'7'}:\ (\textcolor{stringliteral}{"{}bsbSbsBsB"{}},\ 7),}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{'8'}:\ \ \ \ (\textcolor{stringliteral}{"{}BsbSbsBsb"{}},\ 8),\ \ \ \ \ \ \ \textcolor{stringliteral}{'9'}:\ (\textcolor{stringliteral}{"{}bsBSbsBsb"{}},\ 9),}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{'A'}:\ \ \ \ (\textcolor{stringliteral}{"{}BsbsbSbsB"{}},\ 10),\ \ \ \ \ \ \textcolor{stringliteral}{'B'}:\ (\textcolor{stringliteral}{"{}bsBsbSbsB"{}},\ 11),}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{'C'}:\ \ \ \ (\textcolor{stringliteral}{"{}BsBsbSbsb"{}},\ 12),\ \ \ \ \ \ \textcolor{stringliteral}{'D'}:\ (\textcolor{stringliteral}{"{}bsbsBSbsB"{}},\ 13),}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{'E'}:\ \ \ \ (\textcolor{stringliteral}{"{}BsbsBSbsb"{}},\ 14),\ \ \ \ \ \ \textcolor{stringliteral}{'F'}:\ (\textcolor{stringliteral}{"{}bsBsBSbsb"{}},\ 15),}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{'G'}:\ \ \ \ (\textcolor{stringliteral}{"{}bsbsbSBsB"{}},\ 16),\ \ \ \ \ \ \textcolor{stringliteral}{'H'}:\ (\textcolor{stringliteral}{"{}BsbsbSBsb"{}},\ 17),}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{'I'}:\ \ \ \ (\textcolor{stringliteral}{"{}bsBsbSBsb"{}},\ 18),\ \ \ \ \ \ \textcolor{stringliteral}{'J'}:\ (\textcolor{stringliteral}{"{}bsbsBSBsb"{}},\ 19),}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{stringliteral}{'K'}:\ \ \ \ (\textcolor{stringliteral}{"{}BsbsbsbSB"{}},\ 20),\ \ \ \ \ \ \textcolor{stringliteral}{'L'}:\ (\textcolor{stringliteral}{"{}bsBsbsbSB"{}},\ 21),}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{stringliteral}{'M'}:\ \ \ \ (\textcolor{stringliteral}{"{}BsBsbsbSb"{}},\ 22),\ \ \ \ \ \ \textcolor{stringliteral}{'N'}:\ (\textcolor{stringliteral}{"{}bsbsBsbSB"{}},\ 23),}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{stringliteral}{'O'}:\ \ \ \ (\textcolor{stringliteral}{"{}BsbsBsbSb"{}},\ 24),\ \ \ \ \ \ \textcolor{stringliteral}{'P'}:\ (\textcolor{stringliteral}{"{}bsBsBsbSb"{}},\ 25),}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{stringliteral}{'Q'}:\ \ \ \ (\textcolor{stringliteral}{"{}bsbsbsBSB"{}},\ 26),\ \ \ \ \ \ \textcolor{stringliteral}{'R'}:\ (\textcolor{stringliteral}{"{}BsbsbsBSb"{}},\ 27),}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{stringliteral}{'S'}:\ \ \ \ (\textcolor{stringliteral}{"{}bsBsbsBSb"{}},\ 28),\ \ \ \ \ \ \textcolor{stringliteral}{'T'}:\ (\textcolor{stringliteral}{"{}bsbsBsBSb"{}},\ 29),}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{stringliteral}{'U'}:\ \ \ \ (\textcolor{stringliteral}{"{}BSbsbsbsB"{}},\ 30),\ \ \ \ \ \ \textcolor{stringliteral}{'V'}:\ (\textcolor{stringliteral}{"{}bSBsbsbsB"{}},\ 31),}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{stringliteral}{'W'}:\ \ \ \ (\textcolor{stringliteral}{"{}BSBsbsbsb"{}},\ 32),\ \ \ \ \ \ \textcolor{stringliteral}{'X'}:\ (\textcolor{stringliteral}{"{}bSbsBsbsB"{}},\ 33),}
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{stringliteral}{'Y'}:\ \ \ \ (\textcolor{stringliteral}{"{}BSbsBsbsb"{}},\ 34),\ \ \ \ \ \ \textcolor{stringliteral}{'Z'}:\ (\textcolor{stringliteral}{"{}bSBsBsbsb"{}},\ 35),}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{stringliteral}{'-\/'}:\ \ \ \ (\textcolor{stringliteral}{"{}bSbsbsBsB"{}},\ 36),\ \ \ \ \ \ \textcolor{stringliteral}{'.'}:\ (\textcolor{stringliteral}{"{}BSbsbsBsb"{}},\ 37),}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{stringliteral}{'\ '}:\ \ \ \ (\textcolor{stringliteral}{"{}bSBsbsBsb"{}},\ 38),\ \ \ \ \ \ \textcolor{stringliteral}{'*'}:\ (\textcolor{stringliteral}{"{}bSbsBsBsb"{}},\ \textcolor{keywordtype}{None}),}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{stringliteral}{'\$'}:\ \ \ \ (\textcolor{stringliteral}{"{}bSbSbSbsb"{}},\ 39),\ \ \ \ \ \ \textcolor{stringliteral}{'/'}:\ (\textcolor{stringliteral}{"{}bSbSbsbSb"{}},\ 40),}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{stringliteral}{'+'}:\ \ \ \ (\textcolor{stringliteral}{"{}bSbsbSbSb"{}},\ 41),\ \ \ \ \ \ \textcolor{stringliteral}{'\%'}:\ (\textcolor{stringliteral}{"{}bsbSbSbSb"{}},\ 42)}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1code39_aee50162c9e8ff2be40f45926f5701874}\index{reportlab.graphics.barcode.code39@{reportlab.graphics.barcode.code39}!\_stdchrs@{\_stdchrs}}
+\index{\_stdchrs@{\_stdchrs}!reportlab.graphics.barcode.code39@{reportlab.graphics.barcode.code39}}
+\doxysubsubsection{\texorpdfstring{\_stdchrs}{\_stdchrs}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1barcode_1_1code39_aee50162c9e8ff2be40f45926f5701874} 
+str reportlab.\+graphics.\+barcode.\+code39.\+\_\+stdchrs = string\+\_\+digits + ascii\+\_\+uppercase + "{}-\/. \$/\++\%"{}\hspace{0.3cm}{\ttfamily [protected]}}
+

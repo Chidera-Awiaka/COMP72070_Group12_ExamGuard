@@ -1,0 +1,69 @@
+\doxysection{pip.\+\_\+internal.\+cli.\+spinners Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1cli_1_1spinners}{}\label{namespacepip_1_1__internal_1_1cli_1_1spinners}\index{pip.\_internal.cli.spinners@{pip.\_internal.cli.spinners}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1spinners_1_1_spinner_interface}{Spinner\+Interface}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1spinners_1_1_interactive_spinner}{Interactive\+Spinner}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1spinners_1_1_non_interactive_spinner}{Non\+Interactive\+Spinner}}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1spinners_1_1_rate_limiter}{Rate\+Limiter}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Generator\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1spinners_1_1_spinner_interface}{Spinner\+Interface}}, None, None]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1spinners_a156b2ff40cfd2cae993541acd6a0c4ec}{open\+\_\+spinner}} (str message)
+\item 
+Generator\+[None, None, None]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1spinners_a6543b30a10e3d49a8ce7980328f7477b}{hidden\+\_\+cursor}} (IO\+[str]\+ file)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1spinners_a71c58270383de5c2e8fde038636287d0}{logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1spinners_aaa29641dc9f8e390cce9e30dc2b84db2}{HIDE\+\_\+\+CURSOR}} = "{}\textbackslash{}x1b\+[?25l"{}
+\item 
+str \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1cli_1_1spinners_a04a5f1c752511a0d5268bb8bd1489542}{SHOW\+\_\+\+CURSOR}} = "{}\textbackslash{}x1b\+[?25h"{}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1spinners_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1spinners_a6543b30a10e3d49a8ce7980328f7477b}\index{pip.\_internal.cli.spinners@{pip.\_internal.cli.spinners}!hidden\_cursor@{hidden\_cursor}}
+\index{hidden\_cursor@{hidden\_cursor}!pip.\_internal.cli.spinners@{pip.\_internal.cli.spinners}}
+\doxysubsubsection{\texorpdfstring{hidden\_cursor()}{hidden\_cursor()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1spinners_a6543b30a10e3d49a8ce7980328f7477b} 
+ Generator\+[None, None, None]\+ pip.\+\_\+internal.\+cli.\+spinners.\+hidden\+\_\+cursor (\begin{DoxyParamCaption}\item[{IO\+[str]\+}]{file}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1spinners_a156b2ff40cfd2cae993541acd6a0c4ec}\index{pip.\_internal.cli.spinners@{pip.\_internal.cli.spinners}!open\_spinner@{open\_spinner}}
+\index{open\_spinner@{open\_spinner}!pip.\_internal.cli.spinners@{pip.\_internal.cli.spinners}}
+\doxysubsubsection{\texorpdfstring{open\_spinner()}{open\_spinner()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1spinners_a156b2ff40cfd2cae993541acd6a0c4ec} 
+ Generator\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1cli_1_1spinners_1_1_spinner_interface}{Spinner\+Interface}}, None, None]\+ pip.\+\_\+internal.\+cli.\+spinners.\+open\+\_\+spinner (\begin{DoxyParamCaption}\item[{str}]{message}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1spinners_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1spinners_aaa29641dc9f8e390cce9e30dc2b84db2}\index{pip.\_internal.cli.spinners@{pip.\_internal.cli.spinners}!HIDE\_CURSOR@{HIDE\_CURSOR}}
+\index{HIDE\_CURSOR@{HIDE\_CURSOR}!pip.\_internal.cli.spinners@{pip.\_internal.cli.spinners}}
+\doxysubsubsection{\texorpdfstring{HIDE\_CURSOR}{HIDE\_CURSOR}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1spinners_aaa29641dc9f8e390cce9e30dc2b84db2} 
+str pip.\+\_\+internal.\+cli.\+spinners.\+HIDE\+\_\+\+CURSOR = "{}\textbackslash{}x1b\+[?25l"{}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1spinners_a71c58270383de5c2e8fde038636287d0}\index{pip.\_internal.cli.spinners@{pip.\_internal.cli.spinners}!logger@{logger}}
+\index{logger@{logger}!pip.\_internal.cli.spinners@{pip.\_internal.cli.spinners}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1spinners_a71c58270383de5c2e8fde038636287d0} 
+pip.\+\_\+internal.\+cli.\+spinners.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+
+\Hypertarget{namespacepip_1_1__internal_1_1cli_1_1spinners_a04a5f1c752511a0d5268bb8bd1489542}\index{pip.\_internal.cli.spinners@{pip.\_internal.cli.spinners}!SHOW\_CURSOR@{SHOW\_CURSOR}}
+\index{SHOW\_CURSOR@{SHOW\_CURSOR}!pip.\_internal.cli.spinners@{pip.\_internal.cli.spinners}}
+\doxysubsubsection{\texorpdfstring{SHOW\_CURSOR}{SHOW\_CURSOR}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1cli_1_1spinners_a04a5f1c752511a0d5268bb8bd1489542} 
+str pip.\+\_\+internal.\+cli.\+spinners.\+SHOW\+\_\+\+CURSOR = "{}\textbackslash{}x1b\+[?25h"{}}
+

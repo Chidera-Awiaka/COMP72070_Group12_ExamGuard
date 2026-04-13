@@ -1,0 +1,95 @@
+\doxysection{reportlab.\+pdfbase.\+pdfdoc.\+PDFFile Class Reference}
+\hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file}{}\label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file}\index{reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}}
+Inheritance diagram for reportlab.\+pdfbase.\+pdfdoc.\+PDFFile:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_a76675f0b226037fc09861a12ec2c4469}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, pdf\+Version=\doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfdoc_ac179c0ac4ef3c4aec027d69e4aed81c5}{PDF\+\_\+\+VERSION\+\_\+\+DEFAULT}})
+\begin{DoxyCompactList}\small\item\em just accumulates strings:\+ keeps track of current offset \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_ab80e9b3c8b26f0f143e74dc9cb1cd532}{close\+Or\+Reset}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_acfb53f8b30aa52c83d434615d8b30ae2}{add}} (self, s)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_af570c0ded14bf8b86b426c5451a5a2e3}{format}} (self, document)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_a426bf21e54a4aeb116dcc3400b245708}{strings}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_aa4b77c29f2636318b76449bb5a21aca4}{write}} = self.\+strings.\+append
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_a60eaf52e2d1105587070885b39881798}{offset}} = 0
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_a76675f0b226037fc09861a12ec2c4469}\index{reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_a76675f0b226037fc09861a12ec2c4469} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFFile.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{pdf\+Version}{ = {\ttfamily \doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfdoc_ac179c0ac4ef3c4aec027d69e4aed81c5}{PDF\+\_\+\+VERSION\+\_\+\+DEFAULT}}}}\end{DoxyParamCaption})}
+
+
+
+just accumulates strings:\+ keeps track of current offset 
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_acfb53f8b30aa52c83d434615d8b30ae2}\index{reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}!add@{add}}
+\index{add@{add}!reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_acfb53f8b30aa52c83d434615d8b30ae2} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFFile.\+add (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{s}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}should be constructed as late as possible, return position where placed\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_ab80e9b3c8b26f0f143e74dc9cb1cd532}\index{reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}!closeOrReset@{closeOrReset}}
+\index{closeOrReset@{closeOrReset}!reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}}
+\doxysubsubsection{\texorpdfstring{closeOrReset()}{closeOrReset()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_ab80e9b3c8b26f0f143e74dc9cb1cd532} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFFile.\+close\+Or\+Reset (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_af570c0ded14bf8b86b426c5451a5a2e3}\index{reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}!format@{format}}
+\index{format@{format}!reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_af570c0ded14bf8b86b426c5451a5a2e3} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFFile.\+format (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{document}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_a60eaf52e2d1105587070885b39881798}\index{reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}!offset@{offset}}
+\index{offset@{offset}!reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_a60eaf52e2d1105587070885b39881798} 
+int reportlab.\+pdfbase.\+pdfdoc.\+PDFFile.\+offset = 0}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_a426bf21e54a4aeb116dcc3400b245708}\index{reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}!strings@{strings}}
+\index{strings@{strings}!reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}}
+\doxysubsubsection{\texorpdfstring{strings}{strings}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_a426bf21e54a4aeb116dcc3400b245708} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFFile.\+strings = \+[$\,$]\+}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_aa4b77c29f2636318b76449bb5a21aca4}\index{reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}!write@{write}}
+\index{write@{write}!reportlab.pdfbase.pdfdoc.PDFFile@{reportlab.pdfbase.pdfdoc.PDFFile}}
+\doxysubsubsection{\texorpdfstring{write}{write}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_file_aa4b77c29f2636318b76449bb5a21aca4} 
+list reportlab.\+pdfbase.\+pdfdoc.\+PDFFile.\+write = self.\+strings.\+append}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+pdfbase/\+\doxymbox{\hyperlink{pdfdoc_8py}{pdfdoc.\+py}}\end{DoxyCompactItemize}

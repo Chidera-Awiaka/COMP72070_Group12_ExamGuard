@@ -1,0 +1,97 @@
+\doxysection{pip.\+\_\+internal.\+cache.\+Simple\+Wheel\+Cache Class Reference}
+\hypertarget{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache}{}\label{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache}\index{pip.\_internal.cache.SimpleWheelCache@{pip.\_internal.cache.SimpleWheelCache}}
+Inheritance diagram for pip.\+\_\+internal.\+cache.\+Simple\+Wheel\+Cache:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_abac0614b817f9f2025182a4b6ac5c1d9}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache}{cache\+\_\+dir}})
+\item 
+str \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_aaeb909f9b73386178f5104b4bf499139}{get\+\_\+path\+\_\+for\+\_\+link}} (self, \doxymbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} link)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_ac01760c9d465f62ad08e91262ad3c906}{get}} (self, \doxymbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} link, Optional\+[str]\+ package\+\_\+name, List\+[\doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1tags_1_1_tag}{Tag}}]\+ supported\+\_\+tags)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache}{pip.\+\_\+internal.\+cache.\+Cache}}}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache_a8906ffb79e45d4dcaa552af86cbfbe00}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, str \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache_aed8f0121963b4d3095aaa0b2ea344012}{cache\+\_\+dir}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache}{pip.\+\_\+internal.\+cache.\+Cache}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache_aed8f0121963b4d3095aaa0b2ea344012}{cache\+\_\+dir}} = cache\+\_\+dir or None
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions inherited from \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache}{pip.\+\_\+internal.\+cache.\+Cache}}}
+\begin{DoxyCompactItemize}
+\item 
+List\+[str]\+ \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache_a5f1e934ed7505ba17a8b065ccd3485b2}{\+\_\+get\+\_\+cache\+\_\+path\+\_\+parts}} (self, \doxymbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} link)
+\item 
+List\+[Any]\+ \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache_afe003fac5b954d257a2751d1d3f40f97}{\+\_\+get\+\_\+candidates}} (self, \doxymbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} link, str canonical\+\_\+package\+\_\+name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A cache of wheels for future installs.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_abac0614b817f9f2025182a4b6ac5c1d9}\index{pip.\_internal.cache.SimpleWheelCache@{pip.\_internal.cache.SimpleWheelCache}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_internal.cache.SimpleWheelCache@{pip.\_internal.cache.SimpleWheelCache}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_abac0614b817f9f2025182a4b6ac5c1d9} 
+ None pip.\+\_\+internal.\+cache.\+Simple\+Wheel\+Cache.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{cache\+\_\+dir}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_ac01760c9d465f62ad08e91262ad3c906}\index{pip.\_internal.cache.SimpleWheelCache@{pip.\_internal.cache.SimpleWheelCache}!get@{get}}
+\index{get@{get}!pip.\_internal.cache.SimpleWheelCache@{pip.\_internal.cache.SimpleWheelCache}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_ac01760c9d465f62ad08e91262ad3c906} 
+ \doxymbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}} pip.\+\_\+internal.\+cache.\+Simple\+Wheel\+Cache.\+get (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}}}]{link}{, }\item[{Optional\+[str]\+}]{package\+\_\+name}{, }\item[{List\+[\doxymbox{\hyperlink{classpip_1_1__vendor_1_1packaging_1_1tags_1_1_tag}{Tag}}]\+}]{supported\+\_\+tags}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a link to a cached item if it exists, otherwise returns the
+passed link.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache_ad95f772f6ababe1fa35f7e17a4aba68d}{pip.\+\_\+internal.\+cache.\+Cache}}.
+
+\Hypertarget{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_aaeb909f9b73386178f5104b4bf499139}\index{pip.\_internal.cache.SimpleWheelCache@{pip.\_internal.cache.SimpleWheelCache}!get\_path\_for\_link@{get\_path\_for\_link}}
+\index{get\_path\_for\_link@{get\_path\_for\_link}!pip.\_internal.cache.SimpleWheelCache@{pip.\_internal.cache.SimpleWheelCache}}
+\doxysubsubsection{\texorpdfstring{get\_path\_for\_link()}{get\_path\_for\_link()}}
+{\footnotesize\ttfamily \label{classpip_1_1__internal_1_1cache_1_1_simple_wheel_cache_aaeb909f9b73386178f5104b4bf499139} 
+ str pip.\+\_\+internal.\+cache.\+Simple\+Wheel\+Cache.\+get\+\_\+path\+\_\+for\+\_\+link (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\doxymbox{\hyperlink{classpip_1_1__internal_1_1models_1_1link_1_1_link}{Link}}}]{link}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Return a directory to store cached wheels for link
+
+Because there are M wheels for any one sdist, we provide a directory
+to cache them in, and then consult that directory when looking up
+cache hits.
+
+We only insert things into the cache if they have plausible version
+numbers, so that we don't contaminate the cache with things that were
+not unique. E.g. ./package might have dozens of installs done for it
+and build a version of 0.0...and if we built and cached a wheel, we'd
+end up using the same wheel even if the source has been edited.
+
+:param link: The link of the sdist for which this will cache wheels.
+\end{DoxyVerb}
+ 
+
+Reimplemented from \doxymbox{\hyperlink{classpip_1_1__internal_1_1cache_1_1_cache_ac73e437eb86457c0296de42e228e4a0f}{pip.\+\_\+internal.\+cache.\+Cache}}.
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+internal/\+\doxymbox{\hyperlink{__internal_2cache_8py}{cache.\+py}}\end{DoxyCompactItemize}

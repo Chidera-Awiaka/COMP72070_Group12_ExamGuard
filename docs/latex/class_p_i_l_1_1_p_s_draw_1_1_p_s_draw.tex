@@ -1,0 +1,141 @@
+\doxysection{PIL.\+PSDraw.\+PSDraw Class Reference}
+\hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw}{}\label{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw}\index{PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}}
+
+
+Simple Post\+Script graphics interface.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a4f8b53483af9c0b41d0dd40b9f88d723}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, IO\+[bytes]\+\texorpdfstring{$\vert$}{|}None \doxymbox{\hyperlink{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a655d736d0957ce64851577c7a8bee9b8}{fp}}=None)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_acb8a9a4bbf82e72be008bf36d540f95d}{begin\+\_\+document}} (self, str\texorpdfstring{$\vert$}{|}None id=None)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a771809e9420cf80848296d7e1872d5f5}{end\+\_\+document}} (self)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a03da0fae0eb56ccd2fedc7dd38ecbb8d}{setfont}} (self, str font, int size)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a818282be037d3e149fd0e7ca5637ff94}{line}} (self, tuple\+[int, int]\+ xy0, tuple\+[int, int]\+ xy1)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a8092818b3ce438093fa070dca2008f37}{rectangle}} (self, tuple\+[int, int, int, int]\+ box)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_aa940dedbd25d459d0191e881edd63646}{text}} (self, tuple\+[int, int]\+ xy, str text)
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_ab1c2882625f14e6706fbe04f8879ad66}{image}} (self, tuple\+[int, int, int, int]\+ box, \doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} im, int\texorpdfstring{$\vert$}{|}None dpi=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a655d736d0957ce64851577c7a8bee9b8}{fp}} = fp
+\item 
+dict \doxymbox{\hyperlink{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_ab77dce712cd79ac604e20dbf1feeb445}{isofont}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Simple Post\+Script graphics interface. 
+
+\begin{DoxyVerb}Sets up printing to the given file. If ``fp`` is omitted,
+``sys.stdout.buffer`` is assumed.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a4f8b53483af9c0b41d0dd40b9f88d723}\index{PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a4f8b53483af9c0b41d0dd40b9f88d723} 
+ None PIL.\+PSDraw.\+PSDraw.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IO\+[bytes]\+ \texorpdfstring{$\vert$}{|} None }]{fp}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_acb8a9a4bbf82e72be008bf36d540f95d}\index{PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}!begin\_document@{begin\_document}}
+\index{begin\_document@{begin\_document}!PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}}
+\doxysubsubsection{\texorpdfstring{begin\_document()}{begin\_document()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_acb8a9a4bbf82e72be008bf36d540f95d} 
+ None PIL.\+PSDraw.\+PSDraw.\+begin\+\_\+document (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{id}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Set up printing of a document. (Write PostScript DSC header.)\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a771809e9420cf80848296d7e1872d5f5}\index{PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}!end\_document@{end\_document}}
+\index{end\_document@{end\_document}!PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}}
+\doxysubsubsection{\texorpdfstring{end\_document()}{end\_document()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a771809e9420cf80848296d7e1872d5f5} 
+ None PIL.\+PSDraw.\+PSDraw.\+end\+\_\+document (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Ends printing. (Write PostScript DSC footer.)\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_ab1c2882625f14e6706fbe04f8879ad66}\index{PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}!image@{image}}
+\index{image@{image}!PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}}
+\doxysubsubsection{\texorpdfstring{image()}{image()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_ab1c2882625f14e6706fbe04f8879ad66} 
+ None PIL.\+PSDraw.\+PSDraw.\+image (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[int, int, int, int]\+}]{box}{, }\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}}]{im}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{dpi}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draw a PIL image, centered in the given box.\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a818282be037d3e149fd0e7ca5637ff94}\index{PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}!line@{line}}
+\index{line@{line}!PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}}
+\doxysubsubsection{\texorpdfstring{line()}{line()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a818282be037d3e149fd0e7ca5637ff94} 
+ None PIL.\+PSDraw.\+PSDraw.\+line (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[int, int]\+}]{xy0}{, }\item[{tuple\+[int, int]\+}]{xy1}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a line between the two points. Coordinates are given in
+PostScript point coordinates (72 points per inch, (0, 0) is the lower
+left corner of the page).
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a8092818b3ce438093fa070dca2008f37}\index{PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}!rectangle@{rectangle}}
+\index{rectangle@{rectangle}!PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}}
+\doxysubsubsection{\texorpdfstring{rectangle()}{rectangle()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a8092818b3ce438093fa070dca2008f37} 
+ None PIL.\+PSDraw.\+PSDraw.\+rectangle (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[int, int, int, int]\+}]{box}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a rectangle.
+
+:param box: A tuple of four integers, specifying left, bottom, width and
+   height.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a03da0fae0eb56ccd2fedc7dd38ecbb8d}\index{PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}!setfont@{setfont}}
+\index{setfont@{setfont}!PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}}
+\doxysubsubsection{\texorpdfstring{setfont()}{setfont()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a03da0fae0eb56ccd2fedc7dd38ecbb8d} 
+ None PIL.\+PSDraw.\+PSDraw.\+setfont (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{font}{, }\item[{int}]{size}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Selects which font to use.
+
+:param font: A PostScript font name
+:param size: Size in points.
+\end{DoxyVerb}
+ \Hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_aa940dedbd25d459d0191e881edd63646}\index{PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}!text@{text}}
+\index{text@{text}!PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}}
+\doxysubsubsection{\texorpdfstring{text()}{text()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_aa940dedbd25d459d0191e881edd63646} 
+ None PIL.\+PSDraw.\+PSDraw.\+text (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{tuple\+[int, int]\+}]{xy}{, }\item[{str}]{text}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws text at the given position. You must use
+:py:meth:`~PIL.PSDraw.PSDraw.setfont` before calling this method.
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a655d736d0957ce64851577c7a8bee9b8}\index{PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}!fp@{fp}}
+\index{fp@{fp}!PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}}
+\doxysubsubsection{\texorpdfstring{fp}{fp}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_a655d736d0957ce64851577c7a8bee9b8} 
+PIL.\+PSDraw.\+PSDraw.\+fp = fp}
+
+\Hypertarget{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_ab77dce712cd79ac604e20dbf1feeb445}\index{PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}!isofont@{isofont}}
+\index{isofont@{isofont}!PIL.PSDraw.PSDraw@{PIL.PSDraw.PSDraw}}
+\doxysubsubsection{\texorpdfstring{isofont}{isofont}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_p_s_draw_1_1_p_s_draw_ab77dce712cd79ac604e20dbf1feeb445} 
+dict PIL.\+PSDraw.\+PSDraw.\+isofont = \{\}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_p_s_draw_8py}{PSDraw.\+py}}\end{DoxyCompactItemize}

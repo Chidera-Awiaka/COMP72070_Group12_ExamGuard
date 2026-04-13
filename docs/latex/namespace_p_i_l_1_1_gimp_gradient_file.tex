@@ -1,0 +1,96 @@
+\doxysection{PIL.\+Gimp\+Gradient\+File Namespace Reference}
+\hypertarget{namespace_p_i_l_1_1_gimp_gradient_file}{}\label{namespace_p_i_l_1_1_gimp_gradient_file}\index{PIL.GimpGradientFile@{PIL.GimpGradientFile}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_gimp_gradient_file_1_1_gradient_file}{Gradient\+File}}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_gimp_gradient_file_1_1_gimp_gradient_file}{Gimp\+Gradient\+File}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_a1c5d2760ec6b1e66072cd4149564f828}{linear}} (float middle, float pos)
+\item 
+float \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_ac9fd76b9cb007a32bd22d59cd38f81bd}{curved}} (float middle, float pos)
+\item 
+float \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_aa86c14cba9925eac12e092ad0061c73f}{sine}} (float middle, float pos)
+\item 
+float \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_aaab13426f6f9a063a752ac62628f4be7}{sphere\+\_\+increasing}} (float middle, float pos)
+\item 
+float \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_a877d620b600f15bb7870c09173997940}{sphere\+\_\+decreasing}} (float middle, float pos)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_a3d3ee9f597be2d27fd13a03cdf85d02c}{TYPE\+\_\+\+CHECKING}} = False
+\item 
+int \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_abdb8b052261a070518d364948a8d8cff}{EPSILON}} = 1e-\/10
+\item 
+list \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_a12d56b6399f2ba3a312926a6dbb1bec2}{SEGMENTS}} = \+[\doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_a1c5d2760ec6b1e66072cd4149564f828}{linear}}, \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_ac9fd76b9cb007a32bd22d59cd38f81bd}{curved}}, \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_aa86c14cba9925eac12e092ad0061c73f}{sine}}, \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_aaab13426f6f9a063a752ac62628f4be7}{sphere\+\_\+increasing}}, \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_a877d620b600f15bb7870c09173997940}{sphere\+\_\+decreasing}}]\+
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Stuff to translate curve segments to palette values (derived from
+the corresponding code in GIMP, written by Federico Mena Quintero.
+See the GIMP distribution for more information.)
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespace_p_i_l_1_1_gimp_gradient_file_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_p_i_l_1_1_gimp_gradient_file_ac9fd76b9cb007a32bd22d59cd38f81bd}\index{PIL.GimpGradientFile@{PIL.GimpGradientFile}!curved@{curved}}
+\index{curved@{curved}!PIL.GimpGradientFile@{PIL.GimpGradientFile}}
+\doxysubsubsection{\texorpdfstring{curved()}{curved()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_gimp_gradient_file_ac9fd76b9cb007a32bd22d59cd38f81bd} 
+ float PIL.\+Gimp\+Gradient\+File.\+curved (\begin{DoxyParamCaption}\item[{float}]{middle}{, }\item[{float}]{pos}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_p_i_l_1_1_gimp_gradient_file_a1c5d2760ec6b1e66072cd4149564f828}\index{PIL.GimpGradientFile@{PIL.GimpGradientFile}!linear@{linear}}
+\index{linear@{linear}!PIL.GimpGradientFile@{PIL.GimpGradientFile}}
+\doxysubsubsection{\texorpdfstring{linear()}{linear()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_gimp_gradient_file_a1c5d2760ec6b1e66072cd4149564f828} 
+ float PIL.\+Gimp\+Gradient\+File.\+linear (\begin{DoxyParamCaption}\item[{float}]{middle}{, }\item[{float}]{pos}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_p_i_l_1_1_gimp_gradient_file_aa86c14cba9925eac12e092ad0061c73f}\index{PIL.GimpGradientFile@{PIL.GimpGradientFile}!sine@{sine}}
+\index{sine@{sine}!PIL.GimpGradientFile@{PIL.GimpGradientFile}}
+\doxysubsubsection{\texorpdfstring{sine()}{sine()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_gimp_gradient_file_aa86c14cba9925eac12e092ad0061c73f} 
+ float PIL.\+Gimp\+Gradient\+File.\+sine (\begin{DoxyParamCaption}\item[{float}]{middle}{, }\item[{float}]{pos}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_p_i_l_1_1_gimp_gradient_file_a877d620b600f15bb7870c09173997940}\index{PIL.GimpGradientFile@{PIL.GimpGradientFile}!sphere\_decreasing@{sphere\_decreasing}}
+\index{sphere\_decreasing@{sphere\_decreasing}!PIL.GimpGradientFile@{PIL.GimpGradientFile}}
+\doxysubsubsection{\texorpdfstring{sphere\_decreasing()}{sphere\_decreasing()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_gimp_gradient_file_a877d620b600f15bb7870c09173997940} 
+ float PIL.\+Gimp\+Gradient\+File.\+sphere\+\_\+decreasing (\begin{DoxyParamCaption}\item[{float}]{middle}{, }\item[{float}]{pos}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespace_p_i_l_1_1_gimp_gradient_file_aaab13426f6f9a063a752ac62628f4be7}\index{PIL.GimpGradientFile@{PIL.GimpGradientFile}!sphere\_increasing@{sphere\_increasing}}
+\index{sphere\_increasing@{sphere\_increasing}!PIL.GimpGradientFile@{PIL.GimpGradientFile}}
+\doxysubsubsection{\texorpdfstring{sphere\_increasing()}{sphere\_increasing()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_gimp_gradient_file_aaab13426f6f9a063a752ac62628f4be7} 
+ float PIL.\+Gimp\+Gradient\+File.\+sphere\+\_\+increasing (\begin{DoxyParamCaption}\item[{float}]{middle}{, }\item[{float}]{pos}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespace_p_i_l_1_1_gimp_gradient_file_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_p_i_l_1_1_gimp_gradient_file_abdb8b052261a070518d364948a8d8cff}\index{PIL.GimpGradientFile@{PIL.GimpGradientFile}!EPSILON@{EPSILON}}
+\index{EPSILON@{EPSILON}!PIL.GimpGradientFile@{PIL.GimpGradientFile}}
+\doxysubsubsection{\texorpdfstring{EPSILON}{EPSILON}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_gimp_gradient_file_abdb8b052261a070518d364948a8d8cff} 
+int PIL.\+Gimp\+Gradient\+File.\+EPSILON = 1e-\/10}
+
+\Hypertarget{namespace_p_i_l_1_1_gimp_gradient_file_a12d56b6399f2ba3a312926a6dbb1bec2}\index{PIL.GimpGradientFile@{PIL.GimpGradientFile}!SEGMENTS@{SEGMENTS}}
+\index{SEGMENTS@{SEGMENTS}!PIL.GimpGradientFile@{PIL.GimpGradientFile}}
+\doxysubsubsection{\texorpdfstring{SEGMENTS}{SEGMENTS}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_gimp_gradient_file_a12d56b6399f2ba3a312926a6dbb1bec2} 
+list PIL.\+Gimp\+Gradient\+File.\+SEGMENTS = \+[\doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_a1c5d2760ec6b1e66072cd4149564f828}{linear}}, \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_ac9fd76b9cb007a32bd22d59cd38f81bd}{curved}}, \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_aa86c14cba9925eac12e092ad0061c73f}{sine}}, \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_aaab13426f6f9a063a752ac62628f4be7}{sphere\+\_\+increasing}}, \doxymbox{\hyperlink{namespace_p_i_l_1_1_gimp_gradient_file_a877d620b600f15bb7870c09173997940}{sphere\+\_\+decreasing}}]\+}
+
+\Hypertarget{namespace_p_i_l_1_1_gimp_gradient_file_a3d3ee9f597be2d27fd13a03cdf85d02c}\index{PIL.GimpGradientFile@{PIL.GimpGradientFile}!TYPE\_CHECKING@{TYPE\_CHECKING}}
+\index{TYPE\_CHECKING@{TYPE\_CHECKING}!PIL.GimpGradientFile@{PIL.GimpGradientFile}}
+\doxysubsubsection{\texorpdfstring{TYPE\_CHECKING}{TYPE\_CHECKING}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_gimp_gradient_file_a3d3ee9f597be2d27fd13a03cdf85d02c} 
+bool PIL.\+Gimp\+Gradient\+File.\+TYPE\+\_\+\+CHECKING = False}
+

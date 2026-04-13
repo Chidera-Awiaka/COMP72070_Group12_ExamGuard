@@ -1,0 +1,64 @@
+\doxysection{pip.\+\_\+internal.\+req Namespace Reference}
+\hypertarget{namespacepip_1_1__internal_1_1req}{}\label{namespacepip_1_1__internal_1_1req}\index{pip.\_internal.req@{pip.\_internal.req}}
+\doxysubsubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1constructors}{constructors}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__file}{req\+\_\+file}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__install}{req\+\_\+install}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__set}{req\+\_\+set}}
+\item 
+namespace \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_1_1req__uninstall}{req\+\_\+uninstall}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1_installation_result}{Installation\+Result}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Generator\+[Tuple\+[str, \doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+, None, None]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_a5e085878b77ac0fd32ae711a638f7c48}{\+\_\+validate\+\_\+requirements}} (List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+ requirements)
+\item 
+List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1_installation_result}{Installation\+Result}}]\+ \doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_a148161f207cc78e97250e3e74b3b85d7}{install\+\_\+given\+\_\+reqs}} (List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+ requirements, Sequence\+[str]\+ global\+\_\+options, Optional\+[str]\+ root, Optional\+[str]\+ home, Optional\+[str]\+ prefix, bool warn\+\_\+script\+\_\+location, bool use\+\_\+user\+\_\+site, bool pycompile)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__internal_1_1req_ac8b651e06f7e4ca3a12dbc99244c77cf}{logger}} = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacepip_1_1__internal_1_1req_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1req_a5e085878b77ac0fd32ae711a638f7c48}\index{pip.\_internal.req@{pip.\_internal.req}!\_validate\_requirements@{\_validate\_requirements}}
+\index{\_validate\_requirements@{\_validate\_requirements}!pip.\_internal.req@{pip.\_internal.req}}
+\doxysubsubsection{\texorpdfstring{\_validate\_requirements()}{\_validate\_requirements()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1req_a5e085878b77ac0fd32ae711a638f7c48} 
+ Generator\+[Tuple\+[str, \doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+, None, None]\+ pip.\+\_\+internal.\+req.\+\_\+validate\+\_\+requirements (\begin{DoxyParamCaption}\item[{List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+}]{requirements}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacepip_1_1__internal_1_1req_a148161f207cc78e97250e3e74b3b85d7}\index{pip.\_internal.req@{pip.\_internal.req}!install\_given\_reqs@{install\_given\_reqs}}
+\index{install\_given\_reqs@{install\_given\_reqs}!pip.\_internal.req@{pip.\_internal.req}}
+\doxysubsubsection{\texorpdfstring{install\_given\_reqs()}{install\_given\_reqs()}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1req_a148161f207cc78e97250e3e74b3b85d7} 
+ List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1_installation_result}{Installation\+Result}}]\+ pip.\+\_\+internal.\+req.\+install\+\_\+given\+\_\+reqs (\begin{DoxyParamCaption}\item[{List\+[\doxymbox{\hyperlink{classpip_1_1__internal_1_1req_1_1req__install_1_1_install_requirement}{Install\+Requirement}}]\+}]{requirements}{, }\item[{Sequence\+[str]\+}]{global\+\_\+options}{, }\item[{Optional\+[str]\+}]{root}{, }\item[{Optional\+[str]\+}]{home}{, }\item[{Optional\+[str]\+}]{prefix}{, }\item[{bool}]{warn\+\_\+script\+\_\+location}{, }\item[{bool}]{use\+\_\+user\+\_\+site}{, }\item[{bool}]{pycompile}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Install everything in the given list.
+
+(to be called after having downloaded and unpacked the packages)
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacepip_1_1__internal_1_1req_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacepip_1_1__internal_1_1req_ac8b651e06f7e4ca3a12dbc99244c77cf}\index{pip.\_internal.req@{pip.\_internal.req}!logger@{logger}}
+\index{logger@{logger}!pip.\_internal.req@{pip.\_internal.req}}
+\doxysubsubsection{\texorpdfstring{logger}{logger}}
+{\footnotesize\ttfamily \label{namespacepip_1_1__internal_1_1req_ac8b651e06f7e4ca3a12dbc99244c77cf} 
+pip.\+\_\+internal.\+req.\+logger = logging.\+get\+Logger(\+\_\+\+\_\+name\+\_\+\+\_\+)}
+

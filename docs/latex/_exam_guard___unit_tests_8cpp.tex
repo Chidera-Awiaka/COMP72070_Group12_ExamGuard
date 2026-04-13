@@ -1,0 +1,367 @@
+\doxysection{Exam\+Guard\+\_\+\+Tests/\+\+Exam\+Guard\+\_\+\+Unit\+Tests.cpp File Reference}
+\hypertarget{_exam_guard___unit_tests_8cpp}{}\label{_exam_guard___unit_tests_8cpp}\index{ExamGuard\_Tests/ExamGuard\_UnitTests.cpp@{ExamGuard\_Tests/ExamGuard\_UnitTests.cpp}}
+{\ttfamily \+\#include "{}../\+shared/\+\+Data\+Packet.\+h"{}}\newline
+{\ttfamily \+\#include "{}../\+shared/\+\+Logger.\+h"{}}\newline
+{\ttfamily \+\#include "{}../\+server/\+\+State\+Machine.\+h"{}}\newline
+{\ttfamily \+\#include "{}../\+server/\+\+Auth\+Manager.\+h"{}}\newline
+{\ttfamily \+\#include $<$cassert$>$}\newline
+{\ttfamily \+\#include $<$iostream$>$}\newline
+{\ttfamily \+\#include $<$string$>$}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\+\#define \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a0b8af275eb03ef66766aa89546edc85d}{ASSERT\+\_\+\+TRUE}}(x)
+\item 
+\+\#define \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a66be21c7c9ac991f2d3b793a207423c3}{ASSERT\+\_\+\+FALSE}}(x)
+\item 
+\+\#define \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a9cc34fd87cb865c77439a5d39b3b111b}{ASSERT\+\_\+\+EQ}}(a,  b)
+\item 
+\+\#define \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a0086e0b898cbf7a680ba24ed898edb1f}{ASSERT\+\_\+\+NE}}(a,  b)
+\item 
+\+\#define \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_afc5997dc0ee13f032e22aa5c2bb1fa15}{ASSERT\+\_\+\+NULL}}(x)
+\item 
+\+\#define \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a11b99005851b58d14ea3ebfae6e4aadb}{ASSERT\+\_\+\+NOT\+\_\+\+NULL}}(x)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a46fbdcdda3215304e3dbc2e3bcdc726f}{Test\+\_\+\+Default\+Constructor\+\_\+\+All\+Fields\+Zero\+Or\+Null}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a2ec4e060124b869f91cac4912dd09ece}{Test\+\_\+\+Full\+Constructor\+\_\+\+Copies\+Payload}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a4f815664b37e8b3534ab30db7cba3917}{Test\+\_\+\+String\+Constructor\+\_\+\+Sets\+Payload\+And\+Length}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a01ba0768d64ed064c372553fd5cf9e8c}{Test\+\_\+\+Copy\+Constructor\+\_\+\+Deep\+Copies\+Payload}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a7abf8d90627a1fadd8a4fab2c0d6797d}{Test\+\_\+\+Copy\+Assignment\+\_\+\+Deep\+Copies\+Payload}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a9af7e8f401a1a3ccd9bb6b0ba71b6eda}{Test\+\_\+\+Destructor\+\_\+\+Frees\+Payload\+\_\+\+No\+Leak}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a947efceca52afc122361c7c83e18ce13}{Test\+\_\+\+Null\+Data\+\_\+\+Payload\+Is\+Nullptr}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_ae80dc1f198b4cea8ba090b44c5b2f0e1}{Test\+\_\+\+Timestamp\+\_\+\+Is\+Non\+Zero\+After\+Construction}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a23af1f88a670d525199f16956c263843}{Test\+\_\+\+Command\+Type\+To\+String\+\_\+\+All\+Values}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_adf8ea7a6b42cb9f6a04d3c6df55f2b07}{Test\+\_\+\+Initial\+State\+\_\+\+Is\+Waiting\+For\+Student}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a7d2af03eb05d456df551fda491ffc721}{Test\+\_\+\+Authentication\+\_\+\+Is\+Automatic\+Not\+Commanded}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_aac7b1483c1e5e90b08bb624b527abd1a}{Test\+\_\+\+Start\+Exam\+\_\+\+From\+Authenticated\+\_\+\+Transitions\+To\+Exam\+Active}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a62e6fc3f270d31f87f17ed7a2b55596d}{Test\+\_\+\+Submit\+Exam\+\_\+\+From\+Exam\+Active\+\_\+\+Transitions\+To\+Submitted}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a2726bfaf80025d32c4ddc6fb22bca7e7}{Test\+\_\+\+Start\+Exam\+\_\+\+Without\+Auth\+\_\+\+Is\+Rejected}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a8983754e97bc1c9898f8da96f5a65f00}{Test\+\_\+\+Submit\+Exam\+\_\+\+Without\+Start\+Exam\+\_\+\+Is\+Rejected}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_ad12c1e8fe32076d1fb67a93a1ccf5d7f}{Test\+\_\+\+Start\+Exam\+\_\+\+When\+Already\+Active\+\_\+\+Is\+Rejected}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_aee81c41ea4441e41e4938161ef3328e4}{Test\+\_\+\+Client\+Disconnect\+\_\+\+Sets\+Exam\+Closed}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_ab4421e3905c33a57c1afa9d5acc56a22}{Test\+\_\+\+Can\+Execute\+\_\+\+Correctly\+Validates\+Commands}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_ad4d112d1b7f633f9f73666826f96291f}{Test\+\_\+\+Reset\+\_\+\+Returns\+To\+Waiting\+For\+Student}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a027638c8f5127405b7bd8b585b9b5787}{Test\+\_\+\+State\+To\+String\+\_\+\+All\+Five\+States}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a7ab3d0da386e87f73e1d92ed73dc0766}{Test\+\_\+\+Valid\+Credentials\+\_\+\+Authenticates\+Successfully}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a305ac25231d4d7e8dea1c41556e1a28a}{Test\+\_\+\+Invalid\+Password\+\_\+\+Rejects\+Authentication}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a773926c221f6c3c41d8ea8439cbc27d7}{Test\+\_\+\+Unknown\+Student\+\_\+\+Rejects\+Authentication}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a7776d9559bbbd2d0505e6b46238e1be7}{Test\+\_\+\+Malformed\+Payload\+\_\+\+Rejects\+Gracefully}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_ad0719567a12ad18e5fa12860c4c8478c}{Test\+\_\+\+Wrong\+Command\+Type\+\_\+\+Rejects\+Validation}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a609fa7a5d0da91e7a0f09714f9ace2d0}{Test\+\_\+\+Session\+\_\+\+Created\+And\+Ended}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_af51f578cd248b35d34a1dd05244744cf}{Test\+\_\+\+Add\+Credential\+\_\+\+Works\+For\+New\+Student}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a507a6c8ecf813502784c94f5b38626e9}{Test\+\_\+\+Logger\+\_\+\+Creates\+Log\+File}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a7511a747c462533d32058c5f2269a049}{Test\+\_\+\+Log\+TX\+\_\+\+Does\+Not\+Crash}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_aafaefb26f76328886a81f4bfcfd85744}{Test\+\_\+\+Log\+RX\+\_\+\+Does\+Not\+Crash}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a069d98bec4eeb6028ee6e2abbade82e0}{Test\+\_\+\+Log\+State\+\_\+\+Does\+Not\+Crash}} ()
+\item 
+void \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_abafbfe497471fa826dddcaa4774bd029}{Test\+\_\+\+Log\+Auth\+\_\+\+Does\+Not\+Crash}} ()
+\item 
+int \doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{_exam_guard___unit_tests_8cpp_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_exam_guard___unit_tests_8cpp_a9cc34fd87cb865c77439a5d39b3b111b}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!ASSERT\_EQ@{ASSERT\_EQ}}
+\index{ASSERT\_EQ@{ASSERT\_EQ}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{ASSERT\_EQ}{ASSERT\_EQ}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a9cc34fd87cb865c77439a5d39b3b111b} 
+\+\#define ASSERT\+\_\+\+EQ(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a0b8af275eb03ef66766aa89546edc85d}{ASSERT\_TRUE}}((a)==(b))}
+
+\end{DoxyCode}
+\Hypertarget{_exam_guard___unit_tests_8cpp_a66be21c7c9ac991f2d3b793a207423c3}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!ASSERT\_FALSE@{ASSERT\_FALSE}}
+\index{ASSERT\_FALSE@{ASSERT\_FALSE}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{ASSERT\_FALSE}{ASSERT\_FALSE}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a66be21c7c9ac991f2d3b793a207423c3} 
+\+\#define ASSERT\+\_\+\+FALSE(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a0b8af275eb03ef66766aa89546edc85d}{ASSERT\_TRUE}}(!(x))}
+
+\end{DoxyCode}
+\Hypertarget{_exam_guard___unit_tests_8cpp_a0086e0b898cbf7a680ba24ed898edb1f}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!ASSERT\_NE@{ASSERT\_NE}}
+\index{ASSERT\_NE@{ASSERT\_NE}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{ASSERT\_NE}{ASSERT\_NE}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a0086e0b898cbf7a680ba24ed898edb1f} 
+\+\#define ASSERT\+\_\+\+NE(\begin{DoxyParamCaption}\item[{}]{a}{, }\item[{}]{b}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a0b8af275eb03ef66766aa89546edc85d}{ASSERT\_TRUE}}((a)!=(b))}
+
+\end{DoxyCode}
+\Hypertarget{_exam_guard___unit_tests_8cpp_a11b99005851b58d14ea3ebfae6e4aadb}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!ASSERT\_NOT\_NULL@{ASSERT\_NOT\_NULL}}
+\index{ASSERT\_NOT\_NULL@{ASSERT\_NOT\_NULL}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{ASSERT\_NOT\_NULL}{ASSERT\_NOT\_NULL}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a11b99005851b58d14ea3ebfae6e4aadb} 
+\+\#define ASSERT\+\_\+\+NOT\+\_\+\+NULL(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a0b8af275eb03ef66766aa89546edc85d}{ASSERT\_TRUE}}((x)!=\textcolor{keyword}{nullptr})}
+
+\end{DoxyCode}
+\Hypertarget{_exam_guard___unit_tests_8cpp_afc5997dc0ee13f032e22aa5c2bb1fa15}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!ASSERT\_NULL@{ASSERT\_NULL}}
+\index{ASSERT\_NULL@{ASSERT\_NULL}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{ASSERT\_NULL}{ASSERT\_NULL}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_afc5997dc0ee13f032e22aa5c2bb1fa15} 
+\+\#define ASSERT\+\_\+\+NULL(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\doxymbox{\hyperlink{_exam_guard___unit_tests_8cpp_a0b8af275eb03ef66766aa89546edc85d}{ASSERT\_TRUE}}((x)==\textcolor{keyword}{nullptr})}
+
+\end{DoxyCode}
+\Hypertarget{_exam_guard___unit_tests_8cpp_a0b8af275eb03ef66766aa89546edc85d}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!ASSERT\_TRUE@{ASSERT\_TRUE}}
+\index{ASSERT\_TRUE@{ASSERT\_TRUE}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{ASSERT\_TRUE}{ASSERT\_TRUE}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a0b8af275eb03ef66766aa89546edc85d} 
+\+\#define ASSERT\+\_\+\+TRUE(\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+{\bfseries Value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{do}\ \{\ \textcolor{keywordflow}{if}(!(x))\{std::cerr<<\textcolor{stringliteral}{"{}FAIL:\ "{}}\#x\textcolor{stringliteral}{"{}\(\backslash\)n"{}};\ ++g\_failures;\}\ \textcolor{keywordflow}{else}\{std::cout<<\textcolor{stringliteral}{"{}PASS:\ "{}}\#x\textcolor{stringliteral}{"{}\(\backslash\)n"{}};\ ++g\_passes;\}\ \}\ \textcolor{keywordflow}{while}(0)}
+
+\end{DoxyCode}
+
+
+\label{doc-func-members}
+\Hypertarget{_exam_guard___unit_tests_8cpp_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{_exam_guard___unit_tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!main@{main}}
+\index{main@{main}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_af51f578cd248b35d34a1dd05244744cf}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_AddCredential\_WorksForNewStudent@{Test\_AddCredential\_WorksForNewStudent}}
+\index{Test\_AddCredential\_WorksForNewStudent@{Test\_AddCredential\_WorksForNewStudent}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_AddCredential\_WorksForNewStudent()}{Test\_AddCredential\_WorksForNewStudent()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_af51f578cd248b35d34a1dd05244744cf} 
+void Test\+\_\+\+Add\+Credential\+\_\+\+Works\+For\+New\+Student (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a7d2af03eb05d456df551fda491ffc721}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_Authentication\_IsAutomaticNotCommanded@{Test\_Authentication\_IsAutomaticNotCommanded}}
+\index{Test\_Authentication\_IsAutomaticNotCommanded@{Test\_Authentication\_IsAutomaticNotCommanded}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_Authentication\_IsAutomaticNotCommanded()}{Test\_Authentication\_IsAutomaticNotCommanded()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a7d2af03eb05d456df551fda491ffc721} 
+void Test\+\_\+\+Authentication\+\_\+\+Is\+Automatic\+Not\+Commanded (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_ab4421e3905c33a57c1afa9d5acc56a22}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_CanExecute\_CorrectlyValidatesCommands@{Test\_CanExecute\_CorrectlyValidatesCommands}}
+\index{Test\_CanExecute\_CorrectlyValidatesCommands@{Test\_CanExecute\_CorrectlyValidatesCommands}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_CanExecute\_CorrectlyValidatesCommands()}{Test\_CanExecute\_CorrectlyValidatesCommands()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_ab4421e3905c33a57c1afa9d5acc56a22} 
+void Test\+\_\+\+Can\+Execute\+\_\+\+Correctly\+Validates\+Commands (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_aee81c41ea4441e41e4938161ef3328e4}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_ClientDisconnect\_SetsExamClosed@{Test\_ClientDisconnect\_SetsExamClosed}}
+\index{Test\_ClientDisconnect\_SetsExamClosed@{Test\_ClientDisconnect\_SetsExamClosed}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_ClientDisconnect\_SetsExamClosed()}{Test\_ClientDisconnect\_SetsExamClosed()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_aee81c41ea4441e41e4938161ef3328e4} 
+void Test\+\_\+\+Client\+Disconnect\+\_\+\+Sets\+Exam\+Closed (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a23af1f88a670d525199f16956c263843}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_CommandTypeToString\_AllValues@{Test\_CommandTypeToString\_AllValues}}
+\index{Test\_CommandTypeToString\_AllValues@{Test\_CommandTypeToString\_AllValues}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_CommandTypeToString\_AllValues()}{Test\_CommandTypeToString\_AllValues()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a23af1f88a670d525199f16956c263843} 
+void Test\+\_\+\+Command\+Type\+To\+String\+\_\+\+All\+Values (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a7abf8d90627a1fadd8a4fab2c0d6797d}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_CopyAssignment\_DeepCopiesPayload@{Test\_CopyAssignment\_DeepCopiesPayload}}
+\index{Test\_CopyAssignment\_DeepCopiesPayload@{Test\_CopyAssignment\_DeepCopiesPayload}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_CopyAssignment\_DeepCopiesPayload()}{Test\_CopyAssignment\_DeepCopiesPayload()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a7abf8d90627a1fadd8a4fab2c0d6797d} 
+void Test\+\_\+\+Copy\+Assignment\+\_\+\+Deep\+Copies\+Payload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a01ba0768d64ed064c372553fd5cf9e8c}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_CopyConstructor\_DeepCopiesPayload@{Test\_CopyConstructor\_DeepCopiesPayload}}
+\index{Test\_CopyConstructor\_DeepCopiesPayload@{Test\_CopyConstructor\_DeepCopiesPayload}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_CopyConstructor\_DeepCopiesPayload()}{Test\_CopyConstructor\_DeepCopiesPayload()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a01ba0768d64ed064c372553fd5cf9e8c} 
+void Test\+\_\+\+Copy\+Constructor\+\_\+\+Deep\+Copies\+Payload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a46fbdcdda3215304e3dbc2e3bcdc726f}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_DefaultConstructor\_AllFieldsZeroOrNull@{Test\_DefaultConstructor\_AllFieldsZeroOrNull}}
+\index{Test\_DefaultConstructor\_AllFieldsZeroOrNull@{Test\_DefaultConstructor\_AllFieldsZeroOrNull}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_DefaultConstructor\_AllFieldsZeroOrNull()}{Test\_DefaultConstructor\_AllFieldsZeroOrNull()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a46fbdcdda3215304e3dbc2e3bcdc726f} 
+void Test\+\_\+\+Default\+Constructor\+\_\+\+All\+Fields\+Zero\+Or\+Null (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a9af7e8f401a1a3ccd9bb6b0ba71b6eda}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_Destructor\_FreesPayload\_NoLeak@{Test\_Destructor\_FreesPayload\_NoLeak}}
+\index{Test\_Destructor\_FreesPayload\_NoLeak@{Test\_Destructor\_FreesPayload\_NoLeak}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_Destructor\_FreesPayload\_NoLeak()}{Test\_Destructor\_FreesPayload\_NoLeak()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a9af7e8f401a1a3ccd9bb6b0ba71b6eda} 
+void Test\+\_\+\+Destructor\+\_\+\+Frees\+Payload\+\_\+\+No\+Leak (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a2ec4e060124b869f91cac4912dd09ece}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_FullConstructor\_CopiesPayload@{Test\_FullConstructor\_CopiesPayload}}
+\index{Test\_FullConstructor\_CopiesPayload@{Test\_FullConstructor\_CopiesPayload}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_FullConstructor\_CopiesPayload()}{Test\_FullConstructor\_CopiesPayload()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a2ec4e060124b869f91cac4912dd09ece} 
+void Test\+\_\+\+Full\+Constructor\+\_\+\+Copies\+Payload (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_adf8ea7a6b42cb9f6a04d3c6df55f2b07}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_InitialState\_IsWaitingForStudent@{Test\_InitialState\_IsWaitingForStudent}}
+\index{Test\_InitialState\_IsWaitingForStudent@{Test\_InitialState\_IsWaitingForStudent}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_InitialState\_IsWaitingForStudent()}{Test\_InitialState\_IsWaitingForStudent()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_adf8ea7a6b42cb9f6a04d3c6df55f2b07} 
+void Test\+\_\+\+Initial\+State\+\_\+\+Is\+Waiting\+For\+Student (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a305ac25231d4d7e8dea1c41556e1a28a}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_InvalidPassword\_RejectsAuthentication@{Test\_InvalidPassword\_RejectsAuthentication}}
+\index{Test\_InvalidPassword\_RejectsAuthentication@{Test\_InvalidPassword\_RejectsAuthentication}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_InvalidPassword\_RejectsAuthentication()}{Test\_InvalidPassword\_RejectsAuthentication()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a305ac25231d4d7e8dea1c41556e1a28a} 
+void Test\+\_\+\+Invalid\+Password\+\_\+\+Rejects\+Authentication (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_abafbfe497471fa826dddcaa4774bd029}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_LogAuth\_DoesNotCrash@{Test\_LogAuth\_DoesNotCrash}}
+\index{Test\_LogAuth\_DoesNotCrash@{Test\_LogAuth\_DoesNotCrash}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_LogAuth\_DoesNotCrash()}{Test\_LogAuth\_DoesNotCrash()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_abafbfe497471fa826dddcaa4774bd029} 
+void Test\+\_\+\+Log\+Auth\+\_\+\+Does\+Not\+Crash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a507a6c8ecf813502784c94f5b38626e9}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_Logger\_CreatesLogFile@{Test\_Logger\_CreatesLogFile}}
+\index{Test\_Logger\_CreatesLogFile@{Test\_Logger\_CreatesLogFile}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_Logger\_CreatesLogFile()}{Test\_Logger\_CreatesLogFile()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a507a6c8ecf813502784c94f5b38626e9} 
+void Test\+\_\+\+Logger\+\_\+\+Creates\+Log\+File (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_aafaefb26f76328886a81f4bfcfd85744}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_LogRX\_DoesNotCrash@{Test\_LogRX\_DoesNotCrash}}
+\index{Test\_LogRX\_DoesNotCrash@{Test\_LogRX\_DoesNotCrash}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_LogRX\_DoesNotCrash()}{Test\_LogRX\_DoesNotCrash()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_aafaefb26f76328886a81f4bfcfd85744} 
+void Test\+\_\+\+Log\+RX\+\_\+\+Does\+Not\+Crash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a069d98bec4eeb6028ee6e2abbade82e0}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_LogState\_DoesNotCrash@{Test\_LogState\_DoesNotCrash}}
+\index{Test\_LogState\_DoesNotCrash@{Test\_LogState\_DoesNotCrash}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_LogState\_DoesNotCrash()}{Test\_LogState\_DoesNotCrash()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a069d98bec4eeb6028ee6e2abbade82e0} 
+void Test\+\_\+\+Log\+State\+\_\+\+Does\+Not\+Crash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a7511a747c462533d32058c5f2269a049}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_LogTX\_DoesNotCrash@{Test\_LogTX\_DoesNotCrash}}
+\index{Test\_LogTX\_DoesNotCrash@{Test\_LogTX\_DoesNotCrash}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_LogTX\_DoesNotCrash()}{Test\_LogTX\_DoesNotCrash()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a7511a747c462533d32058c5f2269a049} 
+void Test\+\_\+\+Log\+TX\+\_\+\+Does\+Not\+Crash (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a7776d9559bbbd2d0505e6b46238e1be7}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_MalformedPayload\_RejectsGracefully@{Test\_MalformedPayload\_RejectsGracefully}}
+\index{Test\_MalformedPayload\_RejectsGracefully@{Test\_MalformedPayload\_RejectsGracefully}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_MalformedPayload\_RejectsGracefully()}{Test\_MalformedPayload\_RejectsGracefully()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a7776d9559bbbd2d0505e6b46238e1be7} 
+void Test\+\_\+\+Malformed\+Payload\+\_\+\+Rejects\+Gracefully (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a947efceca52afc122361c7c83e18ce13}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_NullData\_PayloadIsNullptr@{Test\_NullData\_PayloadIsNullptr}}
+\index{Test\_NullData\_PayloadIsNullptr@{Test\_NullData\_PayloadIsNullptr}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_NullData\_PayloadIsNullptr()}{Test\_NullData\_PayloadIsNullptr()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a947efceca52afc122361c7c83e18ce13} 
+void Test\+\_\+\+Null\+Data\+\_\+\+Payload\+Is\+Nullptr (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_ad4d112d1b7f633f9f73666826f96291f}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_Reset\_ReturnsToWaitingForStudent@{Test\_Reset\_ReturnsToWaitingForStudent}}
+\index{Test\_Reset\_ReturnsToWaitingForStudent@{Test\_Reset\_ReturnsToWaitingForStudent}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_Reset\_ReturnsToWaitingForStudent()}{Test\_Reset\_ReturnsToWaitingForStudent()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_ad4d112d1b7f633f9f73666826f96291f} 
+void Test\+\_\+\+Reset\+\_\+\+Returns\+To\+Waiting\+For\+Student (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a609fa7a5d0da91e7a0f09714f9ace2d0}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_Session\_CreatedAndEnded@{Test\_Session\_CreatedAndEnded}}
+\index{Test\_Session\_CreatedAndEnded@{Test\_Session\_CreatedAndEnded}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_Session\_CreatedAndEnded()}{Test\_Session\_CreatedAndEnded()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a609fa7a5d0da91e7a0f09714f9ace2d0} 
+void Test\+\_\+\+Session\+\_\+\+Created\+And\+Ended (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_aac7b1483c1e5e90b08bb624b527abd1a}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_StartExam\_FromAuthenticated\_TransitionsToExamActive@{Test\_StartExam\_FromAuthenticated\_TransitionsToExamActive}}
+\index{Test\_StartExam\_FromAuthenticated\_TransitionsToExamActive@{Test\_StartExam\_FromAuthenticated\_TransitionsToExamActive}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_StartExam\_FromAuthenticated\_TransitionsToExamActive()}{Test\_StartExam\_FromAuthenticated\_TransitionsToExamActive()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_aac7b1483c1e5e90b08bb624b527abd1a} 
+void Test\+\_\+\+Start\+Exam\+\_\+\+From\+Authenticated\+\_\+\+Transitions\+To\+Exam\+Active (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_ad12c1e8fe32076d1fb67a93a1ccf5d7f}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_StartExam\_WhenAlreadyActive\_IsRejected@{Test\_StartExam\_WhenAlreadyActive\_IsRejected}}
+\index{Test\_StartExam\_WhenAlreadyActive\_IsRejected@{Test\_StartExam\_WhenAlreadyActive\_IsRejected}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_StartExam\_WhenAlreadyActive\_IsRejected()}{Test\_StartExam\_WhenAlreadyActive\_IsRejected()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_ad12c1e8fe32076d1fb67a93a1ccf5d7f} 
+void Test\+\_\+\+Start\+Exam\+\_\+\+When\+Already\+Active\+\_\+\+Is\+Rejected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a2726bfaf80025d32c4ddc6fb22bca7e7}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_StartExam\_WithoutAuth\_IsRejected@{Test\_StartExam\_WithoutAuth\_IsRejected}}
+\index{Test\_StartExam\_WithoutAuth\_IsRejected@{Test\_StartExam\_WithoutAuth\_IsRejected}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_StartExam\_WithoutAuth\_IsRejected()}{Test\_StartExam\_WithoutAuth\_IsRejected()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a2726bfaf80025d32c4ddc6fb22bca7e7} 
+void Test\+\_\+\+Start\+Exam\+\_\+\+Without\+Auth\+\_\+\+Is\+Rejected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a027638c8f5127405b7bd8b585b9b5787}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_StateToString\_AllFiveStates@{Test\_StateToString\_AllFiveStates}}
+\index{Test\_StateToString\_AllFiveStates@{Test\_StateToString\_AllFiveStates}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_StateToString\_AllFiveStates()}{Test\_StateToString\_AllFiveStates()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a027638c8f5127405b7bd8b585b9b5787} 
+void Test\+\_\+\+State\+To\+String\+\_\+\+All\+Five\+States (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a4f815664b37e8b3534ab30db7cba3917}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_StringConstructor\_SetsPayloadAndLength@{Test\_StringConstructor\_SetsPayloadAndLength}}
+\index{Test\_StringConstructor\_SetsPayloadAndLength@{Test\_StringConstructor\_SetsPayloadAndLength}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_StringConstructor\_SetsPayloadAndLength()}{Test\_StringConstructor\_SetsPayloadAndLength()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a4f815664b37e8b3534ab30db7cba3917} 
+void Test\+\_\+\+String\+Constructor\+\_\+\+Sets\+Payload\+And\+Length (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a62e6fc3f270d31f87f17ed7a2b55596d}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_SubmitExam\_FromExamActive\_TransitionsToSubmitted@{Test\_SubmitExam\_FromExamActive\_TransitionsToSubmitted}}
+\index{Test\_SubmitExam\_FromExamActive\_TransitionsToSubmitted@{Test\_SubmitExam\_FromExamActive\_TransitionsToSubmitted}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_SubmitExam\_FromExamActive\_TransitionsToSubmitted()}{Test\_SubmitExam\_FromExamActive\_TransitionsToSubmitted()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a62e6fc3f270d31f87f17ed7a2b55596d} 
+void Test\+\_\+\+Submit\+Exam\+\_\+\+From\+Exam\+Active\+\_\+\+Transitions\+To\+Submitted (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a8983754e97bc1c9898f8da96f5a65f00}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_SubmitExam\_WithoutStartExam\_IsRejected@{Test\_SubmitExam\_WithoutStartExam\_IsRejected}}
+\index{Test\_SubmitExam\_WithoutStartExam\_IsRejected@{Test\_SubmitExam\_WithoutStartExam\_IsRejected}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_SubmitExam\_WithoutStartExam\_IsRejected()}{Test\_SubmitExam\_WithoutStartExam\_IsRejected()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a8983754e97bc1c9898f8da96f5a65f00} 
+void Test\+\_\+\+Submit\+Exam\+\_\+\+Without\+Start\+Exam\+\_\+\+Is\+Rejected (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_ae80dc1f198b4cea8ba090b44c5b2f0e1}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_Timestamp\_IsNonZeroAfterConstruction@{Test\_Timestamp\_IsNonZeroAfterConstruction}}
+\index{Test\_Timestamp\_IsNonZeroAfterConstruction@{Test\_Timestamp\_IsNonZeroAfterConstruction}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_Timestamp\_IsNonZeroAfterConstruction()}{Test\_Timestamp\_IsNonZeroAfterConstruction()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_ae80dc1f198b4cea8ba090b44c5b2f0e1} 
+void Test\+\_\+\+Timestamp\+\_\+\+Is\+Non\+Zero\+After\+Construction (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a773926c221f6c3c41d8ea8439cbc27d7}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_UnknownStudent\_RejectsAuthentication@{Test\_UnknownStudent\_RejectsAuthentication}}
+\index{Test\_UnknownStudent\_RejectsAuthentication@{Test\_UnknownStudent\_RejectsAuthentication}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_UnknownStudent\_RejectsAuthentication()}{Test\_UnknownStudent\_RejectsAuthentication()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a773926c221f6c3c41d8ea8439cbc27d7} 
+void Test\+\_\+\+Unknown\+Student\+\_\+\+Rejects\+Authentication (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_a7ab3d0da386e87f73e1d92ed73dc0766}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_ValidCredentials\_AuthenticatesSuccessfully@{Test\_ValidCredentials\_AuthenticatesSuccessfully}}
+\index{Test\_ValidCredentials\_AuthenticatesSuccessfully@{Test\_ValidCredentials\_AuthenticatesSuccessfully}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_ValidCredentials\_AuthenticatesSuccessfully()}{Test\_ValidCredentials\_AuthenticatesSuccessfully()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_a7ab3d0da386e87f73e1d92ed73dc0766} 
+void Test\+\_\+\+Valid\+Credentials\+\_\+\+Authenticates\+Successfully (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_exam_guard___unit_tests_8cpp_ad0719567a12ad18e5fa12860c4c8478c}\index{ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}!Test\_WrongCommandType\_RejectsValidation@{Test\_WrongCommandType\_RejectsValidation}}
+\index{Test\_WrongCommandType\_RejectsValidation@{Test\_WrongCommandType\_RejectsValidation}!ExamGuard\_UnitTests.cpp@{ExamGuard\_UnitTests.cpp}}
+\doxysubsubsection{\texorpdfstring{Test\_WrongCommandType\_RejectsValidation()}{Test\_WrongCommandType\_RejectsValidation()}}
+{\footnotesize\ttfamily \label{_exam_guard___unit_tests_8cpp_ad0719567a12ad18e5fa12860c4c8478c} 
+void Test\+\_\+\+Wrong\+Command\+Type\+\_\+\+Rejects\+Validation (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+

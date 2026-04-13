@@ -1,0 +1,92 @@
+\doxysection{pip.\+\_\+vendor.\+tenacity.\+tornadoweb.\+Tornado\+Retrying Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1tenacity_1_1tornadoweb_1_1_tornado_retrying}{}\label{classpip_1_1__vendor_1_1tenacity_1_1tornadoweb_1_1_tornado_retrying}\index{pip.\_vendor.tenacity.tornadoweb.TornadoRetrying@{pip.\_vendor.tenacity.tornadoweb.TornadoRetrying}}
+Inheritance diagram for pip.\+\_\+vendor.\+tenacity.\+tornadoweb.\+Tornado\+Retrying:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1tenacity_1_1tornadoweb_1_1_tornado_retrying}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1tornadoweb_1_1_tornado_retrying_af8ce2e2692885e402a53e56f7db1a92b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, "{}typing.\+Callable\+[\+[float]\+, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_future}{Future}}\+[None]\+]\+"{} sleep=gen.\+sleep, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}typing.\+Any kwargs)
+\item 
+"{}typing.\+Generator\+[typing.\+Any, typing.\+Any, \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1tornadoweb_a01c9c5a09ec2442a08287fdfef7cb47c}{\+\_\+\+Ret\+ValT}}]\+"{} \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1tornadoweb_1_1_tornado_retrying_a995d92f4e6155f03a54238952acf2c3a}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, "{}typing.\+Callable\+[..., typing.\+Union\+[typing.\+Generator\+[typing.\+Any, typing.\+Any, \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1tornadoweb_a01c9c5a09ec2442a08287fdfef7cb47c}{\+\_\+\+Ret\+ValT}}]\+, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_future}{Future}}\+[\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1tornadoweb_a01c9c5a09ec2442a08287fdfef7cb47c}{\+\_\+\+Ret\+ValT}}]\+]\+]\+"{} fn, \texorpdfstring{$\ast$}{*}typing.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}typing.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying}{pip.\+\_\+vendor.\+tenacity.\+Base\+Retrying}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a5611072454dfaaa7ccf6de5c97287a1a}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, t.\+Callable\+[\+[t.\+Union\+[int, float]\+]\+, None]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a9d97fa089a33ae73adbdc338f11100a7}{sleep}}=\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a9d97fa089a33ae73adbdc338f11100a7}{sleep}}, "{}Stop\+Base\+T"{} \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_ae8283d304a9618d0216957317fa5eaed}{stop}}=stop\+\_\+never, "{}Wait\+Base\+T"{} \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a95d8004fd93876c471b494e6d937fa4a}{wait}}=\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1wait_1_1wait__none}{wait\+\_\+none}}(), "{}Retry\+Base\+T"{} \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_aa6cadd235e48f7ef8f89e77a6acc3daf}{retry}}=\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1retry_1_1retry__if__exception__type}{retry\+\_\+if\+\_\+exception\+\_\+type}}(), t.\+Callable\+[\+["{}Retry\+Call\+State"{}]\+, None]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a09dd9fd66fdf26c183ef972cd2a576a7}{before}}=before\+\_\+nothing, t.\+Callable\+[\+["{}Retry\+Call\+State"{}]\+, None]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a30a5819f77176f9a2c9ecade5c29e454}{after}}=after\+\_\+nothing, t.\+Optional\+[t.\+Callable\+[\+["{}Retry\+Call\+State"{}]\+, None]\+]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a486c28542b77067e5026a6b1cd6b2e7a}{before\+\_\+sleep}}=None, bool \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a75520fa87ff6083c08e871460f495c4c}{reraise}}=False, t.\+Type\+[\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_retry_error}{Retry\+Error}}]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a9e985b4d3ee1bbae3085f0010631ea69}{retry\+\_\+error\+\_\+cls}}=\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_retry_error}{Retry\+Error}}, t.\+Optional\+[t.\+Callable\+[\+["{}Retry\+Call\+State"{}]\+, t.\+Any]\+]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_ac2db7468722e57ede5851fb9e0dbfc6f}{retry\+\_\+error\+\_\+callback}}=None)
+\item 
+"{}Base\+Retrying"{} \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a3b3c595a4448cf55ebb3d1f3660bea88}{copy}} (self, t.\+Union\+[t.\+Callable\+[\+[t.\+Union\+[int, float]\+]\+, None]\+, object]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a9d97fa089a33ae73adbdc338f11100a7}{sleep}}=\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_a1506bffc7c2d3f1303fe602b348c0c54}{\+\_\+unset}}, t.\+Union\+["{}Stop\+Base\+T"{}, object]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_ae8283d304a9618d0216957317fa5eaed}{stop}}=\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_a1506bffc7c2d3f1303fe602b348c0c54}{\+\_\+unset}}, t.\+Union\+["{}Wait\+Base\+T"{}, object]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a95d8004fd93876c471b494e6d937fa4a}{wait}}=\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_a1506bffc7c2d3f1303fe602b348c0c54}{\+\_\+unset}}, t.\+Union\+[\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1retry_1_1retry__base}{retry\+\_\+base}}, object]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_aa6cadd235e48f7ef8f89e77a6acc3daf}{retry}}=\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_a1506bffc7c2d3f1303fe602b348c0c54}{\+\_\+unset}}, t.\+Union\+[t.\+Callable\+[\+["{}Retry\+Call\+State"{}]\+, None]\+, object]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a09dd9fd66fdf26c183ef972cd2a576a7}{before}}=\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_a1506bffc7c2d3f1303fe602b348c0c54}{\+\_\+unset}}, t.\+Union\+[t.\+Callable\+[\+["{}Retry\+Call\+State"{}]\+, None]\+, object]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a30a5819f77176f9a2c9ecade5c29e454}{after}}=\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_a1506bffc7c2d3f1303fe602b348c0c54}{\+\_\+unset}}, t.\+Union\+[t.\+Optional\+[t.\+Callable\+[\+["{}Retry\+Call\+State"{}]\+, None]\+]\+, object]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a486c28542b77067e5026a6b1cd6b2e7a}{before\+\_\+sleep}}=\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_a1506bffc7c2d3f1303fe602b348c0c54}{\+\_\+unset}}, t.\+Union\+[bool, object]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a75520fa87ff6083c08e871460f495c4c}{reraise}}=\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_a1506bffc7c2d3f1303fe602b348c0c54}{\+\_\+unset}}, t.\+Union\+[t.\+Type\+[\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_retry_error}{Retry\+Error}}]\+, object]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a9e985b4d3ee1bbae3085f0010631ea69}{retry\+\_\+error\+\_\+cls}}=\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_a1506bffc7c2d3f1303fe602b348c0c54}{\+\_\+unset}}, t.\+Union\+[t.\+Optional\+[t.\+Callable\+[\+["{}Retry\+Call\+State"{}]\+, t.\+Any]\+]\+, object]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_ac2db7468722e57ede5851fb9e0dbfc6f}{retry\+\_\+error\+\_\+callback}}=\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_a1506bffc7c2d3f1303fe602b348c0c54}{\+\_\+unset}})
+\item 
+str \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_ab7b603bd6b45892353edba570730b8d2}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+t.\+Dict\+[str, t.\+Any]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_aaac76bfd6880c6ba7c3e2f83f80e3663}{statistics}} (self)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_a8f769ca8e15c471b0617bc0906a9a517}{Wrapped\+Fn}} \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_ac425e76589ab1ebafc9603fc6f5d6784}{wraps}} (self, \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_a8f769ca8e15c471b0617bc0906a9a517}{Wrapped\+Fn}} f)
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_aef480c880418aa3f0688687209ce50d7}{begin}} (self)
+\item 
+t.\+Union\+[\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_do_attempt}{Do\+Attempt}}, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_do_sleep}{Do\+Sleep}}, t.\+Any]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a5606e1522961712b7e8693caf58a4d9c}{iter}} (self, "{}Retry\+Call\+State"{} retry\+\_\+state)
+\item 
+t.\+Generator\+[\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_attempt_manager}{Attempt\+Manager}}, None, None]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a3ea9b4e00e29cd042bc8d0b8be4d9339}{\+\_\+\+\_\+iter\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_aa29c3eab1162d59ebf2755b83325cb3d}{Wrapped\+Fn\+ReturnT}} \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a879f88478619fe13e4fc7adbd6059e58}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, t.\+Callable\+[..., \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_aa29c3eab1162d59ebf2755b83325cb3d}{Wrapped\+Fn\+ReturnT}}]\+ fn, \texorpdfstring{$\ast$}{*}t.\+Any args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}t.\+Any kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying}{pip.\+\_\+vendor.\+tenacity.\+Base\+Retrying}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a9d97fa089a33ae73adbdc338f11100a7}{sleep}} = sleep
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_ae8283d304a9618d0216957317fa5eaed}{stop}} = stop
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a95d8004fd93876c471b494e6d937fa4a}{wait}} = wait
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_aa6cadd235e48f7ef8f89e77a6acc3daf}{retry}} = retry
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a09dd9fd66fdf26c183ef972cd2a576a7}{before}} = before
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a30a5819f77176f9a2c9ecade5c29e454}{after}} = after
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a486c28542b77067e5026a6b1cd6b2e7a}{before\+\_\+sleep}} = before\+\_\+sleep
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a75520fa87ff6083c08e871460f495c4c}{reraise}} = reraise
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_a9e985b4d3ee1bbae3085f0010631ea69}{retry\+\_\+error\+\_\+cls}} = retry\+\_\+error\+\_\+cls
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_ac2db7468722e57ede5851fb9e0dbfc6f}{retry\+\_\+error\+\_\+callback}} = retry\+\_\+error\+\_\+callback
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying}{pip.\+\_\+vendor.\+tenacity.\+Base\+Retrying}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_base_retrying_aad729ecbee939ec16f9455e16a578e30}{\+\_\+local}} = threading.\+local()
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1tornadoweb_1_1_tornado_retrying_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1tornadoweb_1_1_tornado_retrying_af8ce2e2692885e402a53e56f7db1a92b}\index{pip.\_vendor.tenacity.tornadoweb.TornadoRetrying@{pip.\_vendor.tenacity.tornadoweb.TornadoRetrying}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.tenacity.tornadoweb.TornadoRetrying@{pip.\_vendor.tenacity.tornadoweb.TornadoRetrying}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1tenacity_1_1tornadoweb_1_1_tornado_retrying_af8ce2e2692885e402a53e56f7db1a92b} 
+ None pip.\+\_\+vendor.\+tenacity.\+tornadoweb.\+Tornado\+Retrying.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}typing.\+Callable\+[\+[float]\+, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_future}{Future}}\+[None]\+]\+"{} }]{sleep}{ = {\ttfamily gen.sleep}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}typing.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1tornadoweb_1_1_tornado_retrying_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1tenacity_1_1tornadoweb_1_1_tornado_retrying_a995d92f4e6155f03a54238952acf2c3a}\index{pip.\_vendor.tenacity.tornadoweb.TornadoRetrying@{pip.\_vendor.tenacity.tornadoweb.TornadoRetrying}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!pip.\_vendor.tenacity.tornadoweb.TornadoRetrying@{pip.\_vendor.tenacity.tornadoweb.TornadoRetrying}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1tenacity_1_1tornadoweb_1_1_tornado_retrying_a995d92f4e6155f03a54238952acf2c3a} 
+ "{}typing.\+Generator\+[typing.\+Any, typing.\+Any, \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1tornadoweb_a01c9c5a09ec2442a08287fdfef7cb47c}{\+\_\+\+Ret\+ValT}}]\+"{} pip.\+\_\+vendor.\+tenacity.\+tornadoweb.\+Tornado\+Retrying.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{"{}typing.\+Callable\+[..., typing.\+Union\+[typing.\+Generator\+[typing.\+Any, typing.\+Any, \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1tornadoweb_a01c9c5a09ec2442a08287fdfef7cb47c}{\+\_\+\+Ret\+ValT}}]\+, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1tenacity_1_1_future}{Future}}\+[\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1tenacity_1_1tornadoweb_a01c9c5a09ec2442a08287fdfef7cb47c}{\+\_\+\+Ret\+ValT}}]\+]\+]\+"{}}]{fn}{, }\item[{\texorpdfstring{$\ast$}{*}typing.\+Any}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}typing.\+Any}]{kwargs}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+tenacity/\+\doxymbox{\hyperlink{tornadoweb_8py}{tornadoweb.\+py}}\end{DoxyCompactItemize}

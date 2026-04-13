@@ -1,0 +1,128 @@
+\doxysection{reportlab.\+platypus.\+tableofcontents Namespace Reference}
+\hypertarget{namespacereportlab_1_1platypus_1_1tableofcontents}{}\label{namespacereportlab_1_1platypus_1_1tableofcontents}\index{reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tableofcontents_1_1set}{set}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tableofcontents_1_1_table_of_contents}{Table\+Of\+Contents}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tableofcontents_1_1_simple_index}{Simple\+Index}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tableofcontents_1_1_reference_text}{Reference\+Text}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tableofcontents_adbc114ded4665cfe0d914e7efac7a9e4}{unquote}} (txt)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tableofcontents_ae20eee37f3f14d958bb760b8fffc3e0e}{draw\+Page\+Numbers}} (\doxymbox{\hyperlink{namespacereportlab_1_1pdfgen_1_1canvas}{canvas}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a880853018052c87085425f42b43e9232}{style}}, pages, avail\+Width, avail\+Height, dot=\textquotesingle{} . \textquotesingle{}, formatter=None)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tableofcontents_a36a47fa7283846b3435b88f975babf87}{make\+Tuple}} (x)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tableofcontents_a0447b8b8a04b3a35fd3945b39b9d18f3}{listdiff}} (l1, l2)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tableofcontents_a3aa5d0ba4c873ecfc405ac800d19b8d1}{delta}} = 1\texorpdfstring{$\ast$}{*}cm
+\item 
+float \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tableofcontents_ad017e31fa9c6942c3f18424dd0a5593f}{epsilon}} = 0.\+5\texorpdfstring{$\ast$}{*}cm
+\item 
+list \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tableofcontents_a45b28ce543766cfca10a65f173a24292}{default\+Level\+Styles}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tableofcontents_af3294d873171a1d1a185c3ea30db3a5a}{default\+Table\+Style}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1tableofcontents_ac020bf455373b1176dc12590cf92b17d}{Alphabetic\+Index}} = \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tableofcontents_1_1_simple_index}{Simple\+Index}}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tableofcontents_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tableofcontents_ae20eee37f3f14d958bb760b8fffc3e0e}\index{reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}!drawPageNumbers@{drawPageNumbers}}
+\index{drawPageNumbers@{drawPageNumbers}!reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}}
+\doxysubsubsection{\texorpdfstring{drawPageNumbers()}{drawPageNumbers()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tableofcontents_ae20eee37f3f14d958bb760b8fffc3e0e} 
+reportlab.\+platypus.\+tableofcontents.\+draw\+Page\+Numbers (\begin{DoxyParamCaption}\item[{}]{canvas}{, }\item[{}]{style}{, }\item[{}]{pages}{, }\item[{}]{avail\+Width}{, }\item[{}]{avail\+Height}{, }\item[{}]{dot}{ = {\ttfamily \textquotesingle{}~.~\textquotesingle{}}, }\item[{}]{formatter}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws pagestr on the canvas using the given style.
+If dot is None, pagestr is drawn at the current position in the canvas.
+If dot is a string, pagestr is drawn right-aligned. If the string is not empty,
+the gap is filled with it.
+\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1platypus_1_1tableofcontents_a0447b8b8a04b3a35fd3945b39b9d18f3}\index{reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}!listdiff@{listdiff}}
+\index{listdiff@{listdiff}!reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}}
+\doxysubsubsection{\texorpdfstring{listdiff()}{listdiff()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tableofcontents_a0447b8b8a04b3a35fd3945b39b9d18f3} 
+reportlab.\+platypus.\+tableofcontents.\+listdiff (\begin{DoxyParamCaption}\item[{}]{l1}{, }\item[{}]{l2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tableofcontents_a36a47fa7283846b3435b88f975babf87}\index{reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}!makeTuple@{makeTuple}}
+\index{makeTuple@{makeTuple}!reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}}
+\doxysubsubsection{\texorpdfstring{makeTuple()}{makeTuple()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tableofcontents_a36a47fa7283846b3435b88f975babf87} 
+reportlab.\+platypus.\+tableofcontents.\+make\+Tuple (\begin{DoxyParamCaption}\item[{}]{x}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tableofcontents_adbc114ded4665cfe0d914e7efac7a9e4}\index{reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}!unquote@{unquote}}
+\index{unquote@{unquote}!reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}}
+\doxysubsubsection{\texorpdfstring{unquote()}{unquote()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tableofcontents_adbc114ded4665cfe0d914e7efac7a9e4} 
+reportlab.\+platypus.\+tableofcontents.\+unquote (\begin{DoxyParamCaption}\item[{}]{txt}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tableofcontents_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tableofcontents_ac020bf455373b1176dc12590cf92b17d}\index{reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}!AlphabeticIndex@{AlphabeticIndex}}
+\index{AlphabeticIndex@{AlphabeticIndex}!reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}}
+\doxysubsubsection{\texorpdfstring{AlphabeticIndex}{AlphabeticIndex}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tableofcontents_ac020bf455373b1176dc12590cf92b17d} 
+reportlab.\+platypus.\+tableofcontents.\+Alphabetic\+Index = \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1tableofcontents_1_1_simple_index}{Simple\+Index}}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tableofcontents_a45b28ce543766cfca10a65f173a24292}\index{reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}!defaultLevelStyles@{defaultLevelStyles}}
+\index{defaultLevelStyles@{defaultLevelStyles}!reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}}
+\doxysubsubsection{\texorpdfstring{defaultLevelStyles}{defaultLevelStyles}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tableofcontents_a45b28ce543766cfca10a65f173a24292} 
+list reportlab.\+platypus.\+tableofcontents.\+default\+Level\+Styles}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ ParagraphStyle(}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ name=\textcolor{stringliteral}{'Level\ 0'},}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ fontName=\_baseFontName,}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ fontSize=10,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ leading=11,}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ firstLineIndent\ =\ 0,}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ leftIndent\ =\ epsilon)]}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tableofcontents_af3294d873171a1d1a185c3ea30db3a5a}\index{reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}!defaultTableStyle@{defaultTableStyle}}
+\index{defaultTableStyle@{defaultTableStyle}!reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}}
+\doxysubsubsection{\texorpdfstring{defaultTableStyle}{defaultTableStyle}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tableofcontents_af3294d873171a1d1a185c3ea30db3a5a} 
+reportlab.\+platypus.\+tableofcontents.\+default\+Table\+Style}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \(\backslash\)}
+\DoxyCodeLine{00002\ \ \ \ \ TableStyle([}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'VALIGN'},\ (0,0),\ (-\/1,-\/1),\ \textcolor{stringliteral}{'TOP'}),}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'RIGHTPADDING'},\ (0,0),\ (-\/1,-\/1),\ 0),}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ (\textcolor{stringliteral}{'LEFTPADDING'},\ (0,0),\ (-\/1,-\/1),\ 0),}
+\DoxyCodeLine{00006\ \ \ \ \ ])}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1platypus_1_1tableofcontents_a3aa5d0ba4c873ecfc405ac800d19b8d1}\index{reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}!delta@{delta}}
+\index{delta@{delta}!reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}}
+\doxysubsubsection{\texorpdfstring{delta}{delta}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tableofcontents_a3aa5d0ba4c873ecfc405ac800d19b8d1} 
+int reportlab.\+platypus.\+tableofcontents.\+delta = 1\texorpdfstring{$\ast$}{*}cm}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1tableofcontents_ad017e31fa9c6942c3f18424dd0a5593f}\index{reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}!epsilon@{epsilon}}
+\index{epsilon@{epsilon}!reportlab.platypus.tableofcontents@{reportlab.platypus.tableofcontents}}
+\doxysubsubsection{\texorpdfstring{epsilon}{epsilon}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1tableofcontents_ad017e31fa9c6942c3f18424dd0a5593f} 
+float reportlab.\+platypus.\+tableofcontents.\+epsilon = 0.\+5\texorpdfstring{$\ast$}{*}cm}
+

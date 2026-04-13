@@ -1,0 +1,100 @@
+\doxysection{reportlab.\+pdfbase.\+pdfdoc.\+PDFString Class Reference}
+\hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string}{}\label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string}\index{reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}}
+Inheritance diagram for reportlab.\+pdfbase.\+pdfdoc.\+PDFString:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_adb202147bb80b310138d93d567deda23}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_af23e9f442e04c129faa02826c75f0c58}{s}}, \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_acd2eec408035cc174d773489351e9871}{escape}}=1, \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_a32a5ca5ec9f896a61dc252ee8aa0e4a2}{enc}}=\textquotesingle{}auto\textquotesingle{})
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_a29e8edd70829ed50068ce0ad26177a9f}{format}} (self, document)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_a0bbeb3939ae9cd67de171dc7ca357143}{\+\_\+\+\_\+str\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_af23e9f442e04c129faa02826c75f0c58}{s}} = s.\+s
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_acd2eec408035cc174d773489351e9871}{escape}} = s.\+escape
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_a32a5ca5ec9f896a61dc252ee8aa0e4a2}{enc}} = s.\+enc
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_a33099e957dd383e68878a54527240281}{unicode\+Enc\+Valid}} = False
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_adb202147bb80b310138d93d567deda23}\index{reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_adb202147bb80b310138d93d567deda23} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFString.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{s}{, }\item[{}]{escape}{ = {\ttfamily 1}, }\item[{}]{enc}{ = {\ttfamily \textquotesingle{}auto\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}s can be unicode/utf8 or a PDFString
+if escape is true then the output will be passed through escape
+if enc is raw then bytes will be left alone
+if enc is auto we'll try and automatically adapt to utf_16_be/utf_16_le if the
+effective string is not entirely in pdfdoc
+if self.unicodeEncValid unicode will use the specifed encoding
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_a0bbeb3939ae9cd67de171dc7ca357143}\index{reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}!\_\_str\_\_@{\_\_str\_\_}}
+\index{\_\_str\_\_@{\_\_str\_\_}!reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}}
+\doxysubsubsection{\texorpdfstring{\_\_str\_\_()}{\_\_str\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_a0bbeb3939ae9cd67de171dc7ca357143} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFString.\+\_\+\+\_\+str\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_a29e8edd70829ed50068ce0ad26177a9f}\index{reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}!format@{format}}
+\index{format@{format}!reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}}
+\doxysubsubsection{\texorpdfstring{format()}{format()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_a29e8edd70829ed50068ce0ad26177a9f} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFString.\+format (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{document}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_a32a5ca5ec9f896a61dc252ee8aa0e4a2}\index{reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}!enc@{enc}}
+\index{enc@{enc}!reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}}
+\doxysubsubsection{\texorpdfstring{enc}{enc}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_a32a5ca5ec9f896a61dc252ee8aa0e4a2} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFString.\+enc = s.\+enc}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_acd2eec408035cc174d773489351e9871}\index{reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}!escape@{escape}}
+\index{escape@{escape}!reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}}
+\doxysubsubsection{\texorpdfstring{escape}{escape}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_acd2eec408035cc174d773489351e9871} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFString.\+escape = s.\+escape}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_af23e9f442e04c129faa02826c75f0c58}\index{reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}!s@{s}}
+\index{s@{s}!reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_af23e9f442e04c129faa02826c75f0c58} 
+reportlab.\+pdfbase.\+pdfdoc.\+PDFString.\+s = s.\+s}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_a33099e957dd383e68878a54527240281}\index{reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}!unicodeEncValid@{unicodeEncValid}}
+\index{unicodeEncValid@{unicodeEncValid}!reportlab.pdfbase.pdfdoc.PDFString@{reportlab.pdfbase.pdfdoc.PDFString}}
+\doxysubsubsection{\texorpdfstring{unicodeEncValid}{unicodeEncValid}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1pdfdoc_1_1_p_d_f_string_a33099e957dd383e68878a54527240281} 
+bool reportlab.\+pdfbase.\+pdfdoc.\+PDFString.\+unicode\+Enc\+Valid = False\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+pdfbase/\+\doxymbox{\hyperlink{pdfdoc_8py}{pdfdoc.\+py}}\end{DoxyCompactItemize}

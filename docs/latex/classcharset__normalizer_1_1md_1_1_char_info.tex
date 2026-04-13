@@ -1,0 +1,192 @@
+\doxysection{charset\+\_\+normalizer.\+md.\+Char\+Info Class Reference}
+\hypertarget{classcharset__normalizer_1_1md_1_1_char_info}{}\label{classcharset__normalizer_1_1md_1_1_char_info}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a169de672ee3b273dcee8525a32eb171f}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self)
+\item 
+None \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a6ba44310091b5d8df0d6a81757880616}{update}} (self, str \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_ae60a1f33e992f93014dc8d9b35674808}{character}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_ae60a1f33e992f93014dc8d9b35674808}{character}} = "{}"{}
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a7015ad16f48dab95fd2e5d7c12daba56}{printable}} = False
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a8bdbeb395c6d4c61e4c67c5a9835553c}{alpha}} = False
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a77182ece932dd7ad4d387e27bf1b2997}{upper}} = False
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a3d9d6b4c368639f786fa4eb07ec215bd}{lower}} = False
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a6cb59798764d59c5cb2cff45459b7895}{space}} = False
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_ae4778276ae5db94cb5d4baac7f84140c}{digit}} = False
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a548133f6a3e7f1698c57d3b00c3a07b9}{is\+\_\+ascii}} = False
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a98ac48a2bbe9422e0ecb06f6b858c4b0}{case\+\_\+variable}} = False
+\item 
+int \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a78c8df86195ddd352c473af5925f148c}{flags}} = 0
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_aace09e44a12131702ceda50518b1c8ba}{accentuated}} = False
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a4999c0a7f47eb2aa5ebba3d9a9d73771}{latin}} = False
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_ab7f47433904e5680b4030003a826e319}{is\+\_\+cjk}} = False
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a2f5fb027a2543289a0900ad079aed13c}{is\+\_\+arabic}} = False
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a8bde3c512dd909ec743a4047f38520c7}{is\+\_\+glyph}} = False
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_af644514d45dde84cb34f9e7052b16a37}{punct}} = False
+\item 
+bool \doxymbox{\hyperlink{classcharset__normalizer_1_1md_1_1_char_info_a0bdd32c67afb9dc03696a2f9bba09c3b}{sym}} = False
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Pre-computed character properties shared across all detectors.
+
+Instantiated once and reused via :meth:`update` on every character
+in the hot loop so that redundant calls to str methods
+(``isalpha``, ``isupper``, …) and cached utility functions
+(``_character_flags``, ``is_punctuation``, …) are avoided when
+several plugins need the same information.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a169de672ee3b273dcee8525a32eb171f}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a169de672ee3b273dcee8525a32eb171f} 
+ None charset\+\_\+normalizer.\+md.\+Char\+Info.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a6ba44310091b5d8df0d6a81757880616}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!update@{update}}
+\index{update@{update}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a6ba44310091b5d8df0d6a81757880616} 
+ None charset\+\_\+normalizer.\+md.\+Char\+Info.\+update (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{character}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Update all properties for *character* (called once per character).\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_aace09e44a12131702ceda50518b1c8ba}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!accentuated@{accentuated}}
+\index{accentuated@{accentuated}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{accentuated}{accentuated}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_aace09e44a12131702ceda50518b1c8ba} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+accentuated = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a8bdbeb395c6d4c61e4c67c5a9835553c}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!alpha@{alpha}}
+\index{alpha@{alpha}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{alpha}{alpha}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a8bdbeb395c6d4c61e4c67c5a9835553c} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+alpha = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a98ac48a2bbe9422e0ecb06f6b858c4b0}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!case\_variable@{case\_variable}}
+\index{case\_variable@{case\_variable}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{case\_variable}{case\_variable}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a98ac48a2bbe9422e0ecb06f6b858c4b0} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+case\+\_\+variable = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_ae60a1f33e992f93014dc8d9b35674808}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!character@{character}}
+\index{character@{character}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{character}{character}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_ae60a1f33e992f93014dc8d9b35674808} 
+str charset\+\_\+normalizer.\+md.\+Char\+Info.\+character = "{}"{}}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_ae4778276ae5db94cb5d4baac7f84140c}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!digit@{digit}}
+\index{digit@{digit}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{digit}{digit}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_ae4778276ae5db94cb5d4baac7f84140c} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+digit = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a78c8df86195ddd352c473af5925f148c}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!flags@{flags}}
+\index{flags@{flags}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a78c8df86195ddd352c473af5925f148c} 
+int charset\+\_\+normalizer.\+md.\+Char\+Info.\+flags = 0}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a2f5fb027a2543289a0900ad079aed13c}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!is\_arabic@{is\_arabic}}
+\index{is\_arabic@{is\_arabic}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{is\_arabic}{is\_arabic}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a2f5fb027a2543289a0900ad079aed13c} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+is\+\_\+arabic = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a548133f6a3e7f1698c57d3b00c3a07b9}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!is\_ascii@{is\_ascii}}
+\index{is\_ascii@{is\_ascii}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{is\_ascii}{is\_ascii}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a548133f6a3e7f1698c57d3b00c3a07b9} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+is\+\_\+ascii = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_ab7f47433904e5680b4030003a826e319}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!is\_cjk@{is\_cjk}}
+\index{is\_cjk@{is\_cjk}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{is\_cjk}{is\_cjk}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_ab7f47433904e5680b4030003a826e319} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+is\+\_\+cjk = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a8bde3c512dd909ec743a4047f38520c7}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!is\_glyph@{is\_glyph}}
+\index{is\_glyph@{is\_glyph}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{is\_glyph}{is\_glyph}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a8bde3c512dd909ec743a4047f38520c7} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+is\+\_\+glyph = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a4999c0a7f47eb2aa5ebba3d9a9d73771}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!latin@{latin}}
+\index{latin@{latin}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{latin}{latin}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a4999c0a7f47eb2aa5ebba3d9a9d73771} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+latin = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a3d9d6b4c368639f786fa4eb07ec215bd}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!lower@{lower}}
+\index{lower@{lower}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{lower}{lower}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a3d9d6b4c368639f786fa4eb07ec215bd} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+lower = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a7015ad16f48dab95fd2e5d7c12daba56}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!printable@{printable}}
+\index{printable@{printable}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{printable}{printable}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a7015ad16f48dab95fd2e5d7c12daba56} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+printable = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_af644514d45dde84cb34f9e7052b16a37}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!punct@{punct}}
+\index{punct@{punct}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{punct}{punct}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_af644514d45dde84cb34f9e7052b16a37} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+punct = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a6cb59798764d59c5cb2cff45459b7895}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!space@{space}}
+\index{space@{space}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{space}{space}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a6cb59798764d59c5cb2cff45459b7895} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+space = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a0bdd32c67afb9dc03696a2f9bba09c3b}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!sym@{sym}}
+\index{sym@{sym}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{sym}{sym}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a0bdd32c67afb9dc03696a2f9bba09c3b} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+sym = False}
+
+\Hypertarget{classcharset__normalizer_1_1md_1_1_char_info_a77182ece932dd7ad4d387e27bf1b2997}\index{charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}!upper@{upper}}
+\index{upper@{upper}!charset\_normalizer.md.CharInfo@{charset\_normalizer.md.CharInfo}}
+\doxysubsubsection{\texorpdfstring{upper}{upper}}
+{\footnotesize\ttfamily \label{classcharset__normalizer_1_1md_1_1_char_info_a77182ece932dd7ad4d387e27bf1b2997} 
+bool charset\+\_\+normalizer.\+md.\+Char\+Info.\+upper = False}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+charset\+\_\+normalizer/\+\doxymbox{\hyperlink{md_8py}{md.\+py}}\end{DoxyCompactItemize}

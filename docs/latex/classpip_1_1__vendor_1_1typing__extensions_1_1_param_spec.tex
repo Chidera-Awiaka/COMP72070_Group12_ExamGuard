@@ -1,0 +1,168 @@
+\doxysection{pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Param\+Spec Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec}{}\label{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec}\index{pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}}
+Inheritance diagram for pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Param\+Spec:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.386139cm]{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a2dd105c75665f4321a2f1825882cbc87}{\+\_\+\+\_\+new\+\_\+\+\_\+}} (cls, name, \texorpdfstring{$\ast$}{*}, bound=None, covariant=False, contravariant=False, infer\+\_\+variance=False, default=\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a384afb4f61ac813c1b74d2ee7c37d967}{\+\_\+marker}})
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_ab906af20f6856791fed88b2ef338f752}{\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+}} (cls)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_af9c011d670deaf40c04ee9c1ae53259f}{args}} (self)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a7533d6714916929b5b3c9ba8f94f1f90}{kwargs}} (self)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_aa401a67e1e0c36292bfd690b3e7c05f4}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, name, \texorpdfstring{$\ast$}{*}, bound=None, covariant=False, contravariant=False, infer\+\_\+variance=False, default=\doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a384afb4f61ac813c1b74d2ee7c37d967}{\+\_\+marker}})
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a16df1b5f7573fb54717b3b59b6fac8a4}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a3d8abdd4e934eac60fbab45a637e4594}{\+\_\+\+\_\+hash\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a661b9ad638fa88bac7a4038a7b3784be}{\+\_\+\+\_\+eq\+\_\+\+\_\+}} (self, other)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_af8e724d3be4ac6f22e55aead0d7b48a8}{\+\_\+\+\_\+reduce\+\_\+\+\_\+}} (self)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_ac32406b3eecf07bf1847584e5870d988}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, \texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_af9c011d670deaf40c04ee9c1ae53259f}{args}}, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a7533d6714916929b5b3c9ba8f94f1f90}{kwargs}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1___type_var_like_meta}{pip.\+\_\+vendor.\+typing\+\_\+extensions.\+\_\+\+Type\+Var\+Like\+Meta}}}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1___type_var_like_meta_aeed0f4e4c367fca44a226a0aa96b9aa9}{\+\_\+\+\_\+instancecheck\+\_\+\+\_\+}} (cls, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1_any}{Any}} \+\_\+\+\_\+instance)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1___type_var_like_meta}{pip.\+\_\+vendor.\+typing\+\_\+extensions.\+\_\+\+Type\+Var\+Like\+Meta}}}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1typing__extensions_1_1___type_var_like_meta_a0cafe7587a4c967ce8a420e68d8b9488}{\+\_\+backported\+\_\+typevarlike}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Parameter specification.\end{DoxyVerb}
+
+
+\begin{DoxyVerb}Parameter specification variable.
+
+Usage::
+
+   P = ParamSpec('P')
+
+Parameter specification variables exist primarily for the benefit of static
+type checkers.  They are used to forward the parameter types of one
+callable to another callable, a pattern commonly found in higher order
+functions and decorators.  They are only valid when used in ``Concatenate``,
+or s the first argument to ``Callable``. In Python 3.10 and higher,
+they are also supported in user-defined Generics at runtime.
+See class Generic for more information on generic types.  An
+example for annotating a decorator::
+
+   T = TypeVar('T')
+   P = ParamSpec('P')
+
+   def add_logging(f: Callable[P, T]) -> Callable[P, T]:
+       '''A type-safe decorator to add logging to a function.'''
+       def inner(*args: P.args, **kwargs: P.kwargs) -> T:
+           logging.info(f'{f.__name__} was called')
+           return f(*args, **kwargs)
+       return inner
+
+   @add_logging
+   def add_two(x: float, y: float) -> float:
+       '''Add two numbers together.'''
+       return x + y
+
+Parameter specification variables defined with covariant=True or
+contravariant=True can be used to declare covariant or contravariant
+generic types.  These keyword arguments are valid, but their actual semantics
+are yet to be decided.  See PEP 612 for details.
+
+Parameter specification variables can be introspected. e.g.:
+
+   P.__name__ == 'T'
+   P.__bound__ == None
+   P.__covariant__ == False
+   P.__contravariant__ == False
+
+Note that only parameter specification variables defined in global scope can
+be pickled.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_aa401a67e1e0c36292bfd690b3e7c05f4}\index{pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_aa401a67e1e0c36292bfd690b3e7c05f4} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Param\+Spec.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{bound}{ = {\ttfamily None}, }\item[{}]{covariant}{ = {\ttfamily False}, }\item[{}]{contravariant}{ = {\ttfamily False}, }\item[{}]{infer\+\_\+variance}{ = {\ttfamily False}, }\item[{}]{default}{ = {\ttfamily \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a384afb4f61ac813c1b74d2ee7c37d967}{\+\_\+marker}}}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_ac32406b3eecf07bf1847584e5870d988}\index{pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_ac32406b3eecf07bf1847584e5870d988} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Param\+Spec.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a661b9ad638fa88bac7a4038a7b3784be}\index{pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}!\_\_eq\_\_@{\_\_eq\_\_}}
+\index{\_\_eq\_\_@{\_\_eq\_\_}!pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}}
+\doxysubsubsection{\texorpdfstring{\_\_eq\_\_()}{\_\_eq\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a661b9ad638fa88bac7a4038a7b3784be} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Param\+Spec.\+\_\+\+\_\+eq\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{other}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a3d8abdd4e934eac60fbab45a637e4594}\index{pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}!\_\_hash\_\_@{\_\_hash\_\_}}
+\index{\_\_hash\_\_@{\_\_hash\_\_}!pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}}
+\doxysubsubsection{\texorpdfstring{\_\_hash\_\_()}{\_\_hash\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a3d8abdd4e934eac60fbab45a637e4594} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Param\+Spec.\+\_\+\+\_\+hash\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_ab906af20f6856791fed88b2ef338f752}\index{pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}!\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}}
+\index{\_\_init\_subclass\_\_@{\_\_init\_subclass\_\_}!pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_subclass\_\_()}{\_\_init\_subclass\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_ab906af20f6856791fed88b2ef338f752} 
+ None pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Param\+Spec.\+\_\+\+\_\+init\+\_\+subclass\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a2dd105c75665f4321a2f1825882cbc87}\index{pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}!\_\_new\_\_@{\_\_new\_\_}}
+\index{\_\_new\_\_@{\_\_new\_\_}!pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}}
+\doxysubsubsection{\texorpdfstring{\_\_new\_\_()}{\_\_new\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a2dd105c75665f4321a2f1825882cbc87} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Param\+Spec.\+\_\+\+\_\+new\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{cls}{, }\item[{}]{name}{, }\item[{\texorpdfstring{$\ast$}{*}}]{}{, }\item[{}]{bound}{ = {\ttfamily None}, }\item[{}]{covariant}{ = {\ttfamily False}, }\item[{}]{contravariant}{ = {\ttfamily False}, }\item[{}]{infer\+\_\+variance}{ = {\ttfamily False}, }\item[{}]{default}{ = {\ttfamily \doxymbox{\hyperlink{namespacepip_1_1__vendor_1_1typing__extensions_a384afb4f61ac813c1b74d2ee7c37d967}{\+\_\+marker}}}}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_af8e724d3be4ac6f22e55aead0d7b48a8}\index{pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}!\_\_reduce\_\_@{\_\_reduce\_\_}}
+\index{\_\_reduce\_\_@{\_\_reduce\_\_}!pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}}
+\doxysubsubsection{\texorpdfstring{\_\_reduce\_\_()}{\_\_reduce\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_af8e724d3be4ac6f22e55aead0d7b48a8} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Param\+Spec.\+\_\+\+\_\+reduce\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a16df1b5f7573fb54717b3b59b6fac8a4}\index{pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a16df1b5f7573fb54717b3b59b6fac8a4} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Param\+Spec.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_af9c011d670deaf40c04ee9c1ae53259f}\index{pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}!args@{args}}
+\index{args@{args}!pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}}
+\doxysubsubsection{\texorpdfstring{args()}{args()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_af9c011d670deaf40c04ee9c1ae53259f} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Param\+Spec.\+args (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a7533d6714916929b5b3c9ba8f94f1f90}\index{pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}!kwargs@{kwargs}}
+\index{kwargs@{kwargs}!pip.\_vendor.typing\_extensions.ParamSpec@{pip.\_vendor.typing\_extensions.ParamSpec}}
+\doxysubsubsection{\texorpdfstring{kwargs()}{kwargs()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1typing__extensions_1_1_param_spec_a7533d6714916929b5b3c9ba8f94f1f90} 
+pip.\+\_\+vendor.\+typing\+\_\+extensions.\+Param\+Spec.\+kwargs (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+\doxymbox{\hyperlink{typing__extensions_8py}{typing\+\_\+extensions.\+py}}\end{DoxyCompactItemize}

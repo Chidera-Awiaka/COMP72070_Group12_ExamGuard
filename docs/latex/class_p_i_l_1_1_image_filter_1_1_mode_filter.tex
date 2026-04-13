@@ -1,0 +1,82 @@
+\doxysection{PIL.\+Image\+Filter.\+Mode\+Filter Class Reference}
+\hypertarget{class_p_i_l_1_1_image_filter_1_1_mode_filter}{}\label{class_p_i_l_1_1_image_filter_1_1_mode_filter}\index{PIL.ImageFilter.ModeFilter@{PIL.ImageFilter.ModeFilter}}
+Inheritance diagram for PIL.\+Image\+Filter.\+Mode\+Filter:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_p_i_l_1_1_image_filter_1_1_mode_filter}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_mode_filter_a6a0a8a95cab219032bb91e1fbadc9704}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, int \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_mode_filter_a0464bb9aa5a0c5d3e17878ce56d687a1}{size}}=3)
+\item 
+\+\_\+imaging.\+Imaging\+Core \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_mode_filter_afd52198779b73c5b12acc81b43270565}{filter}} (self, \+\_\+imaging.\+Imaging\+Core image)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_mode_filter_a0464bb9aa5a0c5d3e17878ce56d687a1}{size}} = size
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+str \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_mode_filter_ae91a46dab1b0219c5ff263693fd182ed}{name}} = "{}Mode"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Create a mode filter. Picks the most frequent pixel value in a box with the
+given size.  Pixel values that occur only once or twice are ignored; if no
+pixel value occurs more than twice, the original pixel value is preserved.
+
+:param size: The kernel size, in pixels.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_mode_filter_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_mode_filter_a6a0a8a95cab219032bb91e1fbadc9704}\index{PIL.ImageFilter.ModeFilter@{PIL.ImageFilter.ModeFilter}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.ImageFilter.ModeFilter@{PIL.ImageFilter.ModeFilter}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_mode_filter_a6a0a8a95cab219032bb91e1fbadc9704} 
+ None PIL.\+Image\+Filter.\+Mode\+Filter.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int }]{size}{ = {\ttfamily 3}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_mode_filter_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_mode_filter_afd52198779b73c5b12acc81b43270565}\index{PIL.ImageFilter.ModeFilter@{PIL.ImageFilter.ModeFilter}!filter@{filter}}
+\index{filter@{filter}!PIL.ImageFilter.ModeFilter@{PIL.ImageFilter.ModeFilter}}
+\doxysubsubsection{\texorpdfstring{filter()}{filter()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_mode_filter_afd52198779b73c5b12acc81b43270565} 
+ \+\_\+imaging.\+Imaging\+Core PIL.\+Image\+Filter.\+Mode\+Filter.\+filter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{\+\_\+imaging.\+Imaging\+Core}]{image}{}\end{DoxyParamCaption})}
+
+
+
+Reimplemented from \doxymbox{\hyperlink{class_p_i_l_1_1_image_filter_1_1_filter_a238761d404ab92d2c7ad5bc6ecdc397f}{PIL.\+Image\+Filter.\+Filter}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_mode_filter_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_mode_filter_ae91a46dab1b0219c5ff263693fd182ed}\index{PIL.ImageFilter.ModeFilter@{PIL.ImageFilter.ModeFilter}!name@{name}}
+\index{name@{name}!PIL.ImageFilter.ModeFilter@{PIL.ImageFilter.ModeFilter}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_mode_filter_ae91a46dab1b0219c5ff263693fd182ed} 
+str PIL.\+Image\+Filter.\+Mode\+Filter.\+name = "{}Mode"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{class_p_i_l_1_1_image_filter_1_1_mode_filter_a0464bb9aa5a0c5d3e17878ce56d687a1}\index{PIL.ImageFilter.ModeFilter@{PIL.ImageFilter.ModeFilter}!size@{size}}
+\index{size@{size}!PIL.ImageFilter.ModeFilter@{PIL.ImageFilter.ModeFilter}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_image_filter_1_1_mode_filter_a0464bb9aa5a0c5d3e17878ce56d687a1} 
+PIL.\+Image\+Filter.\+Mode\+Filter.\+size = size}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_image_filter_8py}{Image\+Filter.\+py}}\end{DoxyCompactItemize}

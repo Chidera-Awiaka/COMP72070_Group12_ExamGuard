@@ -1,0 +1,96 @@
+\doxysection{pip.\+\_\+vendor.\+resolvelib.\+providers.\+Abstract\+Resolver Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver}{}\label{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver}\index{pip.\_vendor.resolvelib.providers.AbstractResolver@{pip.\_vendor.resolvelib.providers.AbstractResolver}}
+Inheritance diagram for pip.\+\_\+vendor.\+resolvelib.\+providers.\+Abstract\+Resolver:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_afaa8ed212bb99e73a24775a475e60cfc}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_a149d96dde7301b4b17321db453730ca1}{provider}}, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_a73fb1c2ece138e2b6af9c424118e24d2}{reporter}})
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_afc654fcd81b8c2544aa200a7923159f5}{resolve}} (self, requirements, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwargs)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_a149d96dde7301b4b17321db453730ca1}{provider}} = provider
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_a73fb1c2ece138e2b6af9c424118e24d2}{reporter}} = reporter
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_a3dc432d83712f4740860340a815715f7}{base\+\_\+exception}} = Exception
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}The thing that performs the actual resolution work.\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_afaa8ed212bb99e73a24775a475e60cfc}\index{pip.\_vendor.resolvelib.providers.AbstractResolver@{pip.\_vendor.resolvelib.providers.AbstractResolver}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.resolvelib.providers.AbstractResolver@{pip.\_vendor.resolvelib.providers.AbstractResolver}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_afaa8ed212bb99e73a24775a475e60cfc} 
+pip.\+\_\+vendor.\+resolvelib.\+providers.\+Abstract\+Resolver.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{provider}{, }\item[{}]{reporter}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_afc654fcd81b8c2544aa200a7923159f5}\index{pip.\_vendor.resolvelib.providers.AbstractResolver@{pip.\_vendor.resolvelib.providers.AbstractResolver}!resolve@{resolve}}
+\index{resolve@{resolve}!pip.\_vendor.resolvelib.providers.AbstractResolver@{pip.\_vendor.resolvelib.providers.AbstractResolver}}
+\doxysubsubsection{\texorpdfstring{resolve()}{resolve()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_afc654fcd81b8c2544aa200a7923159f5} 
+pip.\+\_\+vendor.\+resolvelib.\+providers.\+Abstract\+Resolver.\+resolve (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{requirements}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Take a collection of constraints, spit out the resolution result.
+
+This returns a representation of the final resolution state, with one
+guarenteed attribute ``mapping`` that contains resolved candidates as
+values. The keys are their respective identifiers.
+
+:param requirements: A collection of constraints.
+:param kwargs: Additional keyword arguments that subclasses may accept.
+
+:raises: ``self.base_exception`` or its subclass.
+\end{DoxyVerb}
+ 
+
+Reimplemented in \doxymbox{\hyperlink{classpip_1_1__vendor_1_1resolvelib_1_1resolvers_1_1_resolver_a25647c106c5091f732ce1d799e458efc}{pip.\+\_\+vendor.\+resolvelib.\+resolvers.\+Resolver}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_a3dc432d83712f4740860340a815715f7}\index{pip.\_vendor.resolvelib.providers.AbstractResolver@{pip.\_vendor.resolvelib.providers.AbstractResolver}!base\_exception@{base\_exception}}
+\index{base\_exception@{base\_exception}!pip.\_vendor.resolvelib.providers.AbstractResolver@{pip.\_vendor.resolvelib.providers.AbstractResolver}}
+\doxysubsubsection{\texorpdfstring{base\_exception}{base\_exception}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_a3dc432d83712f4740860340a815715f7} 
+pip.\+\_\+vendor.\+resolvelib.\+providers.\+Abstract\+Resolver.\+base\+\_\+exception = Exception\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_a149d96dde7301b4b17321db453730ca1}\index{pip.\_vendor.resolvelib.providers.AbstractResolver@{pip.\_vendor.resolvelib.providers.AbstractResolver}!provider@{provider}}
+\index{provider@{provider}!pip.\_vendor.resolvelib.providers.AbstractResolver@{pip.\_vendor.resolvelib.providers.AbstractResolver}}
+\doxysubsubsection{\texorpdfstring{provider}{provider}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_a149d96dde7301b4b17321db453730ca1} 
+pip.\+\_\+vendor.\+resolvelib.\+providers.\+Abstract\+Resolver.\+provider = provider}
+
+\Hypertarget{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_a73fb1c2ece138e2b6af9c424118e24d2}\index{pip.\_vendor.resolvelib.providers.AbstractResolver@{pip.\_vendor.resolvelib.providers.AbstractResolver}!reporter@{reporter}}
+\index{reporter@{reporter}!pip.\_vendor.resolvelib.providers.AbstractResolver@{pip.\_vendor.resolvelib.providers.AbstractResolver}}
+\doxysubsubsection{\texorpdfstring{reporter}{reporter}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1resolvelib_1_1providers_1_1_abstract_resolver_a73fb1c2ece138e2b6af9c424118e24d2} 
+pip.\+\_\+vendor.\+resolvelib.\+providers.\+Abstract\+Resolver.\+reporter = reporter}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+resolvelib/\+\doxymbox{\hyperlink{providers_8py}{providers.\+py}}\end{DoxyCompactItemize}

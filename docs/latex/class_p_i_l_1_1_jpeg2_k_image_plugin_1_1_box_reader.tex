@@ -1,0 +1,125 @@
+\doxysection{PIL.\+Jpeg2\+KImage\+Plugin.\+Box\+Reader Class Reference}
+\hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader}{}\label{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader}\index{PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_a97911cf4b40adf542d146f7d9736490b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, IO\+[bytes]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ab0b6c4a8b1e769c07e6cf5a0a7fd1cbe}{fp}}, int \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ac7a92a5d04c9b843556424178ba6e1ee}{length}}=-\/1)
+\item 
+tuple\+[int\texorpdfstring{$\vert$}{|}bytes,...]\+ \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_acae80f2efe42ebad7ee4325f33c664f0}{read\+\_\+fields}} (self, str field\+\_\+format)
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader}{Box\+Reader}} \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_a7c6e9751bd2705351e12216b6bd2b42a}{read\+\_\+boxes}} (self)
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_afc90b48898706a760eeb8a692296711a}{has\+\_\+next\+\_\+box}} (self)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_a404fdee69aac81876b96b8c9386cf328}{next\+\_\+box\+\_\+type}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ab0b6c4a8b1e769c07e6cf5a0a7fd1cbe}{fp}} = fp
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ae408141092d972be352cb788206ca38f}{has\+\_\+length}} = 0
+\item 
+\doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ac7a92a5d04c9b843556424178ba6e1ee}{length}} = length
+\item 
+int \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_aeaeab912a6a96770d5a4c61675f5734b}{remaining\+\_\+in\+\_\+box}} = -\/1
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ae981d6ffa8ac2936732ba35b7bbb02a4}{\+\_\+can\+\_\+read}} (self, int num\+\_\+bytes)
+\item 
+bytes \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_aed9cb9be3ee38dc50d6787ed32d9002d}{\+\_\+read\+\_\+bytes}} (self, int num\+\_\+bytes)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}A small helper class to read fields stored in JPEG2000 header boxes
+and to easily step into and read sub-boxes.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_a97911cf4b40adf542d146f7d9736490b}\index{PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_a97911cf4b40adf542d146f7d9736490b} 
+ None PIL.\+Jpeg2\+KImage\+Plugin.\+Box\+Reader.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{IO\+[bytes]\+}]{fp}{, }\item[{int }]{length}{ = {\ttfamily -\/1}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ae981d6ffa8ac2936732ba35b7bbb02a4}\index{PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}!\_can\_read@{\_can\_read}}
+\index{\_can\_read@{\_can\_read}!PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}}
+\doxysubsubsection{\texorpdfstring{\_can\_read()}{\_can\_read()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ae981d6ffa8ac2936732ba35b7bbb02a4} 
+ bool PIL.\+Jpeg2\+KImage\+Plugin.\+Box\+Reader.\+\_\+can\+\_\+read (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{num\+\_\+bytes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_aed9cb9be3ee38dc50d6787ed32d9002d}\index{PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}!\_read\_bytes@{\_read\_bytes}}
+\index{\_read\_bytes@{\_read\_bytes}!PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}}
+\doxysubsubsection{\texorpdfstring{\_read\_bytes()}{\_read\_bytes()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_aed9cb9be3ee38dc50d6787ed32d9002d} 
+ bytes PIL.\+Jpeg2\+KImage\+Plugin.\+Box\+Reader.\+\_\+read\+\_\+bytes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{num\+\_\+bytes}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_afc90b48898706a760eeb8a692296711a}\index{PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}!has\_next\_box@{has\_next\_box}}
+\index{has\_next\_box@{has\_next\_box}!PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}}
+\doxysubsubsection{\texorpdfstring{has\_next\_box()}{has\_next\_box()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_afc90b48898706a760eeb8a692296711a} 
+ bool PIL.\+Jpeg2\+KImage\+Plugin.\+Box\+Reader.\+has\+\_\+next\+\_\+box (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_a404fdee69aac81876b96b8c9386cf328}\index{PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}!next\_box\_type@{next\_box\_type}}
+\index{next\_box\_type@{next\_box\_type}!PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}}
+\doxysubsubsection{\texorpdfstring{next\_box\_type()}{next\_box\_type()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_a404fdee69aac81876b96b8c9386cf328} 
+ bytes PIL.\+Jpeg2\+KImage\+Plugin.\+Box\+Reader.\+next\+\_\+box\+\_\+type (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_a7c6e9751bd2705351e12216b6bd2b42a}\index{PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}!read\_boxes@{read\_boxes}}
+\index{read\_boxes@{read\_boxes}!PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}}
+\doxysubsubsection{\texorpdfstring{read\_boxes()}{read\_boxes()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_a7c6e9751bd2705351e12216b6bd2b42a} 
+ \doxymbox{\hyperlink{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader}{Box\+Reader}} PIL.\+Jpeg2\+KImage\+Plugin.\+Box\+Reader.\+read\+\_\+boxes (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_acae80f2efe42ebad7ee4325f33c664f0}\index{PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}!read\_fields@{read\_fields}}
+\index{read\_fields@{read\_fields}!PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}}
+\doxysubsubsection{\texorpdfstring{read\_fields()}{read\_fields()}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_acae80f2efe42ebad7ee4325f33c664f0} 
+ tuple\+[int \texorpdfstring{$\vert$}{|} bytes, ...]\+ PIL.\+Jpeg2\+KImage\+Plugin.\+Box\+Reader.\+read\+\_\+fields (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{field\+\_\+format}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ab0b6c4a8b1e769c07e6cf5a0a7fd1cbe}\index{PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}!fp@{fp}}
+\index{fp@{fp}!PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}}
+\doxysubsubsection{\texorpdfstring{fp}{fp}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ab0b6c4a8b1e769c07e6cf5a0a7fd1cbe} 
+PIL.\+Jpeg2\+KImage\+Plugin.\+Box\+Reader.\+fp = fp}
+
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ae408141092d972be352cb788206ca38f}\index{PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}!has\_length@{has\_length}}
+\index{has\_length@{has\_length}!PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}}
+\doxysubsubsection{\texorpdfstring{has\_length}{has\_length}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ae408141092d972be352cb788206ca38f} 
+int PIL.\+Jpeg2\+KImage\+Plugin.\+Box\+Reader.\+has\+\_\+length = 0}
+
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ac7a92a5d04c9b843556424178ba6e1ee}\index{PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}!length@{length}}
+\index{length@{length}!PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_ac7a92a5d04c9b843556424178ba6e1ee} 
+PIL.\+Jpeg2\+KImage\+Plugin.\+Box\+Reader.\+length = length}
+
+\Hypertarget{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_aeaeab912a6a96770d5a4c61675f5734b}\index{PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}!remaining\_in\_box@{remaining\_in\_box}}
+\index{remaining\_in\_box@{remaining\_in\_box}!PIL.Jpeg2KImagePlugin.BoxReader@{PIL.Jpeg2KImagePlugin.BoxReader}}
+\doxysubsubsection{\texorpdfstring{remaining\_in\_box}{remaining\_in\_box}}
+{\footnotesize\ttfamily \label{class_p_i_l_1_1_jpeg2_k_image_plugin_1_1_box_reader_aeaeab912a6a96770d5a4c61675f5734b} 
+PIL.\+Jpeg2\+KImage\+Plugin.\+Box\+Reader.\+remaining\+\_\+in\+\_\+box = -\/1}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+\+PIL/\+\doxymbox{\hyperlink{_jpeg2_k_image_plugin_8py}{Jpeg2\+KImage\+Plugin.\+py}}\end{DoxyCompactItemize}

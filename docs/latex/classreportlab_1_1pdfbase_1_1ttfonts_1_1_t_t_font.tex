@@ -1,0 +1,258 @@
+\doxysection{reportlab.\+pdfbase.\+ttfonts.\+TTFont Class Reference}
+\hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font}{}\label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_1_1_state}{State}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a223f9a68cbe5cc3325e51168481bbdda}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, name, filename, validate=0, subfont\+Index=0, ascii\+Readable=None, \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a8f12216cf69bb689af648c63af22383c}{shapable}}=True)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a4478fee0320a8007977e88d6a4a54faf}{string\+Width}} (self, text, size, \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a530e1b8923f6dbca07f228f3ab5cb3a0}{encoding}}=\textquotesingle{}utf8\textquotesingle{})
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a650a6ebe0ad8fdf905ee121edb17d2d6}{split\+String}} (self, text, doc, \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a530e1b8923f6dbca07f228f3ab5cb3a0}{encoding}}=\textquotesingle{}utf-\/8\textquotesingle{})
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a89278857c1a2cd1f49f932808def1895}{get\+Subset\+Internal\+Name}} (self, subset, doc)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a6bf0ced7940669bde0326bfc275c8f6d}{add\+Objects}} (self, doc)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a681305ab31e417f318c86626aa318247}{hb\+Face}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_ac0659b8346207671465db2e84bdde1f8}{hb\+Font}} (self, font\+Size=10)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a263facfc15caa77338bf46e6a8a2d87d}{pdf\+Scale}} (self, v)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a2bcca389bad7d9283d764d49be82ac5d}{unregister}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a3e1fd0a2e9132deedc540525c0f6699d}{shapable}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a06f44d9ca4305dc740afe73db08049a3}{shapable}} (self, v)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a2bf45d5bf9e31df88346a560ee6a9b24}{font\+Name}} = name
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a659f56f6b0e683be8a00f795897748c6}{face}} = \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_face}{TTFont\+Face}}(filename, validate=validate, subfont\+Index=subfont\+Index)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a530e1b8923f6dbca07f228f3ab5cb3a0}{encoding}} = \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_encoding}{TTEncoding}}()
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a8a9ff4710baab74e5619a34632a85bfd}{state}} = Weak\+Key\+Dictionary()
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a8f12216cf69bb689af648c63af22383c}{shapable}} = shapable and not any((fnmatch(name,\+\_\+) for \+\_\+ in un\+Shaped\+Font\+Glob))
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_ace55bcd9efad1e5ca3fc7828b83837b3}{hb\+Add\+Private}} = self.\+\_\+\+\_\+add\+Private
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_aacd1220d99276a581d13390a190b10eb}{\+\_\+assign\+State}} (self, doc, ascii\+Readable=None, name\+Prefix=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a11fb09236deb5ad8b329a58d4fd25d59}{\+\_\+ascii\+Readable}} = ascii\+Readable
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a20c20beda483a24cdde644ed2c5cd37a}{\+\_\+shapable}} = bool(v and \doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1ttfonts_a2f025563f87711fa062c91312fadd621}{uharfbuzz}})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a9609ca50b3aec02e5a88c771abfdba5e}{\+\_\+multi\+Byte}}
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a6f522b6f236cc7e56c7b0e8217f4c62c}{\+\_\+dynamic\+Font}} = 1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents a TrueType font.
+
+Its encoding is always UTF-8.
+
+Note: you cannot use the same TTFont object for different documents
+at the same time.
+
+Example of usage:
+
+    font = ttfonts.TTFont('PostScriptFontName', '/path/to/font.ttf')
+    pdfmetrics.registerFont(font)
+
+    canvas.setFont('PostScriptFontName', size)
+    canvas.drawString(x, y, "Some text encoded in UTF-8")
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a223f9a68cbe5cc3325e51168481bbdda}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a223f9a68cbe5cc3325e51168481bbdda} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name}{, }\item[{}]{filename}{, }\item[{}]{validate}{ = {\ttfamily 0}, }\item[{}]{subfont\+Index}{ = {\ttfamily 0}, }\item[{}]{ascii\+Readable}{ = {\ttfamily None}, }\item[{}]{shapable}{ = {\ttfamily True}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Loads a TrueType font from filename.
+
+If validate is set to a false values, skips checksum validation.  This
+can save time, especially if the font is large.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_aacd1220d99276a581d13390a190b10eb}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!\_assignState@{\_assignState}}
+\index{\_assignState@{\_assignState}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{\_assignState()}{\_assignState()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_aacd1220d99276a581d13390a190b10eb} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+\_\+assign\+State (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{doc}{, }\item[{}]{ascii\+Readable}{ = {\ttfamily None}, }\item[{}]{name\+Prefix}{ = {\ttfamily None}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}convenience function for those wishing to roll their own state properties\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a6bf0ced7940669bde0326bfc275c8f6d}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!addObjects@{addObjects}}
+\index{addObjects@{addObjects}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{addObjects()}{addObjects()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a6bf0ced7940669bde0326bfc275c8f6d} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+add\+Objects (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{doc}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Makes  one or more PDF objects to be added to the document.  The
+caller supplies the internal name to be used (typically F1, F2, ... in
+sequence).
+
+This method creates a number of Font and FontDescriptor objects.  Every
+FontDescriptor is a (no more than) 256 character subset of the original
+TrueType font.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a89278857c1a2cd1f49f932808def1895}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!getSubsetInternalName@{getSubsetInternalName}}
+\index{getSubsetInternalName@{getSubsetInternalName}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{getSubsetInternalName()}{getSubsetInternalName()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a89278857c1a2cd1f49f932808def1895} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+get\+Subset\+Internal\+Name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{subset}{, }\item[{}]{doc}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns the name of a PDF Font object corresponding to a given
+subset of this dynamic font.  Use this function instead of
+PDFDocument.getInternalFontName.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a681305ab31e417f318c86626aa318247}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!hbFace@{hbFace}}
+\index{hbFace@{hbFace}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{hbFace()}{hbFace()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a681305ab31e417f318c86626aa318247} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+hb\+Face (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return uharbuzz.Face\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_ac0659b8346207671465db2e84bdde1f8}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!hbFont@{hbFont}}
+\index{hbFont@{hbFont}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{hbFont()}{hbFont()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_ac0659b8346207671465db2e84bdde1f8} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+hb\+Font (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{font\+Size}{ = {\ttfamily 10}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}return uharfbuzz Font\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a263facfc15caa77338bf46e6a8a2d87d}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!pdfScale@{pdfScale}}
+\index{pdfScale@{pdfScale}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{pdfScale()}{pdfScale()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a263facfc15caa77338bf46e6a8a2d87d} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+pdf\+Scale (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{v}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a3e1fd0a2e9132deedc540525c0f6699d}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!shapable@{shapable}}
+\index{shapable@{shapable}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{shapable()}{shapable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a3e1fd0a2e9132deedc540525c0f6699d} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+shapable (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a06f44d9ca4305dc740afe73db08049a3}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!shapable@{shapable}}
+\index{shapable@{shapable}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{shapable()}{shapable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a06f44d9ca4305dc740afe73db08049a3} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+shapable (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{v}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a650a6ebe0ad8fdf905ee121edb17d2d6}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!splitString@{splitString}}
+\index{splitString@{splitString}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{splitString()}{splitString()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a650a6ebe0ad8fdf905ee121edb17d2d6} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+split\+String (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{, }\item[{}]{doc}{, }\item[{}]{encoding}{ = {\ttfamily \textquotesingle{}utf-\/8\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Splits text into a number of chunks, each of which belongs to a
+single subset.  Returns a list of tuples (subset, string).  Use subset
+numbers with getSubsetInternalName.  Doc is needed for distinguishing
+subsets when building different documents at the same time.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a4478fee0320a8007977e88d6a4a54faf}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!stringWidth@{stringWidth}}
+\index{stringWidth@{stringWidth}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{stringWidth()}{stringWidth()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a4478fee0320a8007977e88d6a4a54faf} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+string\+Width (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{, }\item[{}]{size}{, }\item[{}]{encoding}{ = {\ttfamily \textquotesingle{}utf8\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a2bcca389bad7d9283d764d49be82ac5d}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!unregister@{unregister}}
+\index{unregister@{unregister}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{unregister()}{unregister()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a2bcca389bad7d9283d764d49be82ac5d} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+unregister (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a11fb09236deb5ad8b329a58d4fd25d59}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!\_asciiReadable@{\_asciiReadable}}
+\index{\_asciiReadable@{\_asciiReadable}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{\_asciiReadable}{\_asciiReadable}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a11fb09236deb5ad8b329a58d4fd25d59} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+\_\+ascii\+Readable = ascii\+Readable\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a6f522b6f236cc7e56c7b0e8217f4c62c}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!\_dynamicFont@{\_dynamicFont}}
+\index{\_dynamicFont@{\_dynamicFont}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{\_dynamicFont}{\_dynamicFont}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a6f522b6f236cc7e56c7b0e8217f4c62c} 
+int reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+\_\+dynamic\+Font = 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a9609ca50b3aec02e5a88c771abfdba5e}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!\_multiByte@{\_multiByte}}
+\index{\_multiByte@{\_multiByte}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{\_multiByte}{\_multiByte}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a9609ca50b3aec02e5a88c771abfdba5e} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+\_\+multi\+Byte\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a20c20beda483a24cdde644ed2c5cd37a}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!\_shapable@{\_shapable}}
+\index{\_shapable@{\_shapable}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{\_shapable}{\_shapable}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a20c20beda483a24cdde644ed2c5cd37a} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+\_\+shapable = bool(v and \doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1ttfonts_a2f025563f87711fa062c91312fadd621}{uharfbuzz}})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a530e1b8923f6dbca07f228f3ab5cb3a0}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!encoding@{encoding}}
+\index{encoding@{encoding}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{encoding}{encoding}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a530e1b8923f6dbca07f228f3ab5cb3a0} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+encoding = \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_encoding}{TTEncoding}}()}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a659f56f6b0e683be8a00f795897748c6}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!face@{face}}
+\index{face@{face}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{face}{face}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a659f56f6b0e683be8a00f795897748c6} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+face = \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_face}{TTFont\+Face}}(filename, validate=validate, subfont\+Index=subfont\+Index)}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a2bf45d5bf9e31df88346a560ee6a9b24}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!fontName@{fontName}}
+\index{fontName@{fontName}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{fontName}{fontName}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a2bf45d5bf9e31df88346a560ee6a9b24} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+font\+Name = name}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_ace55bcd9efad1e5ca3fc7828b83837b3}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!hbAddPrivate@{hbAddPrivate}}
+\index{hbAddPrivate@{hbAddPrivate}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{hbAddPrivate}{hbAddPrivate}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_ace55bcd9efad1e5ca3fc7828b83837b3} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+hb\+Add\+Private = self.\+\_\+\+\_\+add\+Private}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a8f12216cf69bb689af648c63af22383c}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!shapable@{shapable}}
+\index{shapable@{shapable}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{shapable}{shapable}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a8f12216cf69bb689af648c63af22383c} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+shapable = shapable and not any((fnmatch(name,\+\_\+) for \+\_\+ in un\+Shaped\+Font\+Glob))}
+
+\Hypertarget{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a8a9ff4710baab74e5619a34632a85bfd}\index{reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}!state@{state}}
+\index{state@{state}!reportlab.pdfbase.ttfonts.TTFont@{reportlab.pdfbase.ttfonts.TTFont}}
+\doxysubsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfbase_1_1ttfonts_1_1_t_t_font_a8a9ff4710baab74e5619a34632a85bfd} 
+reportlab.\+pdfbase.\+ttfonts.\+TTFont.\+state = Weak\+Key\+Dictionary()}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+pdfbase/\+\doxymbox{\hyperlink{ttfonts_8py}{ttfonts.\+py}}\end{DoxyCompactItemize}

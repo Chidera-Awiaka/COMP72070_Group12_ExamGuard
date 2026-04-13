@@ -1,0 +1,143 @@
+\doxysection{reportlab.\+lib.\+Py\+Fontify Namespace Reference}
+\hypertarget{namespacereportlab_1_1lib_1_1_py_fontify}{}\label{namespacereportlab_1_1lib_1_1_py_fontify}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a733c47490f580f9397676fec8a168440}{replace}} (src, sep, rep)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a5a54926db3377e7f0e12f3b81e056852}{fontify}} (pytext, searchfrom=0, searchto=None)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a4b7080e6177d28bb688fda306b3fefe7}{test}} (path)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a7159cff29ab5179811444bca970326cd}{keywords\+List}}
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a7bfa5bc825e55b67f7a94ed6778adfac}{comment\+Pat}} = r"{}\+\#\+[\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}n]\+\texorpdfstring{$\ast$}{*}"{}
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a21bc02e419fe6e7a6ec24fee2f5bf7f6}{pat}} = r"{}q\+[\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\textbackslash{}q\textbackslash{}n]\+\texorpdfstring{$\ast$}{*}(\textbackslash{}\textbackslash{}\+[\textbackslash{}000-\/\textbackslash{}377]\+\+[\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\textbackslash{}q\textbackslash{}n]\+\texorpdfstring{$\ast$}{*})\texorpdfstring{$\ast$}{*}q"{}
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a8efc4bc4dbd0eaeefbf4c13052f1f6fc}{quote\+Pat}} = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a733c47490f580f9397676fec8a168440}{replace}}(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a21bc02e419fe6e7a6ec24fee2f5bf7f6}{pat}}, "{}q"{}, "{}\textquotesingle{}"{}) + "{}\texorpdfstring{$\vert$}{|}"{} + \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a733c47490f580f9397676fec8a168440}{replace}}(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a21bc02e419fe6e7a6ec24fee2f5bf7f6}{pat}}, \textquotesingle{}q\textquotesingle{}, \textquotesingle{}"{}\textquotesingle{})
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a748a1730b30d414d2658f2596b5fa37b}{triple\+Quote\+Pat}} = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a733c47490f580f9397676fec8a168440}{replace}}(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a21bc02e419fe6e7a6ec24fee2f5bf7f6}{pat}}, "{}q"{}, "{}\textquotesingle{}"{}) + "{}\texorpdfstring{$\vert$}{|}"{} + \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a733c47490f580f9397676fec8a168440}{replace}}(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a21bc02e419fe6e7a6ec24fee2f5bf7f6}{pat}}, \textquotesingle{}q\textquotesingle{}, \textquotesingle{}"{}\textquotesingle{})
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a6479b8c29ef27c597b1b25de9ca095ae}{non\+Key\+Pat}} = r"{}(\texorpdfstring{$^\wedge$}{\string^}\texorpdfstring{$\vert$}{|}\+[\texorpdfstring{$^\wedge$}{\string^}a-\/zA-\/Z0-\/9\+\_\+.\textbackslash{}"{}\textquotesingle{}]\+)"{}
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_ade5a9a06ea8405648791b2cdfb2acf1e}{key\+Pat}} = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a6479b8c29ef27c597b1b25de9ca095ae}{non\+Key\+Pat}} + "{}("{} + "{}\texorpdfstring{$\vert$}{|}"{}.join(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a7159cff29ab5179811444bca970326cd}{keywords\+List}}) + "{})"{} + \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a6479b8c29ef27c597b1b25de9ca095ae}{non\+Key\+Pat}}
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a7333278c940607edcbef7827b04472c9}{match\+Pat}} = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a7bfa5bc825e55b67f7a94ed6778adfac}{comment\+Pat}} + "{}\texorpdfstring{$\vert$}{|}"{} + \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_ade5a9a06ea8405648791b2cdfb2acf1e}{key\+Pat}} + "{}\texorpdfstring{$\vert$}{|}"{} + \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a748a1730b30d414d2658f2596b5fa37b}{triple\+Quote\+Pat}} + "{}\texorpdfstring{$\vert$}{|}"{} + \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a8efc4bc4dbd0eaeefbf4c13052f1f6fc}{quote\+Pat}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a5763cbf786bb7552043cc42fb927b520}{match\+RE}} = re.\+compile(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a7333278c940607edcbef7827b04472c9}{match\+Pat}})
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_ae1a2badb9a23e3b49d2045a8cd94b9e0}{id\+Key\+Pat}} = "{}\+[ \textbackslash{}t]\+\texorpdfstring{$\ast$}{*}\+[A-\/Za-\/z\+\_\+]\+\+[A-\/Za-\/z\+\_\+0-\/9.]\+\texorpdfstring{$\ast$}{*}"{}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_ad3e631af13f1c8ae15a074136e51172e}{id\+RE}} = re.\+compile(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_ae1a2badb9a23e3b49d2045a8cd94b9e0}{id\+Key\+Pat}})
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_a5a54926db3377e7f0e12f3b81e056852}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!fontify@{fontify}}
+\index{fontify@{fontify}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{fontify()}{fontify()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_a5a54926db3377e7f0e12f3b81e056852} 
+reportlab.\+lib.\+Py\+Fontify.\+fontify (\begin{DoxyParamCaption}\item[{}]{pytext}{, }\item[{}]{searchfrom}{ = {\ttfamily 0}, }\item[{}]{searchto}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_a733c47490f580f9397676fec8a168440}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!replace@{replace}}
+\index{replace@{replace}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_a733c47490f580f9397676fec8a168440} 
+reportlab.\+lib.\+Py\+Fontify.\+replace (\begin{DoxyParamCaption}\item[{}]{src}{, }\item[{}]{sep}{, }\item[{}]{rep}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_a4b7080e6177d28bb688fda306b3fefe7}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!test@{test}}
+\index{test@{test}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_a4b7080e6177d28bb688fda306b3fefe7} 
+reportlab.\+lib.\+Py\+Fontify.\+test (\begin{DoxyParamCaption}\item[{}]{path}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_a7bfa5bc825e55b67f7a94ed6778adfac}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!commentPat@{commentPat}}
+\index{commentPat@{commentPat}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{commentPat}{commentPat}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_a7bfa5bc825e55b67f7a94ed6778adfac} 
+str reportlab.\+lib.\+Py\+Fontify.\+comment\+Pat = r"{}\+\#\+[\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}n]\+\texorpdfstring{$\ast$}{*}"{}}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_ae1a2badb9a23e3b49d2045a8cd94b9e0}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!idKeyPat@{idKeyPat}}
+\index{idKeyPat@{idKeyPat}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{idKeyPat}{idKeyPat}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_ae1a2badb9a23e3b49d2045a8cd94b9e0} 
+str reportlab.\+lib.\+Py\+Fontify.\+id\+Key\+Pat = "{}\+[ \textbackslash{}t]\+\texorpdfstring{$\ast$}{*}\+[A-\/Za-\/z\+\_\+]\+\+[A-\/Za-\/z\+\_\+0-\/9.]\+\texorpdfstring{$\ast$}{*}"{}}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_ad3e631af13f1c8ae15a074136e51172e}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!idRE@{idRE}}
+\index{idRE@{idRE}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{idRE}{idRE}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_ad3e631af13f1c8ae15a074136e51172e} 
+reportlab.\+lib.\+Py\+Fontify.\+id\+RE = re.\+compile(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_ae1a2badb9a23e3b49d2045a8cd94b9e0}{id\+Key\+Pat}})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_ade5a9a06ea8405648791b2cdfb2acf1e}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!keyPat@{keyPat}}
+\index{keyPat@{keyPat}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{keyPat}{keyPat}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_ade5a9a06ea8405648791b2cdfb2acf1e} 
+str reportlab.\+lib.\+Py\+Fontify.\+key\+Pat = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a6479b8c29ef27c597b1b25de9ca095ae}{non\+Key\+Pat}} + "{}("{} + "{}\texorpdfstring{$\vert$}{|}"{}.join(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a7159cff29ab5179811444bca970326cd}{keywords\+List}}) + "{})"{} + \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a6479b8c29ef27c597b1b25de9ca095ae}{non\+Key\+Pat}}}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_a7159cff29ab5179811444bca970326cd}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!keywordsList@{keywordsList}}
+\index{keywordsList@{keywordsList}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{keywordsList}{keywordsList}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_a7159cff29ab5179811444bca970326cd} 
+list reportlab.\+lib.\+Py\+Fontify.\+keywords\+List}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}as"{}},\ \textcolor{stringliteral}{"{}assert"{}},\ \textcolor{stringliteral}{"{}exec"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}del"{}},\ \textcolor{stringliteral}{"{}from"{}},\ \textcolor{stringliteral}{"{}lambda"{}},\ \textcolor{stringliteral}{"{}return"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}and"{}},\ \textcolor{stringliteral}{"{}elif"{}},\ \textcolor{stringliteral}{"{}global"{}},\ \textcolor{stringliteral}{"{}not"{}},\ \textcolor{stringliteral}{"{}try"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}break"{}},\ \textcolor{stringliteral}{"{}else"{}},\ \textcolor{stringliteral}{"{}if"{}},\ \textcolor{stringliteral}{"{}or"{}},\ \textcolor{stringliteral}{"{}while"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}class"{}},\ \textcolor{stringliteral}{"{}except"{}},\ \textcolor{stringliteral}{"{}import"{}},\ \textcolor{stringliteral}{"{}pass"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}continue"{}},\ \textcolor{stringliteral}{"{}finally"{}},\ \textcolor{stringliteral}{"{}in"{}},\ \textcolor{stringliteral}{"{}print"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}def"{}},\ \textcolor{stringliteral}{"{}for"{}},\ \textcolor{stringliteral}{"{}is"{}},\ \textcolor{stringliteral}{"{}raise"{}},\ \textcolor{stringliteral}{"{}yield"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}with"{}}]}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_a7333278c940607edcbef7827b04472c9}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!matchPat@{matchPat}}
+\index{matchPat@{matchPat}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{matchPat}{matchPat}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_a7333278c940607edcbef7827b04472c9} 
+str reportlab.\+lib.\+Py\+Fontify.\+match\+Pat = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a7bfa5bc825e55b67f7a94ed6778adfac}{comment\+Pat}} + "{}\texorpdfstring{$\vert$}{|}"{} + \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_ade5a9a06ea8405648791b2cdfb2acf1e}{key\+Pat}} + "{}\texorpdfstring{$\vert$}{|}"{} + \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a748a1730b30d414d2658f2596b5fa37b}{triple\+Quote\+Pat}} + "{}\texorpdfstring{$\vert$}{|}"{} + \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a8efc4bc4dbd0eaeefbf4c13052f1f6fc}{quote\+Pat}}}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_a5763cbf786bb7552043cc42fb927b520}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!matchRE@{matchRE}}
+\index{matchRE@{matchRE}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{matchRE}{matchRE}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_a5763cbf786bb7552043cc42fb927b520} 
+reportlab.\+lib.\+Py\+Fontify.\+match\+RE = re.\+compile(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a7333278c940607edcbef7827b04472c9}{match\+Pat}})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_a6479b8c29ef27c597b1b25de9ca095ae}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!nonKeyPat@{nonKeyPat}}
+\index{nonKeyPat@{nonKeyPat}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{nonKeyPat}{nonKeyPat}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_a6479b8c29ef27c597b1b25de9ca095ae} 
+str reportlab.\+lib.\+Py\+Fontify.\+non\+Key\+Pat = r"{}(\texorpdfstring{$^\wedge$}{\string^}\texorpdfstring{$\vert$}{|}\+[\texorpdfstring{$^\wedge$}{\string^}a-\/zA-\/Z0-\/9\+\_\+.\textbackslash{}"{}\textquotesingle{}]\+)"{}}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_a21bc02e419fe6e7a6ec24fee2f5bf7f6}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!pat@{pat}}
+\index{pat@{pat}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{pat}{pat}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_a21bc02e419fe6e7a6ec24fee2f5bf7f6} 
+str reportlab.\+lib.\+Py\+Fontify.\+pat = r"{}q\+[\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\textbackslash{}q\textbackslash{}n]\+\texorpdfstring{$\ast$}{*}(\textbackslash{}\textbackslash{}\+[\textbackslash{}000-\/\textbackslash{}377]\+\+[\texorpdfstring{$^\wedge$}{\string^}\textbackslash{}\textbackslash{}q\textbackslash{}n]\+\texorpdfstring{$\ast$}{*})\texorpdfstring{$\ast$}{*}q"{}}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_a8efc4bc4dbd0eaeefbf4c13052f1f6fc}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!quotePat@{quotePat}}
+\index{quotePat@{quotePat}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{quotePat}{quotePat}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_a8efc4bc4dbd0eaeefbf4c13052f1f6fc} 
+str reportlab.\+lib.\+Py\+Fontify.\+quote\+Pat = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a733c47490f580f9397676fec8a168440}{replace}}(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a21bc02e419fe6e7a6ec24fee2f5bf7f6}{pat}}, "{}q"{}, "{}\textquotesingle{}"{}) + "{}\texorpdfstring{$\vert$}{|}"{} + \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a733c47490f580f9397676fec8a168440}{replace}}(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a21bc02e419fe6e7a6ec24fee2f5bf7f6}{pat}}, \textquotesingle{}q\textquotesingle{}, \textquotesingle{}"{}\textquotesingle{})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1_py_fontify_a748a1730b30d414d2658f2596b5fa37b}\index{reportlab.lib.PyFontify@{reportlab.lib.PyFontify}!tripleQuotePat@{tripleQuotePat}}
+\index{tripleQuotePat@{tripleQuotePat}!reportlab.lib.PyFontify@{reportlab.lib.PyFontify}}
+\doxysubsubsection{\texorpdfstring{tripleQuotePat}{tripleQuotePat}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1_py_fontify_a748a1730b30d414d2658f2596b5fa37b} 
+str reportlab.\+lib.\+Py\+Fontify.\+triple\+Quote\+Pat = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a733c47490f580f9397676fec8a168440}{replace}}(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a21bc02e419fe6e7a6ec24fee2f5bf7f6}{pat}}, "{}q"{}, "{}\textquotesingle{}"{}) + "{}\texorpdfstring{$\vert$}{|}"{} + \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a733c47490f580f9397676fec8a168440}{replace}}(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1_py_fontify_a21bc02e419fe6e7a6ec24fee2f5bf7f6}{pat}}, \textquotesingle{}q\textquotesingle{}, \textquotesingle{}"{}\textquotesingle{})}
+

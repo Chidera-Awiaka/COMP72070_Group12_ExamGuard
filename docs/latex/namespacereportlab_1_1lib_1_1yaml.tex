@@ -1,0 +1,107 @@
+\doxysection{reportlab.\+lib.\+yaml Namespace Reference}
+\hypertarget{namespacereportlab_1_1lib_1_1yaml}{}\label{namespacereportlab_1_1lib_1_1yaml}\index{reportlab.lib.yaml@{reportlab.lib.yaml}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_base_parser}{Base\+Parser}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1lib_1_1yaml_1_1_parser}{Parser}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1yaml_a51c7772444a0fdf3d1a7a1182dd58e42}{parse\+File}} (filename)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1yaml_a2ef7c9f7a026423895df378d58b40632}{parse\+Text}} (text\+Block)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1yaml_af0b68b94dd83cea00bdcdac5fb0c4978}{PLAIN}} = 1
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1yaml_abc7a2013f7a41888fb9dd7405ed4bb98}{PREFORMATTED}} = 2
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1yaml_ac45f3138f61c80bcc98dd486c36e1939}{BULLETCHAR}} = \textquotesingle{}\textbackslash{}267\textquotesingle{}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1yaml_a09c075c38e5b8e9841a97ba033fc4918}{results}} = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1yaml_a2ef7c9f7a026423895df378d58b40632}{parse\+Text}}(\+\_\+\+\_\+doc\+\_\+\+\_\+)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}.h1 Welcome to YAML!
+YAML is "Yet Another Markup Language" - a markup language
+which is easier to type in than XML, yet gives us a
+reasonable selection of formats.
+
+The general rule is that if a line begins with a '.',
+it requires special processing. Otherwise lines
+are concatenated to paragraphs, and blank lines
+separate paragraphs.
+
+If the line ".foo bar bletch" is encountered,
+it immediately ends and writes out any current
+paragraph.
+
+It then looks for a parser method called 'foo';
+if found, it is called with arguments (bar, bletch).
+
+If this is not found, it assumes that 'foo' is a
+paragraph style, and the text for the first line
+of the paragraph is 'bar bletch'.  It would be
+up to the formatter to decide whether on not 'foo'
+was a valid paragraph.
+
+Special commands understood at present are:
+dot image filename
+- adds the image to the document
+dot beginPre Code
+- begins a Preformatted object in style 'Code'
+dot endPre
+- ends a preformatted object.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1lib_1_1yaml_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1lib_1_1yaml_a51c7772444a0fdf3d1a7a1182dd58e42}\index{reportlab.lib.yaml@{reportlab.lib.yaml}!parseFile@{parseFile}}
+\index{parseFile@{parseFile}!reportlab.lib.yaml@{reportlab.lib.yaml}}
+\doxysubsubsection{\texorpdfstring{parseFile()}{parseFile()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1yaml_a51c7772444a0fdf3d1a7a1182dd58e42} 
+reportlab.\+lib.\+yaml.\+parse\+File (\begin{DoxyParamCaption}\item[{}]{filename}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1yaml_a2ef7c9f7a026423895df378d58b40632}\index{reportlab.lib.yaml@{reportlab.lib.yaml}!parseText@{parseText}}
+\index{parseText@{parseText}!reportlab.lib.yaml@{reportlab.lib.yaml}}
+\doxysubsubsection{\texorpdfstring{parseText()}{parseText()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1yaml_a2ef7c9f7a026423895df378d58b40632} 
+reportlab.\+lib.\+yaml.\+parse\+Text (\begin{DoxyParamCaption}\item[{}]{text\+Block}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacereportlab_1_1lib_1_1yaml_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacereportlab_1_1lib_1_1yaml_ac45f3138f61c80bcc98dd486c36e1939}\index{reportlab.lib.yaml@{reportlab.lib.yaml}!BULLETCHAR@{BULLETCHAR}}
+\index{BULLETCHAR@{BULLETCHAR}!reportlab.lib.yaml@{reportlab.lib.yaml}}
+\doxysubsubsection{\texorpdfstring{BULLETCHAR}{BULLETCHAR}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1yaml_ac45f3138f61c80bcc98dd486c36e1939} 
+str reportlab.\+lib.\+yaml.\+BULLETCHAR = \textquotesingle{}\textbackslash{}267\textquotesingle{}}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1yaml_af0b68b94dd83cea00bdcdac5fb0c4978}\index{reportlab.lib.yaml@{reportlab.lib.yaml}!PLAIN@{PLAIN}}
+\index{PLAIN@{PLAIN}!reportlab.lib.yaml@{reportlab.lib.yaml}}
+\doxysubsubsection{\texorpdfstring{PLAIN}{PLAIN}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1yaml_af0b68b94dd83cea00bdcdac5fb0c4978} 
+int reportlab.\+lib.\+yaml.\+PLAIN = 1}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1yaml_abc7a2013f7a41888fb9dd7405ed4bb98}\index{reportlab.lib.yaml@{reportlab.lib.yaml}!PREFORMATTED@{PREFORMATTED}}
+\index{PREFORMATTED@{PREFORMATTED}!reportlab.lib.yaml@{reportlab.lib.yaml}}
+\doxysubsubsection{\texorpdfstring{PREFORMATTED}{PREFORMATTED}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1yaml_abc7a2013f7a41888fb9dd7405ed4bb98} 
+int reportlab.\+lib.\+yaml.\+PREFORMATTED = 2}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1yaml_a09c075c38e5b8e9841a97ba033fc4918}\index{reportlab.lib.yaml@{reportlab.lib.yaml}!results@{results}}
+\index{results@{results}!reportlab.lib.yaml@{reportlab.lib.yaml}}
+\doxysubsubsection{\texorpdfstring{results}{results}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1yaml_a09c075c38e5b8e9841a97ba033fc4918} 
+reportlab.\+lib.\+yaml.\+results = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1yaml_a2ef7c9f7a026423895df378d58b40632}{parse\+Text}}(\+\_\+\+\_\+doc\+\_\+\+\_\+)}
+

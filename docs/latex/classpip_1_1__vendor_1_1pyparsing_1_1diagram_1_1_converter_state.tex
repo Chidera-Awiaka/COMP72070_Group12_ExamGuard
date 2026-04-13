@@ -1,0 +1,156 @@
+\doxysection{pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state}{}\label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_aca743d806fbddda5d4bb8b380cf04a09}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, typing.\+Optional\+[dict]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a41a3c906e9f1a1c717b9f11ef355e6e0}{diagram\+\_\+kwargs}}=None)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a770c7aee2688a7b830d151dc1b2ea6eb}{\+\_\+\+\_\+setitem\+\_\+\+\_\+}} (self, int key, \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_element_state}{Element\+State}} value)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_element_state}{Element\+State}} \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a4e4172c293378e58494f559a68204071}{\+\_\+\+\_\+getitem\+\_\+\+\_\+}} (self, int key)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_aea2b9b3740dabe3853c91c19b5e4c8d3}{\+\_\+\+\_\+delitem\+\_\+\+\_\+}} (self, int key)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_acbf5a0a32838ee6d190e5a0e3246b7b9}{\+\_\+\+\_\+contains\+\_\+\+\_\+}} (self, int key)
+\item 
+int \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a73d3240c27b38b4dcd9225f87295982c}{generate\+\_\+unnamed}} (self)
+\item 
+int \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a6b50b6d16bd485df2ba310e2a01c7141}{generate\+\_\+index}} (self)
+\item 
+\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a246a3064bc4a27e6ff65a473a0f10943}{extract\+\_\+into\+\_\+diagram}} (self, int el\+\_\+id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_ab98ae05153ffade423aa8536e2565063}{diagrams}} = \{\}
+\item 
+int \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a468938eeb6275b74fa4b678b4ef1ac24}{unnamed\+\_\+index}} = 1
+\item 
+int \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a670661a3a46e71cdf0aaca99d9a6e7cb}{index}} = 0
+\item 
+dict \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a41a3c906e9f1a1c717b9f11ef355e6e0}{diagram\+\_\+kwargs}} = diagram\+\_\+kwargs or \{\}
+\item 
+Set\+[str]\+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a675f42fb9fa3fdd50d64450b264b5bea}{extracted\+\_\+diagram\+\_\+names}} = set()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a7c37ddd29c1989f9bd117be1995157ec}{\+\_\+element\+\_\+diagram\+\_\+states}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Stores some state that persists between recursions into the element tree
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_aca743d806fbddda5d4bb8b380cf04a09}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_aca743d806fbddda5d4bb8b380cf04a09} 
+pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{typing.\+Optional\+[dict]\+ }]{diagram\+\_\+kwargs}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_acbf5a0a32838ee6d190e5a0e3246b7b9}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!\_\_contains\_\_@{\_\_contains\_\_}}
+\index{\_\_contains\_\_@{\_\_contains\_\_}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{\_\_contains\_\_()}{\_\_contains\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_acbf5a0a32838ee6d190e5a0e3246b7b9} 
+pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+\_\+\+\_\+contains\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_aea2b9b3740dabe3853c91c19b5e4c8d3}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!\_\_delitem\_\_@{\_\_delitem\_\_}}
+\index{\_\_delitem\_\_@{\_\_delitem\_\_}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{\_\_delitem\_\_()}{\_\_delitem\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_aea2b9b3740dabe3853c91c19b5e4c8d3} 
+pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+\_\+\+\_\+delitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a4e4172c293378e58494f559a68204071}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!\_\_getitem\_\_@{\_\_getitem\_\_}}
+\index{\_\_getitem\_\_@{\_\_getitem\_\_}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{\_\_getitem\_\_()}{\_\_getitem\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a4e4172c293378e58494f559a68204071} 
+ \doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_element_state}{Element\+State}} pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+\_\+\+\_\+getitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{key}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a770c7aee2688a7b830d151dc1b2ea6eb}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!\_\_setitem\_\_@{\_\_setitem\_\_}}
+\index{\_\_setitem\_\_@{\_\_setitem\_\_}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{\_\_setitem\_\_()}{\_\_setitem\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a770c7aee2688a7b830d151dc1b2ea6eb} 
+pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+\_\+\+\_\+setitem\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{key}{, }\item[{\doxymbox{\hyperlink{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_element_state}{Element\+State}}}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a246a3064bc4a27e6ff65a473a0f10943}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!extract\_into\_diagram@{extract\_into\_diagram}}
+\index{extract\_into\_diagram@{extract\_into\_diagram}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{extract\_into\_diagram()}{extract\_into\_diagram()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a246a3064bc4a27e6ff65a473a0f10943} 
+pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+extract\+\_\+into\+\_\+diagram (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{el\+\_\+id}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Used when we encounter the same token twice in the same tree. When this
+happens, we replace all instances of that token with a terminal, and
+create a new subdiagram for the token
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a6b50b6d16bd485df2ba310e2a01c7141}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!generate\_index@{generate\_index}}
+\index{generate\_index@{generate\_index}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{generate\_index()}{generate\_index()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a6b50b6d16bd485df2ba310e2a01c7141} 
+ int pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+generate\+\_\+index (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate a number used to index a diagram
+\end{DoxyVerb}
+ \Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a73d3240c27b38b4dcd9225f87295982c}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!generate\_unnamed@{generate\_unnamed}}
+\index{generate\_unnamed@{generate\_unnamed}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{generate\_unnamed()}{generate\_unnamed()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a73d3240c27b38b4dcd9225f87295982c} 
+ int pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+generate\+\_\+unnamed (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate a number used in the name of an otherwise unnamed diagram
+\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a7c37ddd29c1989f9bd117be1995157ec}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!\_element\_diagram\_states@{\_element\_diagram\_states}}
+\index{\_element\_diagram\_states@{\_element\_diagram\_states}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{\_element\_diagram\_states}{\_element\_diagram\_states}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a7c37ddd29c1989f9bd117be1995157ec} 
+dict pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+\_\+element\+\_\+diagram\+\_\+states = \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a41a3c906e9f1a1c717b9f11ef355e6e0}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!diagram\_kwargs@{diagram\_kwargs}}
+\index{diagram\_kwargs@{diagram\_kwargs}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{diagram\_kwargs}{diagram\_kwargs}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a41a3c906e9f1a1c717b9f11ef355e6e0} 
+dict pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+diagram\+\_\+kwargs = diagram\+\_\+kwargs or \{\}}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_ab98ae05153ffade423aa8536e2565063}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!diagrams@{diagrams}}
+\index{diagrams@{diagrams}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{diagrams}{diagrams}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_ab98ae05153ffade423aa8536e2565063} 
+dict pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+diagrams = \{\}}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a675f42fb9fa3fdd50d64450b264b5bea}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!extracted\_diagram\_names@{extracted\_diagram\_names}}
+\index{extracted\_diagram\_names@{extracted\_diagram\_names}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{extracted\_diagram\_names}{extracted\_diagram\_names}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a675f42fb9fa3fdd50d64450b264b5bea} 
+Set\+[str]\+ pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+extracted\+\_\+diagram\+\_\+names = set()}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a670661a3a46e71cdf0aaca99d9a6e7cb}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!index@{index}}
+\index{index@{index}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a670661a3a46e71cdf0aaca99d9a6e7cb} 
+int pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+index = 0}
+
+\Hypertarget{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a468938eeb6275b74fa4b678b4ef1ac24}\index{pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}!unnamed\_index@{unnamed\_index}}
+\index{unnamed\_index@{unnamed\_index}!pip.\_vendor.pyparsing.diagram.ConverterState@{pip.\_vendor.pyparsing.diagram.ConverterState}}
+\doxysubsubsection{\texorpdfstring{unnamed\_index}{unnamed\_index}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1pyparsing_1_1diagram_1_1_converter_state_a468938eeb6275b74fa4b678b4ef1ac24} 
+int pip.\+\_\+vendor.\+pyparsing.\+diagram.\+Converter\+State.\+unnamed\+\_\+index = 1}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+pyparsing/\+diagram/\+\doxymbox{\hyperlink{pip_2__vendor_2pyparsing_2diagram_2____init_____8py}{\+\_\+\+\_\+init\+\_\+\+\_\+.\+py}}\end{DoxyCompactItemize}

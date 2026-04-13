@@ -1,0 +1,189 @@
+\doxysection{reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object Class Reference}
+\hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object}{}\label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a64bcf98ff852efbf080a130961657f9c}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, code=None)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_ab0a9d26ef52ff42610ca652bec1528fd}{get\+Code}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a2c047a2203aa1313167711977a54ddc0}{move\+To}} (self, x, y)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_ae5c8ecef2b10c0208451f190212a2908}{line\+To}} (self, x, y)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a6a7da671f32cc35b5341295c0ca3e93d}{curve\+To}} (self, x1, y1, x2, y2, x3, y3)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_add0c80639c4f76643d866e509bad5f11}{arc}} (self, x1, y1, x2, y2, start\+Ang=0, extent=90)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_ae739c449d62aef5bc139cb92bccbd316}{arc\+To}} (self, x1, y1, x2, y2, start\+Ang=0, extent=90)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_abb1a462870e007ae6c9bb23a8bbd2037}{rect}} (self, x, y, width, height)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a4223bdedf6865295e237df9ffbbbf89e}{ellipse}} (self, x, y, width, height)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a0af3710ff7c035adda74628ef0a5f4d4}{circle}} (self, x\+\_\+cen, y\+\_\+cen, r)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a805a1ef38249dd67eb89fdfb33df01f9}{round\+Rect}} (self, x, y, width, height, radius)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_ab426281c5b36f59189d605681458abfe}{close}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a4959007f8aa3e9af6b6655c90bcaa3f7}{\+\_\+init\+\_\+code\+\_\+append}} (self, c)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a350b5591bc07c81758610c54360255a6}{\+\_\+curves}} (self, curves, initial=\textquotesingle{}\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a2c047a2203aa1313167711977a54ddc0}{move\+To}}\textquotesingle{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+tuple \doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a8d327878d9e5ffbf438235132582dfd2}{\+\_\+code}} = (code,\+[$\,$]\+)\+[code is None]\+
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_abdbddf315941e2bafd472290c8fed26a}{\+\_\+code\+\_\+append}} = self.\+\_\+init\+\_\+code\+\_\+append
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Represents a graphic path.  There are certain 'modes' to PDF
+drawing, and making a separate object to expose Path operations
+ensures they are completed with no run-time overhead.  Ask
+the Canvas for a PDFPath with getNewPathObject(); moveto/lineto/
+curveto wherever you want; add whole shapes; and then add it back
+into the canvas with one of the relevant operators.
+
+Path objects are probably not long, so we pack onto one line
+
+the code argument allows a canvas to get the operations appended directly so
+avoiding the final getCode
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a64bcf98ff852efbf080a130961657f9c}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a64bcf98ff852efbf080a130961657f9c} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{code}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a350b5591bc07c81758610c54360255a6}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!\_curves@{\_curves}}
+\index{\_curves@{\_curves}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{\_curves()}{\_curves()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a350b5591bc07c81758610c54360255a6} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+\_\+curves (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{curves}{, }\item[{}]{initial}{ = {\ttfamily \textquotesingle{}\doxymbox{\hyperlink{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a2c047a2203aa1313167711977a54ddc0}{move\+To}}\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a4959007f8aa3e9af6b6655c90bcaa3f7}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!\_init\_code\_append@{\_init\_code\_append}}
+\index{\_init\_code\_append@{\_init\_code\_append}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{\_init\_code\_append()}{\_init\_code\_append()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a4959007f8aa3e9af6b6655c90bcaa3f7} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+\_\+init\+\_\+code\+\_\+append (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{c}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_add0c80639c4f76643d866e509bad5f11}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!arc@{arc}}
+\index{arc@{arc}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{arc()}{arc()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_add0c80639c4f76643d866e509bad5f11} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+arc (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x1}{, }\item[{}]{y1}{, }\item[{}]{x2}{, }\item[{}]{y2}{, }\item[{}]{start\+Ang}{ = {\ttfamily 0}, }\item[{}]{extent}{ = {\ttfamily 90}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Contributed to piddlePDF by Robert Kern, 28/7/99.
+Draw a partial ellipse inscribed within the rectangle x1,y1,x2,y2,
+starting at startAng degrees and covering extent degrees.   Angles
+start with 0 to the right (+x) and increase counter-clockwise.
+These should have x1<x2 and y1<y2.
+
+The algorithm is an elliptical generalization of the formulae in
+Jim Fitzsimmon's TeX tutorial <URL: http://www.tinaja.com/bezarc1.pdf>.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_ae739c449d62aef5bc139cb92bccbd316}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!arcTo@{arcTo}}
+\index{arcTo@{arcTo}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{arcTo()}{arcTo()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_ae739c449d62aef5bc139cb92bccbd316} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+arc\+To (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x1}{, }\item[{}]{y1}{, }\item[{}]{x2}{, }\item[{}]{y2}{, }\item[{}]{start\+Ang}{ = {\ttfamily 0}, }\item[{}]{extent}{ = {\ttfamily 90}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Like arc, but draws a line from the current point to
+the start if the start is not the current point.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a0af3710ff7c035adda74628ef0a5f4d4}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!circle@{circle}}
+\index{circle@{circle}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{circle()}{circle()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a0af3710ff7c035adda74628ef0a5f4d4} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+circle (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x\+\_\+cen}{, }\item[{}]{y\+\_\+cen}{, }\item[{}]{r}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}adds a circle to the path\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_ab426281c5b36f59189d605681458abfe}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!close@{close}}
+\index{close@{close}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{close()}{close()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_ab426281c5b36f59189d605681458abfe} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a6a7da671f32cc35b5341295c0ca3e93d}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!curveTo@{curveTo}}
+\index{curveTo@{curveTo}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{curveTo()}{curveTo()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a6a7da671f32cc35b5341295c0ca3e93d} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+curve\+To (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x1}{, }\item[{}]{y1}{, }\item[{}]{x2}{, }\item[{}]{y2}{, }\item[{}]{x3}{, }\item[{}]{y3}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a4223bdedf6865295e237df9ffbbbf89e}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!ellipse@{ellipse}}
+\index{ellipse@{ellipse}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{ellipse()}{ellipse()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a4223bdedf6865295e237df9ffbbbf89e} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+ellipse (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{, }\item[{}]{y}{, }\item[{}]{width}{, }\item[{}]{height}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}adds an ellipse to the path\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_ab0a9d26ef52ff42610ca652bec1528fd}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!getCode@{getCode}}
+\index{getCode@{getCode}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{getCode()}{getCode()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_ab0a9d26ef52ff42610ca652bec1528fd} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+get\+Code (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_ae5c8ecef2b10c0208451f190212a2908}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!lineTo@{lineTo}}
+\index{lineTo@{lineTo}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{lineTo()}{lineTo()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_ae5c8ecef2b10c0208451f190212a2908} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+line\+To (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{, }\item[{}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a2c047a2203aa1313167711977a54ddc0}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!moveTo@{moveTo}}
+\index{moveTo@{moveTo}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{moveTo()}{moveTo()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a2c047a2203aa1313167711977a54ddc0} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+move\+To (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{, }\item[{}]{y}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_abb1a462870e007ae6c9bb23a8bbd2037}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!rect@{rect}}
+\index{rect@{rect}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{rect()}{rect()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_abb1a462870e007ae6c9bb23a8bbd2037} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+rect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{, }\item[{}]{y}{, }\item[{}]{width}{, }\item[{}]{height}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Adds a rectangle to the path\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a805a1ef38249dd67eb89fdfb33df01f9}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!roundRect@{roundRect}}
+\index{roundRect@{roundRect}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{roundRect()}{roundRect()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a805a1ef38249dd67eb89fdfb33df01f9} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+round\+Rect (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{x}{, }\item[{}]{y}{, }\item[{}]{width}{, }\item[{}]{height}{, }\item[{}]{radius}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Draws a rectangle with rounded corners. The corners are
+approximately quadrants of a circle, with the given radius.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a8d327878d9e5ffbf438235132582dfd2}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!\_code@{\_code}}
+\index{\_code@{\_code}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{\_code}{\_code}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_a8d327878d9e5ffbf438235132582dfd2} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+\_\+code = (code,\+[$\,$]\+)\+[code is None]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_abdbddf315941e2bafd472290c8fed26a}\index{reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}!\_code\_append@{\_code\_append}}
+\index{\_code\_append@{\_code\_append}!reportlab.pdfgen.pathobject.PDFPathObject@{reportlab.pdfgen.pathobject.PDFPathObject}}
+\doxysubsubsection{\texorpdfstring{\_code\_append}{\_code\_append}}
+{\footnotesize\ttfamily \label{classreportlab_1_1pdfgen_1_1pathobject_1_1_p_d_f_path_object_abdbddf315941e2bafd472290c8fed26a} 
+reportlab.\+pdfgen.\+pathobject.\+PDFPath\+Object.\+\_\+code\+\_\+append = self.\+\_\+init\+\_\+code\+\_\+append\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+pdfgen/\+\doxymbox{\hyperlink{pathobject_8py}{pathobject.\+py}}\end{DoxyCompactItemize}

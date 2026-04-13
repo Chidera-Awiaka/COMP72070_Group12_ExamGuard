@@ -1,0 +1,70 @@
+\doxysection{reportlab.\+graphics.\+barcode.\+usps4s Namespace Reference}
+\hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s}{}\label{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s}\index{reportlab.graphics.barcode.usps4s@{reportlab.graphics.barcode.usps4s}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1barcode_1_1usps4s_1_1_u_s_p_s__4_state}{USPS\+\_\+4\+State}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_a082b75530e73f9874e52e1570112070e}{nhex}} (i)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_a0e6102a9eea22f6a66be62bd2e174941}{\+\_\+crc11}} (value)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_a3744cb4858109b3184f477008da01ac9}{\+\_\+ru13}} (i)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_aa96bbb13e5b6749ef448edce8f15a6e7}{\+\_\+init\+Nof13\+Table}} (N, lenT)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_a035d79125a73f64cc7b1375fdebda3cf}{\+\_\+test}} ()
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_a0e6102a9eea22f6a66be62bd2e174941}\index{reportlab.graphics.barcode.usps4s@{reportlab.graphics.barcode.usps4s}!\_crc11@{\_crc11}}
+\index{\_crc11@{\_crc11}!reportlab.graphics.barcode.usps4s@{reportlab.graphics.barcode.usps4s}}
+\doxysubsubsection{\texorpdfstring{\_crc11()}{\_crc11()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_a0e6102a9eea22f6a66be62bd2e174941} 
+reportlab.\+graphics.\+barcode.\+usps4s.\+\_\+crc11 (\begin{DoxyParamCaption}\item[{}]{value}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}>>> usps = [USPS_4State('01234567094987654321',x).binary for x in ('','01234','012345678','01234567891')]
+>>> print(' '.join(nhex(x) for x in usps))
+0x1122103b5c2004b1 0xd138a87bab5cf3804b1 0x202bdc097711204d21804b1 0x16907b2a24abc16a2e5c004b1
+>>> print(' '.join(nhex(_crc11(x)) for x in usps))
+0x51 0x65 0x606 0x751
+\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_aa96bbb13e5b6749ef448edce8f15a6e7}\index{reportlab.graphics.barcode.usps4s@{reportlab.graphics.barcode.usps4s}!\_initNof13Table@{\_initNof13Table}}
+\index{\_initNof13Table@{\_initNof13Table}!reportlab.graphics.barcode.usps4s@{reportlab.graphics.barcode.usps4s}}
+\doxysubsubsection{\texorpdfstring{\_initNof13Table()}{\_initNof13Table()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_aa96bbb13e5b6749ef448edce8f15a6e7} 
+reportlab.\+graphics.\+barcode.\+usps4s.\+\_\+init\+Nof13\+Table (\begin{DoxyParamCaption}\item[{}]{N}{, }\item[{}]{lenT}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}create and return table of 13 bit values with N bits on
+>>> T = _initNof13Table(5,1287)
+>>> print(' '.join('T[%d]=%d' % (i, T[i]) for i in (0,1,2,3,4,1271,1272,1284,1285,1286)))
+T[0]=31 T[1]=7936 T[2]=47 T[3]=7808 T[4]=55 T[1271]=6275 T[1272]=6211 T[1284]=856 T[1285]=744 T[1286]=496
+\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_a3744cb4858109b3184f477008da01ac9}\index{reportlab.graphics.barcode.usps4s@{reportlab.graphics.barcode.usps4s}!\_ru13@{\_ru13}}
+\index{\_ru13@{\_ru13}!reportlab.graphics.barcode.usps4s@{reportlab.graphics.barcode.usps4s}}
+\doxysubsubsection{\texorpdfstring{\_ru13()}{\_ru13()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_a3744cb4858109b3184f477008da01ac9} 
+reportlab.\+graphics.\+barcode.\+usps4s.\+\_\+ru13 (\begin{DoxyParamCaption}\item[{}]{i}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}reverse unsigned 13 bit number
+>>> print(_ru13(7936), _ru13(31), _ru13(47), _ru13(7808))
+31 7936 7808 47
+\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_a035d79125a73f64cc7b1375fdebda3cf}\index{reportlab.graphics.barcode.usps4s@{reportlab.graphics.barcode.usps4s}!\_test@{\_test}}
+\index{\_test@{\_test}!reportlab.graphics.barcode.usps4s@{reportlab.graphics.barcode.usps4s}}
+\doxysubsubsection{\texorpdfstring{\_test()}{\_test()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_a035d79125a73f64cc7b1375fdebda3cf} 
+reportlab.\+graphics.\+barcode.\+usps4s.\+\_\+test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_a082b75530e73f9874e52e1570112070e}\index{reportlab.graphics.barcode.usps4s@{reportlab.graphics.barcode.usps4s}!nhex@{nhex}}
+\index{nhex@{nhex}!reportlab.graphics.barcode.usps4s@{reportlab.graphics.barcode.usps4s}}
+\doxysubsubsection{\texorpdfstring{nhex()}{nhex()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1graphics_1_1barcode_1_1usps4s_a082b75530e73f9874e52e1570112070e} 
+reportlab.\+graphics.\+barcode.\+usps4s.\+nhex (\begin{DoxyParamCaption}\item[{}]{i}{}\end{DoxyParamCaption})}
+

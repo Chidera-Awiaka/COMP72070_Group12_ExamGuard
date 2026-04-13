@@ -1,0 +1,197 @@
+\doxysection{reportlab.\+lib.\+textsplit Namespace Reference}
+\hypertarget{namespacereportlab_1_1lib_1_1textsplit}{}\label{namespacereportlab_1_1lib_1_1textsplit}\index{reportlab.lib.textsplit@{reportlab.lib.textsplit}}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_a6076e86b5785839eccdf43556f7c8b7c}{is\+\_\+multi\+\_\+byte}} (ch)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_a1a05a40638ea8609bc27a10ef4c8471f}{get\+Char\+Widths}} (word, font\+Name, font\+Size)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_a936351aebe234ec580ea03a761333510}{word\+Split}} (word, max\+Widths, font\+Name, font\+Size, encoding=\textquotesingle{}utf8\textquotesingle{})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_aad6f8af8182500bc5aa5e59f8be6ef3a}{dumb\+Split}} (word, widths, max\+Widths)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_ab84a6a4c50afbffbaafa38c882dd5f40}{kinsoku\+Shori\+Split}} (word, widths, avail\+Width)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_a9d4090ea6668d60103e29026c552cfc8}{cjkwrap}} (text, width, encoding="{}utf8"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_ab877b02919f506248c4485b29c8034d1}{CANNOT\+\_\+\+START\+\_\+\+LINE}}
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_a64aeb91653982d2d06e35f7c5dc2619e}{ALL\+\_\+\+CANNOT\+\_\+\+START}} = u\textquotesingle{}\textquotesingle{}.join(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_ab877b02919f506248c4485b29c8034d1}{CANNOT\+\_\+\+START\+\_\+\+LINE}})
+\item 
+list \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_a5665dde4d71af8bf8e2327a818797ce3}{CANNOT\+\_\+\+END\+\_\+\+LINE}}
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_aa72c42e8574a91be49ab17fc00a6450a}{ALL\+\_\+\+CANNOT\+\_\+\+END}} = u\textquotesingle{}\textquotesingle{}.join(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_a5665dde4d71af8bf8e2327a818797ce3}{CANNOT\+\_\+\+END\+\_\+\+LINE}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_a793e99911d490b45e5dd43d5e094739c}{rx}} = re.\+compile("{}(\+[\textbackslash{}u2e80-\/\textbackslash{}uffff]\+)"{}, re.\+UNICODE)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Helpers for text wrapping, hyphenation, Asian text splitting and kinsoku shori.
+
+How to split a 'big word' depends on the language and the writing system.  This module
+works on a Unicode string.  It ought to grow by allowing ore algoriths to be plugged
+in based on possible knowledge of the language and desirable 'niceness' of the algorithm.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1lib_1_1textsplit_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1lib_1_1textsplit_a9d4090ea6668d60103e29026c552cfc8}\index{reportlab.lib.textsplit@{reportlab.lib.textsplit}!cjkwrap@{cjkwrap}}
+\index{cjkwrap@{cjkwrap}!reportlab.lib.textsplit@{reportlab.lib.textsplit}}
+\doxysubsubsection{\texorpdfstring{cjkwrap()}{cjkwrap()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1textsplit_a9d4090ea6668d60103e29026c552cfc8} 
+reportlab.\+lib.\+textsplit.\+cjkwrap (\begin{DoxyParamCaption}\item[{}]{text}{, }\item[{}]{width}{, }\item[{}]{encoding}{ = {\ttfamily "{}utf8"{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1textsplit_aad6f8af8182500bc5aa5e59f8be6ef3a}\index{reportlab.lib.textsplit@{reportlab.lib.textsplit}!dumbSplit@{dumbSplit}}
+\index{dumbSplit@{dumbSplit}!reportlab.lib.textsplit@{reportlab.lib.textsplit}}
+\doxysubsubsection{\texorpdfstring{dumbSplit()}{dumbSplit()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1textsplit_aad6f8af8182500bc5aa5e59f8be6ef3a} 
+reportlab.\+lib.\+textsplit.\+dumb\+Split (\begin{DoxyParamCaption}\item[{}]{word}{, }\item[{}]{widths}{, }\item[{}]{max\+Widths}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function attempts to fit as many characters as possible into the available
+space, cutting "like a knife" between characters.  This would do for Chinese.
+It returns a list of (text, extraSpace) items where text is a Unicode string,
+and extraSpace is the points of unused space available on the line.  This is a
+structure which is fairly easy to display, and supports 'backtracking' approaches
+after the fact.
+
+Test cases assume each character is ten points wide...
+
+>>> dumbSplit(u'Hello', [10]*5, 60)
+[[10, u'Hello']]
+>>> dumbSplit(u'Hello', [10]*5, 50)
+[[0, u'Hello']]
+>>> dumbSplit(u'Hello', [10]*5, 40)
+[[0, u'Hell'], [30, u'o']]
+\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1lib_1_1textsplit_a1a05a40638ea8609bc27a10ef4c8471f}\index{reportlab.lib.textsplit@{reportlab.lib.textsplit}!getCharWidths@{getCharWidths}}
+\index{getCharWidths@{getCharWidths}!reportlab.lib.textsplit@{reportlab.lib.textsplit}}
+\doxysubsubsection{\texorpdfstring{getCharWidths()}{getCharWidths()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1textsplit_a1a05a40638ea8609bc27a10ef4c8471f} 
+reportlab.\+lib.\+textsplit.\+get\+Char\+Widths (\begin{DoxyParamCaption}\item[{}]{word}{, }\item[{}]{font\+Name}{, }\item[{}]{font\+Size}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Returns a list of glyph widths.
+
+>>> getCharWidths('Hello', 'Courier', 10)
+[6.0, 6.0, 6.0, 6.0, 6.0]
+>>> from reportlab.pdfbase.cidfonts import UnicodeCIDFont
+>>> from reportlab.pdfbase.pdfmetrics import registerFont
+>>> registerFont(UnicodeCIDFont('HeiseiMin-W3'))
+>>> getCharWidths(u'\u6771\u4EAC', 'HeiseiMin-W3', 10)   #most kanji are 100 ems
+[10.0, 10.0]
+\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1lib_1_1textsplit_a6076e86b5785839eccdf43556f7c8b7c}\index{reportlab.lib.textsplit@{reportlab.lib.textsplit}!is\_multi\_byte@{is\_multi\_byte}}
+\index{is\_multi\_byte@{is\_multi\_byte}!reportlab.lib.textsplit@{reportlab.lib.textsplit}}
+\doxysubsubsection{\texorpdfstring{is\_multi\_byte()}{is\_multi\_byte()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1textsplit_a6076e86b5785839eccdf43556f7c8b7c} 
+reportlab.\+lib.\+textsplit.\+is\+\_\+multi\+\_\+byte (\begin{DoxyParamCaption}\item[{}]{ch}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1textsplit_ab84a6a4c50afbffbaafa38c882dd5f40}\index{reportlab.lib.textsplit@{reportlab.lib.textsplit}!kinsokuShoriSplit@{kinsokuShoriSplit}}
+\index{kinsokuShoriSplit@{kinsokuShoriSplit}!reportlab.lib.textsplit@{reportlab.lib.textsplit}}
+\doxysubsubsection{\texorpdfstring{kinsokuShoriSplit()}{kinsokuShoriSplit()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1textsplit_ab84a6a4c50afbffbaafa38c882dd5f40} 
+reportlab.\+lib.\+textsplit.\+kinsoku\+Shori\+Split (\begin{DoxyParamCaption}\item[{}]{word}{, }\item[{}]{widths}{, }\item[{}]{avail\+Width}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Split according to Japanese rules according to CJKV (Lunde).
+
+Essentially look for "nice splits" so that we don't end a line
+with an open bracket, or start one with a full stop, or stuff like
+that.  There is no attempt to try to split compound words into
+constituent kanji.  It currently uses wrap-down: packs as much
+on a line as possible, then backtracks if needed
+
+This returns a number of words each of which should just about fit
+on a line.  If you give it a whole paragraph at once, it will
+do all the splits.
+
+It's possible we might slightly step over the width limit
+if we do hanging punctuation marks in future (e.g. dangle a Japanese
+full stop in the right margin rather than using a whole character
+box.
+\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1lib_1_1textsplit_a936351aebe234ec580ea03a761333510}\index{reportlab.lib.textsplit@{reportlab.lib.textsplit}!wordSplit@{wordSplit}}
+\index{wordSplit@{wordSplit}!reportlab.lib.textsplit@{reportlab.lib.textsplit}}
+\doxysubsubsection{\texorpdfstring{wordSplit()}{wordSplit()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1textsplit_a936351aebe234ec580ea03a761333510} 
+reportlab.\+lib.\+textsplit.\+word\+Split (\begin{DoxyParamCaption}\item[{}]{word}{, }\item[{}]{max\+Widths}{, }\item[{}]{font\+Name}{, }\item[{}]{font\+Size}{, }\item[{}]{encoding}{ = {\ttfamily \textquotesingle{}utf8\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Attempts to break a word which lacks spaces into two parts, the first of which
+fits in the remaining space.  It is allowed to add hyphens or whatever it wishes.
+
+This is intended as a wrapper for some language- and user-choice-specific splitting
+algorithms.  It should only be called after line breaking on spaces, which covers western
+languages and is highly optimised already.  It works on the 'last unsplit word'.
+
+Presumably with further study one could write a Unicode splitting algorithm for text
+fragments whick was much faster.
+
+Courier characters should be 6 points wide.
+>>> wordSplit('HelloWorld', 30, 'Courier', 10)
+[[0.0, 'Hello'], [0.0, 'World']]
+>>> wordSplit('HelloWorld', 31, 'Courier', 10)
+[[1.0, 'Hello'], [1.0, 'World']]
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespacereportlab_1_1lib_1_1textsplit_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacereportlab_1_1lib_1_1textsplit_aa72c42e8574a91be49ab17fc00a6450a}\index{reportlab.lib.textsplit@{reportlab.lib.textsplit}!ALL\_CANNOT\_END@{ALL\_CANNOT\_END}}
+\index{ALL\_CANNOT\_END@{ALL\_CANNOT\_END}!reportlab.lib.textsplit@{reportlab.lib.textsplit}}
+\doxysubsubsection{\texorpdfstring{ALL\_CANNOT\_END}{ALL\_CANNOT\_END}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1textsplit_aa72c42e8574a91be49ab17fc00a6450a} 
+str reportlab.\+lib.\+textsplit.\+ALL\+\_\+\+CANNOT\+\_\+\+END = u\textquotesingle{}\textquotesingle{}.join(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_a5665dde4d71af8bf8e2327a818797ce3}{CANNOT\+\_\+\+END\+\_\+\+LINE}})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1textsplit_a64aeb91653982d2d06e35f7c5dc2619e}\index{reportlab.lib.textsplit@{reportlab.lib.textsplit}!ALL\_CANNOT\_START@{ALL\_CANNOT\_START}}
+\index{ALL\_CANNOT\_START@{ALL\_CANNOT\_START}!reportlab.lib.textsplit@{reportlab.lib.textsplit}}
+\doxysubsubsection{\texorpdfstring{ALL\_CANNOT\_START}{ALL\_CANNOT\_START}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1textsplit_a64aeb91653982d2d06e35f7c5dc2619e} 
+str reportlab.\+lib.\+textsplit.\+ALL\+\_\+\+CANNOT\+\_\+\+START = u\textquotesingle{}\textquotesingle{}.join(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1textsplit_ab877b02919f506248c4485b29c8034d1}{CANNOT\+\_\+\+START\+\_\+\+LINE}})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1textsplit_a5665dde4d71af8bf8e2327a818797ce3}\index{reportlab.lib.textsplit@{reportlab.lib.textsplit}!CANNOT\_END\_LINE@{CANNOT\_END\_LINE}}
+\index{CANNOT\_END\_LINE@{CANNOT\_END\_LINE}!reportlab.lib.textsplit@{reportlab.lib.textsplit}}
+\doxysubsubsection{\texorpdfstring{CANNOT\_END\_LINE}{CANNOT\_END\_LINE}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1textsplit_a5665dde4d71af8bf8e2327a818797ce3} 
+list reportlab.\+lib.\+textsplit.\+CANNOT\+\_\+\+END\+\_\+\+LINE}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{comment}{\#strongly\ prohibited}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{u'\(\backslash\)u2018\(\backslash\)u201c\(\backslash\)uff08[\{\(\backslash\)uff08\(\backslash\)u3014\(\backslash\)uff3b\(\backslash\)uff5b\(\backslash\)u3008\(\backslash\)u300a\(\backslash\)u300c\(\backslash\)u300e\(\backslash\)u3010'},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{comment}{\#weaker\ -\/\ currency\ symbols,\ hash,\ postcode\ -\/\ prefixes}}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{u'\$\(\backslash\)u00a3@\#\(\backslash\)uffe5\(\backslash\)uff04\(\backslash\)uffe1\(\backslash\)uff20\(\backslash\)u3012\(\backslash\)u00a7'}}
+\DoxyCodeLine{00006\ \ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1lib_1_1textsplit_ab877b02919f506248c4485b29c8034d1}\index{reportlab.lib.textsplit@{reportlab.lib.textsplit}!CANNOT\_START\_LINE@{CANNOT\_START\_LINE}}
+\index{CANNOT\_START\_LINE@{CANNOT\_START\_LINE}!reportlab.lib.textsplit@{reportlab.lib.textsplit}}
+\doxysubsubsection{\texorpdfstring{CANNOT\_START\_LINE}{CANNOT\_START\_LINE}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1textsplit_ab877b02919f506248c4485b29c8034d1} 
+list reportlab.\+lib.\+textsplit.\+CANNOT\+\_\+\+START\+\_\+\+LINE}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{comment}{\#strongly\ prohibited\ e.g.\ end\ brackets,\ stop,\ exclamation...}}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{u'!\(\backslash\)',.:;?!"{})]\(\backslash\)u3001\(\backslash\)u3002\(\backslash\)u300d\(\backslash\)u300f\(\backslash\)u3011\(\backslash\)u3015\(\backslash\)uff3d\(\backslash\)u3011\(\backslash\)uff09'},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{comment}{\#middle\ priority\ e.g.\ continuation\ small\ vowels\ -\/\ wrapped\ on\ two\ lines\ but\ one\ string...}}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{u'\(\backslash\)u3005\(\backslash\)u2015\(\backslash\)u3041\(\backslash\)u3043\(\backslash\)u3045\(\backslash\)u3047\(\backslash\)u3049\(\backslash\)u3063\(\backslash\)u3083\(\backslash\)u3085\(\backslash\)u3087\(\backslash\)u308e\(\backslash\)u30a1\(\backslash\)u30a3'}}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{u'\(\backslash\)u30a5\(\backslash\)u30a7\(\backslash\)u30a9\(\backslash\)u30c3\(\backslash\)u30e3\(\backslash\)u30e5\(\backslash\)u30e7\(\backslash\)u30ee\(\backslash\)u30fc\(\backslash\)u30f5\(\backslash\)u30f6'},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{comment}{\#weakly\ prohibited\ -\/\ continuations,\ celsius\ symbol\ etc.}}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{u'\(\backslash\)u309b\(\backslash\)u309c\(\backslash\)u30fb\(\backslash\)u30fd\(\backslash\)u30fe\(\backslash\)u309d\(\backslash\)u309e\(\backslash\)u2015\(\backslash\)u2010\(\backslash\)xb0\(\backslash\)u2032\(\backslash\)u2033\(\backslash\)u2103\(\backslash\)uffe0\(\backslash\)uff05\(\backslash\)u2030'}}
+\DoxyCodeLine{00009\ \ \ \ \ ]}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1lib_1_1textsplit_a793e99911d490b45e5dd43d5e094739c}\index{reportlab.lib.textsplit@{reportlab.lib.textsplit}!rx@{rx}}
+\index{rx@{rx}!reportlab.lib.textsplit@{reportlab.lib.textsplit}}
+\doxysubsubsection{\texorpdfstring{rx}{rx}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1textsplit_a793e99911d490b45e5dd43d5e094739c} 
+reportlab.\+lib.\+textsplit.\+rx = re.\+compile("{}(\+[\textbackslash{}u2e80-\/\textbackslash{}uffff]\+)"{}, re.\+UNICODE)}
+

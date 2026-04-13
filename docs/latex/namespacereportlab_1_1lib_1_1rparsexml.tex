@@ -1,0 +1,315 @@
+\doxysection{reportlab.\+lib.\+rparsexml Namespace Reference}
+\hypertarget{namespacereportlab_1_1lib_1_1rparsexml}{}\label{namespacereportlab_1_1lib_1_1rparsexml}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rparsexml_1_1smart_decode}{smart\+Decode}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a2fd5ff3704ab2c7b8af36e015bb5c737}{warn\+CB}} (s)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_aaa82c3b908da2f8601885aefa527114f}{parsexml}} (xml\+Text, one\+Outermost\+Tag=0, eo\+CB=None, entity\+Replacer=None, parse\+Opts=\{\})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a9f90f330d3306f39d18e9d4b361d0555}{un\+Escape\+Content\+List}} (content\+List)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a3b7266cabc0c79bda6d6a72f25f3f870}{parsexml\+Simple}} (xmltext, one\+Outermost\+Tag=0, eo\+CB=None, entity\+Replacer=\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a9f90f330d3306f39d18e9d4b361d0555}{un\+Escape\+Content\+List}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a9e8b06c60dd5b17f518bdecf98cd97a5}{parse\+File}} (filename)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a07fa15213cd7b3b4279d7924aa638c98}{skip\+\_\+prologue}} (text, cursor)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_af01c184f3df31b5521a15879f1600ce4}{parsexml0}} (xmltext, startingat=0, toplevel=1, entity\+Replacer=\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a9f90f330d3306f39d18e9d4b361d0555}{un\+Escape\+Content\+List}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a54753148060a6628c265eea5bc3eae83}{pprettyprint}} (parsedxml)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_ae822da993ca5cf89e3ca2c379b70414f}{testparse}} (s, \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a94a1d4fac3373140cca9637ff21c7eb8}{dump}}=0)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a0235bb58215727fe244df6ee78627610}{test}} (\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a94a1d4fac3373140cca9637ff21c7eb8}{dump}}=0)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a303afecc7a2ebf611fe8292c00befcca}{Require\+Py\+RXP}} = 0
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a9dab76004bbbcde27cafc9a8192413d1}{simpleparse}} = 0
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_adca4e50482422bc0de124e45daf8639b}{py\+RXP\+\_\+parser}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a92d814503ffbbb82ff37a4584162f89c}{smart\+Decode}} = smart\+Decode()
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a044f1eb89c6425491b1fd44e022613ec}{NONAME}} = "{}"{}
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a1002c39664acd68351da78f2469c5842}{NAMEKEY}} = 0
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a98c6b6c4b540c7ee20e6159a160a8086}{CONTENTSKEY}} = 1
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a9e3422f3a45227e24088041e28f88708}{CDATAMARKER}} = "{}$<$!\+[CDATA\+["{}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a2e4de405d2692d49ec5407b677a9b450}{LENCDATAMARKER}} = len(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a9e3422f3a45227e24088041e28f88708}{CDATAMARKER}})
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a032ecefa2e5f9bf8f985f9ad3d868164}{CDATAENDMARKER}} = "{}]\+]\+$>$"{}
+\item 
+list \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a3150ad05bc8eebe26234005b73a31e70}{replacelist}} = \+[("{}\&lt;"{}, "{}$<$"{}), ("{}\&gt;"{}, "{}$>$"{}), ("{}\&amp;"{}, "{}\&"{})]\+
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a191a74f83c500d82cbbafe8154bd3f74}{parsexml}} = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a3b7266cabc0c79bda6d6a72f25f3f870}{parsexml\+Simple}}
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_aba5d7bba28a4d331bd031f1aed47798d}{verbose}} = 0
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a94a1d4fac3373140cca9637ff21c7eb8}{dump}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_abf9a58d3b16556690b2937e243053257}{now}} = time()
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a5e7e9556e70d1541ba31529c3d1570c1}{seen}} = 0
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a43b1309d373f0c1a68cfbfa96256f66b}{t}} = \+\_\+f.\+read()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Very simple and fast XML parser, used for intra-paragraph text.
+
+Devised by Aaron Watters in the bad old days before Python had fast
+parsers available.  Constructs the lightest possible in-memory
+representation; parses most files we have seen in pure python very
+quickly.
+
+The output structure is the same as the one produced by pyRXP,
+our validating C-based parser, which was written later.  It will
+use pyRXP if available.
+
+This is used to parse intra-paragraph markup.
+
+Example parse::
+
+    <this type="xml">text <b>in</b> xml</this>
+
+    ( "this",
+      {"type": "xml"},
+      [ "text ",
+        ("b", None, ["in"], None),
+        " xml"
+        ]
+       None )
+
+    { 0: "this"
+      "type": "xml"
+      1: ["text ",
+          {0: "b", 1:["in"]},
+          " xml"]
+    }
+
+Ie, xml tag translates to a tuple:
+ (name, dictofattributes, contentlist, miscellaneousinfo)
+
+where miscellaneousinfo can be anything, (but defaults to None)
+(with the intention of adding, eg, line number information)
+
+special cases: name of "" means "top level, no containing tag".
+Top level parse always looks like this::
+
+    ("", list, None, None)
+
+ contained text of None means <simple_tag/>
+
+In order to support stuff like::
+
+    <this></this><one></one>
+
+AT THE MOMENT &amp; ETCETERA ARE IGNORED. THEY MUST BE PROCESSED
+IN A POST-PROCESSING STEP.
+
+PROLOGUES ARE NOT UNDERSTOOD.  OTHER STUFF IS PROBABLY MISSING.
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a9e8b06c60dd5b17f518bdecf98cd97a5}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!parseFile@{parseFile}}
+\index{parseFile@{parseFile}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{parseFile()}{parseFile()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a9e8b06c60dd5b17f518bdecf98cd97a5} 
+reportlab.\+lib.\+rparsexml.\+parse\+File (\begin{DoxyParamCaption}\item[{}]{filename}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_aaa82c3b908da2f8601885aefa527114f}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!parsexml@{parsexml}}
+\index{parsexml@{parsexml}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{parsexml()}{parsexml()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_aaa82c3b908da2f8601885aefa527114f} 
+reportlab.\+lib.\+rparsexml.\+parsexml (\begin{DoxyParamCaption}\item[{}]{xml\+Text}{, }\item[{}]{one\+Outermost\+Tag}{ = {\ttfamily 0}, }\item[{}]{eo\+CB}{ = {\ttfamily None}, }\item[{}]{entity\+Replacer}{ = {\ttfamily None}, }\item[{}]{parse\+Opts}{ = {\ttfamily \{\}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_af01c184f3df31b5521a15879f1600ce4}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!parsexml0@{parsexml0}}
+\index{parsexml0@{parsexml0}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{parsexml0()}{parsexml0()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_af01c184f3df31b5521a15879f1600ce4} 
+reportlab.\+lib.\+rparsexml.\+parsexml0 (\begin{DoxyParamCaption}\item[{}]{xmltext}{, }\item[{}]{startingat}{ = {\ttfamily 0}, }\item[{}]{toplevel}{ = {\ttfamily 1}, }\item[{}]{entity\+Replacer}{ = {\ttfamily \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a9f90f330d3306f39d18e9d4b361d0555}{un\+Escape\+Content\+List}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}simple recursive descent xml parser...
+   return (dictionary, endcharacter)
+   special case: comment returns (None, endcharacter)\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a3b7266cabc0c79bda6d6a72f25f3f870}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!parsexmlSimple@{parsexmlSimple}}
+\index{parsexmlSimple@{parsexmlSimple}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{parsexmlSimple()}{parsexmlSimple()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a3b7266cabc0c79bda6d6a72f25f3f870} 
+reportlab.\+lib.\+rparsexml.\+parsexml\+Simple (\begin{DoxyParamCaption}\item[{}]{xmltext}{, }\item[{}]{one\+Outermost\+Tag}{ = {\ttfamily 0}, }\item[{}]{eo\+CB}{ = {\ttfamily None}, }\item[{}]{entity\+Replacer}{ = {\ttfamily \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a9f90f330d3306f39d18e9d4b361d0555}{un\+Escape\+Content\+List}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}official interface: discard unused cursor info\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a54753148060a6628c265eea5bc3eae83}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!pprettyprint@{pprettyprint}}
+\index{pprettyprint@{pprettyprint}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{pprettyprint()}{pprettyprint()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a54753148060a6628c265eea5bc3eae83} 
+reportlab.\+lib.\+rparsexml.\+pprettyprint (\begin{DoxyParamCaption}\item[{}]{parsedxml}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}pretty printer mainly for testing\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a07fa15213cd7b3b4279d7924aa638c98}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!skip\_prologue@{skip\_prologue}}
+\index{skip\_prologue@{skip\_prologue}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{skip\_prologue()}{skip\_prologue()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a07fa15213cd7b3b4279d7924aa638c98} 
+reportlab.\+lib.\+rparsexml.\+skip\+\_\+prologue (\begin{DoxyParamCaption}\item[{}]{text}{, }\item[{}]{cursor}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}skip any prologue found after cursor, return index of rest of text\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a0235bb58215727fe244df6ee78627610}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!test@{test}}
+\index{test@{test}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a0235bb58215727fe244df6ee78627610} 
+reportlab.\+lib.\+rparsexml.\+test (\begin{DoxyParamCaption}\item[{}]{dump}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_ae822da993ca5cf89e3ca2c379b70414f}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!testparse@{testparse}}
+\index{testparse@{testparse}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{testparse()}{testparse()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_ae822da993ca5cf89e3ca2c379b70414f} 
+reportlab.\+lib.\+rparsexml.\+testparse (\begin{DoxyParamCaption}\item[{}]{s}{, }\item[{}]{dump}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a9f90f330d3306f39d18e9d4b361d0555}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!unEscapeContentList@{unEscapeContentList}}
+\index{unEscapeContentList@{unEscapeContentList}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{unEscapeContentList()}{unEscapeContentList()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a9f90f330d3306f39d18e9d4b361d0555} 
+reportlab.\+lib.\+rparsexml.\+un\+Escape\+Content\+List (\begin{DoxyParamCaption}\item[{}]{content\+List}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a2fd5ff3704ab2c7b8af36e015bb5c737}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!warnCB@{warnCB}}
+\index{warnCB@{warnCB}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{warnCB()}{warnCB()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a2fd5ff3704ab2c7b8af36e015bb5c737} 
+reportlab.\+lib.\+rparsexml.\+warn\+CB (\begin{DoxyParamCaption}\item[{}]{s}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a032ecefa2e5f9bf8f985f9ad3d868164}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!CDATAENDMARKER@{CDATAENDMARKER}}
+\index{CDATAENDMARKER@{CDATAENDMARKER}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{CDATAENDMARKER}{CDATAENDMARKER}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a032ecefa2e5f9bf8f985f9ad3d868164} 
+str reportlab.\+lib.\+rparsexml.\+CDATAENDMARKER = "{}]\+]\+$>$"{}}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a9e3422f3a45227e24088041e28f88708}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!CDATAMARKER@{CDATAMARKER}}
+\index{CDATAMARKER@{CDATAMARKER}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{CDATAMARKER}{CDATAMARKER}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a9e3422f3a45227e24088041e28f88708} 
+str reportlab.\+lib.\+rparsexml.\+CDATAMARKER = "{}$<$!\+[CDATA\+["{}}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a98c6b6c4b540c7ee20e6159a160a8086}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!CONTENTSKEY@{CONTENTSKEY}}
+\index{CONTENTSKEY@{CONTENTSKEY}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{CONTENTSKEY}{CONTENTSKEY}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a98c6b6c4b540c7ee20e6159a160a8086} 
+int reportlab.\+lib.\+rparsexml.\+CONTENTSKEY = 1}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a94a1d4fac3373140cca9637ff21c7eb8}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!dump@{dump}}
+\index{dump@{dump}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{dump}{dump}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a94a1d4fac3373140cca9637ff21c7eb8} 
+reportlab.\+lib.\+rparsexml.\+dump}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a2e4de405d2692d49ec5407b677a9b450}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!LENCDATAMARKER@{LENCDATAMARKER}}
+\index{LENCDATAMARKER@{LENCDATAMARKER}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{LENCDATAMARKER}{LENCDATAMARKER}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a2e4de405d2692d49ec5407b677a9b450} 
+reportlab.\+lib.\+rparsexml.\+LENCDATAMARKER = len(\doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a9e3422f3a45227e24088041e28f88708}{CDATAMARKER}})}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a1002c39664acd68351da78f2469c5842}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!NAMEKEY@{NAMEKEY}}
+\index{NAMEKEY@{NAMEKEY}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{NAMEKEY}{NAMEKEY}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a1002c39664acd68351da78f2469c5842} 
+int reportlab.\+lib.\+rparsexml.\+NAMEKEY = 0}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a044f1eb89c6425491b1fd44e022613ec}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!NONAME@{NONAME}}
+\index{NONAME@{NONAME}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{NONAME}{NONAME}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a044f1eb89c6425491b1fd44e022613ec} 
+str reportlab.\+lib.\+rparsexml.\+NONAME = "{}"{}}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_abf9a58d3b16556690b2937e243053257}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!now@{now}}
+\index{now@{now}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{now}{now}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_abf9a58d3b16556690b2937e243053257} 
+reportlab.\+lib.\+rparsexml.\+now = time()}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a191a74f83c500d82cbbafe8154bd3f74}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!parsexml@{parsexml}}
+\index{parsexml@{parsexml}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{parsexml}{parsexml}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a191a74f83c500d82cbbafe8154bd3f74} 
+reportlab.\+lib.\+rparsexml.\+parsexml = \doxymbox{\hyperlink{namespacereportlab_1_1lib_1_1rparsexml_a3b7266cabc0c79bda6d6a72f25f3f870}{parsexml\+Simple}}}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_adca4e50482422bc0de124e45daf8639b}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!pyRXP\_parser@{pyRXP\_parser}}
+\index{pyRXP\_parser@{pyRXP\_parser}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{pyRXP\_parser}{pyRXP\_parser}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_adca4e50482422bc0de124e45daf8639b} 
+reportlab.\+lib.\+rparsexml.\+py\+RXP\+\_\+parser}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ pyRXPU.Parser(}
+\DoxyCodeLine{00002\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ErrorOnValidityErrors=1,}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ NoNoDTDWarning=1,}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ExpandCharacterEntities=1,}
+\DoxyCodeLine{00005\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ExpandGeneralEntities=1,}
+\DoxyCodeLine{00006\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ warnCB\ =\ warnCB,}
+\DoxyCodeLine{00007\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ srcName=\textcolor{stringliteral}{'string\ input'},}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ReturnUTF8\ =\ 0,}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ )}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a3150ad05bc8eebe26234005b73a31e70}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!replacelist@{replacelist}}
+\index{replacelist@{replacelist}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{replacelist}{replacelist}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a3150ad05bc8eebe26234005b73a31e70} 
+list reportlab.\+lib.\+rparsexml.\+replacelist = \+[("{}\&lt;"{}, "{}$<$"{}), ("{}\&gt;"{}, "{}$>$"{}), ("{}\&amp;"{}, "{}\&"{})]\+}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a303afecc7a2ebf611fe8292c00befcca}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!RequirePyRXP@{RequirePyRXP}}
+\index{RequirePyRXP@{RequirePyRXP}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{RequirePyRXP}{RequirePyRXP}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a303afecc7a2ebf611fe8292c00befcca} 
+int reportlab.\+lib.\+rparsexml.\+Require\+Py\+RXP = 0}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a5e7e9556e70d1541ba31529c3d1570c1}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!seen@{seen}}
+\index{seen@{seen}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{seen}{seen}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a5e7e9556e70d1541ba31529c3d1570c1} 
+int reportlab.\+lib.\+rparsexml.\+seen = 0}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a9dab76004bbbcde27cafc9a8192413d1}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!simpleparse@{simpleparse}}
+\index{simpleparse@{simpleparse}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{simpleparse}{simpleparse}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a9dab76004bbbcde27cafc9a8192413d1} 
+int reportlab.\+lib.\+rparsexml.\+simpleparse = 0}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a92d814503ffbbb82ff37a4584162f89c}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!smartDecode@{smartDecode}}
+\index{smartDecode@{smartDecode}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{smartDecode}{smartDecode}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a92d814503ffbbb82ff37a4584162f89c} 
+reportlab.\+lib.\+rparsexml.\+smart\+Decode = smart\+Decode()}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_a43b1309d373f0c1a68cfbfa96256f66b}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!t@{t}}
+\index{t@{t}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_a43b1309d373f0c1a68cfbfa96256f66b} 
+reportlab.\+lib.\+rparsexml.\+t = \+\_\+f.\+read()}
+
+\Hypertarget{namespacereportlab_1_1lib_1_1rparsexml_aba5d7bba28a4d331bd031f1aed47798d}\index{reportlab.lib.rparsexml@{reportlab.lib.rparsexml}!verbose@{verbose}}
+\index{verbose@{verbose}!reportlab.lib.rparsexml@{reportlab.lib.rparsexml}}
+\doxysubsubsection{\texorpdfstring{verbose}{verbose}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1lib_1_1rparsexml_aba5d7bba28a4d331bd031f1aed47798d} 
+int reportlab.\+lib.\+rparsexml.\+verbose = 0}
+

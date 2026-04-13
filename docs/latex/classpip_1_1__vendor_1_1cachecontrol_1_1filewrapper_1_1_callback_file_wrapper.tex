@@ -1,0 +1,82 @@
+\doxysection{pip.\+\_\+vendor.\+cachecontrol.\+filewrapper.\+Callback\+File\+Wrapper Class Reference}
+\hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper}{}\label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper}\index{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper@{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a9ca7e8f653138f7f1650c7b847a114e5}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, HTTPResponse fp, Callable\+[\+[bytes]\+, None]\+\texorpdfstring{$\vert$}{|}None callback)
+\item 
+Any \doxymbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_af22d09088e40c27ff096a1d953153808}{\+\_\+\+\_\+getattr\+\_\+\+\_\+}} (self, str name)
+\item 
+bytes \doxymbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_afceb112c071f7b24b9db274a61213b68}{read}} (self, int\texorpdfstring{$\vert$}{|}None amt=None)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a02b4367aa5d90f36d183d7f028c80bd7}{\+\_\+close}} (self)
+\item 
+bytes \doxymbox{\hyperlink{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_aa5efb6219ceca3e2b3d937a8a91a7e5f}{\+\_\+safe\+\_\+read}} (self, int amt)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Small wrapper around a fp object which will tee everything read into a
+buffer, and when that file is closed it will execute a callback with the
+contents of that buffer.
+
+All attributes are proxied to the underlying file object.
+
+This class uses members with a double underscore (__) leading prefix so as
+not to accidentally shadow an attribute.
+
+The data is stored in a temporary file until it is all available.  As long
+as the temporary files directory is disk-based (sometimes it's a
+memory-backed-``tmpfs`` on Linux), data will be unloaded to disk if memory
+pressure is high.  For small files the disk usually won't be used at all,
+it'll all be in the filesystem memory cache, so there should be no
+performance impact.
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a9ca7e8f653138f7f1650c7b847a114e5}\index{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper@{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper@{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a9ca7e8f653138f7f1650c7b847a114e5} 
+ None pip.\+\_\+vendor.\+cachecontrol.\+filewrapper.\+Callback\+File\+Wrapper.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{HTTPResponse}]{fp}{, }\item[{Callable\+[\+[bytes]\+, None]\+ \texorpdfstring{$\vert$}{|} None     }]{callback}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_af22d09088e40c27ff096a1d953153808}\index{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper@{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper}!\_\_getattr\_\_@{\_\_getattr\_\_}}
+\index{\_\_getattr\_\_@{\_\_getattr\_\_}!pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper@{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper}}
+\doxysubsubsection{\texorpdfstring{\_\_getattr\_\_()}{\_\_getattr\_\_()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_af22d09088e40c27ff096a1d953153808} 
+ Any pip.\+\_\+vendor.\+cachecontrol.\+filewrapper.\+Callback\+File\+Wrapper.\+\_\+\+\_\+getattr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{str}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a02b4367aa5d90f36d183d7f028c80bd7}\index{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper@{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper}!\_close@{\_close}}
+\index{\_close@{\_close}!pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper@{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper}}
+\doxysubsubsection{\texorpdfstring{\_close()}{\_close()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_a02b4367aa5d90f36d183d7f028c80bd7} 
+ None pip.\+\_\+vendor.\+cachecontrol.\+filewrapper.\+Callback\+File\+Wrapper.\+\_\+close (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_aa5efb6219ceca3e2b3d937a8a91a7e5f}\index{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper@{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper}!\_safe\_read@{\_safe\_read}}
+\index{\_safe\_read@{\_safe\_read}!pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper@{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper}}
+\doxysubsubsection{\texorpdfstring{\_safe\_read()}{\_safe\_read()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_aa5efb6219ceca3e2b3d937a8a91a7e5f} 
+ bytes pip.\+\_\+vendor.\+cachecontrol.\+filewrapper.\+Callback\+File\+Wrapper.\+\_\+safe\+\_\+read (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int}]{amt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_afceb112c071f7b24b9db274a61213b68}\index{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper@{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper}!read@{read}}
+\index{read@{read}!pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper@{pip.\_vendor.cachecontrol.filewrapper.CallbackFileWrapper}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily \label{classpip_1_1__vendor_1_1cachecontrol_1_1filewrapper_1_1_callback_file_wrapper_afceb112c071f7b24b9db274a61213b68} 
+ bytes pip.\+\_\+vendor.\+cachecontrol.\+filewrapper.\+Callback\+File\+Wrapper.\+read (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{int \texorpdfstring{$\vert$}{|} None }]{amt}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+pip/\+\+\_\+vendor/\+cachecontrol/\+\doxymbox{\hyperlink{filewrapper_8py}{filewrapper.\+py}}\end{DoxyCompactItemize}

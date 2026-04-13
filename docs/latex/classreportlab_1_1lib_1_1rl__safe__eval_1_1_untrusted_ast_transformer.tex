@@ -1,0 +1,1214 @@
+\doxysection{reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer Class Reference}
+\hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer}{}\label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+Inheritance diagram for reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer:\+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab342a6b0e13f6b28456a009cd7c52baa}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a68b1250ed3ec39e9aa8792fde6db0d01}{names\+\_\+seen}}=None, \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a43d3e780d84a2728ddead7d663411560}{name\+Is\+Allowed}}=None)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_acae574bc44df54ad4b624f2cb8321907}{tmp\+Name}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a03cb89f1806183ddbe196f1044fe1444}{error}} (self, node, msg)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae1b563c2e0aaa1f6ea8680305edb2732}{guard\+\_\+iter}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_afddee21821d04f7851d72c3b6ebc4727}{is\+\_\+starred}} (self, ob)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9c9f5e3e7230856a3f7fae5b3c80405f}{gen\+\_\+unpack\+\_\+spec}} (self, tpl)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad3e564fcf71698ecf8bf15ecf4a8990b}{protect\+\_\+unpack\+\_\+sequence}} (self, target, value)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a0e89bc32d5c59760c046519db135ae7a}{gen\+\_\+unpack\+\_\+wrapper}} (self, node, target, ctx=\textquotesingle{}store\textquotesingle{})
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae2b1a1fd178e3668c8c82dd86a1e3248}{gen\+\_\+lambda}} (self, args, body)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a76fdde6b8e774e54afbf775208537aba}{gen\+\_\+del\+\_\+stmt}} (self, name\+\_\+to\+\_\+del)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a63d771644b13e6c5476362c8a272c1ea}{transform\+\_\+slice}} (self, slice\+\_\+)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af6fd61b6273eb4b8f58833d04531e773}{is\+Allowed\+Name}} (self, node, name)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a65dcd8cdba5e583f408e464bbb04d66c}{check\+\_\+function\+\_\+argument\+\_\+names}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a00b23365247e0ade2fe73bbe325d7ab5}{check\+\_\+import\+\_\+names}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a8b1d6c5f2f6ef5aeb4328169dae66970}{gen\+\_\+attr\+\_\+check}} (self, node, attr\+\_\+name)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5eb98886d90fc1c8efb5a1f2e7aab2ed}{visit\+\_\+\+Constant}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ac4b5cd3d848ea2466913cd44236e252b}{visit\+\_\+\+Name}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aee3411fea6e081d0e2f3ed9233b1c527}{visit\+\_\+\+Call}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9b2c23a441632f727233d01a5662fe98}{visit\+\_\+\+Attribute}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af06e03a3d59a8f8029b7821b49508b8f}{visit\+\_\+\+Subscript}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a340fc05975478e32145fd0caaeb19fc9}{visit\+\_\+\+Assign}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ac00d95de0093769a8f463153489ee735}{visit\+\_\+\+Aug\+Assign}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aacaa45ef0e611976b0641cdfdad9d6a9}{visit\+\_\+\+While}} (node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1d78ee071b37e90d3f6829e175ab0475}{visit\+\_\+\+Except\+Handler}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7668c52faa2794bae9ffe16875961808}{visit\+\_\+\+With}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5be39704bae99485723cda0de6f198cd}{visit\+\_\+\+Function\+Def}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_abc203523b33942f51d382c955a779a44}{visit\+\_\+\+Lambda}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_abb0f7c6c41bd66cb10a7f0dcf753f3b4}{visit\+\_\+\+Class\+Def}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1930e7c426213bc3aa1f2f5661aded15}{visit\+\_\+\+Import}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a410ffa31ddd96d6ff291d82a6c6a2731}{visit\+\_\+\+Bin\+Op}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a97ca23d55401f9e13e64758ba0ff5fc6}{generic\+\_\+visit}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}} (self, node)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a26d2e852b658aa400ea46688cb3a182b}{visit}} (self, node)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a68b1250ed3ec39e9aa8792fde6db0d01}{names\+\_\+seen}} = \{\} if names\+\_\+seen is None else names\+\_\+seen
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a43d3e780d84a2728ddead7d663411560}{name\+Is\+Allowed}} = name\+Is\+Allowed
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a0c139140a11f54f2f0d81eff41bdc171}{visit\+\_\+\+Import\+From}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1930e7c426213bc3aa1f2f5661aded15}{visit\+\_\+\+Import}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae4059dc45ede41ad0e3ac99e23833922}{visit\+\_\+\+For}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae1b563c2e0aaa1f6ea8680305edb2732}{guard\+\_\+iter}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9b8bd4b4334bdb0432bb3eca85c35f66}{visit\+\_\+comprehension}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae1b563c2e0aaa1f6ea8680305edb2732}{guard\+\_\+iter}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a6d9760c091c98ee71272e85079bb2a33}{visit\+\_\+\+Ellipsis}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a3eecb5affb87db0574cde6d5ecf9c453}{visit\+\_\+\+Mat\+Mult}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a3d6952e0918c5a99e5b76f90a6f30f42}{visit\+\_\+\+Exec}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aa00b9033fe420e990f74b7420cc1831c}{visit\+\_\+\+Nonlocal}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a284be5cc703fa80d5e2592f3f8295cc0}{visit\+\_\+\+Async\+Function\+Def}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a54640aa52709721463f9c5f85ee242d0}{visit\+\_\+\+Await}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5aecb6cf3036301a4d922759d51269f2}{visit\+\_\+\+Async\+For}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a8af0742d32f5dfa1dca071416ad1144d}{visit\+\_\+\+Async\+With}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aa20e737cba3eb9cc4386e5d7e20afd4b}{visit\+\_\+\+Print}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ac0721579240d79d3c5bda9a146eb8826}{visit\+\_\+\+Constant}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_addeba17c7a9647f88c1513fe61d7a805}{visit\+\_\+\+Num}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aec66513178c2e193cb8868ec63a148f2}{visit\+\_\+\+Str}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a3d2d54ce3ed337f202fd19c77716a2be}{visit\+\_\+\+Bytes}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7bfae27736d1752d339da9b9ba8e822b}{visit\+\_\+\+List}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1d2833ac833faa3b04bf7c9881c918b1}{visit\+\_\+\+Tuple}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7fcbb616494f302430539e0aa796a6cb}{visit\+\_\+\+Set}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5e60620d9e754573bf65f7b277fd207f}{visit\+\_\+\+Dict}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_adc592b436681b5ad7d013c286708aa6f}{visit\+\_\+\+Formatted\+Value}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a29709cae707d8e25eaae1016b110497a}{visit\+\_\+\+Joined\+Str}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_acfeb939a1670e3c48286fbf14e20f477}{visit\+\_\+\+Name\+Constant}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4f14fbbf5083215ff3dc0c92941d6ce3}{visit\+\_\+\+Load}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a2f0782b0a64e22560c9ccd6626c77f3d}{visit\+\_\+\+Store}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a841cbceef92832acaf7cd018d713c645}{visit\+\_\+\+Del}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_afc668e0f82c9e6c1af809a1665e4bd21}{visit\+\_\+\+Starred}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aca08b31ee9bc88c7ae140cdf906faf50}{visit\+\_\+\+Expression}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae21cad25a5a807c871abbeed69439154}{visit\+\_\+\+Expr}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_adace97ca738c400818c4447c9294774c}{visit\+\_\+\+Unary\+Op}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1f8cfcd0beb5a924f19c6b651ac51c64}{visit\+\_\+\+UAdd}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9f0cb25c63ade3ef765fe825db23d140}{visit\+\_\+\+USub}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a289e737b5fc47938c06a8d5da0c8c382}{visit\+\_\+\+Not}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad3778e08d3147968250f00656b957f9b}{visit\+\_\+\+Invert}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a0f8fc86dd886e039a8e1146b00352a60}{visit\+\_\+\+Add}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab38b973053234c2ce4aae256ec2f5cd2}{visit\+\_\+\+Sub}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad52489ac7f7868053d233808ac5b08f7}{visit\+\_\+\+Mult}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af45d8457badbd701e4caa03ae2881161}{visit\+\_\+\+Div}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ac5fd9ac91f90e3b3121b58c587289724}{visit\+\_\+\+Floor\+Div}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a3c86a69671685097912a6aba8a6ddd77}{visit\+\_\+\+Pow}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a6879f219fa09894223ea7197fdf485ea}{visit\+\_\+\+Mod}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7c3bfeab4acd94bf3494208f865a1005}{visit\+\_\+\+LShift}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab44dcb02d6937d39e42738cbbdd5665a}{visit\+\_\+\+RShift}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae7ef1e7c8a469cf989011a81e3332a17}{visit\+\_\+\+Bit\+Or}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a74e6e03a78f32a4fbf409c150bbb50c6}{visit\+\_\+\+Bit\+Xor}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae12e062869820f841320a9fb3ee390a2}{visit\+\_\+\+Bit\+And}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae0ae6e8baacb09b82f3314b55700e787}{visit\+\_\+\+Bool\+Op}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_acb24100c10ccba63c80ca108cb63001d}{visit\+\_\+\+And}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a8bd97ad836149615b1ad64a4487b2f3f}{visit\+\_\+\+Or}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a35c0addac2cc23ee10c6c911ec946889}{visit\+\_\+\+Compare}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_afea5f449805674eaeae5ce79433808b1}{visit\+\_\+\+Eq}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4c5a399e7a09b4d759b0401714278b74}{visit\+\_\+\+Not\+Eq}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a304ca9977e281c93624b19908f98e165}{visit\+\_\+\+Lt}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_abc6170454465b8eb958973f5742d5451}{visit\+\_\+\+LtE}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4150785111f963c1172922358d910dcd}{visit\+\_\+\+Gt}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af8911bbb98cce6c887a79f7bc7d7a052}{visit\+\_\+\+GtE}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a781a4ab5b1ffa919f8e030cee88576f9}{visit\+\_\+\+Is}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_adaf57e317d3ed7a67c0e210b328eb248}{visit\+\_\+\+Is\+Not}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a33afd6af866bb9713688010b965c88c2}{visit\+\_\+\+In}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7bd25c2b47891f9c65338a64d88ae414}{visit\+\_\+\+Not\+In}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab41c62dcb2a03c524efd0f920a90c17a}{visit\+\_\+keyword}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af07d68d7115091227e220806787ff128}{visit\+\_\+\+If\+Exp}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad841f799c9daaa072b1c43e9bf46064d}{visit\+\_\+\+Index}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a98a1dd0a29eb6fd38b05408d9065f710}{visit\+\_\+\+Slice}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af940a33d8cd729755c26e716f01903c2}{visit\+\_\+\+Ext\+Slice}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a02d46bc7dc3764c044736001baca9d9a}{visit\+\_\+\+List\+Comp}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a8cf37059ff582342f9f3d0ab0413001e}{visit\+\_\+\+Set\+Comp}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9433ea0eab22f119098a2d9af9187c38}{visit\+\_\+\+Generator\+Exp}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a07589b1c072424a7fbfca36c1cf6c08d}{visit\+\_\+\+Dict\+Comp}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4342ae52fbc5a11a14eaae3556e5fa82}{visit\+\_\+\+Raise}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a19a5472d9148794b36edbc78af83a7f1}{visit\+\_\+\+Assert}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a57c5ebb0370c927c497bd03004743121}{visit\+\_\+\+Delete}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a96412d7dd6a9a88da6fff652558d1291}{visit\+\_\+\+Pass}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_acf4af22c06d2da4d945c063b8046a565}{visit\+\_\+alias}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae684958960cfb3d9f93f667b4cb65407}{visit\+\_\+\+If}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab1764b691ff4d7fb51b306ad9db9b096}{visit\+\_\+\+Break}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab8250f59cb1c51db214d054ea0858947}{visit\+\_\+\+Continue}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a18eca23d6273ae5235c4eb038100fc38}{visit\+\_\+\+Try}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9feb94cabb438680d2e2db1a0aa87115}{visit\+\_\+\+Try\+Finally}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a289ee894f8905f6b0cbd05c5315ab477}{visit\+\_\+\+Try\+Except}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aef0836a7ac8b8048828e46c1201fc429}{visit\+\_\+withitem}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_abb19be7f3ea5bb740077af5b135912b6}{visit\+\_\+arguments}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a35752c459ec7be9095b781ece0ba0cbb}{visit\+\_\+arg}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a60ccebe838dc6c6a9459d08d35d9c123}{visit\+\_\+\+Return}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad020a521552d33c6a82f5b59416f5f97}{visit\+\_\+\+Yield}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4b6072b164bd78589a2e17cee1b97af1}{visit\+\_\+\+Yield\+From}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a92c45e0496d370a471a06aa4e5765a44}{visit\+\_\+\+Global}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_accb0369afd168d41d0aff914cf446d36}{visit\+\_\+\+Module}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aa9fdd8e48d25670ab361d65b8b018a0e}{visit\+\_\+\+Param}} = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a2cb4ae6487c64149e4bbd3bdf55c1aec}{\+\_\+tmp\+\_\+idx}} = 0
+\item 
+str \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab006055cb2551bec01423ab4b2604f15}{\+\_\+tmp\+\_\+pfx}} = \textquotesingle{}\+\_\+tmp\%s\textquotesingle{} \% repr(time.\+time()).replace(\textquotesingle{}.\textquotesingle{},\textquotesingle{}\textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab342a6b0e13f6b28456a009cd7c52baa}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab342a6b0e13f6b28456a009cd7c52baa} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{names\+\_\+seen}{ = {\ttfamily None}, }\item[{}]{name\+Is\+Allowed}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a65dcd8cdba5e583f408e464bbb04d66c}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!check\_function\_argument\_names@{check\_function\_argument\_names}}
+\index{check\_function\_argument\_names@{check\_function\_argument\_names}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{check\_function\_argument\_names()}{check\_function\_argument\_names()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a65dcd8cdba5e583f408e464bbb04d66c} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+check\+\_\+function\+\_\+argument\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a00b23365247e0ade2fe73bbe325d7ab5}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!check\_import\_names@{check\_import\_names}}
+\index{check\_import\_names@{check\_import\_names}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{check\_import\_names()}{check\_import\_names()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a00b23365247e0ade2fe73bbe325d7ab5} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+check\+\_\+import\+\_\+names (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check the names being imported.
+
+        This is a protection against rebinding dunder names like
+        __rl_getitem__,__rl_set__ via imports.
+
+        => 'from _a import x' is ok, because '_a' is not added to the scope.
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a03cb89f1806183ddbe196f1044fe1444}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!error@{error}}
+\index{error@{error}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a03cb89f1806183ddbe196f1044fe1444} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+error (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{, }\item[{}]{msg}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a8b1d6c5f2f6ef5aeb4328169dae66970}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!gen\_attr\_check@{gen\_attr\_check}}
+\index{gen\_attr\_check@{gen\_attr\_check}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{gen\_attr\_check()}{gen\_attr\_check()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a8b1d6c5f2f6ef5aeb4328169dae66970} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+gen\+\_\+attr\+\_\+check (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{, }\item[{}]{attr\+\_\+name}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check if 'attr_name' is allowed on the object in node.
+
+        It generates (_getattr_(node, attr_name) and node).
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a76fdde6b8e774e54afbf775208537aba}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!gen\_del\_stmt@{gen\_del\_stmt}}
+\index{gen\_del\_stmt@{gen\_del\_stmt}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{gen\_del\_stmt()}{gen\_del\_stmt()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a76fdde6b8e774e54afbf775208537aba} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+gen\+\_\+del\+\_\+stmt (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{name\+\_\+to\+\_\+del}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae2b1a1fd178e3668c8c82dd86a1e3248}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!gen\_lambda@{gen\_lambda}}
+\index{gen\_lambda@{gen\_lambda}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{gen\_lambda()}{gen\_lambda()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae2b1a1fd178e3668c8c82dd86a1e3248} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+gen\+\_\+lambda (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{args}{, }\item[{}]{body}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9c9f5e3e7230856a3f7fae5b3c80405f}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!gen\_unpack\_spec@{gen\_unpack\_spec}}
+\index{gen\_unpack\_spec@{gen\_unpack\_spec}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{gen\_unpack\_spec()}{gen\_unpack\_spec()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9c9f5e3e7230856a3f7fae5b3c80405f} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+gen\+\_\+unpack\+\_\+spec (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{tpl}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Generate a specification for '__rl_unpack_sequence__'.
+
+        This spec is used to protect sequence unpacking.
+        The primary goal of this spec is to tell which elements in a sequence
+        are sequences again. These 'child' sequences have to be protected
+        again.
+
+        For example there is a sequence like this:
+            (a, (b, c), (d, (e, f))) = g
+
+        On a higher level the spec says:
+            - There is a sequence of len 3
+            - The element at index 1 is a sequence again with len 2
+            - The element at index 2 is a sequence again with len 2
+              - The element at index 1 in this subsequence is a sequence again
+                with len 2
+
+        With this spec '__rl_unpack_sequence__' does something like this for
+        protection (len checks are omitted):
+
+            t = list(__rl_getiter__(g))
+            t[1] = list(__rl_getiter__(t[1]))
+            t[2] = list(__rl_getiter__(t[2]))
+            t[2][1] = list(__rl_getiter__(t[2][1]))
+            return t
+
+        The 'real' spec for the case above is then:
+            spec = {
+                'min_len': 3,
+                'childs': (
+                    (1, {'min_len': 2, 'childs': ()}),
+                    (2, {
+                            'min_len': 2,
+                            'childs': (
+                                (1, {'min_len': 2, 'childs': ()})
+                            )
+                        }
+                    )
+                )
+            }
+
+        So finally the assignment above is converted into:
+            (a, (b, c), (d, (e, f))) = __rl_unpack_sequence__(g, spec)
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a0e89bc32d5c59760c046519db135ae7a}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!gen\_unpack\_wrapper@{gen\_unpack\_wrapper}}
+\index{gen\_unpack\_wrapper@{gen\_unpack\_wrapper}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{gen\_unpack\_wrapper()}{gen\_unpack\_wrapper()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a0e89bc32d5c59760c046519db135ae7a} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+gen\+\_\+unpack\+\_\+wrapper (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{, }\item[{}]{target}{, }\item[{}]{ctx}{ = {\ttfamily \textquotesingle{}store\textquotesingle{}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Helper function to protect tuple unpacks.
+
+        node: used to copy the locations for the new nodes.
+        target: is the tuple which must be protected.
+        ctx: Defines the context of the returned temporary node.
+
+        It returns a tuple with two element.
+
+        Element 1: Is a temporary name node which must be used to
+                   replace the target.
+                   The context (store, param) is defined
+                   by the 'ctx' parameter..
+
+        Element 2: Is a try .. finally where the body performs the
+                   protected tuple unpack of the temporary variable
+                   into the original target.
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a97ca23d55401f9e13e64758ba0ff5fc6}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!generic\_visit@{generic\_visit}}
+\index{generic\_visit@{generic\_visit}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{generic\_visit()}{generic\_visit()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a97ca23d55401f9e13e64758ba0ff5fc6} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+generic\+\_\+visit (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Reject nodes which do not have a corresponding `visit` method.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae1b563c2e0aaa1f6ea8680305edb2732}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!guard\_iter@{guard\_iter}}
+\index{guard\_iter@{guard\_iter}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{guard\_iter()}{guard\_iter()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae1b563c2e0aaa1f6ea8680305edb2732} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+guard\+\_\+iter (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Converts:
+    for x in expr
+to
+    for x in __rl_getiter__(expr)
+
+Also used for
+* list comprehensions
+* dict comprehensions
+* set comprehensions
+* generator expresions
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_afddee21821d04f7851d72c3b6ebc4727}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!is\_starred@{is\_starred}}
+\index{is\_starred@{is\_starred}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{is\_starred()}{is\_starred()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_afddee21821d04f7851d72c3b6ebc4727} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+is\+\_\+starred (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{ob}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af6fd61b6273eb4b8f58833d04531e773}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!isAllowedName@{isAllowedName}}
+\index{isAllowedName@{isAllowedName}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{isAllowedName()}{isAllowedName()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af6fd61b6273eb4b8f58833d04531e773} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+is\+Allowed\+Name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{, }\item[{}]{name}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!not\_allowed@{not\_allowed}}
+\index{not\_allowed@{not\_allowed}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{not\_allowed()}{not\_allowed()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+not\+\_\+allowed (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad3e564fcf71698ecf8bf15ecf4a8990b}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!protect\_unpack\_sequence@{protect\_unpack\_sequence}}
+\index{protect\_unpack\_sequence@{protect\_unpack\_sequence}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{protect\_unpack\_sequence()}{protect\_unpack\_sequence()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad3e564fcf71698ecf8bf15ecf4a8990b} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+protect\+\_\+unpack\+\_\+sequence (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{target}{, }\item[{}]{value}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_acae574bc44df54ad4b624f2cb8321907}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!tmpName@{tmpName}}
+\index{tmpName@{tmpName}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{tmpName()}{tmpName()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_acae574bc44df54ad4b624f2cb8321907} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+tmp\+Name (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a63d771644b13e6c5476362c8a272c1ea}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!transform\_slice@{transform\_slice}}
+\index{transform\_slice@{transform\_slice}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{transform\_slice()}{transform\_slice()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a63d771644b13e6c5476362c8a272c1ea} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+transform\+\_\+slice (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{slice\+\_\+}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Transform slices into function parameters.
+
+        ast.Slice nodes are only allowed within a ast.Subscript node.
+        To use a slice as an argument of ast.Call it has to be converted.
+        Conversion is done by calling the 'slice' function from builtins
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a26d2e852b658aa400ea46688cb3a182b}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit@{visit}}
+\index{visit@{visit}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit()}{visit()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a26d2e852b658aa400ea46688cb3a182b} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a340fc05975478e32145fd0caaeb19fc9}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Assign@{visit\_Assign}}
+\index{visit\_Assign@{visit\_Assign}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Assign()}{visit\_Assign()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a340fc05975478e32145fd0caaeb19fc9} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Assign (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9b2c23a441632f727233d01a5662fe98}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Attribute@{visit\_Attribute}}
+\index{visit\_Attribute@{visit\_Attribute}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Attribute()}{visit\_Attribute()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9b2c23a441632f727233d01a5662fe98} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Attribute (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks and mutates attribute access/assignment.
+
+        'a.b' becomes '__rl_getattr__(a, "b")'
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ac00d95de0093769a8f463153489ee735}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_AugAssign@{visit\_AugAssign}}
+\index{visit\_AugAssign@{visit\_AugAssign}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_AugAssign()}{visit\_AugAssign()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ac00d95de0093769a8f463153489ee735} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Aug\+Assign (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Forbid certain kinds of AugAssign
+
+        According to the language reference (and ast.c) the following nodes
+        are are possible:
+        Name, Attribute, Subscript
+
+        Note that although augmented assignment of attributes and
+        subscripts is disallowed, augmented assignment of names (such
+        as 'n += 1') is allowed.
+        'n += 1' becomes 'n = __rl_augAssign__("+=", n, 1)'
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a410ffa31ddd96d6ff291d82a6c6a2731}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_BinOp@{visit\_BinOp}}
+\index{visit\_BinOp@{visit\_BinOp}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_BinOp()}{visit\_BinOp()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a410ffa31ddd96d6ff291d82a6c6a2731} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Bin\+Op (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aee3411fea6e081d0e2f3ed9233b1c527}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Call@{visit\_Call}}
+\index{visit\_Call@{visit\_Call}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Call()}{visit\_Call()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aee3411fea6e081d0e2f3ed9233b1c527} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Call (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Checks calls with '*args' and '**kwargs'.
+
+        Note: The following happens only if '*args' or '**kwargs' is used.
+
+        Transfroms 'foo(<all the possible ways of args>)' into
+        __rl_apply__(foo, <all the possible ways for args>)
+
+        The thing is that '__rl_apply__' has only '*args', '**kwargs', so it gets
+        Python to collapse all the myriad ways to call functions
+        into one manageable from.
+
+        From there, '__rl_apply__()' wraps args and kws in guarded accessors,
+        then calls the function, returning the value.
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_children@{visit\_children}}
+\index{visit\_children@{visit\_children}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_children()}{visit\_children()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+children (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Visit the contents of a node.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_abb0f7c6c41bd66cb10a7f0dcf753f3b4}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_ClassDef@{visit\_ClassDef}}
+\index{visit\_ClassDef@{visit\_ClassDef}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_ClassDef()}{visit\_ClassDef()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_abb0f7c6c41bd66cb10a7f0dcf753f3b4} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Class\+Def (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Check the name of a class definition.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5eb98886d90fc1c8efb5a1f2e7aab2ed}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Constant@{visit\_Constant}}
+\index{visit\_Constant@{visit\_Constant}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Constant()}{visit\_Constant()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5eb98886d90fc1c8efb5a1f2e7aab2ed} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Constant (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Allow constant literals with restriction for Ellipsis.
+
+        Constant replaces Num, Str, Bytes, NameConstant and Ellipsis in
+        Python 3.8+.
+        :see: https://docs.python.org/dev/whatsnew/3.8.html#deprecated
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1d78ee071b37e90d3f6829e175ab0475}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_ExceptHandler@{visit\_ExceptHandler}}
+\index{visit\_ExceptHandler@{visit\_ExceptHandler}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_ExceptHandler()}{visit\_ExceptHandler()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1d78ee071b37e90d3f6829e175ab0475} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Except\+Handler (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Protect tuple unpacking on exception handlers.
+
+        try:
+            .....
+        except Exception as (a, b):
+            ....
+
+        becomes
+
+        try:
+            .....
+        except Exception as tmp:
+            try:
+                (a, b) = __rl_getiter__(tmp)
+            finally:
+                del tmp
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5be39704bae99485723cda0de6f198cd}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_FunctionDef@{visit\_FunctionDef}}
+\index{visit\_FunctionDef@{visit\_FunctionDef}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_FunctionDef()}{visit\_FunctionDef()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5be39704bae99485723cda0de6f198cd} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Function\+Def (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Allow function definitions (`def`) with some restrictions.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1930e7c426213bc3aa1f2f5661aded15}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Import@{visit\_Import}}
+\index{visit\_Import@{visit\_Import}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Import()}{visit\_Import()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1930e7c426213bc3aa1f2f5661aded15} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Import (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_abc203523b33942f51d382c955a779a44}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Lambda@{visit\_Lambda}}
+\index{visit\_Lambda@{visit\_Lambda}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Lambda()}{visit\_Lambda()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_abc203523b33942f51d382c955a779a44} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Lambda (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Allow lambda with some restrictions.\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ac4b5cd3d848ea2466913cd44236e252b}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Name@{visit\_Name}}
+\index{visit\_Name@{visit\_Name}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Name()}{visit\_Name()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ac4b5cd3d848ea2466913cd44236e252b} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af06e03a3d59a8f8029b7821b49508b8f}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Subscript@{visit\_Subscript}}
+\index{visit\_Subscript@{visit\_Subscript}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Subscript()}{visit\_Subscript()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af06e03a3d59a8f8029b7821b49508b8f} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Subscript (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Transforms all kinds of subscripts.
+
+        'v[a]' becomes '__rl_getitem__(foo, a)'
+        'v[:b]' becomes '__rl_getitem__(foo, slice(None, b, None))'
+        'v[a:]' becomes '__rl_getitem__(foo, slice(a, None, None))'
+        'v[a:b]' becomes '__rl_getitem__(foo, slice(a, b, None))'
+        'v[a:b:c]' becomes '__rl_getitem__(foo, slice(a, b, c))'
+        'v[a,b:c] becomes '__rl_getitem__(foo, (a, slice(b, c, None)))'
+        #'v[a] = c' becomes '_rl_write__(v)[a] = c'
+        #'del v[a]' becomes 'del __rl_sd__(v)[a]'
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aacaa45ef0e611976b0641cdfdad9d6a9}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_While@{visit\_While}}
+\index{visit\_While@{visit\_While}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_While()}{visit\_While()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aacaa45ef0e611976b0641cdfdad9d6a9} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+While (\begin{DoxyParamCaption}\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7668c52faa2794bae9ffe16875961808}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_With@{visit\_With}}
+\index{visit\_With@{visit\_With}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_With()}{visit\_With()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7668c52faa2794bae9ffe16875961808} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+With (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Protect tuple unpacking on with statements.\end{DoxyVerb}
+ 
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a2cb4ae6487c64149e4bbd3bdf55c1aec}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!\_tmp\_idx@{\_tmp\_idx}}
+\index{\_tmp\_idx@{\_tmp\_idx}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{\_tmp\_idx}{\_tmp\_idx}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a2cb4ae6487c64149e4bbd3bdf55c1aec} 
+int reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+\_\+tmp\+\_\+idx = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab006055cb2551bec01423ab4b2604f15}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!\_tmp\_pfx@{\_tmp\_pfx}}
+\index{\_tmp\_pfx@{\_tmp\_pfx}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{\_tmp\_pfx}{\_tmp\_pfx}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab006055cb2551bec01423ab4b2604f15} 
+str reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+\_\+tmp\+\_\+pfx = \textquotesingle{}\+\_\+tmp\%s\textquotesingle{} \% repr(time.\+time()).replace(\textquotesingle{}.\textquotesingle{},\textquotesingle{}\textquotesingle{})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a43d3e780d84a2728ddead7d663411560}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!nameIsAllowed@{nameIsAllowed}}
+\index{nameIsAllowed@{nameIsAllowed}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{nameIsAllowed}{nameIsAllowed}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a43d3e780d84a2728ddead7d663411560} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+name\+Is\+Allowed = name\+Is\+Allowed}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a68b1250ed3ec39e9aa8792fde6db0d01}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!names\_seen@{names\_seen}}
+\index{names\_seen@{names\_seen}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{names\_seen}{names\_seen}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a68b1250ed3ec39e9aa8792fde6db0d01} 
+dict reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+names\+\_\+seen = \{\} if names\+\_\+seen is None else names\+\_\+seen}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a0f8fc86dd886e039a8e1146b00352a60}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Add@{visit\_Add}}
+\index{visit\_Add@{visit\_Add}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Add}{visit\_Add}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a0f8fc86dd886e039a8e1146b00352a60} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Add = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_acf4af22c06d2da4d945c063b8046a565}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_alias@{visit\_alias}}
+\index{visit\_alias@{visit\_alias}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_alias}{visit\_alias}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_acf4af22c06d2da4d945c063b8046a565} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+alias = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_acb24100c10ccba63c80ca108cb63001d}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_And@{visit\_And}}
+\index{visit\_And@{visit\_And}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_And}{visit\_And}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_acb24100c10ccba63c80ca108cb63001d} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+And = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a35752c459ec7be9095b781ece0ba0cbb}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_arg@{visit\_arg}}
+\index{visit\_arg@{visit\_arg}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_arg}{visit\_arg}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a35752c459ec7be9095b781ece0ba0cbb} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+arg = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_abb19be7f3ea5bb740077af5b135912b6}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_arguments@{visit\_arguments}}
+\index{visit\_arguments@{visit\_arguments}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_arguments}{visit\_arguments}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_abb19be7f3ea5bb740077af5b135912b6} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+arguments = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a19a5472d9148794b36edbc78af83a7f1}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Assert@{visit\_Assert}}
+\index{visit\_Assert@{visit\_Assert}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Assert}{visit\_Assert}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a19a5472d9148794b36edbc78af83a7f1} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Assert = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5aecb6cf3036301a4d922759d51269f2}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_AsyncFor@{visit\_AsyncFor}}
+\index{visit\_AsyncFor@{visit\_AsyncFor}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_AsyncFor}{visit\_AsyncFor}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5aecb6cf3036301a4d922759d51269f2} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Async\+For = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a284be5cc703fa80d5e2592f3f8295cc0}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_AsyncFunctionDef@{visit\_AsyncFunctionDef}}
+\index{visit\_AsyncFunctionDef@{visit\_AsyncFunctionDef}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_AsyncFunctionDef}{visit\_AsyncFunctionDef}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a284be5cc703fa80d5e2592f3f8295cc0} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Async\+Function\+Def = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a8af0742d32f5dfa1dca071416ad1144d}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_AsyncWith@{visit\_AsyncWith}}
+\index{visit\_AsyncWith@{visit\_AsyncWith}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_AsyncWith}{visit\_AsyncWith}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a8af0742d32f5dfa1dca071416ad1144d} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Async\+With = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a54640aa52709721463f9c5f85ee242d0}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Await@{visit\_Await}}
+\index{visit\_Await@{visit\_Await}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Await}{visit\_Await}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a54640aa52709721463f9c5f85ee242d0} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Await = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae12e062869820f841320a9fb3ee390a2}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_BitAnd@{visit\_BitAnd}}
+\index{visit\_BitAnd@{visit\_BitAnd}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_BitAnd}{visit\_BitAnd}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae12e062869820f841320a9fb3ee390a2} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Bit\+And = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae7ef1e7c8a469cf989011a81e3332a17}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_BitOr@{visit\_BitOr}}
+\index{visit\_BitOr@{visit\_BitOr}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_BitOr}{visit\_BitOr}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae7ef1e7c8a469cf989011a81e3332a17} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Bit\+Or = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a74e6e03a78f32a4fbf409c150bbb50c6}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_BitXor@{visit\_BitXor}}
+\index{visit\_BitXor@{visit\_BitXor}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_BitXor}{visit\_BitXor}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a74e6e03a78f32a4fbf409c150bbb50c6} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Bit\+Xor = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae0ae6e8baacb09b82f3314b55700e787}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_BoolOp@{visit\_BoolOp}}
+\index{visit\_BoolOp@{visit\_BoolOp}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_BoolOp}{visit\_BoolOp}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae0ae6e8baacb09b82f3314b55700e787} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Bool\+Op = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab1764b691ff4d7fb51b306ad9db9b096}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Break@{visit\_Break}}
+\index{visit\_Break@{visit\_Break}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Break}{visit\_Break}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab1764b691ff4d7fb51b306ad9db9b096} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Break = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a3d2d54ce3ed337f202fd19c77716a2be}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Bytes@{visit\_Bytes}}
+\index{visit\_Bytes@{visit\_Bytes}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Bytes}{visit\_Bytes}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a3d2d54ce3ed337f202fd19c77716a2be} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Bytes = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a35c0addac2cc23ee10c6c911ec946889}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Compare@{visit\_Compare}}
+\index{visit\_Compare@{visit\_Compare}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Compare}{visit\_Compare}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a35c0addac2cc23ee10c6c911ec946889} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Compare = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9b8bd4b4334bdb0432bb3eca85c35f66}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_comprehension@{visit\_comprehension}}
+\index{visit\_comprehension@{visit\_comprehension}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_comprehension}{visit\_comprehension}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9b8bd4b4334bdb0432bb3eca85c35f66} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+comprehension = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae1b563c2e0aaa1f6ea8680305edb2732}{guard\+\_\+iter}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ac0721579240d79d3c5bda9a146eb8826}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Constant@{visit\_Constant}}
+\index{visit\_Constant@{visit\_Constant}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Constant}{visit\_Constant}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ac0721579240d79d3c5bda9a146eb8826} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Constant = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab8250f59cb1c51db214d054ea0858947}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Continue@{visit\_Continue}}
+\index{visit\_Continue@{visit\_Continue}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Continue}{visit\_Continue}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab8250f59cb1c51db214d054ea0858947} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Continue = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a841cbceef92832acaf7cd018d713c645}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Del@{visit\_Del}}
+\index{visit\_Del@{visit\_Del}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Del}{visit\_Del}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a841cbceef92832acaf7cd018d713c645} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Del = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a57c5ebb0370c927c497bd03004743121}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Delete@{visit\_Delete}}
+\index{visit\_Delete@{visit\_Delete}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Delete}{visit\_Delete}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a57c5ebb0370c927c497bd03004743121} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Delete = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5e60620d9e754573bf65f7b277fd207f}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Dict@{visit\_Dict}}
+\index{visit\_Dict@{visit\_Dict}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Dict}{visit\_Dict}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5e60620d9e754573bf65f7b277fd207f} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Dict = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a07589b1c072424a7fbfca36c1cf6c08d}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_DictComp@{visit\_DictComp}}
+\index{visit\_DictComp@{visit\_DictComp}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_DictComp}{visit\_DictComp}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a07589b1c072424a7fbfca36c1cf6c08d} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Dict\+Comp = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af45d8457badbd701e4caa03ae2881161}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Div@{visit\_Div}}
+\index{visit\_Div@{visit\_Div}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Div}{visit\_Div}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af45d8457badbd701e4caa03ae2881161} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Div = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a6d9760c091c98ee71272e85079bb2a33}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Ellipsis@{visit\_Ellipsis}}
+\index{visit\_Ellipsis@{visit\_Ellipsis}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Ellipsis}{visit\_Ellipsis}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a6d9760c091c98ee71272e85079bb2a33} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Ellipsis = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_afea5f449805674eaeae5ce79433808b1}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Eq@{visit\_Eq}}
+\index{visit\_Eq@{visit\_Eq}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Eq}{visit\_Eq}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_afea5f449805674eaeae5ce79433808b1} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Eq = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a3d6952e0918c5a99e5b76f90a6f30f42}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Exec@{visit\_Exec}}
+\index{visit\_Exec@{visit\_Exec}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Exec}{visit\_Exec}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a3d6952e0918c5a99e5b76f90a6f30f42} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Exec = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae21cad25a5a807c871abbeed69439154}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Expr@{visit\_Expr}}
+\index{visit\_Expr@{visit\_Expr}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Expr}{visit\_Expr}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae21cad25a5a807c871abbeed69439154} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Expr = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aca08b31ee9bc88c7ae140cdf906faf50}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Expression@{visit\_Expression}}
+\index{visit\_Expression@{visit\_Expression}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Expression}{visit\_Expression}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aca08b31ee9bc88c7ae140cdf906faf50} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Expression = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af940a33d8cd729755c26e716f01903c2}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_ExtSlice@{visit\_ExtSlice}}
+\index{visit\_ExtSlice@{visit\_ExtSlice}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_ExtSlice}{visit\_ExtSlice}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af940a33d8cd729755c26e716f01903c2} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Ext\+Slice = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ac5fd9ac91f90e3b3121b58c587289724}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_FloorDiv@{visit\_FloorDiv}}
+\index{visit\_FloorDiv@{visit\_FloorDiv}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_FloorDiv}{visit\_FloorDiv}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ac5fd9ac91f90e3b3121b58c587289724} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Floor\+Div = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae4059dc45ede41ad0e3ac99e23833922}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_For@{visit\_For}}
+\index{visit\_For@{visit\_For}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_For}{visit\_For}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae4059dc45ede41ad0e3ac99e23833922} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+For = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae1b563c2e0aaa1f6ea8680305edb2732}{guard\+\_\+iter}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_adc592b436681b5ad7d013c286708aa6f}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_FormattedValue@{visit\_FormattedValue}}
+\index{visit\_FormattedValue@{visit\_FormattedValue}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_FormattedValue}{visit\_FormattedValue}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_adc592b436681b5ad7d013c286708aa6f} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Formatted\+Value = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9433ea0eab22f119098a2d9af9187c38}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_GeneratorExp@{visit\_GeneratorExp}}
+\index{visit\_GeneratorExp@{visit\_GeneratorExp}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_GeneratorExp}{visit\_GeneratorExp}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9433ea0eab22f119098a2d9af9187c38} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Generator\+Exp = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a92c45e0496d370a471a06aa4e5765a44}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Global@{visit\_Global}}
+\index{visit\_Global@{visit\_Global}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Global}{visit\_Global}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a92c45e0496d370a471a06aa4e5765a44} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Global = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4150785111f963c1172922358d910dcd}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Gt@{visit\_Gt}}
+\index{visit\_Gt@{visit\_Gt}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Gt}{visit\_Gt}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4150785111f963c1172922358d910dcd} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Gt = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af8911bbb98cce6c887a79f7bc7d7a052}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_GtE@{visit\_GtE}}
+\index{visit\_GtE@{visit\_GtE}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_GtE}{visit\_GtE}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af8911bbb98cce6c887a79f7bc7d7a052} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+GtE = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae684958960cfb3d9f93f667b4cb65407}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_If@{visit\_If}}
+\index{visit\_If@{visit\_If}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_If}{visit\_If}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ae684958960cfb3d9f93f667b4cb65407} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+If = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af07d68d7115091227e220806787ff128}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_IfExp@{visit\_IfExp}}
+\index{visit\_IfExp@{visit\_IfExp}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_IfExp}{visit\_IfExp}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_af07d68d7115091227e220806787ff128} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+If\+Exp = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a0c139140a11f54f2f0d81eff41bdc171}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_ImportFrom@{visit\_ImportFrom}}
+\index{visit\_ImportFrom@{visit\_ImportFrom}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_ImportFrom}{visit\_ImportFrom}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a0c139140a11f54f2f0d81eff41bdc171} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Import\+From = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1930e7c426213bc3aa1f2f5661aded15}{visit\+\_\+\+Import}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a33afd6af866bb9713688010b965c88c2}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_In@{visit\_In}}
+\index{visit\_In@{visit\_In}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_In}{visit\_In}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a33afd6af866bb9713688010b965c88c2} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+In = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad841f799c9daaa072b1c43e9bf46064d}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Index@{visit\_Index}}
+\index{visit\_Index@{visit\_Index}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Index}{visit\_Index}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad841f799c9daaa072b1c43e9bf46064d} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Index = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad3778e08d3147968250f00656b957f9b}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Invert@{visit\_Invert}}
+\index{visit\_Invert@{visit\_Invert}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Invert}{visit\_Invert}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad3778e08d3147968250f00656b957f9b} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Invert = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a781a4ab5b1ffa919f8e030cee88576f9}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Is@{visit\_Is}}
+\index{visit\_Is@{visit\_Is}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Is}{visit\_Is}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a781a4ab5b1ffa919f8e030cee88576f9} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Is = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_adaf57e317d3ed7a67c0e210b328eb248}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_IsNot@{visit\_IsNot}}
+\index{visit\_IsNot@{visit\_IsNot}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_IsNot}{visit\_IsNot}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_adaf57e317d3ed7a67c0e210b328eb248} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Is\+Not = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a29709cae707d8e25eaae1016b110497a}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_JoinedStr@{visit\_JoinedStr}}
+\index{visit\_JoinedStr@{visit\_JoinedStr}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_JoinedStr}{visit\_JoinedStr}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a29709cae707d8e25eaae1016b110497a} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Joined\+Str = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab41c62dcb2a03c524efd0f920a90c17a}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_keyword@{visit\_keyword}}
+\index{visit\_keyword@{visit\_keyword}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_keyword}{visit\_keyword}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab41c62dcb2a03c524efd0f920a90c17a} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+keyword = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7bfae27736d1752d339da9b9ba8e822b}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_List@{visit\_List}}
+\index{visit\_List@{visit\_List}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_List}{visit\_List}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7bfae27736d1752d339da9b9ba8e822b} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+List = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a02d46bc7dc3764c044736001baca9d9a}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_ListComp@{visit\_ListComp}}
+\index{visit\_ListComp@{visit\_ListComp}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_ListComp}{visit\_ListComp}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a02d46bc7dc3764c044736001baca9d9a} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+List\+Comp = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4f14fbbf5083215ff3dc0c92941d6ce3}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Load@{visit\_Load}}
+\index{visit\_Load@{visit\_Load}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Load}{visit\_Load}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4f14fbbf5083215ff3dc0c92941d6ce3} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Load = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7c3bfeab4acd94bf3494208f865a1005}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_LShift@{visit\_LShift}}
+\index{visit\_LShift@{visit\_LShift}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_LShift}{visit\_LShift}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7c3bfeab4acd94bf3494208f865a1005} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+LShift = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a304ca9977e281c93624b19908f98e165}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Lt@{visit\_Lt}}
+\index{visit\_Lt@{visit\_Lt}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Lt}{visit\_Lt}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a304ca9977e281c93624b19908f98e165} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Lt = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_abc6170454465b8eb958973f5742d5451}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_LtE@{visit\_LtE}}
+\index{visit\_LtE@{visit\_LtE}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_LtE}{visit\_LtE}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_abc6170454465b8eb958973f5742d5451} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+LtE = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a3eecb5affb87db0574cde6d5ecf9c453}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_MatMult@{visit\_MatMult}}
+\index{visit\_MatMult@{visit\_MatMult}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_MatMult}{visit\_MatMult}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a3eecb5affb87db0574cde6d5ecf9c453} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Mat\+Mult = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a6879f219fa09894223ea7197fdf485ea}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Mod@{visit\_Mod}}
+\index{visit\_Mod@{visit\_Mod}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Mod}{visit\_Mod}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a6879f219fa09894223ea7197fdf485ea} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Mod = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_accb0369afd168d41d0aff914cf446d36}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Module@{visit\_Module}}
+\index{visit\_Module@{visit\_Module}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Module}{visit\_Module}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_accb0369afd168d41d0aff914cf446d36} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Module = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad52489ac7f7868053d233808ac5b08f7}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Mult@{visit\_Mult}}
+\index{visit\_Mult@{visit\_Mult}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Mult}{visit\_Mult}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad52489ac7f7868053d233808ac5b08f7} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Mult = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_acfeb939a1670e3c48286fbf14e20f477}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_NameConstant@{visit\_NameConstant}}
+\index{visit\_NameConstant@{visit\_NameConstant}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_NameConstant}{visit\_NameConstant}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_acfeb939a1670e3c48286fbf14e20f477} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Name\+Constant = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aa00b9033fe420e990f74b7420cc1831c}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Nonlocal@{visit\_Nonlocal}}
+\index{visit\_Nonlocal@{visit\_Nonlocal}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Nonlocal}{visit\_Nonlocal}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aa00b9033fe420e990f74b7420cc1831c} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Nonlocal = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a289e737b5fc47938c06a8d5da0c8c382}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Not@{visit\_Not}}
+\index{visit\_Not@{visit\_Not}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Not}{visit\_Not}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a289e737b5fc47938c06a8d5da0c8c382} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Not = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4c5a399e7a09b4d759b0401714278b74}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_NotEq@{visit\_NotEq}}
+\index{visit\_NotEq@{visit\_NotEq}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_NotEq}{visit\_NotEq}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4c5a399e7a09b4d759b0401714278b74} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Not\+Eq = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7bd25c2b47891f9c65338a64d88ae414}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_NotIn@{visit\_NotIn}}
+\index{visit\_NotIn@{visit\_NotIn}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_NotIn}{visit\_NotIn}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7bd25c2b47891f9c65338a64d88ae414} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Not\+In = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_addeba17c7a9647f88c1513fe61d7a805}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Num@{visit\_Num}}
+\index{visit\_Num@{visit\_Num}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Num}{visit\_Num}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_addeba17c7a9647f88c1513fe61d7a805} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Num = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a8bd97ad836149615b1ad64a4487b2f3f}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Or@{visit\_Or}}
+\index{visit\_Or@{visit\_Or}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Or}{visit\_Or}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a8bd97ad836149615b1ad64a4487b2f3f} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Or = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aa9fdd8e48d25670ab361d65b8b018a0e}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Param@{visit\_Param}}
+\index{visit\_Param@{visit\_Param}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Param}{visit\_Param}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aa9fdd8e48d25670ab361d65b8b018a0e} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Param = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a96412d7dd6a9a88da6fff652558d1291}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Pass@{visit\_Pass}}
+\index{visit\_Pass@{visit\_Pass}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Pass}{visit\_Pass}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a96412d7dd6a9a88da6fff652558d1291} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Pass = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a3c86a69671685097912a6aba8a6ddd77}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Pow@{visit\_Pow}}
+\index{visit\_Pow@{visit\_Pow}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Pow}{visit\_Pow}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a3c86a69671685097912a6aba8a6ddd77} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Pow = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aa20e737cba3eb9cc4386e5d7e20afd4b}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Print@{visit\_Print}}
+\index{visit\_Print@{visit\_Print}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Print}{visit\_Print}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aa20e737cba3eb9cc4386e5d7e20afd4b} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Print = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aaaa154a02a24c11b977e24889c942cba}{not\+\_\+allowed}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4342ae52fbc5a11a14eaae3556e5fa82}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Raise@{visit\_Raise}}
+\index{visit\_Raise@{visit\_Raise}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Raise}{visit\_Raise}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4342ae52fbc5a11a14eaae3556e5fa82} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Raise = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a60ccebe838dc6c6a9459d08d35d9c123}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Return@{visit\_Return}}
+\index{visit\_Return@{visit\_Return}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Return}{visit\_Return}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a60ccebe838dc6c6a9459d08d35d9c123} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Return = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab44dcb02d6937d39e42738cbbdd5665a}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_RShift@{visit\_RShift}}
+\index{visit\_RShift@{visit\_RShift}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_RShift}{visit\_RShift}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab44dcb02d6937d39e42738cbbdd5665a} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+RShift = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7fcbb616494f302430539e0aa796a6cb}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Set@{visit\_Set}}
+\index{visit\_Set@{visit\_Set}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Set}{visit\_Set}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a7fcbb616494f302430539e0aa796a6cb} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Set = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a8cf37059ff582342f9f3d0ab0413001e}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_SetComp@{visit\_SetComp}}
+\index{visit\_SetComp@{visit\_SetComp}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_SetComp}{visit\_SetComp}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a8cf37059ff582342f9f3d0ab0413001e} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Set\+Comp = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a98a1dd0a29eb6fd38b05408d9065f710}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Slice@{visit\_Slice}}
+\index{visit\_Slice@{visit\_Slice}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Slice}{visit\_Slice}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a98a1dd0a29eb6fd38b05408d9065f710} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Slice = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_afc668e0f82c9e6c1af809a1665e4bd21}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Starred@{visit\_Starred}}
+\index{visit\_Starred@{visit\_Starred}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Starred}{visit\_Starred}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_afc668e0f82c9e6c1af809a1665e4bd21} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Starred = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a2f0782b0a64e22560c9ccd6626c77f3d}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Store@{visit\_Store}}
+\index{visit\_Store@{visit\_Store}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Store}{visit\_Store}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a2f0782b0a64e22560c9ccd6626c77f3d} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Store = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aec66513178c2e193cb8868ec63a148f2}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Str@{visit\_Str}}
+\index{visit\_Str@{visit\_Str}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Str}{visit\_Str}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aec66513178c2e193cb8868ec63a148f2} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Str = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab38b973053234c2ce4aae256ec2f5cd2}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Sub@{visit\_Sub}}
+\index{visit\_Sub@{visit\_Sub}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Sub}{visit\_Sub}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ab38b973053234c2ce4aae256ec2f5cd2} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Sub = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a18eca23d6273ae5235c4eb038100fc38}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Try@{visit\_Try}}
+\index{visit\_Try@{visit\_Try}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Try}{visit\_Try}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a18eca23d6273ae5235c4eb038100fc38} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Try = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a289ee894f8905f6b0cbd05c5315ab477}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_TryExcept@{visit\_TryExcept}}
+\index{visit\_TryExcept@{visit\_TryExcept}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_TryExcept}{visit\_TryExcept}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a289ee894f8905f6b0cbd05c5315ab477} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Try\+Except = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9feb94cabb438680d2e2db1a0aa87115}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_TryFinally@{visit\_TryFinally}}
+\index{visit\_TryFinally@{visit\_TryFinally}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_TryFinally}{visit\_TryFinally}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9feb94cabb438680d2e2db1a0aa87115} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Try\+Finally = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1d2833ac833faa3b04bf7c9881c918b1}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Tuple@{visit\_Tuple}}
+\index{visit\_Tuple@{visit\_Tuple}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Tuple}{visit\_Tuple}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1d2833ac833faa3b04bf7c9881c918b1} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Tuple = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1f8cfcd0beb5a924f19c6b651ac51c64}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_UAdd@{visit\_UAdd}}
+\index{visit\_UAdd@{visit\_UAdd}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_UAdd}{visit\_UAdd}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a1f8cfcd0beb5a924f19c6b651ac51c64} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+UAdd = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_adace97ca738c400818c4447c9294774c}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_UnaryOp@{visit\_UnaryOp}}
+\index{visit\_UnaryOp@{visit\_UnaryOp}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_UnaryOp}{visit\_UnaryOp}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_adace97ca738c400818c4447c9294774c} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Unary\+Op = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9f0cb25c63ade3ef765fe825db23d140}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_USub@{visit\_USub}}
+\index{visit\_USub@{visit\_USub}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_USub}{visit\_USub}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a9f0cb25c63ade3ef765fe825db23d140} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+USub = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aef0836a7ac8b8048828e46c1201fc429}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_withitem@{visit\_withitem}}
+\index{visit\_withitem@{visit\_withitem}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_withitem}{visit\_withitem}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_aef0836a7ac8b8048828e46c1201fc429} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+withitem = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad020a521552d33c6a82f5b59416f5f97}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_Yield@{visit\_Yield}}
+\index{visit\_Yield@{visit\_Yield}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_Yield}{visit\_Yield}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_ad020a521552d33c6a82f5b59416f5f97} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Yield = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4b6072b164bd78589a2e17cee1b97af1}\index{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}!visit\_YieldFrom@{visit\_YieldFrom}}
+\index{visit\_YieldFrom@{visit\_YieldFrom}!reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer@{reportlab.lib.rl\_safe\_eval.UntrustedAstTransformer}}
+\doxysubsubsection{\texorpdfstring{visit\_YieldFrom}{visit\_YieldFrom}}
+{\footnotesize\ttfamily \label{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a4b6072b164bd78589a2e17cee1b97af1} 
+reportlab.\+lib.\+rl\+\_\+safe\+\_\+eval.\+Untrusted\+Ast\+Transformer.\+visit\+\_\+\+Yield\+From = \doxymbox{\hyperlink{classreportlab_1_1lib_1_1rl__safe__eval_1_1_untrusted_ast_transformer_a5c413db6374fe543580e84be369e566f}{visit\+\_\+children}}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+lib/\+\doxymbox{\hyperlink{rl__safe__eval_8py}{rl\+\_\+safe\+\_\+eval.\+py}}\end{DoxyCompactItemize}

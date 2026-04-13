@@ -1,0 +1,1033 @@
+\doxysection{reportlab.\+platypus.\+para Namespace Reference}
+\hypertarget{namespacereportlab_1_1platypus_1_1para}{}\label{namespacereportlab_1_1platypus_1_1para}\index{reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1paragraph_engine}{paragraph\+Engine}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_style_attribute_converters}{Style\+Attribute\+Converters}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_simple_style}{Simple\+Style}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_fast_para}{Fast\+Para}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_para}{Para}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1bullet_maker}{bullet\+Maker}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_eval_string_object}{Eval\+String\+Object}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_seq_object}{Seq\+Object}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_name_object}{Name\+Object}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_seq_default_object}{Seq\+Default\+Object}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_seq_reset_object}{Seq\+Reset\+Object}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_get_name_object}{Get\+Name\+Object}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_page_number_object}{Page\+Number\+Object}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_under_line_handler}{Under\+Line\+Handler}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_hot_link}{Hot\+Link}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_internal_link}{Internal\+Link}}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_def_destination}{Def\+Destination}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a0f53c92ea702153fc682afc7af367ea9}{get\+State}} (self)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a64fec86096fd625609c6fe54c34454cc}{reset\+State}} (self, state)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a2b20cafbacdf5c24907ac20dddfcf913}{fit\+Line}} (self, program, total\+Length)
+\begin{DoxyCompactList}\small\item\em def size\+Of\+Word(self, word):\+ inline\+This\+Function\+For\+Efficiency return float(string\+Width(word, self.\+font\+Name, self.\+font\+Size)) \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ad12ab95a2231cc89c1e29919ddc04f4e}{center\+Align}} (self, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ae5c0e22e1795ce8c679384d8b6e281b2}{line}}, line\+Length, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ad4dcb0693ba9dd27ee651443e7212e4c}{max\+Length}})
+\begin{DoxyCompactList}\small\item\em if debug:\+ if done:\+ print "{}\+DONE FLAG IS SET"{} if cursor\texorpdfstring{$>$}{>}=maxcursor:\+ print "{}\+AT END OF PROGRAM"{} \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a8d10beeae7650026d03337bdfa67a587}{right\+Align}} (self, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ae5c0e22e1795ce8c679384d8b6e281b2}{line}}, line\+Length, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ad4dcb0693ba9dd27ee651443e7212e4c}{max\+Length}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a9b993e7500b865aeb5b09a5193169e90}{insert\+Shift}} (self, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ae5c0e22e1795ce8c679384d8b6e281b2}{line}}, shift)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aab2b5cccb90aa34fbaca1d1ca8d3b133}{justify\+Align}} (self, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ae5c0e22e1795ce8c679384d8b6e281b2}{line}}, line\+Length, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ad4dcb0693ba9dd27ee651443e7212e4c}{max\+Length}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a6ed995c5b2924a7464867294cc6d9b7c}{shrink\+Wrap}} (self, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ae5c0e22e1795ce8c679384d8b6e281b2}{line}})
+\begin{DoxyCompactList}\small\item\em if not first:\+ \+\#if debug:\+ print "{}shifting"{}, shift, e \+\#result.\+append(shift) \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a271624972e430baf37ef351cd6fbeb69}{clean\+Program}} (self, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ae5c0e22e1795ce8c679384d8b6e281b2}{line}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a8d9f7d88a9918d519fa718184df3117d}{run\+Op\+Codes}} (self, program, \doxymbox{\hyperlink{namespacereportlab_1_1pdfgen_1_1canvas}{canvas}}, textobject)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a42501e10ac9503633d0d0f0eb0cb04ac}{string\+Line}} (\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ae5c0e22e1795ce8c679384d8b6e281b2}{line}}, length)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_acdf58f0861026d9795d518747f1b7550}{simple\+Justify\+Align}} (\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ae5c0e22e1795ce8c679384d8b6e281b2}{line}}, current\+Length, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ad4dcb0693ba9dd27ee651443e7212e4c}{max\+Length}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a8c999c7aac2d9cd8321c7af389385023}{read\+Bool}} (\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_afa4d07c86add95d7112498b6d14117a6}{text}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a475dc09fc4e2a36912ad125fe3d55c8d}{read\+Alignment}} (\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_afa4d07c86add95d7112498b6d14117a6}{text}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a360ed270d059cd234161aa147e5458be}{read\+Length}} (\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_afa4d07c86add95d7112498b6d14117a6}{text}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ad8451b7c4674cda39593522569da5f61}{length\+Sequence}} (s, converter=\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a360ed270d059cd234161aa147e5458be}{read\+Length}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aa78ac90218db50feeb94dea63328eed2}{read\+Color}} (\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_afa4d07c86add95d7112498b6d14117a6}{text}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a54c4c5653853ac47bad9390b910c4ebe}{default\+Context}} ()
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a4da8320e3d88207b45b4e0797c0918c7}{build\+Context}} (stylesheet=None)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aa1f1bf383e46e8d54367ad6b56a723fb}{linearize}} (self, program=None, parsed\+Text=None)
+\begin{DoxyCompactList}\small\item\em print "{}="{}\texorpdfstring{$\ast$}{*}11 \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aa23bfed603fbede8fba1a23cdbccdcd2}{compile\+Component}} (self, parsed\+Text, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ac100490f371e29d52e00bda56d7a2e00}{shiftfont}} (self, program, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aee6fc313ce2ebea5596127e014c147ce}{face}}=None, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aa521e8bb04bd983f97f4f4be0b549db4}{bold}}=None, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_afc0c40fb386ddee0448d72297ed4d45b}{italic}}=None)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aabb154797e4e49c6b068917ccbd53f9b}{compile\+\_\+}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a3fb81fc45f5e75ef5dcfe7de16930b17}{compile\+\_\+page\+Number}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a6d59228907de33d606f2585a19f7e36a}{compile\+\_\+b}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a5276bd8929769e9f6d00345a03a1ddd4}{compile\+\_\+i}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aa6bc16b0ab12c300c397de0ad7c6cb58}{compile\+\_\+u}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a7a4ee7cb924fbd5951a5524b60dc722b}{compile\+\_\+sub}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_af40d46f5952f4691e5423311567f1d45}{compile\+\_\+ul}} (self, attdict, content, extra, program, tagname="{}ul"{})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a38c9c2b97551b7664f7490c77884ca63}{compile\+\_\+ol}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a06da725d5c29c362fa5ad375905f314e}{compile\+\_\+dl}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a950396d271b801bb76d7673bb2b8b8a6}{compile\+\_\+super}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a75be296df5041845483bfc694e4da469}{compile\+\_\+font}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a0e283ae447028384001f83b5f3be10f6}{compile\+\_\+a}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a0336faf0ee875ce895850c1df1339f97}{compile\+\_\+link}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aeae3971ddcb08bd44b4980cdf42e5fca}{compile\+\_\+set\+Link}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a0316cfb523d7507b07d792b57139ebc0}{compile\+\_\+bullet}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a5cee1ce30b8a06c6918c20a7658bb4ae}{do\+\_\+bullet}} (self, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_afa4d07c86add95d7112498b6d14117a6}{text}}, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aa458061bbbf74b1711c5e3918cbcd8bf}{compile\+\_\+tt}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a46bf30bacb7c9c147e9626b624d2366c}{compile\+\_\+greek}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a94987892925b7473a003d1a7ceda6f18}{compile\+\_\+eval\+String}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a6db3de8aaa5f897f35466fd7583c8ae5}{compile\+\_\+name}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a4b966f33e146d876fca78fcf42529bf7}{compile\+\_\+get\+Name}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a7b385e56506a40674852e278395b238f}{compile\+\_\+seq}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a949051ea97adbba6e011a44f6db69ac7}{compile\+\_\+seq\+Reset}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a6602af86fc5ad1ff534c81686be8d6b7}{compile\+\_\+seq\+Default}} (self, attdict, content, extra, program)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a21d2fe801af06343da567b63eda3e1ed}{compile\+\_\+para}} (self, attdict, content, extra, program, stylename="{}para.\+default\+Style"{})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_af412bccda3b37b59bcae2349f7e86d5a}{Embed\+In\+Rml2pdf}} ()
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a6d5f6c335e9814675f2cc83e1fc9e6c7}{handle\+Special\+Characters}} (engine, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_afa4d07c86add95d7112498b6d14117a6}{text}}, program=None)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a38530bca8e87892967768dfed17c7fb2}{Paragraph}} (\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_afa4d07c86add95d7112498b6d14117a6}{text}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_a880853018052c87085425f42b43e9232}{style}}, bullet\+Text=None, frags=None, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ae3748a46117f693a30abccf6f96deabb}{context}}=None)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ac7e2a5254821f2e9a9c7ff03f3dda8a7}{splitspace}} (\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1paragraph_afa4d07c86add95d7112498b6d14117a6}{text}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ae3d8a2ced2effd4ad32fead51ca1a4fb}{test2}} (canv, testpara)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ad145e0e24a0d021d722a75a4f829dd87}{test}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a8917d462ff67d1fd4a61f9548696410e}{debug}} = 0
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aaad6ad1582fc8bbcccb86e85f167c874}{DUMPPROGRAM}} = 0
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ab80c175036d0c19efd667182fd78db0b}{TOOSMALLSPACE}} = 1e-\/5
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a86551727250dc419f4154c6e50c8e716}{cursorcount}} = cursorcount+cursor
+\begin{DoxyCompactList}\small\item\em print "{}failed to fit line near"{}, cursorcount \# debug for i in program1\+[max(0,cursorcount-\/10):\+ cursorcount]\+:\+ print print i, print "{}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}"{} \texorpdfstring{$\ast$}{*}8 for i in program1\+[cursorcount:\+cursorcount+20]\+:\+ print i \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a787b8e0b9ceecff8730c3ddcb9575b75}{leading}} = self.\+leading
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a83d57cf81fafc7de870dcbd6d280dc90}{heightremaining}} = heightremaining-\/\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a787b8e0b9ceecff8730c3ddcb9575b75}{leading}}
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a7a9a9d55ea18c2534bea138a4f70c434}{room}} = 0
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a407309cc0719dea817c01bc536fecee6}{alignment}} = self.\+alignment
+\begin{DoxyCompactList}\small\item\em if debug:\+ print "{}line"{}, line if line\+Is\+Full:\+ print "{}is full"{} else:\+ print "{}is partially full"{} print "{}consumes"{}, cursor, "{}elements"{} print "{}covers"{}, current\+Length, "{}of"{}, maxwidth \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a44a33dfde15c6573b0f45cb6f4423c86}{remainder}} = remainder\+[cursor:\+]\+
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ae5c0e22e1795ce8c679384d8b6e281b2}{line}} = \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a42501e10ac9503633d0d0f0eb0cb04ac}{string\+Line}}(line, current\+Length)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ae9d594647e783e984dd8e988c6013630}{laststate}} = self.\+\_\+\+\_\+dict\+\_\+\+\_\+.\+copy()
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a9abfc0f81c16bf60530819321559f62a}{heightused}} = maxheight -\/ \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a83d57cf81fafc7de870dcbd6d280dc90}{heightremaining}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ab2d03988acfe3d750c9d9b8afe0e89c6}{font\+Name}} = self.\+font\+Name
+\begin{DoxyCompactList}\small\item\em print "{}stack fault near"{}, cursor for i in program\+[max(0, cursor-\/10):\+cursor+10]\+:\+ if i==cursor:\+ print "{}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}$>$$>$$>$"{}, print i \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a164e50f62bd5479f7ce000a537db9c7d}{font\+Size}} = self.\+font\+Size
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a0cf6c6722c9894b4d11e9daa50b67ac8}{spacewidth}} = string\+Width("{} "{}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ab2d03988acfe3d750c9d9b8afe0e89c6}{font\+Name}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a164e50f62bd5479f7ce000a537db9c7d}{font\+Size}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ab22a63ee51a61ab4588653528f42532d}{i}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a6b7e1f2365d9dfbc4ce963f183a478f3}{bullet}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_abf7085a35475ba499fc500425b22c496}{indent}} = indent + self.\+baseindent
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a31499ba01290da6eedeb36d88cdc3206}{font}}
+\item 
+float \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ace498f12483a12d0a29baa860423a07e}{size}}
+\item 
+tuple \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a5311e5c69554f502e2ccd84e89c272c6}{opcode}} = (\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ab22a63ee51a61ab4588653528f42532d}{i}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a6b7e1f2365d9dfbc4ce963f183a478f3}{bullet}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_abf7085a35475ba499fc500425b22c496}{indent}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a31499ba01290da6eedeb36d88cdc3206}{font}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ace498f12483a12d0a29baa860423a07e}{size}})
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aed22bc032db0100a9bacf61fc9ea7efd}{bulletwidth}} = float(string\+Width(\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a6b7e1f2365d9dfbc4ce963f183a478f3}{bullet}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a31499ba01290da6eedeb36d88cdc3206}{font}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ace498f12483a12d0a29baa860423a07e}{size}}))
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a9732bcf0a64630935c0de67c1ea1bf64}{bulletmin}} = \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_abf7085a35475ba499fc500425b22c496}{indent}}+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a0cf6c6722c9894b4d11e9daa50b67ac8}{spacewidth}}+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aed22bc032db0100a9bacf61fc9ea7efd}{bulletwidth}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a1e97c6b74d9d78a64b5311058baa50a3}{used\+Indent}} = max(\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a9732bcf0a64630935c0de67c1ea1bf64}{bulletmin}}, used\+Indent)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ad4dcb0693ba9dd27ee651443e7212e4c}{max\+Length}} = total\+Length -\/ \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a1e97c6b74d9d78a64b5311058baa50a3}{used\+Indent}} -\/ self.\+right\+Indent
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a2915ff716132e13d05189cd54660abbe}{increment}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ab150d359afa54abe79c9ab1bdde170da}{right\+Indent}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ab48bcc8bc7a1986098c73ff163b409e0}{rise}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a98fcb65fe65ac2cc58e3faf1f5643baf}{newrise}} = self.\+rise+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ab48bcc8bc7a1986098c73ff163b409e0}{rise}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a7b9f7c028caf5eee0e4a243a4cbe32c2}{handler}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a9717bee13f0fd280ffb590d728f97817}{line\+Op\+Handlers}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a3e8c2fef044896984f5be131d3f34505}{h}} = self.\+line\+Op\+Handlers\+[:\+]\+
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_af9aee5ee278d6af8889141b18d686064}{change}} = 1
+\begin{DoxyCompactList}\small\item\em count = len(result)-\/1 done = 0 while count\texorpdfstring{$>$}{>}0 and not done:\+ e = result\+[count]\+ if hasattr(e,\textquotesingle{}width\textquotesingle{}) or isinstance(e,str):\+ done = 1 elif isinstance(e,float):\+ del result\+[count]\+ count = count-\/1 move end operations left and start operations left up to visibles \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a53942faf8c981936eee1fff12121c384}{rline}} = list(range(len(result)-\/1))
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a2cb363522ad48b4a302be2429a7644e4}{nextindex}} = index+1
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a76566853e410e7e514d006a2e2336247}{this}} = result\+[index]\+
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a2c558e565bde6424a7fe03110435999b}{next}} = result\+[\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a2cb363522ad48b4a302be2429a7644e4}{nextindex}}]\+
+\item 
+int \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a2d9cecfcb649b208ab7ff4259c8760d2}{doswap}} = 0
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a10966399a0e25f2a87a14c115bc45a21}{thisindicator}} = \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a76566853e410e7e514d006a2e2336247}{this}}\+[0]\+
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a5d8972d96483da7873862959195fed69}{nextindicator}} = \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a2c558e565bde6424a7fe03110435999b}{next}}\+[0]\+
+\item 
+dict \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_acfebbf695cec12e26dd68b8ff7097204}{DEFAULT\+\_\+\+ALIASES}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aa447229551b3b56b216d5374ff7c0cf0}{UNDERLINE}} = \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_under_line_handler}{Under\+Line\+Handler}}()
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_acc798333555552e809802ff961e069b2}{testparagraph}}
+\item 
+str \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a59e566d632c640c06272c2c3ddc79bc7}{testparagraph1}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a0bebc7986e43fc020a53a6782a1be71b}{testlink}} = \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_hot_link}{Hot\+Link}}("{}http:\+/\+/\+www.\+reportlab.\+com"{})
+\item 
+list \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a1355f4557f1ad0778b65d775fa3366f1}{test\+\_\+program}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_af87e0021a3e45f04a762d406e736776d}{font\+Color}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a8aeabe4b88ebe5eb07e8e6ff05d9e76a}{x}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a9a3302ebd45e89803fd9cb36e1cdddc4}{y}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aee6fc313ce2ebea5596127e014c147ce}{face}} = face
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aa521e8bb04bd983f97f4f4be0b549db4}{bold}} = bold
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_afc0c40fb386ddee0448d72297ed4d45b}{italic}} = italic
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ae3748a46117f693a30abccf6f96deabb}{context}}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a88da0d296c81042c56b1c03abadc7fbc}{baseindent}} = mystyle.\+left\+Indent + self.\+baseindent
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}new experimental paragraph implementation
+
+Intended to allow support for paragraphs in paragraphs, hotlinks,
+embedded flowables, and underlining.  The main entry point is the
+function
+
+def Paragraph(text, style, bulletText=None, frags=None)
+
+Which is intended to be plug compatible with the "usual" platypus
+paragraph except that it supports more functionality.
+
+In this implementation you may embed paragraphs inside paragraphs
+to create hierarchically organized documents.
+
+This implementation adds the following paragraph-like tags (which
+support the same attributes as paragraphs, for font specification, etc).
+
+- Unnumberred lists (ala html)::
+
+    <ul>
+        <li>first one</li>
+        <li>second one</li>
+    </ul>
+
+
+Also <ul type="disc"> (default) or <ul type="circle">, <ul type="square">.
+
+- Numberred lists (ala html)::
+
+    <ol>
+        <li>first one</li>
+        <li>second one</li>
+    </ol>
+
+Also <ul type="1"> (default) or <ul type="a">, <ul type="A">.
+
+- Display lists (ala HTML):
+
+For example
+
+<dl bulletFontName="Helvetica-BoldOblique" spaceBefore="10" spaceAfter="10">
+<dt>frogs</dt> <dd>Little green slimy things. Delicious with <b>garlic</b></dd>
+<dt>kittens</dt> <dd>cute, furry, not edible</dd>
+<dt>bunnies</dt> <dd>cute, furry,. Delicious with <b>garlic</b></dd>
+</dl>
+
+ALSO the following additional internal paragraph markup tags are supported
+
+<u>underlined text</u>
+
+<a href="http://www.reportlab.com">hyperlinked text</a>
+<a href="http://www.reportlab.com" color="blue">hyperlinked text</a>
+
+<link destination="end" >Go to the end (go to document internal destination)</link>
+<link destination="start" color="cyan">Go to the beginning</link>
+
+<setLink destination="start" color="magenta">This is the document start
+  (define document destination inside paragraph, color is optional)</setLink>
+\end{DoxyVerb}
+ 
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a4da8320e3d88207b45b4e0797c0918c7}\index{reportlab.platypus.para@{reportlab.platypus.para}!buildContext@{buildContext}}
+\index{buildContext@{buildContext}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{buildContext()}{buildContext()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a4da8320e3d88207b45b4e0797c0918c7} 
+reportlab.\+platypus.\+para.\+build\+Context (\begin{DoxyParamCaption}\item[{}]{stylesheet}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ad12ab95a2231cc89c1e29919ddc04f4e}\index{reportlab.platypus.para@{reportlab.platypus.para}!centerAlign@{centerAlign}}
+\index{centerAlign@{centerAlign}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{centerAlign()}{centerAlign()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ad12ab95a2231cc89c1e29919ddc04f4e} 
+reportlab.\+platypus.\+para.\+center\+Align (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{line}{, }\item[{}]{line\+Length}{, }\item[{}]{max\+Length}{}\end{DoxyParamCaption})}
+
+
+
+if debug:\+ if done:\+ print "{}\+DONE FLAG IS SET"{} if cursor\texorpdfstring{$>$}{>}=maxcursor:\+ print "{}\+AT END OF PROGRAM"{} 
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a271624972e430baf37ef351cd6fbeb69}\index{reportlab.platypus.para@{reportlab.platypus.para}!cleanProgram@{cleanProgram}}
+\index{cleanProgram@{cleanProgram}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{cleanProgram()}{cleanProgram()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a271624972e430baf37ef351cd6fbeb69} 
+reportlab.\+platypus.\+para.\+clean\+Program (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{line}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_aabb154797e4e49c6b068917ccbd53f9b}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_@{compile\_}}
+\index{compile\_@{compile\_}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_()}{compile\_()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_aabb154797e4e49c6b068917ccbd53f9b} 
+reportlab.\+platypus.\+para.\+compile\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a0e283ae447028384001f83b5f3be10f6}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_a@{compile\_a}}
+\index{compile\_a@{compile\_a}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_a()}{compile\_a()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a0e283ae447028384001f83b5f3be10f6} 
+reportlab.\+platypus.\+para.\+compile\+\_\+a (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a6d59228907de33d606f2585a19f7e36a}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_b@{compile\_b}}
+\index{compile\_b@{compile\_b}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_b()}{compile\_b()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a6d59228907de33d606f2585a19f7e36a} 
+reportlab.\+platypus.\+para.\+compile\+\_\+b (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a0316cfb523d7507b07d792b57139ebc0}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_bullet@{compile\_bullet}}
+\index{compile\_bullet@{compile\_bullet}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_bullet()}{compile\_bullet()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a0316cfb523d7507b07d792b57139ebc0} 
+reportlab.\+platypus.\+para.\+compile\+\_\+bullet (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a06da725d5c29c362fa5ad375905f314e}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_dl@{compile\_dl}}
+\index{compile\_dl@{compile\_dl}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_dl()}{compile\_dl()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a06da725d5c29c362fa5ad375905f314e} 
+reportlab.\+platypus.\+para.\+compile\+\_\+dl (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a94987892925b7473a003d1a7ceda6f18}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_evalString@{compile\_evalString}}
+\index{compile\_evalString@{compile\_evalString}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_evalString()}{compile\_evalString()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a94987892925b7473a003d1a7ceda6f18} 
+reportlab.\+platypus.\+para.\+compile\+\_\+eval\+String (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a75be296df5041845483bfc694e4da469}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_font@{compile\_font}}
+\index{compile\_font@{compile\_font}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_font()}{compile\_font()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a75be296df5041845483bfc694e4da469} 
+reportlab.\+platypus.\+para.\+compile\+\_\+font (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a4b966f33e146d876fca78fcf42529bf7}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_getName@{compile\_getName}}
+\index{compile\_getName@{compile\_getName}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_getName()}{compile\_getName()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a4b966f33e146d876fca78fcf42529bf7} 
+reportlab.\+platypus.\+para.\+compile\+\_\+get\+Name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a46bf30bacb7c9c147e9626b624d2366c}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_greek@{compile\_greek}}
+\index{compile\_greek@{compile\_greek}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_greek()}{compile\_greek()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a46bf30bacb7c9c147e9626b624d2366c} 
+reportlab.\+platypus.\+para.\+compile\+\_\+greek (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a5276bd8929769e9f6d00345a03a1ddd4}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_i@{compile\_i}}
+\index{compile\_i@{compile\_i}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_i()}{compile\_i()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a5276bd8929769e9f6d00345a03a1ddd4} 
+reportlab.\+platypus.\+para.\+compile\+\_\+i (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a0336faf0ee875ce895850c1df1339f97}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_link@{compile\_link}}
+\index{compile\_link@{compile\_link}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_link()}{compile\_link()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a0336faf0ee875ce895850c1df1339f97} 
+reportlab.\+platypus.\+para.\+compile\+\_\+link (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a6db3de8aaa5f897f35466fd7583c8ae5}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_name@{compile\_name}}
+\index{compile\_name@{compile\_name}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_name()}{compile\_name()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a6db3de8aaa5f897f35466fd7583c8ae5} 
+reportlab.\+platypus.\+para.\+compile\+\_\+name (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a38c9c2b97551b7664f7490c77884ca63}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_ol@{compile\_ol}}
+\index{compile\_ol@{compile\_ol}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_ol()}{compile\_ol()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a38c9c2b97551b7664f7490c77884ca63} 
+reportlab.\+platypus.\+para.\+compile\+\_\+ol (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a3fb81fc45f5e75ef5dcfe7de16930b17}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_pageNumber@{compile\_pageNumber}}
+\index{compile\_pageNumber@{compile\_pageNumber}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_pageNumber()}{compile\_pageNumber()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a3fb81fc45f5e75ef5dcfe7de16930b17} 
+reportlab.\+platypus.\+para.\+compile\+\_\+page\+Number (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a21d2fe801af06343da567b63eda3e1ed}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_para@{compile\_para}}
+\index{compile\_para@{compile\_para}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_para()}{compile\_para()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a21d2fe801af06343da567b63eda3e1ed} 
+reportlab.\+platypus.\+para.\+compile\+\_\+para (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{, }\item[{}]{stylename}{ = {\ttfamily "{}para.defaultStyle"{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a7b385e56506a40674852e278395b238f}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_seq@{compile\_seq}}
+\index{compile\_seq@{compile\_seq}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_seq()}{compile\_seq()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a7b385e56506a40674852e278395b238f} 
+reportlab.\+platypus.\+para.\+compile\+\_\+seq (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a6602af86fc5ad1ff534c81686be8d6b7}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_seqDefault@{compile\_seqDefault}}
+\index{compile\_seqDefault@{compile\_seqDefault}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_seqDefault()}{compile\_seqDefault()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a6602af86fc5ad1ff534c81686be8d6b7} 
+reportlab.\+platypus.\+para.\+compile\+\_\+seq\+Default (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a949051ea97adbba6e011a44f6db69ac7}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_seqReset@{compile\_seqReset}}
+\index{compile\_seqReset@{compile\_seqReset}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_seqReset()}{compile\_seqReset()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a949051ea97adbba6e011a44f6db69ac7} 
+reportlab.\+platypus.\+para.\+compile\+\_\+seq\+Reset (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_aeae3971ddcb08bd44b4980cdf42e5fca}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_setLink@{compile\_setLink}}
+\index{compile\_setLink@{compile\_setLink}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_setLink()}{compile\_setLink()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_aeae3971ddcb08bd44b4980cdf42e5fca} 
+reportlab.\+platypus.\+para.\+compile\+\_\+set\+Link (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a7a4ee7cb924fbd5951a5524b60dc722b}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_sub@{compile\_sub}}
+\index{compile\_sub@{compile\_sub}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_sub()}{compile\_sub()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a7a4ee7cb924fbd5951a5524b60dc722b} 
+reportlab.\+platypus.\+para.\+compile\+\_\+sub (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a950396d271b801bb76d7673bb2b8b8a6}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_super@{compile\_super}}
+\index{compile\_super@{compile\_super}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_super()}{compile\_super()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a950396d271b801bb76d7673bb2b8b8a6} 
+reportlab.\+platypus.\+para.\+compile\+\_\+super (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_aa458061bbbf74b1711c5e3918cbcd8bf}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_tt@{compile\_tt}}
+\index{compile\_tt@{compile\_tt}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_tt()}{compile\_tt()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_aa458061bbbf74b1711c5e3918cbcd8bf} 
+reportlab.\+platypus.\+para.\+compile\+\_\+tt (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_aa6bc16b0ab12c300c397de0ad7c6cb58}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_u@{compile\_u}}
+\index{compile\_u@{compile\_u}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_u()}{compile\_u()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_aa6bc16b0ab12c300c397de0ad7c6cb58} 
+reportlab.\+platypus.\+para.\+compile\+\_\+u (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_af40d46f5952f4691e5423311567f1d45}\index{reportlab.platypus.para@{reportlab.platypus.para}!compile\_ul@{compile\_ul}}
+\index{compile\_ul@{compile\_ul}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compile\_ul()}{compile\_ul()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_af40d46f5952f4691e5423311567f1d45} 
+reportlab.\+platypus.\+para.\+compile\+\_\+ul (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{attdict}{, }\item[{}]{content}{, }\item[{}]{extra}{, }\item[{}]{program}{, }\item[{}]{tagname}{ = {\ttfamily "{}ul"{}}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_aa23bfed603fbede8fba1a23cdbccdcd2}\index{reportlab.platypus.para@{reportlab.platypus.para}!compileComponent@{compileComponent}}
+\index{compileComponent@{compileComponent}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{compileComponent()}{compileComponent()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_aa23bfed603fbede8fba1a23cdbccdcd2} 
+reportlab.\+platypus.\+para.\+compile\+Component (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{parsed\+Text}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a54c4c5653853ac47bad9390b910c4ebe}\index{reportlab.platypus.para@{reportlab.platypus.para}!defaultContext@{defaultContext}}
+\index{defaultContext@{defaultContext}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{defaultContext()}{defaultContext()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a54c4c5653853ac47bad9390b910c4ebe} 
+reportlab.\+platypus.\+para.\+default\+Context (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a5cee1ce30b8a06c6918c20a7658bb4ae}\index{reportlab.platypus.para@{reportlab.platypus.para}!do\_bullet@{do\_bullet}}
+\index{do\_bullet@{do\_bullet}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{do\_bullet()}{do\_bullet()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a5cee1ce30b8a06c6918c20a7658bb4ae} 
+reportlab.\+platypus.\+para.\+do\+\_\+bullet (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{text}{, }\item[{}]{program}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_af412bccda3b37b59bcae2349f7e86d5a}\index{reportlab.platypus.para@{reportlab.platypus.para}!EmbedInRml2pdf@{EmbedInRml2pdf}}
+\index{EmbedInRml2pdf@{EmbedInRml2pdf}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{EmbedInRml2pdf()}{EmbedInRml2pdf()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_af412bccda3b37b59bcae2349f7e86d5a} 
+reportlab.\+platypus.\+para.\+Embed\+In\+Rml2pdf (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a2b20cafbacdf5c24907ac20dddfcf913}\index{reportlab.platypus.para@{reportlab.platypus.para}!fitLine@{fitLine}}
+\index{fitLine@{fitLine}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{fitLine()}{fitLine()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a2b20cafbacdf5c24907ac20dddfcf913} 
+reportlab.\+platypus.\+para.\+fit\+Line (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{program}{, }\item[{}]{total\+Length}{}\end{DoxyParamCaption})}
+
+
+
+def size\+Of\+Word(self, word):\+ inline\+This\+Function\+For\+Efficiency return float(string\+Width(word, self.\+font\+Name, self.\+font\+Size)) 
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a0f53c92ea702153fc682afc7af367ea9}\index{reportlab.platypus.para@{reportlab.platypus.para}!getState@{getState}}
+\index{getState@{getState}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a0f53c92ea702153fc682afc7af367ea9} 
+reportlab.\+platypus.\+para.\+get\+State (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a6d5f6c335e9814675f2cc83e1fc9e6c7}\index{reportlab.platypus.para@{reportlab.platypus.para}!handleSpecialCharacters@{handleSpecialCharacters}}
+\index{handleSpecialCharacters@{handleSpecialCharacters}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{handleSpecialCharacters()}{handleSpecialCharacters()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a6d5f6c335e9814675f2cc83e1fc9e6c7} 
+reportlab.\+platypus.\+para.\+handle\+Special\+Characters (\begin{DoxyParamCaption}\item[{}]{engine}{, }\item[{}]{text}{, }\item[{}]{program}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a9b993e7500b865aeb5b09a5193169e90}\index{reportlab.platypus.para@{reportlab.platypus.para}!insertShift@{insertShift}}
+\index{insertShift@{insertShift}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{insertShift()}{insertShift()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a9b993e7500b865aeb5b09a5193169e90} 
+reportlab.\+platypus.\+para.\+insert\+Shift (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{line}{, }\item[{}]{shift}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_aab2b5cccb90aa34fbaca1d1ca8d3b133}\index{reportlab.platypus.para@{reportlab.platypus.para}!justifyAlign@{justifyAlign}}
+\index{justifyAlign@{justifyAlign}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{justifyAlign()}{justifyAlign()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_aab2b5cccb90aa34fbaca1d1ca8d3b133} 
+reportlab.\+platypus.\+para.\+justify\+Align (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{line}{, }\item[{}]{line\+Length}{, }\item[{}]{max\+Length}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ad8451b7c4674cda39593522569da5f61}\index{reportlab.platypus.para@{reportlab.platypus.para}!lengthSequence@{lengthSequence}}
+\index{lengthSequence@{lengthSequence}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{lengthSequence()}{lengthSequence()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ad8451b7c4674cda39593522569da5f61} 
+reportlab.\+platypus.\+para.\+length\+Sequence (\begin{DoxyParamCaption}\item[{}]{s}{, }\item[{}]{converter}{ = {\ttfamily \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a360ed270d059cd234161aa147e5458be}{read\+Length}}}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}from "(2, 1)" or "2,1" return [2,1], for example\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1platypus_1_1para_aa1f1bf383e46e8d54367ad6b56a723fb}\index{reportlab.platypus.para@{reportlab.platypus.para}!linearize@{linearize}}
+\index{linearize@{linearize}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{linearize()}{linearize()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_aa1f1bf383e46e8d54367ad6b56a723fb} 
+reportlab.\+platypus.\+para.\+linearize (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{program}{ = {\ttfamily None}, }\item[{}]{parsed\+Text}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+
+
+print "{}="{}\texorpdfstring{$\ast$}{*}11 
+
+\hypertarget{namespacereportlab_1_1platypus_1_1para_autotoc_md8}{}\doxysubsection{\texorpdfstring{check pushes and pops}{check pushes and pops}}\label{namespacereportlab_1_1platypus_1_1para_autotoc_md8}
+stackcount = 0 dump = 0 for x in program:\+ if dump:\+ print "{}dump:\+"{}, x if isinstance(x,tuple):\+ i = x\+[0]\+ if i=="{}push"{}:\+ stackcount += 1 print "{} "{}\texorpdfstring{$\ast$}{*}stackcount, "{}push"{}, stackcount if i=="{}pop"{}:\+ stackcount = stackcount-\/1 print "{} "{}\texorpdfstring{$\ast$}{*}stackcount, "{}pop"{}, stackcount if stackcount\texorpdfstring{$<$}{<}0:\+ dump=1 print "{}\+STACK UNDERFLOW!"{} if dump:\+ stop \Hypertarget{namespacereportlab_1_1platypus_1_1para_a38530bca8e87892967768dfed17c7fb2}\index{reportlab.platypus.para@{reportlab.platypus.para}!Paragraph@{Paragraph}}
+\index{Paragraph@{Paragraph}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{Paragraph()}{Paragraph()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a38530bca8e87892967768dfed17c7fb2} 
+reportlab.\+platypus.\+para.\+Paragraph (\begin{DoxyParamCaption}\item[{}]{text}{, }\item[{}]{style}{, }\item[{}]{bullet\+Text}{ = {\ttfamily None}, }\item[{}]{frags}{ = {\ttfamily None}, }\item[{}]{context}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb} Paragraph(text, style, bulletText=None)
+intended to be like a platypus Paragraph but better.
+\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1platypus_1_1para_a475dc09fc4e2a36912ad125fe3d55c8d}\index{reportlab.platypus.para@{reportlab.platypus.para}!readAlignment@{readAlignment}}
+\index{readAlignment@{readAlignment}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{readAlignment()}{readAlignment()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a475dc09fc4e2a36912ad125fe3d55c8d} 
+reportlab.\+platypus.\+para.\+read\+Alignment (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a8c999c7aac2d9cd8321c7af389385023}\index{reportlab.platypus.para@{reportlab.platypus.para}!readBool@{readBool}}
+\index{readBool@{readBool}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{readBool()}{readBool()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a8c999c7aac2d9cd8321c7af389385023} 
+reportlab.\+platypus.\+para.\+read\+Bool (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_aa78ac90218db50feeb94dea63328eed2}\index{reportlab.platypus.para@{reportlab.platypus.para}!readColor@{readColor}}
+\index{readColor@{readColor}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{readColor()}{readColor()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_aa78ac90218db50feeb94dea63328eed2} 
+reportlab.\+platypus.\+para.\+read\+Color (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read color names or tuples, RGB or CMYK, and return a Color object.\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1platypus_1_1para_a360ed270d059cd234161aa147e5458be}\index{reportlab.platypus.para@{reportlab.platypus.para}!readLength@{readLength}}
+\index{readLength@{readLength}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{readLength()}{readLength()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a360ed270d059cd234161aa147e5458be} 
+reportlab.\+platypus.\+para.\+read\+Length (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Read a dimension measurement: accept "3in", "5cm",
+"72 pt" and so on.\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1platypus_1_1para_a64fec86096fd625609c6fe54c34454cc}\index{reportlab.platypus.para@{reportlab.platypus.para}!resetState@{resetState}}
+\index{resetState@{resetState}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{resetState()}{resetState()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a64fec86096fd625609c6fe54c34454cc} 
+reportlab.\+platypus.\+para.\+reset\+State (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{state}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a8d10beeae7650026d03337bdfa67a587}\index{reportlab.platypus.para@{reportlab.platypus.para}!rightAlign@{rightAlign}}
+\index{rightAlign@{rightAlign}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{rightAlign()}{rightAlign()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a8d10beeae7650026d03337bdfa67a587} 
+reportlab.\+platypus.\+para.\+right\+Align (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{line}{, }\item[{}]{line\+Length}{, }\item[{}]{max\+Length}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a8d9f7d88a9918d519fa718184df3117d}\index{reportlab.platypus.para@{reportlab.platypus.para}!runOpCodes@{runOpCodes}}
+\index{runOpCodes@{runOpCodes}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{runOpCodes()}{runOpCodes()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a8d9f7d88a9918d519fa718184df3117d} 
+reportlab.\+platypus.\+para.\+run\+Op\+Codes (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{program}{, }\item[{}]{canvas}{, }\item[{}]{textobject}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ac100490f371e29d52e00bda56d7a2e00}\index{reportlab.platypus.para@{reportlab.platypus.para}!shiftfont@{shiftfont}}
+\index{shiftfont@{shiftfont}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{shiftfont()}{shiftfont()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ac100490f371e29d52e00bda56d7a2e00} 
+reportlab.\+platypus.\+para.\+shiftfont (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{program}{, }\item[{}]{face}{ = {\ttfamily None}, }\item[{}]{bold}{ = {\ttfamily None}, }\item[{}]{italic}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a6ed995c5b2924a7464867294cc6d9b7c}\index{reportlab.platypus.para@{reportlab.platypus.para}!shrinkWrap@{shrinkWrap}}
+\index{shrinkWrap@{shrinkWrap}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{shrinkWrap()}{shrinkWrap()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a6ed995c5b2924a7464867294cc6d9b7c} 
+reportlab.\+platypus.\+para.\+shrink\+Wrap (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{line}{}\end{DoxyParamCaption})}
+
+
+
+if not first:\+ \+\#if debug:\+ print "{}shifting"{}, shift, e \+\#result.\+append(shift) 
+
+\hypertarget{namespacereportlab_1_1platypus_1_1para_autotoc_md7}{}\doxysubsection{\texorpdfstring{add the shift in result before any start markers before e}{add the shift in result before any start markers before e}}\label{namespacereportlab_1_1platypus_1_1para_autotoc_md7}
+insertplace = len(result)-\/1 done = 0 myshift = shift while insertplace\texorpdfstring{$>$}{>}0 and not done:\+ beforeplace = insertplace-\/1 beforething = result\+[beforeplace]\+ if isinstance(beforething,tuple):\+ indicator = beforething\+[0]\+ if indicator=="{}end\+Line\+Operation"{}:\+ done = 1 elif debug:\+ print "{}adding shift before"{}, beforething elif isinstance(beforething,float):\+ myshift += beforething del result\+[beforeplace]\+ else:\+ done = 1 if not done:\+ insertplace = beforeplace result.\+insert(insertplace, myshift) first = 0 cursor += 1 return result \Hypertarget{namespacereportlab_1_1platypus_1_1para_acdf58f0861026d9795d518747f1b7550}\index{reportlab.platypus.para@{reportlab.platypus.para}!simpleJustifyAlign@{simpleJustifyAlign}}
+\index{simpleJustifyAlign@{simpleJustifyAlign}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{simpleJustifyAlign()}{simpleJustifyAlign()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_acdf58f0861026d9795d518747f1b7550} 
+reportlab.\+platypus.\+para.\+simple\+Justify\+Align (\begin{DoxyParamCaption}\item[{}]{line}{, }\item[{}]{current\+Length}{, }\item[{}]{max\+Length}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ac7e2a5254821f2e9a9c7ff03f3dda8a7}\index{reportlab.platypus.para@{reportlab.platypus.para}!splitspace@{splitspace}}
+\index{splitspace@{splitspace}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{splitspace()}{splitspace()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ac7e2a5254821f2e9a9c7ff03f3dda8a7} 
+reportlab.\+platypus.\+para.\+splitspace (\begin{DoxyParamCaption}\item[{}]{text}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a42501e10ac9503633d0d0f0eb0cb04ac}\index{reportlab.platypus.para@{reportlab.platypus.para}!stringLine@{stringLine}}
+\index{stringLine@{stringLine}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{stringLine()}{stringLine()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a42501e10ac9503633d0d0f0eb0cb04ac} 
+reportlab.\+platypus.\+para.\+string\+Line (\begin{DoxyParamCaption}\item[{}]{line}{, }\item[{}]{length}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ad145e0e24a0d021d722a75a4f829dd87}\index{reportlab.platypus.para@{reportlab.platypus.para}!test@{test}}
+\index{test@{test}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{test()}{test()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ad145e0e24a0d021d722a75a4f829dd87} 
+reportlab.\+platypus.\+para.\+test (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ae3d8a2ced2effd4ad32fead51ca1a4fb}\index{reportlab.platypus.para@{reportlab.platypus.para}!test2@{test2}}
+\index{test2@{test2}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{test2()}{test2()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ae3d8a2ced2effd4ad32fead51ca1a4fb} 
+reportlab.\+platypus.\+para.\+test2 (\begin{DoxyParamCaption}\item[{}]{canv}{, }\item[{}]{testpara}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a407309cc0719dea817c01bc536fecee6}\index{reportlab.platypus.para@{reportlab.platypus.para}!alignment@{alignment}}
+\index{alignment@{alignment}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{alignment}{alignment}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a407309cc0719dea817c01bc536fecee6} 
+reportlab.\+platypus.\+para.\+alignment = self.\+alignment}
+
+
+
+if debug:\+ print "{}line"{}, line if line\+Is\+Full:\+ print "{}is full"{} else:\+ print "{}is partially full"{} print "{}consumes"{}, cursor, "{}elements"{} print "{}covers"{}, current\+Length, "{}of"{}, maxwidth 
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a88da0d296c81042c56b1c03abadc7fbc}\index{reportlab.platypus.para@{reportlab.platypus.para}!baseindent@{baseindent}}
+\index{baseindent@{baseindent}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{baseindent}{baseindent}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a88da0d296c81042c56b1c03abadc7fbc} 
+reportlab.\+platypus.\+para.\+baseindent = mystyle.\+left\+Indent + self.\+baseindent}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_aa521e8bb04bd983f97f4f4be0b549db4}\index{reportlab.platypus.para@{reportlab.platypus.para}!bold@{bold}}
+\index{bold@{bold}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{bold}{bold}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_aa521e8bb04bd983f97f4f4be0b549db4} 
+reportlab.\+platypus.\+para.\+bold = bold}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a6b7e1f2365d9dfbc4ce963f183a478f3}\index{reportlab.platypus.para@{reportlab.platypus.para}!bullet@{bullet}}
+\index{bullet@{bullet}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{bullet}{bullet}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a6b7e1f2365d9dfbc4ce963f183a478f3} 
+reportlab.\+platypus.\+para.\+bullet}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a9732bcf0a64630935c0de67c1ea1bf64}\index{reportlab.platypus.para@{reportlab.platypus.para}!bulletmin@{bulletmin}}
+\index{bulletmin@{bulletmin}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{bulletmin}{bulletmin}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a9732bcf0a64630935c0de67c1ea1bf64} 
+reportlab.\+platypus.\+para.\+bulletmin = \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_abf7085a35475ba499fc500425b22c496}{indent}}+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a0cf6c6722c9894b4d11e9daa50b67ac8}{spacewidth}}+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_aed22bc032db0100a9bacf61fc9ea7efd}{bulletwidth}}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_aed22bc032db0100a9bacf61fc9ea7efd}\index{reportlab.platypus.para@{reportlab.platypus.para}!bulletwidth@{bulletwidth}}
+\index{bulletwidth@{bulletwidth}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{bulletwidth}{bulletwidth}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_aed22bc032db0100a9bacf61fc9ea7efd} 
+reportlab.\+platypus.\+para.\+bulletwidth = float(string\+Width(\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a6b7e1f2365d9dfbc4ce963f183a478f3}{bullet}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a31499ba01290da6eedeb36d88cdc3206}{font}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ace498f12483a12d0a29baa860423a07e}{size}}))}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_af9aee5ee278d6af8889141b18d686064}\index{reportlab.platypus.para@{reportlab.platypus.para}!change@{change}}
+\index{change@{change}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{change}{change}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_af9aee5ee278d6af8889141b18d686064} 
+int reportlab.\+platypus.\+para.\+change = 1}
+
+
+
+count = len(result)-\/1 done = 0 while count\texorpdfstring{$>$}{>}0 and not done:\+ e = result\+[count]\+ if hasattr(e,\textquotesingle{}width\textquotesingle{}) or isinstance(e,str):\+ done = 1 elif isinstance(e,float):\+ del result\+[count]\+ count = count-\/1 move end operations left and start operations left up to visibles 
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ae3748a46117f693a30abccf6f96deabb}\index{reportlab.platypus.para@{reportlab.platypus.para}!context@{context}}
+\index{context@{context}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{context}{context}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ae3748a46117f693a30abccf6f96deabb} 
+reportlab.\+platypus.\+para.\+context}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a86551727250dc419f4154c6e50c8e716}\index{reportlab.platypus.para@{reportlab.platypus.para}!cursorcount@{cursorcount}}
+\index{cursorcount@{cursorcount}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{cursorcount}{cursorcount}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a86551727250dc419f4154c6e50c8e716} 
+reportlab.\+platypus.\+para.\+cursorcount = cursorcount+cursor}
+
+
+
+print "{}failed to fit line near"{}, cursorcount \# debug for i in program1\+[max(0,cursorcount-\/10):\+ cursorcount]\+:\+ print print i, print "{}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}"{} \texorpdfstring{$\ast$}{*}8 for i in program1\+[cursorcount:\+cursorcount+20]\+:\+ print i 
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a8917d462ff67d1fd4a61f9548696410e}\index{reportlab.platypus.para@{reportlab.platypus.para}!debug@{debug}}
+\index{debug@{debug}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{debug}{debug}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a8917d462ff67d1fd4a61f9548696410e} 
+int reportlab.\+platypus.\+para.\+debug = 0}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_acfebbf695cec12e26dd68b8ff7097204}\index{reportlab.platypus.para@{reportlab.platypus.para}!DEFAULT\_ALIASES@{DEFAULT\_ALIASES}}
+\index{DEFAULT\_ALIASES@{DEFAULT\_ALIASES}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{DEFAULT\_ALIASES}{DEFAULT\_ALIASES}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_acfebbf695cec12e26dd68b8ff7097204} 
+dict reportlab.\+platypus.\+para.\+DEFAULT\+\_\+\+ALIASES}
+
+{\bfseries Initial value:\+}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{"{}h1.defaultStyle"{}}:\ \textcolor{stringliteral}{"{}Heading1"{}},}
+\DoxyCodeLine{00003\ \ \ \ \ \textcolor{stringliteral}{"{}h2.defaultStyle"{}}:\ \textcolor{stringliteral}{"{}Heading2"{}},}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{stringliteral}{"{}h3.defaultStyle"{}}:\ \textcolor{stringliteral}{"{}Heading3"{}},}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{stringliteral}{"{}h4.defaultStyle"{}}:\ \textcolor{stringliteral}{"{}Heading4"{}},}
+\DoxyCodeLine{00006\ \ \ \ \ \textcolor{stringliteral}{"{}h5.defaultStyle"{}}:\ \textcolor{stringliteral}{"{}Heading5"{}},}
+\DoxyCodeLine{00007\ \ \ \ \ \textcolor{stringliteral}{"{}h6.defaultStyle"{}}:\ \textcolor{stringliteral}{"{}Heading6"{}},}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{stringliteral}{"{}title.defaultStyle"{}}:\ \textcolor{stringliteral}{"{}Title"{}},}
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{stringliteral}{"{}subtitle.defaultStyle"{}}:\ \textcolor{stringliteral}{"{}SubTitle"{}},}
+\DoxyCodeLine{00010\ \ \ \ \ \textcolor{stringliteral}{"{}para.defaultStyle"{}}:\ \textcolor{stringliteral}{"{}Normal"{}},}
+\DoxyCodeLine{00011\ \ \ \ \ \textcolor{stringliteral}{"{}pre.defaultStyle"{}}:\ \textcolor{stringliteral}{"{}Code"{}},}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{stringliteral}{"{}ul.defaultStyle"{}}:\ \textcolor{stringliteral}{"{}UnorderedList"{}},}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{stringliteral}{"{}ol.defaultStyle"{}}:\ \textcolor{stringliteral}{"{}OrderedList"{}},}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{stringliteral}{"{}li.defaultStyle"{}}:\ \textcolor{stringliteral}{"{}Definition"{}},}
+\DoxyCodeLine{00015\ \ \ \ \ \}}
+
+\end{DoxyCode}
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a2d9cecfcb649b208ab7ff4259c8760d2}\index{reportlab.platypus.para@{reportlab.platypus.para}!doswap@{doswap}}
+\index{doswap@{doswap}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{doswap}{doswap}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a2d9cecfcb649b208ab7ff4259c8760d2} 
+int reportlab.\+platypus.\+para.\+doswap = 0}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_aaad6ad1582fc8bbcccb86e85f167c874}\index{reportlab.platypus.para@{reportlab.platypus.para}!DUMPPROGRAM@{DUMPPROGRAM}}
+\index{DUMPPROGRAM@{DUMPPROGRAM}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{DUMPPROGRAM}{DUMPPROGRAM}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_aaad6ad1582fc8bbcccb86e85f167c874} 
+int reportlab.\+platypus.\+para.\+DUMPPROGRAM = 0}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_aee6fc313ce2ebea5596127e014c147ce}\index{reportlab.platypus.para@{reportlab.platypus.para}!face@{face}}
+\index{face@{face}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{face}{face}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_aee6fc313ce2ebea5596127e014c147ce} 
+reportlab.\+platypus.\+para.\+face = face}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a31499ba01290da6eedeb36d88cdc3206}\index{reportlab.platypus.para@{reportlab.platypus.para}!font@{font}}
+\index{font@{font}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a31499ba01290da6eedeb36d88cdc3206} 
+reportlab.\+platypus.\+para.\+font}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_af87e0021a3e45f04a762d406e736776d}\index{reportlab.platypus.para@{reportlab.platypus.para}!fontColor@{fontColor}}
+\index{fontColor@{fontColor}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{fontColor}{fontColor}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_af87e0021a3e45f04a762d406e736776d} 
+reportlab.\+platypus.\+para.\+font\+Color}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ab2d03988acfe3d750c9d9b8afe0e89c6}\index{reportlab.platypus.para@{reportlab.platypus.para}!fontName@{fontName}}
+\index{fontName@{fontName}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{fontName}{fontName}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ab2d03988acfe3d750c9d9b8afe0e89c6} 
+reportlab.\+platypus.\+para.\+font\+Name = self.\+font\+Name}
+
+
+
+print "{}stack fault near"{}, cursor for i in program\+[max(0, cursor-\/10):\+cursor+10]\+:\+ if i==cursor:\+ print "{}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}$>$$>$$>$"{}, print i 
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a164e50f62bd5479f7ce000a537db9c7d}\index{reportlab.platypus.para@{reportlab.platypus.para}!fontSize@{fontSize}}
+\index{fontSize@{fontSize}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{fontSize}{fontSize}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a164e50f62bd5479f7ce000a537db9c7d} 
+reportlab.\+platypus.\+para.\+font\+Size = self.\+font\+Size}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a3e8c2fef044896984f5be131d3f34505}\index{reportlab.platypus.para@{reportlab.platypus.para}!h@{h}}
+\index{h@{h}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a3e8c2fef044896984f5be131d3f34505} 
+reportlab.\+platypus.\+para.\+h = self.\+line\+Op\+Handlers\+[:\+]\+}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a7b9f7c028caf5eee0e4a243a4cbe32c2}\index{reportlab.platypus.para@{reportlab.platypus.para}!handler@{handler}}
+\index{handler@{handler}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{handler}{handler}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a7b9f7c028caf5eee0e4a243a4cbe32c2} 
+reportlab.\+platypus.\+para.\+handler}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a83d57cf81fafc7de870dcbd6d280dc90}\index{reportlab.platypus.para@{reportlab.platypus.para}!heightremaining@{heightremaining}}
+\index{heightremaining@{heightremaining}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{heightremaining}{heightremaining}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a83d57cf81fafc7de870dcbd6d280dc90} 
+reportlab.\+platypus.\+para.\+heightremaining = heightremaining-\/\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a787b8e0b9ceecff8730c3ddcb9575b75}{leading}}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a9abfc0f81c16bf60530819321559f62a}\index{reportlab.platypus.para@{reportlab.platypus.para}!heightused@{heightused}}
+\index{heightused@{heightused}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{heightused}{heightused}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a9abfc0f81c16bf60530819321559f62a} 
+reportlab.\+platypus.\+para.\+heightused = maxheight -\/ \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a83d57cf81fafc7de870dcbd6d280dc90}{heightremaining}}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ab22a63ee51a61ab4588653528f42532d}\index{reportlab.platypus.para@{reportlab.platypus.para}!i@{i}}
+\index{i@{i}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ab22a63ee51a61ab4588653528f42532d} 
+reportlab.\+platypus.\+para.\+i}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a2915ff716132e13d05189cd54660abbe}\index{reportlab.platypus.para@{reportlab.platypus.para}!increment@{increment}}
+\index{increment@{increment}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{increment}{increment}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a2915ff716132e13d05189cd54660abbe} 
+reportlab.\+platypus.\+para.\+increment}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_abf7085a35475ba499fc500425b22c496}\index{reportlab.platypus.para@{reportlab.platypus.para}!indent@{indent}}
+\index{indent@{indent}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{indent}{indent}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_abf7085a35475ba499fc500425b22c496} 
+reportlab.\+platypus.\+para.\+indent = indent + self.\+baseindent}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_afc0c40fb386ddee0448d72297ed4d45b}\index{reportlab.platypus.para@{reportlab.platypus.para}!italic@{italic}}
+\index{italic@{italic}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{italic}{italic}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_afc0c40fb386ddee0448d72297ed4d45b} 
+reportlab.\+platypus.\+para.\+italic = italic}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ae9d594647e783e984dd8e988c6013630}\index{reportlab.platypus.para@{reportlab.platypus.para}!laststate@{laststate}}
+\index{laststate@{laststate}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{laststate}{laststate}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ae9d594647e783e984dd8e988c6013630} 
+reportlab.\+platypus.\+para.\+laststate = self.\+\_\+\+\_\+dict\+\_\+\+\_\+.\+copy()}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a787b8e0b9ceecff8730c3ddcb9575b75}\index{reportlab.platypus.para@{reportlab.platypus.para}!leading@{leading}}
+\index{leading@{leading}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{leading}{leading}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a787b8e0b9ceecff8730c3ddcb9575b75} 
+reportlab.\+platypus.\+para.\+leading = self.\+leading}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ae5c0e22e1795ce8c679384d8b6e281b2}\index{reportlab.platypus.para@{reportlab.platypus.para}!line@{line}}
+\index{line@{line}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{line}{line}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ae5c0e22e1795ce8c679384d8b6e281b2} 
+reportlab.\+platypus.\+para.\+line = \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a42501e10ac9503633d0d0f0eb0cb04ac}{string\+Line}}(line, current\+Length)}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a9717bee13f0fd280ffb590d728f97817}\index{reportlab.platypus.para@{reportlab.platypus.para}!lineOpHandlers@{lineOpHandlers}}
+\index{lineOpHandlers@{lineOpHandlers}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{lineOpHandlers}{lineOpHandlers}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a9717bee13f0fd280ffb590d728f97817} 
+reportlab.\+platypus.\+para.\+line\+Op\+Handlers}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ad4dcb0693ba9dd27ee651443e7212e4c}\index{reportlab.platypus.para@{reportlab.platypus.para}!maxLength@{maxLength}}
+\index{maxLength@{maxLength}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{maxLength}{maxLength}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ad4dcb0693ba9dd27ee651443e7212e4c} 
+reportlab.\+platypus.\+para.\+max\+Length = total\+Length -\/ \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a1e97c6b74d9d78a64b5311058baa50a3}{used\+Indent}} -\/ self.\+right\+Indent}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a98fcb65fe65ac2cc58e3faf1f5643baf}\index{reportlab.platypus.para@{reportlab.platypus.para}!newrise@{newrise}}
+\index{newrise@{newrise}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{newrise}{newrise}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a98fcb65fe65ac2cc58e3faf1f5643baf} 
+reportlab.\+platypus.\+para.\+newrise = self.\+rise+\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ab48bcc8bc7a1986098c73ff163b409e0}{rise}}}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a2c558e565bde6424a7fe03110435999b}\index{reportlab.platypus.para@{reportlab.platypus.para}!next@{next}}
+\index{next@{next}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{next}{next}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a2c558e565bde6424a7fe03110435999b} 
+reportlab.\+platypus.\+para.\+next = result\+[\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a2cb363522ad48b4a302be2429a7644e4}{nextindex}}]\+}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a2cb363522ad48b4a302be2429a7644e4}\index{reportlab.platypus.para@{reportlab.platypus.para}!nextindex@{nextindex}}
+\index{nextindex@{nextindex}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{nextindex}{nextindex}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a2cb363522ad48b4a302be2429a7644e4} 
+int reportlab.\+platypus.\+para.\+nextindex = index+1}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a5d8972d96483da7873862959195fed69}\index{reportlab.platypus.para@{reportlab.platypus.para}!nextindicator@{nextindicator}}
+\index{nextindicator@{nextindicator}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{nextindicator}{nextindicator}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a5d8972d96483da7873862959195fed69} 
+reportlab.\+platypus.\+para.\+nextindicator = \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a2c558e565bde6424a7fe03110435999b}{next}}\+[0]\+}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a5311e5c69554f502e2ccd84e89c272c6}\index{reportlab.platypus.para@{reportlab.platypus.para}!opcode@{opcode}}
+\index{opcode@{opcode}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{opcode}{opcode}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a5311e5c69554f502e2ccd84e89c272c6} 
+tuple reportlab.\+platypus.\+para.\+opcode = (\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ab22a63ee51a61ab4588653528f42532d}{i}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a6b7e1f2365d9dfbc4ce963f183a478f3}{bullet}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_abf7085a35475ba499fc500425b22c496}{indent}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a31499ba01290da6eedeb36d88cdc3206}{font}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ace498f12483a12d0a29baa860423a07e}{size}})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a44a33dfde15c6573b0f45cb6f4423c86}\index{reportlab.platypus.para@{reportlab.platypus.para}!remainder@{remainder}}
+\index{remainder@{remainder}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{remainder}{remainder}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a44a33dfde15c6573b0f45cb6f4423c86} 
+reportlab.\+platypus.\+para.\+remainder = remainder\+[cursor:\+]\+}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ab150d359afa54abe79c9ab1bdde170da}\index{reportlab.platypus.para@{reportlab.platypus.para}!rightIndent@{rightIndent}}
+\index{rightIndent@{rightIndent}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{rightIndent}{rightIndent}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ab150d359afa54abe79c9ab1bdde170da} 
+reportlab.\+platypus.\+para.\+right\+Indent}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ab48bcc8bc7a1986098c73ff163b409e0}\index{reportlab.platypus.para@{reportlab.platypus.para}!rise@{rise}}
+\index{rise@{rise}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{rise}{rise}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ab48bcc8bc7a1986098c73ff163b409e0} 
+reportlab.\+platypus.\+para.\+rise}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a53942faf8c981936eee1fff12121c384}\index{reportlab.platypus.para@{reportlab.platypus.para}!rline@{rline}}
+\index{rline@{rline}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{rline}{rline}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a53942faf8c981936eee1fff12121c384} 
+reportlab.\+platypus.\+para.\+rline = list(range(len(result)-\/1))}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a7a9a9d55ea18c2534bea138a4f70c434}\index{reportlab.platypus.para@{reportlab.platypus.para}!room@{room}}
+\index{room@{room}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{room}{room}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a7a9a9d55ea18c2534bea138a4f70c434} 
+int reportlab.\+platypus.\+para.\+room = 0}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ace498f12483a12d0a29baa860423a07e}\index{reportlab.platypus.para@{reportlab.platypus.para}!size@{size}}
+\index{size@{size}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ace498f12483a12d0a29baa860423a07e} 
+float reportlab.\+platypus.\+para.\+size}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a0cf6c6722c9894b4d11e9daa50b67ac8}\index{reportlab.platypus.para@{reportlab.platypus.para}!spacewidth@{spacewidth}}
+\index{spacewidth@{spacewidth}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{spacewidth}{spacewidth}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a0cf6c6722c9894b4d11e9daa50b67ac8} 
+reportlab.\+platypus.\+para.\+spacewidth = string\+Width("{} "{}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_ab2d03988acfe3d750c9d9b8afe0e89c6}{font\+Name}}, \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a164e50f62bd5479f7ce000a537db9c7d}{font\+Size}})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a1355f4557f1ad0778b65d775fa3366f1}\index{reportlab.platypus.para@{reportlab.platypus.para}!test\_program@{test\_program}}
+\index{test\_program@{test\_program}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{test\_program}{test\_program}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a1355f4557f1ad0778b65d775fa3366f1} 
+list reportlab.\+platypus.\+para.\+test\+\_\+program}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a0bebc7986e43fc020a53a6782a1be71b}\index{reportlab.platypus.para@{reportlab.platypus.para}!testlink@{testlink}}
+\index{testlink@{testlink}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{testlink}{testlink}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a0bebc7986e43fc020a53a6782a1be71b} 
+reportlab.\+platypus.\+para.\+testlink = \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_hot_link}{Hot\+Link}}("{}http:\+/\+/\+www.\+reportlab.\+com"{})}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_acc798333555552e809802ff961e069b2}\index{reportlab.platypus.para@{reportlab.platypus.para}!testparagraph@{testparagraph}}
+\index{testparagraph@{testparagraph}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{testparagraph}{testparagraph}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_acc798333555552e809802ff961e069b2} 
+str reportlab.\+platypus.\+para.\+testparagraph}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a59e566d632c640c06272c2c3ddc79bc7}\index{reportlab.platypus.para@{reportlab.platypus.para}!testparagraph1@{testparagraph1}}
+\index{testparagraph1@{testparagraph1}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{testparagraph1}{testparagraph1}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a59e566d632c640c06272c2c3ddc79bc7} 
+str reportlab.\+platypus.\+para.\+testparagraph1}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a76566853e410e7e514d006a2e2336247}\index{reportlab.platypus.para@{reportlab.platypus.para}!this@{this}}
+\index{this@{this}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{this}{this}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a76566853e410e7e514d006a2e2336247} 
+reportlab.\+platypus.\+para.\+this = result\+[index]\+}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a10966399a0e25f2a87a14c115bc45a21}\index{reportlab.platypus.para@{reportlab.platypus.para}!thisindicator@{thisindicator}}
+\index{thisindicator@{thisindicator}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{thisindicator}{thisindicator}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a10966399a0e25f2a87a14c115bc45a21} 
+reportlab.\+platypus.\+para.\+thisindicator = \doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a76566853e410e7e514d006a2e2336247}{this}}\+[0]\+}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_ab80c175036d0c19efd667182fd78db0b}\index{reportlab.platypus.para@{reportlab.platypus.para}!TOOSMALLSPACE@{TOOSMALLSPACE}}
+\index{TOOSMALLSPACE@{TOOSMALLSPACE}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{TOOSMALLSPACE}{TOOSMALLSPACE}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_ab80c175036d0c19efd667182fd78db0b} 
+int reportlab.\+platypus.\+para.\+TOOSMALLSPACE = 1e-\/5}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_aa447229551b3b56b216d5374ff7c0cf0}\index{reportlab.platypus.para@{reportlab.platypus.para}!UNDERLINE@{UNDERLINE}}
+\index{UNDERLINE@{UNDERLINE}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{UNDERLINE}{UNDERLINE}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_aa447229551b3b56b216d5374ff7c0cf0} 
+reportlab.\+platypus.\+para.\+UNDERLINE = \doxymbox{\hyperlink{classreportlab_1_1platypus_1_1para_1_1_under_line_handler}{Under\+Line\+Handler}}()}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a1e97c6b74d9d78a64b5311058baa50a3}\index{reportlab.platypus.para@{reportlab.platypus.para}!usedIndent@{usedIndent}}
+\index{usedIndent@{usedIndent}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{usedIndent}{usedIndent}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a1e97c6b74d9d78a64b5311058baa50a3} 
+reportlab.\+platypus.\+para.\+used\+Indent = max(\doxymbox{\hyperlink{namespacereportlab_1_1platypus_1_1para_a9732bcf0a64630935c0de67c1ea1bf64}{bulletmin}}, used\+Indent)}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a8aeabe4b88ebe5eb07e8e6ff05d9e76a}\index{reportlab.platypus.para@{reportlab.platypus.para}!x@{x}}
+\index{x@{x}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a8aeabe4b88ebe5eb07e8e6ff05d9e76a} 
+reportlab.\+platypus.\+para.\+x}
+
+\Hypertarget{namespacereportlab_1_1platypus_1_1para_a9a3302ebd45e89803fd9cb36e1cdddc4}\index{reportlab.platypus.para@{reportlab.platypus.para}!y@{y}}
+\index{y@{y}!reportlab.platypus.para@{reportlab.platypus.para}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1platypus_1_1para_a9a3302ebd45e89803fd9cb36e1cdddc4} 
+reportlab.\+platypus.\+para.\+y}
+

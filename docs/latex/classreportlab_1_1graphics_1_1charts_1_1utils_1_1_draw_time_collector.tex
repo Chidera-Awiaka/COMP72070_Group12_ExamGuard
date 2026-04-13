@@ -1,0 +1,167 @@
+\doxysection{reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector Class Reference}
+\hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector}{}\label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_ab894be48c4f4a13ef9c5fefa0fe42e07}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_acb8540cbf198ec790c4651fae6a0c4a6}{formats}}=\+[\textquotesingle{}gif\textquotesingle{}]\+)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a04d594329711f1aa8789c0d443b24580}{clear}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a3ddd1a4270cea113a08ac13912649341}{record}} (self, func, node, \texorpdfstring{$\ast$}{*}args, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a7f3a106d06ce40929fad5233c9d1f864}{\+\_\+\+\_\+call\+\_\+\+\_\+}} (self, node, canvas, renderer)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a8265ff466ae745c9139b224fa09aa286}{pmcanv}} (self)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a1522fbebe8e6886c28cc2c5a696e5faf}{wedge\+Draw\+Time\+Callback}} (self, node, canvas, renderer, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a6e87ecd5fa1a2a1a0f3cb9bf884e2738}{save}} (self, fnroot)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_ae0009ba1af249f09ed4e030517834f28}{rect\+Draw\+Time\+Callback}} (node, canvas, renderer, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}kwds)
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a95ada1d60d72429794e02f6edfdcf645}{transform\+And\+Flatten}} (A, p)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_acb8540cbf198ec790c4651fae6a0c4a6}{formats}} = formats
+\item 
+bool \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a8eea541d88aa4266ab24b9fbf68f5d0b}{disabled}} = False
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_ac48e8c8710b91a83e02ca03cc8938811}{\+\_\+nodes}} = weakref.\+Weak\+Key\+Dictionary()
+\item 
+\doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_ae678d4fc7a3e8a05bac7a0c881ebe35d}{\+\_\+pmcanv}} = None
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a2ac2d097efb903f2b3075197ab73bd5b}{\+\_\+info}} = \+[$\,$]\+
+\item 
+list \doxymbox{\hyperlink{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a26a407f06164a7eace1b5ce07644cac4}{\+\_\+info\+\_\+append}} = self.\+\_\+info.\+append
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}generic mechanism for collecting information about nodes at the time they are about to be drawn
+\end{DoxyVerb}
+ 
+
+\label{doc-constructors}
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_ab894be48c4f4a13ef9c5fefa0fe42e07}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_ab894be48c4f4a13ef9c5fefa0fe42e07} 
+reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{formats}{ = {\ttfamily \+[\textquotesingle{}gif\textquotesingle{}]\+}}\end{DoxyParamCaption})}
+
+
+
+\label{doc-func-members}
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a7f3a106d06ce40929fad5233c9d1f864}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!\_\_call\_\_@{\_\_call\_\_}}
+\index{\_\_call\_\_@{\_\_call\_\_}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{\_\_call\_\_()}{\_\_call\_\_()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a7f3a106d06ce40929fad5233c9d1f864} 
+reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+\_\+\+\_\+call\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{, }\item[{}]{canvas}{, }\item[{}]{renderer}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a04d594329711f1aa8789c0d443b24580}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!clear@{clear}}
+\index{clear@{clear}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a04d594329711f1aa8789c0d443b24580} 
+reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+clear (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a8265ff466ae745c9139b224fa09aa286}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!pmcanv@{pmcanv}}
+\index{pmcanv@{pmcanv}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{pmcanv()}{pmcanv()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a8265ff466ae745c9139b224fa09aa286} 
+reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+pmcanv (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a3ddd1a4270cea113a08ac13912649341}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!record@{record}}
+\index{record@{record}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{record()}{record()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a3ddd1a4270cea113a08ac13912649341} 
+reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+record (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{func}{, }\item[{}]{node}{, }\item[{\texorpdfstring{$\ast$}{*}}]{args}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds}{}\end{DoxyParamCaption})}
+
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_ae0009ba1af249f09ed4e030517834f28}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!rectDrawTimeCallback@{rectDrawTimeCallback}}
+\index{rectDrawTimeCallback@{rectDrawTimeCallback}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{rectDrawTimeCallback()}{rectDrawTimeCallback()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_ae0009ba1af249f09ed4e030517834f28} 
+reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+rect\+Draw\+Time\+Callback (\begin{DoxyParamCaption}\item[{}]{node}{, }\item[{}]{canvas}{, }\item[{}]{renderer}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a6e87ecd5fa1a2a1a0f3cb9bf884e2738}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!save@{save}}
+\index{save@{save}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{save()}{save()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a6e87ecd5fa1a2a1a0f3cb9bf884e2738} 
+reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+save (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{fnroot}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}save the current information known to this collector
+fnroot is the root name of a resource to name the saved info
+override this to get the right semantics for your collector
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a95ada1d60d72429794e02f6edfdcf645}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!transformAndFlatten@{transformAndFlatten}}
+\index{transformAndFlatten@{transformAndFlatten}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{transformAndFlatten()}{transformAndFlatten()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a95ada1d60d72429794e02f6edfdcf645} 
+reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+transform\+And\+Flatten (\begin{DoxyParamCaption}\item[{}]{A}{, }\item[{}]{p}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyVerb} transform an flatten a list of points
+A   transformation matrix
+p   points [(x0,y0),....(xk,yk).....]
+\end{DoxyVerb}
+ \Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a1522fbebe8e6886c28cc2c5a696e5faf}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!wedgeDrawTimeCallback@{wedgeDrawTimeCallback}}
+\index{wedgeDrawTimeCallback@{wedgeDrawTimeCallback}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{wedgeDrawTimeCallback()}{wedgeDrawTimeCallback()}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a1522fbebe8e6886c28cc2c5a696e5faf} 
+reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+wedge\+Draw\+Time\+Callback (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{node}{, }\item[{}]{canvas}{, }\item[{}]{renderer}{, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwds}{}\end{DoxyParamCaption})}
+
+
+
+\label{doc-variable-members}
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a2ac2d097efb903f2b3075197ab73bd5b}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!\_info@{\_info}}
+\index{\_info@{\_info}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{\_info}{\_info}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a2ac2d097efb903f2b3075197ab73bd5b} 
+reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+\_\+info = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a26a407f06164a7eace1b5ce07644cac4}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!\_info\_append@{\_info\_append}}
+\index{\_info\_append@{\_info\_append}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{\_info\_append}{\_info\_append}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a26a407f06164a7eace1b5ce07644cac4} 
+list reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+\_\+info\+\_\+append = self.\+\_\+info.\+append\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_ac48e8c8710b91a83e02ca03cc8938811}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!\_nodes@{\_nodes}}
+\index{\_nodes@{\_nodes}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{\_nodes}{\_nodes}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_ac48e8c8710b91a83e02ca03cc8938811} 
+reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+\_\+nodes = weakref.\+Weak\+Key\+Dictionary()\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_ae678d4fc7a3e8a05bac7a0c881ebe35d}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!\_pmcanv@{\_pmcanv}}
+\index{\_pmcanv@{\_pmcanv}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{\_pmcanv}{\_pmcanv}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_ae678d4fc7a3e8a05bac7a0c881ebe35d} 
+reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+\_\+pmcanv = None\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a8eea541d88aa4266ab24b9fbf68f5d0b}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!disabled@{disabled}}
+\index{disabled@{disabled}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{disabled}{disabled}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_a8eea541d88aa4266ab24b9fbf68f5d0b} 
+bool reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+disabled = False}
+
+\Hypertarget{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_acb8540cbf198ec790c4651fae6a0c4a6}\index{reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}!formats@{formats}}
+\index{formats@{formats}!reportlab.graphics.charts.utils.DrawTimeCollector@{reportlab.graphics.charts.utils.DrawTimeCollector}}
+\doxysubsubsection{\texorpdfstring{formats}{formats}}
+{\footnotesize\ttfamily \label{classreportlab_1_1graphics_1_1charts_1_1utils_1_1_draw_time_collector_acb8540cbf198ec790c4651fae6a0c4a6} 
+reportlab.\+graphics.\+charts.\+utils.\+Draw\+Time\+Collector.\+formats = formats}
+
+
+
+The documentation for this class was generated from the following file:\+\begin{DoxyCompactItemize}
+\item 
+exam\+\_\+files/\+venv/\+lib/\+python3.\+12/\+site-\/packages/\+reportlab/\+graphics/\+charts/\+\doxymbox{\hyperlink{reportlab_2graphics_2charts_2utils_8py}{utils.\+py}}\end{DoxyCompactItemize}

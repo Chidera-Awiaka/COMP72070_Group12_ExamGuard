@@ -1,0 +1,162 @@
+\doxysection{reportlab.\+pdfbase.\+pdfutils Namespace Reference}
+\hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils}{}\label{namespacereportlab_1_1pdfbase_1_1pdfutils}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{classreportlab_1_1pdfbase_1_1pdfutils_1_1__fusc}{\+\_\+fusc}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfutils_aa82034c6e119be2c27385b71aaa60b46}{\+\_\+chunker}} (src, dst=\+[$\,$]\+, chunk\+Size=60)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfutils_a769b2df3b1cbff74e91111fb649f61da}{make\+A85\+Image}} (filename, IMG=None, detect\+Jpeg=False)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfutils_aa499a3dabb588c38af5cde400448a933}{make\+Raw\+Image}} (filename, IMG=None, detect\+Jpeg=False)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfutils_ab334867d733293cac93240c671406bde}{cache\+Image\+File}} (filename, return\+In\+Memory=0, IMG=None)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfutils_a32a31e38535e9360360bffff2ac9e52d}{pre\+Process\+Images}} (spec)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfutils_a49ffc4da46915cf0ba3c7084385eb067}{cached\+Image\+Exists}} (filename)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfutils_ae769d7b886cda0d68b330d545c0211b9}{\+\_\+normalize\+Line\+Ends}} (text, desired=\textquotesingle{}\textbackslash{}r\textbackslash{}n\textquotesingle{}, unlikely=\textquotesingle{}\textbackslash{}x00\textbackslash{}x01\textbackslash{}x02\textbackslash{}x03\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em PDF Helper functions. \end{DoxyCompactList}\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfutils_ab22b630008e228207ada8f641c414306}{\+\_\+\+Ascii\+Hex\+Encode}} (input)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfutils_a5e2a11e410cb5588584d0d51e00b8485}{\+\_\+\+Ascii\+Hex\+Decode}} (input)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfutils_af3ae60f28370aa39ac85c57c328ac709}{\+\_\+wrap}} (input, columns=60)
+\item 
+\doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfutils_ab8964355f08352ecbac98ae2ad3a50de}{read\+JPEGInfo}} (image)
+\begin{DoxyCompactList}\small\item\em JPEG processing code -\/ contributed by Eric Johnson. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+dict \doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfutils_a72df9946bd4e46cec2b2b1ddbc5f4080}{\+\_\+mode2cs}} = \{\textquotesingle{}RGB\textquotesingle{}:\+\textquotesingle{}RGB\textquotesingle{}, \textquotesingle{}CMYK\textquotesingle{}:\+ \textquotesingle{}CMYK\textquotesingle{}, \textquotesingle{}L\textquotesingle{}:\+ \textquotesingle{}G\textquotesingle{}\}
+\begin{DoxyCompactList}\small\item\em Image compression helpers. \end{DoxyCompactList}\item 
+dict \doxymbox{\hyperlink{namespacereportlab_1_1pdfbase_1_1pdfutils_a99eff6f10c0d0fd73d3bf84be966e2fe}{\+\_\+mode2bpp}} = \{\textquotesingle{}RGB\textquotesingle{}:\+ 3, \textquotesingle{}CMYK\textquotesingle{}:\+4, \textquotesingle{}L\textquotesingle{}:\+1\}
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_a5e2a11e410cb5588584d0d51e00b8485}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}!\_AsciiHexDecode@{\_AsciiHexDecode}}
+\index{\_AsciiHexDecode@{\_AsciiHexDecode}!reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection{\texorpdfstring{\_AsciiHexDecode()}{\_AsciiHexDecode()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfbase_1_1pdfutils_a5e2a11e410cb5588584d0d51e00b8485} 
+reportlab.\+pdfbase.\+pdfutils.\+\_\+\+Ascii\+Hex\+Decode (\begin{DoxyParamCaption}\item[{}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Decodes input using ASCII-Hex coding.
+
+Not used except to provide a test of the inverse function.\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_ab22b630008e228207ada8f641c414306}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}!\_AsciiHexEncode@{\_AsciiHexEncode}}
+\index{\_AsciiHexEncode@{\_AsciiHexEncode}!reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection{\texorpdfstring{\_AsciiHexEncode()}{\_AsciiHexEncode()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfbase_1_1pdfutils_ab22b630008e228207ada8f641c414306} 
+reportlab.\+pdfbase.\+pdfutils.\+\_\+\+Ascii\+Hex\+Encode (\begin{DoxyParamCaption}\item[{}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\begin{DoxyVerb}Encodes input using ASCII-Hex coding.
+
+This is a verbose encoding used for binary data within
+a PDF file.  One byte binary becomes two bytes of ASCII.
+Helper function used by images.\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_aa82034c6e119be2c27385b71aaa60b46}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}!\_chunker@{\_chunker}}
+\index{\_chunker@{\_chunker}!reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection{\texorpdfstring{\_chunker()}{\_chunker()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfbase_1_1pdfutils_aa82034c6e119be2c27385b71aaa60b46} 
+reportlab.\+pdfbase.\+pdfutils.\+\_\+chunker (\begin{DoxyParamCaption}\item[{}]{src}{, }\item[{}]{dst}{ = {\ttfamily \+[]\+}, }\item[{}]{chunk\+Size}{ = {\ttfamily 60}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_ae769d7b886cda0d68b330d545c0211b9}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}!\_normalizeLineEnds@{\_normalizeLineEnds}}
+\index{\_normalizeLineEnds@{\_normalizeLineEnds}!reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection{\texorpdfstring{\_normalizeLineEnds()}{\_normalizeLineEnds()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfbase_1_1pdfutils_ae769d7b886cda0d68b330d545c0211b9} 
+reportlab.\+pdfbase.\+pdfutils.\+\_\+normalize\+Line\+Ends (\begin{DoxyParamCaption}\item[{}]{text}{, }\item[{}]{desired}{ = {\ttfamily \textquotesingle{}\textbackslash{}r\textbackslash{}n\textquotesingle{}}, }\item[{}]{unlikely}{ = {\ttfamily \textquotesingle{}\textbackslash{}x00\textbackslash{}x01\textbackslash{}x02\textbackslash{}x03\textquotesingle{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+PDF Helper functions. 
+
+\begin{DoxyVerb}Normalizes different line end character(s).
+
+Ensures all instances of CR, LF and CRLF end up as
+the specified one.\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_af3ae60f28370aa39ac85c57c328ac709}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}!\_wrap@{\_wrap}}
+\index{\_wrap@{\_wrap}!reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection{\texorpdfstring{\_wrap()}{\_wrap()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfbase_1_1pdfutils_af3ae60f28370aa39ac85c57c328ac709} 
+reportlab.\+pdfbase.\+pdfutils.\+\_\+wrap (\begin{DoxyParamCaption}\item[{}]{input}{, }\item[{}]{columns}{ = {\ttfamily 60}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_a49ffc4da46915cf0ba3c7084385eb067}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}!cachedImageExists@{cachedImageExists}}
+\index{cachedImageExists@{cachedImageExists}!reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection{\texorpdfstring{cachedImageExists()}{cachedImageExists()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfbase_1_1pdfutils_a49ffc4da46915cf0ba3c7084385eb067} 
+reportlab.\+pdfbase.\+pdfutils.\+cached\+Image\+Exists (\begin{DoxyParamCaption}\item[{}]{filename}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Determines if a cached image already exists for a given file.
+
+Determines if a cached image exists which has the same name
+and equal or newer date to the given file.\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_ab334867d733293cac93240c671406bde}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}!cacheImageFile@{cacheImageFile}}
+\index{cacheImageFile@{cacheImageFile}!reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection{\texorpdfstring{cacheImageFile()}{cacheImageFile()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfbase_1_1pdfutils_ab334867d733293cac93240c671406bde} 
+reportlab.\+pdfbase.\+pdfutils.\+cache\+Image\+File (\begin{DoxyParamCaption}\item[{}]{filename}{, }\item[{}]{return\+In\+Memory}{ = {\ttfamily 0}, }\item[{}]{IMG}{ = {\ttfamily None}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_a769b2df3b1cbff74e91111fb649f61da}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}!makeA85Image@{makeA85Image}}
+\index{makeA85Image@{makeA85Image}!reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection{\texorpdfstring{makeA85Image()}{makeA85Image()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfbase_1_1pdfutils_a769b2df3b1cbff74e91111fb649f61da} 
+reportlab.\+pdfbase.\+pdfutils.\+make\+A85\+Image (\begin{DoxyParamCaption}\item[{}]{filename}{, }\item[{}]{IMG}{ = {\ttfamily None}, }\item[{}]{detect\+Jpeg}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_aa499a3dabb588c38af5cde400448a933}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}!makeRawImage@{makeRawImage}}
+\index{makeRawImage@{makeRawImage}!reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection{\texorpdfstring{makeRawImage()}{makeRawImage()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfbase_1_1pdfutils_aa499a3dabb588c38af5cde400448a933} 
+reportlab.\+pdfbase.\+pdfutils.\+make\+Raw\+Image (\begin{DoxyParamCaption}\item[{}]{filename}{, }\item[{}]{IMG}{ = {\ttfamily None}, }\item[{}]{detect\+Jpeg}{ = {\ttfamily False}}\end{DoxyParamCaption})}
+
+\Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_a32a31e38535e9360360bffff2ac9e52d}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}!preProcessImages@{preProcessImages}}
+\index{preProcessImages@{preProcessImages}!reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection{\texorpdfstring{preProcessImages()}{preProcessImages()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfbase_1_1pdfutils_a32a31e38535e9360360bffff2ac9e52d} 
+reportlab.\+pdfbase.\+pdfutils.\+pre\+Process\+Images (\begin{DoxyParamCaption}\item[{}]{spec}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Preprocesses one or more image files.
+
+Accepts either a filespec ('C:\\mydir\\*.jpg') or a list
+of image filenames, crunches them all to save time.  Run this
+to save huge amounts of time when repeatedly building image
+documents.\end{DoxyVerb}
+ \Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_ab8964355f08352ecbac98ae2ad3a50de}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}!readJPEGInfo@{readJPEGInfo}}
+\index{readJPEGInfo@{readJPEGInfo}!reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection{\texorpdfstring{readJPEGInfo()}{readJPEGInfo()}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfbase_1_1pdfutils_ab8964355f08352ecbac98ae2ad3a50de} 
+reportlab.\+pdfbase.\+pdfutils.\+read\+JPEGInfo (\begin{DoxyParamCaption}\item[{}]{image}{}\end{DoxyParamCaption})}
+
+
+
+JPEG processing code -\/ contributed by Eric Johnson. 
+
+
+
+\label{doc-var-members}
+\Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_a99eff6f10c0d0fd73d3bf84be966e2fe}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}!\_mode2bpp@{\_mode2bpp}}
+\index{\_mode2bpp@{\_mode2bpp}!reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection{\texorpdfstring{\_mode2bpp}{\_mode2bpp}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfbase_1_1pdfutils_a99eff6f10c0d0fd73d3bf84be966e2fe} 
+dict reportlab.\+pdfbase.\+pdfutils.\+\_\+mode2bpp = \{\textquotesingle{}RGB\textquotesingle{}:\+ 3, \textquotesingle{}CMYK\textquotesingle{}:\+4, \textquotesingle{}L\textquotesingle{}:\+1\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+\Hypertarget{namespacereportlab_1_1pdfbase_1_1pdfutils_a72df9946bd4e46cec2b2b1ddbc5f4080}\index{reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}!\_mode2cs@{\_mode2cs}}
+\index{\_mode2cs@{\_mode2cs}!reportlab.pdfbase.pdfutils@{reportlab.pdfbase.pdfutils}}
+\doxysubsubsection{\texorpdfstring{\_mode2cs}{\_mode2cs}}
+{\footnotesize\ttfamily \label{namespacereportlab_1_1pdfbase_1_1pdfutils_a72df9946bd4e46cec2b2b1ddbc5f4080} 
+dict reportlab.\+pdfbase.\+pdfutils.\+\_\+mode2cs = \{\textquotesingle{}RGB\textquotesingle{}:\+\textquotesingle{}RGB\textquotesingle{}, \textquotesingle{}CMYK\textquotesingle{}:\+ \textquotesingle{}CMYK\textquotesingle{}, \textquotesingle{}L\textquotesingle{}:\+ \textquotesingle{}G\textquotesingle{}\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Image compression helpers. 
+
+Preprocessing a directory of images will offer a vast speedup. 

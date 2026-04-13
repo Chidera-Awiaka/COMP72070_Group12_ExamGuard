@@ -1,0 +1,84 @@
+\doxysection{PIL.\+Image\+Show Namespace Reference}
+\hypertarget{namespace_p_i_l_1_1_image_show}{}\label{namespace_p_i_l_1_1_image_show}\index{PIL.ImageShow@{PIL.ImageShow}}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_viewer}{Viewer}}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_windows_viewer}{Windows\+Viewer}}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_mac_viewer}{Mac\+Viewer}}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_unix_viewer}{Unix\+Viewer}}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_x_d_g_viewer}{XDGViewer}}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_display_viewer}{Display\+Viewer}}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_gm_display_viewer}{Gm\+Display\+Viewer}}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_eog_viewer}{Eog\+Viewer}}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_x_v_viewer}{XVViewer}}
+\item 
+class \doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_i_python_viewer}{IPython\+Viewer}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+None \doxymbox{\hyperlink{namespace_p_i_l_1_1_image_show_ac66a8d56cb7b4a230ed4c0be1bee9a26}{register}} (type\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_viewer}{Viewer}}]\+\texorpdfstring{$\vert$}{|}\doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_viewer}{Viewer}} viewer, int order=1)
+\item 
+bool \doxymbox{\hyperlink{namespace_p_i_l_1_1_image_show_a2c0759de70f494e1cad12b2f4ecfab5e}{show}} (\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}} image, str\texorpdfstring{$\vert$}{|}None title=None, \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any options)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+list \doxymbox{\hyperlink{namespace_p_i_l_1_1_image_show_a846267d8c032510a4590bb81d2a99a3d}{\+\_\+viewers}} = \+[$\,$]\+
+\end{DoxyCompactItemize}
+
+
+\label{doc-func-members}
+\Hypertarget{namespace_p_i_l_1_1_image_show_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{namespace_p_i_l_1_1_image_show_ac66a8d56cb7b4a230ed4c0be1bee9a26}\index{PIL.ImageShow@{PIL.ImageShow}!register@{register}}
+\index{register@{register}!PIL.ImageShow@{PIL.ImageShow}}
+\doxysubsubsection{\texorpdfstring{register()}{register()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_image_show_ac66a8d56cb7b4a230ed4c0be1bee9a26} 
+ None PIL.\+Image\+Show.\+register (\begin{DoxyParamCaption}\item[{type\+[\doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_viewer}{Viewer}}]\+ \texorpdfstring{$\vert$}{|} \doxymbox{\hyperlink{class_p_i_l_1_1_image_show_1_1_viewer}{Viewer}}}]{viewer}{, }\item[{int }]{order}{ = {\ttfamily 1}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The :py:func:`register` function is used to register additional viewers::
+
+    from PIL import ImageShow
+    ImageShow.register(MyViewer())  # MyViewer will be used as a last resort
+    ImageShow.register(MySecondViewer(), 0)  # MySecondViewer will be prioritised
+    ImageShow.register(ImageShow.XVViewer(), 0)  # XVViewer will be prioritised
+
+:param viewer: The viewer to be registered.
+:param order:
+    Zero or a negative integer to prepend this viewer to the list,
+    a positive integer to append it.
+\end{DoxyVerb}
+ \Hypertarget{namespace_p_i_l_1_1_image_show_a2c0759de70f494e1cad12b2f4ecfab5e}\index{PIL.ImageShow@{PIL.ImageShow}!show@{show}}
+\index{show@{show}!PIL.ImageShow@{PIL.ImageShow}}
+\doxysubsubsection{\texorpdfstring{show()}{show()}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_image_show_a2c0759de70f494e1cad12b2f4ecfab5e} 
+ bool PIL.\+Image\+Show.\+show (\begin{DoxyParamCaption}\item[{\doxymbox{\hyperlink{class_p_i_l_1_1_image_1_1_image}{Image.\+Image}}}]{image}{, }\item[{str \texorpdfstring{$\vert$}{|} None }]{title}{ = {\ttfamily None}, }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}Any}]{options}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Display a given image.
+
+:param image: An image object.
+:param title: Optional title. Not all viewers can display the title.
+:param \**options: Additional viewer options.
+:returns: ``True`` if a suitable viewer was found, ``False`` otherwise.
+\end{DoxyVerb}
+ 
+
+\label{doc-var-members}
+\Hypertarget{namespace_p_i_l_1_1_image_show_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{namespace_p_i_l_1_1_image_show_a846267d8c032510a4590bb81d2a99a3d}\index{PIL.ImageShow@{PIL.ImageShow}!\_viewers@{\_viewers}}
+\index{\_viewers@{\_viewers}!PIL.ImageShow@{PIL.ImageShow}}
+\doxysubsubsection{\texorpdfstring{\_viewers}{\_viewers}}
+{\footnotesize\ttfamily \label{namespace_p_i_l_1_1_image_show_a846267d8c032510a4590bb81d2a99a3d} 
+list PIL.\+Image\+Show.\+\_\+viewers = \+[$\,$]\+\hspace{0.3cm}{\ttfamily [protected]}}
+
